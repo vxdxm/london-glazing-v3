@@ -77,8 +77,8 @@ const glazingOptions = [
 ];
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ElementRef<"div">,
+  React.ComponentPropsWithoutRef<"div">
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
