@@ -18,14 +18,17 @@ const glazingOptions = [
       {
         title: "Sash Windows",
         description: "Perfect for traditional Victorian and Georgian properties",
+        path: "/residential/sash-windows",
       },
       {
         title: "Casement Windows",
         description: "Ideal for modern homes and apartments",
+        path: "/residential/casement-windows",
       },
       {
         title: "Bay Windows",
         description: "Specialized solutions for bay window configurations",
+        path: "/residential/bay-windows",
       },
     ],
   },
@@ -36,14 +39,17 @@ const glazingOptions = [
       {
         title: "Office Buildings",
         description: "Sound insulation for productive work environments",
+        path: "/commercial/office-buildings",
       },
       {
         title: "Retail Spaces",
         description: "Energy-efficient solutions for shops and stores",
+        path: "/commercial/retail-spaces",
       },
       {
         title: "Listed Buildings",
         description: "Heritage-compliant secondary glazing options",
+        path: "/commercial/listed-buildings",
       },
     ],
   },
@@ -54,14 +60,17 @@ const glazingOptions = [
       {
         title: "Acoustic Glazing",
         description: "Maximum noise reduction for urban properties",
+        path: "/specialized/acoustic-glazing",
       },
       {
         title: "Thermal Insulation",
         description: "Enhanced energy efficiency solutions",
+        path: "/specialized/thermal-insulation",
       },
       {
         title: "Security Glazing",
         description: "Additional protection for your property",
+        path: "/specialized/security-glazing",
       },
     ],
   },
@@ -116,9 +125,11 @@ export function MainNav() {
                   </Link>
                 </li>
                 {section.items.map((item) => (
-                  <ListItem key={item.title} title={item.title}>
-                    {item.description}
-                  </ListItem>
+                  <Link key={item.title} to={item.path}>
+                    <ListItem title={item.title}>
+                      {item.description}
+                    </ListItem>
+                  </Link>
                 ))}
               </ul>
             </NavigationMenuContent>
