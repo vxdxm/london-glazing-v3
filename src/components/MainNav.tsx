@@ -8,10 +8,12 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const glazingOptions = [
   {
     title: "Residential Solutions",
+    path: "/residential",
     items: [
       {
         title: "Sash Windows",
@@ -29,6 +31,7 @@ const glazingOptions = [
   },
   {
     title: "Commercial Solutions",
+    path: "/commercial",
     items: [
       {
         title: "Office Buildings",
@@ -46,6 +49,7 @@ const glazingOptions = [
   },
   {
     title: "Specialized Services",
+    path: "/specialized",
     items: [
       {
         title: "Acoustic Glazing",
@@ -93,11 +97,24 @@ export function MainNav() {
   return (
     <NavigationMenu className="max-w-screen-xl mx-auto px-4">
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link to="/" className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+            Home
+          </Link>
+        </NavigationMenuItem>
         {glazingOptions.map((section) => (
           <NavigationMenuItem key={section.title}>
             <NavigationMenuTrigger>{section.title}</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                <li className="col-span-2">
+                  <Link
+                    to={section.path}
+                    className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  >
+                    View All {section.title}
+                  </Link>
+                </li>
                 {section.items.map((item) => (
                   <ListItem key={item.title} title={item.title}>
                     {item.description}
