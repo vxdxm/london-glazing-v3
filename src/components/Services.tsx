@@ -1,0 +1,43 @@
+import { Shield, Thermometer, VolumeX } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const services = [
+  {
+    title: "Noise Reduction",
+    description: "Reduce external noise by up to 80% with our advanced secondary glazing solutions.",
+    icon: VolumeX,
+  },
+  {
+    title: "Thermal Insulation",
+    description: "Improve your home's energy efficiency and reduce heating costs significantly.",
+    icon: Thermometer,
+  },
+  {
+    title: "Security Enhancement",
+    description: "Add an extra layer of security to your windows without compromising on style.",
+    icon: Shield,
+  },
+];
+
+export const Services = () => {
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <service.icon className="w-12 h-12 text-primary mb-4" />
+                <CardTitle>{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">{service.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
