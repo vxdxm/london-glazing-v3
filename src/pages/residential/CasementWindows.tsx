@@ -1,14 +1,20 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const CasementWindows = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Casement Windows</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card 
+            className="hover:shadow-lg transition-shadow cursor-pointer"
+            onClick={() => navigate("/residential/casement-windows/modern-solutions")}
+          >
             <CardHeader>
               <CardTitle>Modern Solutions</CardTitle>
             </CardHeader>

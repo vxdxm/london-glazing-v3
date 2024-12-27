@@ -12,6 +12,7 @@ import RetailSpaces from "./pages/commercial/RetailSpaces";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
 import SashWindows from "./pages/residential/SashWindows";
 import CasementWindows from "./pages/residential/CasementWindows";
+import ModernSolutions from "./pages/residential/ModernSolutions";
 import BayWindows from "./pages/residential/BayWindows";
 import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
           <Route path="/residential/sash-windows" element={<SashWindows />} />
           <Route path="/residential/casement-windows" element={<CasementWindows />} />
+          <Route path="/residential/casement-windows/modern-solutions" element={<ModernSolutions />} />
           <Route path="/residential/bay-windows" element={<BayWindows />} />
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
