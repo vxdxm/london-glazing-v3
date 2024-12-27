@@ -37,8 +37,8 @@ const SpecializedServices = () => {
         <h1 className="text-4xl font-bold mb-8">Specialized Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {specializedServices.map((service) => (
-            <Card key={service.title} className="hover:shadow-lg transition-shadow overflow-hidden">
-              <div className="w-full h-48 relative">
+            <Card key={service.title} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+              <div className="w-full">
                 <AspectRatio ratio={16 / 9}>
                   <img
                     src={service.image}
@@ -47,10 +47,10 @@ const SpecializedServices = () => {
                   />
                 </AspectRatio>
               </div>
-              <CardHeader>
+              <CardHeader className="flex-none">
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <p className="text-sm text-gray-500">{service.details}</p>
               </CardContent>
