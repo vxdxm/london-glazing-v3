@@ -19,31 +19,35 @@ const CasementWindows = () => {
               <CardTitle>Modern Solutions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 mb-4">
-                Our casement window solutions provide excellent thermal and acoustic insulation for modern homes.
+              <p className="text-gray-600">
+                Discover our cutting-edge solutions for casement windows, featuring advanced technology and superior performance.
               </p>
-              <ul className="list-disc list-inside text-gray-500 space-y-2">
-                <li>Easy access to primary windows</li>
-                <li>Superior weatherproofing</li>
-                <li>Enhanced security features</li>
-                <li>Energy-efficient design</li>
-              </ul>
             </CardContent>
           </Card>
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card 
+            className="hover:shadow-lg transition-shadow cursor-pointer"
+            onClick={() => navigate("/residential/casement-windows/traditional-options")}
+          >
             <CardHeader>
-              <CardTitle>Installation Benefits</CardTitle>
+              <CardTitle>Traditional Options</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600 mb-4">
-                Professional installation ensures maximum performance and longevity.
+              <p className="text-gray-600">
+                Explore our traditional casement window solutions that maintain period charm while offering modern benefits.
               </p>
-              <ul className="list-disc list-inside text-gray-500 space-y-2">
-                <li>Minimal disruption</li>
-                <li>Custom-fitted panels</li>
-                <li>Full operation retained</li>
-                <li>No structural changes needed</li>
-              </ul>
+            </CardContent>
+          </Card>
+          <Card 
+            className="hover:shadow-lg transition-shadow cursor-pointer"
+            onClick={() => navigate("/residential/casement-windows/energy-efficiency")}
+          >
+            <CardHeader>
+              <CardTitle>Energy Efficiency</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Learn about our energy-efficient options that help reduce heating costs and improve comfort.
+              </p>
             </CardContent>
           </Card>
         </div>
