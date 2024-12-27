@@ -60,11 +60,14 @@ const CostCalculator = () => {
     console.log('Estimated annual savings:', estimatedSavings);
     
     setSavings(Math.round(estimatedSavings));
-    
-    toast({
-      title: "Calculation Complete",
-      description: "Your estimated annual savings have been calculated.",
-    });
+  };
+
+  // Automatically recalculate when number of windows changes
+  const handleWindowsChange = (value: number[]) => {
+    setNumberOfWindows(value[0]);
+    if (currentBill && internalTemp && costPerKwh) {
+      setTimeout(calculateSavings, 0); // Use setTimeout to ensure state is updated
+    }
   };
 
   return (
@@ -84,7 +87,7 @@ const CostCalculator = () => {
               max={20}
               step={1}
               value={[numberOfWindows]}
-              onValueChange={(value) => setNumberOfWindows(value[0])}
+              onValueChange={handleWindowsChange}
               className="w-full"
             />
             <div className="text-center text-sm text-muted-foreground">
