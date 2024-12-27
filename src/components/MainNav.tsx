@@ -127,6 +127,11 @@ export function MainNav() {
           </NavigationMenuItem>
         ))}
         <NavigationMenuItem>
+          <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+            Gallery
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Button
             onClick={() => handleNavigation("/quote-request")}
             className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
