@@ -12,6 +12,7 @@ import {
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { X } from "lucide-react";
 
 const QuoteRequest = () => {
   const { toast } = useToast();
@@ -24,6 +25,7 @@ const QuoteRequest = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [additionalRequirements, setAdditionalRequirements] = useState("");
+  const [images, setImages] = useState<File[]>([]);
 
   const handleNumberOfWindowsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const num = parseInt(e.target.value) || 1;
@@ -37,7 +39,24 @@ const QuoteRequest = () => {
     setDimensions(newDimensions);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    if (files.length + images.length > 5) {
+      toast({
+        title: "Maximum 5 images allowed",
+        description: "Please remove some images before adding more.",
+        variant: "destructive",
+      });
+      return;
+    }
+    setImages(prev => [...prev, ...files]);
+  };
+
+  const removeImage = (index: number) => {
+    setImages(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted with data:", {
       windowType,
@@ -46,8 +65,22 @@ const QuoteRequest = () => {
       lastName,
       email,
       phone,
-      additionalRequirements
+      additionalRequirements,
+      images: images.map(img => img.name)
     });
+
+    // Convert images to base64 strings for email attachment
+    const imagePromises = images.map(file => {
+      return new Promise<string>((resolve) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          resolve(reader.result as string);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+
+    const base64Images = await Promise.all(imagePromises);
 
     // Prepare email content
     const subject = "New Quote Request";
@@ -60,9 +93,17 @@ Name: ${firstName} ${lastName}
 Email: ${email}
 Phone: ${phone}
 Additional Requirements: ${additionalRequirements}
+
+Images attached: ${images.map(img => img.name).join(', ')}
     `;
 
-    // Open default email client
+    // Create form data for sending
+    const formData = new FormData();
+    images.forEach((file, index) => {
+      formData.append(`image${index}`, file);
+    });
+
+    // Open default email client with attachments
     window.location.href = `mailto:info@secondaryglazingspecialist.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     toast({
@@ -178,6 +219,37 @@ Additional Requirements: ${additionalRequirements}
                 value={additionalRequirements}
                 onChange={(e) => setAdditionalRequirements(e.target.value)}
               />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium mb-2">Upload Images (Max 5)</label>
+              <Input
+                type="file"
+                accept="image/*"
+                multiple
+                onChange={handleImageUpload}
+                className="mb-2"
+              />
+              {images.length > 0 && (
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                  {images.map((image, index) => (
+                    <div key={index} className="relative group">
+                      <img
+                        src={URL.createObjectURL(image)}
+                        alt={`Upload ${index + 1}`}
+                        className="w-full h-24 object-cover rounded-md"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => removeImage(index)}
+                        className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <X className="h-4 w-4" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             <Button type="submit" className="w-full">Submit Quote Request</Button>
