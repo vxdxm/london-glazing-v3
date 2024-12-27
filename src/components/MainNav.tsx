@@ -1,3 +1,5 @@
+import * as React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -7,100 +9,54 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Button } from "./ui/button";
 
 const glazingOptions = [
   {
-    title: "Residential Solutions",
-    path: "/residential",
+    title: "Residential",
+    description: "Explore our residential glazing solutions.",
+    mainLink: "/residential",
     items: [
-      {
-        title: "Sash Windows",
-        description: "Perfect for traditional Victorian and Georgian properties",
-        path: "/residential/sash-windows",
-      },
-      {
-        title: "Casement Windows",
-        description: "Ideal for modern homes and apartments",
-        path: "/residential/casement-windows",
-      },
-      {
-        title: "Bay Windows",
-        description: "Specialized solutions for bay window configurations",
-        path: "/residential/bay-windows",
-      },
+      { title: "Sash Windows", href: "/residential/sash-windows", description: "Traditional sash window solutions." },
+      { title: "Casement Windows", href: "/residential/casement-windows", description: "Modern casement window options." },
+      { title: "Bay Windows", href: "/residential/bay-windows", description: "Beautiful bay window installations." },
     ],
   },
   {
-    title: "Commercial Solutions",
-    path: "/commercial",
+    title: "Commercial",
+    description: "Discover our commercial glazing services.",
+    mainLink: "/commercial",
     items: [
-      {
-        title: "Office Buildings",
-        description: "Sound insulation for productive work environments",
-        path: "/commercial/office-buildings",
-      },
-      {
-        title: "Retail Spaces",
-        description: "Energy-efficient solutions for shops and stores",
-        path: "/commercial/retail-spaces",
-      },
-      {
-        title: "Listed Buildings",
-        description: "Heritage-compliant secondary glazing options",
-        path: "/commercial/listed-buildings",
-      },
+      { title: "Office Buildings", href: "/commercial/office-buildings", description: "Glazing solutions for office buildings." },
+      { title: "Retail Spaces", href: "/commercial/retail-spaces", description: "Enhance your retail space with our services." },
+      { title: "Listed Buildings", href: "/commercial/listed-buildings", description: "Specialized glazing for listed buildings." },
     ],
   },
   {
-    title: "Specialized Services",
-    path: "/specialized",
+    title: "Specialized",
+    description: "Learn about our specialized glazing options.",
+    mainLink: "/specialized",
     items: [
-      {
-        title: "Acoustic Glazing",
-        description: "Maximum noise reduction for urban properties",
-        path: "/specialized/noise-reduction",
-      },
-      {
-        title: "Thermal Insulation",
-        description: "Enhanced energy efficiency solutions",
-        path: "/specialized/thermal-insulation",
-      },
-      {
-        title: "Security Glazing",
-        description: "Additional protection for your property",
-        path: "/specialized/security-glazing",
-      },
+      { title: "Acoustic Glazing", href: "/specialized/acoustic-glazing", description: "Reduce noise with our acoustic solutions." },
+      { title: "Thermal Insulation", href: "/specialized/thermal-insulation", description: "Improve energy efficiency with thermal glazing." },
+      { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
     ],
   },
 ];
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"div">,
-  React.ComponentPropsWithoutRef<"div">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <div
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white hover:text-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-foreground">
-            {children}
-          </p>
-        </div>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
+const ListItem = ({ title, onClick, children }) => (
+  <li>
+    <div
+      onClick={onClick}
+      className="cursor-pointer block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+    >
+      <div className="text-sm font-medium leading-none">{title}</div>
+      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+        {children}
+      </p>
+    </div>
+  </li>
+);
 
 export function MainNav() {
   const navigate = useNavigate();
@@ -122,26 +78,19 @@ export function MainNav() {
   const handleMouseLeave = (menuTitle: string) => {
     closeTimeoutRef.current = setTimeout(() => {
       setOpenMenus((prev) => prev.filter((title) => title !== menuTitle));
-    }, 300); // 300ms delay before closing
+    }, 300);
   };
 
   return (
-    <NavigationMenu className="max-w-screen-xl mx-auto px-4">
-      <NavigationMenuList>
+    <NavigationMenu>
+      <NavigationMenuList className="hidden md:flex md:space-x-4">
         <NavigationMenuItem>
-          <Link
-            to="/"
-            className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-foreground focus:bg-accent focus:text-accent-foreground"
-          >
-            Home
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link
-            to="/gallery"
-            className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-foreground focus:bg-accent focus:text-accent-foreground"
-          >
-            Gallery
+          <Link to="/">
+            <img 
+              src="/lovable-uploads/bf1bde82-2bff-48bc-9ccb-82ac28cacb6a.png" 
+              alt="Secondary Glazing Specialist" 
+              className="h-12 w-auto"
+            />
           </Link>
         </NavigationMenuItem>
         {glazingOptions.map((section) => (
@@ -159,26 +108,36 @@ export function MainNav() {
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background">
                 <li className="col-span-2">
                   <div
-                    onClick={() => handleNavigation(section.path)}
-                    className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white hover:text-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer"
+                    onClick={() => handleNavigation(section.mainLink)}
+                    className="cursor-pointer block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                   >
-                    View All {section.title}
+                    <div className="text-sm font-medium leading-none">{section.title}</div>
+                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                      {section.description}
+                    </p>
                   </div>
                 </li>
                 {section.items.map((item) => (
-                  <div
+                  <ListItem
                     key={item.title}
-                    onClick={() => handleNavigation(item.path)}
+                    title={item.title}
+                    onClick={() => handleNavigation(item.href)}
                   >
-                    <ListItem title={item.title}>
-                      {item.description}
-                    </ListItem>
-                  </div>
+                    {item.description}
+                  </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
         ))}
+        <NavigationMenuItem>
+          <Button
+            onClick={() => handleNavigation("/quote-request")}
+            className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
+          >
+            Get Quote
+          </Button>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
