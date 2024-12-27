@@ -105,6 +105,11 @@ ListItem.displayName = "ListItem";
 export function MainNav() {
   const navigate = useNavigate();
 
+  const handleNavigation = (path: string) => {
+    console.log("Navigating to:", path); // Debug log
+    navigate(path);
+  };
+
   return (
     <NavigationMenu className="max-w-screen-xl mx-auto px-4">
       <NavigationMenuList>
@@ -122,17 +127,17 @@ export function MainNav() {
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                 <li className="col-span-2">
-                  <Link
-                    to={section.path}
-                    className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                  <div
+                    onClick={() => handleNavigation(section.path)}
+                    className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer"
                   >
                     View All {section.title}
-                  </Link>
+                  </div>
                 </li>
                 {section.items.map((item) => (
                   <div
                     key={item.title}
-                    onClick={() => navigate(item.path)}
+                    onClick={() => handleNavigation(item.path)}
                   >
                     <ListItem title={item.title}>
                       {item.description}
