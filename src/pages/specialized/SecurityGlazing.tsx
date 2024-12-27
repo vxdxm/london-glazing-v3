@@ -1,7 +1,7 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Shield, Lock, Tool, CheckCircle } from "lucide-react";
+import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 
 const SecurityGlazing = () => {
   return (
@@ -70,7 +70,7 @@ const SecurityGlazing = () => {
           <h2 className="text-3xl font-semibold mb-6">Technical Specifications</h2>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <Tool className="w-12 h-12 text-primary mb-4" />
+              <Wrench className="w-12 h-12 text-primary mb-4" />
               <CardTitle>Security Standards</CardTitle>
             </CardHeader>
             <CardContent>
