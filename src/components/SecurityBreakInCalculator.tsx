@@ -9,14 +9,14 @@ const SecurityBreakInCalculator = () => {
   const [glassType, setGlassType] = useState<string>('standard');
   const [result, setResult] = useState<number | null>(null);
 
-  // Base resistance times (in minutes)
+  // Base resistance times (in minutes) - multiplied by 5
   const resistanceTimes = {
-    standard: 2,      // 4mm standard glass
-    entry: 4,         // 6.4mm entry-level glass
-    enhanced: 6,      // 6.8mm enhanced entry glass
-    medium: 8,        // 8.8mm medium performance glass
-    high: 12,         // 10.8mm high performance glass
-    premium: 15,      // 12.8mm premium laminated glass
+    standard: 10,      // 4mm standard glass (was 2)
+    entry: 20,         // 6.4mm entry-level glass (was 4)
+    enhanced: 30,      // 6.8mm enhanced entry glass (was 6)
+    medium: 40,        // 8.8mm medium performance glass (was 8)
+    high: 60,         // 10.8mm high performance glass (was 12)
+    premium: 75,      // 12.8mm premium laminated glass (was 15)
   };
 
   const calculateResistanceTime = () => {
