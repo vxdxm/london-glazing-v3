@@ -19,6 +19,7 @@ import BayWindows from "./pages/residential/BayWindows";
 import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
 import SecurityGlazing from "./pages/specialized/SecurityGlazing";
+import QuoteRequest from "./pages/QuoteRequest";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/residential" element={<ResidentialSolutions />} />
           <Route path="/commercial" element={<CommercialSolutions />} />
           <Route path="/specialized" element={<SpecializedServices />} />
