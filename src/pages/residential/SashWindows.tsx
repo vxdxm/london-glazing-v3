@@ -8,8 +8,24 @@ const SashWindows = () => {
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Sash Windows</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="col-span-1 md:col-span-2">
+            <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+                alt="Traditional sash window with secondary glazing"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
+              <div className="w-full h-48 mb-4 overflow-hidden rounded-t-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
+                  alt="Traditional sash window features"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardTitle>Traditional Elegance</CardTitle>
             </CardHeader>
             <CardContent>
@@ -26,6 +42,13 @@ const SashWindows = () => {
           </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
+              <div className="w-full h-48 mb-4 overflow-hidden rounded-t-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                  alt="Technical specifications of sash windows"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardTitle>Technical Specifications</CardTitle>
             </CardHeader>
             <CardContent>
