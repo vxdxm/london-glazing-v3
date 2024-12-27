@@ -4,8 +4,8 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
@@ -91,6 +91,11 @@ export function MainNav() {
               alt="Secondary Glazing Specialist" 
               className="h-16 w-auto" 
             />
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+            Home
           </Link>
         </NavigationMenuItem>
         {glazingOptions.map((section) => (
