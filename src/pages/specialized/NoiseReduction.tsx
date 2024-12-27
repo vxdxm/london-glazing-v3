@@ -40,6 +40,37 @@ const glassTypes = [
   },
 ];
 
+const doubleGlazedOptions = [
+  {
+    configuration: "4-12-4mm",
+    totalThickness: "20mm",
+    description: "Standard double glazed unit with 12mm air gap",
+    noiseReduction: "Up to 31dB",
+    recommended: "Residential areas with moderate noise levels"
+  },
+  {
+    configuration: "6-8-6mm",
+    totalThickness: "20mm",
+    description: "Balanced double glazed unit with thicker glass panes",
+    noiseReduction: "Up to 33dB",
+    recommended: "Urban residential areas"
+  },
+  {
+    configuration: "8-6-6mm",
+    totalThickness: "20mm",
+    description: "Asymmetric double glazed unit for enhanced acoustics",
+    noiseReduction: "Up to 35dB",
+    recommended: "Properties near busy roads"
+  },
+  {
+    configuration: "10-4-6mm",
+    totalThickness: "20mm",
+    description: "High-performance asymmetric configuration",
+    noiseReduction: "Up to 37dB",
+    recommended: "City centers and high-traffic areas"
+  }
+];
+
 const NoiseReduction = () => {
   const navigate = useNavigate();
   
@@ -55,18 +86,10 @@ const NoiseReduction = () => {
             and configurations to meet your specific needs. From residential properties to commercial buildings, we provide 
             tailored solutions to combat noise pollution effectively.
           </p>
-          
-          <h2 className="text-2xl font-semibold mb-4">Double Glazed Units Option</h2>
-          <p className="mb-8">
-            For maximum noise reduction, we also offer double glazed sealed units within your secondary glazing system. 
-            This configuration creates multiple air gaps and glass barriers, potentially reducing noise by up to 45dB 
-            when combined with appropriate glass thicknesses. This solution is particularly effective for properties in 
-            extremely noisy environments or where ultimate sound insulation is required.
-          </p>
         </div>
 
-        <h2 className="text-2xl font-semibold mb-6">Available Glass Options</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 className="text-2xl font-semibold mb-6">Single Glazed Options</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {glassTypes.map((glass) => (
             <Card 
               key={glass.thickness} 
@@ -81,6 +104,28 @@ const NoiseReduction = () => {
                 <div className="space-y-2">
                   <p><strong>Noise Reduction:</strong> {glass.noiseReduction}</p>
                   <p><strong>Recommended for:</strong> {glass.recommended}</p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <h2 className="text-2xl font-semibold mb-6">Double Glazed Options (Max 20mm)</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {doubleGlazedOptions.map((option) => (
+            <Card 
+              key={option.configuration} 
+              className="hover:shadow-lg transition-shadow"
+            >
+              <CardHeader>
+                <CardTitle>{option.configuration} Double Glazed Unit</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">{option.description}</p>
+                <div className="space-y-2">
+                  <p><strong>Total Thickness:</strong> {option.totalThickness}</p>
+                  <p><strong>Noise Reduction:</strong> {option.noiseReduction}</p>
+                  <p><strong>Recommended for:</strong> {option.recommended}</p>
                 </div>
               </CardContent>
             </Card>
