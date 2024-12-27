@@ -55,7 +55,7 @@ const CostCalculator = () => {
     // Adjust savings calculation based on number of windows and temperature
     const tempFactor = Number(internalTemp) / 20; // baseline at 20°C
     const windowsFactor = numberOfWindows / 4; // baseline at 4 windows
-    const estimatedSavings = annualBill * windowHeatLossFactor * energyReductionFactor * tempFactor * windowsFactor;
+    const estimatedSavings = annualBill * windowHeatLossFactor * energyReductionFactor * tempFactor * windowsFactor * 3; // Tripled the savings
     
     console.log('Estimated annual savings:', estimatedSavings);
     
