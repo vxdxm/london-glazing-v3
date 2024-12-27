@@ -12,6 +12,36 @@ const Index = () => {
     <div className="min-h-screen">
       <MainNav />
       <Hero />
+      
+      {/* Visual Showcase Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/lovable-uploads/84bdd7cf-5970-4949-a908-9ccf79610741.png" 
+                alt="Secondary Glazing Installation"
+                className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/lovable-uploads/78d4ec89-4da8-46df-b9cf-722eaa162852.png" 
+                alt="Noise Reduction Solution"
+                className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative h-64 overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/lovable-uploads/7f03d371-d4b3-4061-afe2-9723cde940ee.png" 
+                alt="Energy Efficient Windows"
+                className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Services />
       
       {/* Secondary Glazing Information Section */}
