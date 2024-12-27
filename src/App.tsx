@@ -19,6 +19,7 @@ import BayWindows from "./pages/residential/BayWindows";
 import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
 import SecurityGlazing from "./pages/specialized/SecurityGlazing";
+import NoiseReduction from "./pages/specialized/NoiseReduction";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
+          <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
