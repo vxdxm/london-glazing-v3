@@ -27,13 +27,6 @@ export function ContactForm() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
           
-          {/* Contact Information */}
-          <div className="text-center mb-8 space-y-2">
-            <p className="text-lg font-medium">Tel: 0207 060 1572</p>
-            <p className="text-lg">Arch 141, MacFarlane Road,</p>
-            <p className="text-lg">London, W12 7LA</p>
-          </div>
-
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
