@@ -73,6 +73,11 @@ export function MainNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link to="/faqs" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+              FAQs
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <button
               onClick={handleContactClick}
               className="text-sm font-medium hover:text-accent-foreground transition-colors"

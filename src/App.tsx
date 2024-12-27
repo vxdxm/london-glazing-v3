@@ -32,6 +32,7 @@ import HighPerformanceGlass from "./pages/specialized/glass/HighPerformanceGlass
 import PremiumGlass from "./pages/specialized/glass/PremiumGlass";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
+import FAQs from "./pages/FAQs";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faqs" element={<FAQs />} />
           <Route path="/residential" element={<ResidentialSolutions />} />
           <Route path="/commercial" element={<CommercialSolutions />} />
           <Route path="/specialized" element={<SpecializedServices />} />
