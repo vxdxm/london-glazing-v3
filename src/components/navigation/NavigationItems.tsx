@@ -30,6 +30,7 @@ export const glazingOptions = [
       { title: "Acoustic Glazing", href: "/specialized/acoustic-glazing", description: "Reduce noise with our acoustic solutions." },
       { title: "Thermal Insulation", href: "/specialized/thermal-insulation", description: "Improve energy efficiency with thermal glazing." },
       { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
+      { title: "Condensation Control", href: "/specialized/condensation-control", description: "Prevent condensation with our solutions." },
     ],
   },
 ];

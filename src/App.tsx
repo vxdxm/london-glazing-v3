@@ -24,6 +24,7 @@ import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
 import SecurityGlazing from "./pages/specialized/SecurityGlazing";
 import NoiseReduction from "./pages/specialized/NoiseReduction";
+import CondensationControl from "./pages/specialized/CondensationControl";
 import EntryLevelGlass from "./pages/specialized/glass/EntryLevelGlass";
 import EnhancedEntryGlass from "./pages/specialized/glass/EnhancedEntryGlass";
 import MediumPerformanceGlass from "./pages/specialized/glass/MediumPerformanceGlass";
@@ -63,6 +64,7 @@ const App = () => (
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
+          <Route path="/specialized/condensation-control" element={<CondensationControl />} />
           <Route path="/specialized/glass/entry-level" element={<EntryLevelGlass />} />
           <Route path="/specialized/glass/enhanced-entry" element={<EnhancedEntryGlass />} />
           <Route path="/specialized/glass/medium-performance" element={<MediumPerformanceGlass />} />
