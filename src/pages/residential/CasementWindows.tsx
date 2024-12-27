@@ -11,13 +11,34 @@ const CasementWindows = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <article className="prose lg:prose-xl max-w-none">
-          <h1 className="text-4xl font-bold mb-8">Casement Secondary Glazing Windows: Complete Guide</h1>
-          
+          <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
+            <div className="flex-1">
+              <h1 className="text-4xl font-bold mb-8">Casement Secondary Glazing Windows: Complete Guide</h1>
+              <p className="text-gray-700 mb-4">
+                Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
+              </p>
+            </div>
+            <div className="flex-1">
+              <img 
+                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+                alt="Modern casement window example"
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+
           <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">What Are Casement Secondary Glazing Windows?</h2>
-            <p className="text-gray-700 mb-4">
-              Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <img 
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705"
+                alt="Casement window installation"
+                className="rounded-lg shadow-lg w-full h-[300px] object-cover"
+              />
+              <p className="text-gray-700">
+                Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
+              </p>
+            </div>
           </section>
 
           <GlassOptions />
@@ -30,9 +51,16 @@ const CasementWindows = () => {
                   <CardTitle>Enhanced Thermal Insulation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">
-                    Significantly reduces heat loss through windows, potentially cutting energy bills by up to 40%. Creates an effective thermal barrier between your interior and exterior environments.
-                  </p>
+                  <div className="space-y-4">
+                    <img 
+                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                      alt="Thermal insulation demonstration"
+                      className="rounded-lg w-full h-[200px] object-cover mb-4"
+                    />
+                    <p className="text-gray-700">
+                      Significantly reduces heat loss through windows, potentially cutting energy bills by up to 40%. Creates an effective thermal barrier between your interior and exterior environments.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
               
@@ -41,9 +69,16 @@ const CasementWindows = () => {
                   <CardTitle>Superior Noise Reduction</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700">
-                    Reduces external noise by up to 80% when properly installed. Ideal for properties in high-traffic areas or near noise sources.
-                  </p>
+                  <div className="space-y-4">
+                    <img 
+                      src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
+                      alt="Noise reduction visualization"
+                      className="rounded-lg w-full h-[200px] object-cover mb-4"
+                    />
+                    <p className="text-gray-700">
+                      Reduces external noise by up to 80% when properly installed. Ideal for properties in high-traffic areas or near noise sources.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -121,6 +156,13 @@ const CasementWindows = () => {
                 onClick={() => navigate("/residential/casement-windows/modern-solutions")}
               >
                 <CardHeader>
+                  <div className="w-full h-48 overflow-hidden rounded-t-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b"
+                      alt="Modern solutions"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <CardTitle>Modern Solutions</CardTitle>
                 </CardHeader>
                 <CardContent>
