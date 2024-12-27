@@ -14,6 +14,53 @@ const Index = () => {
       <Hero />
       <Services />
       
+      {/* Image Showcase Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Work</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <img
+                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+                alt="Modern living room with secondary glazing"
+                className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white text-lg font-semibold px-4 text-center">
+                  Enhanced Home Comfort
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <img
+                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+                alt="Glass roof installation"
+                className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white text-lg font-semibold px-4 text-center">
+                  Crystal Clear Views
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <img
+                src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
+                alt="Modern glass building"
+                className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <p className="text-white text-lg font-semibold px-4 text-center">
+                  Modern Solutions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Secondary Glazing Information Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
