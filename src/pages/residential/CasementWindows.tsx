@@ -20,6 +20,56 @@ const CasementWindows = () => {
           </section>
 
           <section className="mb-12">
+            <h2 className="text-3xl font-semibold mb-6">Glass Options and Specifications</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle>8.8mm Acoustic Glass</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>Medium-performance acoustic laminated glass</li>
+                    <li>Noise reduction up to 35dB</li>
+                    <li>Ideal for properties near busy roads</li>
+                    <li>Enhanced security features</li>
+                    <li>Perfect for urban environments</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>10.8mm Acoustic Glass</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>High-performance acoustic laminated glass</li>
+                    <li>Noise reduction up to 38dB</li>
+                    <li>Suitable for city centers</li>
+                    <li>Superior sound dampening</li>
+                    <li>Excellent for properties near railways</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>12.8mm Acoustic Glass</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>Premium acoustic laminated glass</li>
+                    <li>Maximum noise reduction up to 41dB</li>
+                    <li>Ideal for high-noise environments</li>
+                    <li>Ultimate security protection</li>
+                    <li>Perfect for properties near airports</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">Benefits of Casement Secondary Glazing</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
@@ -71,14 +121,6 @@ const CasementWindows = () => {
           <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">Technical Specifications</h2>
             <div className="space-y-4">
-              <h3 className="text-2xl font-medium">Glass Options</h3>
-              <ul className="list-disc pl-6 mb-6">
-                <li>4mm toughened safety glass (standard)</li>
-                <li>6.4mm laminated glass (enhanced security)</li>
-                <li>6.8mm acoustic laminated glass (maximum noise reduction)</li>
-                <li>Low-E glass options for improved thermal efficiency</li>
-              </ul>
-
               <h3 className="text-2xl font-medium">Frame Materials</h3>
               <ul className="list-disc pl-6 mb-6">
                 <li>Slim aluminum profiles (standard)</li>
