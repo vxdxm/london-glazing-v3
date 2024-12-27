@@ -1,5 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import CostCalculator from "@/components/CostCalculator";
 
 const ThermalInsulation = () => {
   return (
@@ -63,6 +64,13 @@ const ThermalInsulation = () => {
               </ul>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Calculate Your Potential Savings
+          </h2>
+          <CostCalculator />
         </div>
       </div>
     </div>
