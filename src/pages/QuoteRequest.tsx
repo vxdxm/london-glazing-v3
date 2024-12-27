@@ -123,7 +123,7 @@ Images attached: ${images.map(img => img.name).join(', ')}
             <div>
               <label className="block text-sm font-medium mb-2">Window Type</label>
               <Select onValueChange={setWindowType} required>
-                <SelectTrigger>
+                <SelectTrigger className="hover:bg-white hover:bg-opacity-100">
                   <SelectValue placeholder="Select window type" />
                 </SelectTrigger>
                 <SelectContent>
