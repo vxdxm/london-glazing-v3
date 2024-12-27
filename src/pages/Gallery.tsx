@@ -87,15 +87,11 @@ const Gallery = () => {
         <h1 className="text-4xl font-bold mb-8 text-center">Our Gallery</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
-            <div 
-              key={index} 
-              className="group animate-fade-up opacity-0"
-              style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'forwards' }}
-            >
+            <div key={index} className="animate-fade-up group">
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-full h-64 object-cover rounded-lg shadow-lg transition-all duration-500 group-hover:opacity-80"
+                className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform group-hover:scale-105"
                 loading="lazy"
               />
               <p className="mt-2 text-sm text-gray-600">{item.description}</p>
