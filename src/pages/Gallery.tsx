@@ -1,4 +1,5 @@
 import { MainNav } from "@/components/MainNav";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Gallery = () => {
   const galleryItems = [
@@ -98,6 +99,7 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+      <WhatsAppButton />
     </div>
   );
 };
