@@ -1,114 +1,25 @@
 import * as React from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
-  NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
-
-const glazingOptions = [
-  {
-    title: "Residential",
-    description: "Explore our residential glazing solutions.",
-    mainLink: "/residential",
-    items: [
-      { title: "Sash Windows", href: "/residential/sash-windows", description: "Traditional sash window solutions." },
-      { title: "Casement Windows", href: "/residential/casement-windows", description: "Modern casement window options." },
-      { title: "Bay Windows", href: "/residential/bay-windows", description: "Beautiful bay window installations." },
-      { title: "Horizontal Sliding", href: "/residential/horizontal-sliding", description: "Smooth-operating horizontal sliding solutions." },
-      { title: "Lift Out", href: "/residential/lift-out", description: "Removable panels for easy maintenance." },
-      { title: "Combination Units", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
-    ],
-  },
-  {
-    title: "Commercial",
-    description: "Discover our commercial glazing services.",
-    mainLink: "/commercial",
-    items: [
-      { title: "Office Buildings", href: "/commercial/office-buildings", description: "Glazing solutions for office buildings." },
-      { title: "Retail Spaces", href: "/commercial/retail-spaces", description: "Enhance your retail space with our services." },
-      { title: "Listed Buildings", href: "/commercial/listed-buildings", description: "Specialized glazing for listed buildings." },
-    ],
-  },
-  {
-    title: "Specialized",
-    description: "Learn about our specialized glazing options.",
-    mainLink: "/specialized",
-    items: [
-      { title: "Acoustic Glazing", href: "/specialized/acoustic-glazing", description: "Reduce noise with our acoustic solutions." },
-      { title: "Thermal Insulation", href: "/specialized/thermal-insulation", description: "Improve energy efficiency with thermal glazing." },
-      { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
-    ],
-  },
-];
-
-const ListItem = ({ title, onClick, children }) => (
-  <li>
-    <div
-      onClick={onClick}
-      className="cursor-pointer block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-    >
-      <div className="text-sm font-medium leading-none">{title}</div>
-      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-        {children}
-      </p>
-    </div>
-  </li>
-);
+import { ListItem } from "./navigation/ListItem";
+import { glazingOptions } from "./navigation/NavigationItems";
+import { useNavigation } from "./navigation/useNavigation";
 
 export function MainNav() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const [openMenus, setOpenMenus] = React.useState<string[]>([]);
-  const closeTimeoutRef = React.useRef<NodeJS.Timeout>();
-
-  const handleNavigation = (path: string) => {
-    console.log("Navigating to:", path);
-    navigate(path);
-  };
-
-  const handleContactClick = () => {
-    if (location.pathname === '/') {
-      // If we're on the home page, scroll to the contact section
-      const contactSection = document.getElementById('contact-section');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // If we're on another page, navigate to home and then scroll
-      navigate('/', { state: { scrollToContact: true } });
-    }
-  };
-
-  React.useEffect(() => {
-    // Check if we need to scroll to contact section after navigation
-    if (location.pathname === '/' && location.state?.scrollToContact) {
-      const contactSection = document.getElementById('contact-section');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-      // Clear the state
-      window.history.replaceState({}, document.title);
-    }
-  }, [location]);
-
-  const handleMouseEnter = (menuTitle: string) => {
-    if (closeTimeoutRef.current) {
-      clearTimeout(closeTimeoutRef.current);
-    }
-    setOpenMenus((prev) => [...new Set([...prev, menuTitle])]);
-  };
-
-  const handleMouseLeave = (menuTitle: string) => {
-    closeTimeoutRef.current = setTimeout(() => {
-      setOpenMenus((prev) => prev.filter((title) => title !== menuTitle));
-    }, 300);
-  };
+  const {
+    handleNavigation,
+    handleContactClick,
+    handleMouseEnter,
+    handleMouseLeave,
+    openMenus,
+  } = useNavigation();
 
   return (
     <div className="flex justify-center w-full">
