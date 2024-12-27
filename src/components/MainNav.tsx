@@ -60,7 +60,7 @@ const glazingOptions = [
       {
         title: "Acoustic Glazing",
         description: "Maximum noise reduction for urban properties",
-        path: "/specialized/acoustic-glazing",
+        path: "/specialized/noise-reduction",
       },
       {
         title: "Thermal Insulation",
@@ -71,11 +71,6 @@ const glazingOptions = [
         title: "Security Glazing",
         description: "Additional protection for your property",
         path: "/specialized/security-glazing",
-      },
-      {
-        title: "Noise Reduction Solutions",
-        description: "Explore our range of noise reduction glass options",
-        path: "/specialized/noise-reduction",
       },
     ],
   },
