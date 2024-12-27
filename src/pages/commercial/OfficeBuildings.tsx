@@ -1,5 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const OfficeBuildings = () => {
   return (
@@ -10,6 +11,15 @@ const OfficeBuildings = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
+              <div className="w-full mb-4">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+                    alt="Modern office building interior"
+                    className="rounded-lg object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
               <CardTitle>Sound Insulation Solutions</CardTitle>
             </CardHeader>
             <CardContent>
@@ -26,6 +36,15 @@ const OfficeBuildings = () => {
           </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
+              <div className="w-full mb-4">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
+                    alt="Modern glass building"
+                    className="rounded-lg object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
               <CardTitle>Energy Efficiency Benefits</CardTitle>
             </CardHeader>
             <CardContent>
