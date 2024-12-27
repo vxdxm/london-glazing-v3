@@ -104,10 +104,25 @@ ListItem.displayName = "ListItem";
 
 export function MainNav() {
   const navigate = useNavigate();
+  const [openMenus, setOpenMenus] = React.useState<string[]>([]);
+  const closeTimeoutRef = React.useRef<NodeJS.Timeout>();
 
   const handleNavigation = (path: string) => {
     console.log("Navigating to:", path);
     navigate(path);
+  };
+
+  const handleMouseEnter = (menuTitle: string) => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    setOpenMenus((prev) => [...new Set([...prev, menuTitle])]);
+  };
+
+  const handleMouseLeave = (menuTitle: string) => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setOpenMenus((prev) => prev.filter((title) => title !== menuTitle));
+    }, 300); // 300ms delay before closing
   };
 
   return (
@@ -130,9 +145,17 @@ export function MainNav() {
           </Link>
         </NavigationMenuItem>
         {glazingOptions.map((section) => (
-          <NavigationMenuItem key={section.title}>
+          <NavigationMenuItem 
+            key={section.title}
+            onMouseEnter={() => handleMouseEnter(section.title)}
+            onMouseLeave={() => handleMouseLeave(section.title)}
+          >
             <NavigationMenuTrigger>{section.title}</NavigationMenuTrigger>
-            <NavigationMenuContent>
+            <NavigationMenuContent
+              className="data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight"
+              onMouseEnter={() => handleMouseEnter(section.title)}
+              onMouseLeave={() => handleMouseLeave(section.title)}
+            >
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background">
                 <li className="col-span-2">
                   <div
