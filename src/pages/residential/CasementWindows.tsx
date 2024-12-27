@@ -1,6 +1,7 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import GlassOptions from "@/components/residential/GlassOptions";
 
 const CasementWindows = () => {
   const navigate = useNavigate();
@@ -19,55 +20,7 @@ const CasementWindows = () => {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Glass Options and Specifications</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>8.8mm Acoustic Glass</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>Medium-performance acoustic laminated glass</li>
-                    <li>Noise reduction up to 35dB</li>
-                    <li>Ideal for properties near busy roads</li>
-                    <li>Enhanced security features</li>
-                    <li>Perfect for urban environments</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>10.8mm Acoustic Glass</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>High-performance acoustic laminated glass</li>
-                    <li>Noise reduction up to 38dB</li>
-                    <li>Suitable for city centers</li>
-                    <li>Superior sound dampening</li>
-                    <li>Excellent for properties near railways</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>12.8mm Acoustic Glass</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>Premium acoustic laminated glass</li>
-                    <li>Maximum noise reduction up to 41dB</li>
-                    <li>Ideal for high-noise environments</li>
-                    <li>Ultimate security protection</li>
-                    <li>Perfect for properties near airports</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
+          <GlassOptions />
 
           <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">Benefits of Casement Secondary Glazing</h2>
