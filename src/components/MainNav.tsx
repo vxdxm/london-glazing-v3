@@ -106,7 +106,7 @@ export function MainNav() {
   const navigate = useNavigate();
 
   const handleNavigation = (path: string) => {
-    console.log("Navigating to:", path); // Debug log
+    console.log("Navigating to:", path);
     navigate(path);
   };
 
@@ -119,6 +119,14 @@ export function MainNav() {
             className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
           >
             Home
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link
+            to="/gallery"
+            className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+          >
+            Gallery
           </Link>
         </NavigationMenuItem>
         {glazingOptions.map((section) => (
