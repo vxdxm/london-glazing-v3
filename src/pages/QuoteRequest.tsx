@@ -17,10 +17,26 @@ const QuoteRequest = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
   const [windowType, setWindowType] = useState("");
+  const [numberOfWindows, setNumberOfWindows] = useState<number>(1);
+  const [dimensions, setDimensions] = useState<Array<{ width: string; height: string }>>([{ width: '', height: '' }]);
+
+  const handleNumberOfWindowsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const num = parseInt(e.target.value) || 1;
+    setNumberOfWindows(num);
+    // Update dimensions array to match the number of windows
+    setDimensions(Array(num).fill({ width: '', height: '' }));
+  };
+
+  const handleDimensionChange = (index: number, field: 'width' | 'height', value: string) => {
+    const newDimensions = [...dimensions];
+    newDimensions[index] = { ...newDimensions[index], [field]: value };
+    setDimensions(newDimensions);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted with window type:", windowType);
+    console.log("Dimensions:", dimensions);
     toast({
       title: "Quote Request Received",
       description: "We'll get back to you within 24 hours.",
@@ -51,13 +67,42 @@ const QuoteRequest = () => {
             
             <div>
               <label className="block text-sm font-medium mb-2">Number of Windows</label>
-              <Input type="number" min="1" required />
+              <Input 
+                type="number" 
+                min="1" 
+                value={numberOfWindows}
+                onChange={handleNumberOfWindowsChange}
+                required 
+              />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium mb-2">Window Dimensions (if known)</label>
-              <Input placeholder="e.g., 1200mm x 1500mm" />
-            </div>
+            {dimensions.map((dim, index) => (
+              <div key={index} className="space-y-4">
+                <h3 className="font-medium">Window {index + 1} Dimensions</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Width (mm)</label>
+                    <Input
+                      type="number"
+                      placeholder="Width"
+                      value={dim.width}
+                      onChange={(e) => handleDimensionChange(index, 'width', e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Height (mm)</label>
+                    <Input
+                      type="number"
+                      placeholder="Height"
+                      value={dim.height}
+                      onChange={(e) => handleDimensionChange(index, 'height', e.target.value)}
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
