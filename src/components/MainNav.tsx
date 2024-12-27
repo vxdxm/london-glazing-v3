@@ -22,7 +22,7 @@ const glazingOptions = [
       { title: "Bay Windows", href: "/residential/bay-windows", description: "Beautiful bay window installations." },
       { title: "Horizontal Sliding", href: "/residential/horizontal-sliding", description: "Smooth-operating horizontal sliding solutions." },
       { title: "Lift Out", href: "/residential/lift-out", description: "Removable panels for easy maintenance." },
-      { title: "Combination", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
+      { title: "Combination Units", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
     ],
   },
   {
