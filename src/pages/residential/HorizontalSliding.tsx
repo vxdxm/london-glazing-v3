@@ -34,7 +34,7 @@ const HorizontalSliding = () => {
               <CardContent>
                 <div className="space-y-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1524230572899-a752b3835840"
+                    src="/lovable-uploads/41ebf8a1-1774-4e48-ab3c-36589de97413.png"
                     alt="Standard horizontal sliding window"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
