@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -63,6 +63,7 @@ const ListItem = ({ title, onClick, children }) => (
 
 export function MainNav() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [openMenus, setOpenMenus] = React.useState<string[]>([]);
   const closeTimeoutRef = React.useRef<NodeJS.Timeout>();
 
@@ -70,6 +71,31 @@ export function MainNav() {
     console.log("Navigating to:", path);
     navigate(path);
   };
+
+  const handleContactClick = () => {
+    if (location.pathname === '/') {
+      // If we're on the home page, scroll to the contact section
+      const contactSection = document.getElementById('contact-section');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on another page, navigate to home and then scroll
+      navigate('/', { state: { scrollToContact: true } });
+    }
+  };
+
+  React.useEffect(() => {
+    // Check if we need to scroll to contact section after navigation
+    if (location.pathname === '/' && location.state?.scrollToContact) {
+      const contactSection = document.getElementById('contact-section');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      // Clear the state
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   const handleMouseEnter = (menuTitle: string) => {
     if (closeTimeoutRef.current) {
@@ -134,6 +160,14 @@ export function MainNav() {
             <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors">
               Gallery
             </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <button
+              onClick={handleContactClick}
+              className="text-sm font-medium hover:text-accent-foreground transition-colors"
+            >
+              Contact Us
+            </button>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Button

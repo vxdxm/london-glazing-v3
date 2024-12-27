@@ -20,7 +20,9 @@ const Index = () => {
         </div>
       </div>
       <Testimonials />
-      <ContactForm />
+      <div id="contact-section">
+        <ContactForm />
+      </div>
     </div>
   );
 };
