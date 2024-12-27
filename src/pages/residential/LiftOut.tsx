@@ -1,53 +1,118 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import GlassOptions from "@/components/residential/GlassOptions";
 
 const LiftOut = () => {
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Lift Out Windows</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-                alt="Lift out window system demonstrating easy removal for cleaning"
-                className="w-full h-full object-cover"
-              />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div>
+            <h1 className="text-4xl font-bold mb-4">Lift Out Secondary Glazing</h1>
+            <p className="text-gray-700 mb-6">
+              Our lift out secondary glazing solutions offer maximum accessibility and ease of maintenance.
+              Perfect for windows that require regular cleaning or seasonal ventilation adjustments.
+            </p>
           </div>
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <CardTitle>Key Advantages</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Complete removal capability</li>
-                <li>Easy cleaning and maintenance</li>
-                <li>Simple installation process</li>
-                <li>Full window access when needed</li>
-                <li>Lightweight design</li>
-                <li>Cost-effective solution</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <CardTitle>Design Features</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Secure fixing mechanisms</li>
-                <li>Durable frame construction</li>
-                <li>Weather-tight seals</li>
-                <li>Various glass options</li>
-                <li>Custom sizing available</li>
-                <li>Professional installation</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+              alt="Lift out window demonstration"
+              className="rounded-lg w-full h-[300px] object-cover"
+            />
+          </div>
         </div>
+
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Available Styles</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Standard Lift Out Panel</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                    alt="Standard lift out panel"
+                    className="rounded-lg w-full h-[200px] object-cover mb-4"
+                  />
+                  <p className="text-gray-700">
+                    Our classic lift out panel design provides full access for cleaning and maintenance.
+                    Features secure fixing mechanisms and weather-tight seals.
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Easy removal and replacement</li>
+                    <li>Secure fixing points</li>
+                    <li>Weather-resistant seals</li>
+                    <li>Lightweight aluminum frame</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <CardTitle>Quick-Release System</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+                    alt="Quick release system demonstration"
+                    className="rounded-lg w-full h-[200px] object-cover mb-4"
+                  />
+                  <p className="text-gray-700">
+                    Advanced quick-release mechanism for effortless panel removal.
+                    Perfect for frequent access requirements.
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>One-touch release mechanism</li>
+                    <li>Enhanced safety features</li>
+                    <li>Tool-free operation</li>
+                    <li>Ideal for high-level windows</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Technical Specifications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Frame Construction</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Aluminum alloy frame construction</li>
+                  <li>Powder-coated finish options</li>
+                  <li>Multiple color choices available</li>
+                  <li>Thermal break technology</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Security Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Anti-lift mechanisms</li>
+                  <li>Reinforced corner joints</li>
+                  <li>Tamper-resistant fixings</li>
+                  <li>Optional security glass</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <GlassOptions />
       </div>
     </div>
   );
