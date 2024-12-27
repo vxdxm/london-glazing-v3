@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-accent mb-6 animate-fade-up">
-            London's Premium Secondary Glazing Solutions
+            London's Premium Secondary Glazing Specialist
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 animate-fade-up">
             Enhance your home's comfort and value with our expert secondary glazing services. 
