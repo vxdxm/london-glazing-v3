@@ -40,10 +40,12 @@ const HorizontalSliding = () => {
                   />
                   <p className="text-gray-700">
                     Classic horizontal sliding secondary glazing with smooth operation and excellent thermal properties.
-                    Perfect for wide window openings and contemporary spaces.
+                    Typically consisting of 2 or 3 panels which is standard for the majority of windows,
+                    perfect for wide window openings and contemporary spaces.
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Smooth sliding operation</li>
+                    <li>2 to 3 panel configurations standard</li>
                     <li>Ideal for wide openings</li>
                     <li>Easy maintenance</li>
                     <li>Superior weather sealing</li>
