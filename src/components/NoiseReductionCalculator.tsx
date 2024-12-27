@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 const NoiseReductionCalculator = () => {
@@ -42,10 +41,15 @@ const NoiseReductionCalculator = () => {
     setResult(totalReduction);
     
     toast({
-      title: "Calculation Complete",
+      title: "Calculation Updated",
       description: `Estimated noise reduction: ${totalReduction}dB`,
     });
   };
+
+  // Automatically calculate when selections change
+  useEffect(() => {
+    calculateNoiseReduction();
+  }, [originalWindow, secondaryGlassType]);
 
   return (
     <Card className="w-full max-w-2xl mx-auto">
@@ -108,13 +112,6 @@ const NoiseReductionCalculator = () => {
             </div>
           </RadioGroup>
         </div>
-
-        <Button 
-          onClick={calculateNoiseReduction}
-          className="w-full"
-        >
-          Calculate Noise Reduction
-        </Button>
 
         {result !== null && (
           <div className="mt-6 p-4 bg-green-50 rounded-lg">
