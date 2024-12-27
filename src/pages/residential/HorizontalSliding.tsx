@@ -65,10 +65,12 @@ const HorizontalSliding = () => {
                   />
                   <p className="text-gray-700">
                     Advanced multi-track system allowing multiple panels to slide independently.
-                    Perfect for panoramic views and large openings where maximum flexibility is required.
+                    Available with 3 to 5 panels within one window frame, perfect for panoramic views 
+                    and large openings where maximum flexibility is required.
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Independent panel operation</li>
+                    <li>3 to 5 panel configurations available</li>
                     <li>Perfect for panoramic windows</li>
                     <li>Enhanced ventilation options</li>
                     <li>Customizable configurations</li>
