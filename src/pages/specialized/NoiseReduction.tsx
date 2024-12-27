@@ -9,6 +9,12 @@ const glassTypes = [
     recommended: "Urban residential areas away from major roads",
   },
   {
+    thickness: "6.8mm",
+    description: "Enhanced entry-level acoustic glass, offering improved sound insulation for residential properties.",
+    noiseReduction: "Up to 33dB",
+    recommended: "Suburban areas with moderate traffic",
+  },
+  {
     thickness: "8.8mm",
     description: "Medium-performance acoustic glass, offering enhanced sound insulation for busier environments.",
     noiseReduction: "Up to 35dB",
