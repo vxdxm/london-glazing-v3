@@ -27,6 +27,56 @@ const SashWindows = () => {
           </div>
 
           <section className="mb-12">
+            <h2 className="text-3xl font-semibold mb-6">Window Styles Available</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Standard Vertical Sliding</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <img 
+                      src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
+                      alt="Vertical sliding sash window"
+                      className="rounded-lg w-full h-[200px] object-cover mb-4"
+                    />
+                    <p className="text-gray-700">
+                      Traditional vertical sliding secondary glazing that perfectly matches your existing sash windows.
+                      Smooth operation and excellent thermal insulation while maintaining the original character of your property.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card>
+                <CardHeader>
+                  <CardTitle>Tilt-In Sash Windows</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <img 
+                      src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"
+                      alt="Tilt-in sash window demonstration"
+                      className="rounded-lg w-full h-[200px] object-cover mb-4"
+                    />
+                    <p className="text-gray-700">
+                      Our innovative tilt-in secondary glazing system allows easy access for cleaning and maintenance.
+                      The panels can be tilted inwards at a 90-degree angle, making it perfect for high-rise buildings
+                      or windows that are difficult to access from the outside.
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Safe and secure cleaning from inside</li>
+                      <li>Perfect for high-rise applications</li>
+                      <li>Easy maintenance access</li>
+                      <li>Enhanced safety features</li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">Understanding Sash Window Secondary Glazing</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <img 
