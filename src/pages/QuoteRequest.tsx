@@ -23,7 +23,6 @@ const QuoteRequest = () => {
   const handleNumberOfWindowsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const num = parseInt(e.target.value) || 1;
     setNumberOfWindows(num);
-    // Update dimensions array to match the number of windows
     setDimensions(Array(num).fill({ width: '', height: '' }));
   };
 
@@ -123,11 +122,6 @@ const QuoteRequest = () => {
             <div>
               <label className="block text-sm font-medium mb-2">Phone</label>
               <Input type="tel" required />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-2">Property Address</label>
-              <Input required />
             </div>
 
             <div>

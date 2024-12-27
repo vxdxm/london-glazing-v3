@@ -26,7 +26,6 @@ export const ContactForm = () => {
             </div>
             <Input type="email" placeholder="Email Address" required />
             <Input type="tel" placeholder="Phone Number" required />
-            <Input placeholder="Property Address" required />
             <Textarea placeholder="Tell us about your requirements" required />
             <Button type="submit" className="w-full">Submit Quote Request</Button>
           </form>
