@@ -1,6 +1,7 @@
 import { Shield, Thermometer, VolumeX } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -43,6 +44,14 @@ export const Services = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">{service.description}</p>
+                {service.title === "Noise Reduction" && (
+                  <Link 
+                    to="/specialized/noise-reduction" 
+                    className="block mt-4 text-primary hover:underline"
+                  >
+                    Noise Reduction Calculator
+                  </Link>
+                )}
               </CardContent>
             </Card>
           ))}
