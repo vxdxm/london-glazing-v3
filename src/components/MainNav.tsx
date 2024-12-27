@@ -84,15 +84,6 @@ export function MainNav() {
   return (
     <NavigationMenu className="w-full">
       <NavigationMenuList className="hidden md:flex md:space-x-4 w-full justify-center items-center">
-        <NavigationMenuItem className="mr-auto">
-          <Link to="/">
-            <img 
-              src="/lovable-uploads/bf1bde82-2bff-48bc-9ccb-82ac28cacb6a.png" 
-              alt="Secondary Glazing Specialist" 
-              className="h-16 w-auto" 
-            />
-          </Link>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
             Home
