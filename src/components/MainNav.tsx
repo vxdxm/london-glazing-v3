@@ -83,7 +83,7 @@ export function MainNav() {
 
   return (
     <NavigationMenu className="w-full">
-      <NavigationMenuList className="hidden md:flex md:space-x-4 w-full justify-center items-center">
+      <NavigationMenuList className="hidden md:flex md:space-x-4 w-full justify-center">
         <NavigationMenuItem>
           <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
             Home
@@ -126,7 +126,7 @@ export function MainNav() {
             </NavigationMenuContent>
           </NavigationMenuItem>
         ))}
-        <NavigationMenuItem className="ml-auto">
+        <NavigationMenuItem>
           <Button
             onClick={() => handleNavigation("/quote-request")}
             className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
