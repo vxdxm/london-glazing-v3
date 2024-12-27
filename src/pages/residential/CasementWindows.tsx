@@ -1,206 +1,27 @@
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useNavigate } from "react-router-dom";
 import GlassOptions from "@/components/residential/GlassOptions";
+import Hero from "@/components/casement/Hero";
+import Overview from "@/components/casement/Overview";
+import Benefits from "@/components/casement/Benefits";
+import Specifications from "@/components/casement/Specifications";
+import Installation from "@/components/casement/Installation";
+import Maintenance from "@/components/casement/Maintenance";
+import Solutions from "@/components/casement/Solutions";
 
 const CasementWindows = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <article className="prose lg:prose-xl max-w-none">
-          <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-8">Casement Secondary Glazing Windows: Complete Guide</h1>
-              <p className="text-gray-700 mb-4">
-                Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
-              </p>
-            </div>
-            <div className="flex-1">
-              <img 
-                src="/lovable-uploads/3ac41e6a-bf47-4217-bb87-49b8ac430f5a.png"
-                alt="Modern casement window with secondary glazing"
-                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-              />
-            </div>
-          </div>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">What Are Casement Secondary Glazing Windows?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1600607686527-6fb886090705"
-                alt="Casement window installation"
-                className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-              />
-              <p className="text-gray-700">
-                Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
-              </p>
-            </div>
-          </section>
-
+          <Hero />
+          <Overview />
           <GlassOptions />
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Benefits of Casement Secondary Glazing</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Enhanced Thermal Insulation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-                      alt="Thermal insulation demonstration"
-                      className="rounded-lg w-full h-[200px] object-cover mb-4"
-                    />
-                    <p className="text-gray-700">
-                      Significantly reduces heat loss through windows, potentially cutting energy bills by up to 40%. Creates an effective thermal barrier between your interior and exterior environments.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardHeader>
-                  <CardTitle>Superior Noise Reduction</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-                      alt="Noise reduction visualization"
-                      className="rounded-lg w-full h-[200px] object-cover mb-4"
-                    />
-                    <p className="text-gray-700">
-                      Reduces external noise by up to 80% when properly installed. Ideal for properties in high-traffic areas or near noise sources.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Enhanced Security</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    Adds an extra layer of security to your windows. Features robust locking mechanisms and toughened glass options for increased protection.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Heritage Compliance</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    Perfect for listed buildings and conservation areas where maintaining original windows is essential. Preserves historical character while improving performance.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Technical Specifications</h2>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-medium">Frame Materials</h3>
-              <ul className="list-disc pl-6 mb-6">
-                <li>Slim aluminum profiles (standard)</li>
-                <li>Powder-coated finish in any RAL color</li>
-                <li>Anodized options available</li>
-                <li>Corrosion-resistant materials throughout</li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Installation Process</h2>
-            <div className="space-y-4">
-              <p className="text-gray-700">
-                Our professional installation process ensures optimal performance:
-              </p>
-              <ol className="list-decimal pl-6">
-                <li>Initial survey and measurement</li>
-                <li>Custom manufacturing to exact specifications</li>
-                <li>Professional installation by certified technicians</li>
-                <li>Quality assurance check and demonstration</li>
-                <li>Aftercare support and maintenance guidance</li>
-              </ol>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Maintenance and Care</h2>
-            <p className="text-gray-700 mb-4">
-              Secondary glazing requires minimal maintenance:
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Regular cleaning with standard glass cleaner</li>
-              <li>Annual check of hinges and mechanisms</li>
-              <li>Periodic lubrication of moving parts</li>
-              <li>Inspection of seals and gaskets</li>
-            </ul>
-          </section>
-
-          <div className="mt-12 space-y-4">
-            <h2 className="text-3xl font-semibold mb-6">Explore Our Casement Window Solutions</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card 
-                className="hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => navigate("/residential/casement-windows/modern-solutions")}
-              >
-                <CardHeader>
-                  <div className="w-full h-48 overflow-hidden rounded-t-lg">
-                    <img 
-                      src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b"
-                      alt="Modern solutions"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardTitle>Modern Solutions</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    Discover our contemporary secondary glazing options for modern properties.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card 
-                className="hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => navigate("/residential/casement-windows/traditional-options")}
-              >
-                <CardHeader>
-                  <CardTitle>Traditional Options</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    Explore our heritage-friendly solutions for period properties.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card 
-                className="hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => navigate("/residential/casement-windows/energy-efficiency")}
-              >
-                <CardHeader>
-                  <CardTitle>Energy Efficiency</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    Learn about our energy-saving secondary glazing solutions.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+          <Benefits />
+          <Specifications />
+          <Installation />
+          <Maintenance />
+          <Solutions />
         </article>
       </div>
     </div>
