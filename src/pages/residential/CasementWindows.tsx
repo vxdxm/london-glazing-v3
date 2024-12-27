@@ -20,8 +20,8 @@ const CasementWindows = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                alt="Modern casement window example"
+                src="/lovable-uploads/3ac41e6a-bf47-4217-bb87-49b8ac430f5a.png"
+                alt="Modern casement window with secondary glazing"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>
