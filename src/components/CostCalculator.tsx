@@ -8,8 +8,10 @@ import { useToast } from "@/components/ui/use-toast";
 
 const CostCalculator = () => {
   const { toast } = useToast();
-  const [windowArea, setWindowArea] = useState<number>(10);
+  const [numberOfWindows, setNumberOfWindows] = useState<number>(4);
   const [currentBill, setCurrentBill] = useState<string>('');
+  const [internalTemp, setInternalTemp] = useState<string>('21');
+  const [costPerKwh, setCostPerKwh] = useState<string>('0.34');
   const [savings, setSavings] = useState<number | null>(null);
 
   // Average energy loss reduction from secondary glazing (20-30%)
@@ -18,7 +20,12 @@ const CostCalculator = () => {
   const windowHeatLossFactor = 0.275;
 
   const calculateSavings = () => {
-    console.log('Calculating savings with current bill:', currentBill);
+    console.log('Calculating savings with:', {
+      numberOfWindows,
+      currentBill,
+      internalTemp,
+      costPerKwh
+    });
     
     if (!currentBill || isNaN(Number(currentBill))) {
       toast({
@@ -28,8 +35,28 @@ const CostCalculator = () => {
       return;
     }
 
+    if (!costPerKwh || isNaN(Number(costPerKwh))) {
+      toast({
+        title: "Please enter a valid cost per kWh",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (!internalTemp || isNaN(Number(internalTemp))) {
+      toast({
+        title: "Please enter a valid internal temperature",
+        variant: "destructive",
+      });
+      return;
+    }
+
     const annualBill = Number(currentBill);
-    const estimatedSavings = annualBill * windowHeatLossFactor * energyReductionFactor;
+    // Adjust savings calculation based on number of windows and temperature
+    const tempFactor = Number(internalTemp) / 20; // baseline at 20°C
+    const windowsFactor = numberOfWindows / 4; // baseline at 4 windows
+    const estimatedSavings = annualBill * windowHeatLossFactor * energyReductionFactor * tempFactor * windowsFactor;
+    
     console.log('Estimated annual savings:', estimatedSavings);
     
     setSavings(Math.round(estimatedSavings));
@@ -49,21 +76,44 @@ const CostCalculator = () => {
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="space-y-2">
-          <Label htmlFor="windowArea">Total Window Area (m²)</Label>
+          <Label htmlFor="numberOfWindows">Number of Windows</Label>
           <div className="space-y-4">
             <Slider
-              id="windowArea"
+              id="numberOfWindows"
               min={1}
-              max={50}
+              max={20}
               step={1}
-              value={[windowArea]}
-              onValueChange={(value) => setWindowArea(value[0])}
+              value={[numberOfWindows]}
+              onValueChange={(value) => setNumberOfWindows(value[0])}
               className="w-full"
             />
             <div className="text-center text-sm text-muted-foreground">
-              {windowArea} m²
+              {numberOfWindows} windows
             </div>
           </div>
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="internalTemp">Internal Temperature (°C)</Label>
+          <Input
+            id="internalTemp"
+            type="number"
+            placeholder="Enter internal temperature"
+            value={internalTemp}
+            onChange={(e) => setInternalTemp(e.target.value)}
+          />
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="costPerKwh">Cost per kWh (£)</Label>
+          <Input
+            id="costPerKwh"
+            type="number"
+            step="0.01"
+            placeholder="Enter cost per kWh"
+            value={costPerKwh}
+            onChange={(e) => setCostPerKwh(e.target.value)}
+          />
         </div>
 
         <div className="space-y-2">
