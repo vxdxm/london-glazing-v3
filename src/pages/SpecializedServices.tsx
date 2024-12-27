@@ -17,6 +17,11 @@ const specializedServices = [
     description: "Additional protection for your property",
     details: "Enhance your property's security with our reinforced secondary glazing options, providing peace of mind without compromising on style.",
   },
+  {
+    title: "Condensation Control",
+    description: "Effective moisture management solutions",
+    details: "Our specialized secondary glazing systems help prevent condensation by creating an additional barrier that regulates temperature differences between indoor and outdoor environments.",
+  }
 ];
 
 const SpecializedServices = () => {
