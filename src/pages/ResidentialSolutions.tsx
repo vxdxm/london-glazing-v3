@@ -17,6 +17,21 @@ const residentialServices = [
     description: "Specialized solutions for bay window configurations",
     details: "Expertly designed secondary glazing systems that follow the contours of your bay windows, maintaining their aesthetic appeal while improving insulation.",
   },
+  {
+    title: "Horizontal Sliding",
+    description: "Perfect for wide window openings",
+    details: "Smooth-operating horizontal sliding panels that provide easy access to primary windows. Ideal for large windows and offering excellent ventilation options.",
+  },
+  {
+    title: "Lift Out",
+    description: "Simple and practical solution",
+    details: "Removable panels that can be completely lifted out for easy cleaning and maintenance. Perfect for windows that require occasional full access.",
+  },
+  {
+    title: "Combination",
+    description: "Versatile mixed-style solutions",
+    details: "Combining different opening styles in one unit to meet specific requirements. Ideal for unique window configurations or when different functionalities are needed.",
+  },
 ];
 
 const ResidentialSolutions = () => {
