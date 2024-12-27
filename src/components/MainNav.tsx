@@ -89,7 +89,7 @@ export function MainNav() {
             <img 
               src="/lovable-uploads/bf1bde82-2bff-48bc-9ccb-82ac28cacb6a.png" 
               alt="Secondary Glazing Specialist" 
-              className="h-12 w-auto"
+              className="h-16 w-auto" 
             />
           </Link>
         </NavigationMenuItem>
