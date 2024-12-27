@@ -72,6 +72,11 @@ const glazingOptions = [
         description: "Additional protection for your property",
         path: "/specialized/security-glazing",
       },
+      {
+        title: "Noise Reduction Solutions",
+        description: "Explore our range of noise reduction glass options",
+        path: "/specialized/noise-reduction",
+      },
     ],
   },
 ];
