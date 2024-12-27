@@ -20,6 +20,11 @@ import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
 import SecurityGlazing from "./pages/specialized/SecurityGlazing";
 import NoiseReduction from "./pages/specialized/NoiseReduction";
+import EntryLevelGlass from "./pages/specialized/glass/EntryLevelGlass";
+import EnhancedEntryGlass from "./pages/specialized/glass/EnhancedEntryGlass";
+import MediumPerformanceGlass from "./pages/specialized/glass/MediumPerformanceGlass";
+import HighPerformanceGlass from "./pages/specialized/glass/HighPerformanceGlass";
+import PremiumGlass from "./pages/specialized/glass/PremiumGlass";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 
@@ -51,6 +56,11 @@ const App = () => (
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
+          <Route path="/specialized/glass/entry-level" element={<EntryLevelGlass />} />
+          <Route path="/specialized/glass/enhanced-entry" element={<EnhancedEntryGlass />} />
+          <Route path="/specialized/glass/medium-performance" element={<MediumPerformanceGlass />} />
+          <Route path="/specialized/glass/high-performance" element={<HighPerformanceGlass />} />
+          <Route path="/specialized/glass/premium" element={<PremiumGlass />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
