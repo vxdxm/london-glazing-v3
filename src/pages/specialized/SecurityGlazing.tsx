@@ -2,6 +2,7 @@ import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
+import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
 
 const SecurityGlazing = () => {
   return (
@@ -11,25 +12,7 @@ const SecurityGlazing = () => {
         <h1 className="text-4xl font-bold mb-8">Security Glazing Solutions</h1>
         
         <div className="mb-12">
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-full mb-4">
-                <AspectRatio ratio={16 / 9}>
-                  <img
-                    src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5"
-                    alt="Security glazing installation"
-                    className="rounded-lg object-cover w-full h-full"
-                  />
-                </AspectRatio>
-              </div>
-              <CardTitle>Enhanced Security Features</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 mb-6">
-                Secondary glazing provides an additional physical barrier to your windows, significantly enhancing security through multiple protective features and robust materials.
-              </p>
-            </CardContent>
-          </Card>
+          <SecurityBreakInCalculator />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
