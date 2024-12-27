@@ -1,26 +1,31 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const specializedServices = [
   {
     title: "Acoustic Glazing",
     description: "Maximum noise reduction for urban properties",
     details: "Our acoustic glazing solutions can reduce external noise by up to 80%, creating peaceful environments in even the busiest locations.",
+    image: "https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
   },
   {
     title: "Thermal Insulation",
     description: "Enhanced energy efficiency solutions",
     details: "Significantly reduce heat loss and lower energy bills with our advanced thermal insulation secondary glazing systems.",
+    image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833"
   },
   {
     title: "Security Glazing",
     description: "Additional protection for your property",
     details: "Enhance your property's security with our reinforced secondary glazing options, providing peace of mind without compromising on style.",
+    image: "https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
   },
   {
     title: "Condensation Control",
     description: "Effective moisture management solutions",
     details: "Our specialized secondary glazing systems help prevent condensation by creating an additional barrier that regulates temperature differences between indoor and outdoor environments.",
+    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
   }
 ];
 
@@ -30,9 +35,18 @@ const SpecializedServices = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Specialized Services</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {specializedServices.map((service) => (
-            <Card key={service.title} className="hover:shadow-lg transition-shadow">
+            <Card key={service.title} className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="w-full h-48 relative">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
               <CardHeader>
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
