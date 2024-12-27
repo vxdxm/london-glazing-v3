@@ -1,18 +1,13 @@
 import { MainNav } from "@/components/MainNav";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { X } from "lucide-react";
+import WindowTypeSelect from "@/components/quote/WindowTypeSelect";
+import WindowDimensions from "@/components/quote/WindowDimensions";
+import ContactDetails from "@/components/quote/ContactDetails";
+import ImageUpload from "@/components/quote/ImageUpload";
 
 const QuoteRequest = () => {
   const { toast } = useToast();
@@ -58,30 +53,7 @@ const QuoteRequest = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted with data:", {
-      windowType,
-      dimensions,
-      firstName,
-      lastName,
-      email,
-      phone,
-      additionalRequirements,
-      images: images.map(img => img.name)
-    });
-
-    // Convert images to base64 strings for email attachment
-    const imagePromises = images.map(file => {
-      return new Promise<string>((resolve) => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          resolve(reader.result as string);
-        };
-        reader.readAsDataURL(file);
-      });
-    });
-
-    const base64Images = await Promise.all(imagePromises);
-
+    
     // Prepare email content
     const subject = "New Quote Request";
     const body = `
@@ -97,13 +69,7 @@ Additional Requirements: ${additionalRequirements}
 Images attached: ${images.map(img => img.name).join(', ')}
     `;
 
-    // Create form data for sending
-    const formData = new FormData();
-    images.forEach((file, index) => {
-      formData.append(`image${index}`, file);
-    });
-
-    // Open default email client with attachments
+    // Open default email client
     window.location.href = `mailto:info@secondaryglazingspecialist.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     toast({
@@ -120,97 +86,35 @@ Images attached: ${images.map(img => img.name).join(', ')}
         <div className="max-w-xl mx-auto">
           <h1 className="text-3xl font-bold text-center mb-8">Request a Free Quote</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium mb-2">Window Type</label>
-              <Select onValueChange={setWindowType} required>
-                <SelectTrigger className="hover:bg-white hover:bg-opacity-100">
-                  <SelectValue placeholder="Select window type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="sash">Sash Windows</SelectItem>
-                  <SelectItem value="casement">Casement Windows</SelectItem>
-                  <SelectItem value="bay">Bay Windows</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
+            <WindowTypeSelect onValueChange={setWindowType} />
             
             <div>
               <label className="block text-sm font-medium mb-2">Number of Windows</label>
-              <Input 
+              <input 
                 type="number" 
                 min="1" 
                 value={numberOfWindows}
                 onChange={handleNumberOfWindowsChange}
                 required 
+                className="w-full rounded-md border border-input bg-background px-3 py-2"
               />
             </div>
 
-            {dimensions.map((dim, index) => (
-              <div key={index} className="space-y-4">
-                <h3 className="font-medium">Window {index + 1} Dimensions</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Width (mm)</label>
-                    <Input
-                      type="number"
-                      placeholder="Width"
-                      value={dim.width}
-                      onChange={(e) => handleDimensionChange(index, 'width', e.target.value)}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Height (mm)</label>
-                    <Input
-                      type="number"
-                      placeholder="Height"
-                      value={dim.height}
-                      onChange={(e) => handleDimensionChange(index, 'height', e.target.value)}
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
+            <WindowDimensions 
+              dimensions={dimensions}
+              onDimensionChange={handleDimensionChange}
+            />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium mb-2">First Name</label>
-                <Input 
-                  required
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-2">Last Name</label>
-                <Input 
-                  required
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <Input 
-                type="email" 
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium mb-2">Phone</label>
-              <Input 
-                type="tel" 
-                required
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-            </div>
+            <ContactDetails 
+              firstName={firstName}
+              lastName={lastName}
+              email={email}
+              phone={phone}
+              onFirstNameChange={setFirstName}
+              onLastNameChange={setLastName}
+              onEmailChange={setEmail}
+              onPhoneChange={setPhone}
+            />
 
             <div>
               <label className="block text-sm font-medium mb-2">Additional Requirements</label>
@@ -221,36 +125,11 @@ Images attached: ${images.map(img => img.name).join(', ')}
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium mb-2">Upload Images (Max 5)</label>
-              <Input
-                type="file"
-                accept="image/*"
-                multiple
-                onChange={handleImageUpload}
-                className="mb-2"
-              />
-              {images.length > 0 && (
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                  {images.map((image, index) => (
-                    <div key={index} className="relative group">
-                      <img
-                        src={URL.createObjectURL(image)}
-                        alt={`Upload ${index + 1}`}
-                        className="w-full h-24 object-cover rounded-md"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => removeImage(index)}
-                        className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                      >
-                        <X className="h-4 w-4" />
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <ImageUpload 
+              images={images}
+              onImageUpload={handleImageUpload}
+              onRemoveImage={removeImage}
+            />
 
             <Button type="submit" className="w-full">Submit Quote Request</Button>
           </form>
