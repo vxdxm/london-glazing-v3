@@ -60,6 +60,14 @@ export const Services = () => {
                     Thermal Insulation Calculator
                   </Link>
                 )}
+                {service.title === "Security Enhancement" && (
+                  <Link 
+                    to="/specialized/security-glazing" 
+                    className="block mt-4 text-primary hover:underline"
+                  >
+                    Security Break-in Resistance Calculator
+                  </Link>
+                )}
               </CardContent>
             </Card>
           ))}
