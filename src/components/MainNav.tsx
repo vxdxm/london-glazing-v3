@@ -20,6 +20,9 @@ const glazingOptions = [
       { title: "Sash Windows", href: "/residential/sash-windows", description: "Traditional sash window solutions." },
       { title: "Casement Windows", href: "/residential/casement-windows", description: "Modern casement window options." },
       { title: "Bay Windows", href: "/residential/bay-windows", description: "Beautiful bay window installations." },
+      { title: "Horizontal Sliding", href: "/residential/horizontal-sliding", description: "Smooth-operating horizontal sliding solutions." },
+      { title: "Lift Out", href: "/residential/lift-out", description: "Removable panels for easy maintenance." },
+      { title: "Combination", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
     ],
   },
   {
