@@ -42,32 +42,36 @@ const glassTypes = [
 
 const doubleGlazedOptions = [
   {
-    configuration: "4-12-4mm",
+    configuration: "6.4-7.2-6.4mm",
     totalThickness: "20mm",
-    description: "Standard double glazed unit with 12mm air gap",
-    noiseReduction: "Up to 31dB",
-    recommended: "Residential areas with moderate noise levels"
-  },
-  {
-    configuration: "6-8-6mm",
-    totalThickness: "20mm",
-    description: "Balanced double glazed unit with thicker glass panes",
-    noiseReduction: "Up to 33dB",
-    recommended: "Urban residential areas"
-  },
-  {
-    configuration: "8-6-6mm",
-    totalThickness: "20mm",
-    description: "Asymmetric double glazed unit for enhanced acoustics",
+    description: "Entry-level double glazed unit with argon gas-filled cavity",
     noiseReduction: "Up to 35dB",
-    recommended: "Properties near busy roads"
+    recommended: "Residential areas with moderate noise levels",
+    features: "Argon gas-filled 7.2mm cavity"
   },
   {
-    configuration: "10-4-6mm",
+    configuration: "6.4-7.2-6.8mm",
     totalThickness: "20mm",
-    description: "High-performance asymmetric configuration",
+    description: "Enhanced double glazed unit with argon gas-filled cavity and acoustic laminate",
     noiseReduction: "Up to 37dB",
-    recommended: "City centers and high-traffic areas"
+    recommended: "Urban residential areas",
+    features: "Argon gas-filled 7.2mm cavity, acoustic laminate outer pane"
+  },
+  {
+    configuration: "6.8-6.4-6.8mm",
+    totalThickness: "20mm",
+    description: "Premium double glazed unit with argon gas-filled cavity and dual acoustic laminates",
+    noiseReduction: "Up to 39dB",
+    recommended: "Properties near busy roads",
+    features: "Argon gas-filled 6.4mm cavity, dual acoustic laminate panes"
+  },
+  {
+    configuration: "6.8-6.8-6.4mm",
+    totalThickness: "20mm",
+    description: "High-performance asymmetric configuration with argon gas-filled cavity",
+    noiseReduction: "Up to 41dB",
+    recommended: "City centers and high-traffic areas",
+    features: "Argon gas-filled 6.8mm cavity, optimized asymmetric design"
   }
 ];
 
@@ -126,6 +130,7 @@ const NoiseReduction = () => {
                   <p><strong>Total Thickness:</strong> {option.totalThickness}</p>
                   <p><strong>Noise Reduction:</strong> {option.noiseReduction}</p>
                   <p><strong>Recommended for:</strong> {option.recommended}</p>
+                  <p><strong>Features:</strong> {option.features}</p>
                 </div>
               </CardContent>
             </Card>
