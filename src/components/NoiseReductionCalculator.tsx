@@ -20,6 +20,7 @@ const NoiseReductionCalculator = () => {
   // Additional reduction based on secondary glazing type
   const glassTypeReduction = {
     standard: 5,    // 4mm standard glass
+    entry: 7,       // 6.4mm entry-level glass
     enhanced: 8,    // 6.8mm enhanced entry glass
     medium: 10,     // 8.8mm medium performance glass
     high: 13,       // 10.8mm high performance glass
@@ -84,6 +85,10 @@ const NoiseReductionCalculator = () => {
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="standard" id="standard" />
               <Label htmlFor="standard">Standard (4mm - Basic noise reduction)</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="entry" id="entry" />
+              <Label htmlFor="entry">Entry Level (6.4mm - Basic+ noise reduction)</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="enhanced" id="enhanced" />
