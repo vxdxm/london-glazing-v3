@@ -7,24 +7,23 @@ const BayWindows = () => {
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <article className="prose lg:prose-xl max-w-none">
-          <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
-            <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-8">Bay Window Secondary Glazing: Complete Guide</h1>
-              <p className="text-gray-700 mb-4">
-                Our bay window secondary glazing solutions are expertly designed to follow the contours 
-                of your existing bay windows, preserving their architectural beauty while significantly 
-                improving thermal and acoustic performance.
-              </p>
-            </div>
-            <div className="flex-1">
-              <img 
-                src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
-                alt="Elegant bay window installation"
-                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-              />
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div>
+            <h1 className="text-4xl font-bold mb-4">Bay Window Secondary Glazing: Complete Guide</h1>
+            <p className="text-gray-700 mb-6">
+              Our bay window secondary glazing solutions are expertly designed to follow the contours 
+              of your existing bay windows, preserving their architectural beauty while significantly 
+              improving thermal and acoustic performance.
+            </p>
           </div>
+          <div>
+            <img 
+              src="/lovable-uploads/345746c8-d997-44ec-846e-2dc7f24754ea.png"
+              alt="Elegant bay window installation"
+              className="rounded-lg w-full h-[300px] object-cover"
+            />
+          </div>
+        </div>
 
           <section className="mb-12">
             <h2 className="text-3xl font-semibold mb-6">Bay Window Styles</h2>
@@ -130,7 +129,6 @@ const BayWindows = () => {
           </section>
 
           <GlassOptions />
-        </article>
       </div>
     </div>
   );
