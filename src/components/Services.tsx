@@ -52,6 +52,14 @@ export const Services = () => {
                     Noise Reduction Calculator
                   </Link>
                 )}
+                {service.title === "Thermal Insulation" && (
+                  <Link 
+                    to="/specialized/thermal-insulation" 
+                    className="block mt-4 text-primary hover:underline"
+                  >
+                    Thermal Insulation Calculator
+                  </Link>
+                )}
               </CardContent>
             </Card>
           ))}
