@@ -4,11 +4,17 @@ import SashWindowGlassOptions from "@/components/residential/SashWindowGlassOpti
 import { useState } from "react";
 
 const SashWindows = () => {
-  const [imageError, setImageError] = useState(false);
+  const [standardImageError, setStandardImageError] = useState(false);
+  const [tiltInImageError, setTiltInImageError] = useState(false);
 
-  const handleImageError = () => {
-    console.error("Image failed to load");
-    setImageError(true);
+  const handleStandardImageError = () => {
+    console.error("Standard sliding image failed to load");
+    setStandardImageError(true);
+  };
+
+  const handleTiltInImageError = () => {
+    console.error("Tilt-in image failed to load");
+    setTiltInImageError(true);
   };
 
   return (
@@ -44,10 +50,10 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src={imageError ? "/placeholder.svg" : "/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"}
+                      src={standardImageError ? "/placeholder.svg" : "/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"}
                       alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
-                      onError={handleImageError}
+                      onError={handleStandardImageError}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -83,10 +89,10 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src={imageError ? "/placeholder.svg" : "/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"}
+                      src={tiltInImageError ? "/placeholder.svg" : "/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"}
                       alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
-                      onError={handleImageError}
+                      onError={handleTiltInImageError}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -112,56 +118,6 @@ const SashWindows = () => {
                       </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Performance Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Thermal Efficiency</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>Up to 65% reduction in heat loss</li>
-                    <li>Significant decrease in energy bills</li>
-                    <li>Enhanced comfort in all seasons</li>
-                    <li>Reduced carbon footprint</li>
-                    <li>Meets modern building regulations</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Noise Reduction</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>Up to 80% noise reduction</li>
-                    <li>Ideal for urban environments</li>
-                    <li>Perfect for properties near transport links</li>
-                    <li>Enhanced sleep quality</li>
-                    <li>Improved living environment</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Security Features</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc pl-4 space-y-2">
-                    <li>Additional physical barrier</li>
-                    <li>High-security locking mechanisms</li>
-                    <li>Toughened safety glass options</li>
-                    <li>Child safety features</li>
-                    <li>Insurance-approved specifications</li>
-                  </ul>
                 </CardContent>
               </Card>
             </div>
