@@ -1,8 +1,16 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SashWindowGlassOptions from "@/components/residential/SashWindowGlassOptions";
+import { useState } from "react";
 
 const SashWindows = () => {
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    console.error("Image failed to load");
+    setImageError(true);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
@@ -36,9 +44,10 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"
+                      src={imageError ? "/placeholder.svg" : "/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"}
                       alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
+                      onError={handleImageError}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -74,9 +83,10 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"
+                      src={imageError ? "/placeholder.svg" : "/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"}
                       alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
+                      onError={handleImageError}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
