@@ -10,26 +10,7 @@ import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
 import OfficeBuildings from "./pages/commercial/OfficeBuildings";
 import RetailSpaces from "./pages/commercial/RetailSpaces";
-import ListedBuildings from "./pages/commercial/ListedBuildings";
-import SashWindows from "./pages/residential/SashWindows";
-import CasementWindows from "./pages/residential/CasementWindows";
-import ModernSolutions from "./pages/residential/ModernSolutions";
-import TraditionalOptions from "./pages/residential/TraditionalOptions";
-import EnergyEfficiency from "./pages/residential/EnergyEfficiency";
-import BayWindows from "./pages/residential/BayWindows";
-import HorizontalSliding from "./pages/residential/HorizontalSliding";
-import LiftOut from "./pages/residential/LiftOut";
-import Combination from "./pages/residential/Combination";
-import AcousticGlazing from "./pages/specialized/AcousticGlazing";
-import ThermalInsulation from "./pages/specialized/ThermalInsulation";
-import SecurityGlazing from "./pages/specialized/SecurityGlazing";
-import NoiseReduction from "./pages/specialized/NoiseReduction";
-import CondensationControl from "./pages/specialized/CondensationControl";
-import EntryLevelGlass from "./pages/specialized/glass/EntryLevelGlass";
-import EnhancedEntryGlass from "./pages/specialized/glass/EnhancedEntryGlass";
-import MediumPerformanceGlass from "./pages/specialized/glass/MediumPerformanceGlass";
-import HighPerformanceGlass from "./pages/specialized/glass/HighPerformanceGlass";
-import PremiumGlass from "./pages/specialized/glass/PremiumGlass";
+import HospitalityIndustry from "./pages/commercial/HospitalityIndustry";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQs";
@@ -52,26 +33,7 @@ const App = () => (
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
           <Route path="/commercial/retail-spaces" element={<RetailSpaces />} />
-          <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
-          <Route path="/residential/sash-windows" element={<SashWindows />} />
-          <Route path="/residential/casement-windows" element={<CasementWindows />} />
-          <Route path="/residential/casement-windows/modern-solutions" element={<ModernSolutions />} />
-          <Route path="/residential/casement-windows/traditional-options" element={<TraditionalOptions />} />
-          <Route path="/residential/casement-windows/energy-efficiency" element={<EnergyEfficiency />} />
-          <Route path="/residential/bay-windows" element={<BayWindows />} />
-          <Route path="/residential/horizontal-sliding" element={<HorizontalSliding />} />
-          <Route path="/residential/lift-out" element={<LiftOut />} />
-          <Route path="/residential/combination" element={<Combination />} />
-          <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
-          <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
-          <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
-          <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
-          <Route path="/specialized/condensation-control" element={<CondensationControl />} />
-          <Route path="/specialized/glass/entry-level" element={<EntryLevelGlass />} />
-          <Route path="/specialized/glass/enhanced-entry" element={<EnhancedEntryGlass />} />
-          <Route path="/specialized/glass/medium-performance" element={<MediumPerformanceGlass />} />
-          <Route path="/specialized/glass/high-performance" element={<HighPerformanceGlass />} />
-          <Route path="/specialized/glass/premium" element={<PremiumGlass />} />
+          <Route path="/commercial/hospitality-industry" element={<HospitalityIndustry />} />
         </Routes>
         <WhatsAppButton />
       </BrowserRouter>
