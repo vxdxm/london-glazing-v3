@@ -78,17 +78,29 @@ const SashWindows = () => {
                       alt="Tilt-in sash window demonstration"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
-                    <p className="text-gray-700">
-                      Our innovative tilt-in secondary glazing system allows easy access for cleaning and maintenance.
-                      The panels can be tilted inwards at a 90-degree angle, making it perfect for high-rise buildings
-                      or windows that are difficult to access from the outside.
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2">
-                      <li>Safe and secure cleaning from inside</li>
-                      <li>Perfect for high-rise applications</li>
-                      <li>Easy maintenance access</li>
-                      <li>Enhanced safety features</li>
-                    </ul>
+                    <div className="text-gray-700 space-y-4">
+                      <p>
+                        Our innovative tilt-in secondary glazing system combines traditional aesthetics with modern convenience,
+                        offering exceptional accessibility for cleaning and maintenance. Key features include:
+                      </p>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li>90-degree tilt-in functionality for safe and easy cleaning from inside</li>
+                        <li>Advanced safety mechanisms to prevent accidental release</li>
+                        <li>Suitable for high-rise applications where external access is challenging</li>
+                        <li>Integrated child safety locks</li>
+                        <li>Weather-resistant seals for superior draught protection</li>
+                      </ul>
+                      <p>
+                        The tilt-in mechanism is particularly valuable for upper-floor installations where external cleaning
+                        would be difficult or dangerous. The system maintains all the thermal and acoustic benefits of our
+                        standard vertical sliding units while adding unprecedented accessibility.
+                      </p>
+                      <p>
+                        Each unit is custom-manufactured to your exact specifications, ensuring perfect fit and operation.
+                        Our expert installation team will demonstrate the safe operation of the tilt-in mechanism and provide
+                        comprehensive care instructions.
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -96,79 +108,56 @@ const SashWindows = () => {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Understanding Sash Window Secondary Glazing</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
-                alt="Sash window installation"
-                className="rounded-lg shadow-lg w-full h-[300px] object-cover"
-              />
-              <p className="text-gray-700">
-                Secondary glazing for sash windows involves installing an additional window on the room-side 
-                of your existing sash windows. This creates an insulating barrier of air that significantly 
-                improves thermal and acoustic performance while maintaining the original character of your windows.
-              </p>
-            </div>
-          </section>
-
-          <SashWindowGlassOptions />
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Key Benefits</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Heritage Preservation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
-                      alt="Heritage building with sash windows"
-                      className="rounded-lg w-full h-[200px] object-cover mb-4"
-                    />
-                    <p className="text-gray-700">
-                      Perfect for listed buildings and conservation areas. Preserves historical character 
-                      while improving performance and comfort.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              
+            <h2 className="text-3xl font-semibold mb-6">Performance Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card>
                 <CardHeader>
                   <CardTitle>Thermal Efficiency</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"
-                      alt="Modern thermal efficiency demonstration"
-                      className="rounded-lg w-full h-[200px] object-cover mb-4"
-                    />
-                    <p className="text-gray-700">
-                      Significantly reduces heat loss through windows, potentially cutting energy bills 
-                      by up to 40%.
-                    </p>
-                  </div>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>Up to 65% reduction in heat loss</li>
+                    <li>Significant decrease in energy bills</li>
+                    <li>Enhanced comfort in all seasons</li>
+                    <li>Reduced carbon footprint</li>
+                    <li>Meets modern building regulations</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Noise Reduction</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>Up to 80% noise reduction</li>
+                    <li>Ideal for urban environments</li>
+                    <li>Perfect for properties near transport links</li>
+                    <li>Enhanced sleep quality</li>
+                    <li>Improved living environment</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Security Features</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc pl-4 space-y-2">
+                    <li>Additional physical barrier</li>
+                    <li>High-security locking mechanisms</li>
+                    <li>Toughened safety glass options</li>
+                    <li>Child safety features</li>
+                    <li>Insurance-approved specifications</li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">Installation Process</h2>
-            <div className="space-y-4">
-              <p className="text-gray-700">Our professional installation process ensures optimal performance:</p>
-              <ol className="list-decimal pl-6">
-                <li>Initial survey and measurement</li>
-                <li>Custom manufacturing to exact specifications</li>
-                <li>Professional installation by certified technicians</li>
-                <li>Quality assurance check and demonstration</li>
-                <li>Aftercare support and maintenance guidance</li>
-              </ol>
-            </div>
-          </section>
+          <SashWindowGlassOptions />
         </article>
       </div>
     </div>
