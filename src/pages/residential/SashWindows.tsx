@@ -50,8 +50,8 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src={standardImageError ? "/placeholder.svg" : "/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"}
-                      alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property"
+                      src={standardImageError ? "/placeholder.svg" : "/lovable-uploads/35ea6134-3501-45e1-9ac7-ed7d91680ad6.png"}
+                      alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property with grey walls and a chandelier"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                       onError={handleStandardImageError}
                     />
