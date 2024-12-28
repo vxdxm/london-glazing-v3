@@ -18,11 +18,11 @@ const commercialServices = [
     alt: "Contemporary retail building exterior"
   },
   {
-    title: "Hospitality Industry",
-    description: "Premium glazing solutions for hotels and restaurants",
-    details: "Enhance guest comfort with superior noise reduction and temperature control, perfect for hotels, restaurants, and leisure facilities.",
-    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-    alt: "Modern hotel building facade"
+    title: "Healthcare Industry",
+    description: "Premium glazing solutions for healthcare facilities",
+    details: "Create peaceful healing environments with superior noise reduction and temperature control, perfect for hospitals, clinics, and medical offices.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    alt: "Modern healthcare facility"
   },
 ];
 
