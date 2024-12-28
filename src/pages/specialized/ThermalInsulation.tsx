@@ -66,6 +66,51 @@ const ThermalInsulation = () => {
           </Card>
         </div>
 
+        {/* New Double Glazed Section */}
+        <div className="mt-16 mb-16">
+          <h2 className="text-3xl font-bold mb-8">Double Glazed Secondary Units</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold">Enhanced Thermal Performance</h3>
+              <p className="text-gray-700">
+                Our double glazed secondary glazing units offer superior thermal insulation by creating two separate air gaps:
+                one between your existing window and the first pane, and another between the two panes of the secondary unit.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Up to 40% better insulation than single glazed secondary units</li>
+                <li>Optimal 20mm gap between panes for maximum thermal efficiency</li>
+                <li>Argon gas filling option for enhanced performance</li>
+                <li>Low-E glass coating available for additional heat retention</li>
+              </ul>
+            </div>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle>Technical Specifications</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">Standard Configuration</h4>
+                    <ul className="list-disc list-inside text-gray-600">
+                      <li>4mm-12mm-4mm (20mm total)</li>
+                      <li>U-value: 1.2 W/m²K</li>
+                      <li>Sound reduction: up to 45dB</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Premium Configuration</h4>
+                    <ul className="list-disc list-inside text-gray-600">
+                      <li>6mm-8mm-6mm (20mm total)</li>
+                      <li>U-value: 1.0 W/m²K</li>
+                      <li>Sound reduction: up to 48dB</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-center mb-8">
             Calculate Your Potential Savings
