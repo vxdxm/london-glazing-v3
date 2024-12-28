@@ -36,8 +36,8 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
-                      alt="Vertical sliding sash window"
+                      src="/lovable-uploads/d15e206b-61cb-4bf1-8661-0e17e4372291.png"
+                      alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
                     <div className="text-gray-700 space-y-4">
