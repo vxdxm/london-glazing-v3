@@ -40,8 +40,8 @@ const Combination = () => {
                 <div className="space-y-4">
                   <div className="relative h-[200px] group">
                     <img 
-                      src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
-                      alt="Sash and horizontal sliding window combination showing multiple panes overlooking an autumn garden"
+                      src="/lovable-uploads/24f31eb7-edaf-4883-822d-52d29b470aad.png"
+                      alt="Sash and horizontal sliding window combination featuring a bay window with multiple panes overlooking a brick building"
                       className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
                     />
                   </div>
