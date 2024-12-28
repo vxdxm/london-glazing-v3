@@ -11,11 +11,11 @@ const commercialServices = [
     alt: "Modern office building with glass facade"
   },
   {
-    title: "Retail Spaces",
-    description: "Energy-efficient solutions for shops and stores",
-    details: "Maintain comfortable temperatures and reduce energy costs in your retail space while creating an inviting environment for customers.",
-    image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-    alt: "Contemporary retail building exterior"
+    title: "Hospitality Sector",
+    description: "Premium solutions for hotels and restaurants",
+    details: "Create comfortable and peaceful environments for your guests with our specialized hospitality glazing solutions.",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+    alt: "Luxury hotel exterior"
   },
   {
     title: "Healthcare Industry",

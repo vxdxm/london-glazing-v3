@@ -9,7 +9,7 @@ import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
 import OfficeBuildings from "./pages/commercial/OfficeBuildings";
-import RetailSpaces from "./pages/commercial/RetailSpaces";
+import HospitalitySector from "./pages/commercial/HospitalitySector";
 import HealthcareIndustry from "./pages/commercial/HealthcareIndustry";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/commercial" element={<CommercialSolutions />} />
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
-          <Route path="/commercial/retail-spaces" element={<RetailSpaces />} />
+          <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
           <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
         </Routes>
         <WhatsAppButton />
