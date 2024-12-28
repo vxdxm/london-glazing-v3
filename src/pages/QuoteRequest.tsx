@@ -23,9 +23,19 @@ const QuoteRequest = () => {
   const [images, setImages] = useState<File[]>([]);
 
   const handleNumberOfWindowsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const num = parseInt(e.target.value) || 1;
-    setNumberOfWindows(num);
-    setDimensions(Array(num).fill({ width: '', height: '' }));
+    const value = e.target.value;
+    // Allow empty string for deletion
+    if (value === '') {
+      setNumberOfWindows(0);
+      setDimensions([]);
+      return;
+    }
+    
+    const num = parseInt(value);
+    if (!isNaN(num) && num >= 0) {
+      setNumberOfWindows(num);
+      setDimensions(Array(num).fill({ width: '', height: '' }));
+    }
   };
 
   const handleDimensionChange = (index: number, field: 'width' | 'height', value: string) => {
@@ -92,11 +102,11 @@ Images attached: ${images.map(img => img.name).join(', ')}
               <label className="block text-sm font-medium mb-2">Number of Windows</label>
               <input 
                 type="number" 
-                min="1" 
-                value={numberOfWindows}
+                min="0"
+                value={numberOfWindows || ''}
                 onChange={handleNumberOfWindowsChange}
-                required 
                 className="w-full rounded-md border border-input bg-background px-3 py-2"
+                required 
               />
             </div>
 
