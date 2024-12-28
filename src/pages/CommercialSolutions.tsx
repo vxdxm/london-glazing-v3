@@ -24,6 +24,13 @@ const commercialServices = [
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     alt: "Modern healthcare facility"
   },
+  {
+    title: "Educational Sector",
+    description: "Specialized solutions for educational institutions",
+    details: "Create optimal learning environments with enhanced acoustic performance and natural light optimization for schools, universities, and research facilities.",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    alt: "Modern educational facility"
+  }
 ];
 
 const CommercialSolutions = () => {

@@ -20,6 +20,7 @@ export const glazingOptions = [
       { title: "Office Buildings", href: "/commercial/office-buildings", description: "Glazing solutions for office buildings." },
       { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Premium solutions for hotels and restaurants." },
       { title: "Healthcare Industry", href: "/commercial/healthcare-industry", description: "Premium solutions for healthcare facilities." },
+      { title: "Educational Sector", href: "/commercial/educational-sector", description: "Specialized solutions for educational institutions." },
     ],
   },
   {

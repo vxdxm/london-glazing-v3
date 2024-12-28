@@ -11,6 +11,7 @@ import SpecializedServices from "./pages/SpecializedServices";
 import OfficeBuildings from "./pages/commercial/OfficeBuildings";
 import HospitalitySector from "./pages/commercial/HospitalitySector";
 import HealthcareIndustry from "./pages/commercial/HealthcareIndustry";
+import EducationalSector from "./pages/commercial/EducationalSector";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQs";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
           <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
           <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
+          <Route path="/commercial/educational-sector" element={<EducationalSector />} />
         </Routes>
         <WhatsAppButton />
       </BrowserRouter>
