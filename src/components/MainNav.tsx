@@ -11,6 +11,8 @@ import { Button } from "./ui/button";
 import { ListItem } from "./navigation/ListItem";
 import { glazingOptions } from "./navigation/NavigationItems";
 import { useNavigation } from "./navigation/useNavigation";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 export function MainNav() {
   const {
@@ -21,8 +23,74 @@ export function MainNav() {
     openMenus,
   } = useNavigation();
 
+  const MobileNavItem = ({ to, children, onClick }: { to: string; children: React.ReactNode; onClick?: () => void }) => (
+    <Link
+      to={to}
+      className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
+      onClick={onClick}
+    >
+      {children}
+    </Link>
+  );
+
+  const MobileNav = () => (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon" className="md:hidden">
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Toggle menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+        <nav className="flex flex-col gap-4">
+          <MobileNavItem to="/">Home</MobileNavItem>
+          {glazingOptions.map((section) => (
+            <div key={section.title} className="space-y-3">
+              <div 
+                className="font-medium px-4 py-2"
+                onClick={() => handleNavigation(section.mainLink)}
+              >
+                {section.title}
+              </div>
+              <div className="pl-4 space-y-1">
+                {section.items.map((item) => (
+                  <MobileNavItem
+                    key={item.title}
+                    to={item.href}
+                    onClick={() => handleNavigation(item.href)}
+                  >
+                    {item.title}
+                  </MobileNavItem>
+                ))}
+              </div>
+            </div>
+          ))}
+          <MobileNavItem to="/gallery">Gallery</MobileNavItem>
+          <MobileNavItem to="/faqs">FAQs</MobileNavItem>
+          <div className="px-4 py-2">
+            <button
+              onClick={handleContactClick}
+              className="text-sm hover:text-accent-foreground transition-colors"
+            >
+              Contact Us
+            </button>
+          </div>
+          <div className="px-4 py-2">
+            <Button
+              onClick={() => handleNavigation("/quote-request")}
+              className="w-full bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
+            >
+              Get Quote
+            </Button>
+          </div>
+        </nav>
+      </SheetContent>
+    </Sheet>
+  );
+
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-between items-center w-full px-4">
+      <MobileNav />
       <NavigationMenu>
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
