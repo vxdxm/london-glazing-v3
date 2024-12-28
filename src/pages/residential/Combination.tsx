@@ -20,11 +20,11 @@ const Combination = () => {
               while maintaining energy efficiency and security.
             </p>
           </div>
-          <div className="relative h-[300px]">
+          <div className="relative h-[300px] group">
             <img 
               src="/lovable-uploads/1948cebf-d23f-400d-9d7d-fb5f33cbea3c.png"
               alt="Modern bay window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
-              className="absolute inset-0 w-full h-full rounded-lg object-cover"
+              className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
             />
           </div>
         </div>
@@ -38,11 +38,13 @@ const Combination = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/b649e407-2d3c-43d3-aa0b-f12d57057849.png"
-                    alt="Sash and horizontal sliding window combination showing a large bay window with multiple panes overlooking a brick building"
-                    className="rounded-lg w-full h-[200px] object-cover mb-4"
-                  />
+                  <div className="relative h-[200px] group">
+                    <img 
+                      src="/lovable-uploads/b649e407-2d3c-43d3-aa0b-f12d57057849.png"
+                      alt="Sash and horizontal sliding window combination showing a large bay window with multiple panes overlooking a brick building"
+                      className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+                    />
+                  </div>
                   <p className="text-gray-700">
                     Blend traditional sash windows with modern horizontal sliding windows for a
                     unique look that combines heritage appeal with contemporary functionality.
@@ -63,11 +65,13 @@ const Combination = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/1b3cbbe8-2ee8-4cb1-adeb-b59f1823a417.png"
-                    alt="Bay and casement window combination"
-                    className="rounded-lg w-full h-[200px] object-cover mb-4"
-                  />
+                  <div className="relative h-[200px] group">
+                    <img 
+                      src="/lovable-uploads/1b3cbbe8-2ee8-4cb1-adeb-b59f1823a417.png"
+                      alt="Bay and casement window combination"
+                      className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+                    />
+                  </div>
                   <p className="text-gray-700">
                     Combine bay windows with casement windows to create stunning focal points
                     while maintaining practical functionality throughout your property.
