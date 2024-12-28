@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useNavigate } from "react-router-dom";
 
 const commercialServices = [
   {
@@ -8,32 +9,38 @@ const commercialServices = [
     description: "Sound insulation for productive work environments",
     details: "Create quieter, more productive workspaces with our commercial-grade secondary glazing solutions. Perfect for busy urban locations.",
     image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-    alt: "Modern office building with glass facade"
+    alt: "Modern office building with glass facade",
+    route: "/commercial/office-buildings"
   },
   {
     title: "Hospitality Sector",
     description: "Premium solutions for hotels and restaurants",
     details: "Create comfortable and peaceful environments for your guests with our specialized hospitality glazing solutions.",
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
-    alt: "Luxury hotel exterior"
+    alt: "Luxury hotel exterior",
+    route: "/commercial/hospitality-sector"
   },
   {
     title: "Healthcare Industry",
     description: "Premium glazing solutions for healthcare facilities",
     details: "Create peaceful healing environments with superior noise reduction and temperature control, perfect for hospitals, clinics, and medical offices.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    alt: "Modern healthcare facility"
+    alt: "Modern healthcare facility",
+    route: "/commercial/healthcare-industry"
   },
   {
     title: "Educational Sector",
     description: "Specialized solutions for educational institutions",
     details: "Create optimal learning environments with enhanced acoustic performance and natural light optimization for schools, universities, and research facilities.",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    alt: "Modern educational facility"
+    alt: "Modern educational facility",
+    route: "/commercial/educational-sector"
   }
 ];
 
 const CommercialSolutions = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
@@ -41,7 +48,11 @@ const CommercialSolutions = () => {
         <h1 className="text-4xl font-bold mb-8">Commercial Secondary Glazing</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {commercialServices.map((service) => (
-            <Card key={service.title} className="hover:shadow-lg transition-shadow">
+            <Card 
+              key={service.title} 
+              className="hover:shadow-lg transition-shadow cursor-pointer"
+              onClick={() => navigate(service.route)}
+            >
               <CardHeader>
                 <div className="w-full mb-4">
                   <AspectRatio ratio={16 / 9}>
