@@ -16,8 +16,8 @@ const Solutions = () => {
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
               <img 
-                src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b"
-                alt="Modern solutions"
+                src="https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+                alt="Modern casement window solutions"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -35,6 +35,13 @@ const Solutions = () => {
           onClick={() => navigate("/residential/casement-windows/traditional-options")}
         >
           <CardHeader>
+            <div className="w-full h-48 overflow-hidden rounded-t-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b"
+                alt="Traditional casement window options"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardTitle>Traditional Options</CardTitle>
           </CardHeader>
           <CardContent>
@@ -49,6 +56,13 @@ const Solutions = () => {
           onClick={() => navigate("/residential/casement-windows/energy-efficiency")}
         >
           <CardHeader>
+            <div className="w-full h-48 overflow-hidden rounded-t-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e"
+                alt="Energy efficient casement windows"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardTitle>Energy Efficiency</CardTitle>
           </CardHeader>
           <CardContent>
