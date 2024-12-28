@@ -22,8 +22,8 @@ const Combination = () => {
           </div>
           <div>
             <img 
-              src="/lovable-uploads/5308829b-f263-4fd8-9dfb-58c725b0ae6b.png"
-              alt="Modern combination window with multiple panes overlooking a garden with autumn trees"
+              src="/lovable-uploads/1948cebf-d23f-400d-9d7d-fb5f33cbea3c.png"
+              alt="Modern bay window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
               className="rounded-lg w-full h-[300px] object-cover"
             />
           </div>
