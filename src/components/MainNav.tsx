@@ -91,7 +91,7 @@ export function MainNav() {
   return (
     <div className="flex justify-between items-center w-full px-4">
       <MobileNav />
-      <NavigationMenu>
+      <NavigationMenu className="relative z-50"> {/* Added z-50 to ensure menu appears above other content */}
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
             <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
@@ -106,11 +106,11 @@ export function MainNav() {
             >
               <NavigationMenuTrigger>{section.title}</NavigationMenuTrigger>
               <NavigationMenuContent
-                className="data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight"
+                className="absolute bg-white shadow-lg rounded-md"
                 onMouseEnter={() => handleMouseEnter(section.title)}
                 onMouseLeave={() => handleMouseLeave(section.title)}
               >
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-background">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   <li className="col-span-2">
                     <div
                       onClick={() => handleNavigation(section.mainLink)}
