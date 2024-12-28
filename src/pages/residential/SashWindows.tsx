@@ -40,10 +40,29 @@ const SashWindows = () => {
                       alt="Vertical sliding sash window"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
-                    <p className="text-gray-700">
-                      Traditional vertical sliding secondary glazing that perfectly matches your existing sash windows.
-                      Smooth operation and excellent thermal insulation while maintaining the original character of your property.
-                    </p>
+                    <div className="text-gray-700 space-y-4">
+                      <p>
+                        Our traditional vertical sliding secondary glazing is expertly designed to complement your existing sash windows
+                        while providing superior insulation and noise reduction benefits. The system features:
+                      </p>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li>Smooth, balanced operation with high-quality spring balances</li>
+                        <li>Custom-matched frame colors to blend seamlessly with your existing windows</li>
+                        <li>Precision-engineered sliding mechanism for effortless use</li>
+                        <li>Discrete brush seals for enhanced draught proofing</li>
+                        <li>Optional tilt-in facility for easy cleaning access</li>
+                      </ul>
+                      <p>
+                        Perfect for period properties, our vertical sliding secondary glazing maintains the original character
+                        while significantly improving thermal and acoustic performance. The system can reduce heat loss by up
+                        to 65% and noise levels by up to 80%.
+                      </p>
+                      <p>
+                        Installation is carried out with minimal disruption to your property, and our expert fitters ensure
+                        perfect alignment and operation. The result is a virtually invisible solution that enhances your
+                        windows' performance without compromising their historic charm.
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
