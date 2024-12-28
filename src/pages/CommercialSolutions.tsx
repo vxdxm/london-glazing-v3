@@ -18,11 +18,11 @@ const commercialServices = [
     alt: "Contemporary retail building exterior"
   },
   {
-    title: "Listed Buildings",
-    description: "Heritage-compliant secondary glazing options",
-    details: "Sympathetic solutions that meet conservation requirements while providing modern thermal and acoustic benefits.",
+    title: "Educational Sector",
+    description: "Specialized glazing solutions for educational institutions",
+    details: "Create comfortable learning environments with enhanced acoustic and thermal performance, perfect for schools, universities, and other educational facilities.",
     image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-    alt: "Historic listed building facade"
+    alt: "Modern educational building facade"
   },
 ];
 
