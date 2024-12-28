@@ -15,7 +15,7 @@ const specializedServices = [
     title: "Thermal Insulation",
     description: "Enhanced energy efficiency solutions",
     details: "Significantly reduce heat loss and lower energy bills with our advanced thermal insulation secondary glazing systems.",
-    image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
+    image: "https://images.unsplash.com/photo-1485594050903-8e8ee7b071a8",
     path: "/specialized/thermal-insulation"
   },
   {
