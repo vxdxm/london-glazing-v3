@@ -39,8 +39,8 @@ const OfficeBuildings = () => {
               <div className="w-full mb-4">
                 <AspectRatio ratio={16 / 9}>
                   <img
-                    src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-                    alt="Modern glass building"
+                    src="/lovable-uploads/bc66cf3d-ccfe-4826-90b8-7d5072d355ef.png"
+                    alt="Office space with secondary glazing installation showing thermal efficiency features"
                     className="rounded-lg object-cover w-full h-full"
                   />
                 </AspectRatio>
