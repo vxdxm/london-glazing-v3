@@ -11,9 +11,13 @@ const Combination = () => {
           <div>
             <h1 className="text-4xl font-bold mb-4">Combination Windows</h1>
             <p className="text-gray-700 mb-6">
-              Our combination window solutions offer the ultimate flexibility in design,
-              allowing you to mix different window styles to create the perfect balance
-              of functionality and aesthetics for your property.
+              Our combination window solutions represent the pinnacle of architectural versatility,
+              offering unparalleled flexibility in design and functionality. By expertly blending
+              different window styles - from classic sash to modern casement - we create custom
+              configurations that perfectly match your property's character. Whether you're looking
+              to maximize natural light, enhance ventilation, or create stunning architectural
+              focal points, our combination windows deliver the perfect balance of form and function,
+              while maintaining energy efficiency and security.
             </p>
           </div>
           <div>
