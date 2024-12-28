@@ -19,8 +19,8 @@ const SashWindows = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="/lovable-uploads/a638a754-a3c4-4107-b725-4e149b0bbfa6.png"
-                alt="Traditional sash window example"
+                src="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png"
+                alt="Three elegant sash windows with Roman blinds, overlooking brick buildings and trees, demonstrating classic period property features"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
             </div>
