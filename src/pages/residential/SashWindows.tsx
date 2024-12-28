@@ -74,8 +74,8 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace"
-                      alt="Tilt-in sash window demonstration"
+                      src="/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"
+                      alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
                     <div className="text-gray-700 space-y-4">
