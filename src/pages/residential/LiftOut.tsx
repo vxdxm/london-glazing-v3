@@ -12,12 +12,16 @@ const LiftOut = () => {
             <h1 className="text-4xl font-bold mb-4">Lift Out Secondary Glazing</h1>
             <p className="text-gray-700 mb-6">
               Our lift out secondary glazing solutions offer maximum accessibility and ease of maintenance.
-              Perfect for windows that require regular cleaning or seasonal ventilation adjustments.
+              Perfect for windows that require regular cleaning or seasonal ventilation adjustments. These panels 
+              are designed with a unique lift-out mechanism that allows for complete removal without tools, 
+              making them ideal for listed buildings and properties where permanent alterations aren't permitted. 
+              The panels provide excellent thermal insulation and noise reduction while maintaining the original 
+              character of your windows.
             </p>
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
               alt="Lift out window demonstration"
               className="rounded-lg w-full h-[300px] object-cover"
             />
