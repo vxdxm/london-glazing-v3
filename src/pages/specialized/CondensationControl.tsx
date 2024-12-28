@@ -15,8 +15,8 @@ const CondensationControl = () => {
               <div className="w-full mb-4">
                 <AspectRatio ratio={16 / 9}>
                   <img
-                    src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff"
-                    alt="Window condensation example"
+                    src="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png"
+                    alt="Close-up of a modern window ventilation system showing trickle vents and frame details"
                     className="rounded-lg object-cover w-full h-full"
                   />
                 </AspectRatio>
