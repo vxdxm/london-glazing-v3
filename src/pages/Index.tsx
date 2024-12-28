@@ -21,39 +21,39 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
-                alt="Modern living room with secondary glazing"
+                src="/lovable-uploads/105df4cf-806c-402e-aaba-ccb4792bad5f.png"
+                alt="Triple sash window installation with grey roman blinds overlooking urban area"
                 className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <p className="text-white text-lg font-semibold px-4 text-center">
-                  Enhanced Home Comfort
+                  Sash Window Solutions
                 </p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img
-                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                alt="Glass roof installation"
+                src="/lovable-uploads/289db534-0ea4-4a46-b9f6-1896892c42b5.png"
+                alt="Wide horizontal sliding secondary glazing installation with garden view"
                 className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <p className="text-white text-lg font-semibold px-4 text-center">
-                  Crystal Clear Views
+                  Horizontal Sliding Systems
                 </p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img
-                src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
-                alt="Modern glass building"
+                src="/lovable-uploads/85a35431-eb67-44c0-bc47-544b29a786f6.png"
+                alt="Modern casement window with secondary glazing in a contemporary setting"
                 className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <p className="text-white text-lg font-semibold px-4 text-center">
-                  Modern Solutions
+                  Casement Solutions
                 </p>
               </div>
             </div>
