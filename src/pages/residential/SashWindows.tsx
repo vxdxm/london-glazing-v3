@@ -19,7 +19,7 @@ const SashWindows = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
+                src="lovable-uploads/a638a754-a3c4-4107-b725-4e149b0bbfa6.png"
                 alt="Traditional sash window example"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
