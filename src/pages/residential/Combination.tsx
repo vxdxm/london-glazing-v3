@@ -20,11 +20,11 @@ const Combination = () => {
               while maintaining energy efficiency and security.
             </p>
           </div>
-          <div>
+          <div className="relative h-[300px]">
             <img 
               src="/lovable-uploads/1948cebf-d23f-400d-9d7d-fb5f33cbea3c.png"
               alt="Modern bay window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
-              className="rounded-lg w-full h-[300px] object-cover"
+              className="absolute inset-0 w-full h-full rounded-lg object-cover"
             />
           </div>
         </div>
