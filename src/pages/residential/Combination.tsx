@@ -30,17 +30,17 @@ const Combination = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Sash and Casement Combination</CardTitle>
+                <CardTitle>Sash and Horizontal Combination</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <img 
                     src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                    alt="Sash and casement window combination"
+                    alt="Sash and horizontal sliding window combination"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
                   <p className="text-gray-700">
-                    Blend traditional sash windows with modern casement windows for a
+                    Blend traditional sash windows with modern horizontal sliding windows for a
                     unique look that combines heritage appeal with contemporary functionality.
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
