@@ -64,7 +64,7 @@ const Combination = () => {
               <CardContent>
                 <div className="space-y-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+                    src="/lovable-uploads/1b3cbbe8-2ee8-4cb1-adeb-b59f1823a417.png"
                     alt="Bay and casement window combination"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
