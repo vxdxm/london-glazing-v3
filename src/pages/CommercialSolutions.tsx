@@ -18,11 +18,11 @@ const commercialServices = [
     alt: "Contemporary retail building exterior"
   },
   {
-    title: "Educational Sector",
-    description: "Specialized glazing solutions for educational institutions",
-    details: "Create comfortable learning environments with enhanced acoustic and thermal performance, perfect for schools, universities, and other educational facilities.",
+    title: "Hospitality Industry",
+    description: "Premium glazing solutions for hotels and restaurants",
+    details: "Enhance guest comfort with superior noise reduction and temperature control, perfect for hotels, restaurants, and leisure facilities.",
     image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
-    alt: "Modern educational building facade"
+    alt: "Modern hotel building facade"
   },
 ];
 
