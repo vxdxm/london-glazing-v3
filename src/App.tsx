@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Index from "./pages/Index";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -15,6 +16,7 @@ import EducationalSector from "./pages/commercial/EducationalSector";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQs";
+import NotFound from "./pages/404";
 import SashWindows from "./pages/residential/SashWindows";
 import CasementWindows from "./pages/residential/CasementWindows";
 import BayWindows from "./pages/residential/BayWindows";
@@ -31,6 +33,10 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <Helmet>
+        <link rel="canonical" href={window.location.href} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter>
@@ -62,6 +68,9 @@ const App = () => (
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/condensation-control" element={<CondensationControl />} />
+
+          {/* 404 Route */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <WhatsAppButton />
       </BrowserRouter>
