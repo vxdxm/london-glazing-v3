@@ -89,9 +89,11 @@ export function MainNav() {
   );
 
   return (
-    <div className="flex justify-between items-center w-full px-4">
-      <MobileNav />
-      <NavigationMenu className="relative z-50"> {/* Added z-50 to ensure menu appears above other content */}
+    <div className="flex justify-center items-center w-full px-4">
+      <div className="flex-1 flex justify-start md:hidden">
+        <MobileNav />
+      </div>
+      <NavigationMenu className="relative z-50">
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
             <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
