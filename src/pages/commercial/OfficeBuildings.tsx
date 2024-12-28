@@ -14,8 +14,8 @@ const OfficeBuildings = () => {
               <div className="w-full mb-4">
                 <AspectRatio ratio={16 / 9}>
                   <img
-                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
-                    alt="Modern office building interior"
+                    src="/lovable-uploads/f9266062-db96-4ed2-a3be-cc6227185ed6.png"
+                    alt="Modern office partition with secondary glazing showing both the glazed partition and open office space beyond"
                     className="rounded-lg object-cover w-full h-full"
                   />
                 </AspectRatio>
