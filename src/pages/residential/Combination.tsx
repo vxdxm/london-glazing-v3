@@ -35,8 +35,8 @@ const Combination = () => {
               <CardContent>
                 <div className="space-y-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                    alt="Sash and horizontal sliding window combination"
+                    src="/lovable-uploads/b649e407-2d3c-43d3-aa0b-f12d57057849.png"
+                    alt="Sash and horizontal sliding window combination showing a large bay window with multiple panes overlooking a brick building"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
                   <p className="text-gray-700">
