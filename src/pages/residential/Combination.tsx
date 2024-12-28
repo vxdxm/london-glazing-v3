@@ -22,8 +22,8 @@ const Combination = () => {
           </div>
           <div className="relative h-[300px] group">
             <img 
-              src="/lovable-uploads/1948cebf-d23f-400d-9d7d-fb5f33cbea3c.png"
-              alt="Modern bay window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
+              src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
+              alt="Modern combination window with multiple panes overlooking a garden with autumn trees"
               className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
             />
           </div>
@@ -40,8 +40,8 @@ const Combination = () => {
                 <div className="space-y-4">
                   <div className="relative h-[200px] group">
                     <img 
-                      src="/lovable-uploads/b649e407-2d3c-43d3-aa0b-f12d57057849.png"
-                      alt="Sash and horizontal sliding window combination showing a large bay window with multiple panes overlooking a brick building"
+                      src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
+                      alt="Sash and horizontal sliding window combination showing multiple panes overlooking an autumn garden"
                       className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
                     />
                   </div>
@@ -67,8 +67,8 @@ const Combination = () => {
                 <div className="space-y-4">
                   <div className="relative h-[200px] group">
                     <img 
-                      src="/lovable-uploads/1b3cbbe8-2ee8-4cb1-adeb-b59f1823a417.png"
-                      alt="Bay and casement window combination"
+                      src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
+                      alt="Bay and casement window combination with multiple panes showing garden view"
                       className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
                     />
                   </div>
