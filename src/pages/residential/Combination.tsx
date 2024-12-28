@@ -22,8 +22,8 @@ const Combination = () => {
           </div>
           <div className="relative h-[300px] group">
             <img 
-              src="/lovable-uploads/8f08774e-c6f4-48ea-a478-428916723d54.png"
-              alt="Modern combination window featuring a bay-style configuration with multiple glass panels overlooking brick buildings and a terrace"
+              src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
+              alt="Modern combination window with multiple panes overlooking a garden with autumn trees"
               className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
             />
           </div>
