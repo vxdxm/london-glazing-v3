@@ -8,14 +8,14 @@ const specializedServices = [
     title: "Acoustic Glazing",
     description: "Maximum noise reduction for urban properties",
     details: "Our acoustic glazing solutions can reduce external noise by up to 80%, creating peaceful environments in even the busiest locations.",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+    image: "https://images.unsplash.com/photo-1517420879524-86d64ac2f339?q=80&w=1926&auto=format&fit=crop",
     path: "/specialized/acoustic-glazing"
   },
   {
     title: "Thermal Insulation",
     description: "Enhanced energy efficiency solutions",
     details: "Significantly reduce heat loss and lower energy bills with our advanced thermal insulation secondary glazing systems.",
-    image: "https://images.unsplash.com/photo-1485594050903-8e8ee7b071a8",
+    image: "https://images.unsplash.com/photo-1485463598028-44d6c47bf23f?q=80&w=1932&auto=format&fit=crop",
     path: "/specialized/thermal-insulation"
   },
   {
@@ -29,7 +29,7 @@ const specializedServices = [
     title: "Condensation Control",
     description: "Effective moisture management solutions",
     details: "Our specialized secondary glazing systems help prevent condensation by creating an additional barrier that regulates temperature differences between indoor and outdoor environments.",
-    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
+    image: "https://images.unsplash.com/photo-1525891618908-24765267dab7?q=80&w=1932&auto=format&fit=crop",
     path: "/specialized/condensation-control"
   }
 ];
