@@ -15,7 +15,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Opening Hours</h3>
-            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM (by appointment only)</p>
             <p>Saturday - Sunday: Closed</p>
           </div>
           <div>
