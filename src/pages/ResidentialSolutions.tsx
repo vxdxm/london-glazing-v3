@@ -42,7 +42,7 @@ const residentialServices = [
     title: "Combination",
     description: "Versatile mixed-style solutions",
     details: "Combining different opening styles in one unit to meet specific requirements. Ideal for unique window configurations or when different functionalities are needed.",
-    image: "/lovable-uploads/8fcea8e1-97fb-4874-99c2-8cff6e3aea2e.png",
+    image: "/lovable-uploads/41fdf8fc-4bed-4792-87dd-45ca3fa377de.png",
     path: "/residential/combination"
   },
 ];
