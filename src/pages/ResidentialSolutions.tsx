@@ -28,7 +28,7 @@ const residentialServices = [
     title: "Horizontal Sliding",
     description: "Perfect for wide window openings",
     details: "Smooth-operating horizontal sliding panels that provide easy access to primary windows. Ideal for large windows and offering excellent ventilation options.",
-    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705",
+    image: "/lovable-uploads/05d0c1b7-76e1-4670-9f8f-60e65dad2615.png",
     path: "/residential/horizontal-sliding"
   },
   {
