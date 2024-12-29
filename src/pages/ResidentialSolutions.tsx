@@ -35,7 +35,7 @@ const residentialServices = [
     title: "Lift Out",
     description: "Simple and practical solution",
     details: "Removable panels that can be completely lifted out for easy cleaning and maintenance. Perfect for windows that require occasional full access.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    image: "/lovable-uploads/bb1e765e-3b82-4d6d-a206-31bdf9c0af0d.png",
     path: "/residential/lift-out"
   },
   {
