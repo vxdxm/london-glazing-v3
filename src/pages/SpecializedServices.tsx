@@ -8,7 +8,7 @@ const specializedServices = [
     title: "Acoustic Glazing",
     description: "Maximum noise reduction for urban properties",
     details: "Our acoustic glazing solutions can reduce external noise by up to 80%, creating peaceful environments in even the busiest locations.",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+    image: "/lovable-uploads/e660d1ef-caef-431b-8cd0-67d8163de8dc.png",
     path: "/specialized/acoustic-glazing"
   },
   {
