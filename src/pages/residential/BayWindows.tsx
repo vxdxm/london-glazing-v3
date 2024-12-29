@@ -18,7 +18,7 @@ const BayWindows = () => {
           </div>
           <div>
             <img 
-              src="/lovable-uploads/345746c8-d997-44ec-846e-2dc7f24754ea.png"
+              src="/lovable-uploads/01ceac78-bd50-418e-9067-b15d13145c5c.png"
               alt="Elegant bay window installation"
               className="rounded-lg w-full h-[300px] object-cover"
             />
@@ -35,7 +35,7 @@ const BayWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="/lovable-uploads/95aded1d-5d97-475b-94e0-40db3ad33ec4.png"
+                      src="/lovable-uploads/01ceac78-bd50-418e-9067-b15d13145c5c.png"
                       alt="Traditional bay window"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
