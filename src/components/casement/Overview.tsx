@@ -11,7 +11,7 @@ const Overview = () => {
           className="rounded-lg shadow-lg w-full h-[300px] object-cover"
         />
         <p className="text-gray-700">
-          Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
+          Casement secondary glazing is an innovative window enhancement system that combines elegance with functionality. This sophisticated solution involves installing a discrete secondary window unit on the interior side of your existing casement windows, creating an additional insulating barrier. The system is designed to seamlessly integrate with your current windows while providing superior thermal efficiency, significant noise reduction, and enhanced security. Perfect for both period properties and modern homes, this solution maintains the original character of your windows while delivering contemporary performance benefits, including draft elimination and reduced energy costs.
         </p>
       </div>
     </section>
