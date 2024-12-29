@@ -67,7 +67,7 @@ const Combination = () => {
                 <div className="space-y-4">
                   <div className="relative h-[200px] group">
                     <img 
-                      src="/lovable-uploads/479a23a5-3b56-47e0-bd6f-6f4a16937de3.png"
+                      src="/lovable-uploads/a40b22e3-e503-4c0a-a99b-7ea08bb65d13.png"
                       alt="Bay and casement window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
                       className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
                     />
