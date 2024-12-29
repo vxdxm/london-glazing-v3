@@ -12,8 +12,8 @@ const AcousticGlazing = () => {
           <div className="col-span-1">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
               <img 
-                src="/lovable-uploads/fb1a857e-91ef-4914-a2b9-1835076b459c.png"
-                alt="Modern sash windows with acoustic secondary glazing installation"
+                src="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a"
+                alt="Graph showing relationship between glass thickness and decibel reduction"
                 className="w-full h-full object-cover"
               />
             </div>
