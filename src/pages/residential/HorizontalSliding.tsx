@@ -35,7 +35,7 @@ const HorizontalSliding = () => {
             <CardContent>
               <div className="space-y-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+                  src="/lovable-uploads/83a85813-7a32-48d2-a1c9-ad133fc122d7.png"
                   alt="Multi-track sliding window system"
                   className="rounded-lg w-full h-[200px] object-cover mb-4"
                 />
