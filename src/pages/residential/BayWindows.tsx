@@ -35,7 +35,7 @@ const BayWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <img 
-                      src="/lovable-uploads/62c350f0-686d-433a-a831-7cf077262d54.png"
+                      src="/lovable-uploads/95aded1d-5d97-475b-94e0-40db3ad33ec4.png"
                       alt="Traditional bay window"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                     />
