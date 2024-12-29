@@ -63,7 +63,7 @@ const LiftOut = () => {
               <CardContent>
                 <div className="space-y-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+                    src="/lovable-uploads/208cca9c-8392-4aef-b6f1-4361c44644a6.png"
                     alt="Quick release system demonstration"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
