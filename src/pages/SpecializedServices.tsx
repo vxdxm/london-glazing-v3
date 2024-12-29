@@ -29,7 +29,7 @@ const specializedServices = [
     title: "Condensation Control",
     description: "Effective moisture management solutions",
     details: "Our specialized secondary glazing systems help prevent condensation by creating an additional barrier that regulates temperature differences between indoor and outdoor environments.",
-    image: "https://images.unsplash.com/photo-1431576901776-e539bd916ba2",
+    image: "/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png",
     path: "/specialized/condensation-control"
   }
 ];
