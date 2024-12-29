@@ -1,65 +1,55 @@
+import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const SpecializedServices = () => {
-  const services = [
-    {
-      title: "Acoustic Glazing",
-      description: "Effective noise reduction solutions",
-      details: "Our acoustic glazing solutions significantly reduce external noise, creating a peaceful indoor environment perfect for urban properties.",
-      image: "/lovable-uploads/c7e8f368-37e7-4802-84d8-e96a040ac74c.png",
-      path: "/specialized/acoustic-glazing"
-    },
-    {
-      title: "Thermal Insulation",
-      description: "Enhanced temperature control",
-      details: "Improve your property's energy efficiency with our thermal insulation solutions, reducing heat loss and energy bills.",
-      image: "/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png",
-      path: "/specialized/thermal-insulation"
-    },
-    {
-      title: "Security Glazing",
-      description: "Additional protection for your property",
-      details: "Enhance your property's security with our reinforced secondary glazing options, providing peace of mind without compromising on style.",
-      image: "/lovable-uploads/887e1b42-a5d4-4ca1-9c84-2ab40235763a.png",
-      path: "/specialized/security-glazing"
-    },
-    {
-      title: "Condensation Control",
-      description: "Moisture management solutions",
-      details: "Combat condensation issues effectively with our specialized glazing solutions, maintaining a healthier indoor environment.",
-      image: "/lovable-uploads/fe5cbcd6-a864-4fa4-b66b-5ccf4aa8dc73.png",
-      path: "/specialized/condensation-control"
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Specialized Secondary Glazing | Acoustic & Thermal Solutions</title>
+        <meta name="description" content="Expert specialized secondary glazing services including acoustic, thermal, and security solutions. Perfect for listed buildings and noise-sensitive properties in London." />
+        <meta name="keywords" content="acoustic glazing, thermal insulation, security glazing, condensation control, listed buildings, noise reduction, London specialist glazing" />
+        <meta property="og:title" content="Specialized Secondary Glazing Solutions" />
+        <meta property="og:description" content="Advanced secondary glazing solutions for specific requirements. Expert installation in London." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Specialized Secondary Glazing Solutions" />
+        <meta name="twitter:description" content="Custom secondary glazing solutions for specific requirements in London." />
+        <link rel="canonical" href="https://yourdomain.com/specialized" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Specialized Glazing Solutions</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <Link key={index} to={service.path}>
-              <Card className="h-full hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h2 className="text-2xl font-semibold mb-2">{service.title}</h2>
-                  <h3 className="text-lg text-muted-foreground mb-2">
-                    {service.description}
-                  </h3>
-                  <p className="text-gray-600">{service.details}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent>
+              <h2 className="text-2xl font-semibold mb-2">Acoustic Glazing</h2>
+              <p className="text-gray-600 mb-4">Our acoustic glazing solutions significantly reduce external noise, creating a peaceful indoor environment perfect for urban properties.</p>
+              <Link to="/specialized/acoustic-glazing" className="text-primary hover:underline">Learn more about Acoustic Glazing</Link>
+            </CardContent>
+          </Card>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent>
+              <h2 className="text-2xl font-semibold mb-2">Thermal Insulation</h2>
+              <p className="text-gray-600 mb-4">Improve your property's energy efficiency with our thermal insulation solutions, reducing heat loss and energy bills.</p>
+              <Link to="/specialized/thermal-insulation" className="text-primary hover:underline">Learn more about Thermal Insulation</Link>
+            </CardContent>
+          </Card>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent>
+              <h2 className="text-2xl font-semibold mb-2">Security Glazing</h2>
+              <p className="text-gray-600 mb-4">Enhance your property's security with our reinforced secondary glazing options, providing peace of mind without compromising on style.</p>
+              <Link to="/specialized/security-glazing" className="text-primary hover:underline">Learn more about Security Glazing</Link>
+            </CardContent>
+          </Card>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent>
+              <h2 className="text-2xl font-semibold mb-2">Condensation Control</h2>
+              <p className="text-gray-600 mb-4">Combat condensation issues effectively with our specialized glazing solutions, maintaining a healthier indoor environment.</p>
+              <Link to="/specialized/condensation-control" className="text-primary hover:underline">Learn more about Condensation Control</Link>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

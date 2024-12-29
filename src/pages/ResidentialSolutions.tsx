@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
 import { useNavigate } from "react-router-dom";
@@ -52,6 +53,18 @@ const ResidentialSolutions = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Residential Secondary Glazing | Solutions for London Homes</title>
+        <meta name="description" content="Discover our comprehensive residential secondary glazing solutions. From sash to casement windows, find the perfect fit for your London home. Expert installation guaranteed." />
+        <meta name="keywords" content="residential glazing, sash windows, casement windows, bay windows, horizontal sliding, lift out windows, combination windows, London homes" />
+        <meta property="og:title" content="Residential Secondary Glazing Solutions" />
+        <meta property="og:description" content="Expert residential secondary glazing solutions for London homes. Enhance comfort and efficiency." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Residential Secondary Glazing Solutions" />
+        <meta name="twitter:description" content="Transform your London home with our residential secondary glazing solutions." />
+        <link rel="canonical" href="https://yourdomain.com/residential" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Residential Solutions</h1>

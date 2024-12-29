@@ -1,76 +1,46 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { useNavigate } from "react-router-dom";
-
-const commercialServices = [
-  {
-    title: "Office Buildings",
-    description: "Sound insulation for productive work environments",
-    details: "Create quieter, more productive workspaces with our commercial-grade secondary glazing solutions. Perfect for busy urban locations.",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-    alt: "Modern office building with glass facade",
-    route: "/commercial/office-buildings"
-  },
-  {
-    title: "Hospitality Sector",
-    description: "Premium solutions for hotels and restaurants",
-    details: "Create comfortable and peaceful environments for your guests with our specialized hospitality glazing solutions.",
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
-    alt: "Luxury hotel exterior",
-    route: "/commercial/hospitality-sector"
-  },
-  {
-    title: "Healthcare Industry",
-    description: "Premium glazing solutions for healthcare facilities",
-    details: "Create peaceful healing environments with superior noise reduction and temperature control, perfect for hospitals, clinics, and medical offices.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    alt: "Modern healthcare facility",
-    route: "/commercial/healthcare-industry"
-  },
-  {
-    title: "Educational Sector",
-    description: "Specialized solutions for educational institutions",
-    details: "Create optimal learning environments with enhanced acoustic performance and natural light optimization for schools, universities, and research facilities.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    alt: "Modern college campus environment",
-    route: "/commercial/educational-sector"
-  }
-];
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const CommercialSolutions = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Commercial Secondary Glazing | Office & Business Solutions</title>
+        <meta name="description" content="Professional commercial secondary glazing solutions for offices, hotels, and businesses in London. Improve energy efficiency and reduce noise. Expert consultation available." />
+        <meta name="keywords" content="commercial glazing, office glazing, business windows, hotel windows, commercial property, noise reduction, energy efficiency, London commercial" />
+        <meta property="og:title" content="Commercial Secondary Glazing Solutions" />
+        <meta property="og:description" content="Transform your commercial property with our expert secondary glazing solutions." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Commercial Secondary Glazing Solutions" />
+        <meta name="twitter:description" content="Professional secondary glazing for London businesses and commercial properties." />
+        <link rel="canonical" href="https://yourdomain.com/commercial" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Commercial Secondary Glazing</h1>
+        <h1 className="text-4xl font-bold mb-8">Commercial Secondary Glazing Solutions</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {commercialServices.map((service) => (
-            <Card 
-              key={service.title} 
-              className="hover:shadow-lg transition-shadow cursor-pointer"
-              onClick={() => navigate(service.route)}
-            >
-              <CardHeader>
-                <div className="w-full mb-4">
-                  <AspectRatio ratio={16 / 9}>
-                    <img
-                      src={service.image}
-                      alt={service.alt}
-                      className="rounded-lg object-cover w-full h-full"
-                    />
-                  </AspectRatio>
-                </div>
-                <CardTitle>{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <p className="text-sm text-gray-500">{service.details}</p>
-              </CardContent>
-            </Card>
-          ))}
+          <Card>
+            <CardHeader>
+              <CardTitle>Office Glazing Solutions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Enhance your office environment with our secondary glazing solutions that provide excellent thermal insulation and noise reduction. Perfect for busy urban settings.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Hotel Glazing Solutions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600">
+                Create a peaceful atmosphere for your guests with our specialized hotel glazing solutions, designed to reduce noise and improve energy efficiency.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

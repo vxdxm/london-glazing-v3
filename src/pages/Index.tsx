@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Hero } from "@/components/Hero";
 import { MainNav } from "@/components/MainNav";
 import { Services } from "@/components/Services";
@@ -10,6 +11,18 @@ import { Shield, Thermometer, VolumeX, Lightbulb, PoundSterling, Clock } from "l
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>London Secondary Glazing Solutions | Expert Window Insulation Services</title>
+        <meta name="description" content="Premium secondary glazing solutions in London. Enhance your home with superior noise reduction, thermal insulation, and security features. Free consultation available." />
+        <meta name="keywords" content="secondary glazing, window insulation, noise reduction, thermal insulation, security glazing, London windows, energy efficient windows, listed building windows" />
+        <meta property="og:title" content="London Secondary Glazing Solutions | Expert Window Insulation Services" />
+        <meta property="og:description" content="Premium secondary glazing solutions in London. Enhance your home with superior noise reduction, thermal insulation, and security features." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="London Secondary Glazing Solutions" />
+        <meta name="twitter:description" content="Premium secondary glazing solutions for homes and businesses in London." />
+        <link rel="canonical" href="https://yourdomain.com/" />
+      </Helmet>
       <MainNav />
       <Hero />
       <Services />
