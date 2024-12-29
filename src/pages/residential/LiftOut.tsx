@@ -21,7 +21,7 @@ const LiftOut = () => {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png"
               alt="Lift out window demonstration"
               className="rounded-lg w-full h-[300px] object-cover"
             />
@@ -38,7 +38,7 @@ const LiftOut = () => {
               <CardContent>
                 <div className="space-y-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                    src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png"
                     alt="Standard lift out panel"
                     className="rounded-lg w-full h-[200px] object-cover mb-4"
                   />
