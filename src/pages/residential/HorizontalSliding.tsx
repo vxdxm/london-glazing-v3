@@ -15,7 +15,7 @@ const HorizontalSliding = () => {
             <CardContent>
               <div className="space-y-4">
                 <img 
-                  src="lovable-uploads/41ebf8a1-1774-4e48-ab3c-36589de97413.png"
+                  src="/lovable-uploads/8068257b-94f9-43c7-a875-52753b438956.png"
                   alt="Standard horizontal sliding window"
                   className="rounded-lg w-full h-[200px] object-cover mb-4"
                 />
