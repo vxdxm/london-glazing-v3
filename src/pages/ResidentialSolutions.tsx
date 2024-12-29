@@ -14,7 +14,7 @@ const residentialServices = [
     title: "Casement Windows",
     description: "Ideal for modern homes and apartments",
     details: "Custom-fitted secondary glazing for casement windows, offering excellent thermal and acoustic insulation without compromising the window's functionality.",
-    image: "https://images.unsplash.com/photo-1439337153520-7082a56a81f4",
+    image: "/lovable-uploads/45b96f45-e5cb-4f67-8f64-c9e12ab56ae3.png",
     path: "/residential/casement-windows"
   },
   {
