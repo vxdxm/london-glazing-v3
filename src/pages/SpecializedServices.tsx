@@ -22,7 +22,7 @@ const specializedServices = [
     title: "Security Glazing",
     description: "Additional protection for your property",
     details: "Enhance your property's security with our reinforced secondary glazing options, providing peace of mind without compromising on style.",
-    image: "https://images.unsplash.com/photo-1579548122080-c35fd6820ecb",
+    image: "/lovable-uploads/887e1b42-a5d4-4ca1-9c84-2ab40235763a.png",
     path: "/specialized/security-glazing"
   },
   {
