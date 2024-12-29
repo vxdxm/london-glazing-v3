@@ -7,7 +7,7 @@ const residentialServices = [
     title: "Sash Windows",
     description: "Perfect for traditional Victorian and Georgian properties",
     details: "Our sash window solutions preserve the original character of your period property while providing modern insulation benefits. We use specially designed systems that complement existing window frames.",
-    image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
+    image: "/lovable-uploads/9d38f051-c9a7-48cb-8b79-5166e75a3f64.png",
     path: "/residential/sash-windows"
   },
   {
