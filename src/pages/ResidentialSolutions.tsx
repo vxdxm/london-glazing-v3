@@ -21,7 +21,7 @@ const residentialServices = [
     title: "Bay Windows",
     description: "Specialized solutions for bay window configurations",
     details: "Expertly designed secondary glazing systems that follow the contours of your bay windows, maintaining their aesthetic appeal while improving insulation.",
-    image: "https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a",
+    image: "/lovable-uploads/963badc7-4485-4f5d-9f11-27736802f9fe.png",
     path: "/residential/bay-windows"
   },
   {
