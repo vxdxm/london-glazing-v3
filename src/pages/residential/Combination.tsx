@@ -22,8 +22,8 @@ const Combination = () => {
           </div>
           <div className="relative h-[300px] group">
             <img 
-              src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
-              alt="Modern combination window with multiple panes overlooking a garden with autumn trees"
+              src="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png"
+              alt="Modern combination window featuring sash and horizontal sliding elements in a bright interior setting"
               className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
             />
           </div>
@@ -40,8 +40,8 @@ const Combination = () => {
                 <div className="space-y-4">
                   <div className="relative h-[200px] group">
                     <img 
-                      src="/lovable-uploads/24f31eb7-edaf-4883-822d-52d29b470aad.png"
-                      alt="Sash and horizontal sliding window combination featuring a bay window with multiple panes overlooking a brick building"
+                      src="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png"
+                      alt="Sash and horizontal sliding window combination featuring multiple panes in a modern setting"
                       className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
                     />
                   </div>
