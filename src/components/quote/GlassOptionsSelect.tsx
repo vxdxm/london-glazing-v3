@@ -21,7 +21,7 @@ const GlassOptionsSelect = ({ onValueChange }: GlassOptionsSelectProps) => {
           <SelectItem value="medium">Medium Performance Glass (8.8mm)</SelectItem>
           <SelectItem value="high">High Performance Glass (10.8mm)</SelectItem>
           <SelectItem value="premium">Premium Glass (12.8mm)</SelectItem>
-          <SelectItem value="double">Double Glazing (24mm - 4mm/16mm/4mm)</SelectItem>
+          <SelectItem value="double">Double Glazing</SelectItem>
         </SelectContent>
       </Select>
     </div>
