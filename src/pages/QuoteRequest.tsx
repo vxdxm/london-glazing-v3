@@ -6,12 +6,14 @@ import WindowDimensions from "@/components/quote/WindowDimensions";
 import ImageUpload from "@/components/quote/ImageUpload";
 import ContactDetails from "@/components/quote/ContactDetails";
 import WindowCount from "@/components/quote/WindowCount";
+import GlassOptionsSelect from "@/components/quote/GlassOptionsSelect";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 const QuoteRequest = () => {
   const [windowType, setWindowType] = useState("");
   const [windowCount, setWindowCount] = useState(1);
+  const [glassType, setGlassType] = useState("");
   const [dimensions, setDimensions] = useState([{ width: "", height: "" }]);
   const [images, setImages] = useState<File[]>([]);
   const [firstName, setFirstName] = useState("");
@@ -66,6 +68,7 @@ const QuoteRequest = () => {
     console.log("Form submitted:", {
       windowType,
       windowCount,
+      glassType,
       dimensions,
       images,
       firstName,
@@ -101,6 +104,8 @@ const QuoteRequest = () => {
               count={windowCount}
               onCountChange={handleWindowCountChange}
             />
+            
+            <GlassOptionsSelect onValueChange={setGlassType} />
             
             <WindowDimensions
               dimensions={dimensions}
