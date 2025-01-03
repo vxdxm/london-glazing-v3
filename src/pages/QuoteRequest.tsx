@@ -50,31 +50,67 @@ const QuoteRequest = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted with data:", {
-      firstName,
-      lastName,
-      email,
-      phone,
-      windowType,
-      windowCount,
-      dimensions,
-      glassType,
-      images
+    
+    // Create form data
+    const formData = new FormData();
+    formData.append('firstName', firstName);
+    formData.append('lastName', lastName);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('windowType', windowType);
+    formData.append('windowCount', windowCount.toString());
+    formData.append('dimensions', JSON.stringify(dimensions));
+    formData.append('glassType', glassType);
+    
+    // Append images
+    images.forEach((image, index) => {
+      formData.append(`image${index + 1}`, image);
     });
 
-    // Show success message
-    toast.success("Quote request submitted successfully! We'll be in touch soon.");
-    
-    // Reset form
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPhone("");
-    setWindowType("");
-    setWindowCount(1);
-    setDimensions([{ width: "", height: "" }]);
-    setGlassType("");
-    setImages([]);
+    try {
+      // Send email using a mailto link
+      const mailtoLink = `mailto:info@secondaryglazingspecialist.com?subject=New Quote Request&body=${encodeURIComponent(`
+        Name: ${firstName} ${lastName}
+        Email: ${email}
+        Phone: ${phone}
+        Window Type: ${windowType}
+        Window Count: ${windowCount}
+        Glass Type: ${glassType}
+        Dimensions: ${JSON.stringify(dimensions)}
+      `)}`;
+
+      window.location.href = mailtoLink;
+
+      // Log form data for debugging
+      console.log("Form submitted with data:", {
+        firstName,
+        lastName,
+        email,
+        phone,
+        windowType,
+        windowCount,
+        dimensions,
+        glassType,
+        images
+      });
+
+      // Show success message
+      toast.success("Quote request submitted successfully! We'll be in touch soon.");
+      
+      // Reset form
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhone("");
+      setWindowType("");
+      setWindowCount(1);
+      setDimensions([{ width: "", height: "" }]);
+      setGlassType("");
+      setImages([]);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error("There was an error submitting your request. Please try again.");
+    }
   };
 
   return (
