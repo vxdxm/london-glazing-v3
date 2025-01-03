@@ -7,8 +7,8 @@ const SpecializedServices = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Specialized Secondary Glazing | Acoustic & Thermal Solutions</title>
-        <meta name="description" content="Expert specialized secondary glazing services including acoustic, thermal, and security solutions. Perfect for listed buildings and noise-sensitive properties in London." />
+        <title>Specialized Secondary Glazing London | Acoustic & Thermal Solutions</title>
+        <meta name="description" content="Expert specialized secondary glazing services in London. Advanced solutions for noise reduction, thermal insulation, and heritage windows. Professional installation guaranteed." />
         <meta name="keywords" content="acoustic glazing, thermal insulation, security glazing, condensation control, listed buildings, noise reduction, London specialist glazing" />
         <meta property="og:title" content="Specialized Secondary Glazing Solutions" />
         <meta property="og:description" content="Advanced secondary glazing solutions for specific requirements. Expert installation in London." />

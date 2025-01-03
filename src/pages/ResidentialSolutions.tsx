@@ -54,8 +54,8 @@ const ResidentialSolutions = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Residential Secondary Glazing | Solutions for London Homes</title>
-        <meta name="description" content="Discover our comprehensive residential secondary glazing solutions. From sash to casement windows, find the perfect fit for your London home. Expert installation guaranteed." />
+        <title>Residential Secondary Glazing London | Home Window Solutions</title>
+        <meta name="description" content="Transform your London home with our expert residential secondary glazing solutions. Enhance comfort, reduce noise, and improve energy efficiency. Get a free quote today." />
         <meta name="keywords" content="residential glazing, sash windows, casement windows, bay windows, horizontal sliding, lift out windows, combination windows, London homes" />
         <meta property="og:title" content="Residential Secondary Glazing Solutions" />
         <meta property="og:description" content="Expert residential secondary glazing solutions for London homes. Enhance comfort and efficiency." />

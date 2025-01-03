@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Helmet } from "react-helmet";
 
 const FAQs = () => {
   const faqs = [
@@ -46,6 +47,10 @@ const FAQs = () => {
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <Helmet>
+          <title>Secondary Glazing FAQs | Expert Advice & Information London</title>
+          <meta name="description" content="Find answers to common secondary glazing questions. Expert advice on installation, benefits, and maintenance from London's leading glazing specialists." />
+        </Helmet>
         <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">

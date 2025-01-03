@@ -6,8 +6,8 @@ const CommercialSolutions = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Commercial Secondary Glazing | Office & Business Solutions</title>
-        <meta name="description" content="Professional commercial secondary glazing solutions for offices, hotels, and businesses in London. Improve energy efficiency and reduce noise. Expert consultation available." />
+        <title>Commercial Secondary Glazing London | Business & Office Solutions</title>
+        <meta name="description" content="Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, and commercial buildings." />
         <meta name="keywords" content="commercial glazing, office glazing, business windows, hotel windows, commercial property, noise reduction, energy efficiency, London commercial" />
         <meta property="og:title" content="Commercial Secondary Glazing Solutions" />
         <meta property="og:description" content="Transform your commercial property with our expert secondary glazing solutions." />

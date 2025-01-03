@@ -12,8 +12,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>London Secondary Glazing Solutions | Expert Window Insulation Services</title>
-        <meta name="description" content="Premium secondary glazing solutions in London. Enhance your home with superior noise reduction, thermal insulation, and security features. Free consultation available." />
+        <title>Secondary Glazing London | Expert Window Solutions & Installation</title>
+        <meta name="description" content="London's trusted secondary glazing specialists. Enhance your home with superior noise reduction, thermal insulation, and security features. Free consultation available." />
         <meta name="keywords" content="secondary glazing, window insulation, noise reduction, thermal insulation, security glazing, London windows, energy efficient windows, listed building windows" />
         <meta property="og:title" content="London Secondary Glazing Solutions | Expert Window Insulation Services" />
         <meta property="og:description" content="Premium secondary glazing solutions in London. Enhance your home with superior noise reduction, thermal insulation, and security features." />
