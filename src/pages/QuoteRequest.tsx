@@ -1,19 +1,23 @@
 import { Helmet } from "react-helmet";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 import ContactDetails from "@/components/quote/ContactDetails";
 import WindowTypeSelect from "@/components/quote/WindowTypeSelect";
 import WindowCount from "@/components/quote/WindowCount";
 import WindowDimensions from "@/components/quote/WindowDimensions";
 import GlassOptionsSelect from "@/components/quote/GlassOptionsSelect";
 import ImageUpload from "@/components/quote/ImageUpload";
+import { MainNav } from "@/components/MainNav";
 
 const QuoteRequest = () => {
+  const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [windowType, setWindowType] = useState("");
-  const [windowCount, setWindowCount] = useState(1); // Initialize with number 1 instead of string
+  const [windowCount, setWindowCount] = useState(1);
   const [dimensions, setDimensions] = useState([{ width: "", height: "" }]);
   const [glassType, setGlassType] = useState("");
   const [images, setImages] = useState<File[]>([]);
@@ -34,6 +38,8 @@ const QuoteRequest = () => {
       const newImages = Array.from(e.target.files);
       if (images.length + newImages.length <= 5) {
         setImages([...images, ...newImages]);
+      } else {
+        toast.error("Maximum 5 images allowed");
       }
     }
   };
@@ -42,10 +48,40 @@ const QuoteRequest = () => {
     setImages(images.filter((_, i) => i !== index));
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form submitted with data:", {
+      firstName,
+      lastName,
+      email,
+      phone,
+      windowType,
+      windowCount,
+      dimensions,
+      glassType,
+      images
+    });
+
+    // Show success message
+    toast.success("Quote request submitted successfully! We'll be in touch soon.");
+    
+    // Reset form
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhone("");
+    setWindowType("");
+    setWindowCount(1);
+    setDimensions([{ width: "", height: "" }]);
+    setGlassType("");
+    setImages([]);
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <MainNav />
       <Helmet>
-        <title>Get a Free Secondary Glazing Quote | Expert Installation Services London</title>
+        <title>Request a Free Secondary Glazing Quote | Expert Installation Services London</title>
         <meta 
           name="description" 
           content="Request a free quote for professional secondary glazing installation in London. Get expert consultation and competitive pricing for all window types." 
@@ -55,7 +91,7 @@ const QuoteRequest = () => {
         <h1 className="text-4xl font-bold mb-8">Request a Quote</h1>
         <p className="text-lg mb-8">Fill out the form below to receive a free quote for our secondary glazing services.</p>
         
-        <form className="space-y-8 max-w-2xl">
+        <form onSubmit={handleSubmit} className="space-y-8 max-w-2xl">
           <ContactDetails
             firstName={firstName}
             lastName={lastName}
