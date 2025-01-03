@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
 import ContactDetails from "@/components/quote/ContactDetails";
 import WindowTypeSelect from "@/components/quote/WindowTypeSelect";
 import WindowCount from "@/components/quote/WindowCount";
@@ -11,7 +11,6 @@ import ImageUpload from "@/components/quote/ImageUpload";
 import { MainNav } from "@/components/MainNav";
 
 const QuoteRequest = () => {
-  const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,6 +20,7 @@ const QuoteRequest = () => {
   const [dimensions, setDimensions] = useState([{ width: "", height: "" }]);
   const [glassType, setGlassType] = useState("");
   const [images, setImages] = useState<File[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleWindowCountChange = (count: number) => {
     setWindowCount(count);
@@ -50,51 +50,50 @@ const QuoteRequest = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    // Create form data
-    const formData = new FormData();
-    formData.append('firstName', firstName);
-    formData.append('lastName', lastName);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('windowType', windowType);
-    formData.append('windowCount', windowCount.toString());
-    formData.append('dimensions', JSON.stringify(dimensions));
-    formData.append('glassType', glassType);
-    
-    // Append images
-    images.forEach((image, index) => {
-      formData.append(`image${index + 1}`, image);
-    });
+    setIsSubmitting(true);
 
     try {
-      // Send email using a mailto link
-      const mailtoLink = `mailto:info@secondaryglazingspecialist.com?subject=New Quote Request&body=${encodeURIComponent(`
-        Name: ${firstName} ${lastName}
-        Email: ${email}
-        Phone: ${phone}
-        Window Type: ${windowType}
-        Window Count: ${windowCount}
-        Glass Type: ${glassType}
-        Dimensions: ${JSON.stringify(dimensions)}
-      `)}`;
-
-      window.location.href = mailtoLink;
-
-      // Log form data for debugging
-      console.log("Form submitted with data:", {
-        firstName,
-        lastName,
-        email,
-        phone,
-        windowType,
-        windowCount,
-        dimensions,
-        glassType,
-        images
+      // Convert images to base64 strings
+      const imagePromises = images.map(image => {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(image);
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = error => reject(error);
+        });
       });
 
-      // Show success message
+      const base64Images = await Promise.all(imagePromises);
+
+      // Prepare email template parameters
+      const templateParams = {
+        from_name: `${firstName} ${lastName}`,
+        to_name: 'Secondary Glazing Specialist',
+        reply_to: email,
+        phone: phone,
+        window_type: windowType,
+        window_count: windowCount,
+        dimensions: JSON.stringify(dimensions),
+        glass_type: glassType,
+        images: base64Images.join('|'), // Join images with a separator
+        message: `
+          Window Details:
+          Type: ${windowType}
+          Count: ${windowCount}
+          Dimensions: ${JSON.stringify(dimensions)}
+          Glass Type: ${glassType}
+        `
+      };
+
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        'YOUR_SERVICE_ID', // You'll need to replace this
+        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        templateParams,
+        'YOUR_PUBLIC_KEY' // You'll need to replace this
+      );
+
+      console.log('Email sent successfully:', response);
       toast.success("Quote request submitted successfully! We'll be in touch soon.");
       
       // Reset form
@@ -110,6 +109,8 @@ const QuoteRequest = () => {
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error("There was an error submitting your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -158,9 +159,10 @@ const QuoteRequest = () => {
           
           <button
             type="submit"
-            className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
+            disabled={isSubmitting}
+            className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Submit Quote Request
+            {isSubmitting ? "Submitting..." : "Submit Quote Request"}
           </button>
         </form>
       </div>
