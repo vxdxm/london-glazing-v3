@@ -87,10 +87,10 @@ const QuoteRequest = () => {
 
       // Send email using EmailJS
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this
-        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
         templateParams,
-        'YOUR_PUBLIC_KEY' // You'll need to replace this
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
       );
 
       console.log('Email sent successfully:', response);
