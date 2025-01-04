@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
 import ContactDetails from "@/components/quote/ContactDetails";
@@ -54,10 +54,9 @@ const QuoteRequest = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    console.log('Starting form submission process...');
 
     try {
-      console.log('Starting form submission process...');
-
       // Convert images to base64 strings
       const imagePromises = images.map(image => {
         return new Promise((resolve, reject) => {
@@ -116,7 +115,7 @@ const QuoteRequest = () => {
       setGlassType("");
       setImages([]);
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Error sending email:', error);
       toast.error("There was an error submitting your request. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -169,7 +168,7 @@ const QuoteRequest = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed w-full"
           >
             {isSubmitting ? "Submitting..." : "Submit Quote Request"}
           </button>
