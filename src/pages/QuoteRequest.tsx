@@ -10,7 +10,7 @@ import GlassOptionsSelect from "@/components/quote/GlassOptionsSelect";
 import ImageUpload from "@/components/quote/ImageUpload";
 import { MainNav } from "@/components/MainNav";
 
-// Initialize EmailJS with your public key
+// Initialize EmailJS
 emailjs.init("BRNJRT_YbAUZ3bB-O");
 
 const QuoteRequest = () => {
@@ -54,7 +54,7 @@ const QuoteRequest = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log('Starting form submission process...');
+    console.log('Starting quote request form submission...');
 
     try {
       // Validate required fields
@@ -82,7 +82,6 @@ const QuoteRequest = () => {
       const base64Images = await Promise.all(imagePromises);
       console.log('Images converted successfully');
 
-      // Prepare email template parameters
       const templateParams = {
         from_name: `${firstName} ${lastName}`,
         to_name: 'Secondary Glazing Specialist',
@@ -92,7 +91,7 @@ const QuoteRequest = () => {
         window_count: windowCount,
         dimensions: JSON.stringify(dimensions),
         glass_type: glassType,
-        images: base64Images.join('|'), // Join images with a separator
+        images: base64Images.join('|'),
         message: `
           Window Details:
           Type: ${windowType}
@@ -104,14 +103,13 @@ const QuoteRequest = () => {
 
       console.log('Sending email via EmailJS...', {
         serviceId: 'service_3peq5cu',
-        templateId: 'template_quote',
+        templateId: 'template_s22oydk',
         hasImages: base64Images.length > 0
       });
       
-      // Send email using EmailJS
       const response = await emailjs.send(
         'service_3peq5cu',
-        'template_quote',
+        'template_s22oydk',
         templateParams,
         'BRNJRT_YbAUZ3bB-O'
       );
