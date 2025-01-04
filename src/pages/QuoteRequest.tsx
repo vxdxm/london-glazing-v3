@@ -95,7 +95,7 @@ const QuoteRequest = () => {
       
       // Send email using EmailJS
       const response = await emailjs.send(
-        'service_secondaryglaze', // Your EmailJS service ID
+        'service_3peq5cu', // Updated service ID
         'template_quote', // Your EmailJS template ID
         templateParams,
         'BRNJRT_YbAUZ3bB-O' // Your public key
