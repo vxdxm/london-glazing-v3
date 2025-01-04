@@ -2,23 +2,66 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
+import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS
+emailjs.init("BRNJRT_YbAUZ3bB-O");
 
 export function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    setName("");
-    setEmail("");
-    setMessage("");
+    setIsSubmitting(true);
+    console.log('Starting contact form submission...');
+
+    try {
+      // Validate required fields
+      if (!name || !email || !message) {
+        throw new Error("Please fill in all required fields");
+      }
+
+      const templateParams = {
+        from_name: name,
+        reply_to: email,
+        message: message,
+        to_name: 'Secondary Glazing Specialist'
+      };
+
+      console.log('Sending email via EmailJS...', {
+        serviceId: 'service_3peq5cu',
+        templateId: 'template_quote',
+        params: templateParams
+      });
+
+      const response = await emailjs.send(
+        'service_3peq5cu',
+        'template_quote',
+        templateParams,
+        'BRNJRT_YbAUZ3bB-O'
+      );
+
+      console.log('Email sent successfully:', response);
+      toast.success("Message sent! We'll get back to you as soon as possible.");
+      
+      // Reset form
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error('Error sending email:', error);
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("There was an error sending your message. Please try again.");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -37,6 +80,7 @@ export function ContactForm() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
+                disabled={isSubmitting}
               />
             </div>
             <div>
@@ -49,6 +93,7 @@ export function ContactForm() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled={isSubmitting}
               />
             </div>
             <div>
@@ -61,10 +106,11 @@ export function ContactForm() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 className="min-h-[150px]"
+                disabled={isSubmitting}
               />
             </div>
-            <Button type="submit" className="w-full">
-              Send Message
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>
