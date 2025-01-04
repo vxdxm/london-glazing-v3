@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
+import { ContactFormInput } from "./contact/ContactFormInput";
+import { ContactFormTextarea } from "./contact/ContactFormTextarea";
 
 // Initialize EmailJS
 emailjs.init("BRNJRT_YbAUZ3bB-O");
@@ -20,7 +20,6 @@ export function ContactForm() {
     console.log('Starting contact form submission...');
 
     try {
-      // Validate required fields
       if (!name || !email || !message) {
         throw new Error("Please fill in all required fields");
       }
@@ -48,7 +47,6 @@ export function ContactForm() {
       console.log('Email sent successfully:', response);
       toast.success("Message sent! We'll get back to you as soon as possible.");
       
-      // Reset form
       setName("");
       setEmail("");
       setMessage("");
@@ -71,44 +69,31 @@ export function ContactForm() {
           <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
           
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
-                Name
-              </label>
-              <Input
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                disabled={isSubmitting}
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
-                Email
-              </label>
-              <Input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                disabled={isSubmitting}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Message
-              </label>
-              <Textarea
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-                className="min-h-[150px]"
-                disabled={isSubmitting}
-              />
-            </div>
+            <ContactFormInput
+              id="name"
+              label="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              disabled={isSubmitting}
+            />
+            <ContactFormInput
+              id="email"
+              label="Email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              disabled={isSubmitting}
+            />
+            <ContactFormTextarea
+              id="message"
+              label="Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+              disabled={isSubmitting}
+            />
             <Button type="submit" className="w-full" disabled={isSubmitting}>
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
