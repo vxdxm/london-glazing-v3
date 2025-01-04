@@ -34,13 +34,13 @@ export function ContactForm() {
 
       console.log('Sending email via EmailJS...', {
         serviceId: 'service_3peq5cu',
-        templateId: 'template_quote',
+        templateId: 'template_contact',
         params: templateParams
       });
 
       const response = await emailjs.send(
         'service_3peq5cu',
-        'template_quote',
+        'template_contact',
         templateParams,
         'BRNJRT_YbAUZ3bB-O'
       );
