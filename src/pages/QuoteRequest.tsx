@@ -11,7 +11,7 @@ import ImageUpload from "@/components/quote/ImageUpload";
 import { MainNav } from "@/components/MainNav";
 
 // Initialize EmailJS with your public key
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("BRNJRT_YbAUZ3bB-O");
 
 const QuoteRequest = () => {
   const [firstName, setFirstName] = useState("");
@@ -96,10 +96,10 @@ const QuoteRequest = () => {
       
       // Send email using EmailJS
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_secondaryglaze', // Your EmailJS service ID
+        'template_quote', // Your EmailJS template ID
         templateParams,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'BRNJRT_YbAUZ3bB-O' // Your public key
       );
 
       console.log('Email sent successfully:', response);
