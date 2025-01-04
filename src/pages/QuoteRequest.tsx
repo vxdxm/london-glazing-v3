@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
 import ContactDetails from "@/components/quote/ContactDetails";
@@ -9,6 +9,9 @@ import WindowDimensions from "@/components/quote/WindowDimensions";
 import GlassOptionsSelect from "@/components/quote/GlassOptionsSelect";
 import ImageUpload from "@/components/quote/ImageUpload";
 import { MainNav } from "@/components/MainNav";
+
+// Initialize EmailJS with your public key
+emailjs.init("YOUR_PUBLIC_KEY");
 
 const QuoteRequest = () => {
   const [firstName, setFirstName] = useState("");
@@ -53,6 +56,8 @@ const QuoteRequest = () => {
     setIsSubmitting(true);
 
     try {
+      console.log('Starting form submission process...');
+
       // Convert images to base64 strings
       const imagePromises = images.map(image => {
         return new Promise((resolve, reject) => {
@@ -63,7 +68,9 @@ const QuoteRequest = () => {
         });
       });
 
+      console.log('Converting images to base64...');
       const base64Images = await Promise.all(imagePromises);
+      console.log('Images converted successfully');
 
       // Prepare email template parameters
       const templateParams = {
@@ -85,6 +92,8 @@ const QuoteRequest = () => {
         `
       };
 
+      console.log('Sending email via EmailJS...');
+      
       // Send email using EmailJS
       const response = await emailjs.send(
         'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
