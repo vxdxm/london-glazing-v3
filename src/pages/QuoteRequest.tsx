@@ -57,6 +57,18 @@ const QuoteRequest = () => {
     console.log('Starting form submission process...');
 
     try {
+      // Validate required fields
+      if (!firstName || !lastName || !email || !phone || !windowType || !glassType) {
+        throw new Error("Please fill in all required fields");
+      }
+
+      // Validate dimensions
+      const invalidDimensions = dimensions.some(dim => !dim.width || !dim.height);
+      if (invalidDimensions) {
+        throw new Error("Please provide all window dimensions");
+      }
+
+      console.log('Converting images to base64...');
       // Convert images to base64 strings
       const imagePromises = images.map(image => {
         return new Promise((resolve, reject) => {
@@ -67,7 +79,6 @@ const QuoteRequest = () => {
         });
       });
 
-      console.log('Converting images to base64...');
       const base64Images = await Promise.all(imagePromises);
       console.log('Images converted successfully');
 
@@ -91,14 +102,18 @@ const QuoteRequest = () => {
         `
       };
 
-      console.log('Sending email via EmailJS...');
+      console.log('Sending email via EmailJS...', {
+        serviceId: 'service_3peq5cu',
+        templateId: 'template_quote',
+        hasImages: base64Images.length > 0
+      });
       
       // Send email using EmailJS
       const response = await emailjs.send(
-        'service_3peq5cu', // Updated service ID
-        'template_quote', // Your EmailJS template ID
+        'service_3peq5cu',
+        'template_quote',
         templateParams,
-        'BRNJRT_YbAUZ3bB-O' // Your public key
+        'BRNJRT_YbAUZ3bB-O'
       );
 
       console.log('Email sent successfully:', response);
@@ -116,7 +131,11 @@ const QuoteRequest = () => {
       setImages([]);
     } catch (error) {
       console.error('Error sending email:', error);
-      toast.error("There was an error submitting your request. Please try again.");
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else {
+        toast.error("There was an error submitting your request. Please try again.");
+      }
     } finally {
       setIsSubmitting(false);
     }
