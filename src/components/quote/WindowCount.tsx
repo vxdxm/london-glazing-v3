@@ -13,17 +13,12 @@ const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
         type="number"
         min="1"
         max="10"
-        value={count || ""}
+        value={count}
         onChange={(e) => {
           const value = e.target.value;
-          if (value === "") {
-            // Allow empty value for manual deletion
-            onCountChange(1);
-          } else {
-            const numValue = parseInt(value);
-            if (!isNaN(numValue) && numValue >= 1 && numValue <= 10) {
-              onCountChange(numValue);
-            }
+          const numValue = parseInt(value);
+          if (!isNaN(numValue) && numValue >= 1 && numValue <= 10) {
+            onCountChange(numValue);
           }
         }}
         required
