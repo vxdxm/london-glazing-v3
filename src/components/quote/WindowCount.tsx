@@ -21,8 +21,7 @@ const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
           const value = e.target.value;
           
           if (value === '') {
-            // Allow empty input
-            onCountChange(0);
+            // Keep the current count if input is empty
             return;
           }
 
