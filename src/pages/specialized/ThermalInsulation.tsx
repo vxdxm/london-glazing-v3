@@ -12,8 +12,8 @@ const ThermalInsulation = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
               <img 
-                src="/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png"
-                alt="Secondary glazing installation in progress"
+                src="/lovable-uploads/0d34a569-2cbb-4f0b-ae78-7dc0b4ad4799.png"
+                alt="Modern office space with large windows showing thermal insulation implementation"
                 className="w-full h-full object-cover"
               />
             </div>
