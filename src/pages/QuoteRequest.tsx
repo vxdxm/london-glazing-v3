@@ -7,7 +7,6 @@ import WindowTypeSelect from "@/components/quote/WindowTypeSelect";
 import WindowCount from "@/components/quote/WindowCount";
 import WindowDimensions from "@/components/quote/WindowDimensions";
 import GlassOptionsSelect from "@/components/quote/GlassOptionsSelect";
-import ImageUpload from "@/components/quote/ImageUpload";
 import { MainNav } from "@/components/MainNav";
 
 // Initialize EmailJS
@@ -22,7 +21,6 @@ const QuoteRequest = () => {
   const [windowCount, setWindowCount] = useState(1);
   const [dimensions, setDimensions] = useState([{ width: "", height: "" }]);
   const [glassType, setGlassType] = useState("");
-  const [images, setImages] = useState<File[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleWindowCountChange = (count: number) => {
@@ -34,21 +32,6 @@ const QuoteRequest = () => {
     const newDimensions = [...dimensions];
     newDimensions[index] = { ...newDimensions[index], [field]: value };
     setDimensions(newDimensions);
-  };
-
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      const newImages = Array.from(e.target.files);
-      if (images.length + newImages.length <= 5) {
-        setImages([...images, ...newImages]);
-      } else {
-        toast.error("Maximum 5 images allowed");
-      }
-    }
-  };
-
-  const handleRemoveImage = (index: number) => {
-    setImages(images.filter((_, i) => i !== index));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -68,64 +51,8 @@ const QuoteRequest = () => {
         throw new Error("Please provide all window dimensions");
       }
 
-      console.log('Converting images to base64...');
-      // Convert images to base64 strings with reduced size
-      const imagePromises: Promise<string>[] = images.map(image => {
-        return new Promise<string>((resolve, reject) => {
-          const reader = new FileReader();
-          const img = new Image();
-          
-          img.onload = () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            
-            // Calculate new dimensions (max 800px width/height)
-            let width = img.width;
-            let height = img.height;
-            const maxSize = 800;
-            
-            if (width > height && width > maxSize) {
-              height = (height * maxSize) / width;
-              width = maxSize;
-            } else if (height > maxSize) {
-              width = (width * maxSize) / height;
-              height = maxSize;
-            }
-            
-            canvas.width = width;
-            canvas.height = height;
-            
-            ctx?.drawImage(img, 0, 0, width, height);
-            
-            // Convert to base64 with reduced quality
-            const base64String = canvas.toDataURL('image/jpeg', 0.7);
-            resolve(base64String);
-          };
-          
-          img.onerror = reject;
-          
-          reader.onload = (e) => {
-            if (e.target?.result) {
-              img.src = e.target.result as string;
-            }
-          };
-          reader.onerror = reject;
-          reader.readAsDataURL(image);
-        });
-      });
-
-      const base64Images = await Promise.all(imagePromises);
-      console.log('Images converted successfully');
-
-      // Split images into chunks if needed
-      const imageChunks: string[][] = [];
-      const chunkSize = 3;
-      for (let i = 0; i < base64Images.length; i += chunkSize) {
-        imageChunks.push(base64Images.slice(i, i + chunkSize));
-      }
-
-      // Create template params without images first
-      const baseTemplateParams = {
+      // Create template params
+      const templateParams = {
         from_name: `${firstName} ${lastName}`,
         to_name: 'Secondary Glazing Specialist',
         reply_to: email,
@@ -143,33 +70,15 @@ const QuoteRequest = () => {
         `
       };
 
-      // Send initial email with form data
-      console.log('Sending initial email...');
+      // Send email
+      console.log('Sending email...');
       await emailjs.send(
         'service_3peq5cu',
         'template_s22oydk',
-        baseTemplateParams
+        templateParams
       );
 
-      // Send additional emails with images if there are any
-      if (imageChunks.length > 0) {
-        console.log('Sending images in separate emails...');
-        for (let i = 0; i < imageChunks.length; i++) {
-          const imageParams = {
-            ...baseTemplateParams,
-            images: imageChunks[i].join('|'),
-            part: `Images part ${i + 1} of ${imageChunks.length}`
-          };
-
-          await emailjs.send(
-            'service_3peq5cu',
-            'template_s22oydk',
-            imageParams
-          );
-        }
-      }
-
-      console.log('All emails sent successfully');
+      console.log('Email sent successfully');
       toast.success("Quote request submitted successfully! We'll be in touch soon.");
       
       // Reset form
@@ -181,7 +90,6 @@ const QuoteRequest = () => {
       setWindowCount(1);
       setDimensions([{ width: "", height: "" }]);
       setGlassType("");
-      setImages([]);
     } catch (error) {
       console.error('Error sending email:', error);
       if (error instanceof Error) {
@@ -230,12 +138,6 @@ const QuoteRequest = () => {
           />
           
           <GlassOptionsSelect onValueChange={setGlassType} />
-          
-          <ImageUpload
-            images={images}
-            onImageUpload={handleImageUpload}
-            onRemoveImage={handleRemoveImage}
-          />
           
           <button
             type="submit"
