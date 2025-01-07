@@ -27,6 +27,9 @@ import AcousticGlazing from "./pages/specialized/AcousticGlazing";
 import ThermalInsulation from "./pages/specialized/ThermalInsulation";
 import SecurityGlazing from "./pages/specialized/SecurityGlazing";
 import CondensationControl from "./pages/specialized/CondensationControl";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import CookiePolicy from "./pages/CookiePolicy";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +48,11 @@ const App = () => (
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<FAQs />} />
+          
+          {/* Legal Routes */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           
           {/* Residential Routes */}
           <Route path="/residential" element={<ResidentialSolutions />} />
