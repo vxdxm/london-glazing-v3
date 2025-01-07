@@ -12,9 +12,9 @@ const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
     console.log('Input value changed:', e.target.value);
     const value = e.target.value;
     
-    // Allow empty input or values between 1-10
+    // Allow empty input temporarily while typing
     if (value === '') {
-      onCountChange(1); // Reset to 1 if empty
+      onCountChange(1);
       return;
     }
 
