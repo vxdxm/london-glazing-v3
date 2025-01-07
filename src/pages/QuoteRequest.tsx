@@ -70,8 +70,8 @@ const QuoteRequest = () => {
 
       console.log('Converting images to base64...');
       // Convert images to base64 strings with reduced size
-      const imagePromises = images.map(image => {
-        return new Promise((resolve, reject) => {
+      const imagePromises: Promise<string>[] = images.map(image => {
+        return new Promise<string>((resolve, reject) => {
           const reader = new FileReader();
           const img = new Image();
           
