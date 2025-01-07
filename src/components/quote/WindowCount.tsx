@@ -15,9 +15,9 @@ const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
         max="10"
         value={count || ""}
         onChange={(e) => {
-          const value = e.target.value === "" ? "" : parseInt(e.target.value);
-          if (value === "" || (!isNaN(value) && value >= 1 && value <= 10)) {
-            onCountChange(value === "" ? 1 : value);
+          const value = e.target.value === "" ? 1 : parseInt(e.target.value);
+          if (!isNaN(value) && value >= 1 && value <= 10) {
+            onCountChange(value);
           }
         }}
         required
