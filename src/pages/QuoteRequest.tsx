@@ -110,8 +110,7 @@ const QuoteRequest = () => {
       const response = await emailjs.send(
         'service_3peq5cu',
         'template_s22oydk',
-        templateParams,
-        'BRNJRT_YbAUZ3bB-O'
+        templateParams
       );
 
       console.log('Email sent successfully:', response);
