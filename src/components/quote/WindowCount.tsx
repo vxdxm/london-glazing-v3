@@ -6,6 +6,8 @@ interface WindowCountProps {
 }
 
 const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
+  console.log('Current window count:', count);
+
   return (
     <div>
       <label className="block text-sm font-medium mb-2">Number of Windows</label>
@@ -13,11 +15,20 @@ const WindowCount = ({ count, onCountChange }: WindowCountProps) => {
         type="number"
         min="1"
         max="10"
-        value={count}
+        value={count || ''}
         onChange={(e) => {
+          console.log('Input value changed:', e.target.value);
           const value = e.target.value;
+          
+          if (value === '') {
+            // Allow empty input
+            onCountChange(0);
+            return;
+          }
+
           const numValue = parseInt(value);
           if (!isNaN(numValue) && numValue >= 1 && numValue <= 10) {
+            console.log('Setting new window count:', numValue);
             onCountChange(numValue);
           }
         }}
