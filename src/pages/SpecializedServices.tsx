@@ -27,7 +27,7 @@ const SpecializedServices = () => {
             <CardContent className="p-0">
               <AspectRatio ratio={16/9}>
                 <img
-                  src="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png"
+                  src="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png"
                   alt="Acoustic glazing installation showing sound dampening features"
                   className="w-full h-full object-cover rounded-t-lg"
                 />
@@ -61,7 +61,7 @@ const SpecializedServices = () => {
             <CardContent className="p-0">
               <AspectRatio ratio={16/9}>
                 <img
-                  src="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png"
+                  src="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png"
                   alt="Security glazing features and installation"
                   className="w-full h-full object-cover rounded-t-lg"
                 />
