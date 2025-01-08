@@ -17,8 +17,8 @@ const OfficeBuildings = () => {
         <div className="mb-16">
           <AspectRatio ratio={21/9} className="mb-8">
             <img
-              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-              alt="Modern office building with glass facade"
+              src="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png"
+              alt="Office interior with secondary glazing installation"
               className="rounded-lg object-cover w-full h-full"
             />
           </AspectRatio>
