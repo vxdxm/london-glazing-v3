@@ -24,6 +24,13 @@ const CommercialSolutions = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link to="/commercial/office-buildings">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+              <div className="w-full h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+                  alt="Modern office building"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Office Glazing Solutions</CardTitle>
               </CardHeader>
@@ -37,6 +44,13 @@ const CommercialSolutions = () => {
 
           <Link to="/commercial/hospitality-sector">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+              <div className="w-full h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
+                  alt="Modern hotel building"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Hotel & Hospitality Solutions</CardTitle>
               </CardHeader>
@@ -50,6 +64,13 @@ const CommercialSolutions = () => {
 
           <Link to="/commercial/healthcare-industry">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+              <div className="w-full h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                  alt="Modern healthcare facility"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Healthcare Industry Solutions</CardTitle>
               </CardHeader>
@@ -63,6 +84,13 @@ const CommercialSolutions = () => {
 
           <Link to="/commercial/educational-sector">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+              <div className="w-full h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+                  alt="Modern educational facility"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>Educational Sector Solutions</CardTitle>
               </CardHeader>
