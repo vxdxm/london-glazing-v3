@@ -25,8 +25,8 @@ const HospitalitySector = () => {
           <div className="w-full">
             <AspectRatio ratio={21/9}>
               <img
-                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
-                alt="Luxury hotel exterior with modern glazing"
+                src="/lovable-uploads/e03f2cb0-c65d-49e9-9bd3-14b1fd69a382.png"
+                alt="Modern hotel interior with secondary glazing installation"
                 className="rounded-lg object-cover w-full h-full"
               />
             </AspectRatio>
