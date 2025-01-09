@@ -13,7 +13,7 @@ const EducationalSector = () => {
           
           <div className="mb-8">
             <img
-              src="/lovable-uploads/c7e8f368-37e7-4802-84d8-e96a040ac74c.png"
+              src="/lovable-uploads/56d88485-571a-4326-b29d-e8e13794d088.png"
               alt="Modern educational facility with secondary glazing"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg mb-6"
             />
@@ -28,7 +28,7 @@ const EducationalSector = () => {
                 <CardContent>
                   <div className="mb-4">
                     <img
-                      src="/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png"
+                      src="/lovable-uploads/7a21c616-75fa-4c43-b665-22808e3ca26c.png"
                       alt="Classroom with acoustic glazing"
                       className="w-full h-48 object-cover rounded-lg"
                     />
@@ -54,7 +54,7 @@ const EducationalSector = () => {
                 <CardContent>
                   <div className="mb-4">
                     <img
-                      src="/lovable-uploads/bf1bde82-2bff-48bc-9ccb-82ac28cacb6a.png"
+                      src="/lovable-uploads/a091c5df-92d2-4d2e-be2d-d5f0e9372186.png"
                       alt="School windows with thermal insulation"
                       className="w-full h-48 object-cover rounded-lg"
                     />
@@ -81,7 +81,7 @@ const EducationalSector = () => {
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <img
-                        src="/lovable-uploads/2363aeff-ca37-4a34-91c1-75267dfaae9f.png"
+                        src="/lovable-uploads/935421f2-cd3f-43d7-853c-95fbbb97222d.png"
                         alt="Library with acoustic glazing"
                         className="w-full h-32 object-cover rounded-lg"
                       />
@@ -96,7 +96,7 @@ const EducationalSector = () => {
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <img
-                        src="/lovable-uploads/41ebf8a1-1774-4e48-ab3c-36589de97413.png"
+                        src="/lovable-uploads/f4fb1e9c-f9dd-440f-9fdb-7f01b5b7f12e.png"
                         alt="Research facility with thermal insulation"
                         className="w-full h-32 object-cover rounded-lg"
                       />
@@ -111,7 +111,7 @@ const EducationalSector = () => {
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <img
-                        src="/lovable-uploads/41fdf8fc-4bed-4792-87dd-45ca3fa377de.png"
+                        src="/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png"
                         alt="Sports facility with security glazing"
                         className="w-full h-32 object-cover rounded-lg"
                       />
@@ -126,7 +126,7 @@ const EducationalSector = () => {
                   <CardContent className="pt-6">
                     <div className="mb-4">
                       <img
-                        src="/lovable-uploads/48f66df8-d436-4d4d-bb38-4ae24504fd26.png"
+                        src="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png"
                         alt="Student accommodation with condensation control"
                         className="w-full h-32 object-cover rounded-lg"
                       />
