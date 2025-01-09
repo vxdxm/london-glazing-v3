@@ -25,8 +25,8 @@ const HospitalitySector = () => {
           <div className="w-full">
             <AspectRatio ratio={21/9}>
               <img
-                src="/lovable-uploads/e03f2cb0-c65d-49e9-9bd3-14b1fd69a382.png"
-                alt="Modern hotel interior with secondary glazing installation"
+                src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png"
+                alt="Secondary glazing installation in a historic building"
                 className="rounded-lg object-cover w-full h-full"
               />
             </AspectRatio>
@@ -42,8 +42,8 @@ const HospitalitySector = () => {
                 <div className="mb-4">
                   <AspectRatio ratio={16/9}>
                     <img
-                      src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-                      alt="Modern hotel room with sound-proof windows"
+                      src="/lovable-uploads/368ef4e0-3b95-4553-9c2d-66546e736887.png"
+                      alt="Conference room with sound-proof secondary glazing"
                       className="rounded-lg object-cover w-full h-full"
                     />
                   </AspectRatio>
@@ -63,8 +63,8 @@ const HospitalitySector = () => {
                 <div className="mb-4">
                   <AspectRatio ratio={16/9}>
                     <img
-                      src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                      alt="Hotel interior with thermal glazing"
+                      src="/lovable-uploads/5b955a38-2c68-4d0c-9a22-c4815f0b0969.png"
+                      alt="Office space with thermal glazing installation"
                       className="rounded-lg object-cover w-full h-full"
                     />
                   </AspectRatio>
@@ -84,8 +84,8 @@ const HospitalitySector = () => {
                 <div className="mb-4">
                   <AspectRatio ratio={16/9}>
                     <img
-                      src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
-                      alt="Elegant hotel facade with glazing"
+                      src="/lovable-uploads/bdef4ec1-0413-4528-b776-dee1a4b8dcb3.png"
+                      alt="Modern window installation with secondary glazing"
                       className="rounded-lg object-cover w-full h-full"
                     />
                   </AspectRatio>
