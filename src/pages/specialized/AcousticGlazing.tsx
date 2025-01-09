@@ -12,8 +12,8 @@ const AcousticGlazing = () => {
           <div className="col-span-1">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a"
-                alt="Graph showing relationship between glass thickness and decibel reduction"
+                src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png"
+                alt="Modern interior with acoustic secondary glazing installation"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -25,8 +25,8 @@ const AcousticGlazing = () => {
             <Card className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="w-full h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
-                  alt="Modern building with Acoustic Secondary Glazing"
+                  src="/lovable-uploads/09754466-a230-4ca4-a233-601125c832fc.png"
+                  alt="Living room with acoustic secondary glazing"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -48,8 +48,8 @@ const AcousticGlazing = () => {
             <Card className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="w-full h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
-                  alt="Commercial building with Acoustic Secondary Glazing installation"
+                  src="/lovable-uploads/70b3b30b-ebf1-4420-bf6d-b02537cc0da8.png"
+                  alt="Dining area with acoustic glazing installation"
                   className="w-full h-full object-cover"
                 />
               </div>
