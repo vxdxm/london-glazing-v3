@@ -21,8 +21,8 @@ const ThermalInsulation = () => {
           <Card className="hover:shadow-lg transition-shadow overflow-hidden">
             <div className="w-full h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-                alt="Energy efficient building design"
+                src="/lovable-uploads/218776ee-eff4-4f63-8d88-27dd86763e28.png"
+                alt="Decorative stained glass window showing thermal efficiency through traditional design"
                 className="w-full h-full object-cover"
               />
             </div>
