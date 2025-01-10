@@ -41,8 +41,8 @@ const CondensationControl = () => {
               <div className="w-full mb-4">
                 <AspectRatio ratio={16 / 9}>
                   <img
-                    src="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png"
-                    alt="Benefits of condensation control in secondary glazing showing improved ventilation and moisture control"
+                    src="/lovable-uploads/8fd22af1-94cd-4761-b8a2-531d7834baaa.png"
+                    alt="Secondary glazing installation showing effective condensation control with clear window panes"
                     className="rounded-lg object-cover w-full h-full"
                   />
                 </AspectRatio>
