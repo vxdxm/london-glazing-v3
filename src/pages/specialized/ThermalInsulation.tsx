@@ -44,8 +44,8 @@ const ThermalInsulation = () => {
           <Card className="hover:shadow-lg transition-shadow overflow-hidden">
             <div className="w-full h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2"
-                alt="Technical thermal insulation features"
+                src="/lovable-uploads/3853a532-5ab4-43d2-8e86-a0cdbfede781.png"
+                alt="Close-up of secondary glazing installation with radiator showing thermal efficiency features"
                 className="w-full h-full object-cover"
               />
             </div>
