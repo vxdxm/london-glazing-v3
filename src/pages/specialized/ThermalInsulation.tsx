@@ -1,10 +1,21 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import CostCalculator from "@/components/CostCalculator";
+import { Helmet } from "react-helmet";
 
 const ThermalInsulation = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Thermal Insulation | Secondary Glazing Specialist</title>
+        <meta name="description" content="Improve your home's energy efficiency with our thermal insulation solutions." />
+        <meta name="keywords" content="thermal insulation, secondary glazing, energy efficiency, London glazing specialist" />
+        <meta property="og:title" content="Thermal Insulation | Secondary Glazing Specialist" />
+        <meta property="og:description" content="Expert thermal insulation solutions for your home." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/thermal-insulation" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Thermal Insulation</h1>
@@ -66,22 +77,26 @@ const ThermalInsulation = () => {
           </Card>
         </div>
 
-        {/* New Double Glazed Section */}
         <div className="mt-16 mb-16">
-          <h2 className="text-3xl font-bold mb-8">Double Glazed Secondary Units</h2>
+          <h2 className="text-3xl font-bold mb-8">Double Glazed Secondary Glazing Units</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold">Enhanced Thermal Performance</h3>
               <p className="text-gray-700">
-                Our double glazed secondary glazing units offer superior thermal insulation by creating two separate air gaps:
-                one between your existing window and the first pane, and another between the two panes of the secondary unit.
+                Our double glazed secondary glazing units offer superior performance through:
               </p>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Two separate air gaps for maximum insulation</li>
                 <li>Up to 40% better insulation than single glazed secondary units</li>
                 <li>Optimal 20mm gap between panes for maximum thermal efficiency</li>
                 <li>Argon gas filling option for enhanced performance</li>
-                <li>Low-E glass coating available for additional heat retention</li>
               </ul>
+              <Link 
+                to="/specialized/double-glazed-units" 
+                className="inline-block mt-4 text-primary hover:underline"
+              >
+                Learn more about Double Glazed Secondary Glazing Units
+              </Link>
             </div>
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
