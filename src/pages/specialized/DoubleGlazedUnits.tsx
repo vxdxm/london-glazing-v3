@@ -33,6 +33,13 @@ const DoubleGlazedUnits = () => {
               <CardTitle>Enhanced Performance</CardTitle>
             </CardHeader>
             <CardContent>
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/c4397e06-c94f-421b-ad89-a31553ba1990.png"
+                  alt="Double glazed secondary glazing installation showing enhanced thermal performance"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+              </div>
               <p className="text-gray-600 mb-6">
                 Our double glazed secondary glazing units offer superior performance through:
               </p>
@@ -50,6 +57,13 @@ const DoubleGlazedUnits = () => {
               <CardTitle>Technical Specifications</CardTitle>
             </CardHeader>
             <CardContent>
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/41ebf8a1-1774-4e48-ab3c-36589de97413.png"
+                  alt="Technical diagram showing double glazed unit specifications"
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+              </div>
               <div className="space-y-6">
                 <div>
                   <h3 className="font-semibold mb-2">Standard Configuration</h3>
