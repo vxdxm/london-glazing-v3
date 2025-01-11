@@ -35,8 +35,8 @@ const DoubleGlazedUnits = () => {
             <CardContent>
               <div className="mb-6">
                 <img 
-                  src="/lovable-uploads/c4397e06-c94f-421b-ad89-a31553ba1990.png"
-                  alt="Double glazed secondary glazing installation showing enhanced thermal performance"
+                  src="/lovable-uploads/23b3d2e8-2c4b-4efd-8548-2c2bb6cd5bbf.png"
+                  alt="Office space showing double glazed window installation with improved thermal performance"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
               </div>
@@ -59,8 +59,8 @@ const DoubleGlazedUnits = () => {
             <CardContent>
               <div className="mb-6">
                 <img 
-                  src="/lovable-uploads/41ebf8a1-1774-4e48-ab3c-36589de97413.png"
-                  alt="Technical diagram showing double glazed unit specifications"
+                  src="/lovable-uploads/ad6e3aae-a0f2-4e58-82c2-be85fc4857af.png"
+                  alt="Vertical sliding secondary glazing installation showing technical implementation"
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
               </div>
