@@ -56,6 +56,8 @@ const DoubleGlazedUnits = () => {
                     Enhanced sound reduction up to 48dB
                   </Link>
                 </li>
+                <li>Compliance with Building Regulations</li>
+                <li>Preservation of Original Windows</li>
               </ul>
             </CardContent>
           </Card>
