@@ -87,18 +87,49 @@ const DoubleGlazedUnits = () => {
         </div>
 
         <div className="prose max-w-none">
-          <h2 className="text-3xl font-bold mb-6">Benefits of Double Glazed Secondary Units</h2>
-          <p className="text-gray-700 mb-4">
-            Double glazed secondary glazing units represent the pinnacle of window insulation technology, 
-            offering unparalleled benefits in terms of thermal efficiency and noise reduction. By creating 
-            two separate air gaps, these units provide superior insulation compared to traditional single 
-            glazed secondary units.
+          <p className="text-gray-700 mb-6">
+            Double glazed secondary glazing units are a highly advanced solution for improving the insulation and acoustic performance of existing windows. They are particularly beneficial in older buildings where replacing the original windows may not be feasible or desirable.
           </p>
-          <p className="text-gray-700 mb-4">
-            The optimal 20mm gap between panes has been carefully engineered to maximize both thermal and 
-            acoustic performance. When combined with our optional argon gas filling and Low-E glass coating, 
-            these units can achieve remarkable U-values as low as 1.0 W/m²K.
-          </p>
+
+          <h2 className="text-2xl font-bold mb-4">1. Superior Thermal Efficiency</h2>
+          <ul className="list-disc pl-6 mb-6 text-gray-700">
+            <li className="mb-2"><strong>Dual Air Gaps:</strong> The two separate air gaps create an additional barrier to heat transfer, significantly reducing heat loss during colder months and minimizing heat gain during warmer months.</li>
+            <li className="mb-2"><strong>Low U-Values:</strong> With argon gas filling and Low-E glass coatings, these units can achieve U-values as low as 1.0 W/m²K, substantially improving energy efficiency.</li>
+            <li><strong>Reduced Condensation:</strong> The improved insulation reduces condensation formation, preventing mold and dampness.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold mb-4">2. Enhanced Acoustic Performance</h2>
+          <ul className="list-disc pl-6 mb-6 text-gray-700">
+            <li className="mb-2"><strong>Noise Reduction:</strong> The dual-pane design with optimal 20mm gap effectively reduces noise pollution, creating a quieter indoor environment.</li>
+            <li><strong>Customizable Solutions:</strong> Units can be tailored with specific glass thicknesses for targeted noise reduction.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold mb-4">3. Energy Efficiency and Cost Savings</h2>
+          <ul className="list-disc pl-6 mb-6 text-gray-700">
+            <li className="mb-2"><strong>Reduced Energy Consumption:</strong> Improved insulation leads to lower heating and cooling costs.</li>
+            <li><strong>Sustainability:</strong> Lower energy consumption contributes to a reduced carbon footprint.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold mb-4">4. Preservation of Historic Windows</h2>
+          <ul className="list-disc pl-6 mb-6 text-gray-700">
+            <li className="mb-2"><strong>Non-Invasive Solution:</strong> Ideal for historic buildings where window replacement is restricted.</li>
+            <li><strong>Reversible Installation:</strong> Can be removed without damaging existing structures.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold mb-4">5. Additional Benefits</h2>
+          <ul className="list-disc pl-6 mb-6 text-gray-700">
+            <li className="mb-2"><strong>Draft Reduction:</strong> Eliminates drafts for improved comfort.</li>
+            <li className="mb-2"><strong>UV Protection:</strong> Optional Low-E coatings protect furnishings from fading.</li>
+            <li className="mb-2"><strong>Design Flexibility:</strong> Available in various styles to match existing windows.</li>
+            <li><strong>Property Value:</strong> Enhanced performance can increase overall property value.</li>
+          </ul>
+
+          <div className="bg-secondary/50 p-6 rounded-lg mt-8">
+            <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+            <p className="text-gray-700">
+              Double glazed secondary glazing units offer comprehensive benefits, from superior thermal and acoustic performance to energy savings and aesthetic flexibility. They provide a modern, sustainable, and cost-effective solution for enhancing window performance, particularly in historic or sensitive buildings.
+            </p>
+          </div>
         </div>
       </div>
     </div>
