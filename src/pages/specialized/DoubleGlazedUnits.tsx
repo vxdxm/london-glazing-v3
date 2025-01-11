@@ -1,6 +1,7 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const DoubleGlazedUnits = () => {
   return (
@@ -47,7 +48,14 @@ const DoubleGlazedUnits = () => {
                 <li>Two separate air gaps for maximum insulation</li>
                 <li>Up to 40% better thermal performance than single units</li>
                 <li>Optimal 20mm gap between panes</li>
-                <li>Enhanced sound reduction up to 48dB</li>
+                <li>
+                  <Link 
+                    to="/specialized/acoustic-secondary-glazing-windows" 
+                    className="text-primary hover:underline"
+                  >
+                    Enhanced sound reduction up to 48dB
+                  </Link>
+                </li>
               </ul>
             </CardContent>
           </Card>

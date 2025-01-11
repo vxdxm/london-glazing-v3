@@ -31,6 +31,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import CookiePolicy from "./pages/CookiePolicy";
 import DoubleGlazedUnits from "./pages/specialized/DoubleGlazedUnits";
+import AcousticSecondaryGlazingWindows from "./pages/specialized/AcousticSecondaryGlazingWindows";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +79,7 @@ const App = () => (
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/condensation-control" element={<CondensationControl />} />
           <Route path="/specialized/double-glazed-units" element={<DoubleGlazedUnits />} />
+          <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
