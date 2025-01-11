@@ -57,11 +57,16 @@ const AcousticSecondaryGlazingWindows = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </AspectRatio>
-              <h2 className="text-2xl font-semibold mb-4">Technical Excellence</h2>
+              <h2 className="text-2xl font-semibold mb-4">Acoustic Glazing Options</h2>
               <p className="text-gray-600">
-                Using advanced 4mm-9.2mm-6.8mm acoustic glass configuration with optimal air gaps,
-                our solutions deliver exceptional noise reduction while maintaining thermal efficiency.
+                We offer a range of specialized acoustic glass configurations to meet your specific noise reduction needs:
               </p>
+              <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-600">
+                <li>Standard 4mm acoustic glass - suitable for moderate noise reduction</li>
+                <li>Enhanced 6.4mm laminated acoustic glass - for improved sound insulation</li>
+                <li>Premium 9.2mm acoustic laminated glass - maximum noise reduction performance</li>
+                <li>Custom configurations available for specific frequency targeting</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
