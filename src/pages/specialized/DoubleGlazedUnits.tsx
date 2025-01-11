@@ -76,7 +76,7 @@ const DoubleGlazedUnits = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Premium Configuration</h3>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>6mm-8mm-6mm (20mm total)</li>
+                    <li>4mm-9.2mm-6.8mm Acoustic (20mm total)</li>
                     <li>U-value: 1.0 W/m²K</li>
                     <li>Sound reduction: up to 48dB</li>
                   </ul>
