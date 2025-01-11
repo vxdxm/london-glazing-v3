@@ -93,13 +93,32 @@ const AcousticSecondaryGlazingWindows = () => {
 
           <div className="bg-secondary/50 p-6 rounded-lg">
             <h2 className="text-2xl font-semibold mb-4">Perfect For</h2>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Properties near busy roads or railways</li>
-              <li>City center locations</li>
-              <li>Listed buildings requiring noise reduction</li>
-              <li>Home offices requiring quiet environments</li>
-              <li>Recording studios and music rooms</li>
-            </ul>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Properties Near Busy Roads or Railways</h3>
+                <p className="text-gray-700">Living near a busy road or railway line can mean constant exposure to traffic noise, train rumblings, and honking horns. Our acoustic secondary glazing windows are specifically designed to tackle these challenges by significantly reducing the transmission of noise.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-2">City Center Locations</h3>
+                <p className="text-gray-700">Perfect for urban environments where noise from traffic, pedestrians, and city life can be disruptive. Our solutions provide an effective barrier against urban noise while maintaining the aesthetic appeal of your property.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Listed Buildings Requiring Noise Reduction</h3>
+                <p className="text-gray-700">Ideal for heritage properties where original windows must be preserved. Our secondary glazing provides modern noise reduction without compromising historical integrity.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Home Offices Requiring Quiet Environments</h3>
+                <p className="text-gray-700">Create a productive workspace with minimal external noise disruption. Perfect for remote workers needing a quiet environment for focused work and professional video calls.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Recording Studios and Music Rooms</h3>
+                <p className="text-gray-700">Specialized acoustic solutions for music professionals. Our windows provide superior sound insulation for optimal recording conditions and sound quality control.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
