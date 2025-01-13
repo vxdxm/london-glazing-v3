@@ -64,7 +64,14 @@ const DoubleGlazedUnits = () => {
                     Compliance with Building Regulations
                   </Link>
                 </li>
-                <li>Preservation of Original Windows</li>
+                <li>
+                  <Link 
+                    to="/specialized/secondary-glazing-original-windows" 
+                    className="text-primary hover:underline"
+                  >
+                    Preservation of Original Windows
+                  </Link>
+                </li>
               </ul>
             </CardContent>
           </Card>
