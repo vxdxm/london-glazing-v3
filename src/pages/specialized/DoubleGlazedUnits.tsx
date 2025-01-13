@@ -56,7 +56,14 @@ const DoubleGlazedUnits = () => {
                     Enhanced sound reduction up to 48dB
                   </Link>
                 </li>
-                <li>Compliance with Building Regulations</li>
+                <li>
+                  <Link 
+                    to="/specialized/secondary-glazing-building-regulations" 
+                    className="text-primary hover:underline"
+                  >
+                    Compliance with Building Regulations
+                  </Link>
+                </li>
                 <li>Preservation of Original Windows</li>
               </ul>
             </CardContent>
