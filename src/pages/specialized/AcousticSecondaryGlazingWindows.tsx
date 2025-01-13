@@ -41,10 +41,37 @@ const AcousticSecondaryGlazingWindows = () => {
                 />
               </AspectRatio>
               <h2 className="text-2xl font-semibold mb-4">Superior Sound Insulation</h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 Our acoustic secondary glazing windows provide industry-leading sound reduction of up to 48dB, 
                 making them perfect for properties in noisy urban areas or near transport routes.
               </p>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Advanced Sound Reduction Technology</h3>
+                  <p className="text-gray-600">
+                    Using specialized acoustic laminated glass combined with optimized air gaps, our systems create 
+                    multiple barriers that effectively break down sound waves. This sophisticated approach targets 
+                    different frequency ranges, from low-frequency traffic noise to high-frequency urban sounds.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Measurable Performance</h3>
+                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Reduces external noise by up to 80% (48dB reduction)</li>
+                    <li>Effective across frequencies from 100Hz to 3150Hz</li>
+                    <li>Independently tested to BS EN ISO 10140-2:2010 standards</li>
+                    <li>Exceeds Building Regulations requirements for noise reduction</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Real-World Benefits</h3>
+                  <p className="text-gray-600">
+                    A 48dB reduction means that heavy traffic noise is reduced to the equivalent of a quiet library, 
+                    while train noise becomes barely perceptible. This transformation creates peaceful living spaces 
+                    even in the busiest urban environments.
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
