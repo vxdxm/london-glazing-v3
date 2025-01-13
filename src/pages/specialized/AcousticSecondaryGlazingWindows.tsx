@@ -85,15 +85,34 @@ const AcousticSecondaryGlazingWindows = () => {
                 />
               </AspectRatio>
               <h2 className="text-2xl font-semibold mb-4">Acoustic Glazing Options</h2>
-              <p className="text-gray-600">
-                We offer a range of specialized acoustic glass configurations to meet your specific noise reduction needs:
+              <p className="text-gray-600 mb-6">
+                Our acoustic glazing solutions feature two premium glass configurations, each engineered for specific noise reduction requirements:
               </p>
-              <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-600">
-                <li>Standard 4mm acoustic glass - suitable for moderate noise reduction</li>
-                <li>Enhanced 6.4mm laminated acoustic glass - for improved sound insulation</li>
-                <li>Premium 9.2mm acoustic laminated glass - maximum noise reduction performance</li>
-                <li>Custom configurations available for specific frequency targeting</li>
-              </ul>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Standard 6.4mm Acoustic Glass</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                    <li>Achieves up to 32dB noise reduction</li>
+                    <li>Ideal for residential areas with moderate traffic noise</li>
+                    <li>Laminated construction for enhanced safety</li>
+                    <li>Effective against mid to high-frequency sounds</li>
+                    <li>UV protection included</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Premium 12.8mm Acoustic Glass</h3>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
+                    <li>Superior noise reduction up to 45dB</li>
+                    <li>Perfect for high-noise urban environments</li>
+                    <li>Multi-layer acoustic lamination</li>
+                    <li>Exceptional performance across all frequency ranges</li>
+                    <li>Maximum sound insulation for transport routes</li>
+                  </ul>
+                </div>
+                <p className="text-gray-600 italic">
+                  Both options are tested to BS EN ISO 10140-2 standards and come with professional installation for optimal performance.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
