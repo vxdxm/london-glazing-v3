@@ -85,52 +85,15 @@ const AcousticSecondaryGlazingWindows = () => {
                 />
               </AspectRatio>
               <h2 className="text-2xl font-semibold mb-4">Acoustic Glazing Options</h2>
-              <p className="text-gray-600 mb-6">
-                Our comprehensive range of acoustic glass solutions is engineered to provide optimal sound insulation for various environments and noise reduction requirements:
+              <p className="text-gray-600">
+                We offer a range of specialized acoustic glass configurations to meet your specific noise reduction needs:
               </p>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Standard 6.4mm Acoustic Glass</h3>
-                  <p className="text-gray-600 mb-3">
-                    Our entry-level acoustic solution, perfect for residential properties in moderately noisy areas:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                    <li>Noise reduction up to 32dB</li>
-                    <li>Ideal for suburban environments</li>
-                    <li>Laminated safety glass construction</li>
-                    <li>UV protection included</li>
-                    <li>Cost-effective noise control solution</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Premium 12.8mm Acoustic Glass</h3>
-                  <p className="text-gray-600 mb-3">
-                    Our highest performance acoustic glazing, designed for maximum noise reduction in challenging environments:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                    <li>Superior noise reduction up to 45dB</li>
-                    <li>Perfect for high-noise urban areas</li>
-                    <li>Multiple acoustic interlayers</li>
-                    <li>Enhanced security features</li>
-                    <li>Optimal performance across all frequency ranges</li>
-                    <li>Ideal for properties near airports or railways</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Custom Solutions</h3>
-                  <p className="text-gray-600 mb-3">
-                    We also offer bespoke configurations for specific requirements:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                    <li>Specialized frequency targeting for specific noise sources</li>
-                    <li>Combined thermal and acoustic performance</li>
-                    <li>Heritage property compatible solutions</li>
-                    <li>Professional consultation available for optimal specification</li>
-                  </ul>
-                </div>
-              </div>
+              <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-600">
+                <li>Standard 4mm acoustic glass - suitable for moderate noise reduction</li>
+                <li>Enhanced 6.4mm laminated acoustic glass - for improved sound insulation</li>
+                <li>Premium 9.2mm acoustic laminated glass - maximum noise reduction performance</li>
+                <li>Custom configurations available for specific frequency targeting</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
