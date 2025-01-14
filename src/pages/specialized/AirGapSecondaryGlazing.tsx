@@ -2,6 +2,7 @@ import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Helmet } from "react-helmet";
+import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 
 const AirGapSecondaryGlazing = () => {
   return (
@@ -118,6 +119,11 @@ const AirGapSecondaryGlazing = () => {
               </div>
             </CardContent>
           </Card>
+
+          <div className="my-12">
+            <h2 className="text-3xl font-semibold mb-6 text-center">Calculate Your Noise Reduction</h2>
+            <NoiseReductionCalculator />
+          </div>
         </div>
       </div>
     </div>
