@@ -32,6 +32,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import CookiePolicy from "./pages/CookiePolicy";
 import DoubleGlazedUnits from "./pages/specialized/DoubleGlazedUnits";
+import AirGapSecondaryGlazing from "./pages/specialized/AirGapSecondaryGlazing";
 import AcousticSecondaryGlazingWindows from "./pages/specialized/AcousticSecondaryGlazingWindows";
 import SecondaryGlazingBuildingRegulations from "./pages/specialized/SecondaryGlazingBuildingRegulations";
 import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazingOriginalWindows";
@@ -82,6 +83,7 @@ const App = () => (
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/condensation-control" element={<CondensationControl />} />
           <Route path="/specialized/double-glazed-units" element={<DoubleGlazedUnits />} />
+          <Route path="/specialized/air-gap-secondary-glazing" element={<AirGapSecondaryGlazing />} />
           <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
           <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
           <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />

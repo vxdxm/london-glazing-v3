@@ -117,7 +117,7 @@ const DoubleGlazedUnits = () => {
 
           <h2 className="text-2xl font-bold mb-4">1. Superior Thermal Efficiency</h2>
           <ul className="list-disc pl-6 mb-6 text-gray-700">
-            <li className="mb-2"><strong>Dual Air Gaps:</strong> The two separate air gaps create an additional barrier to heat transfer, significantly reducing heat loss during colder months and minimizing heat gain during warmer months.</li>
+            <li className="mb-2"><strong>Dual Air Gaps:</strong> <Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">Two separate air gaps for maximum insulation</Link>, significantly reducing heat loss during colder months and minimizing heat gain during warmer months.</li>
             <li className="mb-2"><strong>Low U-Values:</strong> With argon gas filling and Low-E glass coatings, these units can achieve U-values as low as 1.0 W/m²K, substantially improving energy efficiency.</li>
             <li><strong>Reduced Condensation:</strong> The improved insulation reduces condensation formation, preventing mold and dampness.</li>
           </ul>
