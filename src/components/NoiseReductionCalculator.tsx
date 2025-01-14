@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { Label } from "./ui/label";
+import { Checkbox } from "./ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 
 type WindowType = "single" | "double";
@@ -10,18 +11,22 @@ type GasType = "air" | "argon" | "krypton";
 
 const NoiseReductionCalculator = () => {
   const [originalWindow, setOriginalWindow] = useState<WindowType>("single");
-  const [glassType, setGlassType] = useState<GlassType>("standard");
-  const [gapSize, setGapSize] = useState<GapSize>("100");
-  const [gasType, setGasType] = useState<GasType>("air");
+  const [selectedGlassTypes, setSelectedGlassTypes] = useState<GlassType[]>([]);
+  const [selectedGapSizes, setSelectedGapSizes] = useState<GapSize[]>([]);
+  const [selectedGasTypes, setSelectedGasTypes] = useState<GasType[]>([]);
 
-  const calculateNoiseReduction = (): number => {
-    console.log("Calculating noise reduction with params:", {
-      originalWindow,
-      glassType,
-      gapSize,
-      gasType,
-    });
+  console.log("Calculating noise reduction with params:", {
+    originalWindow,
+    selectedGlassTypes,
+    selectedGapSizes,
+    selectedGasTypes,
+  });
 
+  const calculateNoiseReduction = (
+    glassType: GlassType,
+    gapSize: GapSize,
+    gasType: GasType
+  ): number => {
     // Base reduction values
     let baseReduction = originalWindow === "single" ? 25 : 30;
 
@@ -46,16 +51,37 @@ const NoiseReductionCalculator = () => {
       krypton: 2,
     };
 
-    const totalReduction =
+    return (
       baseReduction +
       glassModifiers[glassType] +
       gapModifiers[gapSize] +
-      gasModifiers[gasType];
-
-    return totalReduction;
+      gasModifiers[gasType]
+    );
   };
 
-  const noiseReduction = calculateNoiseReduction();
+  const handleGlassTypeToggle = (type: GlassType) => {
+    setSelectedGlassTypes((current) =>
+      current.includes(type)
+        ? current.filter((t) => t !== type)
+        : [...current, type]
+    );
+  };
+
+  const handleGapSizeToggle = (size: GapSize) => {
+    setSelectedGapSizes((current) =>
+      current.includes(size)
+        ? current.filter((s) => s !== size)
+        : [...current, size]
+    );
+  };
+
+  const handleGasTypeToggle = (type: GasType) => {
+    setSelectedGasTypes((current) =>
+      current.includes(type)
+        ? current.filter((t) => t !== type)
+        : [...current, type]
+    );
+  };
 
   return (
     <Card className="p-6">
@@ -77,61 +103,103 @@ const NoiseReductionCalculator = () => {
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="glass-type">Secondary Glass Type</Label>
-          <Select
-            value={glassType}
-            onValueChange={(value: GlassType) => setGlassType(value)}
-          >
-            <SelectTrigger id="glass-type">
-              <SelectValue placeholder="Select glass type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="standard">Standard Glass</SelectItem>
-              <SelectItem value="laminated">Laminated Glass</SelectItem>
-              <SelectItem value="acoustic">Acoustic Glass</SelectItem>
-            </SelectContent>
-          </Select>
+          <Label>Secondary Glass Types</Label>
+          <div className="grid gap-2">
+            {["standard", "laminated", "acoustic"].map((type) => (
+              <div key={type} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`glass-${type}`}
+                  checked={selectedGlassTypes.includes(type as GlassType)}
+                  onCheckedChange={() => handleGlassTypeToggle(type as GlassType)}
+                />
+                <label
+                  htmlFor={`glass-${type}`}
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  {type.charAt(0).toUpperCase() + type.slice(1)} Glass
+                </label>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="gap-size">Air Gap Size (mm)</Label>
-          <Select
-            value={gapSize}
-            onValueChange={(value: GapSize) => setGapSize(value)}
-          >
-            <SelectTrigger id="gap-size">
-              <SelectValue placeholder="Select gap size" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="100">100mm</SelectItem>
-              <SelectItem value="150">150mm</SelectItem>
-              <SelectItem value="200">200mm</SelectItem>
-            </SelectContent>
-          </Select>
+          <Label>Air Gap Sizes (mm)</Label>
+          <div className="grid gap-2">
+            {["100", "150", "200"].map((size) => (
+              <div key={size} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`gap-${size}`}
+                  checked={selectedGapSizes.includes(size as GapSize)}
+                  onCheckedChange={() => handleGapSizeToggle(size as GapSize)}
+                />
+                <label
+                  htmlFor={`gap-${size}`}
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  {size}mm
+                </label>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="grid gap-2">
-          <Label htmlFor="gas-type">Gas Type</Label>
-          <Select
-            value={gasType}
-            onValueChange={(value: GasType) => setGasType(value)}
-          >
-            <SelectTrigger id="gas-type">
-              <SelectValue placeholder="Select gas type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="air">Air</SelectItem>
-              <SelectItem value="argon">Argon</SelectItem>
-              <SelectItem value="krypton">Krypton</SelectItem>
-            </SelectContent>
-          </Select>
+          <Label>Gas Types</Label>
+          <div className="grid gap-2">
+            {["air", "argon", "krypton"].map((type) => (
+              <div key={type} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`gas-${type}`}
+                  checked={selectedGasTypes.includes(type as GasType)}
+                  onCheckedChange={() => handleGasTypeToggle(type as GasType)}
+                />
+                <label
+                  htmlFor={`gas-${type}`}
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                </label>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-6 p-4 bg-secondary rounded-lg">
-          <p className="text-lg font-semibold">
-            Estimated Noise Reduction: {noiseReduction} dB
-          </p>
-          <p className="text-sm text-gray-500 mt-2">
+        <div className="mt-6 space-y-4">
+          {selectedGlassTypes.length > 0 &&
+            selectedGapSizes.length > 0 &&
+            selectedGasTypes.length > 0 && (
+              <div className="grid gap-4">
+                {selectedGlassTypes.map((glassType) =>
+                  selectedGapSizes.map((gapSize) =>
+                    selectedGasTypes.map((gasType) => (
+                      <div
+                        key={`${glassType}-${gapSize}-${gasType}`}
+                        className="p-4 bg-secondary rounded-lg"
+                      >
+                        <p className="text-lg font-semibold">
+                          Configuration: {glassType} glass, {gapSize}mm gap,{" "}
+                          {gasType}
+                        </p>
+                        <p className="text-lg">
+                          Estimated Noise Reduction:{" "}
+                          {calculateNoiseReduction(glassType, gapSize, gasType)} dB
+                        </p>
+                      </div>
+                    ))
+                  )
+                )}
+              </div>
+            )}
+          {(!selectedGlassTypes.length ||
+            !selectedGapSizes.length ||
+            !selectedGasTypes.length) && (
+            <p className="text-sm text-gray-500">
+              Please select at least one option from each category to see noise
+              reduction estimates.
+            </p>
+          )}
+          <p className="text-sm text-gray-500">
             Note: Actual noise reduction may vary based on installation quality,
             window condition, and environmental factors.
           </p>
