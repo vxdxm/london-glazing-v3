@@ -8,6 +8,7 @@ const NoiseReductionCalculator = () => {
   const { toast } = useToast();
   const [originalWindow, setOriginalWindow] = useState<'single' | 'double'>('single');
   const [secondaryGlassType, setSecondaryGlassType] = useState<string>('standard');
+  const [gapSize, setGapSize] = useState<string>('100');
   const [result, setResult] = useState<number | null>(null);
 
   // Base noise reduction values (in dB)
@@ -26,17 +27,28 @@ const NoiseReductionCalculator = () => {
     premium: 16,    // 12.8mm premium acoustic glass
   };
 
+  // Additional reduction based on gap size
+  const gapReduction = {
+    '50': 2,      // 50mm gap
+    '100': 4,     // 100mm gap (standard)
+    '150': 6,     // 150mm gap
+    '200': 7,     // 200mm gap
+  };
+
   const calculateNoiseReduction = () => {
     console.log('Calculating noise reduction with:', {
       originalWindow,
       secondaryGlassType,
+      gapSize,
       baseReduction: baseReduction[originalWindow],
-      additionalReduction: glassTypeReduction[secondaryGlassType as keyof typeof glassTypeReduction],
+      glassReduction: glassTypeReduction[secondaryGlassType as keyof typeof glassTypeReduction],
+      gapReduction: gapReduction[gapSize as keyof typeof gapReduction],
     });
 
     const baseValue = baseReduction[originalWindow];
-    const additionalValue = glassTypeReduction[secondaryGlassType as keyof typeof glassTypeReduction];
-    const totalReduction = baseValue + additionalValue;
+    const glassValue = glassTypeReduction[secondaryGlassType as keyof typeof glassTypeReduction];
+    const gapValue = gapReduction[gapSize as keyof typeof gapReduction];
+    const totalReduction = baseValue + glassValue + gapValue;
 
     setResult(totalReduction);
     
@@ -49,7 +61,7 @@ const NoiseReductionCalculator = () => {
   // Automatically calculate when selections change
   useEffect(() => {
     calculateNoiseReduction();
-  }, [originalWindow, secondaryGlassType]);
+  }, [originalWindow, secondaryGlassType, gapSize]);
 
   return (
     <Card className="w-full max-w-2xl mx-auto">
@@ -109,6 +121,33 @@ const NoiseReductionCalculator = () => {
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="premium" id="premium" />
               <Label htmlFor="premium">Premium (12.8mm - Maximum noise reduction)</Label>
+            </div>
+          </RadioGroup>
+        </div>
+
+        <div className="space-y-3">
+          <Label>Air Gap Size</Label>
+          <RadioGroup
+            defaultValue="100"
+            value={gapSize}
+            onValueChange={setGapSize}
+            className="flex flex-col space-y-2"
+          >
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="50" id="gap-50" />
+              <Label htmlFor="gap-50">50mm (Minimum recommended gap)</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="100" id="gap-100" />
+              <Label htmlFor="gap-100">100mm (Standard gap)</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="150" id="gap-150" />
+              <Label htmlFor="gap-150">150mm (Enhanced performance)</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="200" id="gap-200" />
+              <Label htmlFor="gap-200">200mm (Maximum performance)</Label>
             </div>
           </RadioGroup>
         </div>
