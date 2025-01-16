@@ -95,6 +95,7 @@ const DoubleGlazedUnits = () => {
                     <li>4mm-12mm-4mm (20mm total)</li>
                     <li>U-value: 1.2 W/m²K</li>
                     <li>Sound reduction: up to 45dB</li>
+                    <li>Cavity filled with Argon Gas</li>
                   </ul>
                 </div>
                 <div>
