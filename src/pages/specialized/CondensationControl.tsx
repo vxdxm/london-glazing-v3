@@ -32,6 +32,7 @@ const CondensationControl = () => {
                 <li>Reduces cold spots on windows</li>
                 <li>Improves ventilation control</li>
                 <li>Prevents moisture buildup</li>
+                <li>Ideal for all property types</li>
               </ul>
             </CardContent>
           </Card>
