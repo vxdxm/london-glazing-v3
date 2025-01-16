@@ -96,7 +96,7 @@ const OfficeBuildings = () => {
               <div>
                 <h3 className="font-semibold mb-4">Glass Options</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>4mm - 6mm toughened glass</li>
+                  <li>4mm - 12.8mm Acoustic Glass</li>
                   <li>Laminated security glass available</li>
                   <li>Low-E coating options</li>
                   <li>Acoustic laminate variations</li>
