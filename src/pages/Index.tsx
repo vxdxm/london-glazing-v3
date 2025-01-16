@@ -21,7 +21,7 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="London Secondary Glazing Solutions" />
         <meta name="twitter:description" content="Premium secondary glazing solutions for homes and businesses in London." />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
       </Helmet>
       <MainNav />
       <Hero />

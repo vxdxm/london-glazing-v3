@@ -39,11 +39,13 @@ import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazin
 
 const queryClient = new QueryClient();
 
+const BASE_URL = "https://secondaryglazingspecialist.com";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Helmet>
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href={`${BASE_URL}${window.location.pathname}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <Toaster />

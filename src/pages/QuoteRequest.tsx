@@ -13,6 +13,7 @@ const QuoteRequest = () => {
           name="description" 
           content="Request a free quote for professional secondary glazing installation in London. Get expert consultation and competitive pricing for all window types." 
         />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/quote-request" />
       </Helmet>
       <div className="container mx-auto px-4 py-16">
         <QuoteRequestHeader />

@@ -8,6 +8,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | Secondary Glazing London</title>
         <meta name="description" content="Our privacy policy outlines how we collect, use, and protect your personal information." />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/privacy-policy" />
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-8">
