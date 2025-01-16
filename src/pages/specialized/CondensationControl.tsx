@@ -51,7 +51,7 @@ const CondensationControl = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
-                Effective condensation control through secondary glazing offers multiple benefits for your property and health.
+                Secondary glazing offers highly effective condensation control, bringing a wide range of benefits for both your property and your health. By creating an additional barrier between the interior and exterior environments, it reduces moisture buildup on windows, preventing issues like mold, dampness, and peeling paint.
               </p>
               <ul className="list-disc list-inside text-gray-500 space-y-2">
                 <li>Prevents mold growth</li>
