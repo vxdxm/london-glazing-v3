@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -36,6 +37,7 @@ import AirGapSecondaryGlazing from "./pages/specialized/AirGapSecondaryGlazing";
 import AcousticSecondaryGlazingWindows from "./pages/specialized/AcousticSecondaryGlazingWindows";
 import SecondaryGlazingBuildingRegulations from "./pages/specialized/SecondaryGlazingBuildingRegulations";
 import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazingOriginalWindows";
+import NoiseReduction from "./pages/specialized/NoiseReduction";
 
 const queryClient = new QueryClient();
 
@@ -81,6 +83,7 @@ const App = () => (
           {/* Specialized Routes */}
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
+          <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/condensation-control" element={<CondensationControl />} />
