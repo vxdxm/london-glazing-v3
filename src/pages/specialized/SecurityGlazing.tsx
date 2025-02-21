@@ -1,13 +1,10 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
-
 const SecurityGlazing = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">Security Glazing Solutions</h1>
@@ -100,7 +97,7 @@ const SecurityGlazing = () => {
               <CheckCircle className="w-12 h-12 text-primary mb-4" />
               <CardTitle>Beyond Security</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="">
               <div className="space-y-4">
                 <p className="text-gray-600">
                   While primarily enhancing security, our secondary glazing solutions offer multiple additional benefits:
@@ -120,8 +117,6 @@ const SecurityGlazing = () => {
           </Card>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default SecurityGlazing;
