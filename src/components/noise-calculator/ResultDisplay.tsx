@@ -1,3 +1,4 @@
+
 interface ResultDisplayProps {
   result: number | null;
 }

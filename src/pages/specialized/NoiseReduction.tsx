@@ -1,6 +1,8 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 
 const glassTypes = [
   {
@@ -86,6 +88,10 @@ const NoiseReduction = () => {
             and configurations to meet your specific needs. From residential properties to commercial buildings, we provide 
             tailored solutions to combat noise pollution effectively.
           </p>
+        </div>
+
+        <div className="mb-12" id="calculator">
+          <NoiseReductionCalculator />
         </div>
 
         <h2 className="text-2xl font-semibold mb-6">Single Glazed Options</h2>
