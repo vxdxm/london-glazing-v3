@@ -2,10 +2,8 @@ import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-
 const CommercialSolutions = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Commercial Secondary Glazing London | Business & Office Solutions</title>
         <meta name="description" content="Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, and commercial buildings." />
@@ -25,11 +23,7 @@ const CommercialSolutions = () => {
           <Link to="/commercial/office-buildings">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
-                  alt="Modern office building"
-                  className="w-full h-full object-cover"
-                />
+                <img alt="Modern office building" className="w-full h-full object-cover" src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" />
               </div>
               <CardHeader>
                 <CardTitle>Office Glazing Solutions</CardTitle>
@@ -45,11 +39,7 @@ const CommercialSolutions = () => {
           <Link to="/commercial/hospitality-sector">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
-                  alt="Modern hotel building"
-                  className="w-full h-full object-cover"
-                />
+                <img alt="Modern hotel building" className="w-full h-full object-cover" src="/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg" />
               </div>
               <CardHeader>
                 <CardTitle>Hotel & Hospitality Solutions</CardTitle>
@@ -65,11 +55,7 @@ const CommercialSolutions = () => {
           <Link to="/commercial/healthcare-industry">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-                  alt="Modern healthcare facility"
-                  className="w-full h-full object-cover"
-                />
+                <img alt="Modern healthcare facility" className="w-full h-full object-cover" src="/lovable-uploads/056a60d0-4ffa-4e1c-977a-c2bbe100e809.jpg" />
               </div>
               <CardHeader>
                 <CardTitle>Healthcare Industry Solutions</CardTitle>
@@ -85,11 +71,7 @@ const CommercialSolutions = () => {
           <Link to="/commercial/educational-sector">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
-                  alt="Modern educational facility"
-                  className="w-full h-full object-cover"
-                />
+                <img alt="Modern educational facility" src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" className="w-full h-full object-fill" />
               </div>
               <CardHeader>
                 <CardTitle>Educational Sector Solutions</CardTitle>
@@ -103,8 +85,6 @@ const CommercialSolutions = () => {
           </Link>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CommercialSolutions;
