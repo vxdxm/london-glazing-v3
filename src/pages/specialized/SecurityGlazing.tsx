@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -9,7 +10,17 @@ const SecurityGlazing = () => {
     <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Security Glazing Solutions</h1>
+        <h1 className="text-4xl font-bold mb-4">Security Glazing Solutions</h1>
+        
+        <div className="prose max-w-none mb-8 text-gray-600">
+          <p className="text-lg">
+            Our security glazing solutions provide superior protection for your property through advanced secondary glazing technology. 
+            By adding an additional layer of specially designed security glass to your existing windows, we create a robust barrier 
+            against forced entry while maintaining the aesthetic appeal of your property. Our solutions combine toughened or laminated 
+            glass options with heavy-duty frames and sophisticated locking mechanisms to deliver comprehensive security without 
+            compromising on style or functionality.
+          </p>
+        </div>
         
         <div className="mb-12">
           <SecurityBreakInCalculator />
