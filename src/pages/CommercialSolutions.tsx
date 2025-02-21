@@ -1,7 +1,9 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+
 const CommercialSolutions = () => {
   return <div className="min-h-screen bg-background">
       <Helmet>
@@ -18,7 +20,14 @@ const CommercialSolutions = () => {
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Commercial Secondary Glazing Solutions</h1>
+        <h1 className="text-4xl font-bold mb-4">Commercial Secondary Glazing Solutions</h1>
+        <div className="prose max-w-none mb-8 text-gray-600">
+          <p className="text-lg">
+            Transform your commercial property with our expert secondary glazing solutions. We provide tailored installations for businesses, 
+            helping to improve energy efficiency, reduce noise pollution, and enhance security. Our solutions are perfect for offices, 
+            hotels, healthcare facilities, and educational institutions across London and surrounding areas.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link to="/commercial/office-buildings">
             <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
@@ -87,4 +96,5 @@ const CommercialSolutions = () => {
       </div>
     </div>;
 };
+
 export default CommercialSolutions;
