@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,9 +22,7 @@ const CommercialSolutions = () => {
         <h1 className="text-4xl font-bold mb-4">Commercial Secondary Glazing Solutions</h1>
         <div className="prose max-w-none mb-8 text-gray-600">
           <p className="text-lg">
-            Transform your commercial property with our expert secondary glazing solutions. We provide tailored installations for businesses, 
-            helping to improve energy efficiency, reduce noise pollution, and enhance security. Our solutions are perfect for offices, 
-            hotels, healthcare facilities, and educational institutions across London and surrounding areas.
+            Commercial secondary glazing solutions involve adding an additional layer of glass or transparent material to existing windows in commercial buildings. This system serves to improve insulation, reduce noise pollution, and enhance energy efficiency without the need for full window replacement. Secondary glazing can also help in reducing heat loss, contributing to lower energy bills, and improving the overall comfort within the space. These solutions are often tailored to meet aesthetic and functional needs, ensuring compliance with building regulations while maintaining the original character of the property.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
