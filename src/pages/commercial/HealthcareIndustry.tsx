@@ -1,8 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 const HealthcareIndustry = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-background">
@@ -11,6 +13,16 @@ const HealthcareIndustry = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6">Healthcare Industry Glazing Solutions</h1>
           
+          <div className="prose max-w-none mb-8 text-gray-600">
+            <p className="text-lg">
+              Create optimal healing environments with our specialized secondary glazing solutions for healthcare facilities. 
+              We understand the unique challenges faced by hospitals, clinics, and medical centers - from maintaining patient 
+              privacy and comfort to ensuring sterile conditions. Our advanced glazing systems are specifically engineered to 
+              enhance acoustic insulation, regulate temperature, and maintain the highest standards of hygiene while supporting 
+              your facility's energy efficiency goals.
+            </p>
+          </div>
+
           <div className="mb-8">
             <img alt="Modern healthcare facility" className="w-full h-[400px] object-cover rounded-lg shadow-lg mb-6" src="/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg" />
           </div>
@@ -67,4 +79,5 @@ const HealthcareIndustry = () => {
       <Footer />
     </div>;
 };
+
 export default HealthcareIndustry;
