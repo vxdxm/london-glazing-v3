@@ -1,10 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 const HealthcareIndustry = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-background">
@@ -32,7 +30,7 @@ const HealthcareIndustry = () => {
               <CardContent>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600">
                   <li>Superior noise reduction for patient comfort</li>
-                  <li>Enhanced temperature control for consistent climate</li>
+                  <li>Temperature control for consistent climate</li>
                   <li>Improved hygiene with easy-to-clean surfaces</li>
                   <li>Energy efficiency to reduce operational costs</li>
                   <li>UV protection for sensitive medical equipment</li>
@@ -69,5 +67,4 @@ const HealthcareIndustry = () => {
       <Footer />
     </div>;
 };
-
 export default HealthcareIndustry;
