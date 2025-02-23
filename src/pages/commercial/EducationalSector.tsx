@@ -12,6 +12,16 @@ const EducationalSector = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6">Educational Sector Glazing Solutions</h1>
           
+          <div className="prose max-w-none mb-8 text-gray-600">
+            <p className="text-lg">
+              Transform your educational facilities with our specialized secondary glazing solutions. We understand the unique 
+              challenges faced by schools, universities, and research facilities - from noise control in busy urban locations 
+              to maintaining comfortable learning environments year-round. Our secondary glazing systems are designed to enhance 
+              acoustic performance, improve thermal efficiency, and provide essential security features while preserving the 
+              original character of your educational buildings.
+            </p>
+          </div>
+
           <div className="mb-8">
             <img
               src="/lovable-uploads/56d88485-571a-4326-b29d-e8e13794d088.png"
