@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -84,7 +85,17 @@ const Gallery = () => {
     <div className="min-h-screen">
       <MainNav />
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8 text-center">Our Gallery</h1>
+        <h1 className="text-4xl font-bold mb-4 text-center">Our Gallery</h1>
+        
+        <div className="prose max-w-3xl mx-auto mb-12 text-center text-gray-600">
+          <p className="text-lg">
+            Explore our portfolio of expertly installed secondary glazing solutions. Each project showcases our commitment 
+            to enhancing both the aesthetic and functional aspects of windows across residential and commercial properties. 
+            From historic renovations to modern installations, discover how our secondary glazing systems provide superior 
+            noise reduction, thermal efficiency, and security while preserving the original character of your windows.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
             <div key={index} className="animate-fade-up group">
