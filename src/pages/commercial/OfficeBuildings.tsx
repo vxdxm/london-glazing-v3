@@ -1,18 +1,14 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-
 const OfficeBuildings = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-4">Office Buildings</h1>
+        <h1 className="text-4xl font-bold mb-4">Secondary Glazing for Office Buildings</h1>
         
         <div className="prose max-w-none mb-8 text-gray-600">
           <p className="text-lg">
@@ -26,12 +22,8 @@ const OfficeBuildings = () => {
         
         {/* Hero Section */}
         <div className="mb-16">
-          <AspectRatio ratio={21/9} className="mb-8">
-            <img
-              src="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png"
-              alt="Office interior with secondary glazing installation"
-              className="rounded-lg object-cover w-full h-full"
-            />
+          <AspectRatio ratio={21 / 9} className="mb-8">
+            <img src="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" alt="Office interior with secondary glazing installation" className="rounded-lg object-cover w-full h-full" />
           </AspectRatio>
           <p className="text-lg text-gray-600 mb-8">
             Transform your office environment with our premium secondary glazing solutions. 
@@ -133,17 +125,11 @@ const OfficeBuildings = () => {
             Contact us today for a free consultation and quote. Our experts will help you 
             find the perfect secondary glazing solution for your office building.
           </p>
-          <Button 
-            size="lg"
-            onClick={() => navigate("/quote-request")}
-            className="bg-primary hover:bg-primary/90"
-          >
+          <Button size="lg" onClick={() => navigate("/quote-request")} className="bg-primary hover:bg-primary/90">
             Get Free Quote
           </Button>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default OfficeBuildings;
