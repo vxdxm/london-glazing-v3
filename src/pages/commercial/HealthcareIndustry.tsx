@@ -2,23 +2,16 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-
 const HealthcareIndustry = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6">Healthcare Industry Glazing Solutions</h1>
           
           <div className="mb-8">
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-              alt="Modern healthcare facility"
-              className="w-full h-[400px] object-cover rounded-lg shadow-lg mb-6"
-            />
+            <img alt="Modern healthcare facility" className="w-full h-[400px] object-cover rounded-lg shadow-lg mb-6" src="/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg" />
           </div>
 
           <div className="space-y-6 text-lg">
@@ -47,24 +40,16 @@ const HealthcareIndustry = () => {
           </div>
 
           <div className="mt-12 space-x-4">
-            <Button 
-              onClick={() => navigate("/quote-request")}
-              className="bg-primary text-primary-foreground"
-            >
+            <Button onClick={() => navigate("/quote-request")} className="bg-primary text-primary-foreground">
               Request a Quote
             </Button>
-            <Button 
-              variant="outline"
-              onClick={() => navigate("/commercial")}
-            >
+            <Button variant="outline" onClick={() => navigate("/commercial")}>
               Back to Commercial Solutions
             </Button>
           </div>
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default HealthcareIndustry;
