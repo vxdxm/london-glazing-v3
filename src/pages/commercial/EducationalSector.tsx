@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
@@ -67,6 +68,7 @@ const EducationalSector = () => {
                     <li>UV protection</li>
                     <li>Glare reduction</li>
                     <li>Ventilation control</li>
+                    <li>Emergency egress compliance</li>
                   </ul>
                 </CardContent>
               </Card>
