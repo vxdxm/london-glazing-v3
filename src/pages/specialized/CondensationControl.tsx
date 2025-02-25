@@ -1,13 +1,38 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Helmet } from "react-helmet";
 
 const CondensationControl = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Condensation Control | Secondary Glazing Solutions</title>
+        <meta name="description" content="Expert condensation control solutions through secondary glazing. Prevent moisture buildup and protect your windows." />
+        <meta name="keywords" content="condensation control, secondary glazing, moisture control, window protection, London glazing specialist" />
+        <meta property="og:title" content="Condensation Control Solutions" />
+        <meta property="og:description" content="Effective condensation control through specialized secondary glazing installations." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/condensation-control" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Condensation Control</h1>
+
+        <div className="prose max-w-none mb-12 text-gray-600">
+          <p className="text-lg leading-relaxed mb-4">
+            Effective condensation control is crucial for maintaining a healthy living environment and protecting your property's 
+            windows from moisture damage. Our specialized secondary glazing solutions are designed to combat condensation issues 
+            by creating an additional barrier that helps regulate temperature differences between indoor and outdoor environments.
+          </p>
+          <p className="text-lg leading-relaxed">
+            By installing our secondary glazing systems, you can significantly reduce or eliminate condensation problems, 
+            preventing issues such as mold growth, dampness, and deterioration of window frames. Our solutions work by 
+            maintaining a more consistent surface temperature on your windows, effectively preventing the formation of 
+            condensation while also improving your property's overall thermal efficiency.
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <Card className="hover:shadow-lg transition-shadow">
