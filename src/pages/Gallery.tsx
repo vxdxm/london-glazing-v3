@@ -1,6 +1,6 @@
-
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Helmet } from "react-helmet";
 
 const Gallery = () => {
   const galleryItems = [
@@ -83,6 +83,15 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Secondary Glazing Project Gallery | Window Installation Examples</title>
+        <meta name="description" content="Browse our gallery of secondary glazing installations. See real examples of noise reduction, thermal efficiency, and security enhancement solutions for residential and commercial properties." />
+        <meta name="keywords" content="secondary glazing gallery, window installations, glazing examples, noise reduction, thermal insulation, before and after" />
+        <meta property="og:title" content="Secondary Glazing Project Gallery | Installation Examples" />
+        <meta property="og:description" content="Explore our portfolio of expertly installed secondary glazing solutions. See real examples of our work across London." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/gallery" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-4 text-center">Our Gallery</h1>

@@ -1,13 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 const HealthcareIndustry = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Healthcare Secondary Glazing Solutions | Medical Facility Windows</title>
+        <meta name="description" content="Specialized secondary glazing solutions for healthcare facilities. Superior noise reduction, temperature control, and hygiene standards for hospitals and medical centers." />
+        <meta name="keywords" content="healthcare glazing, hospital windows, medical facility glazing, noise reduction, temperature control, sterile environments" />
+        <meta property="og:title" content="Healthcare Secondary Glazing Solutions | Medical Facility Windows" />
+        <meta property="og:description" content="Expert secondary glazing solutions for healthcare facilities. Create optimal healing environments with superior noise reduction and climate control." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/healthcare-industry" />
+      </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">

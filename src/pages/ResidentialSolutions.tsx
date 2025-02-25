@@ -54,16 +54,13 @@ const ResidentialSolutions = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Residential Secondary Glazing London | Home Window Solutions</title>
-        <meta name="description" content="Transform your London home with our expert residential secondary glazing solutions. Enhance comfort, reduce noise, and improve energy efficiency. Get a free quote today." />
-        <meta name="keywords" content="residential glazing, sash windows, casement windows, bay windows, horizontal sliding, lift out windows, combination windows, London homes" />
-        <meta property="og:title" content="Residential Secondary Glazing Solutions" />
-        <meta property="og:description" content="Expert residential secondary glazing solutions for London homes. Enhance comfort and efficiency." />
+        <title>Residential Secondary Glazing Solutions | Home Window Upgrades</title>
+        <meta name="description" content="Transform your home with our residential secondary glazing solutions. Expert installation for sash windows, casement windows, bay windows and more. Enhanced comfort and energy efficiency." />
+        <meta name="keywords" content="residential glazing, home windows, sash windows, casement windows, bay windows, thermal insulation, noise reduction, home improvement" />
+        <meta property="og:title" content="Residential Secondary Glazing Solutions | Home Window Upgrades" />
+        <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency." />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Residential Secondary Glazing Solutions" />
-        <meta name="twitter:description" content="Transform your London home with our residential secondary glazing solutions." />
-        <link rel="canonical" href="https://yourdomain.com/residential" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential" />
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
