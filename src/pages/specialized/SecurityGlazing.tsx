@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
+
 const SecurityGlazing = () => {
   return <div className="min-h-screen bg-background">
       <MainNav />
@@ -18,12 +19,35 @@ const SecurityGlazing = () => {
             compromising on style or functionality.
           </p>
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <Card className="col-span-1 md:col-span-3 hover:shadow-lg transition-shadow">
+            <CardContent className="p-0">
+              <AspectRatio ratio={21/9}>
+                <img 
+                  src="/lovable-uploads/963badc7-4485-4f5d-9f11-27736802f9fe.png"
+                  alt="Security glazing system installation showcase"
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Advanced Security Features</h2>
+                <p className="text-gray-600">
+                  Our security glazing systems incorporate multiple layers of protection, including reinforced frames,
+                  multi-point locking systems, and laminated glass options. These features work together to create
+                  a formidable barrier against intrusion while maintaining the aesthetic appeal of your property.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         
         <div className="mb-12">
           <SecurityBreakInCalculator />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Physical Security Features</h2>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <Shield className="w-12 h-12 text-primary mb-4" />
@@ -39,7 +63,10 @@ const SecurityGlazing = () => {
               </ul>
             </CardContent>
           </Card>
+        </div>
 
+        <div className="mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Locking Mechanisms</h2>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <Lock className="w-12 h-12 text-primary mb-4" />
@@ -119,4 +146,5 @@ const SecurityGlazing = () => {
       </div>
     </div>;
 };
+
 export default SecurityGlazing;
