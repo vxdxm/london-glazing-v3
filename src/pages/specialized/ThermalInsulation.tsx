@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -19,6 +20,18 @@ const ThermalInsulation = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Thermal Insulation</h1>
+        
+        <div className="prose max-w-none mb-12 text-gray-600">
+          <p className="text-lg leading-relaxed">
+            Our advanced thermal insulation solutions provide exceptional energy efficiency for your property. 
+            By creating an additional barrier against heat loss and gain, our secondary glazing systems can 
+            significantly reduce your energy consumption and create a more comfortable living environment. 
+            Using the latest in glazing technology, our solutions can help reduce heat loss by up to 60% 
+            compared to single glazing, leading to substantial savings on your energy bills while contributing 
+            to a more sustainable future.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
