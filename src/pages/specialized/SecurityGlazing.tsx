@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
-
 const SecurityGlazing = () => {
   return <div className="min-h-screen bg-background">
       <MainNav />
@@ -23,12 +22,8 @@ const SecurityGlazing = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <Card className="col-span-1 md:col-span-3 hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
-              <AspectRatio ratio={21/9}>
-                <img 
-                  src="/lovable-uploads/963badc7-4485-4f5d-9f11-27736802f9fe.png"
-                  alt="Security glazing system installation showcase"
-                  className="w-full h-full object-cover"
-                />
+              <AspectRatio ratio={21 / 9}>
+                <img alt="Security glazing system installation showcase" className="w-full h-full object-cover" src="/lovable-uploads/ef528e3e-c607-4674-a887-b1635565f167.jpg" />
               </AspectRatio>
               <div className="p-6">
                 <h2 className="text-2xl font-semibold mb-4">Advanced Security Features</h2>
@@ -146,5 +141,4 @@ const SecurityGlazing = () => {
       </div>
     </div>;
 };
-
 export default SecurityGlazing;
