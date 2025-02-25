@@ -1,21 +1,15 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
-
 const AcousticGlazing = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Acoustic Secondary Glazing</h1>
         <div className="grid grid-cols-1 gap-8">
           <div className="col-span-1">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
-              <img 
-                src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png"
-                alt="Modern interior with acoustic secondary glazing installation"
-                className="w-full h-full object-cover"
-              />
+              <img alt="Modern interior with acoustic secondary glazing installation" src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -24,11 +18,7 @@ const AcousticGlazing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/09754466-a230-4ca4-a233-601125c832fc.png"
-                  alt="Living room with acoustic secondary glazing"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/09754466-a230-4ca4-a233-601125c832fc.png" alt="Living room with acoustic secondary glazing" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle>Noise Reduction</CardTitle>
@@ -47,11 +37,7 @@ const AcousticGlazing = () => {
             </Card>
             <Card className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="w-full h-48 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/70b3b30b-ebf1-4420-bf6d-b02537cc0da8.png"
-                  alt="Dining area with acoustic glazing installation"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/70b3b30b-ebf1-4420-bf6d-b02537cc0da8.png" alt="Dining area with acoustic glazing installation" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle>Applications</CardTitle>
@@ -71,8 +57,6 @@ const AcousticGlazing = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default AcousticGlazing;
