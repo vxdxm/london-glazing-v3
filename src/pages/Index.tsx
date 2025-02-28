@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Hero } from "@/components/Hero";
 import { MainNav } from "@/components/MainNav";
@@ -12,15 +13,15 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Secondary Glazing London | Expert Window Solutions & Installation</title>
-        <meta name="description" content="London's trusted secondary glazing specialists. Enhance your home with superior noise reduction, thermal insulation, and security features. Free consultation available." />
-        <meta name="keywords" content="secondary glazing, window insulation, noise reduction, thermal insulation, security glazing, London windows, energy efficient windows, listed building windows" />
-        <meta property="og:title" content="London Secondary Glazing Solutions | Expert Window Insulation Services" />
-        <meta property="og:description" content="Premium secondary glazing solutions in London. Enhance your home with superior noise reduction, thermal insulation, and security features." />
+        <title>Secondary Glazing London | Premium Noise Reduction & Thermal Insulation Solutions</title>
+        <meta name="description" content="London's specialist in secondary glazing, offering bespoke solutions for noise reduction, thermal insulation, and security enhancement. Perfect for listed buildings and conservation areas. Free consultation available." />
+        <meta name="keywords" content="secondary glazing, window insulation, noise reduction, thermal insulation, security glazing, London windows, energy efficient windows, listed building windows, conservation area windows" />
+        <meta property="og:title" content="London's Premium Secondary Glazing Specialists | Expert Window Solutions" />
+        <meta property="og:description" content="Transform your property with our bespoke secondary glazing solutions. Enhance comfort, reduce noise by up to 80%, improve thermal efficiency, and boost security without compromising character." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="London Secondary Glazing Solutions" />
-        <meta name="twitter:description" content="Premium secondary glazing solutions for homes and businesses in London." />
+        <meta name="twitter:title" content="London Secondary Glazing Solutions | Noise & Thermal Experts" />
+        <meta name="twitter:description" content="Premium secondary glazing solutions for homes and businesses throughout London. Specialist solutions for listed buildings and conservation areas." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
       </Helmet>
       <MainNav />
