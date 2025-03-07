@@ -14,7 +14,7 @@ const CondensationControl = () => {
         <meta property="og:title" content="Condensation Control Solutions" />
         <meta property="og:description" content="Effective condensation control through specialized secondary glazing installations." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/condensation-control" />
+        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/specialized/condensation-control" />
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">

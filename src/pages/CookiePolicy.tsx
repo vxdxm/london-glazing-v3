@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -8,7 +9,7 @@ const CookiePolicy = () => {
       <Helmet>
         <title>Cookie Policy | Secondary Glazing London</title>
         <meta name="description" content="Learn about how we use cookies on our website." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/cookie-policy" />
+        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/cookie-policy" />
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-8">

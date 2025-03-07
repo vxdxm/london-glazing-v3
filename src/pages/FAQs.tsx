@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import {
   Accordion,
@@ -50,6 +51,7 @@ const FAQs = () => {
         <Helmet>
           <title>Secondary Glazing FAQs | Expert Advice & Information London</title>
           <meta name="description" content="Find answers to common secondary glazing questions. Expert advice on installation, benefits, and maintenance from London's leading glazing specialists." />
+          <link rel="canonical" href="https://www.secondaryglazingspecialist.com/faqs" />
         </Helmet>
         <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
         <div className="max-w-3xl mx-auto">

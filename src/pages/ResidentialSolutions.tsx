@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
@@ -60,7 +61,7 @@ const ResidentialSolutions = () => {
         <meta property="og:title" content="Residential Secondary Glazing Solutions | Home Window Upgrades" />
         <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential" />
+        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/residential" />
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">

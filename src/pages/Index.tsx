@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Hero } from "@/components/Hero";
 import { MainNav } from "@/components/MainNav";
@@ -22,7 +21,7 @@ const Index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="London Secondary Glazing Solutions | Secondary Glazing for Noise & Thermal Control" />
         <meta name="twitter:description" content="Premium Secondary Glazing solutions for homes and businesses throughout London. Specialist Secondary Glazing for listed buildings and conservation areas." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
+        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/" />
       </Helmet>
       <MainNav />
       <Hero />
@@ -74,7 +73,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Secondary Glazing Information Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Secondary Glazing?</h2>

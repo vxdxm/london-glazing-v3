@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -8,7 +9,7 @@ const TermsAndConditions = () => {
       <Helmet>
         <title>Terms and Conditions | Secondary Glazing London</title>
         <meta name="description" content="Our terms and conditions outline the rules and guidelines for using our website and services." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/terms-and-conditions" />
+        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/terms-and-conditions" />
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-8">
