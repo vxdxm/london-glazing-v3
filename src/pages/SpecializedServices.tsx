@@ -4,6 +4,8 @@ import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import GetQuoteButton from "@/components/GetQuoteButton";
 
 const SpecializedServices = () => {
   return (
@@ -20,7 +22,7 @@ const SpecializedServices = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">Specialized Glazing Solutions</h1>
-        <div className="max-w-3xl mx-auto mb-12 text-center">
+        <div className="max-w-3xl mx-auto mb-12 text-left">
           <p className="text-lg text-gray-600 mb-4">
             Our specialized secondary glazing solutions are designed to address specific challenges beyond standard window requirements.
             Whether you need superior noise reduction, enhanced thermal performance, or increased security, our expert team delivers tailored solutions for your unique needs.
@@ -100,6 +102,8 @@ const SpecializedServices = () => {
           </Card>
         </div>
       </div>
+      <WhatsAppButton />
+      <GetQuoteButton />
     </div>
   );
 };
