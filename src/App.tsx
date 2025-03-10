@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import GetQuoteButton from "@/components/GetQuoteButton";
 import Index from "./pages/Index";
 
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -96,6 +97,7 @@ const App = () => (
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <GetQuoteButton />
         <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
