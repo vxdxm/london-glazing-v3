@@ -22,7 +22,7 @@ const SpecializedServices = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">Specialized Glazing Solutions</h1>
-        <div className="max-w-3xl mb-12">
+        <div className="mb-12">
           <p className="text-lg text-gray-600 mb-4">
             Our specialized secondary glazing solutions are designed to address specific challenges beyond standard window requirements.
             Whether you need superior noise reduction, enhanced thermal performance, or increased security, our expert team delivers tailored solutions for your unique needs.
