@@ -60,7 +60,7 @@ const App = () => (
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<FAQs />} />
-          <Route path="/sustainability-impact-tracker" element={<SustainabilityImpactTracker />} />
+          <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
           
           {/* Legal Routes */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

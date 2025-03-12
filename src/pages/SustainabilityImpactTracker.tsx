@@ -18,7 +18,7 @@ const SustainabilityImpactTracker = () => {
         <meta property="og:title" content="Sustainability Impact Tracker | Secondary Glazing Specialist" />
         <meta property="og:description" content="See the positive environmental impact of secondary glazing on your property." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/sustainability-impact-tracker" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/sustainability-impact-tracker-secondary-glazing" />
       </Helmet>
       
       <MainNav />

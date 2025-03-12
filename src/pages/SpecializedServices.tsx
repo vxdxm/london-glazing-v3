@@ -123,7 +123,7 @@ const SpecializedServices = () => {
                     Discover the environmental benefits of secondary glazing, from reduced carbon emissions to energy conservation. 
                     Our sustainability tracker helps you visualize your contribution to a greener planet.
                   </p>
-                  <Link to="/sustainability-impact-tracker" className="text-primary hover:underline">
+                  <Link to="/sustainability-impact-tracker-secondary-glazing" className="text-primary hover:underline">
                     Explore the Sustainability Impact Tracker
                   </Link>
                 </div>
