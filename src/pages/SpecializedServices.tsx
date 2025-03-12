@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import { Earth } from "lucide-react";
 
 const SpecializedServices = () => {
   return (
@@ -97,6 +98,35 @@ const SpecializedServices = () => {
                 <h2 className="text-2xl font-semibold mb-2">Condensation Control</h2>
                 <p className="text-gray-600 mb-4">Combat condensation issues effectively with our specialized glazing solutions, maintaining a healthier indoor environment.</p>
                 <Link to="/specialized/condensation-control" className="text-primary hover:underline">Learn more about Condensation Control</Link>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow md:col-span-2">
+            <CardContent className="p-0">
+              <div className="flex flex-col md:flex-row">
+                <div className="md:w-1/2">
+                  <AspectRatio ratio={16/9} className="h-full">
+                    <img
+                      src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg"
+                      alt="Environmental impact of secondary glazing visualized with eco-friendly imagery"
+                      className="w-full h-full object-cover md:rounded-l-lg md:rounded-r-none rounded-t-lg md:rounded-t-none"
+                    />
+                  </AspectRatio>
+                </div>
+                <div className="p-6 md:w-1/2 flex flex-col justify-center">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Earth className="h-6 w-6 text-green-600" />
+                    <h2 className="text-2xl font-semibold">Sustainability Impact</h2>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    Discover the environmental benefits of secondary glazing, from reduced carbon emissions to energy conservation. 
+                    Our sustainability tracker helps you visualize your contribution to a greener planet.
+                  </p>
+                  <Link to="/sustainability-impact-tracker" className="text-primary hover:underline">
+                    Explore the Sustainability Impact Tracker
+                  </Link>
+                </div>
               </div>
             </CardContent>
           </Card>

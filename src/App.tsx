@@ -39,6 +39,7 @@ import AcousticSecondaryGlazingWindows from "./pages/specialized/AcousticSeconda
 import SecondaryGlazingBuildingRegulations from "./pages/specialized/SecondaryGlazingBuildingRegulations";
 import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazingOriginalWindows";
 import NoiseReduction from "./pages/specialized/NoiseReduction";
+import SustainabilityImpactTracker from "./pages/SustainabilityImpactTracker";
 
 const queryClient = new QueryClient();
 
@@ -59,6 +60,7 @@ const App = () => (
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<FAQs />} />
+          <Route path="/sustainability-impact-tracker" element={<SustainabilityImpactTracker />} />
           
           {/* Legal Routes */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
