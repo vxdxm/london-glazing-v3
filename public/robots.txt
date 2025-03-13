@@ -2,9 +2,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.secondaryglazingspecialist.com/sitemap.xml
-
-# Allow all bots to crawl important pages
+# Explicitly allow these important pages
 Allow: /secondary-glazing-repairs
 Allow: /quote-request
 Allow: /sustainability-impact-tracker-secondary-glazing
+
+Sitemap: https://secondaryglazingspecialist.com/sitemap.xml

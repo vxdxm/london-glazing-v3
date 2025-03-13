@@ -63,6 +63,8 @@ const SecondaryGlazingRepairs = () => {
               },
               "geoRadius": "500 km"
             },
+            "datePublished": "2024-05-14",
+            "dateModified": "2024-06-01",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Secondary Glazing Repair Services",
