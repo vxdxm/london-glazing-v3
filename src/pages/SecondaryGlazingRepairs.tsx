@@ -6,6 +6,7 @@ import CommonIssues from "@/components/repairs/CommonIssues";
 import SpiralBalanceSection from "@/components/repairs/SpiralBalanceSection";
 import AdditionalServices from "@/components/repairs/AdditionalServices";
 import RepairsCTA from "@/components/repairs/RepairsCTA";
+import RepairsFAQ from "@/components/repairs/RepairsFAQ";
 
 const SecondaryGlazingRepairs = () => {
   return (
@@ -20,6 +21,7 @@ const SecondaryGlazingRepairs = () => {
         <CommonIssues />
         <SpiralBalanceSection />
         <AdditionalServices />
+        <RepairsFAQ />
         <RepairsCTA />
       </div>
     </div>
