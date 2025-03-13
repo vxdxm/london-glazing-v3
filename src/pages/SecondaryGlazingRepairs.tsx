@@ -8,7 +8,14 @@ import AdditionalServices from "@/components/repairs/AdditionalServices";
 import RepairsCTA from "@/components/repairs/RepairsCTA";
 import RepairsFAQ from "@/components/repairs/RepairsFAQ";
 import { Link } from "react-router-dom";
-import { ChevronRight } from "lucide-react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const SecondaryGlazingRepairs = () => {
   return (
@@ -98,22 +105,20 @@ const SecondaryGlazingRepairs = () => {
       <MainNav />
       
       <div className="container mx-auto px-4 py-12 md:py-16">
-        {/* Breadcrumbs for better SEO and navigation */}
-        <nav className="flex mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
-          <ol className="inline-flex items-center space-x-1 md:space-x-3">
-            <li className="inline-flex items-center">
-              <Link to="/" className="inline-flex items-center hover:text-sky-600">
-                Home
-              </Link>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRight className="w-4 h-4 mx-1" />
-                <span className="text-gray-700 font-medium">Secondary Glazing Repairs</span>
-              </div>
-            </li>
-          </ol>
-        </nav>
+        {/* Breadcrumbs using shadcn/ui component */}
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Secondary Glazing Repairs</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         
         {/* Add main article tag for better semantic structure */}
         <article>

@@ -57,7 +57,7 @@ const App = () => (
       </Helmet>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quote-request" element={<QuoteRequest />} />
