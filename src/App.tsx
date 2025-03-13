@@ -42,6 +42,7 @@ import NoiseReduction from "./pages/specialized/NoiseReduction";
 import SustainabilityImpactTracker from "./pages/SustainabilityImpactTracker";
 import TraditionalOptions from "./pages/residential/TraditionalOptions";
 import ModernSolutions from "./pages/residential/ModernSolutions";
+import SecondaryGlazingRepairs from "./pages/SecondaryGlazingRepairs";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +64,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
+          <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
           
           {/* Legal Routes */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
