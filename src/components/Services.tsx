@@ -1,4 +1,5 @@
-import { Shield, Thermometer, VolumeX } from "lucide-react";
+
+import { Shield, Thermometer, VolumeX, Wrench } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -22,6 +23,12 @@ const services = [
     icon: Shield,
     path: "/specialized/security-glazing"
   },
+  {
+    title: "Glazing Repairs",
+    description: "Expert repair services for secondary glazing systems, including spiral balance replacement.",
+    icon: Wrench,
+    path: "/secondary-glazing-repairs"
+  },
 ];
 
 export const Services = () => {
@@ -31,7 +38,7 @@ export const Services = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -66,6 +73,14 @@ export const Services = () => {
                     className="block mt-4 text-primary hover:underline"
                   >
                     Security Break-in Resistance Calculator
+                  </Link>
+                )}
+                {service.title === "Glazing Repairs" && (
+                  <Link 
+                    to="/secondary-glazing-repairs" 
+                    className="block mt-4 text-primary hover:underline"
+                  >
+                    Spiral Balance Repair Guide
                   </Link>
                 )}
               </CardContent>

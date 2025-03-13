@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import { Earth } from "lucide-react";
+import { Earth, Wrench } from "lucide-react";
 
 const SpecializedServices = () => {
   return (
@@ -98,6 +98,26 @@ const SpecializedServices = () => {
                 <h2 className="text-2xl font-semibold mb-2">Condensation Control</h2>
                 <p className="text-gray-600 mb-4">Combat condensation issues effectively with our specialized glazing solutions, maintaining a healthier indoor environment.</p>
                 <Link to="/specialized/condensation-control" className="text-primary hover:underline">Learn more about Condensation Control</Link>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-0">
+              <AspectRatio ratio={16/9}>
+                <img
+                  src="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png"
+                  alt="Secondary glazing repair specialist fixing vertical sliding mechanisms"
+                  className="w-full h-full object-cover rounded-t-lg"
+                />
+              </AspectRatio>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <Wrench className="h-5 w-5 text-sky-700" />
+                  <h2 className="text-2xl font-semibold">Secondary Glazing Repairs</h2>
+                </div>
+                <p className="text-gray-600 mb-4">Expert repair services for secondary glazing, specializing in spiral balances for vertical sliding units and other common issues.</p>
+                <Link to="/secondary-glazing-repairs" className="text-primary hover:underline">Learn about our Repair Services</Link>
               </div>
             </CardContent>
           </Card>
