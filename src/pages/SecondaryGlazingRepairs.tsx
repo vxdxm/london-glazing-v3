@@ -306,8 +306,8 @@ const SecondaryGlazingRepairs = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="tel:+448001234567">
-                  Call Us: 0800 123 4567
+                <a href="tel:+442070601572">
+                  Call Us: 0207 060 1572
                 </a>
               </Button>
             </div>
@@ -319,3 +319,4 @@ const SecondaryGlazingRepairs = () => {
 };
 
 export default SecondaryGlazingRepairs;
+
