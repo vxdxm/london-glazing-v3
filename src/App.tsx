@@ -40,6 +40,8 @@ import SecondaryGlazingBuildingRegulations from "./pages/specialized/SecondaryGl
 import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazingOriginalWindows";
 import NoiseReduction from "./pages/specialized/NoiseReduction";
 import SustainabilityImpactTracker from "./pages/SustainabilityImpactTracker";
+import TraditionalOptions from "./pages/residential/TraditionalOptions";
+import ModernSolutions from "./pages/residential/ModernSolutions";
 
 const queryClient = new QueryClient();
 
@@ -75,6 +77,8 @@ const App = () => (
           <Route path="/residential/horizontal-sliding" element={<HorizontalSliding />} />
           <Route path="/residential/lift-out" element={<LiftOut />} />
           <Route path="/residential/combination" element={<Combination />} />
+          <Route path="/residential/traditional-options" element={<TraditionalOptions />} />
+          <Route path="/residential/modern-solutions" element={<ModernSolutions />} />
           
           {/* Commercial Routes */}
           <Route path="/commercial" element={<CommercialSolutions />} />
