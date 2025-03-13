@@ -28,7 +28,7 @@ const RepairsHero = () => {
         <div className="flex-1">
           <img 
             src="/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png" 
-            alt="Secondary glazing repair specialist fixing a vertical sliding unit"
+            alt="Secondary glazing repair technician fixing a vertical sliding window unit"
             className="rounded-lg shadow-xl w-full object-cover max-h-[400px]"
           />
         </div>

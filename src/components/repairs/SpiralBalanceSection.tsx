@@ -43,7 +43,7 @@ const SpiralBalanceSection = () => {
         <div className="flex-1">
           <img 
             src="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" 
-            alt="Spiral balance mechanism for vertical sliding secondary glazing"
+            alt="Spiral balance mechanism for vertical sliding secondary glazing window"
             className={`rounded-lg shadow-xl w-full object-cover transition-all duration-1000 ease-in-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
           />
         </div>
