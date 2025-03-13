@@ -12,4 +12,6 @@
 /specialized/condensation-control /specialized/condensation-control 200
 /specialized/acoustic-glazing /specialized/acoustic-glazing 200
 /secondary-glazing-repairs /secondary-glazing-repairs 200
+
+# This must be the last rule to catch all other requests and send them to index.html
 /* /index.html 200
