@@ -6,6 +6,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
+# Exclude specific paths from being rewritten
+RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
+
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]
 

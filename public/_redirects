@@ -3,5 +3,17 @@
 /sitemap.xml /sitemap.xml 200
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 
-# Handle all routes for the SPA - THIS MUST BE THE LAST RULE
+# Explicitly list all routes for the SPA
+/residential/* /index.html 200
+/commercial/* /index.html 200
+/specialized/* /index.html 200
+/secondary-glazing-repairs /index.html 200
+/quote-request /index.html 200
+/gallery /index.html 200
+/faqs /index.html 200
+/privacy-policy /index.html 200
+/terms-and-conditions /index.html 200
+/cookie-policy /index.html 200
+
+# Handle all other routes for the SPA - THIS MUST BE THE LAST RULE
 /* /index.html 200

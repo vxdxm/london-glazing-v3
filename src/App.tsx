@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
@@ -54,10 +54,11 @@ const App = () => (
       <Helmet>
         <link rel="canonical" href={`${BASE_URL}${window.location.pathname}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="/" />
       </Helmet>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quote-request" element={<QuoteRequest />} />
@@ -101,6 +102,9 @@ const App = () => (
           <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
           <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
           <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
+
+          {/* Legacy redirect */}
+          <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
