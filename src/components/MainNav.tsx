@@ -1,4 +1,5 @@
-import * as React from "react";
+
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -41,13 +42,13 @@ export function MainNav() {
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-        <nav className="flex flex-col gap-4">
+      <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto max-h-screen pt-10">
+        <nav className="flex flex-col gap-4 pb-20">
           <MobileNavItem to="/">Home</MobileNavItem>
           {glazingOptions.map((section) => (
             <div key={section.title} className="space-y-3">
               <div 
-                className="font-medium px-4 py-2"
+                className="font-medium px-4 py-2 cursor-pointer"
                 onClick={() => handleNavigation(section.mainLink)}
               >
                 {section.title}
