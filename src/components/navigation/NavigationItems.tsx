@@ -33,6 +33,7 @@ export const glazingOptions = [
       { title: "Thermal Insulation", href: "/specialized/thermal-insulation", description: "Improve energy efficiency with thermal glazing." },
       { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
       { title: "Condensation Control", href: "/specialized/condensation-control", description: "Prevent condensation with our solutions." },
+      { title: "Sustainability Impact", href: "/sustainability-impact-tracker-secondary-glazing", description: "Track environmental benefits of secondary glazing." },
       { title: "Glazing Repairs", href: "/secondary-glazing-repairs", description: "Expert repair services for secondary glazing systems." },
     ],
   },
