@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Helmet } from "react-helmet";
 import DecibelsCard from "@/components/sound-guide/DecibelsCard";
@@ -9,8 +10,15 @@ import NoiseReductionPractice from "@/components/sound-guide/NoiseReductionPract
 import AcousticSolutions from "@/components/sound-guide/AcousticSolutions";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { KeyPoint } from "@/components/ui/key-point";
 
 const SoundTransmissionGuide = () => {
+  // Use our custom hook to handle smooth scrolling to hash links
+  useScrollToHash();
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -36,6 +44,8 @@ const SoundTransmissionGuide = () => {
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
+        
         <h1 className="text-4xl font-bold mb-2">Understanding Sound Transmission & Acoustic Glazing Solutions</h1>
         <p className="text-xl text-gray-600 mb-8">A comprehensive guide to decibels, sound levels, and effective noise reduction techniques</p>
         
@@ -47,10 +57,9 @@ const SoundTransmissionGuide = () => {
           </p>
           
           <div className="bg-blue-50 p-5 rounded-lg border border-blue-100 mb-8">
-            <h2 className="text-xl font-semibold text-blue-800 mb-2">Did you know?</h2>
-            <p className="text-blue-700">
+            <KeyPoint title="Did you know?" variant="secondary">
               High-quality acoustic secondary glazing can reduce external noise by up to 80% (48dB), transforming even the noisiest urban environments into peaceful, quiet spaces.
-            </p>
+            </KeyPoint>
           </div>
         </div>
 
@@ -60,7 +69,10 @@ const SoundTransmissionGuide = () => {
         </div>
 
         <div className="space-y-12 mb-12">
+          <SectionHeading title="How Sound Travels" subtitle="Understanding the science behind noise transmission" />
           <SoundTravelSection />
+          
+          <SectionHeading title="Secondary Glazing for Noise Reduction" subtitle="The technology that creates quieter spaces" />
           <SecondaryGlazingSection />
         </div>
 
