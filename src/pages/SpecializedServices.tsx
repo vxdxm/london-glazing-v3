@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import { Earth, Wrench } from "lucide-react";
+import { Earth, Wrench, Volume2 } from "lucide-react";
 
 const SpecializedServices = () => {
   return (
@@ -118,6 +118,26 @@ const SpecializedServices = () => {
                 </div>
                 <p className="text-gray-600 mb-4">Expert repair services for secondary glazing, specializing in spiral balances for vertical sliding units and other common issues.</p>
                 <Link to="/secondary-glazing-repairs" className="text-primary hover:underline">Learn about our Repair Services</Link>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-0">
+              <AspectRatio ratio={16/9}>
+                <img
+                  src="/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg"
+                  alt="Sound transmission guide and acoustic measurement diagram"
+                  className="w-full h-full object-cover rounded-t-lg"
+                />
+              </AspectRatio>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <Volume2 className="h-5 w-5 text-blue-600" />
+                  <h2 className="text-2xl font-semibold">Sound Transmission Guide</h2>
+                </div>
+                <p className="text-gray-600 mb-4">Comprehensive guide to understanding decibels, sound transmission, and how secondary glazing can effectively reduce noise pollution.</p>
+                <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">Explore our Sound Transmission Guide</Link>
               </div>
             </CardContent>
           </Card>
