@@ -39,6 +39,7 @@ import AcousticSecondaryGlazingWindows from "./pages/specialized/AcousticSeconda
 import SecondaryGlazingBuildingRegulations from "./pages/specialized/SecondaryGlazingBuildingRegulations";
 import SecondaryGlazingOriginalWindows from "./pages/specialized/SecondaryGlazingOriginalWindows";
 import NoiseReduction from "./pages/specialized/NoiseReduction";
+import SoundTransmissionGuide from "./pages/specialized/SoundTransmissionGuide";
 import SustainabilityImpactTracker from "./pages/SustainabilityImpactTracker";
 import TraditionalOptions from "./pages/residential/TraditionalOptions";
 import ModernSolutions from "./pages/residential/ModernSolutions";
@@ -94,6 +95,7 @@ const App = () => (
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
           <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
+          <Route path="/specialized/sound-transmission-guide" element={<SoundTransmissionGuide />} />
           <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
           <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
           <Route path="/specialized/condensation-control" element={<CondensationControl />} />
