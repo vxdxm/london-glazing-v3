@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
@@ -134,9 +133,9 @@ const SpecializedServices = () => {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-2">
                   <Volume2 className="h-5 w-5 text-blue-600" />
-                  <h2 className="text-2xl font-semibold">Sound Transmission Guide</h2>
+                  <h2 className="text-2xl font-semibold">Understanding Sound & Noise Reduction</h2>
                 </div>
-                <p className="text-gray-600 mb-4">Comprehensive guide to understanding decibels, sound transmission, and how secondary glazing can effectively reduce noise pollution.</p>
+                <p className="text-gray-600 mb-4">Comprehensive guide to understanding decibels, sound transmission, and how secondary glazing can reduce external noise by up to 80%. Essential reading for noise-affected properties.</p>
                 <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">Explore our Sound Transmission Guide</Link>
               </div>
             </CardContent>

@@ -4,27 +4,38 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Helmet } from "react-helmet";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import GetQuoteButton from "@/components/GetQuoteButton";
+import { Link } from "react-router-dom";
 
 const SoundTransmissionGuide = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Understanding Decibels & Sound Transmission | Acoustic Glazing Guide</title>
+        <title>Understanding Sound Transmission & Decibels | Acoustic Glazing Guide</title>
         <meta 
           name="description" 
-          content="Learn about sound measurement in decibels (dB), sound transmission, and how secondary glazing reduces noise. Expert acoustic glazing guide by Secondary Glazing Specialist." 
+          content="Expert guide on sound transmission, decibel measurements, and how secondary glazing reduces noise by up to 80%. Learn how to create a quieter home environment." 
         />
         <meta 
           name="keywords" 
-          content="decibels, sound transmission, acoustic glazing, dB scale, noise reduction, sound insulation, secondary glazing" 
+          content="decibels, sound transmission, acoustic glazing, dB scale, noise reduction, sound insulation, secondary glazing, London noise reduction, sound proof windows" 
         />
+        <meta property="og:title" content="Understanding Sound Transmission & Decibels | Acoustic Glazing Guide" />
+        <meta 
+          property="og:description" 
+          content="Comprehensive guide to understanding sound measurement, transmission, and how secondary glazing can reduce noise by up to 80%. Expert advice from London's secondary glazing specialists." 
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/sound-transmission-guide" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/sound-transmission-guide" />
       </Helmet>
       
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Understanding Decibels & Sound Transmission</h1>
+        <h1 className="text-4xl font-bold mb-2">Understanding Sound Transmission & Acoustic Glazing Solutions</h1>
+        <p className="text-xl text-gray-600 mb-8">A comprehensive guide to decibels, sound levels, and effective noise reduction techniques</p>
         
         <div className="prose max-w-none mb-12">
           <p className="text-lg mb-6">
@@ -32,6 +43,13 @@ const SoundTransmissionGuide = () => {
             acoustic glazing requires some background knowledge. This guide explains the key concepts behind 
             sound measurement, transmission, and how secondary glazing works to create quieter living and working spaces.
           </p>
+          
+          <div className="bg-blue-50 p-5 rounded-lg border border-blue-100 mb-8">
+            <h2 className="text-xl font-semibold text-blue-800 mb-2">Did you know?</h2>
+            <p className="text-blue-700">
+              High-quality acoustic secondary glazing can reduce external noise by up to 80% (48dB), transforming even the noisiest urban environments into peaceful, quiet spaces.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -115,7 +133,7 @@ const SoundTransmissionGuide = () => {
 
         <div className="space-y-12 mb-12">
           <div>
-            <h2 className="text-3xl font-semibold mb-6">How Sound Travels Through Windows</h2>
+            <h2 id="how-sound-travels" className="text-3xl font-semibold mb-6">How Sound Travels Through Windows</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <p className="text-gray-600 mb-4">
@@ -151,7 +169,7 @@ const SoundTransmissionGuide = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold mb-6">How Secondary Glazing Reduces Noise</h2>
+            <h2 id="secondary-glazing-noise-reduction" className="text-3xl font-semibold mb-6">How Secondary Glazing Reduces Noise</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="p-6 bg-secondary/30">
                 <h3 className="text-xl font-semibold mb-4">The Science Behind Acoustic Secondary Glazing</h3>
@@ -190,7 +208,7 @@ const SoundTransmissionGuide = () => {
         </div>
 
         <div className="bg-secondary/50 p-6 rounded-lg mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Common Noise Sources and Their dB Levels</h2>
+          <h2 id="common-noise-sources" className="text-2xl font-semibold mb-4">Common Noise Sources and Their dB Levels</h2>
           <Table>
             <TableHeader>
               <TableRow>
@@ -245,7 +263,7 @@ const SoundTransmissionGuide = () => {
         </div>
 
         <div className="prose max-w-none mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Noise Reduction in Practice</h2>
+          <h2 id="noise-reduction-practice" className="text-3xl font-semibold mb-6">Noise Reduction in Practice</h2>
           <p className="text-gray-600 mb-4">
             When we specify a noise reduction of 45 dB for our premium acoustic glazing solutions, here's what that means in practice:
           </p>
@@ -254,12 +272,66 @@ const SoundTransmissionGuide = () => {
             <li>A passing train at 100 dB would be reduced to about 55 dB - barely louder than a normal conversation</li>
             <li>Aircraft noise at 110 dB would be brought down to around 65 dB - noticeable but not disruptive</li>
           </ul>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-6">
             The human perception of sound is subjective, but as a rule of thumb, a 10 dB reduction feels like a halving of loudness. 
             This means that our 45 dB reduction solutions can make even the noisiest environments feel dramatically quieter.
           </p>
         </div>
+        
+        <div className="bg-secondary/30 p-8 rounded-lg mb-12">
+          <h2 className="text-3xl font-semibold mb-6">Acoustic Solutions for Your Property</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Recommended Acoustic Solutions</h3>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="text-gray-700">
+                  <span className="font-medium">For urban homes near busy roads:</span> 
+                  <Link to="/specialized/acoustic-secondary-glazing-windows" className="text-primary hover:underline ml-1">
+                    Acoustic Secondary Glazing Windows
+                  </Link>
+                </li>
+                <li className="text-gray-700">
+                  <span className="font-medium">For properties near railways or flight paths:</span> 
+                  <Link to="/specialized/acoustic-glazing" className="text-primary hover:underline ml-1">
+                    Premium Acoustic Glazing
+                  </Link> 
+                  with 12.8mm acoustic laminated glass
+                </li>
+                <li className="text-gray-700">
+                  <span className="font-medium">For listed buildings with noise issues:</span> 
+                  <Link to="/commercial/listed-buildings" className="text-primary hover:underline ml-1">
+                    Heritage Solutions
+                  </Link>
+                  with acoustic enhancements
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Next Steps</h3>
+              <p className="text-gray-700 mb-4">
+                Understanding your specific noise challenges is the first step to creating a quieter environment. Our acoustic specialists can:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Conduct a professional sound assessment at your property</li>
+                <li>Recommend the optimal acoustic solution based on your noise issues</li>
+                <li>Provide a detailed quotation for installation</li>
+                <li>Install high-performance acoustic secondary glazing with minimal disruption</li>
+              </ul>
+              <div className="mt-6 flex flex-col sm:flex-row gap-4">
+                <Link to="/quote-request" className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 text-center">
+                  Request Free Quote
+                </Link>
+                <Link to="/specialized/acoustic-glazing" className="border border-primary text-primary px-6 py-3 rounded-md hover:bg-primary/10 text-center">
+                  Explore Acoustic Solutions
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <WhatsAppButton />
+      <GetQuoteButton />
     </div>
   );
 };
