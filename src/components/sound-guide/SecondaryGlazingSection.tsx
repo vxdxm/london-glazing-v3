@@ -1,10 +1,7 @@
-
 import { Card } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 const SecondaryGlazingSection = () => {
-  return (
-    <div>
+  return <div>
       <h2 id="secondary-glazing-noise-reduction" className="text-3xl font-semibold mb-6">How Secondary Glazing Reduces Noise</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="p-6 bg-secondary/30">
@@ -20,12 +17,8 @@ const SecondaryGlazingSection = () => {
           </ul>
           
           <div className="mt-6 rounded-lg overflow-hidden">
-            <AspectRatio ratio={4/3}>
-              <img 
-                src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" 
-                alt="Secondary glazing cross-section showing air gap" 
-                className="object-cover w-full h-full"
-              />
+            <AspectRatio ratio={4 / 3}>
+              <img src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" alt="Secondary glazing cross-section showing air gap" className="w-full h-full object-fill" />
             </AspectRatio>
           </div>
         </Card>
@@ -50,18 +43,12 @@ const SecondaryGlazingSection = () => {
           </div>
           
           <div className="mt-6 rounded-lg overflow-hidden">
-            <AspectRatio ratio={4/3}>
-              <img 
-                src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" 
-                alt="Installed secondary glazing system" 
-                className="object-cover w-full h-full"
-              />
+            <AspectRatio ratio={4 / 3}>
+              <img src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" alt="Installed secondary glazing system" className="object-cover w-full h-full" />
             </AspectRatio>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default SecondaryGlazingSection;
