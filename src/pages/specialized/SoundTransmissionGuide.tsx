@@ -14,6 +14,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { KeyPoint } from "@/components/ui/key-point";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const SoundTransmissionGuide = () => {
   // Use our custom hook to handle smooth scrolling to hash links
@@ -48,6 +49,16 @@ const SoundTransmissionGuide = () => {
         
         <h1 className="text-4xl font-bold mb-2">Understanding Sound Transmission & Acoustic Glazing Solutions</h1>
         <p className="text-xl text-gray-600 mb-8">A comprehensive guide to decibels, sound levels, and effective noise reduction techniques</p>
+        
+        <div className="mb-8 rounded-lg overflow-hidden">
+          <AspectRatio ratio={16/9}>
+            <img 
+              src="/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg" 
+              alt="Acoustic glazing installation on a city window" 
+              className="object-cover w-full h-full"
+            />
+          </AspectRatio>
+        </div>
         
         <div className="prose max-w-none mb-12">
           <p className="text-lg mb-6">

@@ -1,5 +1,6 @@
 
 import { Card } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const SoundTravelSection = () => {
   return (
@@ -24,6 +25,16 @@ const SoundTravelSection = () => {
             Standard windows are particularly vulnerable to sound transmission due to their relatively thin 
             glass and the direct pathway they provide between outside and inside environments.
           </p>
+          
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
+              <img 
+                src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
+                alt="Sound waves traveling through windows" 
+                className="object-cover w-full h-full"
+              />
+            </AspectRatio>
+          </div>
         </div>
         <Card className="p-6 bg-secondary/30">
           <h3 className="text-xl font-semibold mb-4">Factors Affecting Sound Transmission</h3>

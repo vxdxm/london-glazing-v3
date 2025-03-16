@@ -1,5 +1,6 @@
 
 import { Card } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const SecondaryGlazingSection = () => {
   return (
@@ -17,6 +18,16 @@ const SecondaryGlazingSection = () => {
             <li><span className="font-medium">Acoustic decoupling:</span> Independent frames prevent vibration transfer between panes</li>
             <li><span className="font-medium">Laminated glass:</span> Special acoustic laminated glass incorporates sound-damping PVB interlayers</li>
           </ul>
+          
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
+              <img 
+                src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" 
+                alt="Secondary glazing cross-section showing air gap" 
+                className="object-cover w-full h-full"
+              />
+            </AspectRatio>
+          </div>
         </Card>
         <div>
           <p className="text-gray-600 mb-4">
@@ -36,6 +47,16 @@ const SecondaryGlazingSection = () => {
               This means our systems providing 45-48 dB reduction can make even the loudest urban environments 
               feel peaceful and quiet.
             </p>
+          </div>
+          
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
+              <img 
+                src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" 
+                alt="Installed secondary glazing system" 
+                className="object-cover w-full h-full"
+              />
+            </AspectRatio>
           </div>
         </div>
       </div>

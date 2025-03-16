@@ -1,10 +1,22 @@
 
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const AcousticSolutions = () => {
   return (
     <div className="bg-secondary/30 p-8 rounded-lg mb-12">
       <h2 className="text-3xl font-semibold mb-6">Acoustic Solutions for Your Property</h2>
+      
+      <div className="mb-8 rounded-lg overflow-hidden">
+        <AspectRatio ratio={21/9}>
+          <img 
+            src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg" 
+            alt="Acoustic glazing solution in a modern apartment" 
+            className="object-cover w-full h-full"
+          />
+        </AspectRatio>
+      </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-4">Recommended Acoustic Solutions</h3>
