@@ -21,13 +21,13 @@ const SoundTravelSection = () => {
             <li>Some sound is absorbed by the glass</li>
             <li>Some sound passes through to the other side</li>
           </ul>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600">
             Standard windows are particularly vulnerable to sound transmission due to their relatively thin 
             glass and the direct pathway they provide between outside and inside environments.
           </p>
           
-          <div className="mt-6 rounded-lg overflow-hidden h-48">
-            <AspectRatio ratio={16/9} className="h-full">
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
               <img 
                 src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
                 alt="Sound waves traveling through windows" 

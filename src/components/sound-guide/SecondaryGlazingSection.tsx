@@ -12,15 +12,15 @@ const SecondaryGlazingSection = () => {
           <p className="text-gray-600 mb-4">
             Secondary glazing creates a highly effective sound barrier through multiple mechanisms:
           </p>
-          <ul className="list-disc list-inside text-gray-600 space-y-3 mb-4">
+          <ul className="list-disc list-inside text-gray-600 space-y-3">
             <li><span className="font-medium">Air gap principle:</span> The substantial air gap (typically 100-200mm) between primary and secondary glazing disrupts sound wave transmission</li>
             <li><span className="font-medium">Mass-air-mass resonance:</span> The combination of two glass panes with an air space creates a system that's difficult for sound to penetrate</li>
             <li><span className="font-medium">Acoustic decoupling:</span> Independent frames prevent vibration transfer between panes</li>
             <li><span className="font-medium">Laminated glass:</span> Special acoustic laminated glass incorporates sound-damping PVB interlayers</li>
           </ul>
           
-          <div className="rounded-lg overflow-hidden h-48">
-            <AspectRatio ratio={16/9} className="h-full">
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
               <img 
                 src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" 
                 alt="Secondary glazing cross-section showing air gap" 
@@ -40,7 +40,7 @@ const SecondaryGlazingSection = () => {
             45-48 dB, which means that loud external noise like heavy traffic or trains would be reduced to a 
             whisper-like level inside your property.
           </p>
-          <div className="bg-blue-50 p-4 rounded-md border border-blue-100 mb-4">
+          <div className="bg-blue-50 p-4 rounded-md border border-blue-100 mt-6">
             <h4 className="font-semibold text-blue-800 mb-2">Technical Insight</h4>
             <p className="text-blue-700 text-sm">
               A 10 dB reduction in sound equates to a perceived 50% reduction in loudness to human ears. 
@@ -49,8 +49,8 @@ const SecondaryGlazingSection = () => {
             </p>
           </div>
           
-          <div className="rounded-lg overflow-hidden h-48">
-            <AspectRatio ratio={16/9} className="h-full">
+          <div className="mt-6 rounded-lg overflow-hidden">
+            <AspectRatio ratio={4/3}>
               <img 
                 src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" 
                 alt="Installed secondary glazing system" 
