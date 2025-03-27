@@ -1,7 +1,10 @@
+
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Helmet } from "react-helmet";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 
 const AirGapSecondaryGlazing = () => {
@@ -18,9 +21,44 @@ const AirGapSecondaryGlazing = () => {
           content="air gap secondary glazing, cavity spacing, window insulation, thermal performance, acoustic insulation, 100mm cavity, 150mm cavity" 
         />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/air-gap-secondary-glazing" />
+        <meta property="og:title" content="Air Gap Secondary Glazing Guide | Optimal Cavity Spacing" />
+        <meta property="og:description" content="Expert guide on optimal air gap distances in secondary glazing installations. Discover how 100mm and 150mm cavity spacing affects thermal and acoustic performance." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/air-gap-secondary-glazing" />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "Air Gap Secondary Glazing Guide: Optimal Cavity Spacing",
+            "description": "Comprehensive guide on optimal air gap distances in secondary glazing installations, focusing on 100mm and 150mm cavity spacing for maximum thermal and acoustic performance.",
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png",
+            "author": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://secondaryglazingspecialist.com/specialized/air-gap-secondary-glazing"
+            },
+            "keywords": "air gap secondary glazing, cavity spacing, window insulation, thermal performance, acoustic insulation, 100mm cavity, 150mm cavity"
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
+        
         <h1 className="text-4xl font-bold mb-8">Air Gap Secondary Glazing Guide</h1>
         
         <div className="grid gap-8">
@@ -126,6 +164,7 @@ const AirGapSecondaryGlazing = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
