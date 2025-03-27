@@ -57,9 +57,9 @@ const ResidentialSolutions = () => {
       <Helmet>
         <title>Residential Secondary Glazing Solutions | Home Window Upgrades</title>
         <meta name="description" content="Transform your home with our residential secondary glazing solutions. Expert installation for sash windows, casement windows, bay windows and more. Enhanced comfort and energy efficiency." />
-        <meta name="keywords" content="residential glazing, home windows, sash windows, casement windows, bay windows, thermal insulation, noise reduction, home improvement" />
+        <meta name="keywords" content="residential glazing, home windows, sash windows, casement windows, bay windows, thermal insulation, noise reduction, home improvement, combination windows" />
         <meta property="og:title" content="Residential Secondary Glazing Solutions | Home Window Upgrades" />
-        <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency." />
+        <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency with our custom combination window options." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.secondaryglazingspecialist.com/residential" />
       </Helmet>

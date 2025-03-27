@@ -3,6 +3,7 @@ User-agent: *
 Allow: /
 
 # Explicitly allow these important pages
+Allow: /residential/combination
 Allow: /secondary-glazing-repairs
 Allow: /quote-request
 Allow: /sustainability-impact-tracker-secondary-glazing

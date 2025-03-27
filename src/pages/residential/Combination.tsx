@@ -1,12 +1,26 @@
+
+import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import GlassOptions from "@/components/residential/GlassOptions";
 
 const Combination = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Combination Secondary Glazing Window Solutions | Secondary Glazing Specialist</title>
+        <meta name="description" content="Custom combination secondary glazing solutions that blend different window styles for maximum versatility. Perfect for complex window configurations and mixed architectural styles." />
+        <meta name="keywords" content="combination windows, mixed window styles, secondary glazing, sash windows, casement windows, bay windows, noise reduction, thermal insulation" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/combination" />
+        <meta property="og:title" content="Combination Secondary Glazing Window Solutions" />
+        <meta property="og:description" content="Custom combination secondary glazing solutions that blend different window styles for maximum functionality and aesthetic appeal." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/combination" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
             <h1 className="text-4xl font-bold mb-4">Combination Windows</h1>
