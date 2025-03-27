@@ -2,19 +2,44 @@
 User-agent: *
 Allow: /
 
-# Explicitly allow these important pages
-Allow: /residential/combination
-Allow: /secondary-glazing-repairs
-Allow: /quote-request
-Allow: /sustainability-impact-tracker-secondary-glazing
-Allow: /specialized/sound-transmission-guide
-Allow: /specialized/condensation-control
-Allow: /specialized/air-gap-secondary-glazing
-Allow: /specialized/thermal-insulation
-Allow: /specialized/secondary-glazing-building-regulations
-Allow: /commercial/educational-sector
+# Main Category Pages
+Allow: /residential
+Allow: /commercial
+Allow: /specialized
+
+# Commercial Pages
 Allow: /commercial/office-buildings
 Allow: /commercial/hospitality-sector
 Allow: /commercial/healthcare-industry
+Allow: /commercial/educational-sector
+
+# Residential Pages
+Allow: /residential/sash-windows
+Allow: /residential/casement-windows
+Allow: /residential/bay-windows
+Allow: /residential/horizontal-sliding
+Allow: /residential/lift-out
+Allow: /residential/combination
+Allow: /residential/traditional-options
+Allow: /residential/modern-solutions
+
+# Specialized Pages
+Allow: /specialized/acoustic-glazing
+Allow: /specialized/thermal-insulation
+Allow: /specialized/security-glazing
+Allow: /specialized/condensation-control
+Allow: /specialized/air-gap-secondary-glazing
+Allow: /specialized/secondary-glazing-building-regulations
+Allow: /specialized/sound-transmission-guide
+Allow: /specialized/noise-reduction
+
+# Service Pages
+Allow: /secondary-glazing-repairs
+Allow: /sustainability-impact-tracker-secondary-glazing
+
+# Utility Pages
+Allow: /quote-request
+Allow: /gallery
+Allow: /faqs
 
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml

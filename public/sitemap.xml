@@ -1,7 +1,9 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home page -->
+  <!-- ======================================================== -->
+  <!-- HOME PAGE                                                -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/</loc>
     <lastmod>2024-06-15</lastmod>
@@ -9,7 +11,9 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- Main category pages -->
+  <!-- ======================================================== -->
+  <!-- MAIN CATEGORY PAGES                                      -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/residential</loc>
     <lastmod>2024-06-15</lastmod>
@@ -29,7 +33,9 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Commercial pages -->
+  <!-- ======================================================== -->
+  <!-- COMMERCIAL PAGES                                         -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/commercial/office-buildings</loc>
     <lastmod>2024-07-10</lastmod>
@@ -55,7 +61,9 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Residential pages -->
+  <!-- ======================================================== -->
+  <!-- RESIDENTIAL PAGES                                        -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/residential/sash-windows</loc>
     <lastmod>2024-06-15</lastmod>
@@ -105,7 +113,9 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Specialized pages -->
+  <!-- ======================================================== -->
+  <!-- SPECIALIZED PAGES                                        -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/specialized/acoustic-glazing</loc>
     <lastmod>2024-06-15</lastmod>
@@ -155,7 +165,9 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- Service pages -->
+  <!-- ======================================================== -->
+  <!-- SERVICE PAGES                                            -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/secondary-glazing-repairs</loc>
     <lastmod>2024-06-01</lastmod>
@@ -169,7 +181,9 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Utility pages -->
+  <!-- ======================================================== -->
+  <!-- UTILITY PAGES                                            -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/quote-request</loc>
     <lastmod>2024-06-15</lastmod>
@@ -189,7 +203,9 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Legal pages -->
+  <!-- ======================================================== -->
+  <!-- LEGAL PAGES                                              -->
+  <!-- ======================================================== -->
   <url>
     <loc>https://secondaryglazingspecialist.com/privacy-policy</loc>
     <lastmod>2024-03-14</lastmod>

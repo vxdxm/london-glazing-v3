@@ -33,7 +33,21 @@ const routeLabels: RouteMapping = {
   "office-buildings": "Office Buildings",
   "hospitality-sector": "Hospitality Sector",
   "healthcare-industry": "Healthcare Industry",
-  // Add more routes as needed
+  "sash-windows": "Sash Windows",
+  "casement-windows": "Casement Windows",
+  "bay-windows": "Bay Windows",
+  "horizontal-sliding": "Horizontal Sliding",
+  "lift-out": "Lift Out",
+  "combination": "Combination",
+  "traditional-options": "Traditional Options",
+  "modern-solutions": "Modern Solutions",
+  "gallery": "Gallery",
+  "faqs": "FAQs",
+  "quote-request": "Quote Request",
+  "sustainability-impact-tracker-secondary-glazing": "Sustainability Impact Tracker",
+  "privacy-policy": "Privacy Policy",
+  "terms-and-conditions": "Terms and Conditions",
+  "cookie-policy": "Cookie Policy",
 };
 
 export const BreadcrumbNav = () => {
