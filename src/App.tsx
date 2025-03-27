@@ -105,11 +105,12 @@ const App = () => (
           <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
           <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
 
-          {/* Legacy redirect */}
+          {/* Legacy redirects */}
           <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
-          
-          {/* Add direct route for secondary-glazing-building-regulations */}
           <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
+          
+          {/* Add direct route for air-gap-secondary-glazing */}
+          <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />

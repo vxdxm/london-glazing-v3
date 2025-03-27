@@ -29,6 +29,7 @@ Allow: /specialized/thermal-insulation
 Allow: /specialized/security-glazing
 Allow: /specialized/condensation-control
 Allow: /specialized/air-gap-secondary-glazing
+Allow: /air-gap-secondary-glazing
 Allow: /specialized/secondary-glazing-building-regulations
 Allow: /secondary-glazing-building-regulations
 Allow: /specialized/sound-transmission-guide
