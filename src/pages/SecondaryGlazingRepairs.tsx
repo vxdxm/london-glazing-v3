@@ -1,135 +1,87 @@
 
-import { MainNav } from "@/components/MainNav";
+import React from "react";
 import { Helmet } from "react-helmet";
+import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import RepairsHero from "@/components/repairs/RepairsHero";
-import CommonIssues from "@/components/repairs/CommonIssues";
 import SpiralBalanceSection from "@/components/repairs/SpiralBalanceSection";
+import CommonIssues from "@/components/repairs/CommonIssues";
 import AdditionalServices from "@/components/repairs/AdditionalServices";
-import RepairsCTA from "@/components/repairs/RepairsCTA";
 import RepairsFAQ from "@/components/repairs/RepairsFAQ";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import RepairsCTA from "@/components/repairs/RepairsCTA";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 const SecondaryGlazingRepairs = () => {
+  useScrollToHash();
+  
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Secondary Glazing Repairs & Maintenance | Spiral Balance Specialists | UK</title>
-        <meta 
-          name="description" 
-          content="Professional secondary glazing repair services for spiral balances, hardware replacement, and alignment issues. 10+ years experience with all major brands. Free quotes available." 
-        />
-        <meta name="keywords" content="secondary glazing repairs, spiral balance replacement, vertical sliding unit repairs, window maintenance, secondary glazing specialists" />
+        <title>Secondary Glazing Repairs | Window Repair Services London</title>
+        <meta name="description" content="Expert secondary glazing repair services in London, specializing in spiral balance replacements, alignment fixes, and hardware repairs. Book a repair assessment today." />
+        <meta name="keywords" content="secondary glazing repairs, spiral balance repairs, window hardware fix, glazing maintenance, vertical sliding unit repair, London glazing service" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/secondary-glazing-repairs" />
-        
-        {/* Open Graph / Social Media tags */}
-        <meta property="og:title" content="Secondary Glazing Repairs & Maintenance | Spiral Balance Specialists" />
-        <meta property="og:description" content="Expert secondary glazing repair services in the UK. We fix spiral balances, hardware issues and misalignments for all major brands. Free quotes & nationwide service." />
-        <meta property="og:url" content="https://secondaryglazingspecialist.com/secondary-glazing-repairs" />
+        <meta property="og:title" content="Secondary Glazing Repairs | Window Repair Specialists London" />
+        <meta property="og:description" content="Professional repair service for all secondary glazing systems. Specializing in spiral balance replacements, hardware upgrades, and alignment corrections." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" />
-        
-        {/* Twitter Card data */}
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/secondary-glazing-repairs" />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Secondary Glazing Repairs & Maintenance | Spiral Balance Specialists" />
-        <meta name="twitter:description" content="Expert secondary glazing repair services in the UK. We fix spiral balances, hardware issues and misalignments for all major brands." />
-        <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" />
-        
-        {/* Structured data for rich snippets */}
-        <script type="application/ld+json">{`
+        <meta name="twitter:title" content="Secondary Glazing Repairs | Window Repair Specialists London" />
+        <meta name="twitter:description" content="Professional repair service for all secondary glazing systems. Specializing in spiral balance replacements, hardware upgrades, and alignment corrections." />
+        <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png" />
+        <script type="application/ld+json">
+        {`
           {
             "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Secondary Glazing Specialist - Repair Services",
-            "image": "https://secondaryglazingspecialist.com/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png",
-            "description": "Professional secondary glazing repair services specializing in spiral balances for vertical sliding units. Expert repairs to extend the lifespan of your glazing.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "UK"
-            },
-            "priceRange": "££",
-            "telephone": "+44-XXXX-XXXXXX",
-            "openingHours": "Mo-Fr 08:00-17:00",
-            "sameAs": [
-              "https://www.facebook.com/secondaryglazingspecialist",
-              "https://www.instagram.com/secondaryglazingspecialist"
-            ],
-            "serviceArea": {
-              "@type": "GeoCircle",
-              "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": 52.3555,
-                "longitude": -1.1743
+            "@type": "Service",
+            "name": "Secondary Glazing Repair Service",
+            "provider": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Arch 141, MacFarlane Road",
+                "addressLocality": "London",
+                "postalCode": "W12 7LA",
+                "addressCountry": "UK"
               },
-              "geoRadius": "500 km"
+              "telephone": "0207 060 1572",
+              "url": "https://secondaryglazingspecialist.com"
             },
-            "datePublished": "2024-05-14",
-            "dateModified": "2024-06-01",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Secondary Glazing Repair Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Spiral Balance Replacement"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Hardware Repairs"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Alignment Issues"
-                  }
-                }
-              ]
+            "description": "Professional repair services for all types of secondary glazing systems, specializing in spiral balance replacements and hardware repairs.",
+            "areaServed": "London",
+            "serviceType": "Window Repair",
+            "offers": {
+              "@type": "Offer",
+              "price": "75.00",
+              "priceCurrency": "GBP",
+              "description": "Starting price for basic repair assessment",
+              "availability": "https://schema.org/InStock"
             }
           }
-        `}</script>
+        `}
+        </script>
       </Helmet>
       <MainNav />
       
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        {/* Breadcrumbs using shadcn/ui component */}
-        <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/">Home</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Secondary Glazing Repairs</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+      <div className="container mx-auto px-4 py-12">
+        <BreadcrumbNav />
         
-        {/* Add main article tag for better semantic structure */}
-        <article>
-          <RepairsHero />
-          <CommonIssues />
+        <RepairsHero />
+        
+        <div id="spiral-balances">
           <SpiralBalanceSection />
-          <AdditionalServices />
-          <RepairsFAQ />
-          <RepairsCTA />
-        </article>
+        </div>
+        
+        <CommonIssues />
+        <AdditionalServices />
+        <RepairsFAQ />
+        <RepairsCTA />
       </div>
+      
+      <Footer />
     </div>
   );
 };

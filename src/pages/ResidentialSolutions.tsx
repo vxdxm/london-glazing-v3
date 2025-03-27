@@ -2,7 +2,10 @@
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const residentialServices = [
   {
@@ -66,6 +69,7 @@ const ResidentialSolutions = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Residential Solutions</h1>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {residentialServices.map((service) => (
             <Card 
@@ -90,7 +94,19 @@ const ResidentialSolutions = () => {
             </Card>
           ))}
         </div>
+
+        <div className="mt-12 p-6 bg-gray-50 rounded-lg shadow-sm">
+          <h2 className="text-2xl font-semibold mb-4">Maintenance & Repairs</h2>
+          <p className="text-gray-700 mb-6">
+            Already have secondary glazing installed? We offer comprehensive repair and maintenance services to keep your 
+            glazing in perfect working condition.
+          </p>
+          <Button asChild>
+            <Link to="/secondary-glazing-repairs">View Repair Services</Link>
+          </Button>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

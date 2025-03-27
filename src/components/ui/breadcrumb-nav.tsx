@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -24,6 +23,7 @@ const routeLabels: RouteMapping = {
   "acoustic-glazing": "Acoustic Glazing",
   "noise-reduction": "Noise Reduction",
   "thermal-insulation": "Thermal Insulation",
+  "secondary-glazing-repairs": "Secondary Glazing Repairs",
   // Add more routes as needed
 };
 
