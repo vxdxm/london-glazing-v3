@@ -1,7 +1,10 @@
+
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Helmet } from "react-helmet";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const SecondaryGlazingBuildingRegulations = () => {
   return (
@@ -12,9 +15,48 @@ const SecondaryGlazingBuildingRegulations = () => {
           name="description" 
           content="Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance." 
         />
+        <meta 
+          name="keywords" 
+          content="secondary glazing regulations, building regulations, Part L, Part F, Part B, Part K, compliance guide, thermal performance, ventilation, fire safety, window regulations" 
+        />
+        <meta property="og:title" content="Secondary Glazing Building Regulations | Compliance Guide" />
+        <meta property="og:description" content="Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations" />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "Secondary Glazing Building Regulations Guide",
+            "description": "Comprehensive guide to UK building regulations for secondary glazing installations covering thermal performance, ventilation standards, and fire safety compliance.",
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png",
+            "author": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations"
+            },
+            "keywords": "secondary glazing regulations, building regulations, Part L, Part F, Part B, Part K, compliance guide"
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <h1 className="text-4xl font-bold mb-8">Secondary Glazing Building Regulations</h1>
         
         <div className="grid gap-8">
@@ -76,6 +118,7 @@ const SecondaryGlazingBuildingRegulations = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

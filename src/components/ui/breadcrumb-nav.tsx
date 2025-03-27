@@ -28,6 +28,7 @@ const routeLabels: RouteMapping = {
   "condensation-control": "Condensation Control",
   "security-glazing": "Security Glazing",
   "air-gap-secondary-glazing": "Air Gap Secondary Glazing",
+  "secondary-glazing-building-regulations": "Building Regulations",
   // Add more routes as needed
 };
 

@@ -11,5 +11,6 @@ Allow: /specialized/sound-transmission-guide
 Allow: /specialized/condensation-control
 Allow: /specialized/air-gap-secondary-glazing
 Allow: /specialized/thermal-insulation
+Allow: /specialized/secondary-glazing-building-regulations
 
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
