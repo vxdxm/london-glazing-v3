@@ -107,6 +107,9 @@ const App = () => (
 
           {/* Legacy redirect */}
           <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
+          
+          {/* Add direct route for secondary-glazing-building-regulations */}
+          <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
 
           {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
