@@ -34,6 +34,8 @@ Allow: /specialized/secondary-glazing-building-regulations
 Allow: /secondary-glazing-building-regulations
 Allow: /specialized/sound-transmission-guide
 Allow: /specialized/noise-reduction
+Allow: /specialized/secondary-glazing-original-windows
+Allow: /specialized/acoustic-secondary-glazing-windows
 
 # Service Pages
 Allow: /secondary-glazing-repairs

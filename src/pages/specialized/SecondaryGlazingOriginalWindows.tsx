@@ -1,8 +1,15 @@
+
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { useLocation } from "react-router-dom";
 
 const SecondaryGlazingOriginalWindows = () => {
+  const location = useLocation();
+  const canonicalUrl = `https://secondaryglazingspecialist.com${location.pathname}`;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -15,9 +22,43 @@ const SecondaryGlazingOriginalWindows = () => {
           name="keywords" 
           content="secondary glazing, original windows, heritage windows, window preservation, listed buildings, conservation areas" 
         />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content="Secondary Glazing for Original Windows | Heritage Solutions" />
+        <meta property="og:description" content="Expert solutions that preserve original windows while improving thermal and acoustic performance for heritage properties." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Secondary Glazing for Original Windows",
+            "description": "Discover how secondary glazing preserves original windows while improving thermal and acoustic performance. Expert solutions for heritage properties.",
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
+            "author": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "${canonicalUrl}"
+            }
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <h1 className="text-4xl font-bold mb-8">Secondary Glazing for Original Windows</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -93,6 +134,7 @@ const SecondaryGlazingOriginalWindows = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +5,7 @@ import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import { Earth, Wrench, Volume2, Maximize2 } from "lucide-react";
+import { Earth, Wrench, Volume2, Maximize2, Building } from "lucide-react";
 
 const SpecializedServices = () => {
   return (
@@ -51,6 +50,26 @@ const SpecializedServices = () => {
                 </div>
                 <p className="text-gray-600 mb-4">Learn about optimal air gap distances in secondary glazing installations. Our expert guide covers how 100mm and 150mm cavity spacing affects thermal and acoustic performance.</p>
                 <Link to="/air-gap-secondary-glazing" className="text-primary hover:underline">Explore Air Gap Secondary Glazing</Link>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-0">
+              <AspectRatio ratio={16/9}>
+                <img
+                  src="/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png"
+                  alt="Original window with secondary glazing installation"
+                  className="w-full h-full object-cover rounded-t-lg"
+                />
+              </AspectRatio>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <Building className="h-5 w-5 text-amber-700" />
+                  <h2 className="text-2xl font-semibold">Heritage Window Solutions</h2>
+                </div>
+                <p className="text-gray-600 mb-4">Preserve your original windows while enhancing their performance. Our secondary glazing solutions for heritage properties maintain historical integrity while improving insulation.</p>
+                <Link to="/specialized/secondary-glazing-original-windows" className="text-primary hover:underline">Learn about Original Window Solutions</Link>
               </div>
             </CardContent>
           </Card>

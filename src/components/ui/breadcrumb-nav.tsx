@@ -29,6 +29,8 @@ const routeLabels: RouteMapping = {
   "security-glazing": "Security Glazing",
   "air-gap-secondary-glazing": "Air Gap Secondary Glazing",
   "secondary-glazing-building-regulations": "Building Regulations",
+  "secondary-glazing-original-windows": "Original Windows Solutions",
+  "acoustic-secondary-glazing-windows": "Acoustic Windows",
   "educational-sector": "Educational Sector",
   "office-buildings": "Office Buildings",
   "hospitality-sector": "Hospitality Sector",
@@ -72,6 +74,25 @@ export const BreadcrumbNav = () => {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbPage>Air Gap Secondary Glazing</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    );
+  }
+
+  // Special case for secondary glazing building regulations direct page
+  if (pathSegments.length === 1 && pathSegments[0] === "secondary-glazing-building-regulations") {
+    return (
+      <Breadcrumb className="mb-6">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link to="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Building Regulations</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
