@@ -8,6 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Exclude specific paths from being rewritten
 RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
+RewriteCond %{REQUEST_URI} !^/secondary-glazing-building-regulations$
 
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]
