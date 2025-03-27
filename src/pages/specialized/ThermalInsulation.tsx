@@ -1,24 +1,63 @@
 
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import CostCalculator from "@/components/CostCalculator";
 import { Helmet } from "react-helmet";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const ThermalInsulation = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Thermal Insulation | Secondary Glazing Specialist</title>
-        <meta name="description" content="Improve your home's energy efficiency with our thermal insulation solutions." />
-        <meta name="keywords" content="thermal insulation, secondary glazing, energy efficiency, London glazing specialist" />
+        <meta 
+          name="description" 
+          content="Improve your home's energy efficiency with our thermal insulation secondary glazing solutions. Reduce heat loss by up to 60% and save on energy bills." 
+        />
+        <meta 
+          name="keywords" 
+          content="thermal insulation, secondary glazing, energy efficiency, heat loss reduction, energy bills, thermal barriers, London glazing specialist" 
+        />
         <meta property="og:title" content="Thermal Insulation | Secondary Glazing Specialist" />
-        <meta property="og:description" content="Expert thermal insulation solutions for your home." />
-        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Expert thermal insulation solutions for your home. Reduce heat loss by up to 60% and save on energy bills." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/thermal-insulation" />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/thermal-insulation" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "headline": "Thermal Insulation Secondary Glazing Solutions",
+            "description": "Expert thermal insulation solutions that can reduce heat loss by up to 60% compared to single glazing, leading to substantial savings on energy bills.",
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png",
+            "author": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://secondaryglazingspecialist.com/specialized/thermal-insulation"
+            },
+            "keywords": "thermal insulation, secondary glazing, energy efficiency, heat loss reduction, energy bills, thermal barriers"
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <h1 className="text-4xl font-bold mb-8">Thermal Insulation</h1>
         
         <div className="prose max-w-none mb-12 text-gray-600">
@@ -146,6 +185,7 @@ const ThermalInsulation = () => {
           <CostCalculator />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
