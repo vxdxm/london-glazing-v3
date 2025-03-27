@@ -8,5 +8,6 @@ Allow: /secondary-glazing-repairs
 Allow: /quote-request
 Allow: /sustainability-impact-tracker-secondary-glazing
 Allow: /specialized/sound-transmission-guide
+Allow: /specialized/condensation-control
 
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
