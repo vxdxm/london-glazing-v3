@@ -2,7 +2,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import SoundTravelSection from "@/components/sound-guide/SoundTravelSection";
 import SecondaryGlazingSection from "@/components/sound-guide/SecondaryGlazingSection";
