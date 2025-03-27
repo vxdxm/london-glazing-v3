@@ -29,6 +29,10 @@ const routeLabels: RouteMapping = {
   "security-glazing": "Security Glazing",
   "air-gap-secondary-glazing": "Air Gap Secondary Glazing",
   "secondary-glazing-building-regulations": "Building Regulations",
+  "educational-sector": "Educational Sector",
+  "office-buildings": "Office Buildings",
+  "hospitality-sector": "Hospitality Sector",
+  "healthcare-industry": "Healthcare Industry",
   // Add more routes as needed
 };
 

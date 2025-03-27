@@ -12,5 +12,9 @@ Allow: /specialized/condensation-control
 Allow: /specialized/air-gap-secondary-glazing
 Allow: /specialized/thermal-insulation
 Allow: /specialized/secondary-glazing-building-regulations
+Allow: /commercial/educational-sector
+Allow: /commercial/office-buildings
+Allow: /commercial/hospitality-sector
+Allow: /commercial/healthcare-industry
 
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
