@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import { Earth, Wrench, Volume2 } from "lucide-react";
+import { Earth, Wrench, Volume2, Maximize2 } from "lucide-react";
 
 const SpecializedServices = () => {
   return (
@@ -13,7 +14,7 @@ const SpecializedServices = () => {
       <Helmet>
         <title>Specialized Secondary Glazing Services | Acoustic & Thermal Solutions</title>
         <meta name="description" content="Expert specialized secondary glazing services including acoustic glazing, thermal insulation, and security solutions. Professional installation for specific requirements." />
-        <meta name="keywords" content="specialized glazing, acoustic glazing, thermal insulation, security glazing, noise reduction, energy efficiency, London specialist" />
+        <meta name="keywords" content="specialized glazing, acoustic glazing, thermal insulation, security glazing, noise reduction, energy efficiency, London specialist, air gap secondary glazing" />
         <meta property="og:title" content="Specialized Secondary Glazing Services" />
         <meta property="og:description" content="Advanced secondary glazing solutions for specific requirements. Expert installation in London." />
         <meta property="og:type" content="website" />
@@ -33,6 +34,27 @@ const SpecializedServices = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-0">
+              <AspectRatio ratio={16/9}>
+                <img
+                  src="/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png"
+                  alt="Air gap spacing diagram for secondary glazing"
+                  className="w-full h-full object-cover rounded-t-lg"
+                />
+              </AspectRatio>
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <Maximize2 className="h-5 w-5 text-blue-600" />
+                  <h2 className="text-2xl font-semibold">Air Gap Secondary Glazing</h2>
+                </div>
+                <p className="text-gray-600 mb-4">Learn about optimal air gap distances in secondary glazing installations. Our expert guide covers how 100mm and 150mm cavity spacing affects thermal and acoustic performance.</p>
+                <Link to="/air-gap-secondary-glazing" className="text-primary hover:underline">Explore Air Gap Secondary Glazing</Link>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
               <AspectRatio ratio={16/9}>

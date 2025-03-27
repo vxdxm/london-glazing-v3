@@ -59,6 +59,25 @@ export const BreadcrumbNav = () => {
     return null;
   }
 
+  // Special case for direct air gap page
+  if (pathSegments.length === 1 && pathSegments[0] === "air-gap-secondary-glazing") {
+    return (
+      <Breadcrumb className="mb-6">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link to="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Air Gap Secondary Glazing</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    );
+  }
+
   return (
     <Breadcrumb className="mb-6">
       <BreadcrumbList>
