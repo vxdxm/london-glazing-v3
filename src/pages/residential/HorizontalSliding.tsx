@@ -1,11 +1,62 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const HorizontalSliding = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Horizontal Sliding Secondary Glazing | Smooth Operating Window Solutions</title>
+        <meta name="description" content="Our horizontal sliding secondary glazing systems offer excellent thermal insulation and noise reduction while maintaining easy access to your existing windows. Perfect for wide openings." />
+        <meta name="keywords" content="horizontal sliding windows, sliding secondary glazing, thermal insulation, noise reduction, wide window openings, residential glazing" />
+        <meta property="og:title" content="Horizontal Sliding Secondary Glazing" />
+        <meta property="og:description" content="Smooth-operating horizontal sliding panels that provide easy access to primary windows. Ideal for large windows and offering excellent ventilation options." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Horizontal Sliding Secondary Glazing" />
+        <meta name="twitter:description" content="Smooth-operating horizontal sliding secondary glazing for wide window openings." />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "headline": "Horizontal Sliding Secondary Glazing Solutions",
+            "description": "Our horizontal sliding secondary glazing systems offer a perfect blend of functionality and aesthetics. These systems are designed to provide excellent thermal insulation and noise reduction while maintaining easy access to your existing windows.",
+            "image": "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".text-lg", ".card-title", ".card-description"]
+            },
+            "mainEntity": {
+              "@type": "Product",
+              "name": "Horizontal Sliding Secondary Glazing",
+              "description": "Smooth-operating horizontal sliding panels that provide excellent insulation and easy access to primary windows.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Secondary Glazing Specialist"
+              },
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "GBP",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
+        `}
+        </script>
+      </Helmet>
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
+        <BreadcrumbNav />
         <h1 className="text-4xl font-bold mb-8">Horizontal Sliding Windows</h1>
         
         {/* Introduction Section */}
@@ -155,7 +206,20 @@ const HorizontalSliding = () => {
             </Card>
           </div>
         </div>
+        
+        {/* Call to Action */}
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-bold mb-6">Ready to Upgrade Your Windows?</h2>
+          <p className="text-gray-600 mb-8">
+            Contact us today for a free consultation and quote. Our experts will help you 
+            find the perfect horizontal sliding solution for your home.
+          </p>
+          <Button size="lg" onClick={() => navigate("/quote-request")} className="bg-primary hover:bg-primary/90">
+            Get Free Quote
+          </Button>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
