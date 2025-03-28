@@ -20,10 +20,13 @@ const HorizontalSliding = () => {
         <meta property="og:description" content="Smooth-operating horizontal sliding panels that provide easy access to primary windows. Ideal for large windows and offering excellent ventilation options." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Horizontal Sliding Secondary Glazing" />
         <meta name="twitter:description" content="Smooth-operating horizontal sliding secondary glazing for wide window openings." />
+        <meta name="twitter:image" content="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
         {`
           {
@@ -32,6 +35,7 @@ const HorizontalSliding = () => {
             "headline": "Horizontal Sliding Secondary Glazing Solutions",
             "description": "Our horizontal sliding secondary glazing systems offer a perfect blend of functionality and aesthetics. These systems are designed to provide excellent thermal insulation and noise reduction while maintaining easy access to your existing windows.",
             "image": "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
+            "url": "https://secondaryglazingspecialist.com/residential/horizontal-sliding",
             "speakable": {
               "@type": "SpeakableSpecification",
               "cssSelector": [".text-lg", ".card-title", ".card-description"]
@@ -40,6 +44,7 @@ const HorizontalSliding = () => {
               "@type": "Product",
               "name": "Horizontal Sliding Secondary Glazing",
               "description": "Smooth-operating horizontal sliding panels that provide excellent insulation and easy access to primary windows.",
+              "image": "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
               "brand": {
                 "@type": "Brand",
                 "name": "Secondary Glazing Specialist"
@@ -49,6 +54,29 @@ const HorizontalSliding = () => {
                 "priceCurrency": "GBP",
                 "availability": "https://schema.org/InStock"
               }
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://secondaryglazingspecialist.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Residential Solutions",
+                  "item": "https://secondaryglazingspecialist.com/residential"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Horizontal Sliding",
+                  "item": "https://secondaryglazingspecialist.com/residential/horizontal-sliding"
+                }
+              ]
             }
           }
         `}
@@ -78,8 +106,9 @@ const HorizontalSliding = () => {
               <div className="space-y-4">
                 <img 
                   src="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png"
-                  alt="Standard horizontal sliding window"
+                  alt="Standard horizontal sliding secondary glazing with multiple panels that slide smoothly for easy operation"
                   className="rounded-lg w-full h-[200px] object-cover mb-4"
+                  loading="lazy"
                 />
                 <p>
                   Our standard horizontal sliding system typically consists of 2 or 3 panels, which is standard for majority of the windows. 
@@ -104,8 +133,9 @@ const HorizontalSliding = () => {
               <div className="space-y-4">
                 <img 
                   src="/lovable-uploads/83a85813-7a32-48d2-a1c9-ad133fc122d7.png"
-                  alt="Multi-track sliding window system"
+                  alt="Multi-track horizontal sliding secondary glazing system with advanced features for larger window openings"
                   className="rounded-lg w-full h-[200px] object-cover mb-4"
+                  loading="lazy"
                 />
                 <p>
                   Our advanced multi-track sliding system can accommodate 3 to 5 panels within one window frame, offering maximum flexibility 
