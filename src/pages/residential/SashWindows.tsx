@@ -1,6 +1,11 @@
+
 import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SashWindowGlassOptions from "@/components/residential/SashWindowGlassOptions";
+import SashWindowsSEO from "@/components/residential/sash/SashWindowsSEO";
+import SashWindowCTA from "@/components/residential/sash/SashWindowCTA";
 import { useState } from "react";
 
 const SashWindows = () => {
@@ -19,8 +24,10 @@ const SashWindows = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SashWindowsSEO />
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
+        <BreadcrumbNav />
         <article className="prose lg:prose-xl max-w-none">
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <div className="flex-1">
@@ -36,6 +43,7 @@ const SashWindows = () => {
                 src="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png"
                 alt="Three elegant sash windows with Roman blinds, overlooking brick buildings and trees, demonstrating classic period property features"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+                loading="eager"
               />
             </div>
           </div>
@@ -54,6 +62,7 @@ const SashWindows = () => {
                       alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property with grey walls and a chandelier"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                       onError={handleStandardImageError}
+                      loading="lazy"
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -93,6 +102,7 @@ const SashWindows = () => {
                       alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                       onError={handleTiltInImageError}
+                      loading="lazy"
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -124,8 +134,10 @@ const SashWindows = () => {
           </section>
 
           <SashWindowGlassOptions />
+          <SashWindowCTA />
         </article>
       </div>
+      <Footer />
     </div>
   );
 };
