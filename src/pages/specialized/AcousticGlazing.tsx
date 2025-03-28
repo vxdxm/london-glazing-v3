@@ -3,6 +3,8 @@ import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 import { Helmet } from "react-helmet";
+import { Footer } from "@/components/Footer";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const AcousticGlazing = () => {
   return <div className="min-h-screen bg-background">
@@ -14,9 +16,40 @@ const AcousticGlazing = () => {
         <meta property="og:description" content="Transform your space with our acoustic secondary glazing solutions. Reduce noise by up to 80% with our specialized installations." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/acoustic-glazing" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "headline": "Acoustic Secondary Glazing Solutions",
+            "description": "Specialized acoustic secondary glazing solutions for maximum noise reduction. Expert installation for homes and businesses in London.",
+            "image": "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".prose", ".card-title", ".card-content"]
+            },
+            "mainEntity": {
+              "@type": "Product",
+              "name": "Acoustic Secondary Glazing",
+              "description": "Our acoustic secondary glazing solutions offer superior sound insulation for properties affected by external noise.",
+              "category": "Home Improvement",
+              "brand": {
+                "@type": "Brand",
+                "name": "Secondary Glazing Specialist"
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "GBP",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <h1 className="text-4xl font-bold mb-8">Acoustic Secondary Glazing</h1>
         
         <div className="prose max-w-none mb-12 text-gray-600">
@@ -84,6 +117,7 @@ const AcousticGlazing = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>;
 };
 
