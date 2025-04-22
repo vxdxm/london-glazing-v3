@@ -20,6 +20,19 @@ const NoiseReduction = () => {
         <div className="mb-12" id="calculator">
           <NoiseReductionCalculator />
         </div>
+
+        <div className="bg-secondary/60 p-5 rounded-lg mt-16">
+          <h2 className="text-xl font-semibold mb-2 text-primary">Learn More: Secondary Glazing Noise Reduction</h2>
+          <p className="text-gray-700 mb-2">
+            Want to understand how secondary glazing can cut outside noise by up to 80%? Discover detailed acoustic glass options, air gap strategies, and solutions for listed buildings on our dedicated page.
+          </p>
+          <a
+            href="/secondary-glazing-noise-reduction"
+            className="inline-block mt-2 bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+          >
+            Explore Secondary Glazing Noise Reduction
+          </a>
+        </div>
       </div>
     </div>
   );
