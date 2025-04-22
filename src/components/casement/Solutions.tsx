@@ -16,7 +16,7 @@ const Solutions = () => {
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
               <img 
-                src="https://images.unsplash.com/photo-1460574283810-2aab119d8511"
+                src="/lovable-uploads/85a35431-eb67-44c0-bc47-544b29a786f6.png"
                 alt="Modern casement window solutions"
                 className="w-full h-full object-cover"
               />
