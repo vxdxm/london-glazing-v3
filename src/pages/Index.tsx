@@ -60,7 +60,7 @@ const Index = () => {
             
             <div className="relative overflow-hidden rounded-lg shadow-lg group">
               <img
-                src="/lovable-uploads/85a35431-eb67-44c0-bc47-544b29a786f6.png"
+                src="/lovable-uploads/6771cfec-81c9-43b0-914b-d5066a6afea0.png"
                 alt="Modern casement window with secondary glazing in a contemporary setting"
                 className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
               />
