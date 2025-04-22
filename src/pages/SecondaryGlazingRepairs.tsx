@@ -11,6 +11,7 @@ import AdditionalServices from "@/components/repairs/AdditionalServices";
 import RepairsFAQ from "@/components/repairs/RepairsFAQ";
 import RepairsCTA from "@/components/repairs/RepairsCTA";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
+import { Link } from "react-router-dom";
 
 const SecondaryGlazingRepairs = () => {
   useScrollToHash();
@@ -68,8 +69,18 @@ const SecondaryGlazingRepairs = () => {
       
       <div className="container mx-auto px-4 py-12">
         <BreadcrumbNav />
-        
+
         <RepairsHero />
+
+        {/* Add link to spiral balance educational page */}
+        <div className="mb-8 text-right">
+          <Link
+            to="/learn-about-spiral-balances"
+            className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+          >
+            Learn About Spiral Balances
+          </Link>
+        </div>
         
         <div id="spiral-balances">
           <SpiralBalanceSection />

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -45,12 +44,12 @@ import TraditionalOptions from "./pages/residential/TraditionalOptions";
 import ModernSolutions from "./pages/residential/ModernSolutions";
 import SecondaryGlazingRepairs from "./pages/SecondaryGlazingRepairs";
 import SecondaryGlazingNoiseReduction from "./pages/SecondaryGlazingNoiseReduction";
+import LearnAboutSpiralBalances from "./pages/LearnAboutSpiralBalances";
 
 const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
 
-// Function to serve static files like sitemap.xml - this needs to be fixed
 const serveFile = (fileName: string) => {
   window.location.href = `/${fileName}`;
   return null;
@@ -68,24 +67,16 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/">
         <Routes>
-          {/* Root path explicitly defined to render Index component */}
           <Route path="/" element={<Index />} />
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
           <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
-          
-          {/* Static files - remove the direct file serving for these routes */}
-          {/* <Route path="/sitemap.xml" element={serveFile('sitemap.xml')} /> */}
-          {/* <Route path="/robots.txt" element={serveFile('robots.txt')} /> */}
-          
-          {/* Legal Routes */}
+          <Route path="/learn-about-spiral-balances" element={<LearnAboutSpiralBalances />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
-          
-          {/* Residential Routes */}
           <Route path="/residential" element={<ResidentialSolutions />} />
           <Route path="/residential/sash-windows" element={<SashWindows />} />
           <Route path="/residential/casement-windows" element={<CasementWindows />} />
@@ -95,15 +86,11 @@ const App = () => (
           <Route path="/residential/combination" element={<Combination />} />
           <Route path="/residential/traditional-options" element={<TraditionalOptions />} />
           <Route path="/residential/modern-solutions" element={<ModernSolutions />} />
-          
-          {/* Commercial Routes */}
           <Route path="/commercial" element={<CommercialSolutions />} />
           <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
           <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
           <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
           <Route path="/commercial/educational-sector" element={<EducationalSector />} />
-          
-          {/* Specialized Routes */}
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
           <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
@@ -116,21 +103,11 @@ const App = () => (
           <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
           <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
           <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
-
-          {/* Secondary Glazing Noise Reduction page */}
           <Route path="/secondary-glazing-noise-reduction" element={<SecondaryGlazingNoiseReduction />} />
-          
-          {/* Noise Calculator Direct Access */}
           <Route path="/noise-calculator" element={<Navigate to="/specialized/noise-reduction#calculator" replace />} />
-
-          {/* Legacy redirects */}
           <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
           <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
-          
-          {/* Add direct route for air-gap-secondary-glazing */}
           <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
-
-          {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />
