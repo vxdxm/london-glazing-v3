@@ -8,6 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Exclude specific paths from being rewritten
 RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
 RewriteCond %{REQUEST_URI} !^/secondary-glazing-building-regulations$
 RewriteCond %{REQUEST_URI} !^/specialized/air-gap-secondary-glazing$
 RewriteCond %{REQUEST_URI} !^/air-gap-secondary-glazing$

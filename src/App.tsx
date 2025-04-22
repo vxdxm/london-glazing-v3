@@ -49,6 +49,12 @@ const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
 
+// Function to serve static files like sitemap.xml
+const serveFile = (fileName: string) => {
+  window.location.href = `/${fileName}`;
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -67,6 +73,10 @@ const App = () => (
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
           <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
+          
+          {/* Static files */}
+          <Route path="/sitemap.xml" element={serveFile('sitemap.xml')} />
+          <Route path="/robots.txt" element={serveFile('robots.txt')} />
           
           {/* Legal Routes */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Hero } from "@/components/Hero";
 import { MainNav } from "@/components/MainNav";
@@ -23,6 +24,7 @@ const Index = () => {
         <meta name="twitter:title" content="London Secondary Glazing Solutions | Secondary Glazing for Noise & Thermal Control" />
         <meta name="twitter:description" content="Premium Secondary Glazing solutions for homes and businesses throughout London. Specialist Secondary Glazing for listed buildings and conservation areas." />
         <link rel="canonical" href="https://www.secondaryglazingspecialist.com/" />
+        <link rel="sitemap" type="application/xml" href="https://secondaryglazingspecialist.com/sitemap.xml" />
       </Helmet>
       <MainNav />
       <Hero />

@@ -1,6 +1,7 @@
 
 # Specific routes that should be preserved
 /sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 
 # Explicitly list all routes for the SPA
