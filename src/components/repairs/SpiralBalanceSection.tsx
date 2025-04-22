@@ -15,7 +15,14 @@ const SpiralBalanceSection = () => {
               Spiral balances are critical components in vertical sliding secondary glazing windows. They ensure smooth, effortless operation and maintain the window's position at any height.
             </p>
             <Button asChild>
-              <Link to="/learn-about-spiral-balances" className="inline-flex items-center">
+              <Link 
+                to="/learn-about-spiral-balances" 
+                className="inline-flex items-center"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/learn-about-spiral-balances';
+                }}
+              >
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
