@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -115,6 +116,12 @@ const App = () => (
           <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
           <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
           <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
+
+          {/* Secondary Glazing Noise Reduction page */}
+          <Route path="/secondary-glazing-noise-reduction" element={<SecondaryGlazingNoiseReduction />} />
+          
+          {/* Noise Calculator Direct Access */}
+          <Route path="/noise-calculator" element={<Navigate to="/specialized/noise-reduction#calculator" replace />} />
 
           {/* Legacy redirects */}
           <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />

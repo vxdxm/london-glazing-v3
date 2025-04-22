@@ -1,9 +1,11 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Footer } from "@/components/Footer";
+import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 
 const SecondaryGlazingNoiseReduction = () => (
   <div className="min-h-screen bg-background flex flex-col">
@@ -116,6 +118,12 @@ const SecondaryGlazingNoiseReduction = () => (
           </CardContent>
         </Card>
       </div>
+      
+      <div id="calculator" className="mb-16">
+        <h2 className="text-3xl font-bold text-center mb-8">Noise Reduction Calculator</h2>
+        <NoiseReductionCalculator />
+      </div>
+      
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Is Secondary Glazing Right For You?</h2>
         <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">

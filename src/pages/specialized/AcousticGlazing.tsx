@@ -102,7 +102,7 @@ const AcousticGlazing = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Noise Reduction Calculator</h3>
                 <p className="text-gray-600 mb-4">Calculate potential noise reduction based on your specific window configuration and requirements.</p>
-                <Link to="/secondary-glazing-noise-reduction" className="text-primary hover:underline">
+                <Link to="/secondary-glazing-noise-reduction#calculator" className="text-primary hover:underline">
                   Try Noise Reduction Calculator
                 </Link>
               </CardContent>
