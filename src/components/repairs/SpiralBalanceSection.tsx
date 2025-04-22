@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const SpiralBalanceSection = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white" id="spiral-balances">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -15,7 +15,7 @@ const SpiralBalanceSection = () => {
               Spiral balances are critical components in vertical sliding secondary glazing windows. They ensure smooth, effortless operation and maintain the window's position at any height.
             </p>
             <Button asChild>
-              <Link to="/learn-about-spiral-balances">
+              <Link to="/learn-about-spiral-balances" className="inline-flex items-center">
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
