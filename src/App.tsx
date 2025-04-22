@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -44,6 +43,7 @@ import SustainabilityImpactTracker from "./pages/SustainabilityImpactTracker";
 import TraditionalOptions from "./pages/residential/TraditionalOptions";
 import ModernSolutions from "./pages/residential/ModernSolutions";
 import SecondaryGlazingRepairs from "./pages/SecondaryGlazingRepairs";
+import SecondaryGlazingNoiseReduction from "./pages/SecondaryGlazingNoiseReduction";
 
 const queryClient = new QueryClient();
 
