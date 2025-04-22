@@ -49,7 +49,7 @@ const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
 
-// Function to serve static files like sitemap.xml
+// Function to serve static files like sitemap.xml - this needs to be fixed
 const serveFile = (fileName: string) => {
   window.location.href = `/${fileName}`;
   return null;
@@ -67,6 +67,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/">
         <Routes>
+          {/* Root path explicitly defined to render Index component */}
           <Route path="/" element={<Index />} />
           <Route path="/quote-request" element={<QuoteRequest />} />
           <Route path="/gallery" element={<Gallery />} />
@@ -74,9 +75,9 @@ const App = () => (
           <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
           <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
           
-          {/* Static files */}
-          <Route path="/sitemap.xml" element={serveFile('sitemap.xml')} />
-          <Route path="/robots.txt" element={serveFile('robots.txt')} />
+          {/* Static files - remove the direct file serving for these routes */}
+          {/* <Route path="/sitemap.xml" element={serveFile('sitemap.xml')} /> */}
+          {/* <Route path="/robots.txt" element={serveFile('robots.txt')} /> */}
           
           {/* Legal Routes */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

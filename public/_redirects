@@ -1,5 +1,5 @@
 
-# Specific routes that should be preserved
+# Specific routes that should be preserved and served directly
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
@@ -19,6 +19,9 @@
 /privacy-policy /index.html 200
 /terms-and-conditions /index.html 200
 /cookie-policy /index.html 200
+
+# Important: Root path needs explicit handling to ensure index.html is served
+/ /index.html 200
 
 # Handle all other routes for the SPA - THIS MUST BE THE LAST RULE
 /* /index.html 200
