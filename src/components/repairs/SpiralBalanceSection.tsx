@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const SpiralBalanceSection = () => {
   return (
@@ -14,13 +15,9 @@ const SpiralBalanceSection = () => {
               Spiral balances are critical components in vertical sliding secondary glazing windows. They ensure smooth, effortless operation and maintain the window's position at any height.
             </p>
             <Button asChild>
-              <a
-                href="https://secondaryglazingspecialist.com/learn-about-spiral-balances"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="/learn-about-spiral-balances">
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              </Link>
             </Button>
           </div>
           <div>
