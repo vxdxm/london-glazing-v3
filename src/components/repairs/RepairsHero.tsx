@@ -1,11 +1,8 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
 const RepairsHero = () => {
-  return (
-    <section className="mb-16">
+  return <section className="mb-16">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Secondary Glazing Repairs</h1>
@@ -19,22 +16,14 @@ const RepairsHero = () => {
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="#spiral-balances">
-                Learn About Spiral Balances <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              
             </Button>
           </div>
         </div>
         <div className="flex-1">
-          <img 
-            src="/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png" 
-            alt="Secondary glazing repair technician fixing a vertical sliding window unit"
-            className="rounded-lg shadow-xl w-full object-cover max-h-[400px]"
-          />
+          <img src="/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png" alt="Secondary glazing repair technician fixing a vertical sliding window unit" className="rounded-lg shadow-xl w-full object-cover max-h-[400px]" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default RepairsHero;
