@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import WindowTypeSelect from './noise-calculator/WindowTypeSelect';
 import GlassTypeSelect from './noise-calculator/GlassTypeSelect';
 import GapSizeSelect from './noise-calculator/GapSizeSelect';
@@ -32,6 +32,7 @@ const NoiseReductionCalculator = () => {
 
   // Additional reduction based on gap size
   const gapReduction = {
+    '0': 0,       // No gap
     '50': 2,      // 50mm gap
     '100': 4,     // 100mm gap (standard)
     '150': 6,     // 150mm gap

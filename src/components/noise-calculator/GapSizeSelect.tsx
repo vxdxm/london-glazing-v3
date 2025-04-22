@@ -18,6 +18,10 @@ const GapSizeSelect = ({ value, onChange }: GapSizeSelectProps) => {
         className="flex flex-col space-y-2"
       >
         <div className="flex items-center space-x-2">
+          <RadioGroupItem value="0" id="gap-0" />
+          <Label htmlFor="gap-0">No gap (Direct installation)</Label>
+        </div>
+        <div className="flex items-center space-x-2">
           <RadioGroupItem value="50" id="gap-50" />
           <Label htmlFor="gap-50">50mm (Minimum recommended gap)</Label>
         </div>
