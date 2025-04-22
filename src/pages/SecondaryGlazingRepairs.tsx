@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
@@ -74,18 +73,6 @@ const SecondaryGlazingRepairs = () => {
 
         <RepairsHero />
 
-        {/* Add link to spiral balance educational page */}
-        <div className="mb-8 text-right">
-          <Button 
-            asChild 
-            className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
-          >
-            <Link to="/learn-about-spiral-balances">
-              Learn About Spiral Balances <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
-        
         <div id="spiral-balances">
           <SpiralBalanceSection />
         </div>
