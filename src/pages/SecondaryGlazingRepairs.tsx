@@ -12,6 +12,8 @@ import RepairsFAQ from "@/components/repairs/RepairsFAQ";
 import RepairsCTA from "@/components/repairs/RepairsCTA";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const SecondaryGlazingRepairs = () => {
   useScrollToHash();
@@ -74,12 +76,14 @@ const SecondaryGlazingRepairs = () => {
 
         {/* Add link to spiral balance educational page */}
         <div className="mb-8 text-right">
-          <Link
-            to="/learn-about-spiral-balances"
+          <Button 
+            asChild 
             className="inline-block bg-primary text-white px-5 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
-            Learn About Spiral Balances
-          </Link>
+            <Link to="/learn-about-spiral-balances">
+              Learn About Spiral Balances <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
         </div>
         
         <div id="spiral-balances">
