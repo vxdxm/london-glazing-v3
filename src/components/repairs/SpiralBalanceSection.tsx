@@ -16,6 +16,7 @@ const SpiralBalanceSection = () => {
             <Button asChild>
               <a
                 href="https://secondaryglazingspecialist.com/learn-about-spiral-balances"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -36,4 +37,3 @@ const SpiralBalanceSection = () => {
 };
 
 export default SpiralBalanceSection;
-
