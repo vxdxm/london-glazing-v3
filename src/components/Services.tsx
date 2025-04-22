@@ -1,4 +1,3 @@
-
 import { Shield, Thermometer, VolumeX, Wrench } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +8,7 @@ const services = [
     title: "Noise Reduction",
     description: "Reduce external noise by up to 80% with our advanced secondary glazing solutions.",
     icon: VolumeX,
-    path: "/specialized/noise-reduction"
+    path: "/secondary-glazing-noise-reduction"
   },
   {
     title: "Thermal Insulation",
@@ -53,7 +52,7 @@ export const Services = () => {
                 <p className="text-gray-600">{service.description}</p>
                 {service.title === "Noise Reduction" && (
                   <Link 
-                    to="/specialized/noise-reduction" 
+                    to="/secondary-glazing-noise-reduction" 
                     className="block mt-4 text-primary hover:underline"
                   >
                     Noise Reduction Calculator
