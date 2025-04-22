@@ -172,6 +172,18 @@ const AcousticSecondaryGlazingWindows = () => {
             </div>
           </div>
         </div>
+        <div className="bg-secondary/60 p-5 rounded-lg mt-12">
+          <h2 className="text-xl font-semibold mb-2 text-primary">Want to Learn More about Noise Reduction?</h2>
+          <p className="text-gray-700 mb-2">
+            Discover in detail how secondary glazing can reduce outside noise by up to 80%. Learn about glass options, performance, and tips for heritage properties on our dedicated page.
+          </p>
+          <a
+            href="/secondary-glazing-noise-reduction"
+            className="inline-block mt-2 bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+          >
+            See Secondary Glazing Noise Reduction &rarr;
+          </a>
+        </div>
       </div>
     </div>
   );

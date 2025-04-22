@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
@@ -129,11 +128,23 @@ const SecondaryGlazingNoiseReduction = () => (
           Our team will guide you through your options for glass thickness, air gap, and frame color, ensuring your noise reduction system exceeds your expectations.
         </p>
       </section>
-      <div className="bg-secondary/50 p-6 rounded-lg prose max-w-none">
+      <div className="bg-secondary/50 p-6 rounded-lg prose max-w-none mb-10">
         <h2 className="text-xl font-semibold mb-2">Book Your Free Consultation Today</h2>
         <p>
           Ready to transform your property into a peaceful oasis? <a href="/quote-request" className="text-primary underline hover:text-primary/80">Request a free quote</a> or <a href="/faqs" className="text-primary underline hover:text-primary/80">learn more in our FAQs</a>.
         </p>
+      </div>
+      <div className="bg-secondary/80 p-5 rounded-lg mb-12">
+        <h2 className="text-xl font-semibold mb-2 text-primary">Interested in Premium Acoustic Glazing?</h2>
+        <p className="text-gray-700 mb-2">
+          Explore our advanced <strong>Acoustic Secondary Glazing Windows</strong> page for detailed specs and real-world results from specialized glass systems.
+        </p>
+        <a
+          href="/specialized/acoustic-secondary-glazing-windows"
+          className="inline-block mt-2 bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+        >
+          Go to Acoustic Secondary Glazing Windows &rarr;
+        </a>
       </div>
     </main>
     <Footer />
