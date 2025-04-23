@@ -1,6 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Images } from "lucide-react";
 
 const SoundTravelSection = () => {
   return (
@@ -37,7 +38,19 @@ const SoundTravelSection = () => {
           </div>
         </div>
         <Card className="p-6 bg-secondary/30">
-          <h3 className="text-xl font-semibold mb-4">Factors Affecting Sound Transmission</h3>
+          <div className="mb-4">
+            <AspectRatio ratio={16/9}>
+              <img 
+                src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
+                alt="Factors affecting sound transmission through windows" 
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </AspectRatio>
+          </div>
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+            <Images className="w-5 h-5 text-primary" /> 
+            Factors Affecting Sound Transmission
+          </h3>
           <ul className="list-disc list-inside text-gray-600 space-y-3">
             <li><span className="font-medium">Glass mass:</span> Heavier, thicker glass absorbs more sound energy</li>
             <li><span className="font-medium">Air gaps:</span> Larger gaps between panes disrupt sound wave continuity</li>
@@ -53,3 +66,4 @@ const SoundTravelSection = () => {
 };
 
 export default SoundTravelSection;
+
