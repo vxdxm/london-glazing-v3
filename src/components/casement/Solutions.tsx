@@ -37,7 +37,7 @@ const Solutions = () => {
         <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/energy-efficiency")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
-              <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e" alt="Energy efficient casement windows" className="w-full h-full object-cover" />
+              <img alt="Energy efficient casement windows" src="/lovable-uploads/2f4fa321-a97b-487b-a0f2-bb38093e6ca3.jpg" className="w-full h-full object-scale-down" />
             </div>
             <CardTitle>Energy Efficiency</CardTitle>
           </CardHeader>
