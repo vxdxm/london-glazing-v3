@@ -24,7 +24,7 @@ const Benefits = () => {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <img alt="Noise reduction visualization" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/7275b99d-a2af-421e-8795-83a56880a190.jpg" />
+              <img alt="Noise reduction visualization" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/733d2e89-3c8b-437b-b5a1-074997517da0.jpg" />
               <p className="text-gray-700">
                 Reduces external noise by up to 80% when properly installed. Ideal for properties in high-traffic areas or near noise sources.
               </p>
