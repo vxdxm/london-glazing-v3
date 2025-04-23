@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Images } from "lucide-react";
@@ -41,8 +40,8 @@ const SoundTravelSection = () => {
           <div className="mb-4">
             <AspectRatio ratio={16/9}>
               <img 
-                src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
-                alt="Factors affecting sound transmission through windows" 
+                src="/lovable-uploads/9bfb006c-0e46-48b3-a8d6-9e00277a2bcd.png" 
+                alt="Sash windows with secondary glazing installed" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </AspectRatio>
@@ -66,4 +65,3 @@ const SoundTravelSection = () => {
 };
 
 export default SoundTravelSection;
-
