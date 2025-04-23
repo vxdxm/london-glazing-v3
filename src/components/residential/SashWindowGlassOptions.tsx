@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const glassOptions = [
@@ -59,7 +58,7 @@ const glassOptions = [
   },
   {
     thickness: "Double",
-    title: "Double Glazing Glass",
+    title: "Glazing Glass",
     features: [
       "Two glass panes with air or gas-filled cavity",
       "Noise reduction up to 40dB",
@@ -95,4 +94,3 @@ const SashWindowGlassOptions = () => {
 };
 
 export default SashWindowGlassOptions;
-
