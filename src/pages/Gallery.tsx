@@ -78,6 +78,66 @@ const Gallery = () => {
       src: "/lovable-uploads/78d4ec89-4da8-46df-b9cf-722eaa162852.png",
       alt: "Heritage window treatment",
       description: "Listed building window with approved secondary glazing solution"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Secondary glazing installation",
+      description: "Custom secondary glazing installation project"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Modern window treatment",
+      description: "Contemporary window enhancement with secondary glazing"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Residential glazing project",
+      description: "Home improvement secondary glazing solution"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Commercial window installation",
+      description: "Office building secondary glazing project"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Heritage property glazing",
+      description: "Listed building sympathetic secondary glazing"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Acoustic glazing solution",
+      description: "Noise reduction secondary glazing installation"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Thermal improvement project",
+      description: "Energy efficiency secondary glazing solution"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Sash window enhancement",
+      description: "Period sash window with secondary glazing"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Modern office glazing",
+      description: "Commercial space secondary glazing project"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Victorian property glazing",
+      description: "Heritage window secondary glazing installation"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Residential noise reduction",
+      description: "Sound insulation secondary glazing project"
+    },
+    {
+      src: "/lovable-uploads/placeholder.svg",
+      alt: "Contemporary window solution",
+      description: "Modern secondary glazing installation"
     }
   ];
 
