@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const glassOptions = [
@@ -57,14 +58,14 @@ const glassOptions = [
     ]
   },
   {
-    thickness: "12.8mm",
-    title: "Premium Glass",
+    thickness: "Double",
+    title: "Double Glazing",
     features: [
-      "Premium acoustic laminated glass",
-      "Maximum noise reduction up to 41dB",
-      "Ideal for high-noise environments",
-      "Ultimate security protection",
-      "Perfect for properties near airports"
+      "Two glass panes with air or gas-filled cavity",
+      "Noise reduction up to 40dB",
+      "Superior thermal insulation",
+      "Enhanced energy efficiency",
+      "Ideal for modern properties seeking comfort"
     ]
   }
 ];
@@ -94,3 +95,4 @@ const SashWindowGlassOptions = () => {
 };
 
 export default SashWindowGlassOptions;
+
