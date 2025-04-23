@@ -59,7 +59,7 @@ const glassOptions = [
   },
   {
     thickness: "Double",
-    title: "Double Glazing",
+    title: "Double Glazing Glass",
     features: [
       "Two glass panes with air or gas-filled cavity",
       "Noise reduction up to 40dB",
