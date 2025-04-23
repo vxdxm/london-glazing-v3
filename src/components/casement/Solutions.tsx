@@ -1,25 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 const Solutions = () => {
   const navigate = useNavigate();
-
-  return (
-    <div className="mt-12 space-y-4">
+  return <div className="mt-12 space-y-4">
       <h2 className="text-3xl font-semibold mb-6">Explore Our Casement Window Solutions</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card 
-          className="hover:shadow-lg transition-shadow cursor-pointer"
-          onClick={() => navigate("/residential/casement-windows/modern-solutions")}
-        >
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/modern-solutions")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1460574283810-2aab119d8511"
-                alt="Modern casement window solutions"
-                className="w-full h-full object-cover"
-              />
+              <img alt="Modern casement window solutions" src="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg" className="w-full h-full object-scale-down" />
             </div>
             <CardTitle>Modern Solutions</CardTitle>
           </CardHeader>
@@ -30,17 +20,10 @@ const Solutions = () => {
           </CardContent>
         </Card>
 
-        <Card 
-          className="hover:shadow-lg transition-shadow cursor-pointer"
-          onClick={() => navigate("/residential/casement-windows/traditional-options")}
-        >
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/traditional-options")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b"
-                alt="Traditional casement window options"
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b" alt="Traditional casement window options" className="w-full h-full object-cover" />
             </div>
             <CardTitle>Traditional Options</CardTitle>
           </CardHeader>
@@ -51,17 +34,10 @@ const Solutions = () => {
           </CardContent>
         </Card>
 
-        <Card 
-          className="hover:shadow-lg transition-shadow cursor-pointer"
-          onClick={() => navigate("/residential/casement-windows/energy-efficiency")}
-        >
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/energy-efficiency")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e"
-                alt="Energy efficient casement windows"
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e" alt="Energy efficient casement windows" className="w-full h-full object-cover" />
             </div>
             <CardTitle>Energy Efficiency</CardTitle>
           </CardHeader>
@@ -72,8 +48,6 @@ const Solutions = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Solutions;
