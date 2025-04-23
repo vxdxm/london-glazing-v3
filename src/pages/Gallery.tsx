@@ -1,8 +1,14 @@
+
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import GetQuoteButton from "@/components/GetQuoteButton";
 import { Helmet } from "react-helmet";
+import { InfoCard } from "@/components/ui/info-card";
+import { useState } from "react";
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  
   const galleryItems = [
     {
       src: "/lovable-uploads/a474bf13-8a99-4bc1-b49a-9eaebe5b31ad.png",
@@ -79,67 +85,88 @@ const Gallery = () => {
       alt: "Heritage window treatment",
       description: "Listed building window with approved secondary glazing solution"
     },
+    // Placeholder images that can be easily replaced
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Secondary glazing installation",
-      description: "Custom secondary glazing installation project"
+      description: "Custom secondary glazing installation project",
+      customClass: "placeholder-image" // Custom class for styling
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Modern window treatment",
-      description: "Contemporary window enhancement with secondary glazing"
+      description: "Contemporary window enhancement with secondary glazing",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Residential glazing project",
-      description: "Home improvement secondary glazing solution"
+      description: "Home improvement secondary glazing solution",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Commercial window installation",
-      description: "Office building secondary glazing project"
+      description: "Office building secondary glazing project",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Heritage property glazing",
-      description: "Listed building sympathetic secondary glazing"
+      description: "Listed building sympathetic secondary glazing",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Acoustic glazing solution",
-      description: "Noise reduction secondary glazing installation"
+      description: "Noise reduction secondary glazing installation",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Thermal improvement project",
-      description: "Energy efficiency secondary glazing solution"
+      description: "Energy efficiency secondary glazing solution",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Sash window enhancement",
-      description: "Period sash window with secondary glazing"
+      description: "Period sash window with secondary glazing",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Modern office glazing",
-      description: "Commercial space secondary glazing project"
+      description: "Commercial space secondary glazing project",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Victorian property glazing",
-      description: "Heritage window secondary glazing installation"
+      description: "Heritage window secondary glazing installation",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Residential noise reduction",
-      description: "Sound insulation secondary glazing project"
+      description: "Sound insulation secondary glazing project",
+      customClass: "placeholder-image"
     },
     {
       src: "/lovable-uploads/placeholder.svg",
       alt: "Contemporary window solution",
-      description: "Modern secondary glazing installation"
+      description: "Modern secondary glazing installation",
+      customClass: "placeholder-image"
     }
   ];
+
+  const handleImageClick = (index: number) => {
+    setSelectedImage(selectedImage === index ? null : index);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <div className="min-h-screen">
@@ -167,19 +194,53 @@ const Gallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
-            <div key={index} className="animate-fade-up group">
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform group-hover:scale-105"
-                loading="lazy"
-              />
-              <p className="mt-2 text-sm text-gray-600">{item.description}</p>
+            <div 
+              key={index} 
+              className={`animate-fade-up group cursor-pointer transition-all duration-300 hover:shadow-xl rounded-lg overflow-hidden ${item.customClass || ''}`}
+              onClick={() => handleImageClick(index)}
+              data-item-id={`gallery-item-${index}`}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-64 object-cover transition-transform group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity" />
+              </div>
+              <div className="p-4 bg-white">
+                <p className="text-sm text-gray-600">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
+        
+        {/* Lightbox Modal */}
+        {selectedImage !== null && (
+          <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4" onClick={closeModal}>
+            <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+              <button 
+                className="absolute top-4 right-4 bg-white rounded-full p-2 text-gray-800 hover:bg-gray-200 z-10"
+                onClick={closeModal}
+              >
+                ✕
+              </button>
+              <img 
+                src={galleryItems[selectedImage].src} 
+                alt={galleryItems[selectedImage].alt} 
+                className="w-full h-auto max-h-[80vh] object-contain bg-white p-2 rounded-lg shadow-xl" 
+              />
+              <div className="mt-4 bg-white p-4 rounded-lg">
+                <p className="font-medium text-lg">{galleryItems[selectedImage].alt}</p>
+                <p className="text-gray-600">{galleryItems[selectedImage].description}</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       <WhatsAppButton />
+      <GetQuoteButton />
     </div>
   );
 };
