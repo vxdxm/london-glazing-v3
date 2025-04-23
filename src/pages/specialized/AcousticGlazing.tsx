@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,20 +19,35 @@ const AcousticGlazing = () => {
 
       <main className="container mx-auto px-4 py-16 flex-grow">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">Acoustic Glazing Solutions</h1>
         
-        <div className="prose max-w-none mb-12">
-          <p className="text-lg">
-            Our acoustic glazing solutions provide exceptional sound insulation, creating a quieter and more peaceful indoor environment. 
-            Perfect for properties near busy roads, flight paths, or in urban areas with high noise pollution.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div>
+            <h1 className="text-4xl font-bold mb-8">Acoustic Glazing Solutions</h1>
+            <p className="text-lg mb-6">
+              Our acoustic glazing solutions provide exceptional sound insulation, creating a quieter and more peaceful indoor environment. 
+              Perfect for properties near busy roads, flight paths, or in urban areas with high noise pollution.
+            </p>
+          </div>
+          <div>
+            <img 
+              src="/lovable-uploads/937ef286-fd23-475e-91f4-294470527896.jpg"
+              alt="Secondary glazing installation showing acoustic glass panel in a period property window"
+              className="rounded-lg w-full h-[300px] object-cover"
+            />
+          </div>
         </div>
         
-        {/* Content sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card>
             <CardContent className="p-6">
               <h2 className="text-2xl font-semibold mb-4">How Acoustic Glazing Works</h2>
+              <div className="mb-4">
+                <img
+                  src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg"
+                  alt="Diagram showing acoustic secondary glazing layers and sound wave reduction"
+                  className="rounded-lg w-full h-[200px] object-cover mb-4"
+                />
+              </div>
               <p className="text-gray-700 mb-4">
                 Acoustic secondary glazing creates an additional barrier against sound, with the air gap between your existing window 
                 and the secondary glazing significantly reducing noise transmission. Different glass thicknesses and laminated acoustic 
@@ -51,6 +65,13 @@ const AcousticGlazing = () => {
           <Card>
             <CardContent className="p-6">
               <h2 className="text-2xl font-semibold mb-4">Benefits of Acoustic Glazing</h2>
+              <div className="mb-4">
+                <img
+                  src="/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg"
+                  alt="Before and after comparison of acoustic secondary glazing installation showing noise reduction benefits"
+                  className="rounded-lg w-full h-[200px] object-cover mb-4"
+                />
+              </div>
               <ul className="list-disc pl-6 space-y-2 text-gray-700">
                 <li>
                   <strong>Enhanced Comfort:</strong> Reduce external noise intrusion for a more peaceful living or working environment
@@ -90,6 +111,13 @@ const AcousticGlazing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
+                <div className="mb-4">
+                  <img
+                    src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg"
+                    alt="Sound transmission demonstration through secondary glazed window"
+                    className="rounded-lg w-full h-[160px] object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">Sound Transmission Guide</h3>
                 <p className="text-gray-600 mb-4">Learn about how sound travels through windows and how secondary glazing creates effective barriers.</p>
                 <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">
@@ -100,6 +128,13 @@ const AcousticGlazing = () => {
             
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
+                <div className="mb-4">
+                  <img
+                    src="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg"
+                    alt="Interactive noise reduction calculator interface showing decibel reduction levels"
+                    className="rounded-lg w-full h-[160px] object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2">Noise Reduction Calculator</h3>
                 <p className="text-gray-600 mb-4">Calculate potential noise reduction based on your specific window configuration and requirements.</p>
                 <Link to="/secondary-glazing-noise-reduction#calculator" className="text-primary hover:underline">
