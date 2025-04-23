@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -31,8 +30,7 @@ const AcousticSolutions = () => {
               <span className="font-medium">For properties near railways or flight paths:</span> 
               <Link to="/specialized/acoustic-glazing" className="text-primary hover:underline ml-1">
                 Premium Acoustic Glazing
-              </Link> 
-              with 12.8mm acoustic laminated glass
+              </Link> with 12.8mm acoustic laminated glass
             </li>
             <li className="text-gray-700">
               <span className="font-medium">For listed buildings with noise issues:</span> 
