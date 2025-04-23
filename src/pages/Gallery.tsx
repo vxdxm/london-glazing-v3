@@ -207,7 +207,17 @@ const Gallery = () => {
                   className="w-full h-64 object-cover transition-transform group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity" />
+                <div 
+                  className="gallery-overlay"
+                  id={`gallery-overlay-${index}`}
+                  data-overlay-id={`overlay-${index}`}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: 'rgba(0, 0, 0, 0)',
+                    transition: 'background-color 0.3s ease'
+                  }}
+                />
               </div>
               <div className="p-4 bg-white">
                 <p className="text-sm text-gray-600">{item.description}</p>
