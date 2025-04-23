@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -7,12 +6,9 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-
 const OfficeBuildings = () => {
   const navigate = useNavigate();
-  
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Secondary Glazing for Office Buildings | Noise & Energy Solutions</title>
         <meta name="description" content="Transform your office with premium secondary glazing solutions. Reduce noise by up to 80%, improve energy efficiency, and create a more comfortable working environment." />
@@ -156,10 +152,10 @@ const OfficeBuildings = () => {
               <div>
                 <h3 className="font-semibold mb-4">Glass Options</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>4mm - 12.8mm Acoustic Glass</li>
-                  <li>Laminated security glass available</li>
+                  <li>4mm - Double Glazed Glass</li>
+                  <li>6.4mm to 12.8mm Acoustic glass available</li>
                   <li>Low-E coating options</li>
-                  <li>Acoustic laminate variations</li>
+                  <li>Safety laminate variations</li>
                 </ul>
               </div>
               <div>
@@ -188,8 +184,6 @@ const OfficeBuildings = () => {
         </div>
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default OfficeBuildings;
