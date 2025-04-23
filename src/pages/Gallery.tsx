@@ -1,6 +1,8 @@
+
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Helmet } from "react-helmet";
+import { Footer } from "@/components/Footer";
 
 const Gallery = () => {
   const galleryItems = [
@@ -120,8 +122,10 @@ const Gallery = () => {
         </div>
       </div>
       <WhatsAppButton />
+      <Footer />
     </div>
   );
 };
 
 export default Gallery;
+

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { QuoteRequestForm } from "@/components/quote/QuoteRequestForm";
 import { QuoteRequestHeader } from "@/components/quote/QuoteRequestHeader";
+import { Footer } from "@/components/Footer";
 
 const QuoteRequest = () => {
   return (
@@ -20,8 +21,10 @@ const QuoteRequest = () => {
         <QuoteRequestHeader />
         <QuoteRequestForm />
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default QuoteRequest;
+

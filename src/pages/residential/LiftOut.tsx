@@ -1,6 +1,8 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GlassOptions from "@/components/residential/GlassOptions";
+import { Footer } from "@/components/Footer";
 
 const LiftOut = () => {
   return (
@@ -118,8 +120,10 @@ const LiftOut = () => {
 
         <GlassOptions />
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default LiftOut;
+

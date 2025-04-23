@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import GlassOptions from "@/components/residential/GlassOptions";
 import Hero from "@/components/casement/Hero";
@@ -7,6 +8,7 @@ import Specifications from "@/components/casement/Specifications";
 import Installation from "@/components/casement/Installation";
 import Maintenance from "@/components/casement/Maintenance";
 import Solutions from "@/components/casement/Solutions";
+import { Footer } from "@/components/Footer";
 
 const CasementWindows = () => {
   return (
@@ -24,8 +26,10 @@ const CasementWindows = () => {
           <Solutions />
         </article>
       </div>
+      <Footer />
     </div>
   );
 };
 
 export default CasementWindows;
+
