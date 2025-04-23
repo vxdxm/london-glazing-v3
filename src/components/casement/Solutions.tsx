@@ -23,7 +23,7 @@ const Solutions = () => {
         <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/traditional-options")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
-              <img src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b" alt="Traditional casement window options" className="w-full h-full object-cover" />
+              <img alt="Traditional casement window options" src="/lovable-uploads/1f5c80d9-95be-441b-ab84-b068ce4d1d08.jpg" className="w-full h-full object-scale-down" />
             </div>
             <CardTitle>Traditional Options</CardTitle>
           </CardHeader>
