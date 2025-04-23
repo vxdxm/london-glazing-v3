@@ -30,8 +30,8 @@ const AcousticGlazing = () => {
           </div>
           <div>
             <img 
-              src="/lovable-uploads/937ef286-fd23-475e-91f4-294470527896.jpg"
-              alt="Secondary glazing installation showing acoustic glass panel in a period property window"
+              src="/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png"
+              alt="Stairway window with secondary glazing installation showcasing acoustic insulation properties"
               className="rounded-lg w-full h-[300px] object-cover"
             />
           </div>
