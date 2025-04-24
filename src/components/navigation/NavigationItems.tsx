@@ -32,6 +32,7 @@ export const glazingOptions = [
       { title: "Acoustic Glazing", href: "/specialized/acoustic-glazing", description: "Reduce noise with our acoustic solutions." },
       { title: "Thermal Insulation", href: "/specialized/thermal-insulation", description: "Improve energy efficiency with thermal glazing." },
       { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
+      { title: "UV Protection", href: "/specialized/uv-protection", description: "Protect furnishings from UV damage." },
       { title: "Condensation Control", href: "/specialized/condensation-control", description: "Prevent condensation with our solutions." },
       { title: "Building Regulations", href: "/specialized/secondary-glazing-building-regulations", description: "Compliance guide for secondary glazing installations." },
       { title: "Sound Transmission Guide", href: "/specialized/sound-transmission-guide", description: "Understanding decibels and sound insulation." },

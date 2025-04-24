@@ -45,6 +45,7 @@ import ModernSolutions from "./pages/residential/ModernSolutions";
 import SecondaryGlazingRepairs from "./pages/SecondaryGlazingRepairs";
 import SecondaryGlazingNoiseReduction from "./pages/SecondaryGlazingNoiseReduction";
 import LearnAboutSpiralBalances from "./pages/LearnAboutSpiralBalances";
+import UVProtection from "./pages/specialized/UVProtection";
 
 const queryClient = new QueryClient();
 
@@ -108,6 +109,7 @@ const App = () => (
           <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
           <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
           <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
+          <Route path="/specialized/uv-protection" element={<UVProtection />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />
