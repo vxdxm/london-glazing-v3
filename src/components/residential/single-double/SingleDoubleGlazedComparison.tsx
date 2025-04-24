@@ -77,9 +77,7 @@ export const SingleDoubleGlazedComparison = () => {
         <AspectRatio ratio={16 / 9} className="bg-muted">
           <img alt="Side by side comparison of single and double glazed secondary windows" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/9843c321-bf8c-4eea-a1b3-09d57c35998d.jpg" />
         </AspectRatio>
-        <p className="text-sm text-gray-500 mt-2 text-center">
-          Visual comparison between single and double glazed secondary window installations
-        </p>
+        <p className="text-sm text-gray-500 mt-2 text-center">Visual comparison between double glazed secondary glazing and single glazed timber sash window</p>
       </div>
     </div>;
 };
