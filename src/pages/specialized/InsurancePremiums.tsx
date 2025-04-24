@@ -4,10 +4,8 @@ import InsurancePremiumCalculator from "@/components/insurance/InsurancePremiumC
 import { Shield, Lock } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 const InsurancePremiums = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Insurance Premium Savings with Security Glazing | Secondary Glazing Specialist</title>
         <meta name="description" content="Learn how secondary security glazing can reduce your insurance premiums. Calculate potential savings and understand the benefits of enhanced window security." />
@@ -26,11 +24,7 @@ const InsurancePremiums = () => {
 
         <div className="mb-12 w-full max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9} className="bg-muted">
-            <img
-              src="/lovable-uploads/1721322800607-8c38375eef04"
-              alt="A secure and well-protected living room with secondary glazing"
-              className="object-cover w-full h-full rounded-lg"
-            />
+            <img alt="A secure and well-protected living room with secondary glazing" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/3d97865e-eb3e-4558-adcf-5fef6f809746.jpg" />
           </AspectRatio>
         </div>
 
@@ -88,8 +82,6 @@ const InsurancePremiums = () => {
           </ul>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default InsurancePremiums;
