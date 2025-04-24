@@ -20,8 +20,8 @@ const CrittallWindows = () => {
         <div className="mb-12 w-full max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9} className="bg-muted">
             <img
-              src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg"
-              alt="Crittall windows with secondary glazing installed"
+              src="/lovable-uploads/614f68f6-ff97-437b-894a-29e8b8c5d9ac.png"
+              alt="Modern Crittall windows with secondary glazing installed"
               className="object-cover w-full h-full rounded-lg"
             />
           </AspectRatio>
@@ -81,3 +81,4 @@ const CrittallWindows = () => {
 };
 
 export default CrittallWindows;
+
