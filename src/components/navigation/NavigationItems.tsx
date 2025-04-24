@@ -34,6 +34,7 @@ export const glazingOptions = [
       { title: "Security Glazing", href: "/specialized/security-glazing", description: "Enhance security with our specialized glass." },
       { title: "UV Protection", href: "/specialized/uv-protection", description: "Protect furnishings from UV damage." },
       { title: "Condensation Control", href: "/specialized/condensation-control", description: "Prevent condensation with our solutions." },
+      { title: "Insurance Premiums", href: "/specialized/insurance-premiums", description: "Reduce insurance costs with security glazing." },
       { title: "Building Regulations", href: "/specialized/secondary-glazing-building-regulations", description: "Compliance guide for secondary glazing installations." },
       { title: "Sound Transmission Guide", href: "/specialized/sound-transmission-guide", description: "Understanding decibels and sound insulation." },
       { title: "Sustainability Impact", href: "/sustainability-impact-tracker-secondary-glazing", description: "Track environmental benefits of secondary glazing." },
