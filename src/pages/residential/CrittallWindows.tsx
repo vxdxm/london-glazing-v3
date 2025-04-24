@@ -1,17 +1,22 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Building2, Thermometer, PiggyBank, VolumeX } from "lucide-react";
 import { Helmet } from "react-helmet";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { KeyPoint } from "@/components/ui/key-point";
+import { CrittallIntro } from "@/components/residential/crittall/CrittallIntro";
+import { CrittallDetails } from "@/components/residential/crittall/CrittallDetails";
+import { CrittallFAQ } from "@/components/residential/crittall/CrittallFAQ";
 
 const CrittallWindows = () => {
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>Secondary Glazing for Crittall Windows | Heritage Window Solutions</title>
-        <meta name="description" content="Discover how secondary glazing enhances Crittall windows with improved energy efficiency, noise reduction, and value preservation. Perfect for listed buildings and heritage properties." />
+        <meta 
+          name="description" 
+          content="Discover how secondary glazing enhances Crittall windows with improved energy efficiency, noise reduction, and value preservation. Perfect for listed buildings and heritage properties." 
+        />
         <meta name="keywords" content="crittall windows, secondary glazing, energy efficiency, noise reduction, heritage windows, window insulation" />
         <meta property="og:title" content="Secondary Glazing for Crittall Windows | Heritage Window Solutions" />
         <meta property="og:description" content="Enhance your Crittall windows with secondary glazing - improved energy efficiency, noise reduction, and heritage preservation." />
@@ -22,25 +27,8 @@ const CrittallWindows = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Secondary Glazing for Crittall Windows</h1>
-
-        <div className="mb-12 w-full max-w-4xl mx-auto">
-          <AspectRatio ratio={16 / 9} className="bg-muted">
-            <img 
-              src="/lovable-uploads/bb016762-b43f-498a-be1c-7e477fcb368a.jpg" 
-              alt="Modern Crittall windows with secondary glazing installed"
-              className="object-cover w-full h-full rounded-lg"
-            />
-          </AspectRatio>
-        </div>
-
-        <div className="prose max-w-none mb-12">
-          <p className="text-lg text-gray-700 mb-8">
-            When it comes to maintaining historical properties or enhancing window performance, 
-            Crittall windows offer unique charm and functionality. Our secondary glazing solutions 
-            provide effective improvements in energy efficiency and noise reduction while preserving 
-            their distinctive character.
-          </p>
-        </div>
+        
+        <CrittallIntro />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <Card className="hover:shadow-lg transition-shadow">
@@ -110,6 +98,8 @@ const CrittallWindows = () => {
           </Card>
         </div>
 
+        <CrittallDetails />
+        
         <div className="mb-12">
           <h2 className="text-3xl font-semibold mb-6">Why Choose Secondary Glazing?</h2>
           <div className="space-y-6">
@@ -128,49 +118,11 @@ const CrittallWindows = () => {
           </div>
         </div>
 
-        <div className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="what-is">
-              <AccordionTrigger>What is secondary glazing?</AccordionTrigger>
-              <AccordionContent>
-                Secondary glazing involves adding a second layer of glass to existing windows, 
-                creating an insulating barrier that improves energy efficiency and reduces noise.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="energy-efficiency">
-              <AccordionTrigger>How does secondary glazing enhance energy efficiency?</AccordionTrigger>
-              <AccordionContent>
-                Secondary glazing reduces heat loss by creating an air gap between two panes of glass, 
-                helping to maintain indoor temperatures and lower energy bills.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="noise-reduction">
-              <AccordionTrigger>Can secondary glazing help with noise reduction?</AccordionTrigger>
-              <AccordionContent>
-                Yes, secondary glazing significantly reduces sound transmission, making homes quieter, 
-                especially in urban settings.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="cost-effective">
-              <AccordionTrigger>Is secondary glazing a cost-effective solution?</AccordionTrigger>
-              <AccordionContent>
-                Secondary glazing is often more cost-effective than replacing windows, allowing 
-                homeowners to enhance performance without extensive renovations.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="appearance">
-              <AccordionTrigger>Will secondary glazing alter the appearance of my Crittall windows?</AccordionTrigger>
-              <AccordionContent>
-                No, secondary glazing can be designed to blend seamlessly with existing Crittall 
-                windows, preserving their unique aesthetic while improving functionality.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
+        <CrittallFAQ />
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
 
 export default CrittallWindows;
