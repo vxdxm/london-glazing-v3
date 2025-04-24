@@ -47,6 +47,7 @@ import SecondaryGlazingNoiseReduction from "./pages/SecondaryGlazingNoiseReducti
 import LearnAboutSpiralBalances from "./pages/LearnAboutSpiralBalances";
 import UVProtection from "./pages/specialized/UVProtection";
 import InsurancePremiums from "./pages/specialized/InsurancePremiums";
+import CrittallWindows from "./pages/residential/CrittallWindows";
 
 const queryClient = new QueryClient();
 
@@ -112,6 +113,7 @@ const App = () => (
           <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
           <Route path="/specialized/uv-protection" element={<UVProtection />} />
           <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
+          <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />

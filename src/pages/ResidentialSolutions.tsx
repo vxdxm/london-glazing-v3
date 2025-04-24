@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
@@ -49,6 +48,13 @@ const residentialServices = [
     details: "Combining different opening styles in one unit to meet specific requirements. Ideal for unique window configurations or when different functionalities are needed.",
     image: "/lovable-uploads/41fdf8fc-4bed-4792-87dd-45ca3fa377de.png",
     path: "/residential/combination"
+  },
+  {
+    title: "Crittall Windows",
+    description: "Heritage-sensitive secondary glazing solutions for Crittall windows",
+    details: "Enhance thermal performance while preserving the iconic aesthetic of your Crittall windows. Perfect for period properties and listed buildings.",
+    image: "/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg",
+    path: "/residential/crittall-windows"
   },
 ];
 
