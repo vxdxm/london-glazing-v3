@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -58,6 +59,16 @@ const EnergyPerformance = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Energy Performance & Secondary Glazing</h1>
+        
+        {/* New image section */}
+        <div className="mb-12 w-full h-[500px] overflow-hidden rounded-lg">
+          <img 
+            src="/lovable-uploads/218776ee-eff4-4f63-8d88-27dd86763e28.png" 
+            alt="Energy efficiency and secondary glazing technology" 
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+
         <EnergyPerformanceIntro />
         <EnergyPerformanceBenefits />
         <EnergyPerformanceCalculator />
