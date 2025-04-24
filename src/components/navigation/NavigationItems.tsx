@@ -1,4 +1,3 @@
-
 export const glazingOptions = [
   {
     title: "Residential",
@@ -11,6 +10,9 @@ export const glazingOptions = [
       { title: "Horizontal Sliding", href: "/residential/horizontal-sliding", description: "Smooth-operating horizontal sliding solutions." },
       { title: "Lift Out", href: "/residential/lift-out", description: "Removable panels for easy maintenance." },
       { title: "Combination Units", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
+      { title: "Energy Performance", href: "/residential/energy-performance", description: "Maximize home energy efficiency with secondary glazing." },
+      { title: "Modern Solutions", href: "/residential/modern-solutions", description: "Contemporary window design and functionality." },
+      { title: "Traditional Options", href: "/residential/traditional-options", description: "Classic window styles preserved with modern technology." }
     ],
   },
   {
