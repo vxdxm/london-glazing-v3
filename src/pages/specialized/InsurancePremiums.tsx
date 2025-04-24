@@ -1,9 +1,9 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import InsurancePremiumCalculator from "@/components/insurance/InsurancePremiumCalculator";
 import { Shield, Lock } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const InsurancePremiums = () => {
   return (
@@ -22,6 +22,16 @@ const InsurancePremiums = () => {
             lead to significant savings on your insurance premiums. Many insurance providers offer reduced 
             rates for properties with enhanced security measures, including secondary security glazing.
           </p>
+        </div>
+
+        <div className="mb-12 w-full max-w-4xl mx-auto">
+          <AspectRatio ratio={16 / 9} className="bg-muted">
+            <img
+              src="/lovable-uploads/1721322800607-8c38375eef04"
+              alt="A secure and well-protected living room with secondary glazing"
+              className="object-cover w-full h-full rounded-lg"
+            />
+          </AspectRatio>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
