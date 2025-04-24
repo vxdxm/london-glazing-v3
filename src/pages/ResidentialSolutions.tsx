@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
@@ -53,9 +54,9 @@ const residentialServices = [
     title: "Crittall Windows",
     description: "Heritage-sensitive secondary glazing solutions for Crittall windows",
     details: "Enhance thermal performance while preserving the iconic aesthetic of your Crittall windows. Perfect for period properties and listed buildings.",
-    image: "/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg",
+    image: "/lovable-uploads/614f68f6-ff97-437b-894a-29e8b8c5d9ac.png",
     path: "/residential/crittall-windows"
-  },
+  }
 ];
 
 const ResidentialSolutions = () => {
