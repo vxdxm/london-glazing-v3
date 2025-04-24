@@ -1,10 +1,10 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Helmet } from "react-helmet";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { Info } from "lucide-react";
 
 const SecondaryGlazingBuildingRegulations = () => {
   return (
@@ -112,6 +112,38 @@ const SecondaryGlazingBuildingRegulations = () => {
                 <h3 className="text-lg font-semibold mb-2">Professional Installation</h3>
                 <p className="text-gray-600">
                   Our installations are carried out by certified professionals who ensure full compliance with all relevant building regulations. We provide comprehensive documentation and certificates upon completion.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
+                <Info className="h-6 w-6 mr-3 text-blue-500" />
+                <h2 className="text-2xl font-semibold">Planning Permission</h2>
+              </div>
+              
+              <div className="space-y-4 text-gray-600">
+                <p>
+                  In most cases, installing secondary glazing does not require planning permission. 
+                  This is because secondary glazing is considered an internal alteration that does not 
+                  change the external appearance of your property.
+                </p>
+                
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2">When You Might Need Permission</h3>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Listed Buildings: You may need listed building consent</li>
+                    <li>Conservation Areas: Special considerations may apply</li>
+                    <li>Properties with Article 4 Directions: Additional restrictions might exist</li>
+                  </ul>
+                </div>
+                
+                <p>
+                  While planning permission is typically not required, we always recommend 
+                  consulting with your local planning authority if you have any doubts, 
+                  especially for properties in conservation areas or with special designations.
                 </p>
               </div>
             </CardContent>
