@@ -9,7 +9,7 @@ export const CrittallIntro = () => {
         <AspectRatio ratio={16 / 9} className="bg-muted">
           <img 
             src="/lovable-uploads/bb016762-b43f-498a-be1c-7e477fcb368a.jpg" 
-            alt="Modern Crittall windows with secondary glazing installed"
+            alt="Elegant Crittall windows with secondary glazing installed"
             className="object-cover w-full h-full rounded-lg"
           />
         </AspectRatio>
