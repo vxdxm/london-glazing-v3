@@ -1,9 +1,11 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Building2 } from "lucide-react";
+import { Building2, Thermometer } from "lucide-react";
 import { Helmet } from "react-helmet";
+
 const CrittallWindows = () => {
   return <div className="min-h-screen bg-background">
       <Helmet>
@@ -39,6 +41,7 @@ const CrittallWindows = () => {
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
+              <Thermometer className="w-12 h-12 text-primary mb-4" />
               <CardTitle>Insulation Benefits</CardTitle>
             </CardHeader>
             <CardContent>
