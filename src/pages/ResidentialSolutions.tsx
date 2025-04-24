@@ -62,6 +62,13 @@ const residentialServices = [
     details: "Discover the benefits and differences between single and double glazed secondary windows to find the perfect solution for your property's needs.",
     image: "/lovable-uploads/bb1e765e-3b82-4d6d-a206-31bdf9c0af0d.png",
     path: "/residential/single-double-glazed"
+  },
+  {
+    title: "Energy Performance",
+    description: "Maximize your home's energy efficiency with our secondary glazing solutions",
+    details: "Learn how secondary glazing can improve your home's thermal performance, reduce energy bills, and create a more comfortable living environment.",
+    image: "/lovable-uploads/2f4fa321-a97b-487b-a0f2-bb38093e6ca3.jpg",
+    path: "/residential/energy-performance"
   }
 ];
 
