@@ -1,9 +1,8 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Building2, Thermometer, PiggyBank, Sound } from "lucide-react";
+import { Building2, Thermometer, PiggyBank, VolumeX } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { KeyPoint } from "@/components/ui/key-point";
@@ -80,7 +79,7 @@ const CrittallWindows = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <Sound className="w-12 h-12 text-primary mb-4" />
+              <VolumeX className="w-12 h-12 text-primary mb-4" />
               <CardTitle>Noise Reduction</CardTitle>
             </CardHeader>
             <CardContent>
