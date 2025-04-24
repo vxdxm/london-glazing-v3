@@ -1,16 +1,9 @@
-
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 export const SingleDoubleGlazedIntro = () => {
-  return (
-    <div>
+  return <div>
       <div className="mb-12 w-full max-w-4xl mx-auto">
         <AspectRatio ratio={16 / 9} className="bg-muted">
-          <img 
-            src="/lovable-uploads/bb1e765e-3b82-4d6d-a206-31bdf9c0af0d.png"
-            alt="Single and double glazed secondary window comparison"
-            className="object-cover w-full h-full rounded-lg"
-          />
+          <img alt="Single and double glazed secondary window comparison" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/49953857-31a7-4076-924c-61a726839d85.jpg" />
         </AspectRatio>
       </div>
       <div className="prose max-w-none mb-12">
@@ -21,6 +14,5 @@ export const SingleDoubleGlazedIntro = () => {
           solution best suits your needs.
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
