@@ -1,8 +1,11 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
+import { Link } from "react-router-dom";
+
 const SecurityGlazing = () => {
   return <div className="min-h-screen bg-background">
       <MainNav />
@@ -126,13 +129,37 @@ const SecurityGlazing = () => {
                 </p>
                 
                 <ul className="list-disc list-inside text-gray-500 space-y-2">
-                  <li>Noise reduction up to 80%</li>
-                  <li>Improved thermal insulation</li>
-                  <li>Reduced condensation</li>
-                  <li>UV protection for furnishings</li>
-                  <li>Preservation of original window character</li>
+                  <li>
+                    <Link to="/secondary-glazing-noise-reduction" className="hover:text-primary transition-colors">
+                      Noise reduction up to 80%
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialized/thermal-insulation" className="hover:text-primary transition-colors">
+                      Improved thermal insulation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialized/condensation-control" className="hover:text-primary transition-colors">
+                      Reduced condensation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialized/uv-protection" className="hover:text-primary transition-colors">
+                      UV protection for furnishings
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialized/secondary-glazing-original-windows" className="hover:text-primary transition-colors">
+                      Preservation of original window character
+                    </Link>
+                  </li>
                   <li>Lower insurance premiums potential</li>
-                  <li>Energy bill savings</li>
+                  <li>
+                    <Link to="/specialized/thermal-insulation#savings" className="hover:text-primary transition-colors">
+                      Energy bill savings
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </CardContent>
