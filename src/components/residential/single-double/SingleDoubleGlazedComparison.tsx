@@ -26,7 +26,7 @@ export const SingleDoubleGlazedComparison = () => {
     double: "More complex installation"
   }];
   return <div className="py-12">
-      <h2 className="text-3xl font-bold mb-8">Detailed Comparison</h2>
+      <h2 className="text-3xl font-bold mb-8">Detailed Comparison Both Options are with 4mm Toughened Glass</h2>
       
       <div className="mb-12">
         <div className="overflow-x-auto">
