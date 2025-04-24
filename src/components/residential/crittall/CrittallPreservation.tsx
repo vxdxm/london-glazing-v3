@@ -5,7 +5,7 @@ export const CrittallPreservation = () => {
       <div className="grid gap-6">
         <InfoCard title="Preserve Historical Features" className="bg-background">
           <div className="mb-6">
-            <img src="/lovable-uploads/976ac845-a391-42fe-ba2e-dbe7893b2ded.jpg" alt="Historical Crittall window with secondary glazing" className="w-full h-48 object-cover rounded-lg mb-4" />
+            <img alt="Historical Crittall window with secondary glazing" className="w-full h-48 object-cover rounded-lg mb-4" src="/lovable-uploads/d86b005b-f2ec-4bd1-bb0a-72077d3407bf.jpg" />
           </div>
           <p className="text-gray-700">
             Secondary glazing allows you to maintain the integrity of your Crittall windows 
