@@ -46,6 +46,7 @@ import SecondaryGlazingRepairs from "./pages/SecondaryGlazingRepairs";
 import SecondaryGlazingNoiseReduction from "./pages/SecondaryGlazingNoiseReduction";
 import LearnAboutSpiralBalances from "./pages/LearnAboutSpiralBalances";
 import UVProtection from "./pages/specialized/UVProtection";
+import InsurancePremiums from "./pages/specialized/InsurancePremiums";
 
 const queryClient = new QueryClient();
 
@@ -110,6 +111,7 @@ const App = () => (
           <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
           <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
           <Route path="/specialized/uv-protection" element={<UVProtection />} />
+          <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />

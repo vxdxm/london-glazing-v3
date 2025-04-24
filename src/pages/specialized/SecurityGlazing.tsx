@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -158,6 +157,11 @@ const SecurityGlazing = () => {
                   <li>
                     <Link to="/specialized/thermal-insulation#savings" className="hover:text-primary transition-colors">
                       Energy bill savings
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialized/insurance-premiums" className="hover:text-primary transition-colors">
+                      Lower insurance premiums potential
                     </Link>
                   </li>
                 </ul>
