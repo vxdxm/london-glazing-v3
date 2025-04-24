@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
@@ -56,6 +55,13 @@ const residentialServices = [
     details: "Enhance thermal performance while preserving the iconic aesthetic of your Crittall windows. Perfect for period properties and listed buildings.",
     image: "/lovable-uploads/614f68f6-ff97-437b-894a-29e8b8c5d9ac.png",
     path: "/residential/crittall-windows"
+  },
+  {
+    title: "Single & Double Glazed",
+    description: "Compare single and double glazed secondary window options",
+    details: "Discover the benefits and differences between single and double glazed secondary windows to find the perfect solution for your property's needs.",
+    image: "/lovable-uploads/bb1e765e-3b82-4d6d-a206-31bdf9c0af0d.png",
+    path: "/residential/single-double-glazed"
   }
 ];
 

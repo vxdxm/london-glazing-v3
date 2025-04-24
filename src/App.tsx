@@ -48,6 +48,7 @@ import LearnAboutSpiralBalances from "./pages/LearnAboutSpiralBalances";
 import UVProtection from "./pages/specialized/UVProtection";
 import InsurancePremiums from "./pages/specialized/InsurancePremiums";
 import CrittallWindows from "./pages/residential/CrittallWindows";
+import SingleDoubleGlazed from "./pages/residential/SingleDoubleGlazed";
 
 const queryClient = new QueryClient();
 
@@ -114,6 +115,7 @@ const App = () => (
           <Route path="/specialized/uv-protection" element={<UVProtection />} />
           <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
           <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
+          <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />
