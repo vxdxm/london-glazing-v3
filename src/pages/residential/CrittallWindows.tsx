@@ -1,14 +1,11 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Building2 } from "lucide-react";
 import { Helmet } from "react-helmet";
-
 const CrittallWindows = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Secondary Glazing for Crittall Windows | Heritage Window Solutions</title>
         <meta name="description" content="Discover how secondary glazing can enhance the thermal performance of Crittall windows while preserving their iconic aesthetic. Perfect for listed buildings and heritage properties." />
@@ -19,11 +16,7 @@ const CrittallWindows = () => {
 
         <div className="mb-12 w-full max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9} className="bg-muted">
-            <img
-              src="/lovable-uploads/614f68f6-ff97-437b-894a-29e8b8c5d9ac.png"
-              alt="Modern Crittall windows with secondary glazing installed"
-              className="object-cover w-full h-full rounded-lg"
-            />
+            <img alt="Modern Crittall windows with secondary glazing installed" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/bb016762-b43f-498a-be1c-7e477fcb368a.jpg" />
           </AspectRatio>
         </div>
 
@@ -76,9 +69,6 @@ const CrittallWindows = () => {
         </div>
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CrittallWindows;
-
