@@ -1,3 +1,4 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -69,6 +70,39 @@ const SecondaryGlazingBuildingRegulations = () => {
                   className="rounded-lg object-cover w-full h-full"
                 />
               </AspectRatio>
+
+              <Card>
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Info className="h-6 w-6 mr-3 text-blue-500" />
+                    <h2 className="text-2xl font-semibold">Planning Permission</h2>
+                  </div>
+                  
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      In most cases, installing secondary glazing does not require planning permission. 
+                      This is because secondary glazing is considered an internal alteration that does not 
+                      change the external appearance of your property.
+                    </p>
+                    
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h3 className="font-semibold mb-2">When You Might Need Permission</h3>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li>Listed Buildings: You may need listed building consent</li>
+                        <li>Conservation Areas: Special considerations may apply</li>
+                        <li>Properties with Article 4 Directions: Additional restrictions might exist</li>
+                      </ul>
+                    </div>
+                    
+                    <p>
+                      While planning permission is typically not required, we always recommend 
+                      consulting with your local planning authority if you have any doubts, 
+                      especially for properties in conservation areas or with special designations.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
               <h2 className="text-2xl font-semibold mb-4">Key Building Regulations</h2>
               <div className="space-y-6">
                 <div>
@@ -117,37 +151,7 @@ const SecondaryGlazingBuildingRegulations = () => {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <Info className="h-6 w-6 mr-3 text-blue-500" />
-                <h2 className="text-2xl font-semibold">Planning Permission</h2>
-              </div>
-              
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  In most cases, installing secondary glazing does not require planning permission. 
-                  This is because secondary glazing is considered an internal alteration that does not 
-                  change the external appearance of your property.
-                </p>
-                
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h3 className="font-semibold mb-2">When You Might Need Permission</h3>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Listed Buildings: You may need listed building consent</li>
-                    <li>Conservation Areas: Special considerations may apply</li>
-                    <li>Properties with Article 4 Directions: Additional restrictions might exist</li>
-                  </ul>
-                </div>
-                
-                <p>
-                  While planning permission is typically not required, we always recommend 
-                  consulting with your local planning authority if you have any doubts, 
-                  especially for properties in conservation areas or with special designations.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+          {/* Remove the standalone Planning Permission card */}
         </div>
       </div>
       <Footer />
@@ -156,3 +160,4 @@ const SecondaryGlazingBuildingRegulations = () => {
 };
 
 export default SecondaryGlazingBuildingRegulations;
+
