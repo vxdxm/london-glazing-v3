@@ -69,6 +69,20 @@ const residentialServices = [
     details: "Learn how secondary glazing can improve your home's thermal performance, reduce energy bills, and create a more comfortable living environment.",
     image: "/lovable-uploads/2f4fa321-a97b-487b-a0f2-bb38093e6ca3.jpg",
     path: "/residential/energy-performance"
+  },
+  {
+    title: "Modern Solutions",
+    description: "Contemporary window design and functionality",
+    details: "Discover our modern secondary glazing solutions that combine cutting-edge technology with sleek design for today's homes.",
+    image: "/lovable-uploads/2363aeff-ca37-4a34-91c1-75267dfaae9f.png",
+    path: "/residential/modern-solutions"
+  },
+  {
+    title: "Traditional Options",
+    description: "Classic window styles preserved with modern technology",
+    details: "Preserve the historic character of your property while enjoying modern comfort with our traditional glazing solutions.",
+    image: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
+    path: "/residential/traditional-options"
   }
 ];
 
