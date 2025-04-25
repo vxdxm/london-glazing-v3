@@ -3,8 +3,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { TraditionalFAQs } from "@/components/residential/traditional/TraditionalFAQs";
+import { Helmet } from "react-helmet";
+
 const TraditionalOptions = () => {
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Traditional Secondary Glazing for Listed Buildings | Secondary Glazing Specialist</title>
+        <meta name="description" content="Discover how secondary glazing solutions can enhance energy efficiency and preserve the historical integrity of listed buildings. Expert installation and customization for period properties." />
+        <meta name="keywords" content="traditional secondary glazing, listed buildings, energy efficiency, historical windows, window insulation, period properties, heritage preservation" />
+        <meta property="og:title" content="Traditional Secondary Glazing for Listed Buildings | Secondary Glazing Specialist" />
+        <meta property="og:description" content="Expert secondary glazing solutions for listed buildings. Enhance energy efficiency while preserving historical integrity. Customized solutions for period properties." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/traditional-options" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/traditional-options" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Traditional Secondary Glazing Options for Listed Windows</h1>
@@ -115,6 +128,8 @@ const TraditionalOptions = () => {
         <TraditionalFAQs />
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default TraditionalOptions;
