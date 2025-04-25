@@ -46,4 +46,4 @@ Allow: /quote-request
 Allow: /gallery
 Allow: /faqs
 
-Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
+Sitemap: https://secondaryglazingspecialist.com/sitemap-index.xml
