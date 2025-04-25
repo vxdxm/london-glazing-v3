@@ -1,8 +1,8 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { TraditionalFAQs } from "@/components/residential/traditional/TraditionalFAQs";
 
 const TraditionalOptions = () => {
   return (
@@ -139,30 +139,7 @@ const TraditionalOptions = () => {
         </div>
 
         {/* FAQs */}
-        <SectionHeading 
-          title="Frequently Asked Questions"
-          subtitle="Common queries about secondary glazing for listed buildings"
-        />
-
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="font-semibold mb-2">What is secondary glazing?</h3>
-              <p className="text-gray-600">
-                Secondary glazing involves adding an additional layer of glass or acrylic to existing windows to improve insulation and energy efficiency without replacing the original windows.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="pt-6">
-              <h3 className="font-semibold mb-2">Is it cost-effective?</h3>
-              <p className="text-gray-600">
-                Yes, secondary glazing can lead to significant energy savings over time, making it a cost-effective solution for improving the comfort and efficiency of listed buildings.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+        <TraditionalFAQs />
       </div>
       <Footer />
     </div>
