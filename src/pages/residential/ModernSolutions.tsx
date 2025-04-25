@@ -1,12 +1,10 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 const ModernSolutions = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Modern Solutions for Casement Windows</h1>
+        <h1 className="text-4xl font-bold mb-8">Modern Secondary Glazing Solutions for All Windows</h1>
         <div className="grid grid-cols-1 gap-8">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
@@ -50,8 +48,6 @@ const ModernSolutions = () => {
           </Card>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ModernSolutions;
