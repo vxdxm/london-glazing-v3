@@ -88,7 +88,7 @@ const residentialServices = [
     title: "Fixed Secondary Glazing",
     description: "Permanent insulation solutions for non-opening windows",
     details: "Our fixed secondary glazing provides maximum thermal and acoustic insulation for windows that don't require regular access. Perfect for high-level windows or where maximum efficiency is priority.",
-    image: "/lovable-uploads/2363aeff-ca37-4a34-91c1-75267dfaae9f.png",
+    image: "/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png",
     path: "/residential/fixed-secondary-glazing"
   }
 ];
