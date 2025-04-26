@@ -56,7 +56,7 @@ const FixedSecondaryGlazing = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <AspectRatio ratio={4 / 3}>
-                    <img src="/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png" alt="Building Preservation" className="rounded-lg object-cover w-full h-full" />
+                    <img alt="Building Preservation" src="/lovable-uploads/c23f8df7-ca5f-4d5d-913a-5d6c11eae435.jpg" className="rounded-lg w-full h-full object-scale-down" />
                   </AspectRatio>
                 </div>
                 <div>
