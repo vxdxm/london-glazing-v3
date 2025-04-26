@@ -174,7 +174,7 @@ const ModernSolutions = () => {
           <div className="bg-gray-100 p-6 rounded-lg">
             <div className="flex justify-center mb-4">
               <AspectRatio ratio={16 / 9} className="w-full max-w-2xl overflow-hidden rounded-lg shadow-md">
-                <img src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" alt="Energy efficient secondary glazing installation" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" alt="Energy efficient secondary glazing installation" loading="lazy" className="w-full h-full object-cover" />
               </AspectRatio>
             </div>
             <p className="text-sm text-center text-gray-500 italic">Modern secondary glazing installation showing the air gap that provides thermal insulation</p>
