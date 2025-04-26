@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -52,6 +52,7 @@ import CrittallWindows from "./pages/residential/CrittallWindows";
 import SingleDoubleGlazed from "./pages/residential/SingleDoubleGlazed";
 import EnergyPerformance from "./pages/residential/EnergyPerformance";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
+import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
 
 const queryClient = new QueryClient();
 
@@ -116,6 +117,7 @@ const App = () => (
           <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
           <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
           <Route path="/residential/energy-performance" element={<EnergyPerformance />} />
+          <Route path="/residential/fixed-secondary-glazing" element={<FixedSecondaryGlazing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <GetQuoteButton />

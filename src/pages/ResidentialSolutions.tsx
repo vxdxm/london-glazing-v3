@@ -83,6 +83,13 @@ const residentialServices = [
     details: "Preserve the historic character of your property while enjoying modern comfort with our traditional glazing solutions.",
     image: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
     path: "/residential/traditional-options"
+  },
+  {
+    title: "Fixed Secondary Glazing",
+    description: "Permanent insulation solutions for non-opening windows",
+    details: "Our fixed secondary glazing provides maximum thermal and acoustic insulation for windows that don't require regular access. Perfect for high-level windows or where maximum efficiency is priority.",
+    image: "/lovable-uploads/2363aeff-ca37-4a34-91c1-75267dfaae9f.png",
+    path: "/residential/fixed-secondary-glazing"
   }
 ];
 
