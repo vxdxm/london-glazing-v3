@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -13,16 +12,15 @@ import { KeyPoint } from "@/components/ui/key-point";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const ModernSolutions = () => {
   useScrollToHash();
-
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Modern Secondary Glazing Solutions | Energy Efficiency for Historic Buildings</title>
         <meta name="description" content="Discover how modern secondary glazing solutions can transform historic buildings, providing energy efficiency while preserving architectural integrity." />
@@ -90,13 +88,8 @@ const ModernSolutions = () => {
               </p>
             </div>
             <div>
-              <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
-                <img 
-                  src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png" 
-                  alt="Modern secondary glazing installation in a historic building" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                  loading="lazy"
-                />
+              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg shadow-md">
+                <img src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png" alt="Modern secondary glazing installation in a historic building" className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" loading="lazy" />
               </AspectRatio>
             </div>
           </div>
@@ -107,13 +100,8 @@ const ModernSolutions = () => {
           <SectionHeading title="Overview of Historic Buildings" />
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
-                <img 
-                  src="/lovable-uploads/49953857-31a7-4076-924c-61a726839d85.jpg" 
-                  alt="Historic building with classic architecture" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                  loading="lazy"
-                />
+              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg shadow-md">
+                <img src="/lovable-uploads/49953857-31a7-4076-924c-61a726839d85.jpg" alt="Historic building with classic architecture" className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" loading="lazy" />
               </AspectRatio>
             </div>
             <div className="order-1 md:order-2">
@@ -185,13 +173,8 @@ const ModernSolutions = () => {
           
           <div className="bg-gray-100 p-6 rounded-lg">
             <div className="flex justify-center mb-4">
-              <AspectRatio ratio={16/9} className="w-full max-w-2xl overflow-hidden rounded-lg shadow-md">
-                <img 
-                  src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
-                  alt="Energy efficient secondary glazing installation" 
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
+              <AspectRatio ratio={16 / 9} className="w-full max-w-2xl overflow-hidden rounded-lg shadow-md">
+                <img src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" alt="Energy efficient secondary glazing installation" className="w-full h-full object-cover" loading="lazy" />
               </AspectRatio>
             </div>
             <p className="text-sm text-center text-gray-500 italic">Modern secondary glazing installation showing the air gap that provides thermal insulation</p>
@@ -236,13 +219,8 @@ const ModernSolutions = () => {
               </p>
             </div>
             <div>
-              <AspectRatio ratio={16/9} className="overflow-hidden rounded-lg shadow-md">
-                <img 
-                  src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" 
-                  alt="Historic window with discreet secondary glazing" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
-                  loading="lazy"
-                />
+              <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg shadow-md">
+                <img src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" alt="Historic window with discreet secondary glazing" className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" loading="lazy" />
               </AspectRatio>
             </div>
           </div>
@@ -297,13 +275,8 @@ const ModernSolutions = () => {
             </div>
           </div>
           
-          <AspectRatio ratio={21/9} className="overflow-hidden rounded-lg shadow-md">
-            <img 
-              src="/lovable-uploads/733d2e89-3c8b-437b-b5a1-074997517da0.jpg" 
-              alt="Modern interior with secondary glazed windows" 
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
+          <AspectRatio ratio={21 / 9} className="overflow-hidden rounded-lg shadow-md">
+            <img src="/lovable-uploads/733d2e89-3c8b-437b-b5a1-074997517da0.jpg" alt="Modern interior with secondary glazed windows" className="w-full h-full object-cover" loading="lazy" />
           </AspectRatio>
         </section>
 
@@ -438,7 +411,7 @@ const ModernSolutions = () => {
 
         <div className="flex justify-between items-center mt-12 border-t pt-6">
           <div>
-            <p className="text-sm text-gray-500">Last updated: April 26, 2024</p>
+            
           </div>
           <div>
             <Button variant="outline" size="sm" onClick={scrollToTop} className="flex items-center gap-2">
@@ -461,8 +434,6 @@ const ModernSolutions = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ModernSolutions;
