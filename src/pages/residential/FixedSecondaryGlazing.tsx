@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -6,10 +5,8 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import GlassOptions from "@/components/residential/GlassOptions";
 import { KeyPoint } from "@/components/ui/key-point";
-
 const FixedSecondaryGlazing = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Fixed Secondary Glazing Solutions | Permanent Window Insulation</title>
         <meta name="description" content="Discover our fixed secondary glazing solutions for permanent thermal and acoustic insulation. Perfect for windows that don't need regular access." />
@@ -29,12 +26,8 @@ const FixedSecondaryGlazing = () => {
                 </p>
               </div>
               <div>
-                <AspectRatio ratio={16/9}>
-                  <img 
-                    src="/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png"
-                    alt="Fixed Secondary Glazing Installation"
-                    className="rounded-lg object-cover w-full h-full"
-                  />
+                <AspectRatio ratio={16 / 9}>
+                  <img src="/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png" alt="Fixed Secondary Glazing Installation" className="rounded-lg object-cover w-full h-full" />
                 </AspectRatio>
               </div>
             </div>
@@ -51,12 +44,8 @@ const FixedSecondaryGlazing = () => {
                   </KeyPoint>
                 </div>
                 <div>
-                  <AspectRatio ratio={4/3}>
-                    <img 
-                      src="/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png"
-                      alt="Energy Savings Demonstration"
-                      className="rounded-lg object-cover w-full h-full"
-                    />
+                  <AspectRatio ratio={4 / 3}>
+                    <img alt="Energy Savings Demonstration" className="rounded-lg object-cover w-full h-full" src="/lovable-uploads/580ad3ed-9e6a-4a69-81ad-2a84b36a0150.jpg" />
                   </AspectRatio>
                 </div>
               </div>
@@ -66,12 +55,8 @@ const FixedSecondaryGlazing = () => {
               <SectionHeading title="Impact on Building Integrity" subtitle="Preserving historical value while improving efficiency" />
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <AspectRatio ratio={4/3}>
-                    <img 
-                      src="/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png"
-                      alt="Building Preservation"
-                      className="rounded-lg object-cover w-full h-full"
-                    />
+                  <AspectRatio ratio={4 / 3}>
+                    <img src="/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png" alt="Building Preservation" className="rounded-lg object-cover w-full h-full" />
                   </AspectRatio>
                 </div>
                 <div>
@@ -138,8 +123,6 @@ const FixedSecondaryGlazing = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default FixedSecondaryGlazing;
