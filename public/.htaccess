@@ -10,6 +10,26 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^sitemap\.xml$ - [L]
 RewriteRule ^robots\.txt$ - [L]
 
+# Handle specific paths explicitly that need to be properly indexed by Google
+RewriteRule ^specialized/secondary-glazing-building-regulations$ - [L]
+RewriteRule ^specialized/air-gap-secondary-glazing$ - [L]
+RewriteRule ^specialized/condensation-control$ - [L]
+RewriteRule ^specialized/thermal-insulation$ - [L]
+RewriteRule ^specialized/acoustic-glazing$ - [L]
+RewriteRule ^specialized/secondary-glazing-original-windows$ - [L]
+RewriteRule ^commercial/educational-sector$ - [L]
+RewriteRule ^commercial/hospitality-sector$ - [L]
+RewriteRule ^commercial/office-buildings$ - [L]
+RewriteRule ^commercial/listed-buildings$ - [L]
+RewriteRule ^residential/traditional-options$ - [L]
+RewriteRule ^residential/modern-solutions$ - [L]
+RewriteRule ^residential/sash-windows$ - [L]
+RewriteRule ^residential/bay-windows$ - [L]
+RewriteRule ^residential/horizontal-sliding$ - [L]
+RewriteRule ^residential/combination$ - [L]
+RewriteRule ^secondary-glazing-repairs$ - [L]
+RewriteRule ^specialized/sound-transmission-guide$ - [L]
+
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]
 
@@ -20,5 +40,10 @@ RewriteRule ^ index.html [QSA,L]
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"
+  </FilesMatch>
+  
+  # Add headers for SEO crawlers
+  <FilesMatch "^(specialized|commercial|residential)">
+    Header set X-Robots-Tag "index,follow"
   </FilesMatch>
 </IfModule>

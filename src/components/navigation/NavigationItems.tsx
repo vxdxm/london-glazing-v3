@@ -1,3 +1,4 @@
+
 export const glazingOptions = [
   {
     title: "Residential",
@@ -12,7 +13,9 @@ export const glazingOptions = [
       { title: "Combination Units", href: "/residential/combination", description: "Versatile mixed-style window solutions." },
       { title: "Energy Performance", href: "/residential/energy-performance", description: "Maximize home energy efficiency with secondary glazing." },
       { title: "Modern Solutions", href: "/residential/modern-solutions", description: "Contemporary window design and functionality." },
-      { title: "Traditional Options", href: "/residential/traditional-options", description: "Classic window styles preserved with modern technology." }
+      { title: "Traditional Options", href: "/residential/traditional-options", description: "Classic window styles preserved with modern technology." },
+      { title: "Crittall Windows", href: "/residential/crittall-windows", description: "Heritage-sensitive solutions for Crittall windows." },
+      { title: "Single & Double Glazed", href: "/residential/single-double-glazed", description: "Compare glazing options for your home." }
     ],
   },
   {
@@ -24,6 +27,7 @@ export const glazingOptions = [
       { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Premium solutions for hotels and restaurants." },
       { title: "Healthcare Industry", href: "/commercial/healthcare-industry", description: "Premium solutions for healthcare facilities." },
       { title: "Educational Sector", href: "/commercial/educational-sector", description: "Specialized solutions for educational institutions." },
+      { title: "Listed Buildings", href: "/commercial/listed-buildings", description: "Conservation-compliant solutions for listed properties." },
     ],
   },
   {
@@ -41,6 +45,8 @@ export const glazingOptions = [
       { title: "Sound Transmission Guide", href: "/specialized/sound-transmission-guide", description: "Understanding decibels and sound insulation." },
       { title: "Sustainability Impact", href: "/sustainability-impact-tracker-secondary-glazing", description: "Track environmental benefits of secondary glazing." },
       { title: "Glazing Repairs", href: "/secondary-glazing-repairs", description: "Expert repair services for secondary glazing systems." },
+      { title: "Original Windows", href: "/specialized/secondary-glazing-original-windows", description: "Solutions for historic window preservation." },
+      { title: "Air Gap Secondary Glazing", href: "/specialized/air-gap-secondary-glazing", description: "Optimize air gap for maximum performance." },
     ],
   },
 ];

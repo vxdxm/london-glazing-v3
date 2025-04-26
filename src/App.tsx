@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -50,15 +51,11 @@ import InsurancePremiums from "./pages/specialized/InsurancePremiums";
 import CrittallWindows from "./pages/residential/CrittallWindows";
 import SingleDoubleGlazed from "./pages/residential/SingleDoubleGlazed";
 import EnergyPerformance from "./pages/residential/EnergyPerformance";
+import ListedBuildings from "./pages/commercial/ListedBuildings";
 
 const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
-
-const serveFile = (fileName: string) => {
-  window.location.href = `/${fileName}`;
-  return null;
-};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -96,6 +93,7 @@ const App = () => (
           <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
           <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
           <Route path="/commercial/educational-sector" element={<EducationalSector />} />
+          <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
           <Route path="/specialized" element={<SpecializedServices />} />
           <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
           <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
