@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
@@ -74,7 +75,7 @@ const residentialServices = [
     title: "Modern Solutions",
     description: "Contemporary window design and functionality",
     details: "Discover our modern secondary glazing solutions that combine cutting-edge technology with sleek design for today's homes.",
-    image: "/lovable-uploads/2363aeff-ca37-4a34-91c1-75267dfaae9f.png",
+    image: "/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png",
     path: "/residential/modern-solutions"
   },
   {
