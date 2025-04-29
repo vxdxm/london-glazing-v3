@@ -26,7 +26,7 @@ RewriteRule ^residential/modern-solutions$ - [L]
 RewriteRule ^residential/sash-windows$ index.html [L]
 RewriteRule ^residential/bay-windows$ index.html [L]
 RewriteRule ^residential/horizontal-sliding$ index.html [L]
-RewriteRule ^residential/combination$ - [L]
+RewriteRule ^residential/combination$ index.html [L]
 RewriteRule ^secondary-glazing-repairs$ index.html [L]
 RewriteRule ^specialized/sound-transmission-guide$ index.html [L]
 
