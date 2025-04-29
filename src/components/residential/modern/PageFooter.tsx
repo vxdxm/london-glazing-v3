@@ -27,8 +27,8 @@ const PageFooter = ({ scrollToTop }: PageFooterProps) => {
           <Link to="/quote-request">
             <Button>Get a Quote</Button>
           </Link>
-          <Link to="/residential">
-            <Button variant="outline">Explore More Solutions</Button>
+          <Link to="/commercial">
+            <Button variant="outline">Explore Commercial Solutions</Button>
           </Link>
         </div>
       </div>
