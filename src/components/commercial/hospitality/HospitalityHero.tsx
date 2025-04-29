@@ -1,5 +1,6 @@
 
 import React from "react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const HospitalityHero = () => {
   return (

@@ -1,189 +1,28 @@
+
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import OfficeSEO from "@/components/commercial/office/OfficeSEO";
+import OfficeHero from "@/components/commercial/office/OfficeHero";
+import BenefitsGrid from "@/components/commercial/office/BenefitsGrid";
+import TechnicalSpecs from "@/components/commercial/office/TechnicalSpecs";
+import OfficeCTA from "@/components/commercial/office/OfficeCTA";
+
 const OfficeBuildings = () => {
-  const navigate = useNavigate();
-  return <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Secondary Glazing for Office Buildings | Noise & Energy Solutions</title>
-        <meta name="description" content="Transform your office with premium secondary glazing solutions. Reduce noise by up to 80%, improve energy efficiency, and create a more comfortable working environment." />
-        <meta name="keywords" content="office glazing, commercial glazing, office noise reduction, business energy efficiency, workspace insulation, office window improvements" />
-        <meta property="og:title" content="Secondary Glazing for Office Buildings" />
-        <meta property="og:description" content="Transform your office environment with our premium secondary glazing solutions for improved acoustics and energy efficiency." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Secondary Glazing for Office Buildings" />
-        <meta name="twitter:description" content="Premium secondary glazing solutions for office buildings." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/office-buildings" />
-        <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "headline": "Secondary Glazing Solutions for Office Buildings",
-            "description": "Our expert secondary glazing solutions for office buildings are designed to enhance workplace comfort and productivity. By installing an additional layer of glazing to existing windows, we help create quieter, more energy-efficient office environments.",
-            "image": "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
-            "speakable": {
-              "@type": "SpeakableSpecification",
-              "cssSelector": [".text-lg", ".card-title", ".card-content"]
-            },
-            "mainEntity": {
-              "@type": "Service",
-              "name": "Office Building Secondary Glazing",
-              "description": "Specialized glazing solutions for commercial office buildings.",
-              "provider": {
-                "@type": "Organization",
-                "name": "Secondary Glazing Specialist",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "London",
-                  "postalCode": "W12 7LA",
-                  "streetAddress": "Arch 141, MacFarlane Road"
-                },
-                "telephone": "0207 060 1572"
-              },
-              "offers": {
-                "@type": "Offer",
-                "priceCurrency": "GBP",
-                "availability": "https://schema.org/InStock"
-              }
-            }
-          }
-        `}
-        </script>
-      </Helmet>
+  return (
+    <div className="min-h-screen bg-background">
+      <OfficeSEO />
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-4">Secondary Glazing for Office Buildings</h1>
-        
-        <div className="prose max-w-none mb-8 text-gray-600">
-          <p className="text-lg">
-            Our expert secondary glazing solutions for office buildings are designed to enhance workplace comfort and productivity. 
-            By installing an additional layer of glazing to existing windows, we help create quieter, more energy-efficient office 
-            environments that maintain comfortable temperatures year-round. Our solutions are particularly effective for city-center 
-            offices where noise reduction and climate control are essential, while also providing enhanced security and maintaining 
-            the building's original appearance.
-          </p>
-        </div>
-        
-        {/* Hero Section */}
-        <div className="mb-16">
-          <AspectRatio ratio={21 / 9} className="mb-8">
-            <img src="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" alt="Office interior with secondary glazing installation" className="rounded-lg object-cover w-full h-full" />
-          </AspectRatio>
-          <p className="text-lg text-gray-600 mb-8">
-            Transform your office environment with our premium secondary glazing solutions. 
-            We specialize in creating comfortable, energy-efficient, and productive workspaces 
-            through advanced glazing technology.
-          </p>
-        </div>
-
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <Card>
-            <CardHeader>
-              <CardTitle>Sound Insulation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Reduces external noise by up to 80%</li>
-                <li>Creates quieter meeting spaces</li>
-                <li>Improves concentration and productivity</li>
-                <li>Ideal for city center locations</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Energy Efficiency</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Reduces heating and cooling costs</li>
-                <li>Improves building's energy rating</li>
-                <li>Better temperature control</li>
-                <li>Lower carbon footprint</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Installation Benefits</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Minimal disruption to office operations</li>
-                <li>No structural modifications required</li>
-                <li>Quick and clean installation process</li>
-                <li>Fully reversible solution</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Additional Features</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside text-gray-600 space-y-2">
-                <li>Enhanced security options</li>
-                <li>UV protection for furniture and equipment</li>
-                <li>Condensation reduction</li>
-                <li>Easy maintenance access</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Technical Specifications */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">Technical Specifications</h2>
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-semibold mb-4">Glass Options</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>4mm - Double Glazed Glass</li>
-                  <li>6.4mm to 12.8mm Acoustic glass available</li>
-                  <li>Low-E coating options</li>
-                  <li>Safety laminate variations</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-4">Frame Specifications</h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  <li>Slim aluminum profiles</li>
-                  <li>Multiple color options</li>
-                  <li>Thermal break technology</li>
-                  <li>Weather-resistant seals</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-6">Ready to Transform Your Office Space?</h2>
-          <p className="text-gray-600 mb-8">
-            Contact us today for a free consultation and quote. Our experts will help you 
-            find the perfect secondary glazing solution for your office building.
-          </p>
-          <Button size="lg" onClick={() => navigate("/quote-request")} className="bg-primary hover:bg-primary/90">
-            Get Free Quote
-          </Button>
-        </div>
+        <OfficeHero />
+        <BenefitsGrid />
+        <TechnicalSpecs />
+        <OfficeCTA />
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default OfficeBuildings;
