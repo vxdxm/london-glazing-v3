@@ -28,7 +28,7 @@ RewriteRule ^residential/bay-windows$ - [L]
 RewriteRule ^residential/horizontal-sliding$ - [L]
 RewriteRule ^residential/combination$ - [L]
 RewriteRule ^secondary-glazing-repairs$ index.html [L]
-RewriteRule ^specialized/sound-transmission-guide$ - [L]
+RewriteRule ^specialized/sound-transmission-guide$ index.html [L]
 
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]

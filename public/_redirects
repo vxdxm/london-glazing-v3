@@ -22,7 +22,7 @@
 /residential/horizontal-sliding /residential/horizontal-sliding 200
 /residential/combination /residential/combination 200
 /secondary-glazing-repairs /index.html 200
-/specialized/sound-transmission-guide /specialized/sound-transmission-guide 200
+/specialized/sound-transmission-guide /index.html 200
 
 # Explicitly list all routes for the SPA
 /residential/* /index.html 200
