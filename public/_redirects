@@ -21,7 +21,7 @@
 /residential/bay-windows /residential/bay-windows 200
 /residential/horizontal-sliding /residential/horizontal-sliding 200
 /residential/combination /residential/combination 200
-/secondary-glazing-repairs /secondary-glazing-repairs 200
+/secondary-glazing-repairs /index.html 200
 /specialized/sound-transmission-guide /specialized/sound-transmission-guide 200
 
 # Explicitly list all routes for the SPA
