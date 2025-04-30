@@ -12,6 +12,7 @@ Allow: /commercial/office-buildings
 Allow: /commercial/hospitality-sector
 Allow: /commercial/healthcare-industry
 Allow: /commercial/educational-sector
+Allow: /commercial/listed-buildings
 
 # Residential Pages
 Allow: /residential/sash-windows
@@ -22,6 +23,10 @@ Allow: /residential/lift-out
 Allow: /residential/combination
 Allow: /residential/traditional-options
 Allow: /residential/modern-solutions
+Allow: /residential/energy-performance
+Allow: /residential/crittall-windows
+Allow: /residential/single-double-glazed
+Allow: /residential/fixed-secondary-glazing
 
 # Specialized Pages
 Allow: /specialized/acoustic-glazing
@@ -36,6 +41,16 @@ Allow: /specialized/sound-transmission-guide
 Allow: /specialized/noise-reduction
 Allow: /specialized/secondary-glazing-original-windows
 Allow: /specialized/acoustic-secondary-glazing-windows
+Allow: /specialized/double-glazed-units
+Allow: /specialized/uv-protection
+Allow: /specialized/insurance-premiums
+
+# Glass Variants
+Allow: /specialized/glass/premium
+Allow: /specialized/glass/high-performance
+Allow: /specialized/glass/medium-performance
+Allow: /specialized/glass/enhanced-entry
+Allow: /specialized/glass/entry-level
 
 # Service Pages
 Allow: /secondary-glazing-repairs

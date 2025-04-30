@@ -4,17 +4,16 @@
 /robots.txt /robots.txt 200
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 
-# Define specific pages that need exact handling
-/specialized/secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 200
-/specialized/air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 200
-/specialized/condensation-control /specialized/condensation-control 200
-/specialized/thermal-insulation /specialized/thermal-insulation 200
-/specialized/acoustic-glazing /specialized/acoustic-glazing 200
-/specialized/secondary-glazing-original-windows /specialized/secondary-glazing-original-windows 200
-/commercial/educational-sector /commercial/educational-sector 200
-/commercial/listed-buildings /commercial/listed-buildings 200
-/commercial/hospitality-sector /commercial/hospitality-sector 200
-/commercial/office-buildings /commercial/office-buildings 200
+# Define specific pages that need exact handling for Google indexing
+/specialized/secondary-glazing-building-regulations /index.html 200
+/specialized/air-gap-secondary-glazing /index.html 200
+/specialized/condensation-control /index.html 200
+/specialized/thermal-insulation /index.html 200
+/specialized/acoustic-glazing /index.html 200
+/commercial/educational-sector /index.html 200
+/commercial/listed-buildings /index.html 200
+/commercial/hospitality-sector /index.html 200
+/commercial/office-buildings /index.html 200
 /residential/traditional-options /index.html 200
 /residential/modern-solutions /index.html 200
 /residential/sash-windows /index.html 200
@@ -23,6 +22,9 @@
 /residential/combination /index.html 200
 /secondary-glazing-repairs /index.html 200
 /specialized/sound-transmission-guide /index.html 200
+/specialized/secondary-glazing-original-windows /index.html 200
+/specialized/glass/premium /index.html 200
+/specialized/glass/high-performance /index.html 200
 
 # Explicitly list all routes for the SPA
 /residential/* /index.html 200
