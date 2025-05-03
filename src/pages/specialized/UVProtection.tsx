@@ -2,10 +2,14 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Helmet } from "react-helmet";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { Helmet } from "react-helmet";
 import { Shield, Sun, Sofa, Palette } from "lucide-react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import { lazy, Suspense } from "react";
+
+// Lazy load components that aren't needed for initial render
+const LazyFooter = lazy(() => import("@/components/Footer").then(module => ({ default: module.Footer })));
 
 const UVProtection = () => {
   return (
@@ -17,6 +21,8 @@ const UVProtection = () => {
           content="Protect your furnishings, artwork, and interiors from UV damage with specialized secondary glazing solutions. Learn about UV filtering technology and preservation benefits." 
         />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/uv-protection" />
+        {/* Preload critical assets */}
+        <link rel="preload" href="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg" as="image" />
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
@@ -26,13 +32,13 @@ const UVProtection = () => {
         <div className="grid gap-8">
           <Card>
             <CardContent className="p-6">
-              <AspectRatio ratio={16/9}>
-                <img
-                  src="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg"
-                  alt="UV protection glazing demonstration"
-                  className="rounded-lg object-cover w-full h-full"
-                />
-              </AspectRatio>
+              <OptimizedImage
+                src="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg"
+                alt="UV protection glazing demonstration"
+                aspectRatio={16/9}
+                className="rounded-lg"
+                priority={true}
+              />
               
               <div className="mt-6">
                 <h2 className="text-2xl font-semibold mb-4">Understanding UV Protection</h2>
@@ -113,7 +119,9 @@ const UVProtection = () => {
           </Card>
         </div>
       </div>
-      <Footer />
+      <Suspense fallback={<div className="h-40 bg-gray-100"></div>}>
+        <LazyFooter />
+      </Suspense>
     </div>
   );
 };
