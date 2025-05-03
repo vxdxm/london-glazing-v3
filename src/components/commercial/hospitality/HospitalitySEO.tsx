@@ -6,15 +6,18 @@ const HospitalitySEO = () => {
   return (
     <Helmet>
       <title>Hospitality Secondary Glazing | Hotels & Restaurants Solutions</title>
-      <meta name="description" content="Specialized secondary glazing solutions for the hospitality industry. Create peaceful environments for hotels and restaurants with our premium acoustic and thermal glazing." />
+      <meta 
+        name="description" 
+        content="Specialist secondary glazing for hotels and restaurants. Create peaceful guest environments, reduce street noise, and enhance energy efficiency in your hospitality venue." 
+      />
       <meta name="keywords" content="hotel glazing, restaurant glazing, hospitality windows, noise reduction, hotel sound insulation, thermal glazing" />
       <meta property="og:title" content="Secondary Glazing for Hospitality Industry" />
-      <meta property="og:description" content="Create the perfect environment for your guests with our premium secondary glazing solutions for hotels and restaurants." />
+      <meta property="og:description" content="Specialist secondary glazing for hotels and restaurants. Create peaceful guest environments, reduce street noise, and enhance energy efficiency in your hospitality venue." />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Secondary Glazing for Hospitality Industry" />
-      <meta name="twitter:description" content="Premium secondary glazing solutions for hotels and restaurants." />
+      <meta name="twitter:description" content="Specialist secondary glazing for hotels and restaurants. Create peaceful guest environments, reduce street noise, and enhance energy efficiency in your hospitality venue." />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/hospitality-sector" />
       <script type="application/ld+json">
       {`

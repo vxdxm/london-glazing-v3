@@ -6,16 +6,19 @@ const SEOHelmet = () => {
   return (
     <Helmet>
       <title>Horizontal Sliding Secondary Glazing | Smooth Operating Window Solutions</title>
-      <meta name="description" content="Our horizontal sliding secondary glazing systems offer excellent thermal insulation and noise reduction while maintaining easy access to your existing windows. Perfect for wide openings." />
+      <meta 
+        name="description" 
+        content="Discover our horizontal sliding secondary glazing - ideal for wide windows with smooth operation and excellent ventilation. Combines thermal insulation with easy access." 
+      />
       <meta name="keywords" content="horizontal sliding windows, sliding secondary glazing, thermal insulation, noise reduction, wide window openings, residential glazing" />
       <meta property="og:title" content="Horizontal Sliding Secondary Glazing" />
-      <meta property="og:description" content="Smooth-operating horizontal sliding panels that provide easy access to primary windows. Ideal for large windows and offering excellent ventilation options." />
+      <meta property="og:description" content="Discover our horizontal sliding secondary glazing - ideal for wide windows with smooth operation and excellent ventilation. Combines thermal insulation with easy access." />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Horizontal Sliding Secondary Glazing" />
-      <meta name="twitter:description" content="Smooth-operating horizontal sliding secondary glazing for wide window openings." />
+      <meta name="twitter:description" content="Discover our horizontal sliding secondary glazing - ideal for wide windows with smooth operation and excellent ventilation. Combines thermal insulation with easy access." />
       <meta name="twitter:image" content="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
       <meta name="robots" content="index, follow" />

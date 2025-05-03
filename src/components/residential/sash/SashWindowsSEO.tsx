@@ -6,7 +6,10 @@ const SashWindowsSEO = () => {
   return (
     <Helmet>
       <title>Sash Window Secondary Glazing | Period Property Solutions</title>
-      <meta name="description" content="Preserve the original character of your period property with our specialist sash window secondary glazing solutions. Enhanced thermal and acoustic performance." />
+      <meta 
+        name="description" 
+        content="Preserve your period property's character with sash window secondary glazing. Enhance thermal and acoustic performance while maintaining original Victorian and Georgian features." 
+      />
       <meta name="keywords" content="sash window secondary glazing, period property glazing, victorian window insulation, georgian windows, sliding sash windows, noise reduction, thermal insulation" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/sash-windows" />
@@ -15,14 +18,14 @@ const SashWindowsSEO = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/sash-windows" />
       <meta property="og:title" content="Sash Window Secondary Glazing | Period Property Solutions" />
-      <meta property="og:description" content="Preserve the original character of your period property with our specialist sash window secondary glazing solutions. Enhanced thermal and acoustic performance." />
+      <meta property="og:description" content="Preserve your period property's character with sash window secondary glazing. Enhance thermal and acoustic performance while maintaining original Victorian and Georgian features." />
       <meta property="og:image" content="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://secondaryglazingspecialist.com/residential/sash-windows" />
       <meta property="twitter:title" content="Sash Window Secondary Glazing | Period Property Solutions" />
-      <meta property="twitter:description" content="Preserve the original character of your period property with our specialist sash window secondary glazing solutions. Enhanced thermal and acoustic performance." />
+      <meta property="twitter:description" content="Preserve your period property's character with sash window secondary glazing. Enhance thermal and acoustic performance while maintaining original Victorian and Georgian features." />
       <meta property="twitter:image" content="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
       
       {/* Structured Data */}

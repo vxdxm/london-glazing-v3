@@ -1,105 +1,64 @@
 
-import React from 'react';
+import React from "react";
 import { Helmet } from "react-helmet";
 
 const HomeSEO = () => {
   return (
     <Helmet>
-      <title>Secondary Glazing London | Premium Secondary Glazing for Noise Reduction & Thermal Insulation</title>
-      <meta name="description" content="London's specialist in Secondary Glazing, offering bespoke Secondary Glazing solutions for noise reduction, thermal insulation, and security enhancement. Perfect for listed buildings and conservation areas. Free consultation available." />
-      <meta name="keywords" content="secondary glazing, secondary glazing london, window insulation, noise reduction, thermal insulation, security glazing, London windows, energy efficient windows, listed building windows, conservation area windows" />
-      <meta property="og:title" content="London's Premium Secondary Glazing Specialists | Expert Secondary Glazing Solutions" />
-      <meta property="og:description" content="Transform your property with our bespoke Secondary Glazing solutions. Enhance comfort, reduce noise by up to 80%, improve thermal efficiency, and boost security without compromising character." />
+      <title>Secondary Glazing London | Specialist Installation & Repairs</title>
+      <meta 
+        name="description" 
+        content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution." 
+      />
+      <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
+      
+      {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://secondaryglazingspecialist.com/" />
+      <meta property="og:title" content="Secondary Glazing London | Specialist Installation & Repairs" />
+      <meta property="og:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
+      <meta property="og:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      
+      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="London Secondary Glazing Solutions | Secondary Glazing for Noise & Thermal Control" />
-      <meta name="twitter:description" content="Premium Secondary Glazing solutions for homes and businesses throughout London. Specialist Secondary Glazing for listed buildings and conservation areas." />
-      <link rel="canonical" href="https://www.secondaryglazingspecialist.com/" />
-      <link rel="sitemap" type="application/xml" href="https://secondaryglazingspecialist.com/sitemap.xml" />
-
-      {/* Structured Data - Organization */}
+      <meta name="twitter:url" content="https://secondaryglazingspecialist.com/" />
+      <meta name="twitter:title" content="Secondary Glazing London | Specialist Installation & Repairs" />
+      <meta name="twitter:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
+      <meta name="twitter:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      
+      {/* Schema.org structured data */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "HomeAndConstructionBusiness",
-          "@id": "https://secondaryglazingspecialist.com/#organization",
+          "@type": "Organization",
           "name": "Secondary Glazing Specialist",
-          "url": "https://secondaryglazingspecialist.com/",
-          "logo": "https://secondaryglazingspecialist.com/og-image.png",
-          "image": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
-          "description": "London's specialist in Secondary Glazing, offering bespoke solutions for noise reduction, thermal insulation, and security enhancement.",
+          "url": "https://secondaryglazingspecialist.com",
+          "logo": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "0207 060 1572",
+            "contactType": "customer service",
+            "areaServed": "London"
+          },
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "London",
             "postalCode": "W12 7LA",
             "streetAddress": "Arch 141, MacFarlane Road"
-          },
-          "telephone": "0207 060 1572",
-          "priceRange": "££-£££",
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "09:00",
-              "closes": "17:30"
-            }
-          ],
-          "sameAs": [
-            "https://www.facebook.com/secondaryglazingspecialist",
-            "https://www.instagram.com/secondaryglazingspecialist"
-          ],
-          "areaServed": "Greater London",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Secondary Glazing Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Noise Reduction Secondary Glazing",
-                  "description": "Reduce external noise by up to 80% with our acoustic secondary glazing solutions."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Thermal Insulation Secondary Glazing",
-                  "description": "Improve energy efficiency and reduce heating costs with thermal secondary glazing."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Heritage Window Secondary Glazing",
-                  "description": "Specialist solutions for listed buildings and conservation areas."
-                }
-              }
-            ]
           }
         })}
       </script>
-
-      {/* Structured Data - WebSite */}
+      
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "@id": "https://secondaryglazingspecialist.com/#website",
-          "url": "https://secondaryglazingspecialist.com/",
+          "url": "https://secondaryglazingspecialist.com",
           "name": "Secondary Glazing Specialist London",
-          "description": "Premium Secondary Glazing Solutions in London",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://secondaryglazingspecialist.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+          "description": "London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution."
         })}
       </script>
-
-      {/* Structured Data - BreadcrumbList */}
+      
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -108,16 +67,13 @@ const HomeSEO = () => {
             {
               "@type": "ListItem",
               "position": 1,
-              "item": {
-                "@id": "https://secondaryglazingspecialist.com/",
-                "name": "Home"
-              }
+              "name": "Home",
+              "item": "https://secondaryglazingspecialist.com/"
             }
           ]
         })}
       </script>
-
-      {/* Structured Data - LocalBusiness with FAQ */}
+      
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -125,26 +81,26 @@ const HomeSEO = () => {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How much noise can secondary glazing reduce?",
+              "name": "What is secondary glazing?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our secondary glazing solutions can reduce external noise by up to 80%, depending on the specific system and glass type chosen. Acoustic laminated glass with an optimal air gap provides the best results for noise reduction."
+                "text": "Secondary glazing involves adding an additional internal window to your existing windows, creating an insulating gap that improves thermal efficiency and reduces noise."
               }
             },
             {
               "@type": "Question",
-              "name": "Is secondary glazing suitable for listed buildings?",
+              "name": "How effective is secondary glazing for noise reduction?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, secondary glazing is often the preferred solution for listed buildings and properties in conservation areas as it preserves the original windows while improving thermal and acoustic performance. It's generally accepted by conservation officers as it's reversible and doesn't alter the external appearance."
+                "text": "Secondary glazing can reduce noise by up to 80% when properly installed with optimal air gaps and acoustic glass options."
               }
             },
             {
               "@type": "Question",
-              "name": "How much can secondary glazing improve thermal efficiency?",
+              "name": "Can secondary glazing be installed in listed buildings?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Secondary glazing can improve thermal efficiency by up to 60%, significantly reducing heat loss and energy bills. When combined with low-E glass, it provides exceptional thermal insulation while preserving the character of your original windows."
+                "text": "Yes, secondary glazing is often the preferred solution for listed buildings as it preserves original windows while improving insulation and is typically approved by conservation officers."
               }
             }
           ]

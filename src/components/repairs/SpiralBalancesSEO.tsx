@@ -8,7 +8,7 @@ const SpiralBalancesSEO = () => {
       <title>Learn About Spiral Balances | Secondary Glazing Specialist</title>
       <meta
         name="description"
-        content="Understand spiral balances in secondary glazing. Learn their role, common issues, how they're repaired, and sustainability benefits."
+        content="Understanding spiral balances in secondary glazing: their role, common issues, and repair benefits. Learn how these components keep your vertical sliding windows operating smoothly."
       />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/learn-about-spiral-balances" />
       
@@ -16,14 +16,14 @@ const SpiralBalancesSEO = () => {
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/learn-about-spiral-balances" />
       <meta property="og:title" content="Learn About Spiral Balances | Secondary Glazing Windows" />
-      <meta property="og:description" content="Comprehensive guide to spiral balances in secondary glazing windows. Learn how they work, common issues, and sustainable repair options." />
+      <meta property="og:description" content="Understanding spiral balances in secondary glazing: their role, common issues, and repair benefits. Learn how these components keep your vertical sliding windows operating smoothly." />
       <meta property="og:image" content="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://secondaryglazingspecialist.com/learn-about-spiral-balances" />
       <meta property="twitter:title" content="Learn About Spiral Balances | Secondary Glazing Windows" />
-      <meta property="twitter:description" content="Comprehensive guide to spiral balances in secondary glazing windows. Learn how they work, common issues, and sustainable repair options." />
+      <meta property="twitter:description" content="Understanding spiral balances in secondary glazing: their role, common issues, and repair benefits. Learn how these components keep your vertical sliding windows operating smoothly." />
       <meta property="twitter:image" content="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" />
       
       {/* Structured Data */}
