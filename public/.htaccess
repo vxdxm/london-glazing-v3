@@ -11,26 +11,7 @@ RewriteRule ^sitemap\.xml$ - [L]
 RewriteRule ^robots\.txt$ - [L]
 
 # Handle specific paths explicitly that need to be properly indexed by Google
-RewriteRule ^specialized/secondary-glazing-building-regulations$ /index.html [L]
-RewriteRule ^specialized/air-gap-secondary-glazing$ /index.html [L]
-RewriteRule ^specialized/condensation-control$ /index.html [L]
-RewriteRule ^specialized/thermal-insulation$ /index.html [L]
-RewriteRule ^specialized/acoustic-glazing$ /index.html [L]
-RewriteRule ^commercial/educational-sector$ /index.html [L]
-RewriteRule ^commercial/hospitality-sector$ /index.html [L]
-RewriteRule ^commercial/office-buildings$ /index.html [L]
-RewriteRule ^commercial/listed-buildings$ /index.html [L]
-RewriteRule ^residential/traditional-options$ /index.html [L]
-RewriteRule ^residential/modern-solutions$ /index.html [L]
-RewriteRule ^residential/sash-windows$ /index.html [L]
-RewriteRule ^residential/bay-windows$ /index.html [L]
-RewriteRule ^residential/horizontal-sliding$ /index.html [L]
-RewriteRule ^residential/combination$ /index.html [L]
-RewriteRule ^secondary-glazing-repairs$ /index.html [L]
-RewriteRule ^specialized/sound-transmission-guide$ /index.html [L]
-RewriteRule ^specialized/secondary-glazing-original-windows$ /index.html [L]
-RewriteRule ^specialized/glass/premium$ /index.html [L]
-RewriteRule ^specialized/glass/high-performance$ /index.html [L]
+# ... keep existing code (specific path rules)
 
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]
@@ -39,47 +20,57 @@ RewriteRule ^ index.html [QSA,L]
 <IfModule mod_expires.c>
   ExpiresActive On
   
+  # Default expiration: 1 month after request
+  ExpiresDefault "access plus 1 month"
+  
   # Images
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
   
   # CSS, JavaScript
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType application/x-javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
   
   # Fonts
   ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
   ExpiresByType application/x-font-ttf "access plus 1 year"
   ExpiresByType application/x-font-opentype "access plus 1 year"
   ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  
+  # Data
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 0 seconds"
+  ExpiresByType text/xml "access plus 0 seconds"
 </IfModule>
 
-# Enable compression
-<IfModule mod_deflate.c>
-  # Compress HTML, CSS, JavaScript, Text, XML and fonts
-  AddOutputFilterByType DEFLATE application/javascript
-  AddOutputFilterByType DEFLATE application/x-javascript
-  AddOutputFilterByType DEFLATE text/css
-  AddOutputFilterByType DEFLATE text/html
-  AddOutputFilterByType DEFLATE text/plain
-  AddOutputFilterByType DEFLATE text/xml
-  AddOutputFilterByType DEFLATE application/xml
-  AddOutputFilterByType DEFLATE application/json
-  AddOutputFilterByType DEFLATE application/font-woff
-  AddOutputFilterByType DEFLATE application/font-woff2
-  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-  AddOutputFilterByType DEFLATE application/x-font-ttf
-  AddOutputFilterByType DEFLATE font/opentype
-  AddOutputFilterByType DEFLATE image/svg+xml
-</IfModule>
-
-# Set SPA specific headers
+# Add Cache-Control headers as backup for browsers that don't support Expires
 <IfModule mod_headers.c>
+  # Images
+  <FilesMatch "\.(jpg|jpeg|png|gif|ico|webp|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
+  # CSS and JS
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  
+  # Fonts
+  <FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
   # Prevent caching for index.html to ensure the latest version is served
   <FilesMatch "^index\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
@@ -94,4 +85,24 @@ RewriteRule ^ index.html [QSA,L]
 
   # Enable Keep-Alive
   Header set Connection keep-alive
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/font-woff
+  AddOutputFilterByType DEFLATE application/font-woff2
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
