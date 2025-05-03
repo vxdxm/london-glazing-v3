@@ -1,5 +1,5 @@
 
-import React, { createContext, useContext, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode, useRef, useMemo } from 'react';
 
 interface LazyLoadContextType {
   isIntersecting: (element: HTMLElement) => boolean;
@@ -18,38 +18,44 @@ export const useLazyLoad = () => {
 };
 
 export const LazyLoadProvider = ({ children }: { children: ReactNode }) => {
-  const observerRef = React.useRef<IntersectionObserver | null>(null);
-  const elementsMap = React.useRef(new Map<HTMLElement, IntersectionObserverCallback>());
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const elementsMap = useRef(new Map<HTMLElement, IntersectionObserverCallback>());
+  
+  // Use requestIdleCallback for non-critical operations if available
+  const scheduleCallback = 
+    typeof window !== 'undefined' && 'requestIdleCallback' in window
+    ? window.requestIdleCallback
+    : (cb: () => void) => setTimeout(cb, 1);
 
-  React.useEffect(() => {
-    if (!('IntersectionObserver' in window)) {
-      return;
+  // Initialize the observer only once when needed
+  const getObserver = () => {
+    if (!observerRef.current && typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      observerRef.current = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const callback = elementsMap.current.get(entry.target as HTMLElement);
+            if (callback) {
+              // Use requestAnimationFrame for smoother animations
+              if (entry.isIntersecting) {
+                window.requestAnimationFrame(() => {
+                  callback([entry], observerRef.current!);
+                });
+              } else {
+                callback([entry], observerRef.current!);
+              }
+            }
+          });
+        },
+        {
+          rootMargin: '200px 0px',
+          threshold: 0.01,
+        }
+      );
     }
+    return observerRef.current;
+  };
 
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const callback = elementsMap.current.get(entry.target as HTMLElement);
-          if (callback) {
-            callback([entry], observerRef.current!);
-          }
-        });
-      },
-      {
-        rootMargin: '200px 0px',
-        threshold: 0.01,
-      }
-    );
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-        elementsMap.current.clear();
-      }
-    };
-  }, []);
-
-  const value = React.useMemo(
+  const value = useMemo(
     () => ({
       isIntersecting: (element: HTMLElement) => {
         if (!('IntersectionObserver' in window)) {
@@ -72,19 +78,21 @@ export const LazyLoadProvider = ({ children }: { children: ReactNode }) => {
             time: Date.now()
           } as IntersectionObserverEntry;
           
-          callback([mockEntry], {} as IntersectionObserver);
+          scheduleCallback(() => {
+            callback([mockEntry], {} as IntersectionObserver);
+          });
           return;
         }
         
         elementsMap.current.set(element, callback);
-        observerRef.current?.observe(element);
+        getObserver()?.observe(element);
       },
       unobserveElement: (element: HTMLElement) => {
         if (!('IntersectionObserver' in window)) {
           return;
         }
         
-        observerRef.current?.unobserve(element);
+        getObserver()?.unobserve(element);
         elementsMap.current.delete(element);
       },
     }),

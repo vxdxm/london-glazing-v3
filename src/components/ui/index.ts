@@ -14,5 +14,6 @@ export { Label } from './label';
 export { Progress } from './progress';
 export { SectionHeading } from './section-heading';
 export { Separator } from './separator';
+export { LazyLoadWrapper } from '../LazyLoadWrapper';
 
 // Add other components as needed

@@ -12,6 +12,7 @@ interface OptimizedImageProps {
   aspectRatio?: number;
   priority?: boolean;
   objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
+  lazyBoundary?: string;
 }
 
 export function OptimizedImage({
@@ -23,20 +24,29 @@ export function OptimizedImage({
   aspectRatio,
   priority = false,
   objectFit = "cover",
+  lazyBoundary = "200px",
 }: OptimizedImageProps) {
+  // Add query params to optimize CDN delivery if src is a URL
+  const optimizedSrc = src.startsWith('http') && !src.includes('?') 
+    ? `${src}?auto=format,compress&q=80` 
+    : src;
+  
   const imgStyle = {
     objectFit,
+    // Add will-change to optimize GPU rendering for animations
+    willChange: 'transform',
   } as React.CSSProperties;
   
   const imgProps = {
-    src,
+    src: optimizedSrc,
     alt,
     className: cn("w-full h-full", className),
     style: imgStyle,
-    loading: priority ? "eager" : "lazy" as "eager" | "lazy", // Add proper type assertion here
+    loading: priority ? "eager" as "eager" : "lazy" as "lazy",
     decoding: "async" as const,
     width,
     height,
+    fetchPriority: priority ? "high" as const : "auto" as const,
   };
 
   if (aspectRatio) {

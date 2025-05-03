@@ -11,7 +11,10 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [
-    react(),
+    react({
+      // Enable Fast Refresh for faster development experience
+      fastRefresh: true,
+    }),
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
@@ -21,12 +24,17 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
+    // Reduce chunk size to improve caching
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'ui-components': ['@/components/ui/index'],
           'charts': ['recharts'],
+          'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
+          'utils': ['@/lib/utils'],
+          'lucide': ['lucide-react'],
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
@@ -35,9 +43,29 @@ export default defineConfig(({ mode }) => ({
     },
     cssMinify: true,
     minify: true,
-    sourcemap: false,
+    sourcemap: mode === 'development',
+    // Improve bundle size in production builds
+    target: 'es2018',
+    reportCompressedSize: false,
   },
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'recharts'],
+    include: [
+      'react', 
+      'react-dom', 
+      'react-router-dom', 
+      'recharts',
+      '@hookform/resolvers',
+      'zod',
+      '@radix-ui/react-navigation-menu',
+    ],
+    // Disable dependency optimization scanning in node_modules
+    exclude: ['lovable-tagger'],
+  },
+  // Add compression options
+  esbuild: {
+    // Remove console.log in production
+    drop: mode === 'production' ? ['console', 'debugger'] : [],
+    // Enable JSX optimization
+    jsx: 'automatic',
   },
 }));
