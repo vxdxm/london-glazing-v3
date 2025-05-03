@@ -5,21 +5,27 @@ import { Helmet } from "react-helmet";
 const ListedBuildingsSEO = () => {
   return (
     <Helmet>
-      <title>Secondary Glazing for Listed Buildings | Heritage Conservation Solutions</title>
-      <meta name="description" content="Specialist secondary glazing solutions for listed buildings and conservation areas. Maintain architectural heritage while improving thermal and acoustic performance." />
-      <meta name="keywords" content="listed buildings, conservation areas, heritage glazing, historic windows, planning permission, thermal insulation, noise reduction" />
-      <meta property="og:title" content="Secondary Glazing for Listed Buildings" />
-      <meta property="og:description" content="Specialist secondary glazing solutions that meet conservation requirements while enhancing comfort in listed buildings." />
+      <title>Secondary Glazing for Listed Buildings | Heritage Conservation London</title>
+      <meta name="description" content="Specialist secondary glazing solutions for listed buildings and conservation areas in London. Enhance thermal and acoustic performance while preserving architectural heritage. Planning permission compliant." />
+      <meta name="keywords" content="listed buildings secondary glazing, conservation area windows, heritage glazing London, historic window solutions, planning permission secondary glazing, thermal insulation listed buildings, noise reduction heritage properties" />
+      <meta property="og:title" content="Secondary Glazing for Listed Buildings | Heritage Conservation" />
+      <meta property="og:description" content="Specialist secondary glazing solutions for listed buildings that meet conservation requirements while enhancing thermal efficiency and noise reduction. Planning permission compliant installation in London." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
+      <meta property="og:image" content="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Secondary Glazing for Listed Buildings | Heritage Conservation" />
+      <meta name="twitter:description" content="Specialist glazing solutions for listed buildings and conservation areas in London." />
+      <meta name="twitter:image" content="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
       <script type="application/ld+json">
       {`
         {
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "headline": "Secondary Glazing Solutions for Listed Buildings",
-          "description": "Our specialist secondary glazing solutions are designed to meet strict conservation requirements while providing modern comfort benefits to listed and heritage properties.",
+          "headline": "Secondary Glazing Solutions for Listed Buildings and Conservation Areas",
+          "description": "Our specialist secondary glazing solutions are designed to meet strict conservation requirements while providing modern comfort benefits to listed and heritage properties in London.",
+          "image": "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
           "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".text-4xl", ".card-title", ".card-content"]
