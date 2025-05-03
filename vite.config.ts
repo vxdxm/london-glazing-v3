@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-components': ['@/components/ui'],
+          'ui-components': ['@/components/ui/index'],
           'charts': ['recharts'],
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',

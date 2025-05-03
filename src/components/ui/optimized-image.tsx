@@ -34,7 +34,7 @@ export function OptimizedImage({
     className: cn("w-full h-full", className),
     style: imgStyle,
     loading: priority ? "eager" : "lazy",
-    decoding: "async",
+    decoding: "async" as const, // Type assertion to fix the error
     width,
     height,
   };
