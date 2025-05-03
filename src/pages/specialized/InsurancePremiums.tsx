@@ -1,15 +1,13 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import InsurancePremiumCalculator from "@/components/insurance/InsurancePremiumCalculator";
+import InsurancePremiumSEO from "@/components/insurance/InsurancePremiumSEO";
 import { Shield, Lock } from "lucide-react";
-import { Helmet } from "react-helmet";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 const InsurancePremiums = () => {
   return <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Insurance Premium Savings with Security Glazing | Secondary Glazing Specialist</title>
-        <meta name="description" content="Learn how secondary security glazing can reduce your insurance premiums. Calculate potential savings and understand the benefits of enhanced window security." />
-      </Helmet>
+      <InsurancePremiumSEO />
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">Insurance Premium Benefits</h1>
@@ -84,4 +82,5 @@ const InsurancePremiums = () => {
       </div>
     </div>;
 };
+
 export default InsurancePremiums;

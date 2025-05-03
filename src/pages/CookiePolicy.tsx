@@ -1,16 +1,12 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import CookiePolicySEO from "@/components/legal/CookiePolicySEO";
 
 const CookiePolicy = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Cookie Policy | Secondary Glazing London</title>
-        <meta name="description" content="Learn about how we use cookies on our website." />
-        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/cookie-policy" />
-      </Helmet>
+      <CookiePolicySEO />
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Cookie Policy</h1>

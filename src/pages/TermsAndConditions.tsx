@@ -1,16 +1,12 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import TermsAndConditionsSEO from "@/components/legal/TermsAndConditionsSEO";
 
 const TermsAndConditions = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Terms and Conditions | Secondary Glazing London</title>
-        <meta name="description" content="Our terms and conditions outline the rules and guidelines for using our website and services." />
-        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/terms-and-conditions" />
-      </Helmet>
+      <TermsAndConditionsSEO />
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>

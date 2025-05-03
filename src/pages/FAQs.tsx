@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import {
   Accordion,
@@ -6,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Helmet } from "react-helmet";
+import FAQSEO from "@/components/faqs/FAQSEO";
 
 const FAQs = () => {
   const faqs = [
@@ -47,12 +46,8 @@ const FAQs = () => {
   return (
     <div className="min-h-screen bg-background">
       <MainNav />
+      <FAQSEO />
       <div className="container mx-auto px-4 py-16">
-        <Helmet>
-          <title>Secondary Glazing FAQs | Expert Advice & Information London</title>
-          <meta name="description" content="Find answers to common secondary glazing questions. Expert advice on installation, benefits, and maintenance from London's leading glazing specialists." />
-          <link rel="canonical" href="https://www.secondaryglazingspecialist.com/faqs" />
-        </Helmet>
         <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">

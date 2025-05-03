@@ -1,21 +1,13 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import { Helmet } from "react-helmet";
+import SpiralBalancesSEO from "@/components/repairs/SpiralBalancesSEO";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 
 const LearnAboutSpiralBalances = () => (
   <div className="min-h-screen bg-background flex flex-col">
-    <Helmet>
-      <title>Learn About Spiral Balances | Secondary Glazing Specialist</title>
-      <meta
-        name="description"
-        content="Understand spiral balances in secondary glazing. Learn their role, common issues, how they're repaired, and sustainability benefits."
-      />
-      <link rel="canonical" href="https://secondaryglazingspecialist.com/learn-about-spiral-balances" />
-    </Helmet>
+    <SpiralBalancesSEO />
     <MainNav />
     <main className="container mx-auto px-4 py-12 flex-grow">
       <BreadcrumbNav />

@@ -1,16 +1,12 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import PrivacyPolicySEO from "@/components/legal/PrivacyPolicySEO";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Privacy Policy | Secondary Glazing London</title>
-        <meta name="description" content="Our privacy policy outlines how we collect, use, and protect your personal information." />
-        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/privacy-policy" />
-      </Helmet>
+      <PrivacyPolicySEO />
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
