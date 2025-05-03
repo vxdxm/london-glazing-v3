@@ -5,15 +5,12 @@ const CombinationIntro = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
       <div>
-        <h1 className="text-4xl font-bold mb-4">Combination Windows</h1>
+        <h1 className="text-4xl font-bold mb-4">Custom Combination Secondary Glazing Solutions</h1>
         <p className="text-gray-700 mb-6">
           Our combination window solutions represent the pinnacle of architectural versatility,
           offering unparalleled flexibility in design and functionality. By expertly blending
           different window styles - from classic sash to modern casement - we create custom
-          configurations that perfectly match your property's character. Whether you're looking
-          to maximize natural light, enhance ventilation, or create stunning architectural
-          focal points, our combination windows deliver the perfect balance of form and function,
-          while maintaining energy efficiency and security.
+          configurations that perfectly match your property's character while providing superior noise reduction and thermal insulation.
         </p>
       </div>
       <div className="relative h-[300px] group">

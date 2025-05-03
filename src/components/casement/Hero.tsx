@@ -1,8 +1,9 @@
+
 import React from 'react';
 const Hero = () => {
   return <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
       <div className="flex-1">
-        <h1 className="text-4xl font-bold mb-8">Casement Secondary Glazing Windows: Complete Guide</h1>
+        <h1 className="text-4xl font-bold mb-8">Casement Secondary Glazing: Noise Reduction & Thermal Efficiency</h1>
         <p className="text-gray-700 mb-4">
           Casement secondary glazing is a sophisticated window enhancement system designed to complement existing casement windows. This solution involves installing a secondary window on the interior side of your primary casement window, creating an additional barrier for improved insulation and noise reduction.
         </p>

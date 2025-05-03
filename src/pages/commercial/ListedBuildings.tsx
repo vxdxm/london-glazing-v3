@@ -13,7 +13,7 @@ const ListedBuildings = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">Secondary Glazing for Listed Buildings</h1>
+        <h1 className="text-4xl font-bold mb-8">Heritage-Friendly Secondary Glazing for Listed Buildings</h1>
         
         {/* Hero Section */}
         <section className="mb-12">
@@ -36,7 +36,7 @@ const ListedBuildings = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Heritage-Compliant Solutions</CardTitle>
+              <CardTitle>Conservation-Compliant Secondary Glazing</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
@@ -52,7 +52,7 @@ const ListedBuildings = () => {
           </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <CardTitle>Modern Comfort</CardTitle>
+              <CardTitle>Modern Comfort for Heritage Buildings</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
@@ -70,7 +70,7 @@ const ListedBuildings = () => {
         
         {/* Planning Permission Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Planning Permission & Conservation Guidance</h2>
+          <h2 className="text-2xl font-bold mb-4">Listed Building Secondary Glazing & Conservation Guidance</h2>
           <div className="prose max-w-none">
             <p className="mb-4">
               Secondary glazing is often the preferred solution for listed buildings as it typically doesn't require planning permission

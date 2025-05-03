@@ -1,9 +1,10 @@
+
 import React from 'react';
 
 const Overview = () => {
   return (
     <section className="mb-12">
-      <h2 className="text-3xl font-semibold mb-6">What Are Casement Secondary Glazing Windows?</h2>
+      <h2 className="text-3xl font-semibold mb-6">What Are Casement Secondary Glazing Systems?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <img 
           src="/lovable-uploads/ce569e66-cc87-4091-9f5a-d5ae27f88371.png"

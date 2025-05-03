@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
@@ -11,7 +12,7 @@ const HospitalityIndustry = () => {
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Hospitality Industry Glazing Solutions</h1>
+          <h1 className="text-4xl font-bold mb-6">Secondary Glazing for Hospitality Industry</h1>
           
           <div className="mb-8">
             <img
@@ -23,11 +24,11 @@ const HospitalityIndustry = () => {
 
           <div className="space-y-6 text-lg">
             <p>
-              Our premium glazing solutions are specifically designed for the hospitality sector,
+              Our premium secondary glazing solutions are specifically designed for the hospitality sector,
               helping create comfortable and peaceful environments for your guests.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8">Key Benefits</h2>
+            <h2 className="text-2xl font-semibold mt-8">Key Benefits of Hospitality Secondary Glazing</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Superior noise reduction for peaceful guest rooms</li>
               <li>Enhanced temperature control for year-round comfort</li>
@@ -36,7 +37,7 @@ const HospitalityIndustry = () => {
               <li>UV protection to prevent furniture fading</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8">Perfect For</h2>
+            <h2 className="text-2xl font-semibold mt-8">Perfect For Hospitality Buildings</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Hotels and resorts</li>
               <li>Restaurants and cafes</li>

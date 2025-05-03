@@ -61,7 +61,7 @@ const EducationalSector = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-4">Secondary Glazing for Educational Institutions</h1>
+        <h1 className="text-4xl font-bold mb-4">Secondary Glazing Solutions for Educational Institutions</h1>
         <div className="prose max-w-none mb-8 text-gray-600">
           <p className="text-lg">
             Educational institutions face unique challenges when it comes to creating optimal learning environments. Our specialized secondary glazing solutions for schools, colleges, and universities help address these challenges by improving thermal efficiency, reducing external noise, and enhancing security while maintaining the aesthetic integrity of the building.
@@ -78,7 +78,7 @@ const EducationalSector = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle>Noise Reduction for Learning</CardTitle>
+              <CardTitle>Acoustic Secondary Glazing for Learning</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
@@ -96,7 +96,7 @@ const EducationalSector = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle>Energy Efficiency</CardTitle>
+              <CardTitle>Thermal Secondary Glazing</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
@@ -114,7 +114,7 @@ const EducationalSector = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle>Enhanced Security</CardTitle>
+              <CardTitle>Security Enhanced Secondary Glazing</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
@@ -125,7 +125,7 @@ const EducationalSector = () => {
         </div>
 
         <div className="bg-blue-50 rounded-lg p-8 mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Benefits for Educational Institutions</h2>
+          <h2 className="text-2xl font-semibold mb-4">Benefits of Secondary Glazing for Educational Institutions</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <li className="flex items-start gap-2">
               <span className="text-blue-600 font-bold">✓</span>
@@ -155,7 +155,7 @@ const EducationalSector = () => {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Our Educational Sector Projects</h2>
+          <h2 className="text-2xl font-semibold mb-6">Our Educational Sector Secondary Glazing Projects</h2>
           <p className="text-gray-600 mb-8">
             We have successfully installed secondary glazing systems in numerous educational establishments across London and the surrounding areas, from primary schools to universities. Our experienced team understands the unique requirements of educational buildings and can work around academic schedules to minimize disruption.
           </p>

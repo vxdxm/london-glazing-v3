@@ -8,7 +8,7 @@ const RepairsHero = () => {
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Secondary Glazing Repairs
+            Expert Secondary Glazing Repair Services London
           </h1>
           <p className="text-xl text-gray-700 mb-6">
             Specialized repair services for your secondary glazing systems, with expertise in spiral balances for vertical sliding units.

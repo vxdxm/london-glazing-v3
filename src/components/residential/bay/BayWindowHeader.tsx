@@ -1,14 +1,15 @@
+
 import React from 'react';
 
 const BayWindowHeader = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
       <div>
-        <h1 className="text-4xl font-bold mb-4">Bay Window Secondary Glazing: Complete Guide</h1>
+        <h1 className="text-4xl font-bold mb-4">Bespoke Secondary Glazing for Bay Windows</h1>
         <p className="text-gray-700 mb-6">
           Our bay window secondary glazing solutions are expertly designed to follow the contours 
           of your existing bay windows, preserving their architectural beauty while significantly 
-          improving thermal and acoustic performance.
+          improving thermal insulation and acoustic performance.
         </p>
       </div>
       <div>

@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -16,11 +17,11 @@ const FixedSecondaryGlazing = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="grid gap-12">
           <section>
-            <h1 className="text-4xl font-bold mb-8">Fixed Secondary Glazing</h1>
+            <h1 className="text-4xl font-bold mb-8">Fixed Secondary Glazing for Thermal Insulation & Noise Reduction</h1>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
+                <h2 className="text-2xl font-semibold mb-4">Energy-Efficient Fixed Secondary Glazing Solutions</h2>
                 <p className="text-gray-700 mb-4">
                   In an era where sustainability and energy efficiency are at the forefront of architectural discussions, the preservation of historic buildings presents unique challenges. Historic structures often face issues related to energy loss due to outdated window systems. Implementing fixed secondary glazing offers a practical solution, enhancing energy efficiency while maintaining the building's historical integrity.
                 </p>
@@ -52,7 +53,7 @@ const FixedSecondaryGlazing = () => {
             </section>
 
             <section className="mb-12">
-              <SectionHeading title="Impact on Building Integrity" subtitle="Preserving historical value while improving efficiency" />
+              <SectionHeading title="Heritage Building Secondary Glazing" subtitle="Preserving historical value while improving efficiency" />
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <AspectRatio ratio={4 / 3}>
