@@ -15,5 +15,6 @@ export { Progress } from './progress';
 export { SectionHeading } from './section-heading';
 export { Separator } from './separator';
 export { LazyLoadWrapper } from '../LazyLoadWrapper';
+export { SpriteIcon } from './sprite-icon';
 
 // Add other components as needed
