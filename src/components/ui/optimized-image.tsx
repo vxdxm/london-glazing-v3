@@ -33,8 +33,8 @@ export function OptimizedImage({
     alt,
     className: cn("w-full h-full", className),
     style: imgStyle,
-    loading: priority ? "eager" : "lazy",
-    decoding: "async" as const, // Type assertion to fix the error
+    loading: priority ? "eager" : "lazy" as "eager" | "lazy", // Add proper type assertion here
+    decoding: "async" as const,
     width,
     height,
   };
