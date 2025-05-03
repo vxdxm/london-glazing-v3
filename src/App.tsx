@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
@@ -58,68 +59,88 @@ const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
 
+// Component to add canonical URL to every page
+const CanonicalTag = () => {
+  const location = useLocation();
+  const canonicalUrl = `${BASE_URL}${location.pathname}`;
+  
+  return (
+    <Helmet>
+      <link rel="canonical" href={canonicalUrl} />
+    </Helmet>
+  );
+};
+
+const AppRoutes = () => {
+  return (
+    <>
+      <CanonicalTag />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/quote-request" element={<QuoteRequest />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/faqs" element={<FAQs />} />
+        <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
+        <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
+        <Route path="/learn-about-spiral-balances" element={<LearnAboutSpiralBalances />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/residential" element={<ResidentialSolutions />} />
+        <Route path="/residential/sash-windows" element={<SashWindows />} />
+        <Route path="/residential/casement-windows" element={<CasementWindows />} />
+        <Route path="/residential/bay-windows" element={<BayWindows />} />
+        <Route path="/residential/horizontal-sliding" element={<HorizontalSliding />} />
+        <Route path="/residential/lift-out" element={<LiftOut />} />
+        <Route path="/residential/combination" element={<Combination />} />
+        <Route path="/residential/traditional-options" element={<TraditionalOptions />} />
+        <Route path="/residential/modern-solutions" element={<ModernSolutions />} />
+        <Route path="/commercial" element={<CommercialSolutions />} />
+        <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
+        <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
+        <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
+        <Route path="/commercial/educational-sector" element={<EducationalSector />} />
+        <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
+        <Route path="/specialized" element={<SpecializedServices />} />
+        <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
+        <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
+        <Route path="/specialized/sound-transmission-guide" element={<SoundTransmissionGuide />} />
+        <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
+        <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
+        <Route path="/specialized/condensation-control" element={<CondensationControl />} />
+        <Route path="/specialized/double-glazed-units" element={<DoubleGlazedUnits />} />
+        <Route path="/specialized/air-gap-secondary-glazing" element={<AirGapSecondaryGlazing />} />
+        <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
+        <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
+        <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
+        <Route path="/secondary-glazing-noise-reduction" element={<SecondaryGlazingNoiseReduction />} />
+        <Route path="/noise-calculator" element={<Navigate to="/specialized/noise-reduction#calculator" replace />} />
+        <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
+        <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
+        <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
+        <Route path="/specialized/uv-protection" element={<UVProtection />} />
+        <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
+        <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
+        <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
+        <Route path="/residential/energy-performance" element={<EnergyPerformance />} />
+        <Route path="/residential/fixed-secondary-glazing" element={<FixedSecondaryGlazing />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Helmet>
-        <link rel="canonical" href={`${BASE_URL}${window.location.pathname}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <base href="/" />
       </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/">
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/quote-request" element={<QuoteRequest />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/faqs" element={<FAQs />} />
-          <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
-          <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
-          <Route path="/learn-about-spiral-balances" element={<LearnAboutSpiralBalances />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/residential" element={<ResidentialSolutions />} />
-          <Route path="/residential/sash-windows" element={<SashWindows />} />
-          <Route path="/residential/casement-windows" element={<CasementWindows />} />
-          <Route path="/residential/bay-windows" element={<BayWindows />} />
-          <Route path="/residential/horizontal-sliding" element={<HorizontalSliding />} />
-          <Route path="/residential/lift-out" element={<LiftOut />} />
-          <Route path="/residential/combination" element={<Combination />} />
-          <Route path="/residential/traditional-options" element={<TraditionalOptions />} />
-          <Route path="/residential/modern-solutions" element={<ModernSolutions />} />
-          <Route path="/commercial" element={<CommercialSolutions />} />
-          <Route path="/commercial/office-buildings" element={<OfficeBuildings />} />
-          <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
-          <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
-          <Route path="/commercial/educational-sector" element={<EducationalSector />} />
-          <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
-          <Route path="/specialized" element={<SpecializedServices />} />
-          <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />
-          <Route path="/specialized/noise-reduction" element={<NoiseReduction />} />
-          <Route path="/specialized/sound-transmission-guide" element={<SoundTransmissionGuide />} />
-          <Route path="/specialized/thermal-insulation" element={<ThermalInsulation />} />
-          <Route path="/specialized/security-glazing" element={<SecurityGlazing />} />
-          <Route path="/specialized/condensation-control" element={<CondensationControl />} />
-          <Route path="/specialized/double-glazed-units" element={<DoubleGlazedUnits />} />
-          <Route path="/specialized/air-gap-secondary-glazing" element={<AirGapSecondaryGlazing />} />
-          <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
-          <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
-          <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
-          <Route path="/secondary-glazing-noise-reduction" element={<SecondaryGlazingNoiseReduction />} />
-          <Route path="/noise-calculator" element={<Navigate to="/specialized/noise-reduction#calculator" replace />} />
-          <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
-          <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
-          <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
-          <Route path="/specialized/uv-protection" element={<UVProtection />} />
-          <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
-          <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
-          <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
-          <Route path="/residential/energy-performance" element={<EnergyPerformance />} />
-          <Route path="/residential/fixed-secondary-glazing" element={<FixedSecondaryGlazing />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AppRoutes />
         <GetQuoteButton />
         <WhatsAppButton />
       </BrowserRouter>
