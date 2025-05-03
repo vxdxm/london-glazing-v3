@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import viteCompression from 'vite-plugin-compression';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -16,6 +17,22 @@ export default defineConfig(({ mode }) => ({
     }),
     mode === 'development' &&
     componentTagger(),
+    // Add compression plugin for production builds
+    mode === 'production' && viteCompression({
+      algorithm: 'gzip',
+      ext: '.gz',
+      threshold: 10240, // Only compress files > 10KB
+      deleteOriginFile: false, // Keep original files for browsers without gzip support
+      filter: /\.(js|css|html|svg|json)$/i, // Compress only these file types
+    }),
+    // Also add brotli compression which is more efficient than gzip
+    mode === 'production' && viteCompression({
+      algorithm: 'brotliCompress',
+      ext: '.br',
+      threshold: 10240,
+      deleteOriginFile: false,
+      filter: /\.(js|css|html|svg|json)$/i,
+    }),
   ].filter(Boolean),
   resolve: {
     alias: {

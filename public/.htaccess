@@ -16,6 +16,40 @@ RewriteRule ^robots\.txt$ - [L]
 # Rewrite all other requests to index.html
 RewriteRule ^ index.html [QSA,L]
 
+# Serve pre-compressed files if they exist and the client accepts them
+<IfModule mod_headers.c>
+  # Serve Brotli compressed files if they exist and the client accepts Brotli
+  RewriteCond %{HTTP:Accept-encoding} br
+  RewriteCond %{REQUEST_FILENAME}\.br -f
+  RewriteRule ^(.*)$ $1.br [QSA]
+  # Adjust content-type based on original file
+  RewriteRule \.css\.br$ - [T=text/css,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.js\.br$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.html\.br$ - [T=text/html,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.svg\.br$ - [T=image/svg+xml,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.json\.br$ - [T=application/json,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  <FilesMatch "\.br$">
+    Header set Content-Encoding br
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+
+  # Serve Gzip compressed files if they exist and client accepts gzip
+  RewriteCond %{HTTP:Accept-encoding} gzip
+  RewriteCond %{REQUEST_FILENAME}\.gz -f
+  RewriteCond %{REQUEST_FILENAME}\.br !-f
+  RewriteRule ^(.*)$ $1.gz [QSA]
+  # Adjust content-type based on original file
+  RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  RewriteRule \.js\.gz$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  RewriteRule \.svg\.gz$ - [T=image/svg+xml,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  RewriteRule \.json\.gz$ - [T=application/json,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  <FilesMatch "\.gz$">
+    Header set Content-Encoding gzip
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
 # Browser caching for static assets
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -95,7 +129,7 @@ RewriteRule ^ index.html [QSA,L]
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Enable compression
+# Enable compression for files not pre-compressed during build
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript
@@ -113,6 +147,14 @@ RewriteRule ^ index.html [QSA,L]
   AddOutputFilterByType DEFLATE application/x-font-ttf
   AddOutputFilterByType DEFLATE font/opentype
   AddOutputFilterByType DEFLATE image/svg+xml
+  
+  # Skip compression for already compressed files
+  <IfModule mod_setenvif.c>
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:gz|br)$ no-gzip dont-vary
+    SetEnvIf is-br 1 no-gzip
+    SetEnvIf is-gz 1 no-gzip
+  </IfModule>
   
   # Remove browser bugs
   BrowserMatch ^Mozilla/4 gzip-only-text/html
