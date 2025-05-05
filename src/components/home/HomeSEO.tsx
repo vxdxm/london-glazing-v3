@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 const HomeSEO = () => {
   return (
     <Helmet>
-      <title>Secondary Glazing London | Heritage & Modern Homes</title>
+      <title>Secondary Glazing Specialist | Heritage & Modern Homes</title>
       <meta 
         name="description" 
         content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution." 
@@ -15,14 +15,14 @@ const HomeSEO = () => {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/" />
-      <meta property="og:title" content="Secondary Glazing London | Heritage & Modern Homes" />
+      <meta property="og:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
       <meta property="og:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
       <meta property="og:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content="https://secondaryglazingspecialist.com/" />
-      <meta name="twitter:title" content="Secondary Glazing London | Heritage & Modern Homes" />
+      <meta name="twitter:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
       <meta name="twitter:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
       <meta name="twitter:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       
