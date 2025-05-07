@@ -29,7 +29,6 @@ export const Hero = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
               onClick={handleContactClick}
             >
               Contact Us
