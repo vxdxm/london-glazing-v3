@@ -1,4 +1,5 @@
 
+import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,6 +8,7 @@ import { Helmet } from "react-helmet";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 import { useLocation } from "react-router-dom";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const AirGapSecondaryGlazing = () => {
   const location = useLocation();
@@ -15,6 +17,11 @@ const AirGapSecondaryGlazing = () => {
   const canonicalUrl = isDirectPath 
     ? "https://secondaryglazingspecialist.com/air-gap-secondary-glazing"
     : "https://secondaryglazingspecialist.com/specialized/air-gap-secondary-glazing";
+
+  // Add console logging for indexing verification
+  useEffect(() => {
+    console.log("Air Gap Secondary Glazing page loaded for indexing");
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -58,13 +65,49 @@ const AirGapSecondaryGlazing = () => {
               "@type": "WebPage",
               "@id": "${canonicalUrl}"
             },
-            "keywords": "air gap secondary glazing, cavity spacing, window insulation, thermal performance, acoustic insulation, 100mm cavity, 150mm cavity"
+            "dateModified": "2025-05-09",
+            "datePublished": "2024-07-10",
+            "keywords": "air gap secondary glazing, cavity spacing, window insulation, thermal performance, acoustic insulation, 100mm cavity, 150mm cavity",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".text-gray-700"]
+            }
+          }
+        `}
+        </script>
+        
+        {/* Breadcrumb structured data */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Specialized Services",
+                "item": "https://secondaryglazingspecialist.com/specialized"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Air Gap Secondary Glazing",
+                "item": "${canonicalUrl}"
+              }
+            ]
           }
         `}
         </script>
       </Helmet>
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
+      <main id="main-content" className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
         
         <h1 className="text-4xl font-bold mb-8">Air Gap Secondary Glazing Guide</h1>
@@ -80,7 +123,7 @@ const AirGapSecondaryGlazing = () => {
                   </p>
                 </div>
                 <AspectRatio ratio={16/9} className="bg-muted">
-                  <img
+                  <OptimizedImage
                     src="/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png"
                     alt="Air gap spacing diagram showing secondary glazing installation"
                     className="object-cover w-full h-full rounded-lg"
@@ -94,7 +137,7 @@ const AirGapSecondaryGlazing = () => {
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <AspectRatio ratio={16/9} className="bg-muted">
-                  <img
+                  <OptimizedImage
                     src="/lovable-uploads/96267b17-0746-47d6-a83c-5554a6954fc7.png"
                     alt="100mm cavity secondary glazing installation"
                     className="object-cover w-full h-full rounded-lg"
@@ -132,7 +175,7 @@ const AirGapSecondaryGlazing = () => {
                   </ul>
                 </div>
                 <AspectRatio ratio={16/9} className="bg-muted">
-                  <img
+                  <OptimizedImage
                     src="/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"
                     alt="150mm cavity secondary glazing demonstration"
                     className="object-cover w-full h-full rounded-lg"
@@ -146,7 +189,7 @@ const AirGapSecondaryGlazing = () => {
             <CardContent className="p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <AspectRatio ratio={16/9} className="bg-muted">
-                  <img
+                  <OptimizedImage
                     src="/lovable-uploads/8fcea8e1-97fb-4874-99c2-8cff6e3aea2e.png"
                     alt="Factors affecting cavity choice in secondary glazing"
                     className="object-cover w-full h-full rounded-lg"
@@ -166,12 +209,12 @@ const AirGapSecondaryGlazing = () => {
             </CardContent>
           </Card>
 
-          <div className="my-12">
-            <h2 className="text-3xl font-semibold mb-6 text-center">Calculate Your Noise Reduction</h2>
+          <section id="calculator" aria-labelledby="calculator-heading" className="my-12">
+            <h2 id="calculator-heading" className="text-3xl font-semibold mb-6 text-center">Calculate Your Noise Reduction</h2>
             <NoiseReductionCalculator />
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

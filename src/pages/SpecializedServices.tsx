@@ -7,8 +7,14 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { InfoCard } from "@/components/ui/info-card";
+import { useEffect } from "react";
 
 const SpecializedServices = () => {
+  // Add logging for indexing
+  useEffect(() => {
+    console.log("Specialized Services page loaded for indexing");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -21,11 +27,11 @@ const SpecializedServices = () => {
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized" />
       </Helmet>
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
+      <main id="main-content" className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
         <PageHeader />
         <ServiceCards />
-      </div>
+      </main>
       <WhatsAppButton />
       <GetQuoteButton />
     </div>
