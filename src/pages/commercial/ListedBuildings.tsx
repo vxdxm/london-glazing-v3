@@ -5,8 +5,14 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ListedBuildingsSEO from "@/components/commercial/listed/ListedBuildingsSEO";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useEffect } from "react";
 
 const ListedBuildings = () => {
+  // Add logging for indexing
+  useEffect(() => {
+    console.log("Listed Buildings page loaded for indexing");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <ListedBuildingsSEO />
