@@ -3,6 +3,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const CombinationSEO = () => {
+  // Update the current date for freshness signals
+  const currentDate = "2025-05-09";
+  
   return (
     <Helmet>
       <title>Combination Secondary Glazing Window Solutions | Secondary Glazing Specialist</title>
@@ -28,7 +31,7 @@ const CombinationSEO = () => {
       <meta property="twitter:description" content="Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs." />
       <meta property="twitter:image" content="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png" />
       
-      {/* Structured Data */}
+      {/* Structured Data - Enhanced with proper breadcrumb markup */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -44,7 +47,41 @@ const CombinationSEO = () => {
             "@type": "Offer",
             "priceCurrency": "GBP",
             "availability": "https://schema.org/InStock"
-          }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://secondaryglazingspecialist.com/residential/combination"
+          },
+          "datePublished": currentDate,
+          "dateModified": currentDate
+        })}
+      </script>
+      
+      {/* Add breadcrumb structured data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://secondaryglazingspecialist.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Residential Solutions",
+              "item": "https://secondaryglazingspecialist.com/residential"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Combination",
+              "item": "https://secondaryglazingspecialist.com/residential/combination"
+            }
+          ]
         })}
       </script>
     </Helmet>

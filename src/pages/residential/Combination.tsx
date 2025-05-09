@@ -1,4 +1,5 @@
 
+import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Footer } from "@/components/Footer";
@@ -10,6 +11,11 @@ import CombinationCTA from "@/components/residential/combination/CombinationCTA"
 import GlassOptions from "@/components/residential/GlassOptions";
 
 const Combination = () => {
+  // Add logging for debugging indexing issues
+  useEffect(() => {
+    console.log("Combination page loaded");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <CombinationSEO />

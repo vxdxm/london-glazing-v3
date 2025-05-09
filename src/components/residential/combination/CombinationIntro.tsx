@@ -1,5 +1,6 @@
 
 import React from "react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const CombinationIntro = () => {
   return (
@@ -14,11 +15,13 @@ const CombinationIntro = () => {
         </p>
       </div>
       <div className="relative h-[300px] group">
-        <img 
+        <OptimizedImage 
           src="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png"
           alt="Modern combination window featuring sash and horizontal sliding elements in a bright interior setting"
-          className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
-          loading="lazy"
+          className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+          width={600}
+          height={300}
+          priority={true}
         />
       </div>
     </div>
