@@ -1,17 +1,22 @@
+
 import { MainNav } from "@/components/MainNav";
-import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
+import { SectionHeading } from "@/components/ui/section-heading";
+import { useEffect } from "react";
+import AcousticGlazingSEO from "@/components/specialized/acoustic/AcousticGlazingSEO";
 
 const AcousticGlazing = () => {
+  // Add logging for indexing
+  useEffect(() => {
+    console.log("Acoustic Glazing page loaded for indexing");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <Helmet>
-        <title>Acoustic Glazing | Reduce Noise with Secondary Glazing Solutions</title>
-        <meta name="description" content="Explore our acoustic glazing solutions for effective noise reduction. Our secondary glazing provides superior soundproofing for homes and commercial properties." />
-      </Helmet>
+      <AcousticGlazingSEO />
       <MainNav />
 
       <main className="container mx-auto px-4 py-8 sm:py-16 flex-grow">
@@ -19,7 +24,10 @@ const AcousticGlazing = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-8">Acoustic Glazing Solutions</h1>
+            <SectionHeading 
+              title="Acoustic Glazing Solutions"
+              subtitle="Create a quieter, more peaceful environment" 
+            />
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
               Our acoustic glazing solutions provide exceptional sound insulation, creating a quieter and more peaceful indoor environment. 
               Perfect for properties near busy roads, flight paths, or in urban areas with high noise pollution.
