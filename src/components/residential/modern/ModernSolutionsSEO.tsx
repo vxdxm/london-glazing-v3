@@ -3,6 +3,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const ModernSolutionsSEO = () => {
+  // Update the current date for freshness signals
+  const currentDate = "2025-05-09";
+
   return (
     <Helmet>
       <title>Modern Secondary Glazing Solutions | Energy Efficiency for Historic Buildings</title>
@@ -51,8 +54,8 @@ const ModernSolutionsSEO = () => {
               "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
             }
           },
-          "datePublished": "2025-05-09",
-          "dateModified": "2025-05-09",
+          "datePublished": currentDate,
+          "dateModified": currentDate,
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://secondaryglazingspecialist.com/residential/modern-solutions"

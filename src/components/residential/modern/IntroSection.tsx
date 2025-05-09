@@ -1,31 +1,37 @@
 
-import { SectionHeading } from "@/components/ui/section-heading";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import React from "react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const IntroSection = () => {
   return (
-    <section id="introduction" className="mb-12 scroll-mt-20">
-      <SectionHeading title="Introduction" />
-      <div className="grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <p className="text-gray-600 mb-4">
-            The preservation of historic buildings is a delicate balance between maintaining the architectural integrity and enhancing energy efficiency. 
-            As concerns over climate change and rising energy costs grow, the need for energy-efficient solutions in older structures has become more pressing.
+    <section className="mb-12">
+      <h1 className="text-4xl font-bold mb-6">Modern Secondary Glazing Solutions for Historic Buildings</h1>
+      
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="md:w-1/2">
+          <p className="text-lg mb-4">
+            Secondary glazing represents an elegant solution for enhancing the 
+            energy efficiency and comfort of historic buildings while preserving 
+            their architectural integrity.
           </p>
-          <p className="text-gray-600">
-            This article explores how secondary glazing can transform historic buildings, providing a modern solution that addresses both energy efficiency and 
-            the preservation of aesthetic value.
+          <p className="mb-4">
+            For centuries, historic buildings have stood as testaments to our 
+            architectural heritage. However, their traditional windows often fall 
+            short of modern thermal and acoustic expectations. Modern secondary 
+            glazing provides a sympathetic solution that respects the building's 
+            character while improving its performance.
           </p>
         </div>
-        <div>
-          <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg shadow-md">
-            <img 
-              src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png" 
-              alt="Modern secondary glazing installation in a historic building" 
-              className="w-full h-full object-cover transition-transform hover:scale-105 duration-500" 
-              loading="lazy" 
-            />
-          </AspectRatio>
+        
+        <div className="md:w-1/2 relative h-[300px] group">
+          <OptimizedImage 
+            src="/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png"
+            alt="Modern secondary glazing installed in a historic building"
+            className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+            width={600}
+            height={300}
+            priority={true}
+          />
         </div>
       </div>
     </section>
