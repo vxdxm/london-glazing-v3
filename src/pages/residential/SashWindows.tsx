@@ -6,11 +6,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SashWindowGlassOptions from "@/components/residential/SashWindowGlassOptions";
 import SashWindowsSEO from "@/components/residential/sash/SashWindowsSEO";
 import SashWindowCTA from "@/components/residential/sash/SashWindowCTA";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const SashWindows = () => {
   const [standardImageError, setStandardImageError] = useState(false);
   const [tiltInImageError, setTiltInImageError] = useState(false);
+
+  // Add logging for debugging indexing issues
+  useEffect(() => {
+    console.log("Sash Windows page loaded");
+  }, []);
 
   const handleStandardImageError = () => {
     console.error("Standard sliding image failed to load");
@@ -39,11 +45,13 @@ const SashWindows = () => {
               </p>
             </div>
             <div className="flex-1">
-              <img 
+              <OptimizedImage 
                 src="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png"
                 alt="Three elegant sash windows with Roman blinds, overlooking brick buildings and trees, demonstrating classic period property features"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-                loading="eager"
+                priority={true}
+                width={800}
+                height={400}
               />
             </div>
           </div>
@@ -57,12 +65,13 @@ const SashWindows = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <img 
+                    <OptimizedImage 
                       src={standardImageError ? "/placeholder.svg" : "/lovable-uploads/35ea6134-3501-45e1-9ac7-ed7d91680ad6.png"}
                       alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property with grey walls and a chandelier"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                       onError={handleStandardImageError}
-                      loading="lazy"
+                      width={600}
+                      height={200}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>
@@ -97,12 +106,13 @@ const SashWindows = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <img 
+                    <OptimizedImage 
                       src={tiltInImageError ? "/placeholder.svg" : "/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"}
                       alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
                       onError={handleTiltInImageError}
-                      loading="lazy"
+                      width={600}
+                      height={200}
                     />
                     <div className="text-gray-700 space-y-4">
                       <p>

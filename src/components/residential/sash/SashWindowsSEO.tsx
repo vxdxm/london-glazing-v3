@@ -3,6 +3,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SashWindowsSEO = () => {
+  // Update the current date for freshness signals
+  const currentDate = "2025-05-09";
+
   return (
     <Helmet>
       <title>Sash Window Secondary Glazing | Period Property Solutions</title>
@@ -37,6 +40,7 @@ const SashWindowsSEO = () => {
           "description": "Our sash window secondary glazing solutions are designed to preserve the original character of your period property while providing modern insulation benefits.",
           "image": "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
           "url": "https://secondaryglazingspecialist.com/residential/sash-windows",
+          "dateModified": currentDate,
           "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".text-4xl", ".text-3xl", ".text-gray-700"]
