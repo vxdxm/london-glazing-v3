@@ -21,6 +21,14 @@ const ModernSolutions = () => {
     console.log("Modern Solutions page loaded");
   }, []);
 
+  // Implement scrollToTop function to pass to PageFooter
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <ModernSolutionsSEO />
@@ -37,7 +45,7 @@ const ModernSolutions = () => {
           <BenefitsSection />
           <ConclusionSection />
           <FAQsSection />
-          <PageFooter />
+          <PageFooter scrollToTop={scrollToTop} />
         </div>
       </div>
       <Footer />
