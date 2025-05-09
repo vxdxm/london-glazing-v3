@@ -13,6 +13,13 @@ interface SoundGuideLayoutProps {
 const SoundGuideLayout = ({ children }: SoundGuideLayoutProps) => {
   useScrollToHash();
   
+  // Add logging for indexing
+  React.useEffect(() => {
+    console.log("Sound Transmission Guide page loaded for indexing");
+  }, []);
+  
+  const currentDate = "2025-05-09"; // Keep updated with the current date
+  
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -46,7 +53,7 @@ const SoundGuideLayout = ({ children }: SoundGuideLayoutProps) => {
               }
             },
             "datePublished": "2024-07-01",
-            "dateModified": "2024-07-01"
+            "dateModified": "${currentDate}"
           }
         `}
         </script>

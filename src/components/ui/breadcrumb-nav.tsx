@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -121,7 +120,6 @@ export const BreadcrumbNav = () => {
               <BreadcrumbPage>{label}</BreadcrumbPage>
             </BreadcrumbItem>
           ) : (
-            // Remove data-lov-id from the key as it's not valid for React.Fragment
             <React.Fragment key={segment}>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
