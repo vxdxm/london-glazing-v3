@@ -5,8 +5,9 @@ import { PageHeader } from "@/components/specialized/PageHeader";
 import { ServiceCards } from "@/components/specialized/ServiceCards";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import ContactUsButton from "@/components/ContactUsButton";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import { InfoCard } from "@/components/ui/info-card";
+import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 
 const SpecializedServices = () => {
@@ -20,7 +21,7 @@ const SpecializedServices = () => {
       <Helmet>
         <title>Specialized Secondary Glazing Services | Acoustic & Thermal Solutions</title>
         <meta name="description" content="Expert specialized secondary glazing services including acoustic glazing, thermal insulation, and security solutions. Professional installation for specific requirements." />
-        <meta name="keywords" content="specialized glazing, acoustic glazing, thermal insulation, security glazing, noise reduction, energy efficiency, London specialist, air gap secondary glazing" />
+        <meta name="keywords" content="specialized glazing, acoustic glazing, thermal insulation, security glazing, noise reduction, energy efficiency, London specialist, air gap secondary glazing, condensation control" />
         <meta property="og:title" content="Specialized Secondary Glazing Services" />
         <meta property="og:description" content="Advanced secondary glazing solutions for specific requirements. Expert installation in London." />
         <meta property="og:type" content="website" />
@@ -34,6 +35,8 @@ const SpecializedServices = () => {
       </main>
       <WhatsAppButton />
       <GetQuoteButton />
+      <ContactUsButton />
+      <Footer />
     </div>
   );
 };

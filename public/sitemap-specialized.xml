@@ -1,6 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://secondaryglazingspecialist.com/specialized/acoustic-glazing</loc>
     <lastmod>2024-06-15</lastmod>
@@ -21,9 +22,17 @@
   </url>
   <url>
     <loc>https://secondaryglazingspecialist.com/specialized/condensation-control</loc>
-    <lastmod>2024-06-15</lastmod>
+    <lastmod>2025-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://secondaryglazingspecialist.com/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png</image:loc>
+      <image:title>Modern window ventilation system with trickle vents for condensation control</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secondaryglazingspecialist.com/lovable-uploads/8fd22af1-94cd-4761-b8a2-531d7834baaa.png</image:loc>
+      <image:title>Secondary glazing installation showing effective condensation control</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secondaryglazingspecialist.com/specialized/air-gap-secondary-glazing</loc>
