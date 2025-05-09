@@ -11,15 +11,17 @@ const OfficeSEO = () => {
         content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." 
       />
       <meta name="keywords" content="office glazing, commercial glazing, office noise reduction, business energy efficiency, workspace insulation, office window improvements" />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/office-buildings" />
       <meta property="og:title" content="Secondary Glazing for Office Buildings" />
       <meta property="og:description" content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." />
       <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/office-buildings" />
       <meta property="og:image" content="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Secondary Glazing for Office Buildings" />
       <meta name="twitter:description" content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." />
       <meta name="twitter:image" content="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" />
-      <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/office-buildings" />
       <script type="application/ld+json">
       {`
         {
@@ -52,6 +54,29 @@ const OfficeSEO = () => {
               "priceCurrency": "GBP",
               "availability": "https://schema.org/InStock"
             }
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Commercial Solutions",
+                "item": "https://secondaryglazingspecialist.com/commercial"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Office Buildings",
+                "item": "https://secondaryglazingspecialist.com/commercial/office-buildings"
+              }
+            ]
           }
         }
       `}

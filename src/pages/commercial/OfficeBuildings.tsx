@@ -7,8 +7,14 @@ import OfficeHero from "@/components/commercial/office/OfficeHero";
 import BenefitsGrid from "@/components/commercial/office/BenefitsGrid";
 import TechnicalSpecs from "@/components/commercial/office/TechnicalSpecs";
 import OfficeCTA from "@/components/commercial/office/OfficeCTA";
+import { useEffect } from "react";
 
 const OfficeBuildings = () => {
+  // Log page view for debugging indexing issues
+  useEffect(() => {
+    console.log("Office Buildings page loaded");
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <OfficeSEO />
