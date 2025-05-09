@@ -1,12 +1,25 @@
 
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 export const Hero = () => {
   const navigate = useNavigate();
+  useScrollToHash(); // Use the scroll to hash hook
 
   const handleContactClick = () => {
-    document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+    // First check if we're already on the home page
+    if (window.location.pathname === "/") {
+      // We're on the home page, scroll directly
+      document.getElementById('contact-section')?.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else {
+      // We're on another page, navigate to home with hash
+      navigate('/#contact-section');
+    }
   };
 
   return (
