@@ -2,6 +2,7 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 import { InfoCard } from "@/components/ui/info-card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const BenefitsSection = () => {
   return (
@@ -46,18 +47,19 @@ const BenefitsSection = () => {
         </div>
       </InfoCard>
       
-      <div className="bg-gray-100 p-6 rounded-lg">
-        <div className="flex justify-center mb-4">
-          <AspectRatio ratio={16 / 9} className="w-full max-w-2xl overflow-hidden rounded-lg shadow-md">
-            <img 
+      <div className="bg-gray-100 p-6 rounded-lg flex flex-col items-center">
+        <div className="max-w-3xl w-full">
+          <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg shadow-md">
+            <OptimizedImage 
               src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
               alt="Energy efficient secondary glazing installation" 
-              loading="lazy" 
-              className="w-full h-full object-cover" 
+              aspectRatio={16/9}
+              priority={false}
+              className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" 
             />
           </AspectRatio>
         </div>
-        <p className="text-sm text-center text-gray-500 italic">Modern secondary glazing installation showing the air gap that provides thermal insulation</p>
+        <p className="text-sm text-center text-gray-500 italic mt-3">Modern secondary glazing installation showing the air gap that provides thermal insulation</p>
       </div>
     </section>
   );
