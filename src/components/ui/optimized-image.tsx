@@ -13,6 +13,7 @@ interface OptimizedImageProps {
   priority?: boolean;
   objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
   lazyBoundary?: string;
+  onError?: () => void;
 }
 
 export function OptimizedImage({
@@ -25,6 +26,7 @@ export function OptimizedImage({
   priority = false,
   objectFit = "cover",
   lazyBoundary = "200px",
+  onError,
 }: OptimizedImageProps) {
   // Add query params to optimize CDN delivery if src is a URL
   const optimizedSrc = src.startsWith('http') && !src.includes('?') 
@@ -42,11 +44,13 @@ export function OptimizedImage({
     alt,
     className: cn("w-full h-full", className),
     style: imgStyle,
-    loading: priority ? "eager" as "eager" : "lazy" as "lazy",
+    loading: priority ? "eager" : "lazy",
     decoding: "async" as const,
     width,
     height,
-    fetchPriority: priority ? "high" as const : "auto" as const,
+    onError,
+    // Use lowercase fetchpriority instead of fetchPriority to avoid React DOM warnings
+    fetchpriority: priority ? "high" : "auto",
   };
 
   if (aspectRatio) {

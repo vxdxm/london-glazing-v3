@@ -121,6 +121,7 @@ export const BreadcrumbNav = () => {
               <BreadcrumbPage>{label}</BreadcrumbPage>
             </BreadcrumbItem>
           ) : (
+            // Remove data-lov-id from the key as it's not valid for React.Fragment
             <React.Fragment key={segment}>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>

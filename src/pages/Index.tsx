@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
@@ -13,6 +13,11 @@ import HomeBenefits from "@/components/home/HomeBenefits";
 import HomeSustainability from "@/components/home/HomeSustainability";
 
 const Index = () => {
+  // Add logging for home page indexing
+  useEffect(() => {
+    console.log("Home page loaded");
+  }, []);
+  
   return (
     <div className="min-h-screen">
       <HomeSEO />
