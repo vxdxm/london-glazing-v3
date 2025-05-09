@@ -35,6 +35,7 @@ const routeLabels: RouteMapping = {
   "office-buildings": "Office Buildings",
   "hospitality-sector": "Hospitality Sector",
   "healthcare-industry": "Healthcare Industry",
+  "listed-buildings": "Listed Buildings",
   "sash-windows": "Sash Windows",
   "casement-windows": "Casement Windows",
   "bay-windows": "Bay Windows",
@@ -50,6 +51,7 @@ const routeLabels: RouteMapping = {
   "privacy-policy": "Privacy Policy",
   "terms-and-conditions": "Terms and Conditions",
   "cookie-policy": "Cookie Policy",
+  "double-glazed-units": "Double Glazed Units",
 };
 
 export const BreadcrumbNav = () => {

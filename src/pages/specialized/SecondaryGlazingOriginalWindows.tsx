@@ -2,60 +2,21 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Helmet } from "react-helmet";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import { useLocation } from "react-router-dom";
+import OriginalWindowsSEO from "@/components/specialized/original/OriginalWindowsSEO";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const SecondaryGlazingOriginalWindows = () => {
-  const location = useLocation();
-  const canonicalUrl = `https://secondaryglazingspecialist.com${location.pathname}`;
+  // Add logging for indexing
+  useEffect(() => {
+    console.log("Secondary Glazing Original Windows page loaded for indexing");
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Secondary Glazing for Original Windows | Heritage Window Solutions</title>
-        <meta 
-          name="description" 
-          content="Discover how secondary glazing preserves original windows while improving thermal and acoustic performance. Expert solutions for heritage properties." 
-        />
-        <meta 
-          name="keywords" 
-          content="secondary glazing, original windows, heritage windows, window preservation, listed buildings, conservation areas" 
-        />
-        <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Secondary Glazing for Original Windows | Heritage Solutions" />
-        <meta property="og:description" content="Expert solutions that preserve original windows while improving thermal and acoustic performance for heritage properties." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png" />
-        <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Secondary Glazing for Original Windows",
-            "description": "Discover how secondary glazing preserves original windows while improving thermal and acoustic performance. Expert solutions for heritage properties.",
-            "image": "https://secondaryglazingspecialist.com/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
-            "author": {
-              "@type": "Organization",
-              "name": "Secondary Glazing Specialist"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Secondary Glazing Specialist",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "${canonicalUrl}"
-            }
-          }
-        `}
-        </script>
-      </Helmet>
+      <OriginalWindowsSEO />
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
@@ -68,10 +29,13 @@ const SecondaryGlazingOriginalWindows = () => {
             </CardHeader>
             <CardContent>
               <div className="mb-6">
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png"
                   alt="Traditional sash window with secondary glazing"
                   className="w-full h-48 object-cover rounded-lg mb-4"
+                  aspectRatio={16/9}
+                  width={600}
+                  height={338}
                 />
               </div>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -89,10 +53,13 @@ const SecondaryGlazingOriginalWindows = () => {
             </CardHeader>
             <CardContent>
               <div className="mb-6">
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png"
                   alt="Secondary glazing installation showing thermal improvement"
                   className="w-full h-48 object-cover rounded-lg mb-4"
+                  aspectRatio={16/9}
+                  width={600}
+                  height={338}
                 />
               </div>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
@@ -122,7 +89,7 @@ const SecondaryGlazingOriginalWindows = () => {
 
           <h2 className="text-2xl font-bold mb-4">Conservation Compliance</h2>
           <p className="text-gray-700 mb-6">
-            Our secondary glazing solutions are designed to meet conservation requirements and are often approved for use in listed buildings and conservation areas.
+            Our secondary glazing solutions are designed to meet conservation requirements and are often approved for use in listed buildings and conservation areas. Learn more about our <Link to="/commercial/listed-buildings" className="text-primary hover:underline">listed buildings solutions</Link>.
           </p>
 
           <div className="bg-secondary/50 p-6 rounded-lg mt-8">
