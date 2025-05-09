@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
+import ContactUsButton from "@/components/ContactUsButton";
 import Index from "./pages/Index";
 
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -141,6 +142,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/">
         <AppRoutes />
+        <ContactUsButton />
         <GetQuoteButton />
         <WhatsAppButton />
       </BrowserRouter>

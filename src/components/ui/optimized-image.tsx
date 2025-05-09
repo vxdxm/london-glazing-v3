@@ -44,7 +44,7 @@ export function OptimizedImage({
     alt,
     className: cn("w-full h-full", className),
     style: imgStyle,
-    loading: priority ? "eager" : "lazy",
+    loading: priority ? "eager" as const : "lazy" as const,
     decoding: "async" as const,
     width,
     height,
