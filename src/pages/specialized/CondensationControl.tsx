@@ -1,15 +1,15 @@
 
 import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Helmet } from "react-helmet";
-import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Footer } from "@/components/Footer";
-import { OptimizedImage } from "@/components/ui/optimized-image";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import ContactUsButton from "@/components/ContactUsButton";
+import { CondensationControlSEO } from "@/components/specialized/condensation/CondensationControlSEO";
+import { CondensationHeader } from "@/components/specialized/condensation/CondensationHeader";
+import { CondensationInfoCards } from "@/components/specialized/condensation/CondensationInfoCards";
+import { CondensationExplanationCards } from "@/components/specialized/condensation/CondensationExplanationCards";
+import { VentilationOptions } from "@/components/specialized/condensation/VentilationOptions";
 
 const CondensationControl = () => {
   // Add logging for indexing
@@ -19,242 +19,13 @@ const CondensationControl = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Condensation Control Secondary Glazing | Window Moisture Solutions</title>
-        <meta 
-          name="description" 
-          content="Expert condensation control solutions through secondary glazing. Prevent moisture buildup, mold growth and protect your windows with our specialized installations." 
-        />
-        <meta 
-          name="keywords" 
-          content="condensation control, secondary glazing, moisture control, window protection, mold prevention, ventilation, London glazing specialist" 
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/condensation-control" />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/condensation-control" />
-        <meta property="og:title" content="Condensation Control Secondary Glazing Solutions" />
-        <meta property="og:description" content="Prevent moisture buildup and mold with our specialized secondary glazing solutions. Expert installation for lasting window protection." />
-        <meta property="og:image" content="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png" />
-        
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://secondaryglazingspecialist.com/specialized/condensation-control" />
-        <meta property="twitter:title" content="Condensation Control Secondary Glazing Solutions" />
-        <meta property="twitter:description" content="Prevent moisture buildup and mold with our specialized secondary glazing solutions. Expert installation for lasting window protection." />
-        <meta property="twitter:image" content="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png" />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "headline": "Condensation Control Secondary Glazing Solutions",
-            "description": "Expert condensation control solutions through secondary glazing. Prevent moisture buildup, mold growth and protect your windows with our specialized installations.",
-            "image": "/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png",
-            "url": "https://secondaryglazingspecialist.com/specialized/condensation-control",
-            "speakable": {
-              "@type": "SpeakableSpecification",
-              "cssSelector": ["h1", "h2", ".text-gray-600"]
-            },
-            "mainEntity": {
-              "@type": "Service",
-              "name": "Condensation Control Secondary Glazing",
-              "description": "Professional installation of secondary glazing that prevents condensation and moisture buildup on windows.",
-              "provider": {
-                "@type": "Organization",
-                "name": "Secondary Glazing Specialist",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "London",
-                  "postalCode": "W12 7LA",
-                  "streetAddress": "Arch 141, MacFarlane Road"
-                },
-                "telephone": "0207 060 1572"
-              }
-            }
-          })}
-        </script>
-        
-        {/* Breadcrumb structured data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://secondaryglazingspecialist.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Specialized Services",
-                "item": "https://secondaryglazingspecialist.com/specialized"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Condensation Control",
-                "item": "https://secondaryglazingspecialist.com/specialized/condensation-control"
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
+      <CondensationControlSEO />
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">Condensation Control</h1>
-
-        <div className="prose max-w-none mb-12 text-gray-600">
-          <p className="text-lg leading-relaxed mb-4">
-            Effective condensation control is crucial for maintaining a healthy living environment and protecting your property's 
-            windows from moisture damage. Our specialized secondary glazing solutions are designed to combat condensation issues 
-            by creating an additional barrier that helps regulate temperature differences between indoor and outdoor environments.
-          </p>
-          <p className="text-lg leading-relaxed">
-            By installing our secondary glazing systems, you can significantly reduce or eliminate condensation problems, 
-            preventing issues such as mold growth, dampness, and deterioration of window frames. Our solutions work by 
-            maintaining a more consistent surface temperature on your windows, effectively preventing the formation of 
-            condensation while also improving your property's overall thermal efficiency.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-full mb-4">
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png"
-                    alt="Close-up of a modern window ventilation system showing trickle vents and frame details"
-                    className="rounded-lg object-cover w-full h-full"
-                  />
-                </AspectRatio>
-              </div>
-              <CardTitle>How Secondary Glazing Prevents Condensation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 mb-4">
-                Secondary glazing creates an additional barrier that helps regulate temperature differences between indoor and outdoor environments, significantly reducing condensation formation.
-              </p>
-              <ul className="list-disc list-inside text-gray-500 space-y-2">
-                <li>Creates thermal barrier</li>
-                <li>Reduces cold spots on windows</li>
-                <li>Improves ventilation control</li>
-                <li>Prevents moisture buildup</li>
-                <li>Ideal for all property types</li>
-              </ul>
-            </CardContent>
-          </Card>
-          
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-full mb-4">
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/8fd22af1-94cd-4761-b8a2-531d7834baaa.png"
-                    alt="Secondary glazing installation showing effective condensation control with clear window panes"
-                    className="rounded-lg object-cover w-full h-full"
-                  />
-                </AspectRatio>
-              </div>
-              <CardTitle>Benefits of Condensation Control</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 mb-4">
-                Secondary glazing offers highly effective condensation control, bringing a wide range of benefits for both your property and your health. By creating an additional barrier between the interior and exterior environments, it reduces moisture buildup on windows, preventing issues like mold, dampness, and peeling paint.
-              </p>
-              <ul className="list-disc list-inside text-gray-500 space-y-2">
-                <li>Prevents mold growth</li>
-                <li>Protects window frames</li>
-                <li>Improves indoor air quality</li>
-                <li>Reduces maintenance costs</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card>
-            <CardHeader>
-              <CardTitle>The Science Behind It</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                Secondary glazing works by creating an insulating air gap between your existing window and the new pane. This air gap helps maintain a more consistent temperature on the inner surface of your windows, preventing the formation of condensation when warm, moist air comes into contact with cold surfaces.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Temperature Regulation</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                The additional layer of glazing helps maintain a more stable temperature on the inner surface of your windows. By reducing the temperature difference between the glass surface and room air, secondary glazing significantly decreases the likelihood of condensation forming. This is particularly effective in rooms with high humidity levels, such as kitchens and bathrooms.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Long-Term Protection</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                By controlling condensation, secondary glazing helps protect your window frames and surrounding walls from water damage, rot, and mold growth. This preventive measure can significantly extend the life of your windows and maintain the structural integrity of your property while creating a healthier living environment.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-3xl font-semibold mb-6">Ventilation Options</h2>
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-full mb-4">
-                <AspectRatio ratio={16 / 9}>
-                  <OptimizedImage
-                    src="/lovable-uploads/8fd22af1-94cd-4761-b8a2-531d7834baaa.png"
-                    alt="Ventilation system with secondary glazing"
-                    className="rounded-lg object-cover w-full h-full"
-                  />
-                </AspectRatio>
-              </div>
-              <CardTitle>Integrated Ventilation Solutions</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-gray-600">
-                  Our secondary glazing units can be fitted with specialized ventilation systems to ensure optimal air circulation while maintaining thermal and acoustic performance.
-                </p>
-                
-                <h3 className="text-xl font-semibold">Available Options</h3>
-                <ul className="list-disc list-inside text-gray-500 space-y-2">
-                  <li>Trickle vents for continuous background ventilation</li>
-                  <li>Humidity-controlled vents that respond to moisture levels</li>
-                  <li>Adjustable ventilation slots for manual control</li>
-                  <li>Removable panels for maximum ventilation when needed</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold">Benefits</h3>
-                <ul className="list-disc list-inside text-gray-500 space-y-2">
-                  <li>Maintains fresh air circulation</li>
-                  <li>Helps prevent condensation build-up</li>
-                  <li>Reduces risk of mold growth</li>
-                  <li>Preserves window frames and surroundings</li>
-                  <li>Improves indoor air quality</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        <CondensationHeader />
+        <CondensationInfoCards />
+        <CondensationExplanationCards />
+        <VentilationOptions />
       </div>
       <WhatsAppButton />
       <GetQuoteButton />
