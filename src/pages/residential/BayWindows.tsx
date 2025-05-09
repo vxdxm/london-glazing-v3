@@ -1,4 +1,5 @@
 
+import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -10,6 +11,11 @@ import BayWindowCTA from "@/components/residential/bay/BayWindowCTA";
 import GlassOptions from "@/components/residential/GlassOptions";
 
 const BayWindows = () => {
+  // Add logging for debugging indexing issues
+  useEffect(() => {
+    console.log("Bay Windows page loaded");
+  }, []);
+  
   return (
     <div className="min-h-screen bg-background">
       <BayWindowsSEO />

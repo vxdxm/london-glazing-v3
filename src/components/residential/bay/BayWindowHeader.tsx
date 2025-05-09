@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const BayWindowHeader = () => {
   return (
@@ -12,11 +13,14 @@ const BayWindowHeader = () => {
           improving thermal insulation and acoustic performance.
         </p>
       </div>
-      <div>
-        <img 
+      <div className="relative h-[300px] group">
+        <OptimizedImage 
           src="/lovable-uploads/01ceac78-bd50-418e-9067-b15d13145c5c.png"
-          alt="Elegant bay window installation"
-          className="rounded-lg w-full h-[300px] object-cover"
+          alt="Elegant bay window secondary glazing installation"
+          className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+          width={600}
+          height={300}
+          priority={true}
         />
       </div>
     </div>
