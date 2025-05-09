@@ -39,19 +39,16 @@ export function OptimizedImage({
     willChange: 'transform',
   } as React.CSSProperties;
   
-  // Fix TypeScript error by explicitly casting loading to appropriate type
   const imgProps = {
     src: optimizedSrc,
     alt,
     className: cn("w-full h-full", className),
     style: imgStyle,
-    loading: priority ? ("eager" as "eager") : ("lazy" as "lazy"),
+    loading: priority ? "eager" : "lazy",
     decoding: "async" as const,
     width,
     height,
     onError,
-    // Use lowercase fetchpriority as a data attribute instead
-    "data-fetchpriority": priority ? "high" : "auto",
   };
 
   if (aspectRatio) {
