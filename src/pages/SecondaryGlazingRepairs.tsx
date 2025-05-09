@@ -26,16 +26,29 @@ const SecondaryGlazingRepairs = () => {
       <div className="container mx-auto px-4 py-12">
         <BreadcrumbNav />
 
-        <RepairsHero />
+        <main id="main-content">
+          <RepairsHero />
 
-        <div id="spiral-balances">
-          <SpiralBalanceSection />
-        </div>
-        
-        <CommonIssues />
-        <AdditionalServices />
-        <RepairsFAQ />
-        <RepairsCTA />
+          <div id="spiral-balances" className="scroll-mt-24">
+            <SpiralBalanceSection />
+          </div>
+          
+          <section id="common-issues" aria-labelledby="common-issues-heading" className="scroll-mt-24">
+            <CommonIssues />
+          </section>
+          
+          <section id="additional-services" aria-labelledby="additional-services-heading" className="scroll-mt-24">
+            <AdditionalServices />
+          </section>
+          
+          <section id="faq" aria-labelledby="faq-heading" className="scroll-mt-24">
+            <RepairsFAQ />
+          </section>
+          
+          <section id="contact" className="scroll-mt-24">
+            <RepairsCTA />
+          </section>
+        </main>
       </div>
       
       <Footer />
