@@ -1,9 +1,10 @@
 
-import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 import { Card } from "@/components/ui/card";
+import { useEffect } from "react";
+import ModernSolutionsSEO from "@/components/residential/modern/ModernSolutionsSEO";
 
 // Import refactored components
 import TableOfContents from "@/components/residential/modern/TableOfContents";
@@ -20,6 +21,11 @@ import PageFooter from "@/components/residential/modern/PageFooter";
 const ModernSolutions = () => {
   useScrollToHash();
   
+  // Log page view for debugging indexing issues
+  useEffect(() => {
+    console.log("Modern Solutions page loaded");
+  }, []);
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -29,19 +35,7 @@ const ModernSolutions = () => {
   
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Modern Secondary Glazing Solutions | Energy Efficiency for Historic Buildings</title>
-        <meta 
-          name="description" 
-          content="Discover how modern secondary glazing solutions can transform historic buildings, providing energy efficiency while preserving architectural integrity." 
-        />
-        <meta 
-          name="keywords" 
-          content="secondary glazing, energy efficiency, historic buildings, window insulation, noise reduction, thermal efficiency" 
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/modern-solutions" />
-      </Helmet>
-      
+      <ModernSolutionsSEO />
       <MainNav />
       
       <div className="container mx-auto px-4 py-8 md:py-16">

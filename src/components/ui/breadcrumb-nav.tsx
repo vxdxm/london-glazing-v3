@@ -116,22 +116,18 @@ export const BreadcrumbNav = () => {
           // Build the path up to this segment
           const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
           
-          return (
+          return isLastSegment ? (
+            <BreadcrumbItem key={segment}>
+              <BreadcrumbPage>{label}</BreadcrumbPage>
+            </BreadcrumbItem>
+          ) : (
             <React.Fragment key={segment}>
-              {isLastSegment ? (
-                <BreadcrumbItem>
-                  <BreadcrumbPage>{label}</BreadcrumbPage>
-                </BreadcrumbItem>
-              ) : (
-                <>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink asChild>
-                      <Link to={path}>{label}</Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbSeparator />
-                </>
-              )}
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to={path}>{label}</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
             </React.Fragment>
           );
         })}
