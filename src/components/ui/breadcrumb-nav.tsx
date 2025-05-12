@@ -56,84 +56,85 @@ const routeLabels: RouteMapping = {
 
 export const BreadcrumbNav = () => {
   const location = useLocation();
+  // Add console logs to help debug
+  console.log("Current location:", location.pathname);
+  
   const pathSegments = location.pathname.split('/').filter(segment => segment);
+  console.log("Path segments:", pathSegments);
 
   // Skip rendering if we're on the home page
   if (pathSegments.length === 0) {
+    console.log("Home page detected, skipping breadcrumb");
     return null;
   }
 
-  // Special case for direct air gap page
-  if (pathSegments.length === 1 && pathSegments[0] === "air-gap-secondary-glazing") {
-    return (
-      <Breadcrumb className="mb-6">
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Home</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Air Gap Secondary Glazing</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-    );
-  }
-
-  // Special case for secondary glazing building regulations direct page
-  if (pathSegments.length === 1 && pathSegments[0] === "secondary-glazing-building-regulations") {
-    return (
-      <Breadcrumb className="mb-6">
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Home</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>Building Regulations</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-    );
-  }
-
-  return (
-    <Breadcrumb className="mb-6">
-      <BreadcrumbList>
-        <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-            <Link to="/">Home</Link>
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        
-        {pathSegments.map((segment, index) => {
-          const label = routeLabels[segment] || segment.replace(/-/g, ' ');
-          const isLastSegment = index === pathSegments.length - 1;
-          
-          // Build the path up to this segment
-          const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
-          
-          return isLastSegment ? (
-            <BreadcrumbItem key={segment}>
+  // Special case handling
+  if (pathSegments.length === 1) {
+    const segment = pathSegments[0];
+    const directRoutes = ["air-gap-secondary-glazing", "secondary-glazing-building-regulations"];
+    
+    if (directRoutes.includes(segment)) {
+      console.log("Direct route detected:", segment);
+      const label = routeLabels[segment] || segment.replace(/-/g, ' ');
+      
+      return (
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
               <BreadcrumbPage>{label}</BreadcrumbPage>
             </BreadcrumbItem>
-          ) : (
-            <React.Fragment key={segment}>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to={path}>{label}</Link>
-                </BreadcrumbLink>
+          </BreadcrumbList>
+        </Breadcrumb>
+      );
+    }
+  }
+
+  // Try/catch to prevent rendering errors from breaking the page
+  try {
+    return (
+      <Breadcrumb className="mb-6">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link to="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          
+          {pathSegments.map((segment, index) => {
+            const label = routeLabels[segment] || segment.replace(/-/g, ' ');
+            const isLastSegment = index === pathSegments.length - 1;
+            
+            // Build the path up to this segment
+            const path = `/${pathSegments.slice(0, index + 1).join('/')}`;
+            
+            return isLastSegment ? (
+              <BreadcrumbItem key={segment}>
+                <BreadcrumbPage>{label}</BreadcrumbPage>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
-            </React.Fragment>
-          );
-        })}
-      </BreadcrumbList>
-    </Breadcrumb>
-  );
+            ) : (
+              <React.Fragment key={segment}>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to={path}>{label}</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+              </React.Fragment>
+            );
+          })}
+        </BreadcrumbList>
+      </Breadcrumb>
+    );
+  } catch (error) {
+    console.error("Error in BreadcrumbNav:", error);
+    // Return null instead of breaking the entire page render
+    return null;
+  }
 };
