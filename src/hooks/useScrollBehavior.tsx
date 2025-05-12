@@ -3,6 +3,11 @@ import { useEffect } from 'react';
 
 export function useScrollBehavior() {
   useEffect(() => {
+    // Ensure we're in a browser environment
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     // Check if browser supports IntersectionObserver
     if ('IntersectionObserver' in window) {
       // Add logging to track scroll issues
@@ -35,8 +40,10 @@ export function useScrollBehavior() {
       console.log('ScrollBehavior: Browser does not support IntersectionObserver');
     }
     
-    // Detect iOS
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // Detect iOS - fixed TypeScript error by properly guarding the check
+    const userAgent = window.navigator.userAgent;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
+    
     if (isIOS) {
       console.log('ScrollBehavior: iOS device detected');
       // Add iOS specific fixes
