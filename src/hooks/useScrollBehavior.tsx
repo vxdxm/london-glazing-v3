@@ -40,9 +40,9 @@ export function useScrollBehavior() {
       console.log('ScrollBehavior: Browser does not support IntersectionObserver');
     }
     
-    // Detect iOS - fixed TypeScript error by properly guarding the check
+    // Detect iOS - fixed TypeScript error by properly handling window
     const userAgent = window.navigator.userAgent;
-    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !((window as any).MSStream);
     
     if (isIOS) {
       console.log('ScrollBehavior: iOS device detected');
