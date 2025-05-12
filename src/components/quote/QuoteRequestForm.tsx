@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
@@ -86,6 +87,13 @@ export function QuoteRequestForm() {
       setWindowCount(1);
       setDimensions([{ width: "", height: "" }]);
       setGlassType("");
+      
+      // Scroll to top of form after submission
+      const formElement = document.querySelector('form');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      
     } catch (error) {
       console.error('Error sending email:', error);
       if (error instanceof Error) {
@@ -99,7 +107,11 @@ export function QuoteRequestForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8 max-w-2xl">
+    <form 
+      onSubmit={handleSubmit} 
+      className="space-y-8 max-w-2xl"
+      data-scroll-padding="true"
+    >
       <ContactDetails
         firstName={firstName}
         lastName={lastName}

@@ -33,6 +33,36 @@
   padding-left: 1rem;
 }
 
+/* Add scroll margin to accommodate fixed elements */
+html {
+  scroll-padding-top: 120px; /* Adjust based on header height */
+  scroll-behavior: smooth;
+}
+
+/* Fix for iOS momentum scrolling */
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+/* Improve form accessibility on mobile */
+input, select, textarea, button {
+  font-size: 16px !important; /* Prevents iOS zoom on focus */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  /* Increase tap target sizes on mobile */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -55,4 +85,12 @@
   .container {
     max-width: 1280px;
   }
+}
+
+/* Fix for fixed position buttons on mobile */
+.fixed {
+  /* Ensure fixed elements display properly on iOS */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
 }
