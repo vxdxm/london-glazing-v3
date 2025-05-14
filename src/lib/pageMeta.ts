@@ -1,7 +1,7 @@
 
 import { PAGE_CONFIGS } from "@/constants/pageConfigs";
 
-interface PageMeta {
+export interface PageMeta {
   title: string;
   description: string;
   canonical: string;
