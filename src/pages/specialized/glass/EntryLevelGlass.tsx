@@ -1,9 +1,24 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 const EntryLevelGlass = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>6.4mm Entry-Level Acoustic Glass | Affordable Noise Reduction</title>
+        <meta 
+          name="description" 
+          content="Our 6.4mm entry-level acoustic laminated glass offers basic noise reduction up to 32dB for residential properties in quieter areas. Cost-effective solution with UV protection." 
+        />
+        <meta 
+          name="keywords" 
+          content="6.4mm acoustic glass, entry-level glazing, basic noise reduction, affordable secondary glazing, 32dB noise reduction, UV protection glass"
+        />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/glass/entry-level-glass" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">6.4mm Entry-Level Acoustic Glass</h1>
@@ -40,6 +55,7 @@ const EntryLevelGlass = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

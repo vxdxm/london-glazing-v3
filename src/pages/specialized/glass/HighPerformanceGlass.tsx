@@ -1,9 +1,24 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 const HighPerformanceGlass = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>10.8mm High Performance Acoustic Glass | Superior Noise Reduction</title>
+        <meta 
+          name="description" 
+          content="Our premium 10.8mm acoustic laminated glass delivers superior noise reduction up to 38dB. Ideal for properties in high-noise areas like city centers and near railways." 
+        />
+        <meta 
+          name="keywords" 
+          content="10.8mm acoustic glass, high performance glazing, superior sound insulation, 38dB noise reduction, city center properties, railway noise reduction"
+        />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">10.8mm High Performance Acoustic Glass</h1>
@@ -40,6 +55,7 @@ const HighPerformanceGlass = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

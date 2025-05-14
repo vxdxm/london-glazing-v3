@@ -36,11 +36,11 @@ export const PAGE_CONFIGS = {
     }
   },
   specialized: {
-    title: "Specialized Secondary Glazing Services",
-    description: "Custom secondary glazing solutions for unique architectural challenges and specific requirements.",
+    title: "Specialized Secondary Glazing Services | Expert Solutions",
+    description: "Custom secondary glazing solutions for unique architectural challenges and specific requirements. Tailored services for heritage properties and complex windows.",
     canonical: "https://secondaryglazingspecialist.com/specialized-services",
     ogImage: "/lovable-uploads/9843c321-bf8c-4eea-a1b3-09d57c35998d.jpg",
-    keywords: "specialized glazing, custom windows, architectural glazing, heritage windows",
+    keywords: "specialized glazing, custom windows, architectural glazing, heritage windows, bespoke glazing solutions",
     schemaMarkup: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -68,11 +68,11 @@ export const PAGE_CONFIGS = {
     }
   },
   officeBuildings: {
-    title: "Secondary Glazing for Office Buildings",
-    description: "Enhance workplace comfort and productivity with our secondary glazing solutions for commercial offices.",
+    title: "Secondary Glazing for Office Buildings | Commercial Solutions",
+    description: "Enhance workplace comfort and productivity with our secondary glazing solutions for commercial offices. Reduce noise and improve energy efficiency.",
     canonical: "https://secondaryglazingspecialist.com/commercial/office-buildings",
     ogImage: "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
-    keywords: "office glazing, commercial glazing, workplace noise reduction, office energy efficiency",
+    keywords: "office glazing, commercial glazing, workplace noise reduction, office energy efficiency, business windows",
     schemaMarkup: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -104,7 +104,7 @@ export const PAGE_CONFIGS = {
     description: "Discover how secondary glazing can reduce outside noise by up to 80%. Expert installation of acoustic glass for maximum noise reduction.",
     canonical: "https://secondaryglazingspecialist.com/secondary-glazing-noise-reduction",
     ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
-    keywords: "noise reduction glazing, sound insulation windows, acoustic glazing, secondary glazing sound",
+    keywords: "noise reduction glazing, sound insulation windows, acoustic glazing, secondary glazing sound, soundproof windows",
     schemaMarkup: {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -136,7 +136,7 @@ export const PAGE_CONFIGS = {
     description: "Specialized acoustic glazing solutions to create a quieter indoor environment. Perfect for properties near busy roads, flight paths, and urban areas.",
     canonical: "https://secondaryglazingspecialist.com/specialized/acoustic-glazing",
     ogImage: "/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png",
-    keywords: "acoustic glazing, sound reducing windows, noise reduction, sound insulation, quiet home solutions",
+    keywords: "acoustic glazing, sound reducing windows, noise reduction, sound insulation, quiet home solutions, soundproof glass",
     schemaMarkup: {
       "@context": "https://schema.org",
       "@type": "Product",
@@ -154,6 +154,80 @@ export const PAGE_CONFIGS = {
         "availability": "https://schema.org/InStock"
       },
       "image": "https://secondaryglazingspecialist.com/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png"
+    }
+  },
+  residential: {
+    title: "Residential Secondary Glazing | Home Window Solutions",
+    description: "Transform your home with our residential secondary glazing. Enhance comfort with improved noise reduction and thermal insulation for all window types.",
+    canonical: "https://secondaryglazingspecialist.com/residential",
+    ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+    keywords: "residential glazing, home windows, sash windows, casement windows, bay windows, thermal insulation, noise reduction",
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Residential Secondary Glazing",
+      "description": "Complete secondary glazing solutions for residential properties.",
+      "url": "https://secondaryglazingspecialist.com/residential",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Secondary Glazing Specialist",
+        "telephone": "0207 060 1572"
+      },
+      "image": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+    }
+  },
+  commercial: {
+    title: "Commercial Secondary Glazing | Business Property Solutions",
+    description: "Professional secondary glazing solutions for commercial properties. Improve energy efficiency, reduce noise, and enhance security for your business.",
+    canonical: "https://secondaryglazingspecialist.com/commercial",
+    ogImage: "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
+    keywords: "commercial glazing, office windows, business properties, hotel windows, energy efficiency, noise reduction",
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Commercial Secondary Glazing",
+      "description": "Professional secondary glazing solutions for commercial buildings.",
+      "url": "https://secondaryglazingspecialist.com/commercial",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Secondary Glazing Specialist",
+        "telephone": "0207 060 1572"
+      },
+      "image": "https://secondaryglazingspecialist.com/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png"
+    }
+  },
+  glassOptions: {
+    title: "Secondary Glazing Glass Options | Performance Comparison",
+    description: "Explore our range of secondary glazing glass options. Compare acoustic, thermal, and security performance to find the perfect solution for your needs.",
+    canonical: "https://secondaryglazingspecialist.com/specialized/glass-options",
+    ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+    keywords: "secondary glazing glass, acoustic glass, thermal glass, security glass, glazing options, performance comparison",
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Secondary Glazing Glass Options",
+      "description": "Different types of glass available for secondary glazing installations.",
+      "url": "https://secondaryglazingspecialist.com/specialized/glass-options",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Entry-Level Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/entry-level-glass"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Medium Performance Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/medium-performance-glass"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "High Performance Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass"
+        }
+      ]
     }
   }
 };
