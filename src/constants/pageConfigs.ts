@@ -1,3 +1,4 @@
+
 export const PAGE_CONFIGS = {
   home: {
     title: "UK's Leading Secondary Glazing Experts",
@@ -47,5 +48,19 @@ export const PAGE_CONFIGS = {
     canonical: "https://secondaryglazingspecialist.com/commercial/office-buildings",
     ogImage: "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
     keywords: "office glazing, commercial glazing, workplace noise reduction, office energy efficiency"
+  },
+  noiseReduction: {
+    title: "Secondary Glazing Noise Reduction | Up to 80% Sound Reduction",
+    description: "Discover how secondary glazing can reduce outside noise by up to 80%. Expert installation of acoustic glass for maximum noise reduction.",
+    canonical: "https://secondaryglazingspecialist.com/secondary-glazing-noise-reduction",
+    ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+    keywords: "noise reduction glazing, sound insulation windows, acoustic glazing, secondary glazing sound"
+  },
+  acousticGlazing: {
+    title: "Acoustic Secondary Glazing Solutions | Reduce Noise by up to 80%",
+    description: "Specialized acoustic glazing solutions to create a quieter indoor environment. Perfect for properties near busy roads, flight paths, and urban areas.",
+    canonical: "https://secondaryglazingspecialist.com/specialized/acoustic-glazing",
+    ogImage: "/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png",
+    keywords: "acoustic glazing, sound reducing windows, noise reduction, sound insulation, quiet home solutions"
   }
 };
