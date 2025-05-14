@@ -1,12 +1,13 @@
 
+import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { useEffect } from "react";
-import AcousticGlazingSEO from "@/components/specialized/acoustic/AcousticGlazingSEO";
+import { DynamicSEO } from "@/components/DynamicSEO";
+import { PAGE_CONFIGS } from "@/constants/pageConfigs";
 
 const AcousticGlazing = () => {
   // Add logging for indexing
@@ -16,7 +17,7 @@ const AcousticGlazing = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <AcousticGlazingSEO />
+      <DynamicSEO {...PAGE_CONFIGS.acousticGlazing} />
       <MainNav />
 
       <main className="container mx-auto px-4 py-8 sm:py-16 flex-grow">
