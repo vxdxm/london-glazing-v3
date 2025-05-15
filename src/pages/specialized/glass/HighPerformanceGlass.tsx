@@ -2,23 +2,53 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { SeoHead } from "@/components/ui/seo-head";
 
 const HighPerformanceGlass = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>10.8mm High Performance Acoustic Glass | Superior Noise Reduction</title>
-        <meta 
-          name="description" 
-          content="Our premium 10.8mm acoustic laminated glass delivers superior noise reduction up to 38dB. Ideal for properties in high-noise areas like city centers and near railways." 
-        />
-        <meta 
-          name="keywords" 
-          content="10.8mm acoustic glass, high performance glazing, superior sound insulation, 38dB noise reduction, city center properties, railway noise reduction"
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass" />
-      </Helmet>
+      <SeoHead
+        title="10.8mm High Performance Acoustic Glass | Superior Noise Reduction"
+        description="Our premium 10.8mm acoustic laminated glass delivers superior noise reduction up to 38dB. Ideal for properties in high-noise areas like city centers and near railways."
+        canonicalUrl="https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass"
+        ogTitle="10.8mm High Performance Acoustic Glass | Premium Sound Insulation"
+        ogDescription="Premium 10.8mm acoustic glass for properties in high-noise environments. Delivers unmatched sound insulation up to 38dB while providing enhanced security."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "10.8mm High Performance Acoustic Glass",
+          "description": "Premium acoustic laminated glass with superior noise reduction properties up to 38dB.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Secondary Glazing Specialist"
+          },
+          "category": "Acoustic Glazing",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "Noise Reduction",
+              "value": "Up to 38dB"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Glass Thickness",
+              "value": "10.8mm"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Glass Type",
+              "value": "Laminated Acoustic"
+            }
+          ]
+        }}
+      >
+        <meta name="keywords" content="10.8mm acoustic glass, high performance glazing, superior sound insulation, 38dB noise reduction, city center properties, railway noise reduction" />
+      </SeoHead>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">10.8mm High Performance Acoustic Glass</h1>

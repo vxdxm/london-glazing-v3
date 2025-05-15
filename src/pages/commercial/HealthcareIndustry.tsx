@@ -1,22 +1,46 @@
+
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Helmet } from "react-helmet";
+import { SeoHead } from "@/components/ui/seo-head";
 
 const HealthcareIndustry = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Healthcare Secondary Glazing Solutions | Medical Facility Windows</title>
-        <meta name="description" content="Specialized secondary glazing solutions for healthcare facilities. Superior noise reduction, temperature control, and hygiene standards for hospitals and medical centers." />
+      <SeoHead
+        title="Healthcare Secondary Glazing Solutions | Medical Facility Windows"
+        description="Specialized secondary glazing solutions for healthcare facilities. Superior noise reduction, temperature control, and hygiene standards for hospitals and medical centers."
+        canonicalUrl="https://secondaryglazingspecialist.com/commercial/healthcare-industry"
+        ogTitle="Healthcare Secondary Glazing Solutions | Medical Facility Windows"
+        ogDescription="Expert secondary glazing solutions for healthcare facilities. Create optimal healing environments with superior noise reduction and climate control."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Healthcare Secondary Glazing Solutions",
+          "description": "Specialized glazing solutions for hospitals, medical centers and healthcare facilities.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Secondary Glazing Specialist",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "London",
+              "postalCode": "W12 7LA",
+              "streetAddress": "Arch 141, MacFarlane Road"
+            },
+            "telephone": "0207 060 1572"
+          },
+          "image": "https://secondaryglazingspecialist.com/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+          }
+        }}
+      >
         <meta name="keywords" content="healthcare glazing, hospital windows, medical facility glazing, noise reduction, temperature control, sterile environments" />
-        <meta property="og:title" content="Healthcare Secondary Glazing Solutions | Medical Facility Windows" />
-        <meta property="og:description" content="Expert secondary glazing solutions for healthcare facilities. Create optimal healing environments with superior noise reduction and climate control." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/healthcare-industry" />
-      </Helmet>
+      </SeoHead>
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
