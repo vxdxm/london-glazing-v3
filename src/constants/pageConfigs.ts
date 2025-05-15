@@ -1,4 +1,3 @@
-
 export const PAGE_CONFIGS = {
   home: {
     title: "UK's Leading Secondary Glazing Experts",
