@@ -1,4 +1,6 @@
 
+import { PAGE_CONFIGS } from "@/constants/pageConfigs";
+
 export interface PageMeta {
   title: string;
   description: string;
