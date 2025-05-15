@@ -7,7 +7,7 @@ export interface PageMeta {
   canonical: string;
   ogImage: string;
   keywords?: string;
-  schemaMarkup?: any; // Accept any schema structure without type constraints
+  schemaMarkup?: any; // Use 'any' to allow different schema structures
 }
 
 /**

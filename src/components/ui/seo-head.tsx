@@ -10,7 +10,7 @@ interface SeoHeadProps {
   ogDescription?: string;
   ogType?: 'website' | 'article' | 'product' | 'profile' | 'book';
   ogImage?: string;
-  jsonLd?: any;
+  jsonLd?: any; // Allow any JSON-LD schema
   children?: React.ReactNode;
 }
 
