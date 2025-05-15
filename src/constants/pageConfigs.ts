@@ -1,5 +1,16 @@
+// Use Record<string, any> type for flexible schema structure
+type SchemaMarkup = Record<string, any>;
 
-export const PAGE_CONFIGS = {
+interface PageConfig {
+  title: string;
+  description: string;
+  canonical: string;
+  ogImage: string;
+  keywords?: string;
+  schemaMarkup?: SchemaMarkup;
+}
+
+export const PAGE_CONFIGS: Record<string, PageConfig> = {
   home: {
     title: "UK's Leading Secondary Glazing Experts",
     description: "Premium secondary glazing solutions across the UK. Noise reduction + thermal insulation specialists for residential and commercial properties.",
@@ -156,6 +167,40 @@ export const PAGE_CONFIGS = {
       "image": "https://secondaryglazingspecialist.com/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png"
     }
   },
+  glassOptions: {
+    title: "Secondary Glazing Glass Options | Performance Comparison",
+    description: "Explore our range of secondary glazing glass options. Compare acoustic, thermal, and security performance to find the perfect solution for your needs.",
+    canonical: "https://secondaryglazingspecialist.com/specialized/glass-options",
+    ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+    keywords: "secondary glazing glass, acoustic glass, thermal glass, security glass, glazing options, performance comparison",
+    schemaMarkup: {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Secondary Glazing Glass Options",
+      "description": "Different types of glass available for secondary glazing installations.",
+      "url": "https://secondaryglazingspecialist.com/specialized/glass-options",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Entry-Level Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/entry-level-glass"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Medium Performance Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/medium-performance-glass"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "High Performance Acoustic Glass",
+          "url": "https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass"
+        }
+      ]
+    }
+  },
   residential: {
     title: "Residential Secondary Glazing | Home Window Solutions",
     description: "Transform your home with our residential secondary glazing. Enhance comfort with improved noise reduction and thermal insulation for all window types.",
@@ -194,40 +239,6 @@ export const PAGE_CONFIGS = {
         "telephone": "0207 060 1572"
       },
       "image": "https://secondaryglazingspecialist.com/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png"
-    }
-  },
-  glassOptions: {
-    title: "Secondary Glazing Glass Options | Performance Comparison",
-    description: "Explore our range of secondary glazing glass options. Compare acoustic, thermal, and security performance to find the perfect solution for your needs.",
-    canonical: "https://secondaryglazingspecialist.com/specialized/glass-options",
-    ogImage: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
-    keywords: "secondary glazing glass, acoustic glass, thermal glass, security glass, glazing options, performance comparison",
-    schemaMarkup: {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Secondary Glazing Glass Options",
-      "description": "Different types of glass available for secondary glazing installations.",
-      "url": "https://secondaryglazingspecialist.com/specialized/glass-options",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Entry-Level Acoustic Glass",
-          "url": "https://secondaryglazingspecialist.com/specialized/glass/entry-level-glass"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Medium Performance Acoustic Glass",
-          "url": "https://secondaryglazingspecialist.com/specialized/glass/medium-performance-glass"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "High Performance Acoustic Glass",
-          "url": "https://secondaryglazingspecialist.com/specialized/glass/high-performance-glass"
-        }
-      ]
     }
   }
 };

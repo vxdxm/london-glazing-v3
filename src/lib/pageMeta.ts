@@ -1,13 +1,16 @@
 
 import { PAGE_CONFIGS } from "@/constants/pageConfigs";
 
+// Define a generic SchemaMarkup type to avoid TypeScript errors
+type SchemaMarkup = Record<string, any>;
+
 export interface PageMeta {
   title: string;
   description: string;
   canonical: string;
   ogImage: string;
   keywords?: string;
-  schemaMarkup?: any; // Using 'any' type to allow different schema structures
+  schemaMarkup?: SchemaMarkup;
 }
 
 /**
