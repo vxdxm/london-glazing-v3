@@ -1,47 +1,19 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
 import { Link } from "react-router-dom";
-import { SeoHead } from "@/components/ui/seo-head";
 
 const SecurityGlazing = () => {
   return <div className="min-h-screen bg-background">
-      <SeoHead 
-        title="Security Secondary Glazing Solutions | Enhanced Property Protection"
-        description="Protect your property with our security secondary glazing solutions. Combining toughened glass options with multi-point locking systems for superior protection against break-ins."
-        canonicalUrl="https://secondaryglazingspecialist.com/specialized/security-glazing"
-        ogTitle="Security Secondary Glazing Solutions | Enhanced Property Protection"
-        ogDescription="Advanced security glazing systems with multi-point locking mechanisms and reinforced frames provide superior protection for your property."
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "name": "Security Secondary Glazing",
-          "description": "Advanced security secondary glazing solutions for enhanced property protection.",
-          "brand": {
-            "@type": "Brand",
-            "name": "Secondary Glazing Specialist"
-          },
-          "image": "/lovable-uploads/ef528e3e-c607-4674-a887-b1635565f167.jpg",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "GBP",
-            "availability": "https://schema.org/InStock"
-          },
-          "category": "Security Solutions"
-        }}
-      >
-        <meta name="keywords" content="security glazing, anti-break in windows, security glass, window security, anti-theft windows, secure secondary glazing, laminated glass security, security locks for windows" />
-      </SeoHead>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-4">Security Secondary Glazing Solutions</h1>
+        <h1 className="text-4xl font-bold mb-4">Security Glazing Solutions</h1>
         
         <div className="prose max-w-none mb-8 text-gray-600">
           <p className="text-lg">
-            Our security secondary glazing solutions provide superior protection for your property through advanced secondary glazing technology. 
+            Our security glazing solutions provide superior protection for your property through advanced secondary glazing technology. 
             By adding an additional layer of specially designed security glass to your existing windows, we create a robust barrier 
             against forced entry while maintaining the aesthetic appeal of your property. Our solutions combine toughened or laminated 
             glass options with heavy-duty frames and sophisticated locking mechanisms to deliver comprehensive security without 

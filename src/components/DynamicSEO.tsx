@@ -8,7 +8,7 @@ interface DynamicSEOProps {
   canonical: string;
   keywords?: string;
   ogImage?: string;
-  schemaMarkup?: Record<string, any>; // Using Record<string, any> for flexible schema structure
+  schemaMarkup?: Record<string, any>;
 }
 
 export const DynamicSEO = ({

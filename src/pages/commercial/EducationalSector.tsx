@@ -1,53 +1,63 @@
 
+import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { SeoHead } from "@/components/ui/seo-head";
 
 const EducationalSector = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SeoHead
-        title="Secondary Glazing for Schools and Universities | Educational Sector"
-        description="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities."
-        canonicalUrl="https://secondaryglazingspecialist.com/commercial/educational-sector"
-        ogTitle="Secondary Glazing for Schools and Universities | Educational Sector"
-        ogDescription="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities."
-        ogType="article"
-        ogImage="https://secondaryglazingspecialist.com/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": "Educational Sector Secondary Glazing Solutions",
-          "description": "Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities.",
-          "provider": {
-            "@type": "Organization",
-            "name": "Secondary Glazing Specialist",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+      <Helmet>
+        <title>Secondary Glazing for Schools and Universities | Educational Sector</title>
+        <meta 
+          name="description" 
+          content="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities." 
+        />
+        <meta 
+          name="keywords" 
+          content="educational glazing, school windows, university glazing, classroom noise reduction, energy efficient schools, learning environment, acoustic glazing for schools, university buildings" 
+        />
+        <meta property="og:title" content="Secondary Glazing for Schools and Universities | Educational Sector" />
+        <meta property="og:description" content="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/educational-sector" />
+        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/educational-sector" />
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Educational Sector Secondary Glazing Solutions",
+            "description": "Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Secondary Glazing Specialist",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+              }
+            },
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg",
+            "serviceType": "Secondary Glazing Installation",
+            "serviceArea": {
+              "@type": "Place",
+              "name": "London, United Kingdom"
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Educational Institutions"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://secondaryglazingspecialist.com/commercial/educational-sector"
             }
-          },
-          "image": "https://secondaryglazingspecialist.com/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg",
-          "serviceType": "Secondary Glazing Installation",
-          "serviceArea": {
-            "@type": "Place",
-            "name": "London, United Kingdom"
-          },
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Educational Institutions"
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://secondaryglazingspecialist.com/commercial/educational-sector"
           }
-        }}
-      >
-        <meta name="keywords" content="educational glazing, school windows, university glazing, classroom noise reduction, energy efficient schools, learning environment, acoustic glazing for schools, university buildings" />
-      </SeoHead>
+        `}
+        </script>
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
