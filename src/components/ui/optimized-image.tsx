@@ -8,56 +8,59 @@ interface OptimizedImageProps {
   alt: string;
   width?: number;
   height?: number;
-  className?: string;
   aspectRatio?: number;
+  className?: string;
+  objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
   priority?: boolean;
-  objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
-  lazyBoundary?: string;
   onError?: () => void;
 }
 
-export function OptimizedImage({
+export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   src,
   alt,
   width,
   height,
+  aspectRatio = 16/9,
   className,
-  aspectRatio,
+  objectFit = 'cover',
   priority = false,
-  objectFit = "cover",
-  lazyBoundary = "200px",
-  onError,
-}: OptimizedImageProps) {
-  // Add query params to optimize CDN delivery if src is a URL
-  const optimizedSrc = src.startsWith('http') && !src.includes('?') 
-    ? `${src}?auto=format,compress&q=80` 
-    : src;
-  
-  const imgStyle = {
-    objectFit,
-    // Add will-change to optimize GPU rendering for animations
-    willChange: 'transform',
-  } as React.CSSProperties;
-  
-  const imgProps = {
-    src: optimizedSrc,
-    alt,
-    className: cn("w-full h-full", className),
-    style: imgStyle,
-    loading: priority ? "eager" as const : "lazy" as const,
-    decoding: "async" as const,
-    width,
-    height,
-    onError,
-  };
+  onError
+}) => {
+  const imgClasses = cn(
+    'w-full h-full',
+    objectFit === 'cover' && 'object-cover',
+    objectFit === 'contain' && 'object-contain',
+    objectFit === 'fill' && 'object-fill',
+    objectFit === 'none' && 'object-none',
+    objectFit === 'scale-down' && 'object-scale-down',
+    className
+  );
 
   if (aspectRatio) {
     return (
-      <AspectRatio ratio={aspectRatio} className={className}>
-        <img {...imgProps} />
+      <AspectRatio ratio={aspectRatio}>
+        <img
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className={imgClasses}
+          loading={priority ? "eager" : "lazy"}
+          onError={onError}
+        />
       </AspectRatio>
     );
   }
 
-  return <img {...imgProps} />;
-}
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={cn(imgClasses, 'block')}
+      loading={priority ? "eager" : "lazy"}
+      onError={onError}
+    />
+  );
+};

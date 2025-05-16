@@ -1,16 +1,19 @@
+
 import React from "react";
 import { MainNav } from "@/components/MainNav";
-import NoiseReductionSEO from "@/pages/specialized/NoiseReductionSEO";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
+import { DynamicSEO } from "@/components/DynamicSEO";
+import { PAGE_CONFIGS } from "@/constants/pageConfigs";
+import { Footer } from "@/components/Footer";
 
 const SecondaryGlazingNoiseReduction = () => {
   useScrollToHash();
   
   return (
     <div className="min-h-screen bg-background">
-      <NoiseReductionSEO />
+      <DynamicSEO {...PAGE_CONFIGS.noiseReduction} />
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
@@ -42,6 +45,7 @@ const SecondaryGlazingNoiseReduction = () => {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
