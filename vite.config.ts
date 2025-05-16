@@ -41,19 +41,16 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     // Reduce chunk size to improve caching
-    chunkSizeWarningLimit: 1600,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
-      external: ['react', 'react-dom'], // Explicitly mark React as external
       output: {
-        // Use function-based manualChunks to exclude React packages
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom')) {
-              return; // Skip React packages
-            }
-            // Group other node_modules in the vendor chunk
-            return 'vendor';
-          }
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'ui-components': ['@/components/ui/index'],
+          'charts': ['recharts'],
+          'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
+          'utils': ['@/lib/utils'],
+          'lucide': ['lucide-react'],
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
@@ -79,10 +76,6 @@ export default defineConfig(({ mode }) => ({
     ],
     // Disable dependency optimization scanning in node_modules
     exclude: ['lovable-tagger'],
-  },
-  // Add SSR configuration to ensure React is included
-  ssr: {
-    noExternal: ['react', 'react-dom']
   },
   // Add compression options
   esbuild: {

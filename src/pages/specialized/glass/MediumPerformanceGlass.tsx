@@ -1,24 +1,9 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
 
 const MediumPerformanceGlass = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>8.8mm Medium Performance Acoustic Glass | Enhanced Noise Protection</title>
-        <meta 
-          name="description" 
-          content="Our 8.8mm acoustic laminated glass reduces noise by up to 35dB, perfect for properties in urban environments. Advanced laminated construction with enhanced security features." 
-        />
-        <meta 
-          name="keywords" 
-          content="8.8mm acoustic glass, medium performance glazing, urban noise reduction, 35dB noise reduction, enhanced security glass, laminated construction"
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/glass/medium-performance-glass" />
-      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">8.8mm Medium Performance Acoustic Glass</h1>
@@ -55,7 +40,6 @@ const MediumPerformanceGlass = () => {
           </Card>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

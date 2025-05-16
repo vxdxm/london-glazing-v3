@@ -7,8 +7,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { LazyLoadWrapper } from "@/components/ui";
-import { DynamicSEO } from "@/components/DynamicSEO";
-import { PAGE_CONFIGS } from "@/constants/pageConfigs";
+import HomeSEO from "@/components/home/HomeSEO";
 import HomeExamples from "@/components/home/HomeExamples";
 import HomeBenefits from "@/components/home/HomeBenefits";
 import HomeSustainability from "@/components/home/HomeSustainability";
@@ -21,7 +20,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen">
-      <DynamicSEO {...PAGE_CONFIGS.home} />
+      <HomeSEO />
       <MainNav />
       <Hero />
       <Services />

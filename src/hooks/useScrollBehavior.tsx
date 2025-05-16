@@ -1,63 +1,65 @@
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-interface ScrollPosition {
-  x: number;
-  y: number;
-}
-
-export const useScrollBehavior = (viewHeight: number) => {
-  const [scrollPosition, setScrollPosition] = useState<ScrollPosition>({ x: 0, y: 0 });
-  const [showContent, setShowContent] = useState<boolean>(false);
-  const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up');
-  const [lastScrollTop, setLastScrollTop] = useState<number>(0);
-
-  const handleScroll = () => {
-    // Only execute if window is defined (browser environment)
-    if (typeof window !== 'undefined') {
-      const position = { x: window.scrollX, y: window.scrollY };
-      setScrollPosition(position);
-
-      // Determine scroll direction
-      if (position.y > lastScrollTop) {
-        setScrollDirection('down');
-      } else if (position.y < lastScrollTop) {
-        setScrollDirection('up');
-      }
-
-      setLastScrollTop(position.y <= 0 ? 0 : position.y);
-
-      // Show content when scrolled down enough
-      if (position.y > viewHeight) {
-        setShowContent(true);
-      } else {
-        setShowContent(false);
-      }
-    }
-  };
-
-  // Detect iOS device to handle body fixed positioning issues
-  const isIOS = () => {
-    if (typeof window !== 'undefined' && window.navigator) {
-      return /iPad|iPhone|iPod/.test(window.navigator.userAgent) && 
-             !(window as any).MSStream;
-    }
-    return false;
-  };
-
+export function useScrollBehavior() {
   useEffect(() => {
-    // Only add event listener if window is defined (browser environment)
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', handleScroll, { passive: true });
+    // Ensure we're in a browser environment
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    // Check if browser supports IntersectionObserver
+    if ('IntersectionObserver' in window) {
+      // Add logging to track scroll issues
+      console.log('ScrollBehavior: Setting up intersection observer');
+      
+      // Create observer for header overlap detection
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // When an element with data-scroll-padding is intersecting viewport
+            if (entry.isIntersecting) {
+              const element = entry.target;
+              console.log('ScrollBehavior: Element visible:', element);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      
+      // Observe all elements that might be impacted by header overlap
+      document.querySelectorAll('[data-scroll-padding]').forEach((el) => {
+        observer.observe(el);
+      });
       
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+        observer.disconnect();
       };
+    } else {
+      // Fallback for browsers without IntersectionObserver
+      console.log('ScrollBehavior: Browser does not support IntersectionObserver');
     }
     
-    // Return a no-op cleanup function when not in browser environment
-    return () => {};
-  }, [lastScrollTop, viewHeight]);
-
-  return { scrollPosition, showContent, scrollDirection, isIOS: isIOS() };
-};
+    // Detect iOS - fixed TypeScript error by properly guarding the check
+    const userAgent = window.navigator.userAgent;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !(window as any).MSStream;
+    
+    if (isIOS) {
+      console.log('ScrollBehavior: iOS device detected');
+      // Add iOS specific fixes
+      document.documentElement.classList.add('ios-device');
+    }
+    
+    // Log viewport dimensions
+    const logViewportSize = () => {
+      console.log(`ScrollBehavior: Viewport size: ${window.innerWidth}x${window.innerHeight}`);
+    };
+    
+    logViewportSize();
+    window.addEventListener('resize', logViewportSize);
+    
+    return () => {
+      window.removeEventListener('resize', logViewportSize);
+    };
+  }, []);
+}
