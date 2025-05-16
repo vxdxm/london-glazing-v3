@@ -44,8 +44,8 @@ export default defineConfig(({ mode }) => ({
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
+        // Modified manualChunks to avoid including React
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
           'ui-components': ['@/components/ui/index'],
           'charts': ['recharts'],
           'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
