@@ -1,9 +1,18 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Footer } from "@/components/Footer";
+import { DynamicSEO } from "@/components/DynamicSEO";
 
 const PremiumGlass = () => {
   return (
     <div className="min-h-screen bg-background">
+      <DynamicSEO 
+        title="12.8mm Premium Acoustic Glass | Maximum Noise Reduction"
+        description="Our 12.8mm premium acoustic laminated glass offers maximum noise reduction up to 41dB, perfect for properties near airports or busy urban environments."
+        canonical="https://secondaryglazingspecialist.com/specialized/glass/premium-glass"
+        ogImage="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
+      />
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">12.8mm Premium Acoustic Glass</h1>
@@ -40,6 +49,7 @@ const PremiumGlass = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
