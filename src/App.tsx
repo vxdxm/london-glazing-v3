@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
@@ -157,11 +157,13 @@ const App = () => (
       </Helmet>
       <Toaster />
       <Sonner />
-      <DeviceCompatibility />
-      <AppRoutes />
-      <ContactUsButton />
-      <GetQuoteButton />
-      <WhatsAppButton />
+      <BrowserRouter basename="/">
+        <DeviceCompatibility />
+        <AppRoutes />
+        <ContactUsButton />
+        <GetQuoteButton />
+        <WhatsAppButton />
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -1,25 +1,14 @@
 
 import React from "react";
-import ReactDOM, { createRoot, hydrateRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { LazyLoadProvider } from "./providers/LazyLoadProvider";
 
-const root = document.getElementById("root")!;
-const app = (
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <LazyLoadProvider>
-        <App />
-      </LazyLoadProvider>
-    </BrowserRouter>
+    <LazyLoadProvider>
+      <App />
+    </LazyLoadProvider>
   </React.StrictMode>
 );
-
-// Use hydration for SSR in production
-if (import.meta.env.PROD) {
-  hydrateRoot(root, app);
-} else {
-  createRoot(root).render(app);
-}
