@@ -6,10 +6,6 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Helmet } from "react-helmet";
 import { Shield, Sun, Sofa, Palette } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
-import { lazy, Suspense } from "react";
-
-// Lazy load components that aren't needed for initial render
-const LazyFooter = lazy(() => import("@/components/Footer").then(module => ({ default: module.Footer })));
 
 const UVProtection = () => {
   return (
@@ -119,9 +115,7 @@ const UVProtection = () => {
           </Card>
         </div>
       </div>
-      <Suspense fallback={<div className="h-40 bg-gray-100"></div>}>
-        <LazyFooter />
-      </Suspense>
+      <Footer />
     </div>
   );
 };
