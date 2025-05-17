@@ -1,9 +1,24 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 const EnhancedEntryGlass = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>6.8mm Enhanced Entry-Level Acoustic Glass | Improved Sound Insulation</title>
+        <meta 
+          name="description" 
+          content="Our 6.8mm enhanced acoustic glass provides improved sound insulation up to 33dB. Perfect for properties in suburban areas with moderate traffic and improved security." 
+        />
+        <meta 
+          name="keywords" 
+          content="6.8mm acoustic glass, enhanced entry-level glazing, moderate noise reduction, 33dB noise reduction, suburban properties, improved security glass"
+        />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/glass/enhanced-entry-glass" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">6.8mm Enhanced Entry-Level Acoustic Glass</h1>
@@ -40,6 +55,7 @@ const EnhancedEntryGlass = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
