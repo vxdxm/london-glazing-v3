@@ -14,7 +14,7 @@ const SingleDoubleGlazed = () => {
     title: "Single & Double Glazed Secondary Windows | Heritage Window Solutions",
     description: "Learn about single and double glazed secondary windows - compare options, benefits, and find the perfect solution for your property.",
     canonicalPath: "/residential/single-double-glazed",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["single glazed", "double glazed", "secondary windows", "thermal insulation", "noise reduction", "window comparison"]

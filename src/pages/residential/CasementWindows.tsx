@@ -19,7 +19,7 @@ const CasementWindows = () => {
     description: "Expert casement window secondary glazing solutions for period properties. Improve thermal insulation and noise reduction while preserving the original character of your windows.",
     canonicalPath: "/residential/casement-windows",
     imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["casement window", "secondary glazing", "thermal insulation", "noise reduction", "period property", "heritage windows"]

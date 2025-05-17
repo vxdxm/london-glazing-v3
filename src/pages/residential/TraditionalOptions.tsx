@@ -16,7 +16,7 @@ const TraditionalOptions = () => {
     description: "Discover how traditional secondary glazing solutions can enhance the insulation and heritage value of listed windows while complying with conservation requirements.",
     canonicalPath: "/residential/traditional-options",
     imageUrl: "/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["traditional secondary glazing", "listed buildings", "heritage windows", "energy efficiency", "window preservation", "conservation areas"]

@@ -16,7 +16,7 @@ const FixedSecondaryGlazing = () => {
     description: "Discover our fixed secondary glazing solutions for permanent thermal and acoustic insulation. Perfect for windows that don't need regular access.",
     canonicalPath: "/residential/fixed-secondary-glazing",
     imageUrl: "/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["fixed secondary glazing", "permanent glazing", "window insulation", "thermal efficiency", "noise reduction", "historic buildings"]

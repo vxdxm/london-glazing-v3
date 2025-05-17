@@ -17,7 +17,7 @@ const EnergyPerformance = () => {
     description: "Boost your home's energy performance with secondary glazing. Calculate your potential savings from improved insulation and reduced heat loss - up to 60% more efficient.",
     canonicalPath: "/residential/energy-performance",
     imageUrl: "/lovable-uploads/580ad3ed-9e6a-4a69-81ad-2a84b36a0150.jpg",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["secondary glazing", "energy efficiency", "thermal performance", "energy savings", "window insulation", "home improvement"]

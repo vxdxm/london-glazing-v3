@@ -16,7 +16,7 @@ const SashWindows = () => {
     description: "Discover expert sash window secondary glazing solutions designed to preserve period property character while providing modern insulation benefits and reducing noise levels by up to 80%.",
     canonicalPath: "/residential/sash-windows",
     imageUrl: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["sash window secondary glazing", "noise reduction", "period property insulation", "vertical sliding windows", "tilt-in sash windows", "thermal performance"]

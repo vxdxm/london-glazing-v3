@@ -18,7 +18,7 @@ const Combination = () => {
     description: "Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs.",
     canonicalPath: "/residential/combination",
     imageUrl: "/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["combination windows", "mixed window styles", "secondary glazing", "sash windows", "casement windows", "bay windows", "noise reduction", "thermal insulation"]

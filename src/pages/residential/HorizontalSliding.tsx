@@ -19,7 +19,7 @@ const HorizontalSliding = () => {
     description: "Discover our horizontal sliding secondary glazing - ideal for wide windows with smooth operation and excellent ventilation. Combines thermal insulation with easy access.",
     canonicalPath: "/residential/horizontal-sliding",
     imageUrl: "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["horizontal sliding windows", "sliding secondary glazing", "thermal insulation", "noise reduction", "wide window openings", "residential glazing"]

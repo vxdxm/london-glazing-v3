@@ -18,7 +18,7 @@ const BayWindows = () => {
     description: "Expert secondary glazing for bay windows that preserves period features while enhancing thermal and acoustic performance. Bespoke solutions for London properties.",
     canonicalPath: "/residential/bay-windows",
     imageUrl: "/lovable-uploads/01ceac78-bd50-418e-9067-b15d13145c5c.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["bay window secondary glazing", "bay window insulation", "heritage bay windows", "thermal performance", "acoustic glazing", "traditional bay window solutions"]

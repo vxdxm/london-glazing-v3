@@ -14,7 +14,7 @@ const LiftOut = () => {
     description: "Our lift out secondary glazing provides maximum accessibility and ease of maintenance. Perfect for windows requiring regular cleaning with excellent thermal and acoustic insulation.",
     canonicalPath: "/residential/lift-out",
     imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["lift out secondary glazing", "removable window panels", "easy maintenance windows", "heritage window solutions", "listed building glazing", "thermal insulation"]

@@ -23,7 +23,7 @@ const ModernSolutions = () => {
     description: "Discover how modern secondary glazing techniques can enhance historic properties with improved energy efficiency and noise reduction while preserving architectural integrity.",
     canonicalPath: "/residential/modern-solutions",
     imageUrl: "/lovable-uploads/c23f8df7-ca5f-4d5d-913a-5d6c11eae435.jpg",
-    type: "article",
+    type: "article" as const,
     publishedDate: "2025-05-09",
     modifiedDate: "2025-05-17",
     keywords: ["modern secondary glazing", "heritage properties", "energy efficiency", "noise reduction", "window preservation", "architectural integrity", "thermal performance"]
