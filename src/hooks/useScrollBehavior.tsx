@@ -40,7 +40,7 @@ export const useScrollBehavior = (viewHeight: number) => {
   const isIOS = () => {
     if (typeof window !== 'undefined' && window.navigator) {
       return /iPad|iPhone|iPod/.test(window.navigator.userAgent) && 
-             !(window as any).MSStream;
+             !(window as any).MSStream; // Cast window to any to avoid TypeScript errors
     }
     return false;
   };

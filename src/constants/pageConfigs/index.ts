@@ -6,7 +6,21 @@ import {
   acousticGlazingConfig, 
   glassOptionsConfig 
 } from "./specializedConfigs";
-import { residentialConfig } from "./residentialConfigs";
+import { 
+  residentialConfig,
+  sashWindowsConfig,
+  casementWindowsConfig,
+  bayWindowsConfig,
+  horizontalSlidingConfig,
+  liftOutConfig,
+  combinationConfig,
+  traditionalOptionsConfig,
+  modernSolutionsConfig,
+  energyPerformanceConfig,
+  crittallWindowsConfig,
+  singleDoubleGlazedConfig,
+  fixedSecondaryGlazingConfig
+} from "./residentialConfigs";
 import { commercialConfig, officeBuildingsConfig } from "./commercialConfigs";
 import { PageConfig } from "../pageConfigTypes";
 
@@ -18,6 +32,18 @@ export const PAGE_CONFIGS: Record<string, PageConfig> = {
   acousticGlazing: acousticGlazingConfig,
   glassOptions: glassOptionsConfig,
   residential: residentialConfig,
+  sashWindows: sashWindowsConfig,
+  casementWindows: casementWindowsConfig,
+  bayWindows: bayWindowsConfig,
+  horizontalSliding: horizontalSlidingConfig,
+  liftOut: liftOutConfig,
+  combination: combinationConfig,
+  traditionalOptions: traditionalOptionsConfig,
+  modernSolutions: modernSolutionsConfig,
+  energyPerformance: energyPerformanceConfig,
+  crittallWindows: crittallWindowsConfig,
+  singleDoubleGlazed: singleDoubleGlazedConfig,
+  fixedSecondaryGlazing: fixedSecondaryGlazingConfig,
   commercial: commercialConfig,
   officeBuildings: officeBuildingsConfig
 };
@@ -30,6 +56,18 @@ export {
   acousticGlazingConfig,
   glassOptionsConfig,
   residentialConfig,
+  sashWindowsConfig,
+  casementWindowsConfig,
+  bayWindowsConfig,
+  horizontalSlidingConfig,
+  liftOutConfig,
+  combinationConfig,
+  traditionalOptionsConfig,
+  modernSolutionsConfig,
+  energyPerformanceConfig,
+  crittallWindowsConfig,
+  singleDoubleGlazedConfig,
+  fixedSecondaryGlazingConfig,
   commercialConfig,
   officeBuildingsConfig
 };

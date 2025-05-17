@@ -1,3 +1,4 @@
+
 // prerender.js - Static Site Generation (SSG) configuration
 import { getPageMeta } from './src/lib/pageMeta';
 
@@ -37,8 +38,19 @@ export default {
     '/secondary-glazing-noise-reduction',
     '/specialized/acoustic-glazing',
     '/specialized/uv-protection',
+    // Residential routes
     '/residential/sash-windows',
-    // Add all other routes that need prerendering
+    '/residential/casement-windows',
+    '/residential/bay-windows',
+    '/residential/horizontal-sliding',
+    '/residential/lift-out',
+    '/residential/combination',
+    '/residential/traditional-options',
+    '/residential/modern-solutions',
+    '/residential/energy-performance',
+    '/residential/crittall-windows',
+    '/residential/single-double-glazed',
+    '/residential/fixed-secondary-glazing',
   ],
   render,
   getTitle,

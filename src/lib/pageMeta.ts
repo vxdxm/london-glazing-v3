@@ -146,6 +146,33 @@ function isResidentialPath(path: string): boolean {
  * Gets meta data for residential pages
  */
 function getResidentialPageMeta(path: string): PageMeta {
+  // Check specific residential paths
+  if (path === '/residential/sash-windows') {
+    return PAGE_CONFIGS.sashWindows;
+  } else if (path === '/residential/casement-windows') {
+    return PAGE_CONFIGS.casementWindows;
+  } else if (path === '/residential/bay-windows') {
+    return PAGE_CONFIGS.bayWindows;
+  } else if (path === '/residential/horizontal-sliding') {
+    return PAGE_CONFIGS.horizontalSliding;
+  } else if (path === '/residential/lift-out') {
+    return PAGE_CONFIGS.liftOut;
+  } else if (path === '/residential/combination') {
+    return PAGE_CONFIGS.combination;
+  } else if (path === '/residential/traditional-options') {
+    return PAGE_CONFIGS.traditionalOptions;
+  } else if (path === '/residential/modern-solutions') {
+    return PAGE_CONFIGS.modernSolutions;
+  } else if (path === '/residential/energy-performance') {
+    return PAGE_CONFIGS.energyPerformance;
+  } else if (path === '/residential/crittall-windows') {
+    return PAGE_CONFIGS.crittallWindows;
+  } else if (path === '/residential/single-double-glazed') {
+    return PAGE_CONFIGS.singleDoubleGlazed;
+  } else if (path === '/residential/fixed-secondary-glazing') {
+    return PAGE_CONFIGS.fixedSecondaryGlazing;
+  }
+  
   // Default residential page
   return PAGE_CONFIGS.residential || {
     title: "Residential Secondary Glazing Solutions | Secondary Glazing Specialist",
