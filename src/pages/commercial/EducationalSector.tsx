@@ -5,26 +5,47 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { createPageSchema } from "@/utils/seo";
 
 const EducationalSector = () => {
+  const pageMetadata = {
+    title: "Secondary Glazing for Schools and Universities | Educational Sector",
+    description: "Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities.",
+    canonicalPath: "/commercial/educational-sector",
+    imageUrl: "/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg",
+    type: "article" as const,
+    publishedDate: "2025-03-15",
+    modifiedDate: "2025-05-17",
+    keywords: ["educational glazing", "school windows", "university glazing", "classroom noise reduction", "energy efficient schools", "learning environment", "acoustic glazing for schools", "university buildings"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Secondary Glazing for Schools and Universities | Educational Sector</title>
-        <meta 
-          name="description" 
-          content="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities." 
-        />
-        <meta 
-          name="keywords" 
-          content="educational glazing, school windows, university glazing, classroom noise reduction, energy efficient schools, learning environment, acoustic glazing for schools, university buildings" 
-        />
-        <meta property="og:title" content="Secondary Glazing for Schools and Universities | Educational Sector" />
-        <meta property="og:description" content="Specialized secondary glazing solutions for educational institutions. Improve energy efficiency, reduce noise, and create optimal learning environments in schools, colleges, and universities." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/educational-sector" />
-        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/educational-sector" />
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Service structured data */}
         <script type="application/ld+json">
         {`
           {

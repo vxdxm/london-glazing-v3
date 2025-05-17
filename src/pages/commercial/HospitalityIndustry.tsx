@@ -3,12 +3,49 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const HospitalityIndustry = () => {
   const navigate = useNavigate();
+  
+  const pageMetadata = {
+    title: "Secondary Glazing for Hospitality Industry | Hotels & Restaurants",
+    description: "Specialized secondary glazing solutions for the hospitality sector. Create comfortable guest environments with superior noise reduction and energy efficiency.",
+    canonicalPath: "/commercial/hospitality-industry",
+    imageUrl: "/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg",
+    type: "website" as const,
+    publishedDate: "2025-01-10",
+    modifiedDate: "2025-05-17",
+    keywords: ["hospitality glazing", "hotel windows", "restaurant glazing", "guest comfort", "noise reduction hospitality", "energy efficient hotels"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">

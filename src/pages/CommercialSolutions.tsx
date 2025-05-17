@@ -1,21 +1,47 @@
+
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { Footer } from "@/components/Footer";
+import { createPageSchema } from "@/utils/seo";
 
 const CommercialSolutions = () => {
+  const pageMetadata = {
+    title: "Commercial Secondary Glazing London | Business & Office Solutions",
+    description: "Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, and commercial buildings.",
+    canonicalPath: "/commercial",
+    imageUrl: "/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg",
+    type: "website" as const,
+    publishedDate: "2024-12-15",
+    modifiedDate: "2025-05-17",
+    keywords: ["commercial glazing", "office glazing", "business windows", "hotel windows", "commercial property", "noise reduction", "energy efficiency", "London commercial"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+  
   return <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Commercial Secondary Glazing London | Business & Office Solutions</title>
-        <meta name="description" content="Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, and commercial buildings." />
-        <meta name="keywords" content="commercial glazing, office glazing, business windows, hotel windows, commercial property, noise reduction, energy efficiency, London commercial" />
-        <meta property="og:title" content="Commercial Secondary Glazing Solutions" />
-        <meta property="og:description" content="Transform your commercial property with our expert secondary glazing solutions." />
-        <meta property="og:type" content="website" />
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Commercial Secondary Glazing Solutions" />
-        <meta name="twitter:description" content="Professional secondary glazing for London businesses and commercial properties." />
-        <link rel="canonical" href="https://yourdomain.com/commercial" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
@@ -91,6 +117,7 @@ const CommercialSolutions = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>;
 };
 

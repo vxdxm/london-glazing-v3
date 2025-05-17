@@ -1,27 +1,42 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const OfficeSEO = () => {
+  const pageMetadata = {
+    title: "Secondary Glazing for Office Buildings | Noise & Energy Solutions",
+    description: "Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London.",
+    canonicalPath: "/commercial/office-buildings",
+    imageUrl: "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
+    type: "website" as const,
+    publishedDate: "2024-10-15",
+    modifiedDate: "2025-05-17",
+    keywords: ["office glazing", "commercial glazing", "office noise reduction", "business energy efficiency", "workspace insulation", "office window improvements"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <Helmet>
-      <title>Secondary Glazing for Office Buildings | Noise & Energy Solutions</title>
+      <title>{pageMetadata.title}</title>
       <meta 
         name="description" 
-        content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." 
+        content={pageMetadata.description} 
       />
-      <meta name="keywords" content="office glazing, commercial glazing, office noise reduction, business energy efficiency, workspace insulation, office window improvements" />
+      <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/office-buildings" />
-      <meta property="og:title" content="Secondary Glazing for Office Buildings" />
-      <meta property="og:description" content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/office-buildings" />
-      <meta property="og:image" content="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" />
+      <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+      <meta property="og:title" content={pageMetadata.title} />
+      <meta property="og:description" content={pageMetadata.description} />
+      <meta property="og:type" content={pageMetadata.type} />
+      <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+      <meta property="og:image" content={pageMetadata.imageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Secondary Glazing for Office Buildings" />
-      <meta name="twitter:description" content="Transform your office with secondary glazing - reduce workplace noise by up to 80% and improve energy efficiency. Create comfortable, productive workspaces in London." />
-      <meta name="twitter:image" content="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" />
+      <meta name="twitter:title" content={pageMetadata.title} />
+      <meta name="twitter:description" content={pageMetadata.description} />
+      <meta name="twitter:image" content={pageMetadata.imageUrl} />
+      <script type="application/ld+json">{pageSchema}</script>
       <script type="application/ld+json">
       {`
         {
@@ -29,7 +44,7 @@ const OfficeSEO = () => {
           "@type": "WebPage",
           "headline": "Secondary Glazing Solutions for Office Buildings",
           "description": "Our expert secondary glazing solutions for office buildings are designed to enhance workplace comfort and productivity. By installing an additional layer of glazing to existing windows, we help create quieter, more energy-efficient office environments.",
-          "image": "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
+          "image": "${pageMetadata.imageUrl}",
           "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".text-lg", ".card-title", ".card-content"]

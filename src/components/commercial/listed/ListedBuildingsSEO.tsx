@@ -1,43 +1,58 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const ListedBuildingsSEO = () => {
+  const pageMetadata = {
+    title: "Secondary Glazing for Listed Buildings | Heritage Conservation London",
+    description: "Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly.",
+    canonicalPath: "/commercial/listed-buildings",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
+    type: "article" as const,
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-09",
+    keywords: ["listed buildings secondary glazing", "conservation area windows", "heritage glazing London", "historic window solutions", "planning permission secondary glazing", "thermal insulation listed buildings", "noise reduction heritage properties"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <Helmet>
-      <title>Secondary Glazing for Listed Buildings | Heritage Conservation London</title>
+      <title>{pageMetadata.title}</title>
       <meta 
         name="description" 
-        content="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly." 
+        content={pageMetadata.description} 
       />
-      <meta name="keywords" content="listed buildings secondary glazing, conservation area windows, heritage glazing London, historic window solutions, planning permission secondary glazing, thermal insulation listed buildings, noise reduction heritage properties" />
+      <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
       
-      <link rel="canonical" href="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
+      <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
       
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
-      <meta property="og:title" content="Secondary Glazing for Listed Buildings | Heritage Conservation" />
-      <meta property="og:description" content="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly." />
-      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
+      <meta property="og:type" content={pageMetadata.type} />
+      <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+      <meta property="og:title" content={pageMetadata.title} />
+      <meta property="og:description" content={pageMetadata.description} />
+      <meta property="og:image" content={pageMetadata.imageUrl} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
-      <meta name="twitter:title" content="Secondary Glazing for Listed Buildings | Heritage Conservation" />
-      <meta name="twitter:description" content="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly." />
-      <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
+      <meta name="twitter:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+      <meta name="twitter:title" content={pageMetadata.title} />
+      <meta name="twitter:description" content={pageMetadata.description} />
+      <meta name="twitter:image" content={pageMetadata.imageUrl} />
       
       {/* Structured Data */}
+      <script type="application/ld+json">{pageSchema}</script>
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebPage",
           "headline": "Secondary Glazing Solutions for Listed Buildings and Conservation Areas",
           "description": "Our specialist secondary glazing solutions are designed to meet strict conservation requirements while providing modern comfort benefits to listed and heritage properties in London.",
-          "image": "https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
-          "datePublished": "2025-05-09",
-          "dateModified": "2025-05-09",
+          "image": pageMetadata.imageUrl,
+          "datePublished": pageMetadata.publishedDate,
+          "dateModified": pageMetadata.modifiedDate,
           "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": [".text-4xl", ".card-title", ".card-content"]
