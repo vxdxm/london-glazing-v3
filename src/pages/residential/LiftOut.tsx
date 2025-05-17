@@ -63,7 +63,7 @@ const LiftOut = () => {
         </div>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Available Styles</h2>
+          <h2 className="text-3xl font-semibold mb-6">Lift-Out Secondary Glazing</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
