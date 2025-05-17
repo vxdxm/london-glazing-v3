@@ -1,15 +1,14 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import ContactUsButton from "@/components/ContactUsButton";
-import DeviceCompatibility from "@/components/DeviceCompatibility";
 import Index from "./pages/Index";
 
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -73,26 +72,10 @@ const CanonicalTag = () => {
   );
 };
 
-// ScrollToTop component to handle route changes
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  
-  useEffect(() => {
-    // Only scroll to top if there's no hash in URL
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
-    }
-    console.log('Navigation: Route changed to', pathname);
-  }, [pathname]);
-  
-  return null;
-};
-
 const AppRoutes = () => {
   return (
     <>
       <CanonicalTag />
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
@@ -152,16 +135,17 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <base href="/" />
       </Helmet>
       <Toaster />
       <Sonner />
-      <DeviceCompatibility />
-      <AppRoutes />
-      <ContactUsButton />
-      <GetQuoteButton />
-      <WhatsAppButton />
+      <BrowserRouter basename="/">
+        <AppRoutes />
+        <ContactUsButton />
+        <GetQuoteButton />
+        <WhatsAppButton />
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
