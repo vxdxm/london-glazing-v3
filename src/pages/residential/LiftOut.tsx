@@ -88,7 +88,7 @@ const LiftOut = () => {
             
             <Card>
               <CardHeader>
-                <CardTitle>Quick-Release System</CardTitle>
+                <CardTitle>Multi Function System</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
