@@ -6,9 +6,23 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useEffect } from "react";
-import AcousticGlazingSEO from "@/components/specialized/acoustic/AcousticGlazingSEO";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const AcousticGlazing = () => {
+  const pageMetadata = {
+    title: "Acoustic Glazing | Reduce Noise with Secondary Glazing Solutions",
+    description: "Explore our acoustic glazing solutions for effective noise reduction. Our secondary glazing provides superior soundproofing for homes and commercial properties.",
+    canonicalPath: "/specialized/acoustic-glazing",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png", 
+    type: "article" as const,
+    publishedDate: "2024-07-10",
+    modifiedDate: "2025-05-17",
+    keywords: ["acoustic glazing", "noise reduction", "soundproofing windows", "secondary glazing", "sound insulation", "noise pollution", "sound reduction", "acoustic glass"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   // Add logging for indexing
   useEffect(() => {
     console.log("Acoustic Glazing page loaded for indexing");
@@ -16,7 +30,28 @@ const AcousticGlazing = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <AcousticGlazingSEO />
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
       <MainNav />
 
       <main className="container mx-auto px-4 py-8 sm:py-16 flex-grow">

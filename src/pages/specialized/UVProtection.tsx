@@ -3,24 +3,83 @@ import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import { Helmet } from "react-helmet";
 import { Shield, Sun, Sofa, Palette } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 // Lazy load components that aren't needed for initial render
 const LazyFooter = lazy(() => import("@/components/Footer").then(module => ({ default: module.Footer })));
 
 const UVProtection = () => {
+  const pageMetadata = {
+    title: "UV Protection Secondary Glazing | Furniture & Art Protection",
+    description: "Protect your furnishings, artwork, and interiors from UV damage with specialized secondary glazing solutions. Learn about UV filtering technology and preservation benefits.",
+    canonicalPath: "/specialized/uv-protection",
+    imageUrl: "/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg",
+    type: "article" as const,
+    publishedDate: "2024-07-20",
+    modifiedDate: "2025-05-17",
+    keywords: ["UV protection", "secondary glazing", "furniture protection", "art preservation", "UV filtering", "window film", "UV damage prevention"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>UV Protection Secondary Glazing | Furniture & Art Protection</title>
-        <meta 
-          name="description" 
-          content="Protect your furnishings, artwork, and interiors from UV damage with specialized secondary glazing solutions. Learn about UV filtering technology and preservation benefits." 
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/uv-protection" />
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Breadcrumb structured data */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Specialized Services",
+                "item": "https://secondaryglazingspecialist.com/specialized"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "UV Protection",
+                "item": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}"
+              }
+            ]
+          }
+        `}
+        </script>
+        
         {/* Preload critical assets */}
         <link rel="preload" href="/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg" as="image" />
       </Helmet>

@@ -1,13 +1,79 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import InsurancePremiumCalculator from "@/components/insurance/InsurancePremiumCalculator";
-import InsurancePremiumSEO from "@/components/insurance/InsurancePremiumSEO";
 import { Shield, Lock } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const InsurancePremiums = () => {
+  const pageMetadata = {
+    title: "Insurance Premium Benefits | Secondary Security Glazing",
+    description: "Discover how installing security secondary glazing can reduce your insurance premiums. Expert solutions for enhanced property protection and cost savings.",
+    canonicalPath: "/specialized/insurance-premiums",
+    imageUrl: "/lovable-uploads/3d97865e-eb3e-4558-adcf-5fef6f809746.jpg",
+    type: "article" as const,
+    publishedDate: "2024-08-05",
+    modifiedDate: "2025-05-17",
+    keywords: ["insurance premiums", "security glazing", "property insurance", "insurance savings", "window security", "premium reduction", "security features"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return <div className="min-h-screen bg-background">
-      <InsurancePremiumSEO />
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Breadcrumb structured data */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Specialized Services",
+                "item": "https://secondaryglazingspecialist.com/specialized"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Insurance Premium Benefits",
+                "item": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}"
+              }
+            ]
+          }
+        `}
+        </script>
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-4">Insurance Premium Benefits</h1>

@@ -5,12 +5,26 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import CostCalculator from "@/components/CostCalculator";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import ThermalInsulationSEO from "@/components/specialized/thermal/ThermalInsulationSEO";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { KeyPoint } from "@/components/ui/key-point";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const ThermalInsulation = () => {
+  const pageMetadata = {
+    title: "Thermal Insulation Secondary Glazing | Up to 60% Heat Loss Reduction",
+    description: "Expert thermal insulation solutions with secondary glazing. Reduce heat loss by up to 60%, lower energy bills, and improve comfort with our specialist installation.",
+    canonicalPath: "/specialized/thermal-insulation",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png",
+    type: "article" as const,
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["thermal insulation", "secondary glazing", "energy efficiency", "heat loss reduction", "energy bills", "thermal barriers", "double glazed secondary glazing", "U-values"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+  
   // Add logging for indexing
   useEffect(() => {
     console.log("Thermal Insulation page loaded for indexing");
@@ -18,7 +32,28 @@ const ThermalInsulation = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <ThermalInsulationSEO />
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />

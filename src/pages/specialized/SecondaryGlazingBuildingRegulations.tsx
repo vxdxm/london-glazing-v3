@@ -1,17 +1,30 @@
-
 import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Helmet } from "react-helmet";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Info } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const SecondaryGlazingBuildingRegulations = () => {
   // Add current date for SEO freshness signals
-  const currentDate = "2025-05-09";
+  const currentDate = "2025-05-17";
+  
+  const pageMetadata = {
+    title: "Secondary Glazing Building Regulations | Compliance Guide",
+    description: "Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance.",
+    canonicalPath: "/specialized/secondary-glazing-building-regulations",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png",
+    type: "article" as const,
+    publishedDate: "2024-07-10",
+    modifiedDate: currentDate,
+    keywords: ["secondary glazing regulations", "building regulations", "Part L", "Part F", "Part B", "Part K", "compliance guide", "thermal performance", "ventilation", "fire safety", "window regulations"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
   
   // Add logging for indexing
   useEffect(() => {
@@ -21,54 +34,28 @@ const SecondaryGlazingBuildingRegulations = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Secondary Glazing Building Regulations | Compliance Guide</title>
-        <meta 
-          name="description" 
-          content="Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance." 
-        />
-        <meta 
-          name="keywords" 
-          content="secondary glazing regulations, building regulations, Part L, Part F, Part B, Part K, compliance guide, thermal performance, ventilation, fire safety, window regulations" 
-        />
-        <meta property="og:title" content="Secondary Glazing Building Regulations | Compliance Guide" />
-        <meta property="og:description" content="Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations" />
-        <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations" />
-        <meta name="robots" content="index, follow" />
-        <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "TechArticle",
-            "headline": "Secondary Glazing Building Regulations Guide",
-            "description": "Comprehensive guide to UK building regulations for secondary glazing installations covering thermal performance, ventilation standards, and fire safety compliance.",
-            "image": "https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png",
-            "author": {
-              "@type": "Organization",
-              "name": "Secondary Glazing Specialist"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Secondary Glazing Specialist",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg"
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations"
-            },
-            "keywords": "secondary glazing regulations, building regulations, Part L, Part F, Part B, Part K, compliance guide",
-            "datePublished": "2024-07-10",
-            "dateModified": "${currentDate}"
-          }
-        `}
-        </script>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
         
-        {/* Add breadcrumb structured data */}
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Breadcrumb structured data */}
         <script type="application/ld+json">
         {`
           {
@@ -91,7 +78,7 @@ const SecondaryGlazingBuildingRegulations = () => {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Building Regulations",
-                "item": "https://secondaryglazingspecialist.com/specialized/secondary-glazing-building-regulations"
+                "item": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}"
               }
             ]
           }

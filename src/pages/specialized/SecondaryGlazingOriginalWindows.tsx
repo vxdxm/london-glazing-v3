@@ -3,12 +3,26 @@ import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import OriginalWindowsSEO from "@/components/specialized/original/OriginalWindowsSEO";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const SecondaryGlazingOriginalWindows = () => {
+  const pageMetadata = {
+    title: "Secondary Glazing for Original Windows | Heritage Window Solutions",
+    description: "Discover how secondary glazing preserves original windows while improving thermal and acoustic performance. Expert solutions for heritage properties.",
+    canonicalPath: "/specialized/secondary-glazing-original-windows",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
+    type: "article" as const,
+    publishedDate: "2024-07-15",
+    modifiedDate: "2025-05-17",
+    keywords: ["secondary glazing original windows", "heritage windows", "window preservation", "listed buildings", "conservation areas", "thermal insulation original windows"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   // Add logging for indexing
   useEffect(() => {
     console.log("Secondary Glazing Original Windows page loaded for indexing");
@@ -16,7 +30,58 @@ const SecondaryGlazingOriginalWindows = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <OriginalWindowsSEO />
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Breadcrumb structured data */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Specialized Services",
+                "item": "https://secondaryglazingspecialist.com/specialized"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Original Windows",
+                "item": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}"
+              }
+            ]
+          }
+        `}
+        </script>
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />

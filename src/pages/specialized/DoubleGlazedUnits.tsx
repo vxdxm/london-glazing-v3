@@ -1,28 +1,77 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const DoubleGlazedUnits = () => {
+  const pageMetadata = {
+    title: "Double Glazed Secondary Glazing Units London | Enhanced Thermal & Acoustic Performance",
+    description: "Discover our premium double glazed secondary glazing units in London. Superior thermal insulation and noise reduction with two separate air gaps. Expert installation guaranteed.",
+    canonicalPath: "/specialized/double-glazed-units",
+    imageUrl: "/lovable-uploads/23b3d2e8-2c4b-4efd-8548-2c2bb6cd5bbf.png",
+    type: "article" as const,
+    publishedDate: "2024-08-01",
+    modifiedDate: "2025-05-17",
+    keywords: ["double glazed secondary glazing", "thermal insulation", "noise reduction", "London glazing specialist", "energy efficiency", "sound insulation"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Double Glazed Secondary Glazing Units London | Enhanced Thermal & Acoustic Performance</title>
-        <meta 
-          name="description" 
-          content="Discover our premium double glazed secondary glazing units in London. Superior thermal insulation and noise reduction with two separate air gaps. Expert installation guaranteed." 
-        />
-        <meta 
-          name="keywords" 
-          content="double glazed secondary glazing, thermal insulation, noise reduction, London glazing specialist, energy efficiency, sound insulation" 
-        />
-        <meta property="og:title" content="Double Glazed Secondary Glazing Units | London Specialist" />
-        <meta 
-          property="og:description" 
-          content="Premium double glazed secondary glazing solutions offering superior thermal and acoustic performance. Expert installation in London." 
-        />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/double-glazed-units" />
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={pageMetadata.imageUrl} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={pageMetadata.imageUrl} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* Breadcrumb structured data */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://secondaryglazingspecialist.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Specialized Services",
+                "item": "https://secondaryglazingspecialist.com/specialized"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Double Glazed Units",
+                "item": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}"
+              }
+            ]
+          }
+        `}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
