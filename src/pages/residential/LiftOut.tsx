@@ -1,4 +1,3 @@
-
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GlassOptions from "@/components/residential/GlassOptions";
@@ -6,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-
 const LiftOut = () => {
   // Define page metadata
   const pageMetadata = {
@@ -19,11 +17,8 @@ const LiftOut = () => {
     modifiedDate: "2025-05-17",
     keywords: ["lift out secondary glazing", "removable window panels", "easy maintenance windows", "heritage window solutions", "listed building glazing", "thermal insulation"]
   };
-
   const pageSchema = createPageSchema(pageMetadata);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>{pageMetadata.title}</title>
         <meta name="description" content={pageMetadata.description} />
@@ -63,11 +58,7 @@ const LiftOut = () => {
             </p>
           </div>
           <div>
-            <img 
-              src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png"
-              alt="Lift out window demonstration"
-              className="rounded-lg w-full h-[300px] object-cover"
-            />
+            <img src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png" alt="Lift out window demonstration" className="rounded-lg w-full h-[300px] object-cover" />
           </div>
         </div>
 
@@ -80,11 +71,7 @@ const LiftOut = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png"
-                    alt="Standard lift out panel"
-                    className="rounded-lg w-full h-[200px] object-cover mb-4"
-                  />
+                  <img alt="Standard lift out panel" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/719f028f-e513-4cb2-9357-e1b93c87fac7.jpg" />
                   <p className="text-gray-700">
                     Our classic lift out panel design provides full access for cleaning and maintenance.
                     Features secure fixing mechanisms and weather-tight seals.
@@ -105,11 +92,7 @@ const LiftOut = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <img 
-                    src="/lovable-uploads/208cca9c-8392-4aef-b6f1-4361c44644a6.png"
-                    alt="Quick release system demonstration"
-                    className="rounded-lg w-full h-[200px] object-cover mb-4"
-                  />
+                  <img src="/lovable-uploads/208cca9c-8392-4aef-b6f1-4361c44644a6.png" alt="Quick release system demonstration" className="rounded-lg w-full h-[200px] object-cover mb-4" />
                   <p className="text-gray-700">
                     Advanced quick-release mechanism for effortless panel removal.
                     Perfect for frequent access requirements.
@@ -162,8 +145,6 @@ const LiftOut = () => {
         <GlassOptions />
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default LiftOut;
