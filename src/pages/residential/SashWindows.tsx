@@ -4,40 +4,58 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SashWindowGlassOptions from "@/components/residential/SashWindowGlassOptions";
-import SashWindowsSEO from "@/components/residential/sash/SashWindowsSEO";
 import SashWindowCTA from "@/components/residential/sash/SashWindowCTA";
-import { useState, useEffect } from "react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const SashWindows = () => {
-  const [standardImageError, setStandardImageError] = useState(false);
-  const [tiltInImageError, setTiltInImageError] = useState(false);
-
-  // Add logging for debugging indexing issues
-  useEffect(() => {
-    console.log("Sash Windows page loaded");
-  }, []);
-
-  const handleStandardImageError = () => {
-    console.error("Standard sliding image failed to load");
-    setStandardImageError(true);
+  // Define the page metadata for SEO
+  const pageMetadata = {
+    title: "Sash Window Secondary Glazing: Complete Guide",
+    description: "Discover expert sash window secondary glazing solutions designed to preserve period property character while providing modern insulation benefits and reducing noise levels by up to 80%.",
+    canonicalPath: "/residential/sash-windows",
+    imageUrl: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
+    type: "article",
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["sash window secondary glazing", "noise reduction", "period property insulation", "vertical sliding windows", "tilt-in sash windows", "thermal performance"]
   };
 
-  const handleTiltInImageError = () => {
-    console.error("Tilt-in image failed to load");
-    setTiltInImageError(true);
-  };
+  const pageSchema = createPageSchema(pageMetadata);
 
   return (
     <div className="min-h-screen bg-background">
-      <SashWindowsSEO />
+      <Helmet>
+        <title>{pageMetadata.title} | Secondary Glazing Specialist</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
+      
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
         <article className="prose lg:prose-xl max-w-none">
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-8">Sash Window Secondary Glazing: Complete Guide</h1>
+              <h1 className="text-4xl font-bold mb-8">{pageMetadata.title}</h1>
               <p className="text-gray-700 mb-4">
                 Our sash window secondary glazing solutions are designed to preserve the original character 
                 of your period property while providing modern insulation benefits. We use specially designed 
@@ -66,10 +84,9 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <OptimizedImage 
-                      src={standardImageError ? "/placeholder.svg" : "/lovable-uploads/35ea6134-3501-45e1-9ac7-ed7d91680ad6.png"}
+                      src="/lovable-uploads/35ea6134-3501-45e1-9ac7-ed7d91680ad6.png"
                       alt="Interior view of two elegant sash windows with traditional radiators beneath, showing the classic vertical sliding design in a period property with grey walls and a chandelier"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
-                      onError={handleStandardImageError}
                       width={600}
                       height={200}
                     />
@@ -107,10 +124,9 @@ const SashWindows = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <OptimizedImage 
-                      src={tiltInImageError ? "/placeholder.svg" : "/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"}
+                      src="/lovable-uploads/7d4c00ee-9a1c-4552-a1ab-033429c4803c.png"
                       alt="Tilt-in sash window demonstration showing the window tilted inward for easy cleaning and maintenance"
                       className="rounded-lg w-full h-[200px] object-cover mb-4"
-                      onError={handleTiltInImageError}
                       width={600}
                       height={200}
                     />

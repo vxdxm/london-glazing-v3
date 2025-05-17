@@ -9,10 +9,49 @@ import Installation from "@/components/casement/Installation";
 import Maintenance from "@/components/casement/Maintenance";
 import Solutions from "@/components/casement/Solutions";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const CasementWindows = () => {
+  // Define the page metadata for SEO
+  const pageMetadata = {
+    title: "Casement Window Secondary Glazing | Heritage Window Solutions",
+    description: "Expert casement window secondary glazing solutions for period properties. Improve thermal insulation and noise reduction while preserving the original character of your windows.",
+    canonicalPath: "/residential/casement-windows",
+    imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
+    type: "article",
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["casement window", "secondary glazing", "thermal insulation", "noise reduction", "period property", "heritage windows"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
+      
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <article className="prose lg:prose-xl max-w-none">
@@ -32,4 +71,3 @@ const CasementWindows = () => {
 };
 
 export default CasementWindows;
-

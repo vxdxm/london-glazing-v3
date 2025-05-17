@@ -1,9 +1,8 @@
 
-import React, { useEffect } from "react";
+import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
-import ModernSolutionsSEO from "@/components/residential/modern/ModernSolutionsSEO";
 import IntroSection from "@/components/residential/modern/IntroSection";
 import TableOfContents from "@/components/residential/modern/TableOfContents";
 import HistoricBuildingsSection from "@/components/residential/modern/HistoricBuildingsSection";
@@ -14,12 +13,23 @@ import BenefitsSection from "@/components/residential/modern/BenefitsSection";
 import ConclusionSection from "@/components/residential/modern/ConclusionSection";
 import FAQsSection from "@/components/residential/modern/FAQsSection";
 import PageFooter from "@/components/residential/modern/PageFooter";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
 
 const ModernSolutions = () => {
-  // Add logging for debugging indexing issues
-  useEffect(() => {
-    console.log("Modern Solutions page loaded");
-  }, []);
+  // Define page metadata
+  const pageMetadata = {
+    title: "Modern Secondary Glazing Solutions for Heritage Properties",
+    description: "Discover how modern secondary glazing techniques can enhance historic properties with improved energy efficiency and noise reduction while preserving architectural integrity.",
+    canonicalPath: "/residential/modern-solutions",
+    imageUrl: "/lovable-uploads/c23f8df7-ca5f-4d5d-913a-5d6c11eae435.jpg",
+    type: "article",
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["modern secondary glazing", "heritage properties", "energy efficiency", "noise reduction", "window preservation", "architectural integrity", "thermal performance"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
 
   // Implement scrollToTop function to pass to PageFooter
   const scrollToTop = () => {
@@ -31,7 +41,29 @@ const ModernSolutions = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <ModernSolutionsSEO />
+      <Helmet>
+        <title>{pageMetadata.title} | Secondary Glazing Specialist</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
+      
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />

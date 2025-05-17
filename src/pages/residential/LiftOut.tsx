@@ -3,12 +3,53 @@ import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import GlassOptions from "@/components/residential/GlassOptions";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const LiftOut = () => {
+  // Define page metadata
+  const pageMetadata = {
+    title: "Lift Out Secondary Glazing | Easy Access Window Solutions",
+    description: "Our lift out secondary glazing provides maximum accessibility and ease of maintenance. Perfect for windows requiring regular cleaning with excellent thermal and acoustic insulation.",
+    canonicalPath: "/residential/lift-out",
+    imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
+    type: "article",
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["lift out secondary glazing", "removable window panels", "easy maintenance windows", "heritage window solutions", "listed building glazing", "thermal insulation"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
+      </Helmet>
+      
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
             <h1 className="text-4xl font-bold mb-4">Lift Out Secondary Glazing</h1>
@@ -126,4 +167,3 @@ const LiftOut = () => {
 };
 
 export default LiftOut;
-

@@ -1,20 +1,57 @@
 
-import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import GlassOptions from "@/components/residential/GlassOptions";
 import { KeyPoint } from "@/components/ui/key-point";
+import { Helmet } from "react-helmet";
+import { createPageSchema } from "@/utils/seo";
+import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+
 const FixedSecondaryGlazing = () => {
-  return <div className="min-h-screen bg-background">
+  // Define page metadata
+  const pageMetadata = {
+    title: "Fixed Secondary Glazing Solutions | Permanent Window Insulation",
+    description: "Discover our fixed secondary glazing solutions for permanent thermal and acoustic insulation. Perfect for windows that don't need regular access.",
+    canonicalPath: "/residential/fixed-secondary-glazing",
+    imageUrl: "/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png",
+    type: "article",
+    publishedDate: "2025-05-09",
+    modifiedDate: "2025-05-17",
+    keywords: ["fixed secondary glazing", "permanent glazing", "window insulation", "thermal efficiency", "noise reduction", "historic buildings"]
+  };
+
+  const pageSchema = createPageSchema(pageMetadata);
+
+  return (
+    <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Fixed Secondary Glazing Solutions | Permanent Window Insulation</title>
-        <meta name="description" content="Discover our fixed secondary glazing solutions for permanent thermal and acoustic insulation. Perfect for windows that don't need regular access." />
-        <meta name="keywords" content="fixed secondary glazing, permanent glazing, window insulation, thermal efficiency, noise reduction, historic buildings" />
+        <title>{pageMetadata.title}</title>
+        <meta name="description" content={pageMetadata.description} />
+        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
+        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content={pageMetadata.title} />
+        <meta property="og:description" content={pageMetadata.description} />
+        <meta property="og:type" content={pageMetadata.type} />
+        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
+        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageMetadata.title} />
+        <meta name="twitter:description" content={pageMetadata.description} />
+        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        
+        {/* JSON-LD structured data */}
+        <script type="application/ld+json">{pageSchema}</script>
       </Helmet>
+      
       <MainNav />
       <main className="container mx-auto px-4 py-16">
+        <BreadcrumbNav />
         <div className="grid gap-12">
           <section>
             <h1 className="text-4xl font-bold mb-8">Fixed Secondary Glazing for Thermal Insulation & Noise Reduction</h1>
@@ -124,6 +161,8 @@ const FixedSecondaryGlazing = () => {
         </div>
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default FixedSecondaryGlazing;
