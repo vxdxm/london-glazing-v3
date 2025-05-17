@@ -3,9 +3,9 @@ import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ListedBuildingsSEO from "@/components/commercial/listed/ListedBuildingsSEO";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useEffect } from "react";
-import { SeoHead } from "@/components/ui/seo-head";
 
 const ListedBuildings = () => {
   // Add logging for indexing
@@ -15,55 +15,7 @@ const ListedBuildings = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SeoHead
-        title="Secondary Glazing for Listed Buildings | Heritage Conservation London"
-        description="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly."
-        canonicalUrl="https://secondaryglazingspecialist.com/commercial/listed-buildings"
-        ogTitle="Secondary Glazing for Listed Buildings | Heritage Conservation"
-        ogDescription="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly."
-        ogImage="https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "headline": "Secondary Glazing Solutions for Listed Buildings and Conservation Areas",
-          "description": "Our specialist secondary glazing solutions are designed to meet strict conservation requirements while providing modern comfort benefits to listed and heritage properties in London.",
-          "image": "https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
-          "datePublished": "2025-05-09",
-          "dateModified": "2025-05-09",
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".text-4xl", ".card-title", ".card-content"]
-          },
-          "mainEntity": {
-            "@type": "Service",
-            "name": "Listed Building Secondary Glazing",
-            "description": "Specialized glazing solutions for listed buildings and conservation areas.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Secondary Glazing Specialist",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "London",
-                "postalCode": "W12 7LA", 
-                "streetAddress": "Arch 141, MacFarlane Road"
-              },
-              "telephone": "0207 060 1572"
-            },
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "GBP",
-              "availability": "https://schema.org/InStock"
-            }
-          }
-        }}
-      >
-        <meta name="keywords" content="listed buildings secondary glazing, conservation area windows, heritage glazing London, historic window solutions, planning permission secondary glazing, thermal insulation listed buildings, noise reduction heritage properties" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://secondaryglazingspecialist.com/commercial/listed-buildings" />
-        <meta name="twitter:title" content="Secondary Glazing for Listed Buildings | Heritage Conservation" />
-        <meta name="twitter:description" content="Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly." />
-        <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" />
-      </SeoHead>
+      <ListedBuildingsSEO />
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
