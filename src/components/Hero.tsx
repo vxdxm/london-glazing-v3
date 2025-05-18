@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
+import { OptimizedImage } from "@/components/ui/optimized-image"; 
 
 export const Hero = () => {
   const navigate = useNavigate();

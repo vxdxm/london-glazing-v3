@@ -2,6 +2,8 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+
 const RepairsHero = () => {
   return (
     <section className="mb-16">
@@ -27,10 +29,12 @@ const RepairsHero = () => {
           </div>
         </div>
         <div className="flex-1">
-          <img
+          <OptimizedImage
             src="/lovable-uploads/c2f200dd-d56e-45c6-9eaf-0aeb8ccde2a2.png"
             alt="Secondary glazing repair technician fixing a vertical sliding window unit"
             className="rounded-lg shadow-xl w-full object-cover max-h-[400px]"
+            aspectRatio={4/3}
+            priority={true}
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const WindowTypes = () => {
   return (
@@ -11,7 +12,7 @@ const WindowTypes = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            <img 
+            <OptimizedImage 
               src="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png"
               alt="Standard horizontal sliding secondary glazing with multiple panels that slide smoothly for easy operation"
               className="rounded-lg w-full h-[200px] object-cover mb-4"
@@ -38,7 +39,7 @@ const WindowTypes = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            <img 
+            <OptimizedImage 
               src="/lovable-uploads/83a85813-7a32-48d2-a1c9-ad133fc122d7.png"
               alt="Multi-track horizontal sliding secondary glazing system with advanced features for larger window openings"
               className="rounded-lg w-full h-[200px] object-cover mb-4"

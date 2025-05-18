@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const HomeExamples = () => {
   return (
@@ -8,7 +9,7 @@ const HomeExamples = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Secondary Glazing Examples</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="relative overflow-hidden rounded-lg shadow-lg group">
-            <img
+            <OptimizedImage
               src="/lovable-uploads/105df4cf-806c-402e-aaba-ccb4792bad5f.png"
               alt="Triple sash window installation with grey roman blinds overlooking urban area"
               className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
@@ -21,7 +22,7 @@ const HomeExamples = () => {
           </div>
           
           <div className="relative overflow-hidden rounded-lg shadow-lg group">
-            <img
+            <OptimizedImage
               src="/lovable-uploads/289db534-0ea4-4a46-b9f6-1896892c42b5.png"
               alt="Wide horizontal sliding secondary glazing installation with garden view"
               className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"
@@ -34,7 +35,7 @@ const HomeExamples = () => {
           </div>
           
           <div className="relative overflow-hidden rounded-lg shadow-lg group">
-            <img
+            <OptimizedImage
               src="/lovable-uploads/85a35431-eb67-44c0-bc47-544b29a786f6.png"
               alt="Modern casement window with secondary glazing in a contemporary setting"
               className="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-110"

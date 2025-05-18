@@ -1,6 +1,7 @@
 
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const HospitalityHero = () => {
   return (
@@ -16,10 +17,11 @@ const HospitalityHero = () => {
       {/* Main Image */}
       <div className="w-full">
         <AspectRatio ratio={21/9}>
-          <img
+          <OptimizedImage
             src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png"
             alt="Secondary glazing installation in a historic building"
             className="rounded-lg object-cover w-full h-full"
+            priority={true}
           />
         </AspectRatio>
       </div>
