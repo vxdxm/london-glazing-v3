@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -27,7 +26,7 @@ export function MainNav() {
   const MobileNavItem = ({ to, children, onClick }: { to: string; children: React.ReactNode; onClick?: () => void }) => (
     <Link
       to={to}
-      className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
+      className="block px-4 py-3 text-sm hover:bg-accent rounded-md my-1"
       onClick={onClick}
     >
       {children}
@@ -37,7 +36,7 @@ export function MainNav() {
   const MobileNav = () => (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button variant="ghost" size="icon" className="md:hidden p-3 min-h-[48px] min-w-[48px]">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Toggle menu</span>
         </Button>
@@ -48,12 +47,12 @@ export function MainNav() {
           {glazingOptions.map((section) => (
             <div key={section.title} className="space-y-3">
               <div 
-                className="font-medium px-4 py-2 cursor-pointer"
+                className="font-medium px-4 py-3 cursor-pointer"
                 onClick={() => handleNavigation(section.mainLink)}
               >
                 {section.title}
               </div>
-              <div className="pl-4 space-y-1">
+              <div className="pl-4 space-y-2">
                 {section.items.map((item) => (
                   <MobileNavItem
                     key={item.title}
@@ -68,18 +67,18 @@ export function MainNav() {
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
-          <div className="px-4 py-2">
+          <div className="px-4 py-3">
             <button
               onClick={handleContactClick}
-              className="text-sm hover:text-accent-foreground transition-colors"
+              className="text-sm hover:text-accent-foreground transition-colors py-2 px-3 min-h-[48px] w-full text-left"
             >
               Contact Us
             </button>
           </div>
-          <div className="px-4 py-2">
+          <div className="px-4 py-3">
             <Button
               onClick={() => handleNavigation("/quote-request")}
-              className="w-full bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
+              className="w-full bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 min-h-[48px] py-3"
             >
               Get Quote
             </Button>
@@ -97,7 +96,7 @@ export function MainNav() {
       <NavigationMenu className="relative z-50">
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
-            <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+            <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Home
             </Link>
           </NavigationMenuItem>
@@ -107,7 +106,7 @@ export function MainNav() {
               onMouseEnter={() => handleMouseEnter(section.title)}
               onMouseLeave={() => handleMouseLeave(section.title)}
             >
-              <NavigationMenuTrigger>{section.title}</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="p-3">{section.title}</NavigationMenuTrigger>
               <NavigationMenuContent
                 className="absolute bg-white shadow-lg rounded-md"
                 onMouseEnter={() => handleMouseEnter(section.title)}
@@ -139,19 +138,19 @@ export function MainNav() {
             </NavigationMenuItem>
           ))}
           <NavigationMenuItem>
-            <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+            <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Gallery
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link to="/faqs" className="text-sm font-medium hover:text-accent-foreground transition-colors">
+            <Link to="/faqs" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               FAQs
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <button
               onClick={handleContactClick}
-              className="text-sm font-medium hover:text-accent-foreground transition-colors"
+              className="text-sm font-medium hover:text-accent-foreground transition-colors p-3"
             >
               Contact Us
             </button>
@@ -159,7 +158,7 @@ export function MainNav() {
           <NavigationMenuItem>
             <Button
               onClick={() => handleNavigation("/quote-request")}
-              className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90"
+              className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 p-3"
             >
               Get Quote
             </Button>

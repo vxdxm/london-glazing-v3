@@ -33,6 +33,36 @@
   padding-left: 1rem;
 }
 
+/* Mobile usability improvements */
+@media (max-width: 640px) {
+  /* Increase tap target size for mobile */
+  a, button, [role="button"], .clickable, input[type="checkbox"], input[type="radio"], input[type="submit"], input[type="button"], select {
+    padding: 0.75rem !important;
+    min-height: 48px !important;
+    min-width: 48px !important;
+  }
+  
+  /* Add additional spacing between clickable elements */
+  a:not(.no-spacing), 
+  button:not(.no-spacing),
+  [role="button"]:not(.no-spacing),
+  .clickable:not(.no-spacing) {
+    margin: 0.25rem !important;
+  }
+  
+  /* Adjust navigation spacing for better mobile tap targets */
+  nav a, nav button {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+  }
+
+  /* Adjust container padding for mobile */
+  .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
