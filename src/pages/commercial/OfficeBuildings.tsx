@@ -19,13 +19,15 @@ const OfficeBuildings = () => {
     <div className="min-h-screen bg-background">
       <OfficeSEO />
       <MainNav />
-      <div className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
-        <OfficeHero />
-        <BenefitsGrid />
-        <TechnicalSpecs />
-        <OfficeCTA />
-      </div>
+        <div className="max-w-6xl mx-auto">
+          <OfficeHero />
+          <BenefitsGrid />
+          <TechnicalSpecs />
+          <OfficeCTA />
+        </div>
+      </main>
       <Footer />
     </div>
   );
