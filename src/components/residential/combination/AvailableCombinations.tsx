@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const AvailableCombinations = () => {
   return (
@@ -14,11 +15,11 @@ const AvailableCombinations = () => {
           <CardContent>
             <div className="space-y-4">
               <div className="relative h-[200px] group">
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png"
                   alt="Sash and horizontal sliding window combination featuring multiple panes in a modern setting"
-                  className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
-                  loading="lazy"
+                  className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+                  priority={false}
                 />
               </div>
               <p className="text-gray-700">
@@ -42,11 +43,11 @@ const AvailableCombinations = () => {
           <CardContent>
             <div className="space-y-4">
               <div className="relative h-[200px] group">
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/a40b22e3-e503-4c0a-a99b-7ea08bb65d13.png"
                   alt="Bay and casement window combination featuring multiple tilt-and-turn windows with grey curtains, overlooking autumn trees"
-                  className="absolute inset-0 w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
-                  loading="lazy"
+                  className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-95"
+                  priority={false}
                 />
               </div>
               <p className="text-gray-700">

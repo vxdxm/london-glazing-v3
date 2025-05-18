@@ -16,7 +16,7 @@ const WindowTypes = () => {
               src="/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png"
               alt="Standard horizontal sliding secondary glazing with multiple panels that slide smoothly for easy operation"
               className="rounded-lg w-full h-[200px] object-cover mb-4"
-              loading="lazy"
+              priority={false}
             />
             <p>
               Our standard horizontal sliding system typically consists of 2 or 3 panels, which is standard for majority of the windows. 
@@ -43,7 +43,7 @@ const WindowTypes = () => {
               src="/lovable-uploads/83a85813-7a32-48d2-a1c9-ad133fc122d7.png"
               alt="Multi-track horizontal sliding secondary glazing system with advanced features for larger window openings"
               className="rounded-lg w-full h-[200px] object-cover mb-4"
-              loading="lazy"
+              priority={false}
             />
             <p>
               Our advanced multi-track sliding system can accommodate 3 to 5 panels within one window frame, offering maximum flexibility 
