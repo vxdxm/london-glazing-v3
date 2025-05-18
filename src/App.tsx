@@ -55,6 +55,9 @@ import SingleDoubleGlazed from "./pages/residential/SingleDoubleGlazed";
 import EnergyPerformance from "./pages/residential/EnergyPerformance";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
 import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
+// Import casement window specific pages
+import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
+import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
 
 const queryClient = new QueryClient();
 
@@ -90,6 +93,8 @@ const AppRoutes = () => {
         <Route path="/residential" element={<ResidentialSolutions />} />
         <Route path="/residential/sash-windows" element={<SashWindows />} />
         <Route path="/residential/casement-windows" element={<CasementWindows />} />
+        <Route path="/residential/casement-windows/modern-solutions" element={<CasementModernSolutions />} />
+        <Route path="/residential/casement-windows/traditional-options" element={<CasementTraditionalOptions />} />
         <Route path="/residential/bay-windows" element={<BayWindows />} />
         <Route path="/residential/horizontal-sliding" element={<HorizontalSliding />} />
         <Route path="/residential/lift-out" element={<LiftOut />} />

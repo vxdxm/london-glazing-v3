@@ -26,6 +26,11 @@
 /specialized/glass/premium /index.html 200
 /specialized/glass/high-performance /index.html 200
 
+# Add routes for nested pages that were missing
+/residential/casement-windows/modern-solutions /index.html 200
+/residential/casement-windows/traditional-options /index.html 200
+/residential/casement-windows/energy-efficiency /index.html 200
+
 # Explicitly list all routes for the SPA
 /residential/* /index.html 200
 /commercial/* /index.html 200

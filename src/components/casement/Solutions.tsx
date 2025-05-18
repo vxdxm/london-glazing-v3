@@ -45,7 +45,7 @@ const Solutions = () => {
           </CardContent>
         </Card>
 
-        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/casement-windows/energy-efficiency")}>
+        <Card className="hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/residential/energy-performance")}>
           <CardHeader>
             <div className="w-full h-48 overflow-hidden rounded-t-lg">
               <OptimizedImage 
