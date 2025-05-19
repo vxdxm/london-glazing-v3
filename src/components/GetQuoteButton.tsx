@@ -7,7 +7,7 @@ const GetQuoteButton = () => {
   return (
     <Link to="/quote-request">
       <Button 
-        className="fixed bottom-20 right-6 bg-primary hover:bg-primary/90 text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 rounded-full p-4 min-h-[48px] min-w-[48px]"
+        className="fixed bottom-[6rem] right-6 bg-primary hover:bg-primary/90 text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 rounded-full p-4 min-h-[48px] min-w-[48px]"
         aria-label="Get a quote"
       >
         <MessageSquarePlus className="w-6 h-6 mr-2" />
