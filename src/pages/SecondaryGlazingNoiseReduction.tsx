@@ -1,16 +1,23 @@
+
 import React from "react";
 import { MainNav } from "@/components/MainNav";
-import NoiseReductionSEO from "@/pages/specialized/NoiseReductionSEO";
+import { StandardSEO } from "@/components/specialized/SEOUtils";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
+import { Footer } from "@/components/Footer";
 
 const SecondaryGlazingNoiseReduction = () => {
   useScrollToHash();
   
   return (
     <div className="min-h-screen bg-background">
-      <NoiseReductionSEO />
+      <StandardSEO 
+        title="Secondary Glazing Noise Reduction | Up to 80% Noise Reduction Solutions"
+        description="Discover how secondary glazing can reduce noise by up to 80%. Expert acoustic solutions for London homes near busy roads, flight paths and urban areas."
+        canonicalPath="/secondary-glazing-noise-reduction"
+        keywords={["noise reduction", "secondary glazing", "acoustic glazing", "sound insulation", "noise pollution", "London glazing", "soundproofing windows"]}
+      />
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
@@ -42,6 +49,8 @@ const SecondaryGlazingNoiseReduction = () => {
           </a>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
