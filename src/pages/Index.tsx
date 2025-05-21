@@ -17,14 +17,46 @@ const Index = () => {
   useEffect(() => {
     console.log("Home page loaded");
     
-    // Check if we need to scroll to the contact section (via URL hash)
-    if (window.location.hash === '#contact-form-section') {
-      setTimeout(() => {
-        document.getElementById('contact-form-section')?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }, 300);
+    // Check if we need to scroll to the contact section
+    // Handle both hash-based navigation and query parameter-based navigation
+    const shouldScrollToContact = 
+      window.location.hash === '#contact-form-section' || 
+      new URLSearchParams(window.location.search).get('scrollToContact') === 'true';
+    
+    if (shouldScrollToContact) {
+      // Use a more reliable approach with multiple attempts
+      const scrollToContact = () => {
+        const contactSection = document.getElementById('contact-form-section');
+        if (contactSection) {
+          // Force layout recalculation before scrolling
+          contactSection.getBoundingClientRect();
+          
+          contactSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          return true;
+        }
+        return false;
+      };
+      
+      // Try immediately
+      if (!scrollToContact()) {
+        // If not successful, try with a delay to ensure DOM is ready
+        setTimeout(() => {
+          if (!scrollToContact()) {
+            // One more attempt with a longer delay
+            setTimeout(scrollToContact, 500);
+          }
+        }, 100);
+      }
+      
+      // Clean up the URL if using query parameter
+      if (window.location.search.includes('scrollToContact')) {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('scrollToContact');
+        window.history.replaceState({}, '', url);
+      }
     }
   }, []);
   
@@ -51,7 +83,7 @@ const Index = () => {
         <Testimonials />
       </LazyLoadWrapper>
       
-      <div id="contact-form-section" className="scroll-mt-20">
+      <div id="contact-form-section" className="scroll-mt-24">
         <ContactForm />
       </div>
       <Footer />

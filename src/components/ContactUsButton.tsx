@@ -11,16 +11,21 @@ const ContactUsButton = () => {
   const handleContactClick = () => {
     // Check if we're already on the home page
     if (location.pathname === "/") {
-      // We're on the home page, scroll directly with a slight delay to ensure rendering
-      setTimeout(() => {
-        document.getElementById('contact-form-section')?.scrollIntoView({
+      // We're on the home page, scroll directly
+      const contactSection = document.getElementById('contact-form-section');
+      
+      if (contactSection) {
+        // Force layout recalculation before scrolling
+        contactSection.getBoundingClientRect();
+        
+        contactSection.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
-      }, 100);
+      }
     } else {
       // We're on another page, navigate to home with hash
-      navigate('/#contact-form-section');
+      navigate('/?scrollToContact=true');
     }
   };
 
