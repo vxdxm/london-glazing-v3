@@ -24,7 +24,7 @@ const Index = () => {
           behavior: 'smooth',
           block: 'start'
         });
-      }, 100);
+      }, 300);
     }
   }, []);
   
@@ -48,10 +48,10 @@ const Index = () => {
       </LazyLoadWrapper>
 
       <LazyLoadWrapper>
-        <Testimonials id="testimonials" />
+        <Testimonials />
       </LazyLoadWrapper>
       
-      <div id="contact-form-section">
+      <div id="contact-form-section" className="scroll-mt-20">
         <ContactForm />
       </div>
       <Footer />
