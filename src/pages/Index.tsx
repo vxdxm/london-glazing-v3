@@ -18,9 +18,9 @@ const Index = () => {
     console.log("Home page loaded");
     
     // Check if we need to scroll to the contact section (via URL hash)
-    if (window.location.hash === '#contact-section') {
+    if (window.location.hash === '#contact-form-section') {
       setTimeout(() => {
-        document.getElementById('contact-section')?.scrollIntoView({
+        document.getElementById('contact-form-section')?.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
@@ -48,10 +48,10 @@ const Index = () => {
       </LazyLoadWrapper>
 
       <LazyLoadWrapper>
-        <Testimonials />
+        <Testimonials id="testimonials" />
       </LazyLoadWrapper>
       
-      <div id="contact-section">
+      <div id="contact-form-section">
         <ContactForm />
       </div>
       <Footer />
