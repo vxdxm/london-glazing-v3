@@ -17,17 +17,10 @@ const Index = () => {
   useEffect(() => {
     console.log("Home page loaded");
     
-    // Check if we need to scroll to a specific section (via URL hash)
+    // Check if we need to scroll to the contact section (via URL hash)
     if (window.location.hash === '#contact-section') {
       setTimeout(() => {
         document.getElementById('contact-section')?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }, 100);
-    } else if (window.location.hash === '#testimonials') {
-      setTimeout(() => {
-        document.getElementById('testimonials')?.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });
@@ -55,9 +48,7 @@ const Index = () => {
       </LazyLoadWrapper>
 
       <LazyLoadWrapper>
-        <div id="testimonials">
-          <Testimonials />
-        </div>
+        <Testimonials />
       </LazyLoadWrapper>
       
       <div id="contact-section">
