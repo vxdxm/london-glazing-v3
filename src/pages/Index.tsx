@@ -16,6 +16,16 @@ const Index = () => {
   // Add logging for home page indexing
   useEffect(() => {
     console.log("Home page loaded");
+    
+    // Check if we need to scroll to the contact section (via URL hash)
+    if (window.location.hash === '#contact-section') {
+      setTimeout(() => {
+        document.getElementById('contact-section')?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
+    }
   }, []);
   
   return (
