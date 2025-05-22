@@ -55,6 +55,7 @@ import SingleDoubleGlazed from "./pages/residential/SingleDoubleGlazed";
 import EnergyPerformance from "./pages/residential/EnergyPerformance";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
 import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
+import Contact from "./pages/Contact";
 // Import casement window specific pages
 import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
 import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
@@ -84,6 +85,7 @@ const AppRoutes = () => {
         <Route path="/quote-request" element={<QuoteRequest />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
         <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
         <Route path="/learn-about-spiral-balances" element={<LearnAboutSpiralBalances />} />

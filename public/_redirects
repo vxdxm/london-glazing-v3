@@ -25,6 +25,7 @@
 /specialized/secondary-glazing-original-windows /index.html 200
 /specialized/glass/premium /index.html 200
 /specialized/glass/high-performance /index.html 200
+/contact /index.html 200
 
 # Add routes for nested pages that were missing
 /residential/casement-windows/modern-solutions /index.html 200
@@ -45,6 +46,7 @@
 /quote-request /index.html 200
 /gallery /index.html 200
 /faqs /index.html 200
+/contact /index.html 200
 /privacy-policy /index.html 200
 /terms-and-conditions /index.html 200
 /cookie-policy /index.html 200

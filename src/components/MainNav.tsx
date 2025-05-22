@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -17,7 +18,6 @@ import { Menu } from "lucide-react";
 export function MainNav() {
   const {
     handleNavigation,
-    handleContactClick,
     handleMouseEnter,
     handleMouseLeave,
     openMenus,
@@ -67,14 +67,7 @@ export function MainNav() {
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
-          <div className="px-4 py-3">
-            <button
-              onClick={handleContactClick}
-              className="text-sm hover:text-accent-foreground transition-colors py-2 px-3 min-h-[48px] w-full text-left"
-            >
-              Contact Us
-            </button>
-          </div>
+          <MobileNavItem to="/contact">Contact Us</MobileNavItem>
           <div className="px-4 py-3">
             <Button
               onClick={() => handleNavigation("/quote-request")}
@@ -148,12 +141,9 @@ export function MainNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <button
-              onClick={handleContactClick}
-              className="text-sm font-medium hover:text-accent-foreground transition-colors p-3"
-            >
+            <Link to="/contact" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Contact Us
-            </button>
+            </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Button
