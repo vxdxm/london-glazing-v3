@@ -10,17 +10,8 @@ export const Hero = () => {
   useScrollToHash(); // Use the scroll to hash hook
 
   const handleContactClick = () => {
-    // First check if we're already on the home page
-    if (window.location.pathname === "/") {
-      // We're on the home page, scroll directly
-      document.getElementById('contact-section')?.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    } else {
-      // We're on another page, navigate to home with hash
-      navigate('/#contact-section');
-    }
+    // Navigate to dedicated contact page
+    navigate('/contact');
   };
 
   return (
