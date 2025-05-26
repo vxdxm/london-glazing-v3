@@ -2,10 +2,14 @@
 User-agent: *
 Allow: /
 
-# Main Category Pages
+# Explicitly allow all important pages
 Allow: /residential
 Allow: /commercial
 Allow: /specialized
+Allow: /contact
+Allow: /quote-request
+Allow: /gallery
+Allow: /faqs
 
 # Commercial Pages
 Allow: /commercial/office-buildings
@@ -34,9 +38,7 @@ Allow: /specialized/thermal-insulation
 Allow: /specialized/security-glazing
 Allow: /specialized/condensation-control
 Allow: /specialized/air-gap-secondary-glazing
-Allow: /air-gap-secondary-glazing
 Allow: /specialized/secondary-glazing-building-regulations
-Allow: /secondary-glazing-building-regulations
 Allow: /specialized/sound-transmission-guide
 Allow: /specialized/noise-reduction
 Allow: /specialized/secondary-glazing-original-windows
@@ -45,20 +47,27 @@ Allow: /specialized/double-glazed-units
 Allow: /specialized/uv-protection
 Allow: /specialized/insurance-premiums
 
-# Glass Variants
-Allow: /specialized/glass/premium
-Allow: /specialized/glass/high-performance
-Allow: /specialized/glass/medium-performance
-Allow: /specialized/glass/enhanced-entry
-Allow: /specialized/glass/entry-level
-
 # Service Pages
 Allow: /secondary-glazing-repairs
 Allow: /sustainability-impact-tracker-secondary-glazing
 
-# Utility Pages
-Allow: /quote-request
-Allow: /gallery
-Allow: /faqs
+# Disallow admin or dynamic content that shouldn't be indexed
+Disallow: /api/
+Disallow: /*?*
+Disallow: /*/*?*
 
-Sitemap: https://secondaryglazingspecialist.com/sitemap-index.xml
+# Allow all static assets
+Allow: /lovable-uploads/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Crawl delay to be respectful
+Crawl-delay: 1
+
+Sitemap: https://secondaryglazingspecialist.com/sitemap.xml

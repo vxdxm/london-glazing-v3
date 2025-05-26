@@ -1,15 +1,14 @@
 
-# Specific routes that should be preserved and served directly
+# Specific files that should be served directly
 /sitemap.xml /sitemap.xml 200
+/sitemap-*.xml /sitemap-:splat.xml 200
 /robots.txt /robots.txt 200
-/sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 
-# Legacy redirects
+# Legacy redirects with proper 301 status
 /noise-calculator /specialized/noise-reduction#calculator 301!
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 /secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
 /air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 301!
 
-# SPA routing - serve index.html for all other routes with 200 status
-# This ensures Google can crawl and index the pages properly
+# Ensure trailing slash consistency (optional but recommended for SEO)
 /* /index.html 200
