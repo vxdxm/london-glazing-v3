@@ -2,48 +2,52 @@
 # Enable rewriting
 RewriteEngine On
 
+# Serve static files directly
+RewriteRule ^sitemap\.xml$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+
+# Handle legacy redirects with 301 status
+RewriteRule ^noise-calculator/?$ /specialized/noise-reduction#calculator [R=301,L]
+RewriteRule ^sustainability-impact-tracker/?$ /sustainability-impact-tracker-secondary-glazing [R=301,L]
+RewriteRule ^secondary-glazing-building-regulations/?$ /specialized/secondary-glazing-building-regulations [R=301,L]
+RewriteRule ^air-gap-secondary-glazing/?$ /specialized/air-gap-secondary-glazing [R=301,L]
+
 # If the request is not for a file or directory that exists
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Explicitly serve these files directly, exclude them from SPA routing
-RewriteRule ^sitemap\.xml$ - [L]
-RewriteRule ^robots\.txt$ - [L]
-
-# Handle specific paths explicitly that need to be properly indexed by Google
-# ... keep existing code (specific path rules)
-
-# Rewrite all other requests to index.html
+# Rewrite all other requests to index.html for SPA routing
 RewriteRule ^ index.html [QSA,L]
 
-# Serve pre-compressed files if they exist and the client accepts them
+# SEO and performance headers
 <IfModule mod_headers.c>
-  # Serve Brotli compressed files if they exist and the client accepts Brotli
+  # Add robots headers for better indexing
+  Header set X-Robots-Tag "index,follow"
+  
+  # Serve pre-compressed files if they exist and the client accepts them
   RewriteCond %{HTTP:Accept-encoding} br
   RewriteCond %{REQUEST_FILENAME}\.br -f
   RewriteRule ^(.*)$ $1.br [QSA]
-  # Adjust content-type based on original file
-  RewriteRule \.css\.br$ - [T=text/css,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
-  RewriteRule \.js\.br$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
-  RewriteRule \.html\.br$ - [T=text/html,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
-  RewriteRule \.svg\.br$ - [T=image/svg+xml,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
-  RewriteRule \.json\.br$ - [T=application/json,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
-  <FilesMatch "\.br$">
-    Header set Content-Encoding br
-    Header append Vary Accept-Encoding
-  </FilesMatch>
-
-  # Serve Gzip compressed files if they exist and client accepts gzip
+  
   RewriteCond %{HTTP:Accept-encoding} gzip
   RewriteCond %{REQUEST_FILENAME}\.gz -f
   RewriteCond %{REQUEST_FILENAME}\.br !-f
   RewriteRule ^(.*)$ $1.gz [QSA]
-  # Adjust content-type based on original file
+  
+  # Content type adjustments for compressed files
+  RewriteRule \.css\.br$ - [T=text/css,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.js\.br$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  RewriteRule \.html\.br$ - [T=text/html,E=no-gzip:1,E=no-brotli:1,E=is-br:1]
+  
+  <FilesMatch "\.br$">
+    Header set Content-Encoding br
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+  
   RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
   RewriteRule \.js\.gz$ - [T=application/javascript,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
   RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
-  RewriteRule \.svg\.gz$ - [T=image/svg+xml,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
-  RewriteRule \.json\.gz$ - [T=application/json,E=no-gzip:1,E=no-brotli:1,E=is-gz:1]
+  
   <FilesMatch "\.gz$">
     Header set Content-Encoding gzip
     Header append Vary Accept-Encoding
@@ -53,8 +57,6 @@ RewriteRule ^ index.html [QSA,L]
 # Browser caching for static assets
 <IfModule mod_expires.c>
   ExpiresActive On
-  
-  # Default expiration: 1 month after request
   ExpiresDefault "access plus 1 month"
   
   # Images
@@ -64,76 +66,45 @@ RewriteRule ^ index.html [QSA,L]
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
   
   # CSS, JavaScript
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType application/x-javascript "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
   
   # Fonts
-  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
-  ExpiresByType application/x-font-ttf "access plus 1 year"
-  ExpiresByType application/x-font-opentype "access plus 1 year"
-  ExpiresByType application/x-font-woff "access plus 1 year"
   ExpiresByType application/font-woff "access plus 1 year"
   ExpiresByType application/font-woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
   ExpiresByType font/woff2 "access plus 1 year"
   
-  # Data
-  ExpiresByType application/json "access plus 0 seconds"
-  ExpiresByType application/xml "access plus 0 seconds"
-  ExpiresByType text/xml "access plus 0 seconds"
+  # Don't cache HTML files to ensure fresh content
+  ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
 
-# Add Cache-Control headers as backup for browsers that don't support Expires
+# Add Cache-Control headers
 <IfModule mod_headers.c>
-  # Images
-  <FilesMatch "\.(jpg|jpeg|png|gif|ico|webp|svg)$">
+  # Images and assets
+  <FilesMatch "\.(jpg|jpeg|png|gif|ico|webp|svg|css|js|woff|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   
-  # CSS and JS
-  <FilesMatch "\.(css|js)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  
-  # Fonts
-  <FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  
-  # Prevent caching for index.html to ensure the latest version is served
-  <FilesMatch "^index\.html$">
+  # Don't cache HTML files
+  <FilesMatch "\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"
   </FilesMatch>
   
-  # Add headers for SEO crawlers
-  <FilesMatch "^(specialized|commercial|residential)">
-    Header set X-Robots-Tag "index,follow"
-  </FilesMatch>
-
-  # Enable Keep-Alive
-  Header set Connection keep-alive
-  
-  # Add content security policy
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
-  
-  # Add Cross-Origin headers
+  # Security headers
   Header set X-Content-Type-Options "nosniff"
   Header set X-XSS-Protection "1; mode=block"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Enable compression for files not pre-compressed during build
+# Enable compression
 <IfModule mod_deflate.c>
-  # Compress HTML, CSS, JavaScript, Text, XML and fonts
   AddOutputFilterByType DEFLATE application/javascript
-  AddOutputFilterByType DEFLATE application/x-javascript
   AddOutputFilterByType DEFLATE text/javascript
   AddOutputFilterByType DEFLATE text/css
   AddOutputFilterByType DEFLATE text/html
@@ -141,24 +112,5 @@ RewriteRule ^ index.html [QSA,L]
   AddOutputFilterByType DEFLATE text/xml
   AddOutputFilterByType DEFLATE application/xml
   AddOutputFilterByType DEFLATE application/json
-  AddOutputFilterByType DEFLATE application/font-woff
-  AddOutputFilterByType DEFLATE application/font-woff2
-  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
-  AddOutputFilterByType DEFLATE application/x-font-ttf
-  AddOutputFilterByType DEFLATE font/opentype
   AddOutputFilterByType DEFLATE image/svg+xml
-  
-  # Skip compression for already compressed files
-  <IfModule mod_setenvif.c>
-    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp)$ no-gzip dont-vary
-    SetEnvIfNoCase Request_URI \.(?:gz|br)$ no-gzip dont-vary
-    SetEnvIf is-br 1 no-gzip
-    SetEnvIf is-gz 1 no-gzip
-  </IfModule>
-  
-  # Remove browser bugs
-  BrowserMatch ^Mozilla/4 gzip-only-text/html
-  BrowserMatch ^Mozilla/4\.0[678] no-gzip
-  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-  Header append Vary User-Agent
 </IfModule>

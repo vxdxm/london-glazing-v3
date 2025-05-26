@@ -4,57 +4,12 @@
 /robots.txt /robots.txt 200
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 
-# Define specific pages that need exact handling for Google indexing
-/specialized/secondary-glazing-building-regulations /index.html 200
-/specialized/air-gap-secondary-glazing /index.html 200
-/specialized/condensation-control /index.html 200
-/specialized/thermal-insulation /index.html 200
-/specialized/acoustic-glazing /index.html 200
-/commercial/educational-sector /index.html 200
-/commercial/listed-buildings /index.html 200
-/commercial/hospitality-sector /index.html 200
-/commercial/office-buildings /index.html 200
-/residential/traditional-options /index.html 200
-/residential/modern-solutions /index.html 200
-/residential/sash-windows /index.html 200
-/residential/bay-windows /index.html 200
-/residential/horizontal-sliding /index.html 200
-/residential/combination /index.html 200
-/secondary-glazing-repairs /index.html 200
-/specialized/sound-transmission-guide /index.html 200
-/specialized/secondary-glazing-original-windows /index.html 200
-/specialized/glass/premium /index.html 200
-/specialized/glass/high-performance /index.html 200
-/contact /index.html 200
+# Legacy redirects
+/noise-calculator /specialized/noise-reduction#calculator 301!
+/sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
+/secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
+/air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 301!
 
-# Add routes for nested pages that were missing
-/residential/casement-windows/modern-solutions /index.html 200
-/residential/casement-windows/traditional-options /index.html 200
-/residential/casement-windows/energy-efficiency /index.html 200
-
-# Explicitly list all routes for the SPA
-/residential/* /index.html 200
-/commercial/* /index.html 200
-/specialized/* /index.html 200
-/secondary-glazing-repairs /index.html 200
-/learn-about-spiral-balances /index.html 200
-/secondary-glazing-repairs/learn-about-spiral-balances /index.html 200
-/sustainability-impact-tracker-secondary-glazing /index.html 200
-/secondary-glazing-building-regulations /index.html 200
-/specialized/air-gap-secondary-glazing /index.html 200
-/air-gap-secondary-glazing /index.html 200
-/quote-request /index.html 200
-/gallery /index.html 200
-/faqs /index.html 200
-/contact /index.html 200
-/privacy-policy /index.html 200
-/terms-and-conditions /index.html 200
-/cookie-policy /index.html 200
-/secondary-glazing-noise-reduction /index.html 200
-/noise-calculator /index.html 200
-
-# Important: Root path needs explicit handling to ensure index.html is served
-/ /index.html 200
-
-# Handle all other routes for the SPA - THIS MUST BE THE LAST RULE
+# SPA routing - serve index.html for all other routes with 200 status
+# This ensures Google can crawl and index the pages properly
 /* /index.html 200
