@@ -3,14 +3,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import ContactUsButton from "@/components/ContactUsButton";
-import SEOHelmet from "@/components/SEOHelmet";
 import Index from "./pages/Index";
-
 import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
@@ -56,43 +54,14 @@ import EnergyPerformance from "./pages/residential/EnergyPerformance";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
 import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
 import Contact from "./pages/Contact";
-// Import casement window specific pages
 import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
 import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
 
 const queryClient = new QueryClient();
 
-const BASE_URL = "https://secondaryglazingspecialist.com";
-
-// Enhanced canonical component with better duplicate content prevention
-const CanonicalTag = () => {
-  const location = useLocation();
-  
-  // Normalize pathname - remove trailing slashes except for root
-  const normalizedPath = location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '');
-  const canonicalUrl = `${BASE_URL}${normalizedPath}`;
-  
-  return (
-    <Helmet>
-      <link rel="canonical" href={canonicalUrl} />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      
-      {/* Prevent parameter-based duplicates */}
-      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      
-      {/* Hreflang for language consistency (English) */}
-      <link rel="alternate" hrefLang="en" href={canonicalUrl} />
-      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
-    </Helmet>
-  );
-};
-
 const AppRoutes = () => {
   return (
     <>
-      <CanonicalTag />
-      {/* Global SEO helmet for all pages */}
-      <SEOHelmet />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
@@ -156,7 +125,6 @@ const App = () => (
     <TooltipProvider>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <base href="/" />
       </Helmet>
       <Toaster />
       <Sonner />

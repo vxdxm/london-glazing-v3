@@ -25,11 +25,9 @@ RewriteRule ^ index.html [QSA,L]
 
 # SEO and performance headers
 <IfModule mod_headers.c>
-  # Add canonical headers to prevent duplicate content
+  # Add robots headers for better indexing
   Header set X-Robots-Tag "index,follow"
-  Header set Link '<https://secondaryglazingspecialist.com%{REQUEST_URI}>; rel="canonical"'
   
-  # ... keep existing code (compression and caching headers)
   # Serve pre-compressed files if they exist and the client accepts them
   RewriteCond %{HTTP:Accept-encoding} br
   RewriteCond %{REQUEST_FILENAME}\.br -f
