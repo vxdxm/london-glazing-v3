@@ -4,11 +4,15 @@
 /sitemap-*.xml /sitemap-:splat.xml 200
 /robots.txt /robots.txt 200
 
+# Enforce trailing slash consistency - redirect all trailing slashes to non-trailing slash versions
+# This prevents duplicate content issues
+/*/ /:splat 301!
+
 # Legacy redirects with proper 301 status
 /noise-calculator /specialized/noise-reduction#calculator 301!
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 /secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
 /air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 301!
 
-# Ensure trailing slash consistency (optional but recommended for SEO)
+# Ensure all requests go to index.html for SPA routing (without trailing slash)
 /* /index.html 200

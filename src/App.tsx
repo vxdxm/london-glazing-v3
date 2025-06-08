@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -9,6 +8,7 @@ import { Helmet } from "react-helmet";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import ContactUsButton from "@/components/ContactUsButton";
+import SEOHelmet from "@/components/SEOHelmet";
 import Index from "./pages/Index";
 
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -64,14 +64,25 @@ const queryClient = new QueryClient();
 
 const BASE_URL = "https://secondaryglazingspecialist.com";
 
-// Component to add canonical URL to every page
+// Enhanced canonical component with better duplicate content prevention
 const CanonicalTag = () => {
   const location = useLocation();
-  const canonicalUrl = `${BASE_URL}${location.pathname}`;
+  
+  // Normalize pathname - remove trailing slashes except for root
+  const normalizedPath = location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '');
+  const canonicalUrl = `${BASE_URL}${normalizedPath}`;
   
   return (
     <Helmet>
       <link rel="canonical" href={canonicalUrl} />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      
+      {/* Prevent parameter-based duplicates */}
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      
+      {/* Hreflang for language consistency (English) */}
+      <link rel="alternate" hrefLang="en" href={canonicalUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
     </Helmet>
   );
 };
@@ -80,6 +91,8 @@ const AppRoutes = () => {
   return (
     <>
       <CanonicalTag />
+      {/* Global SEO helmet for all pages */}
+      <SEOHelmet />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
