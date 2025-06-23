@@ -1,7 +1,6 @@
-
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { Helmet } from "react-helmet";
+import SEOHelmet from "@/components/SEOHelmet";
 import { Footer } from "@/components/Footer";
 
 const Gallery = () => {
@@ -85,15 +84,12 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Secondary Glazing Project Gallery | Window Installation Examples</title>
-        <meta name="description" content="Browse our gallery of secondary glazing installations. See real examples of noise reduction, thermal efficiency, and security enhancement solutions for residential and commercial properties." />
-        <meta name="keywords" content="secondary glazing gallery, window installations, glazing examples, noise reduction, thermal insulation, before and after" />
-        <meta property="og:title" content="Secondary Glazing Project Gallery | Installation Examples" />
-        <meta property="og:description" content="Explore our portfolio of expertly installed secondary glazing solutions. See real examples of our work across London." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/gallery" />
-      </Helmet>
+      <SEOHelmet
+        title="Secondary Glazing Project Gallery | Window Installation Examples"
+        description="Browse our gallery of secondary glazing installations. See real examples of noise reduction, thermal efficiency, and security enhancement solutions for residential and commercial properties."
+        canonicalPath="/gallery"
+        keywords={["secondary glazing gallery", "window installations", "glazing examples", "noise reduction", "thermal insulation", "before and after"]}
+      />
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-4 text-center">Our Gallery</h1>
@@ -128,4 +124,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-

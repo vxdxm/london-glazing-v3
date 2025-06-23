@@ -1,8 +1,10 @@
+
 import { MainNav } from "@/components/MainNav";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import { Helmet } from "react-helmet";
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -31,6 +33,11 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>404 - Page Not Found | Secondary Glazing Specialist</title>
+        <meta name="description" content="The page you are looking for could not be found. You will be redirected to our homepage." />
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl font-bold mb-4">404 - Page Not Found</h1>

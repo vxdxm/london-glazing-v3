@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import SEOHelmet from "@/components/SEOHelmet";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -8,11 +8,11 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 const CasementModernSolutions = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Modern Casement Window Solutions | Secondary Glazing</title>
-        <meta name="description" content="Discover our contemporary secondary glazing options for modern properties with casement windows. Enhance thermal efficiency and reduce noise pollution." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/casement-windows/modern-solutions" />
-      </Helmet>
+      <SEOHelmet
+        title="Modern Casement Window Solutions | Secondary Glazing"
+        description="Discover our contemporary secondary glazing options for modern properties with casement windows. Enhance thermal efficiency and reduce noise pollution."
+        canonicalPath="/residential/casement-windows/modern-solutions"
+      />
       
       <MainNav />
       

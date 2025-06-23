@@ -3,16 +3,16 @@ import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import SEOHelmet from "@/components/SEOHelmet";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Contact Us | Secondary Glazing Specialist</title>
-        <meta name="description" content="Get in touch with Secondary Glazing Specialist for a free consultation or quote on your secondary glazing needs." />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/contact" />
-      </Helmet>
+      <SEOHelmet
+        title="Contact Us | Secondary Glazing Specialist"
+        description="Get in touch with Secondary Glazing Specialist for a free consultation or quote on your secondary glazing needs."
+        canonicalPath="/contact"
+      />
       
       <MainNav />
       
