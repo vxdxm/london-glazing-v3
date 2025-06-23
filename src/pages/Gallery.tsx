@@ -1,7 +1,9 @@
+
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHelmet from "@/components/SEOHelmet";
 import { Footer } from "@/components/Footer";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const Gallery = () => {
   const galleryItems = [
@@ -106,11 +108,12 @@ const Gallery = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
             <div key={index} className="animate-fade-up group">
-              <img
+              <OptimizedImage
                 src={item.src}
                 alt={item.alt}
                 className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform group-hover:scale-105"
-                loading="lazy"
+                priority={index < 3}
+                aspectRatio={16/9}
               />
               <p className="mt-2 text-sm text-gray-600">{item.description}</p>
             </div>

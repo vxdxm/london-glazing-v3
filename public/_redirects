@@ -8,7 +8,7 @@
 # This prevents duplicate content issues
 /*/ /:splat 301!
 
-# Legacy redirects with proper 301 status
+# Legacy redirects with proper 301 status - optimized for efficiency
 /noise-calculator /specialized/noise-reduction#calculator 301!
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 /secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
