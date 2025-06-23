@@ -1,4 +1,7 @@
 
+# Redirect www to non-www (301 permanent redirect)
+https://www.secondaryglazingspecialist.com/* https://secondaryglazingspecialist.com/:splat 301!
+
 # Specific files that should be served directly
 /sitemap.xml /sitemap.xml 200
 /sitemap-*.xml /sitemap-:splat.xml 200

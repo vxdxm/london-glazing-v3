@@ -2,6 +2,10 @@
 # Enable rewriting
 RewriteEngine On
 
+# Redirect www to non-www (301 permanent redirect)
+RewriteCond %{HTTP_HOST} ^www\.secondaryglazingspecialist\.com [NC]
+RewriteRule ^(.*)$ https://secondaryglazingspecialist.com/$1 [R=301,L]
+
 # Serve static files directly
 RewriteRule ^sitemap\.xml$ - [L]
 RewriteRule ^robots\.txt$ - [L]
