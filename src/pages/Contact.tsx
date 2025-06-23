@@ -3,15 +3,24 @@ import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
-import SEOHelmet from "@/components/SEOHelmet";
+import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 
 const Contact = () => {
   return (
     <div className="min-h-screen">
-      <SEOHelmet
-        title="Contact Us | Secondary Glazing Specialist"
-        description="Get in touch with Secondary Glazing Specialist for a free consultation or quote on your secondary glazing needs."
+      <EnhancedSEO
+        title="Contact Us | Secondary Glazing Specialist London"
+        description="Get in touch with London's leading secondary glazing specialists. Free consultations, expert advice, and competitive quotes for all your glazing needs."
         canonicalPath="/contact"
+        type="website"
+        keywords={[
+          "contact secondary glazing",
+          "glazing consultation London",
+          "secondary glazing quote",
+          "window glazing contact",
+          "glazing specialists London"
+        ]}
+        serviceName="Secondary Glazing Consultation"
       />
       
       <MainNav />
