@@ -21,6 +21,7 @@ const Contact = () => {
           "glazing specialists London"
         ]}
         serviceName="Secondary Glazing Consultation"
+        includeLocalBusiness={true}
       />
       
       <MainNav />

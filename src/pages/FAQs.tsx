@@ -5,7 +5,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import FAQSEO from "@/components/faqs/FAQSEO";
+import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
+import { createFAQSchema } from "@/utils/faq-schema";
 
 const FAQs = () => {
   const faqs = [
@@ -43,10 +46,33 @@ const FAQs = () => {
     }
   ];
 
+  const faqSchema = createFAQSchema(faqs);
+
   return (
     <div className="min-h-screen bg-background">
+      <EnhancedSEO
+        title="Secondary Glazing FAQs | Expert Answers to Common Questions"
+        description="Get expert answers to frequently asked questions about secondary glazing. Learn about installation, costs, benefits, and maintenance from London's leading glazing specialists."
+        canonicalPath="/faqs"
+        type="article"
+        keywords={[
+          "secondary glazing FAQ",
+          "glazing questions answered",
+          "secondary glazing costs",
+          "window glazing installation",
+          "glazing maintenance",
+          "noise reduction windows"
+        ]}
+        serviceName="Secondary Glazing Consultation"
+      />
+      
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+      
       <MainNav />
-      <FAQSEO />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
         <div className="max-w-3xl mx-auto">
@@ -64,6 +90,7 @@ const FAQs = () => {
           </Accordion>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

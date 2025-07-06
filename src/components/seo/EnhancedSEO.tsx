@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
-import { createOrganizationSchema, createServiceSchema } from "@/utils/structuredData";
+import { useLocation } from "react-router-dom";
+import { createOrganizationSchema, createServiceSchema, createLocalBusinessSchema, createBreadcrumbSchema } from "@/utils/structuredData";
 
 interface EnhancedSEOProps {
   title: string;
@@ -12,6 +13,8 @@ interface EnhancedSEOProps {
   keywords?: string[];
   serviceName?: string;
   preloadImages?: string[];
+  includeBreadcrumbs?: boolean;
+  includeLocalBusiness?: boolean;
 }
 
 export const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
@@ -22,13 +25,43 @@ export const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
   type = "website",
   keywords = [],
   serviceName,
-  preloadImages = []
+  preloadImages = [],
+  includeBreadcrumbs = true,
+  includeLocalBusiness = false
 }) => {
+  const location = useLocation();
   const fullUrl = `https://secondaryglazingspecialist.com${canonicalPath}`;
   const fullImageUrl = `https://secondaryglazingspecialist.com${imageUrl}`;
   
   const organizationSchema = createOrganizationSchema();
+  const localBusinessSchema = includeLocalBusiness ? createLocalBusinessSchema() : null;
   const serviceSchema = serviceName ? createServiceSchema(serviceName, description) : null;
+  
+  // Generate breadcrumbs from current path
+  const generateBreadcrumbs = () => {
+    const pathSegments = location.pathname.split('/').filter(segment => segment);
+    const breadcrumbs = [{ name: 'Home', url: '/' }];
+    
+    let currentPath = '';
+    pathSegments.forEach((segment, index) => {
+      currentPath += `/${segment}`;
+      const routeLabels: { [key: string]: string } = {
+        'specialized': 'Specialized Services',
+        'residential': 'Residential Solutions', 
+        'commercial': 'Commercial Solutions',
+        'contact': 'Contact Us',
+        'gallery': 'Gallery',
+        'quote-request': 'Quote Request'
+      };
+      
+      const label = routeLabels[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      breadcrumbs.push({ name: label, url: currentPath });
+    });
+    
+    return breadcrumbs;
+  };
+  
+  const breadcrumbSchema = includeBreadcrumbs ? createBreadcrumbSchema(generateBreadcrumbs()) : null;
 
   return (
     <Helmet>
@@ -67,9 +100,21 @@ export const EnhancedSEO: React.FC<EnhancedSEOProps> = ({
         {JSON.stringify(organizationSchema)}
       </script>
       
+      {localBusinessSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+      )}
+      
       {serviceSchema && (
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
+        </script>
+      )}
+      
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       )}
     </Helmet>

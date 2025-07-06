@@ -103,6 +103,7 @@ const Gallery = () => {
           "before and after windows"
         ]}
         preloadImages={preloadImages}
+        serviceName="Secondary Glazing Installation Gallery"
       />
       <MainNav />
       <div className="container mx-auto px-4 py-8">

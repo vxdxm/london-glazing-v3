@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { LazyLoadWrapper } from "@/components/ui";
-import HomeSEO from "@/components/home/HomeSEO";
+import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import HomeExamples from "@/components/home/HomeExamples";
 import HomeBenefits from "@/components/home/HomeBenefits";
 import HomeSustainability from "@/components/home/HomeSustainability";
@@ -30,7 +30,22 @@ const Index = () => {
   
   return (
     <div className="min-h-screen">
-      <HomeSEO />
+      <EnhancedSEO
+        title="Secondary Glazing Specialist | Heritage & Modern Homes London"
+        description="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution with professional glazing services."
+        canonicalPath="/"
+        type="website"
+        keywords={[
+          "secondary glazing London",
+          "window glazing specialist",
+          "thermal efficiency windows",
+          "noise reduction glazing",
+          "heritage glazing solutions",
+          "acoustic glazing London"
+        ]}
+        includeLocalBusiness={true}
+        includeBreadcrumbs={false}
+      />
       <MainNav />
       <Hero />
       <Services />
