@@ -1,8 +1,9 @@
 import { MainNav } from "@/components/MainNav";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { IntelligentSEO } from "@/components/seo/IntelligentSEO";
 import { Footer } from "@/components/Footer";
 import { OptimizedLazyImage } from "@/components/ui/optimized-lazy-image";
+import { RelatedContent } from "@/components/seo/RelatedContent";
 
 const Gallery = () => {
   const galleryItems = [
@@ -88,11 +89,9 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
-      <EnhancedSEO
+      <IntelligentSEO
         title="Secondary Glazing Gallery | London Installation Examples & Case Studies"
         description="Browse our extensive gallery of secondary glazing installations across London. Real examples of noise reduction, thermal efficiency, and security enhancement solutions for residential and commercial properties."
-        canonicalPath="/gallery"
-        type="website"
         keywords={[
           "secondary glazing gallery",
           "glazing installation examples",
@@ -102,8 +101,13 @@ const Gallery = () => {
           "heritage glazing solutions",
           "before and after windows"
         ]}
-        preloadImages={preloadImages}
-        serviceName="Secondary Glazing Installation Gallery"
+        service={{
+          name: "Secondary Glazing Installation Gallery",
+          description: "Professional gallery showcasing secondary glazing installations across London",
+          category: "Construction & Home Improvement",
+          availability: "InStock"
+        }}
+        type="website"
       />
       <MainNav />
       <div className="container mx-auto px-4 py-8">
@@ -134,6 +138,8 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+        
+        <RelatedContent currentPath="/gallery" className="mt-16" />
       </div>
       <WhatsAppButton />
       <Footer />

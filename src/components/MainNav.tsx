@@ -13,7 +13,8 @@ import { ListItem } from "./navigation/ListItem";
 import { glazingOptions } from "./navigation/NavigationItems";
 import { useNavigation } from "./navigation/useNavigation";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
+import { SearchFunctionality } from "@/components/seo/SearchFunctionality";
 
 export function MainNav() {
   const {
@@ -43,6 +44,9 @@ export function MainNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto max-h-screen pt-10">
         <nav className="flex flex-col gap-4 pb-20">
+          <div className="px-4 pb-4 border-b">
+            <SearchFunctionality autoFocus />
+          </div>
           <MobileNavItem to="/">Home</MobileNavItem>
           {glazingOptions.map((section) => (
             <div key={section.title} className="space-y-3">
@@ -68,12 +72,22 @@ export function MainNav() {
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
           <MobileNavItem to="/contact">Contact Us</MobileNavItem>
-          <div className="px-4 py-3">
+          <div className="px-4 py-3 space-y-2">
             <Button
               onClick={() => handleNavigation("/quote-request")}
               className="w-full bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 min-h-[48px] py-3"
             >
               Get Quote
+            </Button>
+            <Button
+              variant="outline"
+              className="w-full flex items-center justify-center space-x-2 min-h-[48px] py-3"
+              asChild
+            >
+              <a href="tel:02070601572">
+                <Phone className="h-4 w-4" />
+                <span>0207 060 1572</span>
+              </a>
             </Button>
           </div>
         </nav>
@@ -82,10 +96,13 @@ export function MainNav() {
   );
 
   return (
-    <div className="flex justify-center items-center w-full px-4">
-      <div className="flex-1 flex justify-start md:hidden">
-        <MobileNav />
+    <div className="flex justify-between items-center w-full px-4">
+      <div className="flex items-center">
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
+      
       <NavigationMenu className="relative z-50">
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
@@ -155,6 +172,24 @@ export function MainNav() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      
+      <div className="flex items-center space-x-2">
+        <div className="hidden lg:block w-64">
+          <SearchFunctionality />
+        </div>
+        
+        <Button 
+          size="sm" 
+          variant="outline" 
+          className="hidden sm:flex items-center space-x-1"
+          asChild
+        >
+          <a href="tel:02070601572">
+            <Phone className="h-4 w-4" />
+            <span className="hidden md:inline">Call Us</span>
+          </a>
+        </Button>
+      </div>
     </div>
   );
 }
