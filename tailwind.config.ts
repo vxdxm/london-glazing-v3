@@ -39,11 +39,36 @@ export default {
       },
       animation: {
         "fade-up": "fadeUp 0.5s ease-out forwards",
+        "fade-in": "fadeIn 0.3s ease-out",
+        "scale-in": "scaleIn 0.2s ease-out",
+        "slide-in-right": "slideInRight 0.3s ease-out",
+        "accordion-down": "accordionDown 0.2s ease-out",
+        "accordion-up": "accordionUp 0.2s ease-out",
       },
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        scaleIn: {
+          "0%": { transform: "scale(0.95)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        accordionDown: {
+          from: { height: "0", opacity: "0" },
+          to: { height: "var(--radix-accordion-content-height)", opacity: "1" }
+        },
+        accordionUp: {
+          from: { height: "var(--radix-accordion-content-height)", opacity: "1" },
+          to: { height: "0", opacity: "0" }
         },
       },
     },
