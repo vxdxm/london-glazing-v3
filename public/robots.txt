@@ -1,23 +1,76 @@
-
 User-agent: *
 Allow: /
 
-# Disallow admin or dynamic content that shouldn't be indexed
-Disallow: /api/
-Disallow: /*?*
+# Specific bot optimizations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
 
-# Allow all static assets
-Allow: /lovable-uploads/
-Allow: /*.css
-Allow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.gif
-Allow: /*.svg
-Allow: /*.webp
-
-# Crawl delay to be respectful
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
 
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Disallow admin, API, and dynamic content
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*?*
+Disallow: /search?*
+Disallow: /*#*
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*_=*
+
+# Block problematic crawlers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Allow beneficial crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Allow all static assets and media
+Allow: /lovable-uploads/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Crawl optimization
+Crawl-delay: 0.5
+Request-rate: 10/60
+
+# Sitemap locations
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
+Sitemap: https://secondaryglazingspecialist.com/sitemap-images.xml
+Sitemap: https://secondaryglazingspecialist.com/sitemap-news.xml
+Sitemap: https://secondaryglazingspecialist.com/sitemap-video.xml
+
+# Host directive (preferred domain)
+Host: https://secondaryglazingspecialist.com

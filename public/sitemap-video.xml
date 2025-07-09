@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://secondaryglazingspecialist.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg</video:thumbnail_loc>
+      <video:title>Secondary Glazing Installation Process - Professional Guide</video:title>
+      <video:description>Watch our expert team demonstrate the complete secondary glazing installation process for London homes, showcasing thermal efficiency improvements and noise reduction benefits.</video:description>
+      <video:content_loc>https://secondaryglazingspecialist.com/videos/installation-process.mp4</video:content_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2024-01-15T10:00:00+00:00</video:publication_date>
+      <video:tag>secondary glazing</video:tag>
+      <video:tag>installation</video:tag>
+      <video:tag>London</video:tag>
+      <video:tag>thermal efficiency</video:tag>
+      <video:tag>noise reduction</video:tag>
+      <video:category>Home Improvement</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://secondaryglazingspecialist.com/residential</loc>
+    <video:video>
+      <video:thumbnail_loc>https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg</video:thumbnail_loc>
+      <video:title>Residential Secondary Glazing Benefits - Customer Testimonial</video:title>
+      <video:description>Real customers share their experience with our residential secondary glazing services, highlighting energy savings and improved comfort in their London homes.</video:description>
+      <video:content_loc>https://secondaryglazingspecialist.com/videos/residential-testimonial.mp4</video:content_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-01-12T15:30:00+00:00</video:publication_date>
+      <video:tag>residential</video:tag>
+      <video:tag>testimonial</video:tag>
+      <video:tag>energy savings</video:tag>
+      <video:tag>customer experience</video:tag>
+      <video:category>Home Improvement</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://secondaryglazingspecialist.com/specialized</loc>
+    <video:video>
+      <video:thumbnail_loc>https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg</video:thumbnail_loc>
+      <video:title>Heritage Building Secondary Glazing - Preservation Techniques</video:title>
+      <video:description>Learn about our specialized techniques for installing secondary glazing in heritage buildings while maintaining architectural integrity and meeting conservation requirements.</video:description>
+      <video:content_loc>https://secondaryglazingspecialist.com/videos/heritage-preservation.mp4</video:content_loc>
+      <video:duration>240</video:duration>
+      <video:publication_date>2024-01-08T11:45:00+00:00</video:publication_date>
+      <video:tag>heritage buildings</video:tag>
+      <video:tag>preservation</video:tag>
+      <video:tag>conservation</video:tag>
+      <video:tag>specialized glazing</video:tag>
+      <video:category>Home Improvement</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>

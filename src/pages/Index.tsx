@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { LazyLoadWrapper } from "@/components/ui";
-import { IntelligentSEO } from "@/components/seo/IntelligentSEO";
+import { SEOMonster } from "@/components/seo/SEOMonster";
 import { SkipNavigation } from "@/components/navigation/SkipNavigation";
 import { WebVitalsDisplay } from "@/hooks/useWebVitals";
 import HomeExamples from "@/components/home/HomeExamples";
@@ -32,7 +32,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen">
-      <IntelligentSEO
+      <SEOMonster
         title="Secondary Glazing Specialist | Heritage & Modern Homes London"
         description="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution with professional glazing services."
         keywords={[
