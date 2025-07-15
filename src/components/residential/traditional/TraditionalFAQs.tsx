@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
+import { AIOptimizedFAQ } from "@/components/seo/AIOptimizedFAQ";
 
 const faqs = [
   {
@@ -32,22 +33,43 @@ const faqs = [
 
 export function TraditionalFAQs() {
   return (
-    <Card className="mb-8">
-      <CardContent className="pt-6">
-        <h2 className="text-2xl font-semibold mb-6">Frequently Asked Questions</h2>
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </CardContent>
-    </Card>
+    <>
+      <AIOptimizedFAQ 
+        faqs={faqs} 
+        pageTitle="Traditional Secondary Glazing FAQ"
+        audience="traditional property owners"
+        speakableSelectors={[".faq-question", ".faq-answer"]}
+      />
+      <Card className="mb-8 faq-content">
+        <CardContent className="pt-6">
+          <h2 className="text-2xl font-semibold mb-6" itemProp="name">Frequently Asked Questions</h2>
+          <Accordion type="single" collapsible className="w-full" itemScope itemType="https://schema.org/FAQPage">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                itemScope 
+                itemType="https://schema.org/Question"
+              >
+                <AccordionTrigger 
+                  className="text-left faq-question"
+                  itemProp="name"
+                >
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent 
+                  className="text-gray-600 faq-answer"
+                  itemScope 
+                  itemType="https://schema.org/Answer"
+                  itemProp="acceptedAnswer"
+                >
+                  <div itemProp="text">{faq.answer}</div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </CardContent>
+      </Card>
+    </>
   );
 }

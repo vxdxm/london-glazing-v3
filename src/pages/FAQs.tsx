@@ -9,6 +9,8 @@ import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { createFAQSchema } from "@/utils/faq-schema";
+import { generateAIOptimizedSchema, contentTemplates, speakableConfigs } from "@/utils/ai-content-optimizer";
+import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
 
 const FAQs = () => {
   const faqs = [
@@ -46,7 +48,19 @@ const FAQs = () => {
     }
   ];
 
-  const faqSchema = createFAQSchema(faqs);
+  const faqSchema = createFAQSchema(faqs, {
+    includeAIOptimization: true,
+    speakableSelectors: [".faq-question", ".faq-answer", "h1", "h2"],
+    audience: "property owners seeking glazing information",
+    language: "en-GB"
+  });
+
+  // Enhanced AI-optimized schema
+  const aiOptimizedSchema = generateAIOptimizedSchema(
+    contentTemplates.faq,
+    speakableConfigs.faq,
+    faqSchema
+  );
 
   return (
     <div className="min-h-screen bg-background">
@@ -68,22 +82,55 @@ const FAQs = () => {
       
       <Helmet>
         <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
+          {JSON.stringify(aiOptimizedSchema)}
         </script>
       </Helmet>
       
+      <VoiceSearchOptimizer 
+        primaryKeywords={["secondary glazing", "window glazing", "noise reduction"]}
+        conversationalQueries={[
+          "What is secondary glazing?",
+          "How much does secondary glazing cost?",
+          "Does secondary glazing reduce noise?",
+          "Can I get secondary glazing in London?",
+          "How long does secondary glazing installation take?"
+        ]}
+      />
+      
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
+      <div className="container mx-auto px-4 py-16 faq-content" itemScope itemType="https://schema.org/FAQPage">
+        <h1 
+          className="text-4xl font-bold mb-8" 
+          itemProp="name"
+          data-ai-speakable="true"
+        >
+          Frequently Asked Questions
+        </h1>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-sm">
-                <AccordionTrigger className="px-6 py-4 hover:no-underline">
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`} 
+                className="bg-white rounded-lg shadow-sm"
+                itemScope 
+                itemType="https://schema.org/Question"
+              >
+                <AccordionTrigger 
+                  className="px-6 py-4 hover:no-underline faq-question"
+                  itemProp="name"
+                  data-ai-speakable="true"
+                >
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4">
-                  {faq.answer}
+                <AccordionContent 
+                  className="px-6 pb-4 faq-answer"
+                  itemScope 
+                  itemType="https://schema.org/Answer"
+                  itemProp="acceptedAnswer"
+                  data-ai-speakable="true"
+                >
+                  <div itemProp="text">{faq.answer}</div>
                 </AccordionContent>
               </AccordionItem>
             ))}

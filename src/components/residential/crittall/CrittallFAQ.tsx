@@ -1,5 +1,6 @@
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { AIOptimizedFAQ } from "@/components/seo/AIOptimizedFAQ";
 
 export const CrittallFAQ = () => {
   const faqs = [
@@ -26,16 +27,36 @@ export const CrittallFAQ = () => {
   ];
 
   return (
-    <div className="mb-12">
-      <h2 className="text-3xl font-semibold mb-6">Frequently Asked Questions</h2>
-      <Accordion type="single" collapsible className="w-full">
-        {faqs.map((faq, index) => (
-          <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger>{faq.question}</AccordionTrigger>
-            <AccordionContent>{faq.answer}</AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
+    <>
+      <AIOptimizedFAQ 
+        faqs={faqs} 
+        pageTitle="Crittall Window Secondary Glazing FAQ"
+        audience="Crittall window owners"
+        speakableSelectors={[".faq-question", ".faq-answer"]}
+      />
+      <div className="mb-12 faq-content">
+        <h2 className="text-3xl font-semibold mb-6" itemProp="name">Frequently Asked Questions</h2>
+        <Accordion type="single" collapsible className="w-full" itemScope itemType="https://schema.org/FAQPage">
+          {faqs.map((faq, index) => (
+            <AccordionItem 
+              key={index} 
+              value={`item-${index}`}
+              itemScope 
+              itemType="https://schema.org/Question"
+            >
+              <AccordionTrigger className="faq-question" itemProp="name">{faq.question}</AccordionTrigger>
+              <AccordionContent 
+                className="faq-answer"
+                itemScope 
+                itemType="https://schema.org/Answer"
+                itemProp="acceptedAnswer"
+              >
+                <div itemProp="text">{faq.answer}</div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </>
   );
 };

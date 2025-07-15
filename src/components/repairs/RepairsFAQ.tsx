@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
+import { AIOptimizedFAQ } from "@/components/seo/AIOptimizedFAQ";
 
 const RepairsFAQ = () => {
   const faqs = [
@@ -44,27 +45,49 @@ const RepairsFAQ = () => {
   ];
 
   return (
-    <section className="mb-16">
-      <div className="flex items-center gap-3 mb-8">
-        <HelpCircle className="h-7 w-7 text-sky-600" />
-        <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
-      </div>
-      
-      <div className="bg-white rounded-lg shadow-sm">
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`repair-faq-${index}`} className="border-b border-gray-100 last:border-0">
-              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline font-medium text-gray-800">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-4 text-gray-600">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-    </section>
+    <>
+      <AIOptimizedFAQ 
+        faqs={faqs} 
+        pageTitle="Secondary Glazing Repairs FAQ"
+        audience="property owners needing repairs"
+        speakableSelectors={[".faq-question", ".faq-answer"]}
+      />
+      <section className="mb-16 faq-content">
+        <div className="flex items-center gap-3 mb-8">
+          <HelpCircle className="h-7 w-7 text-sky-600" />
+          <h2 className="text-3xl font-semibold" itemProp="name">Frequently Asked Questions</h2>
+        </div>
+        
+        <div className="bg-white rounded-lg shadow-sm" itemScope itemType="https://schema.org/FAQPage">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`repair-faq-${index}`} 
+                className="border-b border-gray-100 last:border-0"
+                itemScope 
+                itemType="https://schema.org/Question"
+              >
+                <AccordionTrigger 
+                  className="px-6 py-4 text-left hover:no-underline font-medium text-gray-800 faq-question"
+                  itemProp="name"
+                >
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent 
+                  className="px-6 pb-4 text-gray-600 faq-answer"
+                  itemScope 
+                  itemType="https://schema.org/Answer"
+                  itemProp="acceptedAnswer"
+                >
+                  <div itemProp="text">{faq.answer}</div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+    </>
   );
 };
 
