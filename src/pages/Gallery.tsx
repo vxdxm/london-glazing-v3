@@ -1,5 +1,4 @@
 import { MainNav } from "@/components/MainNav";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import { IntelligentSEO } from "@/components/seo/IntelligentSEO";
 import { Footer } from "@/components/Footer";
 import { OptimizedLazyImage } from "@/components/ui/optimized-lazy-image";
@@ -141,7 +140,6 @@ const Gallery = () => {
         
         <RelatedContent currentPath="/gallery" className="mt-16" />
       </div>
-      <WhatsAppButton />
       <Footer />
     </div>
   );

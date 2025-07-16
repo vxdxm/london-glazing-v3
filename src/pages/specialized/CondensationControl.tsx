@@ -2,9 +2,6 @@
 import React, { useEffect } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import GetQuoteButton from "@/components/GetQuoteButton";
-import ContactUsButton from "@/components/ContactUsButton";
 import { CondensationHeader } from "@/components/specialized/condensation/CondensationHeader";
 import { CondensationInfoCards } from "@/components/specialized/condensation/CondensationInfoCards";
 import { CondensationExplanationCards } from "@/components/specialized/condensation/CondensationExplanationCards";
@@ -92,9 +89,6 @@ const CondensationControl = () => {
         <CondensationExplanationCards />
         <VentilationOptions />
       </div>
-      <WhatsAppButton />
-      <GetQuoteButton />
-      <ContactUsButton />
       <Footer />
     </div>
   );

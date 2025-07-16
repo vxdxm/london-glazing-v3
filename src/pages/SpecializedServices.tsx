@@ -2,9 +2,6 @@
 import { MainNav } from "@/components/MainNav";
 import { PageHeader } from "@/components/specialized/PageHeader";
 import { ServiceCards } from "@/components/specialized/ServiceCards";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import GetQuoteButton from "@/components/GetQuoteButton";
-import ContactUsButton from "@/components/ContactUsButton";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
@@ -84,9 +81,6 @@ const SpecializedServices = () => {
         <PageHeader />
         <ServiceCards />
       </main>
-      <WhatsAppButton />
-      <GetQuoteButton />
-      <ContactUsButton />
       <Footer />
     </div>
   );
