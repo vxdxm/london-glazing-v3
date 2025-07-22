@@ -8,6 +8,9 @@ import WindowDimensions from "./WindowDimensions";
 import GlassOptionsSelect from "./GlassOptionsSelect";
 import { QuoteRequestSubmitButton } from "./QuoteRequestSubmitButton";
 
+// Initialize EmailJS
+emailjs.init("BRNJRT_YbAUZ3bB-O");
+
 export function QuoteRequestForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
