@@ -74,7 +74,8 @@ export function QuoteRequestForm() {
       await emailjs.send(
         'service_3peq5cu',
         'template_s22oydk',
-        templateParams
+        templateParams,
+        'BRNJRT_YbAUZ3bB-O'
       );
 
       console.log('Email sent successfully');
