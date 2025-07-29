@@ -66,6 +66,7 @@ import ClaphamBusyRoads from "./pages/locations/ClaphamBusyRoads";
 import HeathrowAircraft from "./pages/locations/HeathrowAircraft";
 import KingsCrossTrainNoise from "./pages/locations/KingsCrossTrainNoise";
 import ShoreditchUrbanNoise from "./pages/locations/ShoreditchUrbanNoise";
+import VictorianTerracesIslington from "./pages/locations/VictorianTerracesIslington";
 
 const queryClient = new QueryClient();
 
@@ -134,6 +135,7 @@ const AppRoutes = () => {
         <Route path="/locations/heathrow-aircraft" element={<HeathrowAircraft />} />
         <Route path="/locations/kings-cross-train-noise" element={<KingsCrossTrainNoise />} />
         <Route path="/locations/shoreditch-urban-noise" element={<ShoreditchUrbanNoise />} />
+        <Route path="/locations/victorian-terraces-islington" element={<VictorianTerracesIslington />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

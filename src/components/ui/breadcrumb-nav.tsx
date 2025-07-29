@@ -52,6 +52,14 @@ const routeLabels: RouteMapping = {
   "terms-and-conditions": "Terms and Conditions",
   "cookie-policy": "Cookie Policy",
   "double-glazed-units": "Double Glazed Units",
+  "locations": "Locations",
+  "victorian-terraces-islington": "Victorian Terraces Islington",
+  "clapham-busy-roads": "Clapham Busy Roads",
+  "shoreditch-urban-noise": "Shoreditch Urban Noise",
+  "canary-wharf-offices": "Canary Wharf Offices",
+  "heathrow-aircraft": "Heathrow Aircraft Noise",
+  "kings-cross-train-noise": "King's Cross Train Noise",
+  "listed-kensington": "Listed Buildings Kensington",
 };
 
 export const BreadcrumbNav = () => {
