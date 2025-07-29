@@ -56,6 +56,11 @@ import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
 import Contact from "./pages/Contact";
 import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
 import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
+import VictorianIslington from "./pages/locations/VictorianIslington";
+import EdwardianHampstead from "./pages/locations/EdwardianHampstead";
+import ListedKensington from "./pages/locations/ListedKensington";
+import GeorgianBelgravia from "./pages/locations/GeorgianBelgravia";
+import ConservationRichmond from "./pages/locations/ConservationRichmond";
 
 const queryClient = new QueryClient();
 
@@ -114,6 +119,11 @@ const AppRoutes = () => {
         <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
         <Route path="/residential/energy-performance" element={<EnergyPerformance />} />
         <Route path="/residential/fixed-secondary-glazing" element={<FixedSecondaryGlazing />} />
+        <Route path="/locations/victorian-islington" element={<VictorianIslington />} />
+        <Route path="/locations/edwardian-hampstead" element={<EdwardianHampstead />} />
+        <Route path="/locations/listed-kensington" element={<ListedKensington />} />
+        <Route path="/locations/georgian-belgravia" element={<GeorgianBelgravia />} />
+        <Route path="/locations/conservation-richmond" element={<ConservationRichmond />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
