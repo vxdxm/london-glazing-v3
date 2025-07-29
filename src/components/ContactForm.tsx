@@ -6,8 +6,13 @@ import emailjs from '@emailjs/browser';
 import { ContactFormInput } from "./contact/ContactFormInput";
 import { ContactFormTextarea } from "./contact/ContactFormTextarea";
 
-// Initialize EmailJS
-emailjs.init("BRNJRT_YbAUZ3bB-O");
+// Initialize EmailJS with proper error handling
+try {
+  emailjs.init("BRNJRT_YbAUZ3bB-O");
+  console.log('EmailJS initialized successfully');
+} catch (error) {
+  console.error('EmailJS initialization failed:', error);
+}
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -40,7 +45,7 @@ export function ContactForm() {
         params: templateParams
       });
 
-      const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams, 'BRNJRT_YbAUZ3bB-O');
+      const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams);
       console.log('Email sent successfully:', response);
       
       toast.success("Message sent! We'll get back to you as soon as possible.");

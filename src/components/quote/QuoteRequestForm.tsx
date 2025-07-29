@@ -8,8 +8,13 @@ import WindowDimensions from "./WindowDimensions";
 import GlassOptionsSelect from "./GlassOptionsSelect";
 import { QuoteRequestSubmitButton } from "./QuoteRequestSubmitButton";
 
-// Initialize EmailJS
-emailjs.init("BRNJRT_YbAUZ3bB-O");
+// Initialize EmailJS with proper error handling
+try {
+  emailjs.init("BRNJRT_YbAUZ3bB-O");
+  console.log('EmailJS initialized successfully');
+} catch (error) {
+  console.error('EmailJS initialization failed:', error);
+}
 
 export function QuoteRequestForm() {
   const [firstName, setFirstName] = useState("");
@@ -74,8 +79,7 @@ export function QuoteRequestForm() {
       await emailjs.send(
         'service_3peq5cu',
         'template_s22oydk',
-        templateParams,
-        'BRNJRT_YbAUZ3bB-O'
+        templateParams
       );
 
       console.log('Email sent successfully');
