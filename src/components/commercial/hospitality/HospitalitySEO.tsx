@@ -6,7 +6,7 @@ import { createPageSchema } from "@/utils/seo";
 const HospitalitySEO = () => {
   const pageMetadata = {
     title: "Hospitality Secondary Glazing | Hotels & Restaurants Solutions",
-    description: "Specialist secondary glazing for hotels and restaurants. Create peaceful guest environments, reduce street noise, and enhance energy efficiency in your hospitality venue.",
+    description: "Transform your hospitality venue with our specialist secondary glazing. Reduce noise pollution, improve thermal comfort for guests, and enhance energy efficiency in hotels, restaurants and leisure facilities.",
     canonicalPath: "/commercial/hospitality-sector",
     imageUrl: "/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png",
     type: "website" as const,
