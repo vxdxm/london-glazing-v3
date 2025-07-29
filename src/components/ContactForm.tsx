@@ -27,6 +27,11 @@ export function ContactForm() {
     console.log('Starting contact form submission...');
     
     try {
+      // Check if EmailJS is available
+      if (typeof emailjs === 'undefined') {
+        throw new Error("EmailJS is not loaded");
+      }
+
       if (!name || !email || !message) {
         throw new Error("Please fill in all required fields");
       }
@@ -42,7 +47,8 @@ export function ContactForm() {
       console.log('Sending email via EmailJS...', {
         serviceId: 'service_3peq5cu',
         templateId: 'template_s22oydk',
-        params: templateParams
+        params: templateParams,
+        emailjsAvailable: typeof emailjs !== 'undefined'
       });
 
       const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams);
@@ -56,8 +62,18 @@ export function ContactForm() {
       setMessage("");
     } catch (error) {
       console.error('Error sending email:', error);
+      console.error('Error details:', {
+        message: error instanceof Error ? error.message : 'Unknown error',
+        type: typeof error,
+        emailjsLoaded: typeof emailjs !== 'undefined'
+      });
+      
       if (error instanceof Error) {
-        toast.error(error.message);
+        if (error.message.includes('Invalid') || error.message.includes('not found')) {
+          toast.error("Configuration error. Please contact support.");
+        } else {
+          toast.error(error.message);
+        }
       } else {
         toast.error("There was an error sending your message. Please try again.");
       }
