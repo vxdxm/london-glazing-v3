@@ -59,6 +59,73 @@ export default function ClaphamBusyRoads() {
             </ul>
           </div>
 
+          <h2 className="text-3xl font-semibold mb-6 text-foreground">Specialist Solutions for Other London Areas</h2>
+          <p className="mb-6 text-muted-foreground">
+            Each London location presents unique acoustic challenges. Discover our targeted solutions:
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/victorian-terraces-islington" className="text-primary hover:underline">
+                  Victorian Terraces - Islington
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Conservation-approved solutions for period properties maintaining historical character.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/heathrow-aircraft" className="text-primary hover:underline">
+                  Aircraft Noise - Heathrow
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Specialized glazing for persistent aircraft noise near London's busiest airport.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/kings-cross-train-noise" className="text-primary hover:underline">
+                  Railway Noise - King's Cross
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Combat train noise with solutions designed for railway environments.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/shoreditch-urban-noise" className="text-primary hover:underline">
+                  Urban Living - Shoreditch
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                24/7 urban noise solutions for London's creative and nightlife districts.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/canary-wharf-offices" className="text-primary hover:underline">
+                  Commercial - Canary Wharf
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Office acoustic solutions for London's financial district buildings.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2">
+                <a href="/locations/listed-kensington" className="text-primary hover:underline">
+                  Listed Buildings - Kensington
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Heritage-sensitive glazing for protected buildings in conservation areas.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-muted/30 p-8 rounded-lg text-center">
             <h3 className="text-2xl font-semibold mb-4 text-foreground">Ready for Peace and Quiet in Clapham?</h3>
             <p className="text-muted-foreground mb-6">

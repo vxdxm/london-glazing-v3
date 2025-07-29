@@ -116,6 +116,53 @@ export default function VictorianTerracesIslington() {
             We provide comprehensive surveys, detailed quotations, and work closely with conservation officers when required. Our installations come with full warranties and ongoing support to ensure your secondary glazing continues to perform optimally.
           </p>
 
+          <h2 className="text-3xl font-semibold mb-6 text-foreground">Solutions for Other London Properties</h2>
+          <p className="mb-6 text-muted-foreground">
+            Every London area has unique challenges. Explore our specialist solutions for different property types and locations:
+          </p>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-muted/30 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3">
+                <a href="/locations/clapham-busy-roads" className="text-primary hover:underline">
+                  Traffic Noise Solutions - Clapham
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Combat A3 and bus route noise with specialist acoustic glazing designed for high-traffic areas.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3">
+                <a href="/locations/listed-kensington" className="text-primary hover:underline">
+                  Listed Buildings - Kensington
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Heritage-sensitive solutions for Grade I and II listed properties in Kensington's prestigious conservation areas.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3">
+                <a href="/locations/canary-wharf-offices" className="text-primary hover:underline">
+                  Commercial Solutions - Canary Wharf
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                High-performance acoustic glazing for offices in London's financial district.
+              </p>
+            </div>
+            <div className="bg-muted/30 p-6 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3">
+                <a href="/locations/shoreditch-urban-noise" className="text-primary hover:underline">
+                  Urban Noise Solutions - Shoreditch
+                </a>
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                24/7 urban noise management for properties in London's creative quarter.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-muted/30 p-8 rounded-lg text-center">
             <h3 className="text-2xl font-semibold mb-4 text-foreground">Ready to Transform Your Victorian Terrace?</h3>
             <p className="text-muted-foreground mb-6">
