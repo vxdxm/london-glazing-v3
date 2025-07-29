@@ -61,6 +61,11 @@ import EdwardianHampstead from "./pages/locations/EdwardianHampstead";
 import ListedKensington from "./pages/locations/ListedKensington";
 import GeorgianBelgravia from "./pages/locations/GeorgianBelgravia";
 import ConservationRichmond from "./pages/locations/ConservationRichmond";
+import CanaryWharfOffices from "./pages/locations/CanaryWharfOffices";
+import ClaphamBusyRoads from "./pages/locations/ClaphamBusyRoads";
+import HeathrowAircraft from "./pages/locations/HeathrowAircraft";
+import KingsCrossTrainNoise from "./pages/locations/KingsCrossTrainNoise";
+import ShoreditchUrbanNoise from "./pages/locations/ShoreditchUrbanNoise";
 
 const queryClient = new QueryClient();
 
@@ -124,6 +129,11 @@ const AppRoutes = () => {
         <Route path="/locations/listed-kensington" element={<ListedKensington />} />
         <Route path="/locations/georgian-belgravia" element={<GeorgianBelgravia />} />
         <Route path="/locations/conservation-richmond" element={<ConservationRichmond />} />
+        <Route path="/locations/canary-wharf-offices" element={<CanaryWharfOffices />} />
+        <Route path="/locations/clapham-busy-roads" element={<ClaphamBusyRoads />} />
+        <Route path="/locations/heathrow-aircraft" element={<HeathrowAircraft />} />
+        <Route path="/locations/kings-cross-train-noise" element={<KingsCrossTrainNoise />} />
+        <Route path="/locations/shoreditch-urban-noise" element={<ShoreditchUrbanNoise />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
