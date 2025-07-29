@@ -165,6 +165,36 @@ export const specializedSitemapEntries: SitemapEntry[] = [
     lastModified: '2024-01-20',
     changeFrequency: 'monthly',
     priority: 0.7
+  },
+  {
+    url: '/locations/canary-wharf-offices',
+    lastModified: '2025-01-29',
+    changeFrequency: 'monthly',
+    priority: 0.8
+  },
+  {
+    url: '/locations/clapham-busy-roads',
+    lastModified: '2025-01-29',
+    changeFrequency: 'monthly',
+    priority: 0.8
+  },
+  {
+    url: '/locations/heathrow-aircraft',
+    lastModified: '2025-01-29',
+    changeFrequency: 'monthly',
+    priority: 0.8
+  },
+  {
+    url: '/locations/kings-cross-train-noise',
+    lastModified: '2025-01-29',
+    changeFrequency: 'monthly',
+    priority: 0.8
+  },
+  {
+    url: '/locations/shoreditch-urban-noise',
+    lastModified: '2025-01-29',
+    changeFrequency: 'monthly',
+    priority: 0.8
   }
 ];
 
