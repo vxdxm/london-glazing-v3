@@ -34,7 +34,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOMonster
         title="Secondary Glazing Specialist | Heritage & Modern Homes London"
-        description="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution with professional glazing services."
+        description="London's expert secondary glazing for heritage & modern homes. Reduce noise, boost insulation, enhance security & save on energy bills. Get a free quote."
         keywords={[
           "secondary glazing London",
           "window glazing specialist", 
