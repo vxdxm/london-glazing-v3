@@ -67,6 +67,9 @@ import HeathrowAircraft from "./pages/locations/HeathrowAircraft";
 import KingsCrossTrainNoise from "./pages/locations/KingsCrossTrainNoise";
 import ShoreditchUrbanNoise from "./pages/locations/ShoreditchUrbanNoise";
 import VictorianTerracesIslington from "./pages/locations/VictorianTerracesIslington";
+import { NottingHillSecurity } from "./pages/locations/NottingHillSecurity";
+import { HackneyEnergyEfficiency } from "./pages/locations/HackneyEnergyEfficiency";
+import { ChelseaDraughtProofing } from "./pages/locations/ChelseaDraughtProofing";
 
 const queryClient = new QueryClient();
 
@@ -136,6 +139,9 @@ const AppRoutes = () => {
         <Route path="/locations/kings-cross-train-noise" element={<KingsCrossTrainNoise />} />
         <Route path="/locations/shoreditch-urban-noise" element={<ShoreditchUrbanNoise />} />
         <Route path="/locations/victorian-terraces-islington" element={<VictorianTerracesIslington />} />
+        <Route path="/locations/notting-hill-security" element={<NottingHillSecurity />} />
+        <Route path="/locations/hackney-energy-efficiency" element={<HackneyEnergyEfficiency />} />
+        <Route path="/locations/chelsea-draught-proofing" element={<ChelseaDraughtProofing />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
