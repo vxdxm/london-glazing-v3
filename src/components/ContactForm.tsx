@@ -65,7 +65,9 @@ export function ContactForm() {
       console.error('Error details:', {
         message: error instanceof Error ? error.message : 'Unknown error',
         type: typeof error,
-        emailjsLoaded: typeof emailjs !== 'undefined'
+        emailjsLoaded: typeof emailjs !== 'undefined',
+        errorName: error instanceof Error ? error.name : 'Unknown',
+        errorStack: error instanceof Error ? error.stack : 'No stack trace'
       });
       
       if (error instanceof Error) {
