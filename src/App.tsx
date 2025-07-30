@@ -70,6 +70,10 @@ import VictorianTerracesIslington from "./pages/locations/VictorianTerracesIslin
 import { NottingHillSecurity } from "./pages/locations/NottingHillSecurity";
 import { HackneyEnergyEfficiency } from "./pages/locations/HackneyEnergyEfficiency";
 import { ChelseaDraughtProofing } from "./pages/locations/ChelseaDraughtProofing";
+import SecondaryVsDoubleGlazing from "./pages/guides/SecondaryVsDoubleGlazing";
+import DIYvsProfessional from "./pages/guides/DIYvsProfessional";
+import UValuesDBRatings from "./pages/guides/UValuesDBRatings";
+import SecondaryGlazingAesthetics from "./pages/guides/SecondaryGlazingAesthetics";
 
 const queryClient = new QueryClient();
 
@@ -142,6 +146,10 @@ const AppRoutes = () => {
         <Route path="/locations/notting-hill-security" element={<NottingHillSecurity />} />
         <Route path="/locations/hackney-energy-efficiency" element={<HackneyEnergyEfficiency />} />
         <Route path="/locations/chelsea-draught-proofing" element={<ChelseaDraughtProofing />} />
+        <Route path="/guides/secondary-vs-double-glazing" element={<SecondaryVsDoubleGlazing />} />
+        <Route path="/guides/diy-vs-professional" element={<DIYvsProfessional />} />
+        <Route path="/guides/u-values-db-ratings" element={<UValuesDBRatings />} />
+        <Route path="/guides/secondary-glazing-aesthetics" element={<SecondaryGlazingAesthetics />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
