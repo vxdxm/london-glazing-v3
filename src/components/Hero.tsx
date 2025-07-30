@@ -15,13 +15,23 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[600px] flex items-center justify-center bg-secondary">
+    <div className="relative min-h-[600px] flex items-center justify-center">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <OptimizedImage
+          src="/lovable-uploads/c4cd1d19-f247-4e55-890c-d16e0532dcfa.png"
+          alt="Heritage window with secondary glazing in traditional London home"
+          className="w-full h-full object-cover"
+          priority={true}
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-accent mb-6 animate-fade-up">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-up">
             London's Premium Secondary Glazing Specialist
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 animate-fade-up">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-up">
             Enhance your home's comfort and value with our expert secondary glazing services. 
             Reduce noise, improve insulation, and maintain your property's character.
           </p>
