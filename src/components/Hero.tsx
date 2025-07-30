@@ -19,7 +19,7 @@ export const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <OptimizedImage
-          src="/lovable-uploads/c4cd1d19-f247-4e55-890c-d16e0532dcfa.png"
+          src="/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
           alt="Heritage window with secondary glazing in traditional London home"
           className="w-full h-full object-cover"
           priority={true}
