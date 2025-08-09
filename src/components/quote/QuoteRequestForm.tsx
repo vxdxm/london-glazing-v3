@@ -79,7 +79,8 @@ export function QuoteRequestForm() {
       await emailjs.send(
         'service_3peq5cu',
         'template_s22oydk',
-        templateParams
+        templateParams,
+        'BRNJRT_YbAUZ3bB-O'
       );
 
       console.log('Email sent successfully');
@@ -96,7 +97,10 @@ export function QuoteRequestForm() {
       setGlassType("");
     } catch (error) {
       console.error('Error sending email:', error);
-      if (error instanceof Error) {
+      const message = error instanceof Error ? error.message : '';
+      if (message.toLowerCase().includes('failed to fetch') || error instanceof TypeError) {
+        toast.error("Network error while submitting. Please check your internet connection, disable ad blockers, and try again.");
+      } else if (error instanceof Error) {
         toast.error(error.message);
       } else {
         toast.error("There was an error submitting your request. Please try again.");
@@ -107,7 +111,7 @@ export function QuoteRequestForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8 max-w-2xl">
+    <form onSubmit={handleSubmit} className="space-y-8 max-w-2xl" aria-label="Quote request form">
       <ContactDetails
         firstName={firstName}
         lastName={lastName}
