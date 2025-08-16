@@ -1,15 +1,8 @@
 
-# Redirect www to non-www (301 permanent redirect)
-https://www.secondaryglazingspecialist.com/* https://secondaryglazingspecialist.com/:splat 301!
-
 # Specific files that should be served directly
 /sitemap.xml /sitemap.xml 200
 /sitemap-*.xml /sitemap-:splat.xml 200
 /robots.txt /robots.txt 200
-
-# Enforce trailing slash consistency - redirect all trailing slashes to non-trailing slash versions
-# This prevents duplicate content issues
-/*/ /:splat 301!
 
 # Legacy redirects with proper 301 status - optimized for efficiency
 /noise-calculator /specialized/noise-reduction#calculator 301!
@@ -17,5 +10,5 @@ https://www.secondaryglazingspecialist.com/* https://secondaryglazingspecialist.
 /secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
 /air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 301!
 
-# Ensure all requests go to index.html for SPA routing (without trailing slash)
+# Ensure all requests go to index.html for SPA routing
 /* /index.html 200
