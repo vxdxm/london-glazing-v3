@@ -41,17 +41,24 @@ export function QuoteRequestForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log('Starting quote request form submission...');
+    console.log('=== QUOTE FORM SUBMISSION START ===');
+    console.log('Form data:', { firstName, lastName, email, phone, windowType, windowCount, dimensions, glassType });
 
     try {
+      // Check EmailJS availability
+      console.log('EmailJS available:', typeof emailjs !== 'undefined');
+      console.log('EmailJS object:', emailjs);
+
       // Validate required fields
       if (!firstName || !lastName || !email || !phone || !windowType || !glassType) {
+        console.log('Validation failed - missing required fields');
         throw new Error("Please fill in all required fields");
       }
 
       // Validate dimensions
       const invalidDimensions = dimensions.some(dim => !dim.width || !dim.height);
       if (invalidDimensions) {
+        console.log('Validation failed - invalid dimensions:', dimensions);
         throw new Error("Please provide all window dimensions");
       }
 
@@ -74,16 +81,34 @@ export function QuoteRequestForm() {
         `
       };
 
-      // Send email
-      console.log('Sending email...');
-      await emailjs.send(
-        'service_3peq5cu',
-        'template_s22oydk',
-        templateParams,
-        'BRNJRT_YbAUZ3bB-O'
-      );
+      console.log('Template params:', templateParams);
+      console.log('About to send email with EmailJS...');
+      console.log('Service ID: service_3peq5cu');
+      console.log('Template ID: template_s22oydk');
 
-      console.log('Email sent successfully');
+      // Send email - Try without public key first since we already initialized
+      try {
+        console.log('Attempt 1: Sending without public key (already initialized)');
+        const result = await emailjs.send(
+          'service_3peq5cu',
+          'template_s22oydk',
+          templateParams
+        );
+        console.log('SUCCESS: Email sent via method 1:', result);
+      } catch (error1) {
+        console.log('Method 1 failed, trying with public key:', error1);
+        
+        // Fallback: Send with public key
+        const result = await emailjs.send(
+          'service_3peq5cu',
+          'template_s22oydk',
+          templateParams,
+          'BRNJRT_YbAUZ3bB-O'
+        );
+        console.log('SUCCESS: Email sent via method 2:', result);
+      }
+
+      console.log('Email sent successfully - showing success toast');
       toast.success("Quote request submitted successfully! We'll be in touch soon.");
       
       // Reset form
@@ -95,18 +120,32 @@ export function QuoteRequestForm() {
       setWindowCount(1);
       setDimensions([{ width: "", height: "" }]);
       setGlassType("");
+      
+      console.log('Form reset completed');
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('=== QUOTE FORM ERROR ===');
+      console.error('Error type:', typeof error);
+      console.error('Error name:', error instanceof Error ? error.name : 'Unknown');
+      console.error('Error message:', error instanceof Error ? error.message : 'Unknown');
+      console.error('Error stack:', error instanceof Error ? error.stack : 'No stack');
+      console.error('Full error object:', error);
+      
       const message = error instanceof Error ? error.message : '';
+      console.log('Error message analysis:', { message, isNetworkError: message.toLowerCase().includes('failed to fetch'), isTypeError: error instanceof TypeError });
+      
       if (message.toLowerCase().includes('failed to fetch') || error instanceof TypeError) {
+        console.log('Showing network error toast');
         toast.error("Network error while submitting. Please check your internet connection, disable ad blockers, and try again.");
       } else if (error instanceof Error) {
+        console.log('Showing specific error toast:', message);
         toast.error(error.message);
       } else {
+        console.log('Showing generic error toast');
         toast.error("There was an error submitting your request. Please try again.");
       }
     } finally {
       setIsSubmitting(false);
+      console.log('=== QUOTE FORM SUBMISSION END ===');
     }
   };
 
