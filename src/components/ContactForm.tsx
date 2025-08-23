@@ -24,15 +24,21 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log('Starting contact form submission...');
+    console.log('=== CONTACT FORM SUBMISSION START ===');
+    console.log('Form data:', { name, email, phone, message });
     
     try {
-      // Check if EmailJS is available
+      // Check EmailJS availability
+      console.log('EmailJS available:', typeof emailjs !== 'undefined');
+      console.log('EmailJS object:', emailjs);
+      
       if (typeof emailjs === 'undefined') {
+        console.error('EmailJS is not loaded');
         throw new Error("EmailJS is not loaded");
       }
 
       if (!name || !email || !message) {
+        console.log('Validation failed - missing required fields');
         throw new Error("Please fill in all required fields");
       }
 
@@ -44,15 +50,25 @@ export function ContactForm() {
         to_name: 'Secondary Glazing Specialist'
       };
 
-      console.log('Sending email via EmailJS...', {
-        serviceId: 'service_3peq5cu',
-        templateId: 'template_s22oydk',
-        params: templateParams,
-        emailjsAvailable: typeof emailjs !== 'undefined'
-      });
+      console.log('Template params:', templateParams);
+      console.log('About to send email with EmailJS...');
+      console.log('Service ID: service_3peq5cu');
+      console.log('Template ID: template_s22oydk');
 
-      const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams);
-      console.log('Email sent successfully:', response);
+      // Try sending without public key first (since we already initialized)
+      try {
+        console.log('Attempt 1: Sending without public key (already initialized)');
+        const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams);
+        console.log('SUCCESS: Email sent via method 1:', response);
+      } catch (error1) {
+        console.log('Method 1 failed, trying with public key:', error1);
+        
+        // Fallback: Send with public key
+        const response = await emailjs.send('service_3peq5cu', 'template_s22oydk', templateParams, 'BRNJRT_YbAUZ3bB-O');
+        console.log('SUCCESS: Email sent via method 2:', response);
+      }
+
+      console.log('Email sent successfully - showing success toast');
       
       toast.success("Message sent! We'll get back to you as soon as possible.");
       
@@ -61,22 +77,33 @@ export function ContactForm() {
       setPhone("");
       setMessage("");
     } catch (error) {
-      console.error('Error sending email:', error);
-      console.error('Error details:', {
-        message: error instanceof Error ? error.message : 'Unknown error',
-        type: typeof error,
-        emailjsLoaded: typeof emailjs !== 'undefined',
-        errorName: error instanceof Error ? error.name : 'Unknown',
-        errorStack: error instanceof Error ? error.stack : 'No stack trace'
+      console.error('=== CONTACT FORM ERROR ===');
+      console.error('Error type:', typeof error);
+      console.error('Error name:', error instanceof Error ? error.name : 'Unknown');
+      console.error('Error message:', error instanceof Error ? error.message : 'Unknown');
+      console.error('Error stack:', error instanceof Error ? error.stack : 'No stack');
+      console.error('Full error object:', error);
+      
+      const message = error instanceof Error ? error.message : '';
+      console.log('Error message analysis:', { 
+        message, 
+        isNetworkError: message.toLowerCase().includes('failed to fetch'),
+        isTypeError: error instanceof TypeError 
       });
       
-      if (error instanceof Error) {
+      if (message.toLowerCase().includes('failed to fetch') || error instanceof TypeError) {
+        console.log('Showing network error toast');
+        toast.error("Network error while submitting. Please check your internet connection, disable ad blockers, and try again.");
+      } else if (error instanceof Error) {
         if (error.message.includes('Invalid') || error.message.includes('not found')) {
+          console.log('Showing configuration error toast');
           toast.error("Configuration error. Please contact support.");
         } else {
+          console.log('Showing specific error toast:', message);
           toast.error(error.message);
         }
       } else {
+        console.log('Showing generic error toast');
         toast.error("There was an error sending your message. Please try again.");
       }
     } finally {
