@@ -15,6 +15,7 @@ const WindowDimensions = ({ dimensions, onDimensionChange }: WindowDimensionsPro
             <div>
               <label className="block text-sm font-medium mb-2">Width (mm)</label>
               <Input
+                name={`window_${index}_width`}
                 type="number"
                 placeholder="Width"
                 value={dim.width}
@@ -25,6 +26,7 @@ const WindowDimensions = ({ dimensions, onDimensionChange }: WindowDimensionsPro
             <div>
               <label className="block text-sm font-medium mb-2">Height (mm)</label>
               <Input
+                name={`window_${index}_height`}
                 type="number"
                 placeholder="Height"
                 value={dim.height}

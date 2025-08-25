@@ -3,8 +3,9 @@ import { Input } from "@/components/ui/input";
 interface ContactFormInputProps {
   id: string;
   label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  name?: string;
   type?: string;
   disabled?: boolean;
   required?: boolean;
@@ -15,6 +16,7 @@ export function ContactFormInput({
   label,
   value,
   onChange,
+  name,
   type = "text",
   disabled = false,
   required = false,
@@ -26,6 +28,7 @@ export function ContactFormInput({
       </label>
       <Input
         id={id}
+        name={name}
         type={type}
         value={value}
         onChange={onChange}

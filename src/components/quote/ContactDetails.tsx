@@ -27,6 +27,7 @@ const ContactDetails = ({
         <div>
           <label className="block text-sm font-medium mb-2">First Name</label>
           <Input 
+            name="firstName"
             required
             value={firstName}
             onChange={(e) => onFirstNameChange(e.target.value)}
@@ -35,6 +36,7 @@ const ContactDetails = ({
         <div>
           <label className="block text-sm font-medium mb-2">Last Name</label>
           <Input 
+            name="lastName"
             required
             value={lastName}
             onChange={(e) => onLastNameChange(e.target.value)}
@@ -44,6 +46,7 @@ const ContactDetails = ({
       <div>
         <label className="block text-sm font-medium mb-2">Email</label>
         <Input 
+          name="email"
           type="email" 
           required
           value={email}
@@ -53,6 +56,7 @@ const ContactDetails = ({
       <div>
         <label className="block text-sm font-medium mb-2">Phone</label>
         <Input 
+          name="phone"
           type="tel" 
           required
           value={phone}

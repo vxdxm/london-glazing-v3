@@ -2,13 +2,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 interface WindowTypeSelectProps {
   onValueChange: (value: string) => void;
+  value?: string;
 }
 
-const WindowTypeSelect = ({ onValueChange }: WindowTypeSelectProps) => {
+const WindowTypeSelect = ({ onValueChange, value }: WindowTypeSelectProps) => {
   return (
     <div>
       <label className="block text-sm font-medium mb-2">Window Type</label>
-      <Select onValueChange={onValueChange} required>
+      <Select onValueChange={onValueChange} required value={value}>
         <SelectTrigger className="hover:bg-white hover:bg-opacity-100">
           <SelectValue placeholder="Select window type" />
         </SelectTrigger>
@@ -18,6 +19,7 @@ const WindowTypeSelect = ({ onValueChange }: WindowTypeSelectProps) => {
           <SelectItem value="bay">Bay Windows</SelectItem>
         </SelectContent>
       </Select>
+      <input type="hidden" name="windowType" value={value || ""} />
     </div>
   );
 };

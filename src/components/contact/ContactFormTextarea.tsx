@@ -3,8 +3,9 @@ import { Textarea } from "@/components/ui/textarea";
 interface ContactFormTextareaProps {
   id: string;
   label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  name?: string;
   disabled?: boolean;
   required?: boolean;
 }
@@ -14,6 +15,7 @@ export function ContactFormTextarea({
   label,
   value,
   onChange,
+  name,
   disabled = false,
   required = false,
 }: ContactFormTextareaProps) {
@@ -24,6 +26,7 @@ export function ContactFormTextarea({
       </label>
       <Textarea
         id={id}
+        name={name}
         value={value}
         onChange={onChange}
         required={required}

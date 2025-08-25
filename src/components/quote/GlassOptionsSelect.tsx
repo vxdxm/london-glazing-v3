@@ -2,15 +2,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 interface GlassOptionsSelectProps {
   onValueChange: (value: string) => void;
+  value?: string;
 }
 
-const GlassOptionsSelect = ({ onValueChange }: GlassOptionsSelectProps) => {
+const GlassOptionsSelect = ({ onValueChange, value }: GlassOptionsSelectProps) => {
   console.log('Rendering GlassOptionsSelect component');
   
   return (
     <div>
       <label className="block text-sm font-medium mb-2">Glass Type</label>
-      <Select onValueChange={onValueChange} required>
+      <Select onValueChange={onValueChange} required value={value}>
         <SelectTrigger className="hover:bg-white hover:bg-opacity-100">
           <SelectValue placeholder="Select glass type" />
         </SelectTrigger>
@@ -24,6 +25,7 @@ const GlassOptionsSelect = ({ onValueChange }: GlassOptionsSelectProps) => {
           <SelectItem value="double">Double Glazing</SelectItem>
         </SelectContent>
       </Select>
+      <input type="hidden" name="glassType" value={value || ""} />
     </div>
   );
 };
