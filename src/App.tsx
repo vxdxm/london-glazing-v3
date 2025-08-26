@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet-async";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import ContactUsButton from "@/components/ContactUsButton";
-import { FloatingContactForm } from "@/components/FloatingContactForm";
 import Index from "./pages/Index";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
@@ -169,7 +168,6 @@ const App = () => (
         <AppRoutes />
         <ContactUsButton />
         <GetQuoteButton />
-        <FloatingContactForm />
         <WhatsAppButton />
       </BrowserRouter>
     </TooltipProvider>
