@@ -1,5 +1,4 @@
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
@@ -15,20 +14,26 @@ import HomeBenefits from "@/components/home/HomeBenefits";
 import HomeSustainability from "@/components/home/HomeSustainability";
 
 const Index = () => {
+  const [isClient, setIsClient] = useState(false);
+  
   // Add logging for home page indexing
   useEffect(() => {
     console.log("Home page loaded");
+    setIsClient(true);
     
     // Check if we need to scroll to the contact section (via URL hash)
     if (window.location.hash === '#contact-section') {
       setTimeout(() => {
-        document.getElementById('contact-section')?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+        const contactSection = document.getElementById('contact-section');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       }, 100);
     }
-  }, []);
+  }, [isClient]); // Added isClient as dependency
   
   return (
     <div className="min-h-screen">
@@ -41,44 +46,57 @@ const Index = () => {
           "thermal efficiency windows",
           "noise reduction glazing",
           "heritage glazing solutions",
-          "acoustic glazing London"
+          "acoustic glazing London",
+          "energy efficient windows",
+          "period property glazing",
+          "victorian window solutions",
+          "georgian window specialist"
         ]}
         service={{
           name: "Professional Secondary Glazing Installation",
           description: "Expert secondary glazing installation for residential and commercial properties in London",
           category: "Home Improvement Services",
-          availability: "InStock"
+          availability: "InStock",
+          serviceType: "InstallationService",
+          provider: {
+            type: "LocalBusiness",
+            name: "Secondary Glazing Specialist"
+          }
         }}
         aggregateRating={{
           ratingValue: 4.9,
           reviewCount: 127,
           bestRating: 5,
-          worstRating: 1
+          worstRating: 1,
+          ratingCount: 127
         }}
         type="website"
         includeLocalBusiness={true}
-        includeBreadcrumbs={false}
+        includeBreadcrumbs={true}
+        breadcrumbs={[
+          { name: "Home", item: "/" }
+        ]}
       />
       <SkipNavigation />
       <MainNav />
       <Hero />
       
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <Services />
         
-        <LazyLoadWrapper>
+        <LazyLoadWrapper threshold={0.1}>
           <HomeExamples />
         </LazyLoadWrapper>
         
-        <LazyLoadWrapper>
+        <LazyLoadWrapper threshold={0.1}>
           <HomeBenefits />
         </LazyLoadWrapper>
 
-        <LazyLoadWrapper>
+        <LazyLoadWrapper threshold={0.1}>
           <HomeSustainability />
         </LazyLoadWrapper>
 
-        <LazyLoadWrapper>
+        <LazyLoadWrapper threshold={0.1}>
           <Testimonials />
         </LazyLoadWrapper>
         
@@ -88,7 +106,7 @@ const Index = () => {
       </main>
       
       <Footer />
-      <WebVitalsDisplay />
+      {isClient && <WebVitalsDisplay />}
     </div>
   );
 };
