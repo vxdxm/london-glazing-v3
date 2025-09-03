@@ -13,6 +13,7 @@ interface SEOMonsterProps {
   type?: 'website' | 'article' | 'product' | 'service';
   includeLocalBusiness?: boolean;
   includeBreadcrumbs?: boolean;
+  breadcrumbs?: Array<{ name: string; item: string; }>;
 }
 
 /**
@@ -27,7 +28,8 @@ export const SEOMonster: React.FC<SEOMonsterProps> = ({
   aggregateRating,
   type = 'website',
   includeLocalBusiness = false,
-  includeBreadcrumbs = true
+  includeBreadcrumbs = true,
+  breadcrumbs = []
 }) => {
   useEffect(() => {
     // Execute all advanced SEO optimizations
