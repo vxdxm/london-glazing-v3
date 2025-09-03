@@ -18,6 +18,11 @@ export const useLazyLoad = () => {
 };
 
 export const LazyLoadProvider = ({ children }: { children: ReactNode }) => {
+  // Safety check for React hooks during hot reload
+  if (typeof React === 'undefined' || !React.useRef) {
+    return <>{children}</>;
+  }
+  
   const observerRef = useRef<IntersectionObserver | null>(null);
   const elementsMap = useRef(new Map<HTMLElement, IntersectionObserverCallback>());
   
