@@ -6,7 +6,7 @@ interface GlassOptionsSelectProps {
 }
 
 const GlassOptionsSelect = ({ onValueChange, value }: GlassOptionsSelectProps) => {
-  console.log('Rendering GlassOptionsSelect component');
+  
   
   return (
     <div>
