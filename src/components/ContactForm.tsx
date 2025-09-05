@@ -22,6 +22,7 @@ export function ContactForm() {
         headers: {
           Accept: "application/json",
         },
+        mode: "cors",
       });
       
       if (response.ok) {
