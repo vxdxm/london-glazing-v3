@@ -5,6 +5,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { ContactFormInput } from "./contact/ContactFormInput";
 import { ContactFormTextarea } from "./contact/ContactFormTextarea";
+import FloatingButton from "./FloatingButton";
 
 const FloatingContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,13 +44,12 @@ const FloatingContactForm = () => {
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
-        <Button 
-          className="fixed bottom-[240px] right-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-[60] rounded-full p-6 min-h-[64px] min-w-[64px] flex items-center whitespace-nowrap"
+        <FloatingButton
+          icon={<Mail className="w-8 h-8 mr-2" />}
+          text="Quick Contact"
+          className="bottom-[240px] bg-blue-600 hover:bg-blue-700 z-[60]"
           aria-label="Quick contact form"
-        >
-          <Mail className="w-8 h-8 mr-2" />
-          <span className="font-medium">Quick Contact</span>
-        </Button>
+        />
       </PopoverTrigger>
       <PopoverContent 
         className="w-80 p-4 mr-4 mb-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-xl"
