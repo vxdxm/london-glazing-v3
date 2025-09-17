@@ -51,7 +51,7 @@ const FloatingContactForm = () => {
         </Button>
       </PopoverTrigger>
       <PopoverContent 
-        className="w-80 p-4 mr-4 mb-4"
+        className="w-80 p-4 mr-4 mb-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-xl"
         side="top"
         align="end"
       >
