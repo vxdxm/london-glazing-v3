@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { ContactFormInput } from "./contact/ContactFormInput";
@@ -44,10 +44,11 @@ const FloatingContactForm = () => {
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
         <Button 
-          className="fixed bottom-[140px] right-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-[60] rounded-full p-6 min-h-[64px] min-w-[64px]"
+          className="fixed bottom-[140px] right-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-[60] rounded-full p-6 min-h-[64px] min-w-[64px] flex items-center"
           aria-label="Quick contact form"
         >
-          <MessageCircle className="w-8 h-8" />
+          <Mail className="w-8 h-8 mr-2" />
+          <span className="font-medium">Quick Contact</span>
         </Button>
       </PopoverTrigger>
       <PopoverContent 
