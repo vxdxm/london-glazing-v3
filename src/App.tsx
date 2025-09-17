@@ -56,6 +56,10 @@ import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
 import Contact from "./pages/Contact";
 import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
 import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
+import EntryLevelGlass from "./pages/specialized/glass/EntryLevelGlass";
+import EnhancedEntryGlass from "./pages/specialized/glass/EnhancedEntryGlass";
+import MediumPerformanceGlass from "./pages/specialized/glass/MediumPerformanceGlass";
+import HighPerformanceGlass from "./pages/specialized/glass/HighPerformanceGlass";
 import VictorianIslington from "./pages/locations/VictorianIslington";
 import EdwardianHampstead from "./pages/locations/EdwardianHampstead";
 import ListedKensington from "./pages/locations/ListedKensington";
@@ -118,6 +122,10 @@ const AppRoutes = () => {
         <Route path="/specialized/condensation-control" element={<CondensationControl />} />
         <Route path="/specialized/double-glazed-units" element={<DoubleGlazedUnits />} />
         <Route path="/specialized/air-gap-secondary-glazing" element={<AirGapSecondaryGlazing />} />
+        <Route path="/specialized/glass/entry-level" element={<EntryLevelGlass />} />
+        <Route path="/specialized/glass/enhanced-entry" element={<EnhancedEntryGlass />} />
+        <Route path="/specialized/glass/medium-performance" element={<MediumPerformanceGlass />} />
+        <Route path="/specialized/glass/high-performance" element={<HighPerformanceGlass />} />
         <Route path="/specialized/acoustic-secondary-glazing-windows" element={<AcousticSecondaryGlazingWindows />} />
         <Route path="/specialized/secondary-glazing-building-regulations" element={<SecondaryGlazingBuildingRegulations />} />
         <Route path="/specialized/secondary-glazing-original-windows" element={<SecondaryGlazingOriginalWindows />} />
@@ -126,6 +134,7 @@ const AppRoutes = () => {
         <Route path="/sustainability-impact-tracker" element={<Navigate to="/sustainability-impact-tracker-secondary-glazing" replace />} />
         <Route path="/secondary-glazing-building-regulations" element={<Navigate to="/specialized/secondary-glazing-building-regulations" replace />} />
         <Route path="/air-gap-secondary-glazing" element={<Navigate to="/specialized/air-gap-secondary-glazing" replace />} />
+        <Route path="/residential/energy-efficiency" element={<Navigate to="/residential/energy-performance" replace />} />
         <Route path="/specialized/uv-protection" element={<UVProtection />} />
         <Route path="/specialized/insurance-premiums" element={<InsurancePremiums />} />
         <Route path="/residential/crittall-windows" element={<CrittallWindows />} />
