@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
-import ContactUsButton from "@/components/ContactUsButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
 import Index from "./pages/Index";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
@@ -167,7 +166,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/">
         <AppRoutes />
-        <ContactUsButton />
         <GetQuoteButton />
         <FloatingContactForm />
         <WhatsAppButton />
