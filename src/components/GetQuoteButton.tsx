@@ -8,7 +8,7 @@ const GetQuoteButton = () => {
       <FloatingButton
         icon={<MessageSquarePlus className="w-8 h-8 mr-2" />}
         text="Get Quote"
-        className="bottom-[162px] bg-primary hover:bg-primary/90"
+        className="bottom-[108px] bg-primary hover:bg-primary/90"
         aria-label="Get a quote"
       />
     </Link>
