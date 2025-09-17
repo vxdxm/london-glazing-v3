@@ -44,7 +44,7 @@ const FloatingContactForm = () => {
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
         <Button 
-          className="fixed bottom-[140px] right-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-[60] rounded-full px-6 py-4 h-[64px] flex items-center whitespace-nowrap"
+          className="fixed bottom-[240px] right-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-[60] rounded-full px-6 py-4 h-[64px] flex items-center whitespace-nowrap"
           aria-label="Quick contact form"
         >
           <Mail className="w-8 h-8 mr-2" />
