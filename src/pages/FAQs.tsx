@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { createFAQSchema } from "@/utils/faq-schema";
@@ -61,6 +62,26 @@ const FAQs = () => {
     speakableConfigs.faq,
     faqSchema
   );
+  
+  // AI Overview configuration
+  const aiConfig = createPageAIConfig(
+    'informational',
+    'Secondary Glazing FAQs - Expert Answers',
+    ['FAQ', 'installation guide', 'cost information', 'noise reduction', 'thermal efficiency']
+  );
+  
+  aiConfig.keyFacts = [
+    'Secondary glazing reduces noise by up to 80%',
+    'No planning permission required for most installations',
+    'Can save up to 20% on heating bills',
+    'Installation typically takes 1-2 days',
+    'Suitable for listed buildings and conservation areas'
+  ];
+  
+  aiConfig.commonQuestions = faqs.map(faq => ({
+    question: faq.question,
+    answer: faq.answer
+  }));
 
   return (
     <div className="min-h-screen bg-background">
@@ -80,6 +101,15 @@ const FAQs = () => {
         serviceName="Secondary Glazing Consultation"
       />
       
+      <AIOverviewOptimizer
+        config={aiConfig}
+        additionalFAQs={faqs.map(faq => ({
+          question: faq.question,
+          answer: faq.answer,
+          relatedQuestions: []
+        }))}
+      />
+      
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(aiOptimizedSchema)}
@@ -95,6 +125,11 @@ const FAQs = () => {
           "Can I get secondary glazing in London?",
           "How long does secondary glazing installation take?"
         ]}
+        localContext={{
+          city: "London",
+          region: "Greater London",
+          serviceArea: ["London", "Greater London", "UK"]
+        }}
       />
       
       <MainNav />

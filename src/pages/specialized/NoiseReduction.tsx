@@ -2,10 +2,41 @@
 import { MainNav } from "@/components/MainNav";
 import NoiseReductionCalculator from "@/components/NoiseReductionCalculator";
 import { StandardSEO } from "@/components/specialized/SEOUtils";
+import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
+import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const NoiseReduction = () => {
+  const aiConfig = createPageAIConfig(
+    'service',
+    'Noise Reduction Secondary Glazing - Acoustic Solutions',
+    ['acoustic performance', 'sound insulation', 'traffic noise', 'urban noise control', 'dB reduction']
+  );
+  
+  aiConfig.keyFacts = [
+    'Reduces noise by up to 80% with proper installation',
+    'Effective against traffic, railway, and aircraft noise',
+    'Larger air gap provides superior acoustic performance',
+    'No external changes to building appearance',
+    'Can be installed in listed buildings'
+  ];
+  
+  aiConfig.commonQuestions = [
+    {
+      question: 'How much noise does secondary glazing block?',
+      answer: 'Secondary glazing can reduce noise levels by 70-80%, which translates to a reduction of 45-50 decibels. The exact reduction depends on the air gap size, glass type, and installation quality.'
+    },
+    {
+      question: 'What is the best glass for noise reduction?',
+      answer: 'Laminated acoustic glass (6.4mm or 6.8mm) provides the best noise reduction. Using different glass thicknesses in the primary and secondary glazing prevents resonance and blocks a wider range of frequencies.'
+    },
+    {
+      question: 'How does the air gap affect noise reduction?',
+      answer: 'A larger air gap (100-150mm) provides significantly better noise reduction than smaller gaps. The air cavity acts as an acoustic buffer, with larger gaps being more effective at blocking low-frequency noise like traffic rumble.'
+    }
+  ];
+  
   return (
     <div className="min-h-screen bg-background">
       <StandardSEO
@@ -15,6 +46,50 @@ const NoiseReduction = () => {
         imageUrl="/lovable-uploads/6ec1e201-5107-4f52-bb73-2cb26d88efa8.jpg"
         type="article"
         keywords={["noise reduction", "secondary glazing", "acoustic glazing", "sound insulation", "noise pollution", "London glazing", "soundproofing windows"]}
+      />
+      
+      <AIOverviewOptimizer
+        config={aiConfig}
+        service={{
+          name: 'Noise Reduction Secondary Glazing',
+          description: 'Professional acoustic secondary glazing to reduce noise by up to 80%',
+          benefits: [
+            'Up to 80% noise reduction',
+            'Improved sleep quality',
+            'Enhanced concentration',
+            'Increased property value',
+            'No planning permission required',
+            'Preserves window aesthetics'
+          ],
+          process: [
+            'Free acoustic survey',
+            'Custom glass specification',
+            'Professional installation',
+            'Post-installation testing'
+          ],
+          pricing: { min: 300, max: 800 }
+        }}
+        additionalFAQs={aiConfig.commonQuestions.map(faq => ({
+          question: faq.question,
+          answer: faq.answer,
+          relatedQuestions: []
+        }))}
+      />
+      
+      <VoiceSearchOptimizer
+        primaryKeywords={['noise reduction secondary glazing', 'acoustic windows', 'soundproof glazing']}
+        conversationalQueries={[
+          'How can I reduce traffic noise in my home?',
+          'What is the best way to block street noise?',
+          'Does secondary glazing work for noise reduction?',
+          'How much does acoustic secondary glazing cost?',
+          'Can I install secondary glazing in a listed building?'
+        ]}
+        localContext={{
+          city: 'London',
+          region: 'Greater London',
+          serviceArea: ['London', 'Greater London', 'South East England']
+        }}
       />
       
       <MainNav />
