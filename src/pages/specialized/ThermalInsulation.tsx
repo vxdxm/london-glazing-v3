@@ -10,6 +10,8 @@ import { KeyPoint } from "@/components/ui/key-point";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { UValuesComparison } from "@/components/specialized/thermal/UValuesComparison";
+import { CO2SavingsCalculator } from "@/components/specialized/thermal/CO2SavingsCalculator";
 
 const ThermalInsulation = () => {
   const pageMetadata = {
@@ -184,6 +186,10 @@ const ThermalInsulation = () => {
             </Card>
           </div>
         </section>
+
+        <UValuesComparison />
+
+        <CO2SavingsCalculator />
 
         <section className="mt-16">
           <SectionHeading 
