@@ -19,10 +19,17 @@ const existingGlazingOptions: GlazingOption[] = [
 ];
 
 const secondaryGlazingOptions: GlazingOption[] = [
+  { label: "Single Glazed (4mm, 30mm gap)", uValue: 3.2, description: "Minimum gap secondary glazing" },
+  { label: "Single Glazed (4mm, 50mm gap)", uValue: 3.0, description: "Reduced gap secondary glazing" },
   { label: "Single Glazed (4mm, 100mm gap)", uValue: 2.8, description: "Standard secondary glazing" },
-  { label: "Low-E Glass (100mm gap)", uValue: 1.8, description: "Low-E coated glass" },
+  { label: "Single Glazed (6.4mm, 30mm gap)", uValue: 3.1, description: "Laminated glass, minimum gap" },
+  { label: "Single Glazed (6.4mm, 50mm gap)", uValue: 2.9, description: "Laminated glass, reduced gap" },
+  { label: "Single Glazed (6.4mm, 100mm gap)", uValue: 2.7, description: "Laminated glass, standard gap" },
+  { label: "Low-E Glass (4mm, 100mm gap)", uValue: 1.8, description: "Low-E coated glass" },
+  { label: "Low-E Glass (6.4mm, 100mm gap)", uValue: 1.7, description: "Laminated Low-E glass" },
   { label: "Double Glazed Unit (4-12-4)", uValue: 1.2, description: "Sealed double glazed unit" },
   { label: "Premium Double Glazed (4-9.2-6.8)", uValue: 1.0, description: "Acoustic double glazed unit" },
+  { label: "Premium Double Glazed (6.4-12-4)", uValue: 1.1, description: "Laminated double glazed unit" },
 ];
 
 export const UValueCalculator = () => {
