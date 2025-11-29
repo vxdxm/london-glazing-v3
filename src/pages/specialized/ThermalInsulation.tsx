@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { UValuesComparison } from "@/components/specialized/thermal/UValuesComparison";
 import { CO2SavingsCalculator } from "@/components/specialized/thermal/CO2SavingsCalculator";
+import { UValueCalculator } from "@/components/specialized/thermal/UValueCalculator";
 
 const ThermalInsulation = () => {
   const pageMetadata = {
@@ -188,6 +189,8 @@ const ThermalInsulation = () => {
         </section>
 
         <UValuesComparison />
+
+        <UValueCalculator />
 
         <CO2SavingsCalculator />
 
