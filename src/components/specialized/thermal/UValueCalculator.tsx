@@ -3,7 +3,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { Calculator, TrendingDown } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Calculator, TrendingDown, Info } from "lucide-react";
 import { useState } from "react";
 
 interface GlazingOption {
@@ -70,9 +71,21 @@ export const UValueCalculator = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="space-y-2">
-              <Label htmlFor="existing-glazing">Current Window Type</Label>
+          <TooltipProvider>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Label htmlFor="existing-glazing">Current Window Type</Label>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-4 w-4 text-muted-foreground cursor-help" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-xs">
+                      <p className="font-semibold mb-1">About U-Values</p>
+                      <p>U-value measures heat loss through windows. Lower values mean better insulation. Single glazing (5.8) loses the most heat, while modern double/triple glazing (1.8-2.8) performs much better.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               <Select value={existingGlazing} onValueChange={setExistingGlazing}>
                 <SelectTrigger id="existing-glazing">
                   <SelectValue />
@@ -90,8 +103,20 @@ export const UValueCalculator = () => {
               </p>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="secondary-glazing">Secondary Glazing Type</Label>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Label htmlFor="secondary-glazing">Secondary Glazing Type</Label>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-4 w-4 text-muted-foreground cursor-help" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-xs">
+                      <p className="font-semibold mb-1">Glass Thickness & Gap Size</p>
+                      <p><strong>Glass thickness:</strong> 6.4mm laminated glass offers better sound insulation than 4mm, with minimal thermal difference.</p>
+                      <p className="mt-2"><strong>Gap size:</strong> Larger gaps (100mm) provide better thermal and acoustic performance than smaller gaps (30-50mm). The air gap acts as insulation.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               <Select value={secondaryGlazing} onValueChange={setSecondaryGlazing}>
                 <SelectTrigger id="secondary-glazing">
                   <SelectValue />
@@ -109,8 +134,18 @@ export const UValueCalculator = () => {
               </p>
             </div>
 
-            <div className="space-y-2 md:col-span-2">
-              <Label htmlFor="window-area">Total Window Area (m²)</Label>
+              <div className="space-y-2 md:col-span-2">
+                <div className="flex items-center gap-2">
+                  <Label htmlFor="window-area">Total Window Area (m²)</Label>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Info className="h-4 w-4 text-muted-foreground cursor-help" />
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-xs">
+                      <p>Measure the total area of all windows you plan to treat. Multiply width × height for each window and add them together. This helps calculate potential energy savings.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
               <Input
                 id="window-area"
                 type="number"
@@ -121,8 +156,8 @@ export const UValueCalculator = () => {
                 onChange={(e) => setWindowArea(e.target.value)}
                 placeholder="Enter window area"
               />
+              </div>
             </div>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Card className="bg-muted/50">
@@ -206,6 +241,7 @@ export const UValueCalculator = () => {
               </p>
             </div>
           )}
+          </TooltipProvider>
         </CardContent>
       </Card>
     </section>
