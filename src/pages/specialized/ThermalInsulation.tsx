@@ -13,6 +13,7 @@ import { createPageSchema } from "@/utils/seo";
 import { UValuesComparison } from "@/components/specialized/thermal/UValuesComparison";
 import { CO2SavingsCalculator } from "@/components/specialized/thermal/CO2SavingsCalculator";
 import { UValueCalculator } from "@/components/specialized/thermal/UValueCalculator";
+import { PerformanceComparisonChart } from "@/components/specialized/thermal/PerformanceComparisonChart";
 
 const ThermalInsulation = () => {
   const pageMetadata = {
@@ -191,6 +192,8 @@ const ThermalInsulation = () => {
         <UValuesComparison />
 
         <UValueCalculator />
+
+        <PerformanceComparisonChart />
 
         <CO2SavingsCalculator />
 
