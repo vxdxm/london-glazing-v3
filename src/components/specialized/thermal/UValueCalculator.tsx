@@ -77,7 +77,7 @@ export const UValueCalculator = () => {
                 <SelectTrigger id="existing-glazing">
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-white dark:bg-gray-800 z-50">
                   {existingGlazingOptions.map((option) => (
                     <SelectItem key={option.uValue} value={option.uValue.toString()}>
                       {option.label} (U={option.uValue})
@@ -96,7 +96,7 @@ export const UValueCalculator = () => {
                 <SelectTrigger id="secondary-glazing">
                   <SelectValue />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-white dark:bg-gray-800 z-50">
                   {secondaryGlazingOptions.map((option) => (
                     <SelectItem key={option.uValue} value={option.uValue.toString()}>
                       {option.label}
