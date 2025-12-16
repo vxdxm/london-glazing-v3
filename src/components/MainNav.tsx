@@ -63,7 +63,10 @@ export function MainNav() {
                     to={item.href}
                     onClick={() => handleNavigation(item.href)}
                   >
-                    {item.title}
+                    <span className="flex items-center gap-2">
+                      {item.icon && <item.icon size={20} className="text-primary" />}
+                      {item.title}
+                    </span>
                   </MobileNavItem>
                 ))}
               </div>
@@ -139,6 +142,7 @@ export function MainNav() {
                       key={item.title}
                       title={item.title}
                       onClick={() => handleNavigation(item.href)}
+                      icon={item.icon}
                     >
                       {item.description}
                     </ListItem>
