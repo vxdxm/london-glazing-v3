@@ -15,6 +15,7 @@ import FAQsSection from "@/components/residential/modern/FAQsSection";
 import PageFooter from "@/components/residential/modern/PageFooter";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { HorizontalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const ModernSolutions = () => {
   // Define page metadata
@@ -67,6 +68,10 @@ const ModernSolutions = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
+        <div className="flex items-center gap-4 mb-6">
+          <HorizontalSlidingIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Modern Secondary Glazing Solutions</h1>
+        </div>
         <div className="max-w-4xl mx-auto">
           <IntroSection />
           <TableOfContents />

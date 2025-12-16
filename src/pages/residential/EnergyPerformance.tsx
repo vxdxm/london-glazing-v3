@@ -9,6 +9,7 @@ import { EnergyPerformanceArticle } from "@/components/residential/energy/Energy
 import { EnergyPerformanceFAQ } from "@/components/residential/energy/EnergyPerformanceFAQ";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { MagneticIcon } from "@/components/icons/GlazingTypeIcons";
 
 const EnergyPerformance = () => {
   // Define page metadata
@@ -80,6 +81,10 @@ const EnergyPerformance = () => {
       
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <div className="flex items-center gap-4 mb-8">
+          <MagneticIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Energy Performance & Secondary Glazing</h1>
+        </div>
         <EnergyPerformanceHero />
         <EnergyPerformanceIntro />
         <EnergyPerformanceBenefits />

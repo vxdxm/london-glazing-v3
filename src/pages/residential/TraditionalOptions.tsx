@@ -8,6 +8,7 @@ import { TraditionalFAQs } from "@/components/residential/traditional/Traditiona
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { VerticalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const TraditionalOptions = () => {
   // Define page metadata
@@ -52,7 +53,10 @@ const TraditionalOptions = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">{pageMetadata.title}</h1>
+        <div className="flex items-center gap-4 mb-8">
+          <VerticalSlidingIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">{pageMetadata.title}</h1>
+        </div>
         
         {/* Introduction */}
         <Card className="mb-8">
