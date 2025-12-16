@@ -8,6 +8,7 @@ import { KeyPoint } from "@/components/ui/key-point";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { FixedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 
 const FixedSecondaryGlazing = () => {
   // Define page metadata
@@ -54,7 +55,10 @@ const FixedSecondaryGlazing = () => {
         <BreadcrumbNav />
         <div className="grid gap-12">
           <section>
-            <h1 className="text-4xl font-bold mb-8">Fixed Secondary Glazing for Thermal Insulation & Noise Reduction</h1>
+            <div className="flex items-center gap-4 mb-8">
+              <FixedPanelIcon size={56} className="text-primary" />
+              <h1 className="text-4xl font-bold">Fixed Secondary Glazing for Thermal Insulation & Noise Reduction</h1>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>

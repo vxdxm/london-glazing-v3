@@ -11,6 +11,7 @@ import Solutions from "@/components/casement/Solutions";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { CasementIcon } from "@/components/icons/GlazingTypeIcons";
 
 const CasementWindows = () => {
   // Define the page metadata for SEO
@@ -54,6 +55,10 @@ const CasementWindows = () => {
       
       <MainNav />
       <div className="container mx-auto px-4 py-16">
+        <div className="flex items-center gap-4 mb-6">
+          <CasementIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Casement Window Secondary Glazing</h1>
+        </div>
         <article className="prose lg:prose-xl max-w-none">
           <Hero />
           <Overview />

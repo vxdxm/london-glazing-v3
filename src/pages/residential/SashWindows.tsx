@@ -8,6 +8,7 @@ import SashWindowCTA from "@/components/residential/sash/SashWindowCTA";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { VerticalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const SashWindows = () => {
   // Define the page metadata for SEO
@@ -55,7 +56,10 @@ const SashWindows = () => {
         <article className="prose lg:prose-xl max-w-none">
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-8">{pageMetadata.title}</h1>
+              <div className="flex items-center gap-4 mb-8">
+                <VerticalSlidingIcon size={56} className="text-primary" />
+                <h1 className="text-4xl font-bold">{pageMetadata.title}</h1>
+              </div>
               <p className="text-gray-700 mb-4">
                 Our sash window secondary glazing solutions are designed to preserve the original character 
                 of your period property while providing modern insulation benefits. We use specially designed 

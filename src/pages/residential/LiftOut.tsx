@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { LiftOutIcon } from "@/components/icons/GlazingTypeIcons";
 const LiftOut = () => {
   // Define page metadata
   const pageMetadata = {
@@ -47,7 +48,10 @@ const LiftOut = () => {
         <BreadcrumbNav />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
-            <h1 className="text-4xl font-bold mb-4">Lift Out Secondary Glazing</h1>
+            <div className="flex items-center gap-4 mb-4">
+              <LiftOutIcon size={56} className="text-primary" />
+              <h1 className="text-4xl font-bold">Lift Out Secondary Glazing</h1>
+            </div>
             <p className="text-gray-700 mb-6">
               Our lift out secondary glazing solutions offer maximum accessibility and ease of maintenance.
               Perfect for windows that require regular cleaning or seasonal ventilation adjustments. These panels 
