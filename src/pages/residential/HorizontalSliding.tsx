@@ -11,6 +11,7 @@ import CallToAction from "@/components/residential/horizontal/CallToAction";
 import GlassOptions from "@/components/residential/GlassOptions";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { HorizontalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const HorizontalSliding = () => {
   // Define page metadata
@@ -85,6 +86,10 @@ const HorizontalSliding = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
+        <div className="flex items-center gap-4 mb-6">
+          <HorizontalSlidingIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Horizontal Sliding Secondary Glazing</h1>
+        </div>
         <HorizontalIntro />
         <WindowTypes />
         <FeaturesAndBenefits />
