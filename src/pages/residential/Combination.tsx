@@ -10,6 +10,7 @@ import CombinationCTA from "@/components/residential/combination/CombinationCTA"
 import GlassOptions from "@/components/residential/GlassOptions";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { TiltTurnIcon } from "@/components/icons/GlazingTypeIcons";
 
 const Combination = () => {
   // Define page metadata
@@ -84,6 +85,10 @@ const Combination = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
+        <div className="flex items-center gap-4 mb-6">
+          <TiltTurnIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Combination Secondary Glazing</h1>
+        </div>
         <CombinationIntro />
         <AvailableCombinations />
         <TechnicalSpecs />

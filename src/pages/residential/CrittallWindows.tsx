@@ -9,6 +9,7 @@ import { CrittallFAQ } from "@/components/residential/crittall/CrittallFAQ";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { FixedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 
 const CrittallWindows = () => {
   // Define page metadata
@@ -53,7 +54,10 @@ const CrittallWindows = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">{pageMetadata.title}</h1>
+        <div className="flex items-center gap-4 mb-8">
+          <FixedPanelIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">{pageMetadata.title}</h1>
+        </div>
         <CrittallIntro />
         <CrittallBenefits />
         <CrittallDetails />

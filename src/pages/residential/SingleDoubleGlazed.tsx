@@ -7,6 +7,7 @@ import { SingleDoubleGlazedComparison } from "@/components/residential/single-do
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { FixedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 
 const SingleDoubleGlazed = () => {
   // Define page metadata
@@ -48,7 +49,10 @@ const SingleDoubleGlazed = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <h1 className="text-4xl font-bold mb-8">Single (4mm Toughened Glass) &amp; Double Glazed (mm Low E/Argon Gas Filled Cavity/4mm Toughened Glass) Secondary Windows</h1>
+        <div className="flex items-center gap-4 mb-8">
+          <FixedPanelIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Single & Double Glazed Secondary Windows</h1>
+        </div>
         <SingleDoubleGlazedIntro />
         <SingleDoubleGlazedBenefits />
         <SingleDoubleGlazedComparison />

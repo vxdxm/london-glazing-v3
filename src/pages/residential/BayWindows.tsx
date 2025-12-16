@@ -10,6 +10,7 @@ import BayWindowCTA from "@/components/residential/bay/BayWindowCTA";
 import GlassOptions from "@/components/residential/GlassOptions";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
+import { HingedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 
 const BayWindows = () => {
   // Define page metadata
@@ -84,6 +85,10 @@ const BayWindows = () => {
       <MainNav />
       <div className="container mx-auto px-4 py-8">
         <BreadcrumbNav />
+        <div className="flex items-center gap-4 mb-6">
+          <HingedPanelIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Bay Window Secondary Glazing</h1>
+        </div>
         <BayWindowHeader />
         <BayWindowStyles />
         <BayWindowFeatures />
