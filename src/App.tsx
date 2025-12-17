@@ -74,6 +74,21 @@ import VictorianTerracesIslington from "./pages/locations/VictorianTerracesIslin
 import { NottingHillSecurity } from "./pages/locations/NottingHillSecurity";
 import { HackneyEnergyEfficiency } from "./pages/locations/HackneyEnergyEfficiency";
 import { ChelseaDraughtProofing } from "./pages/locations/ChelseaDraughtProofing";
+import VirginiaWater from "./pages/locations/VirginiaWater";
+import Ascot from "./pages/locations/Ascot";
+import Beaconsfield from "./pages/locations/Beaconsfield";
+import Weybridge from "./pages/locations/Weybridge";
+import Sevenoaks from "./pages/locations/Sevenoaks";
+import TunbridgeWells from "./pages/locations/TunbridgeWells";
+import Guildford from "./pages/locations/Guildford";
+import Marlow from "./pages/locations/Marlow";
+import GerrardsCross from "./pages/locations/GerrardsCross";
+import Cobham from "./pages/locations/Cobham";
+import Esher from "./pages/locations/Esher";
+import Rickmansworth from "./pages/locations/Rickmansworth";
+import Chorleywood from "./pages/locations/Chorleywood";
+import Radlett from "./pages/locations/Radlett";
+import Chigwell from "./pages/locations/Chigwell";
 import SecondaryVsDoubleGlazing from "./pages/guides/SecondaryVsDoubleGlazing";
 import DIYvsProfessional from "./pages/guides/DIYvsProfessional";
 import UValuesDBRatings from "./pages/guides/UValuesDBRatings";
@@ -155,6 +170,21 @@ const AppRoutes = () => {
         <Route path="/locations/notting-hill-security" element={<NottingHillSecurity />} />
         <Route path="/locations/hackney-energy-efficiency" element={<HackneyEnergyEfficiency />} />
         <Route path="/locations/chelsea-draught-proofing" element={<ChelseaDraughtProofing />} />
+        <Route path="/locations/virginia-water" element={<VirginiaWater />} />
+        <Route path="/locations/ascot" element={<Ascot />} />
+        <Route path="/locations/beaconsfield" element={<Beaconsfield />} />
+        <Route path="/locations/weybridge" element={<Weybridge />} />
+        <Route path="/locations/sevenoaks" element={<Sevenoaks />} />
+        <Route path="/locations/tunbridge-wells" element={<TunbridgeWells />} />
+        <Route path="/locations/guildford" element={<Guildford />} />
+        <Route path="/locations/marlow" element={<Marlow />} />
+        <Route path="/locations/gerrards-cross" element={<GerrardsCross />} />
+        <Route path="/locations/cobham" element={<Cobham />} />
+        <Route path="/locations/esher" element={<Esher />} />
+        <Route path="/locations/rickmansworth" element={<Rickmansworth />} />
+        <Route path="/locations/chorleywood" element={<Chorleywood />} />
+        <Route path="/locations/radlett" element={<Radlett />} />
+        <Route path="/locations/chigwell" element={<Chigwell />} />
         <Route path="/guides/secondary-vs-double-glazing" element={<SecondaryVsDoubleGlazing />} />
         <Route path="/guides/diy-vs-professional" element={<DIYvsProfessional />} />
         <Route path="/guides/u-values-db-ratings" element={<UValuesDBRatings />} />
