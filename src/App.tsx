@@ -93,6 +93,7 @@ import SecondaryVsDoubleGlazing from "./pages/guides/SecondaryVsDoubleGlazing";
 import DIYvsProfessional from "./pages/guides/DIYvsProfessional";
 import UValuesDBRatings from "./pages/guides/UValuesDBRatings";
 import SecondaryGlazingAesthetics from "./pages/guides/SecondaryGlazingAesthetics";
+import Locations from "./pages/Locations";
 
 const queryClient = new QueryClient();
 
@@ -156,6 +157,7 @@ const AppRoutes = () => {
         <Route path="/residential/single-double-glazed" element={<SingleDoubleGlazed />} />
         <Route path="/residential/energy-performance" element={<EnergyPerformance />} />
         <Route path="/residential/fixed-secondary-glazing" element={<FixedSecondaryGlazing />} />
+        <Route path="/locations" element={<Locations />} />
         <Route path="/locations/victorian-islington" element={<VictorianIslington />} />
         <Route path="/locations/edwardian-hampstead" element={<EdwardianHampstead />} />
         <Route path="/locations/listed-kensington" element={<ListedKensington />} />
