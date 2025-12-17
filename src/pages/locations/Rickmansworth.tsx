@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import RelatedLocations from "@/components/locations/RelatedLocations";
 
 const Rickmansworth = () => {
   return (
@@ -116,6 +117,8 @@ const Rickmansworth = () => {
             </div>
           </div>
         </section>
+
+        <RelatedLocations currentLocation="Rickmansworth" currentRegion="Hertfordshire" />
 
         <section className="text-center bg-muted p-8 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Enhance Your Rickmansworth Property</h2>
