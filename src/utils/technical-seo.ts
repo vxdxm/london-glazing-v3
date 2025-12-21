@@ -137,7 +137,7 @@ export const generateAdvancedMetaTags = (page: string) => {
     
     // Publisher information
     { name: 'publisher', content: 'Secondary Glazing Specialist' },
-    { name: 'copyright', content: '2024 Secondary Glazing Specialist' },
+    { name: 'copyright', content: '2026 Secondary Glazing Specialist' },
     
     // Page-specific optimizations
     { name: 'page-topic', content: 'Secondary Glazing Installation London' },

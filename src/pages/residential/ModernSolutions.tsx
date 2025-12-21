@@ -25,8 +25,8 @@ const ModernSolutions = () => {
     canonicalPath: "/residential/modern-solutions",
     imageUrl: "/lovable-uploads/c23f8df7-ca5f-4d5d-913a-5d6c11eae435.jpg",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["modern secondary glazing", "heritage properties", "energy efficiency", "noise reduction", "window preservation", "architectural integrity", "thermal performance"]
   };
 

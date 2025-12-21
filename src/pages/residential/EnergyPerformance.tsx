@@ -19,8 +19,8 @@ const EnergyPerformance = () => {
     canonicalPath: "/residential/energy-performance",
     imageUrl: "/lovable-uploads/580ad3ed-9e6a-4a69-81ad-2a84b36a0150.jpg",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["secondary glazing", "energy efficiency", "thermal performance", "energy savings", "window insulation", "home improvement"]
   };
 

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 const SEOHelmet = () => {
   // Update the current date for freshness signals
-  const currentDate = "2025-05-09";
+  const currentDate = "2026-01-01";
   
   return (
     <Helmet>

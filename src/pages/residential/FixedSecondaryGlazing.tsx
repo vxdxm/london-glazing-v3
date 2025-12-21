@@ -18,8 +18,8 @@ const FixedSecondaryGlazing = () => {
     canonicalPath: "/residential/fixed-secondary-glazing",
     imageUrl: "/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["fixed secondary glazing", "permanent glazing", "window insulation", "thermal efficiency", "noise reduction", "historic buildings"]
   };
 

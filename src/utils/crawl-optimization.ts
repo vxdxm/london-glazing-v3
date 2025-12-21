@@ -30,7 +30,7 @@ export const generateVideoSitemap = () => {
       title: 'Secondary Glazing Installation Process',
       description: 'Professional installation of secondary glazing in London homes',
       duration: '180',
-      publicationDate: '2024-01-15'
+      publicationDate: '2026-01-01'
     }
   ];
   
@@ -43,7 +43,7 @@ export const generateNewsSitemap = () => {
     {
       url: 'https://secondaryglazingspecialist.com/news/latest-glazing-technology',
       title: 'Latest Advances in Secondary Glazing Technology',
-      publishDate: '2024-01-15',
+      publishDate: '2026-01-01',
       language: 'en',
       genres: 'UserGenerated, Blog',
       keywords: 'secondary glazing, technology, innovation'

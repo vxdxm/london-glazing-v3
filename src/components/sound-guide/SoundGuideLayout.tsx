@@ -18,7 +18,7 @@ const SoundGuideLayout = ({ children }: SoundGuideLayoutProps) => {
     console.log("Sound Transmission Guide page loaded for indexing");
   }, []);
   
-  const currentDate = "2025-05-09"; // Keep updated with the current date
+  const currentDate = "2026-01-01"; // Keep updated with the current date
   
   return (
     <div className="min-h-screen bg-background">
@@ -52,7 +52,7 @@ const SoundGuideLayout = ({ children }: SoundGuideLayoutProps) => {
                 "url": "https://secondaryglazingspecialist.com/og-image.png"
               }
             },
-            "datePublished": "2024-07-01",
+            "datePublished": "2026-01-01",
             "dateModified": "${currentDate}"
           }
         `}

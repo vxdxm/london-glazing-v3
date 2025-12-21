@@ -18,8 +18,8 @@ const TraditionalOptions = () => {
     canonicalPath: "/residential/traditional-options",
     imageUrl: "/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["traditional secondary glazing", "listed buildings", "heritage windows", "energy efficiency", "window preservation", "conservation areas"]
   };
 

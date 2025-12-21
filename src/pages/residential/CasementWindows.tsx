@@ -21,8 +21,8 @@ const CasementWindows = () => {
     canonicalPath: "/residential/casement-windows",
     imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["casement window", "secondary glazing", "thermal insulation", "noise reduction", "period property", "heritage windows"]
   };
 
