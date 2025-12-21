@@ -32,7 +32,7 @@ export const StandardSEO: React.FC<SEOProps> = ({
     canonicalPath,
     imageUrl,
     type: type as 'website' | 'article' | 'product',
-    publishedDate: "2025-05-09",
+    publishedDate: "2026-01-01",
     modifiedDate: currentDate,
     keywords
   };

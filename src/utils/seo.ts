@@ -20,7 +20,7 @@ export const createPageSchema = (metadata: PageMetadata) => {
     "description": metadata.description,
     "url": `${baseUrl}${metadata.canonicalPath}`,
     "image": metadata.imageUrl || `${baseUrl}/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg`,
-    "datePublished": metadata.publishedDate || "2024-06-15",
+    "datePublished": metadata.publishedDate || "2026-01-01",
     "dateModified": metadata.modifiedDate || new Date().toISOString().split('T')[0],
     "author": {
       "@type": "Organization",

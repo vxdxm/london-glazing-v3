@@ -38,8 +38,8 @@ export const ThermalInsulationSEO = () => {
           "headline": "Thermal Insulation Secondary Glazing Solutions",
           "description": "Expert thermal insulation solutions that can reduce heat loss by up to 60% compared to single glazing, leading to substantial savings on energy bills.",
           "image": "https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png",
-          "datePublished": "2025-05-09",
-          "dateModified": "2025-05-09",
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-01-01",
           "author": {
             "@type": "Organization",
             "name": "Secondary Glazing Specialist"

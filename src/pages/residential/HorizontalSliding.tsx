@@ -21,8 +21,8 @@ const HorizontalSliding = () => {
     canonicalPath: "/residential/horizontal-sliding",
     imageUrl: "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["horizontal sliding windows", "sliding secondary glazing", "thermal insulation", "noise reduction", "wide window openings", "residential glazing"]
   };
 

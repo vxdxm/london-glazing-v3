@@ -11,8 +11,8 @@ const HighPerformanceGlass = () => {
     canonicalPath: "/specialized/glass/high-performance-glass",
     imageUrl: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     type: "product" as const,
-    publishedDate: "2024-07-05",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["high performance glass", "10.8mm acoustic glass", "premium noise reduction", "recording studios", "city center properties", "railway noise reduction", "premium acoustic lamination"]
   };
 
@@ -58,7 +58,7 @@ const HighPerformanceGlass = () => {
               "@type": "Offer",
               "url": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}",
               "priceCurrency": "GBP",
-              "priceValidUntil": "2026-05-17",
+              "priceValidUntil": "2027-01-01",
               "availability": "https://schema.org/InStock"
             }
           }

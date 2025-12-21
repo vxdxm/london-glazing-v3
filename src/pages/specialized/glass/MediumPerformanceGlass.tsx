@@ -11,8 +11,8 @@ const MediumPerformanceGlass = () => {
     canonicalPath: "/specialized/glass/medium-performance-glass",
     imageUrl: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     type: "product" as const,
-    publishedDate: "2024-07-05",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["medium performance glass", "8.8mm acoustic glass", "laminated construction", "urban noise reduction", "busy road noise", "enhanced security", "sound dampening"]
   };
 
@@ -58,7 +58,7 @@ const MediumPerformanceGlass = () => {
               "@type": "Offer",
               "url": "https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}",
               "priceCurrency": "GBP",
-              "priceValidUntil": "2026-05-17",
+              "priceValidUntil": "2027-01-01",
               "availability": "https://schema.org/InStock"
             }
           }

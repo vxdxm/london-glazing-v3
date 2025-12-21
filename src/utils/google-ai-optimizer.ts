@@ -77,7 +77,7 @@ export const generateAIOverviewSchema = (config: AIOptimizationConfig) => {
           "@type": "ImageObject",
           "url": `${baseUrl}/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg`
         },
-        "datePublished": "2024-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString(),
         // Speakable content for voice search
         "speakable": {

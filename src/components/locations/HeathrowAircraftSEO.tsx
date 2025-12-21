@@ -37,7 +37,7 @@ export const HeathrowAircraftSEO = () => {
           "headline": "Aircraft Noise Reduction Secondary Glazing Near Heathrow",
           "description": "Specialized secondary glazing solutions for properties affected by Heathrow aircraft noise, offering significant acoustic improvement for residents in flight path areas.",
           "image": "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
-          "datePublished": "2025-05-09",
+          "datePublished": "2026-01-01",
           "dateModified": new Date().toISOString().split('T')[0],
           "author": {
             "@type": "Organization",

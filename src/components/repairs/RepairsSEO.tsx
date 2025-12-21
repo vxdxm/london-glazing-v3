@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 const RepairsSEO = () => {
   // Add current date for freshness signals
-  const currentDate = "2025-05-09";
+  const currentDate = "2026-01-01";
   
   // Add logging for indexing
   React.useEffect(() => {
@@ -80,7 +80,7 @@ const RepairsSEO = () => {
                 "name": "Secondary Glazing Specialist"
               }
             },
-            "datePublished": "2024-06-01",
+            "datePublished": "2026-01-01",
             "dateModified": "${currentDate}"
           }
         `}

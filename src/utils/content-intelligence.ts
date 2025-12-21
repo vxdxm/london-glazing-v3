@@ -33,7 +33,7 @@ export const contentDatabase: ContentPage[] = [
     description: 'Professional secondary glazing solutions for traditional sash windows',
     keywords: ['sash windows', 'traditional', 'heritage', 'sliding'],
     category: 'residential',
-    lastModified: '2024-01-15'
+    lastModified: '2026-01-01'
   },
   {
     path: '/residential/bay-windows',
@@ -41,7 +41,7 @@ export const contentDatabase: ContentPage[] = [
     description: 'Specialist bay window secondary glazing installations',
     keywords: ['bay windows', 'curved', 'panoramic', 'Victorian'],
     category: 'residential',
-    lastModified: '2024-01-20'
+    lastModified: '2026-01-01'
   },
   {
     path: '/specialized/noise-reduction',
@@ -49,7 +49,7 @@ export const contentDatabase: ContentPage[] = [
     description: 'Advanced acoustic glazing for maximum noise reduction',
     keywords: ['noise reduction', 'acoustic', 'soundproofing', 'traffic noise'],
     category: 'specialized',
-    lastModified: '2024-01-25'
+    lastModified: '2026-01-01'
   },
   {
     path: '/specialized/thermal-insulation',
@@ -57,7 +57,7 @@ export const contentDatabase: ContentPage[] = [
     description: 'Energy-efficient secondary glazing for thermal insulation',
     keywords: ['thermal insulation', 'energy efficiency', 'heat retention', 'insulation'],
     category: 'specialized',
-    lastModified: '2024-01-18'
+    lastModified: '2026-01-01'
   },
   {
     path: '/commercial/office-buildings',
@@ -65,7 +65,7 @@ export const contentDatabase: ContentPage[] = [
     description: 'Commercial secondary glazing solutions for office buildings',
     keywords: ['office buildings', 'commercial', 'workplace', 'productivity'],
     category: 'commercial',
-    lastModified: '2024-01-12'
+    lastModified: '2026-01-01'
   }
 ];
 

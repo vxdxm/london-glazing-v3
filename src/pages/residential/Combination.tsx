@@ -20,8 +20,8 @@ const Combination = () => {
     canonicalPath: "/residential/combination",
     imageUrl: "/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["combination windows", "mixed window styles", "secondary glazing", "sash windows", "casement windows", "bay windows", "noise reduction", "thermal insulation"]
   };
 

@@ -19,8 +19,8 @@ const CrittallWindows = () => {
     canonicalPath: "/residential/crittall-windows",
     imageUrl: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
     type: "article" as const,
-    publishedDate: "2025-05-09",
-    modifiedDate: "2025-05-17",
+    publishedDate: "2026-01-01",
+    modifiedDate: "2026-01-01",
     keywords: ["crittall windows", "secondary glazing", "energy efficiency", "noise reduction", "heritage windows", "window insulation"]
   };
 
