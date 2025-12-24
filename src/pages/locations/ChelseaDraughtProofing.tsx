@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import { SectionHeading } from '@/components/ui/section-heading';
-import { BreadcrumbNav } from '@/components/ui/breadcrumb-nav';
+import LocationBreadcrumb from '@/components/locations/LocationBreadcrumb';
 import { ChelseaDraughtProofingSEO } from '@/components/locations/ChelseaDraughtProofingSEO';
 
 export function ChelseaDraughtProofing() {
@@ -14,7 +14,9 @@ export function ChelseaDraughtProofing() {
       <ChelseaDraughtProofingSEO />
       <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-accent/5">
         <MainNav />
-        <BreadcrumbNav />
+        <div className="container mx-auto px-4 pt-24">
+          <LocationBreadcrumb locationName="Chelsea" />
+        </div>
         
         {/* Hero Section */}
         <section className="pt-24 pb-16 px-4">

@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import LocationBreadcrumb from "@/components/locations/LocationBreadcrumb";
 import { KingsCrossTrainNoiseSEO } from "@/components/locations/KingsCrossTrainNoiseSEO";
 
 const KingsCrossTrainNoise = () => {
@@ -10,7 +10,7 @@ const KingsCrossTrainNoise = () => {
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
-        <BreadcrumbNav />
+        <LocationBreadcrumb locationName="King's Cross" />
         
         <h1 className="text-4xl font-bold mb-8">Train Noise Secondary Glazing for Flats in King's Cross</h1>
         
