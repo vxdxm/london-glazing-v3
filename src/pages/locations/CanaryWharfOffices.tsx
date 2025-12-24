@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import LocationBreadcrumb from "@/components/locations/LocationBreadcrumb";
 import { CanaryWharfOfficesSEO } from "@/components/locations/CanaryWharfOfficesSEO";
 
 const CanaryWharfOffices = () => {
@@ -10,7 +10,7 @@ const CanaryWharfOffices = () => {
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
-        <BreadcrumbNav />
+        <LocationBreadcrumb locationName="Canary Wharf" />
         
         <h1 className="text-4xl font-bold mb-8">Noise Reduction Solutions for Offices in Canary Wharf</h1>
         

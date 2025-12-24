@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import LocationBreadcrumb from "@/components/locations/LocationBreadcrumb";
 import { HeathrowAircraftSEO } from "@/components/locations/HeathrowAircraftSEO";
 
 const HeathrowAircraft = () => {
@@ -10,7 +10,7 @@ const HeathrowAircraft = () => {
       <MainNav />
       
       <div className="container mx-auto px-4 py-16">
-        <BreadcrumbNav />
+        <LocationBreadcrumb locationName="Heathrow" />
         
         <h1 className="text-4xl font-bold mb-8">Aircraft Noise Reduction for Properties Near Heathrow</h1>
         
