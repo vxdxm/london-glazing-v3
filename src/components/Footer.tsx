@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   FixedPanelIcon,
@@ -58,15 +58,46 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <p className="mb-4">Connect with us on social media</p>
-            <a 
-              href="https://instagram.com/secondaryglazinglondon" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Instagram className="w-5 h-5" />
-              <span>@secondaryglazinglondon</span>
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a 
+                href="https://www.instagram.com/secondaryglazinglondon/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/10 text-muted-foreground hover:text-foreground hover:bg-background/20 transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/secondary-glazing-specialist-7500653a2/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/10 text-muted-foreground hover:text-foreground hover:bg-background/20 transition-colors"
+                aria-label="Connect with us on LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://x.com/Sec0ndaryGlazin" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/10 text-muted-foreground hover:text-foreground hover:bg-background/20 transition-colors"
+                aria-label="Follow us on X"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a 
+                href="https://web.facebook.com/profile.php?id=61585744672659" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-background/10 text-muted-foreground hover:text-foreground hover:bg-background/20 transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
