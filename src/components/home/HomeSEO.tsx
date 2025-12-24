@@ -24,6 +24,8 @@ const HomeSEO = () => {
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@Sec0ndaryGlazin" />
+      <meta name="twitter:creator" content="@Sec0ndaryGlazin" />
       <meta name="twitter:url" content="https://secondaryglazingspecialist.com/" />
       <meta name="twitter:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
       <meta name="twitter:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
@@ -50,7 +52,10 @@ const HomeSEO = () => {
             "streetAddress": "Arch 141, MacFarlane Road"
           },
           "sameAs": [
-            "https://secondaryglazingspecialist.com"
+            "https://www.instagram.com/secondaryglazinglondon/",
+            "https://www.linkedin.com/in/secondary-glazing-specialist-7500653a2/",
+            "https://x.com/Sec0ndaryGlazin",
+            "https://web.facebook.com/profile.php?id=61585744672659"
           ]
         })}
       </script>
