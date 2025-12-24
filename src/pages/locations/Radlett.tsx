@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import RelatedLocations from "@/components/locations/RelatedLocations";
+import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
+import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 
 const Radlett = () => {
   return (
@@ -18,7 +21,10 @@ const Radlett = () => {
         <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/radlett" />
       </Helmet>
       
+      <MainNav />
       <div className="container mx-auto px-4 py-8">
+        <LocationBreadcrumb locationName="Radlett" />
+        
         <section className="mb-12">
           <h1 className="text-4xl font-bold mb-6">Secondary Glazing in Radlett, Hertfordshire</h1>
           
@@ -135,6 +141,7 @@ const Radlett = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

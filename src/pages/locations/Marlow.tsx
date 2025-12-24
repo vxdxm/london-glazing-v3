@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import RelatedLocations from "@/components/locations/RelatedLocations";
+import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
+import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 
 const Marlow = () => {
   return (
@@ -18,7 +21,10 @@ const Marlow = () => {
         <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/marlow" />
       </Helmet>
       
+      <MainNav />
       <div className="container mx-auto px-4 py-8">
+        <LocationBreadcrumb locationName="Marlow" />
+        
         <section className="mb-12">
           <h1 className="text-4xl font-bold mb-6">Secondary Glazing in Marlow, Buckinghamshire</h1>
           
@@ -136,6 +142,7 @@ const Marlow = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
