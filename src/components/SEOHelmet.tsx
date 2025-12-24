@@ -48,6 +48,8 @@ const SEOHelmet: React.FC<SEOHelmetProps> = ({
       
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@Sec0ndaryGlazin" />
+      <meta name="twitter:creator" content="@Sec0ndaryGlazin" />
       <meta name="twitter:url" content={fullCanonicalUrl} />
       {title && <meta name="twitter:title" content={title} />}
       {description && <meta name="twitter:description" content={description} />}
