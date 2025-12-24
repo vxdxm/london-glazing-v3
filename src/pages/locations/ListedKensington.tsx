@@ -5,12 +5,18 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
+import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 
 const ListedKensington = () => {
   return (
     <>
       <ListedKensingtonSEO />
+      <MainNav />
       <div className="container mx-auto px-4 py-8">
+        <LocationBreadcrumb locationName="Listed Kensington" />
+        
         {/* Hero Section */}
         <section className="mb-12">
           <h1 className="text-4xl font-bold mb-6">Listed Building Secondary Glazing in Kensington</h1>
@@ -216,6 +222,7 @@ const ListedKensington = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
