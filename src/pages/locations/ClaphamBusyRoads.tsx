@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
 import { ClaphamBusyRoadsSEO } from "@/components/locations/ClaphamBusyRoadsSEO";
 import { SEOImage } from "@/components/ui/seo-image";
 
@@ -9,9 +9,9 @@ export default function ClaphamBusyRoads() {
     <div className="min-h-screen bg-background">
       <ClaphamBusyRoadsSEO />
       <MainNav />
-      <BreadcrumbNav />
       
       <main className="container mx-auto px-4 py-12">
+        <LocationBreadcrumb locationName="Clapham" />
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

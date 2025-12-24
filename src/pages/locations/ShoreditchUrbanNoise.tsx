@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { OptimizedImage } from '@/components/ui/optimized-image';
 import { SectionHeading } from '@/components/ui/section-heading';
-import { BreadcrumbNav } from '@/components/ui/breadcrumb-nav';
+import { LocationBreadcrumb } from '@/components/locations/LocationBreadcrumb';
 import { ShoreditchUrbanNoiseSEO } from '@/components/locations/ShoreditchUrbanNoiseSEO';
 
 export default function ShoreditchUrbanNoise() {
@@ -14,10 +14,12 @@ export default function ShoreditchUrbanNoise() {
       <ShoreditchUrbanNoiseSEO />
       <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-accent/5">
         <MainNav />
-        <BreadcrumbNav />
+        <div className="container mx-auto px-4 pt-8">
+          <LocationBreadcrumb locationName="Shoreditch" />
+        </div>
         
         {/* Hero Section */}
-        <section className="pt-24 pb-16 px-4">
+        <section className="pt-8 pb-16 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>

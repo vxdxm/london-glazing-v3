@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import RelatedLocations from "@/components/locations/RelatedLocations";
+import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
+import { MainNav } from "@/components/MainNav";
+import { Footer } from "@/components/Footer";
 
 const Ascot = () => {
   return (
@@ -18,7 +21,9 @@ const Ascot = () => {
         <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/ascot" />
       </Helmet>
       
+      <MainNav />
       <div className="container mx-auto px-4 py-8">
+        <LocationBreadcrumb locationName="Ascot" />
         <section className="mb-12">
           <h1 className="text-4xl font-bold mb-6">Secondary Glazing in Ascot, Berkshire</h1>
           
@@ -135,6 +140,7 @@ const Ascot = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

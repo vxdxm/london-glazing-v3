@@ -53,16 +53,42 @@ const routeLabels: RouteMapping = {
   "cookie-policy": "Cookie Policy",
   "double-glazed-units": "Double Glazed Units",
   "locations": "Locations",
+  // London locations
+  "victorian-islington": "Victorian Islington",
   "victorian-terraces-islington": "Victorian Terraces Islington",
-  "clapham-busy-roads": "Clapham Busy Roads",
-  "shoreditch-urban-noise": "Shoreditch Urban Noise",
-  "notting-hill-security": "Notting Hill Security",
-  "hackney-energy-efficiency": "Hackney Energy Efficiency", 
-  "chelsea-draught-proofing": "Chelsea Draught Proofing",
-  "canary-wharf-offices": "Canary Wharf Offices",
-  "heathrow-aircraft": "Heathrow Aircraft Noise",
-  "kings-cross-train-noise": "King's Cross Train Noise",
-  "listed-kensington": "Listed Buildings Kensington",
+  "edwardian-hampstead": "Edwardian Hampstead",
+  "listed-kensington": "Listed Kensington",
+  "georgian-belgravia": "Georgian Belgravia",
+  "conservation-richmond": "Conservation Richmond",
+  "canary-wharf-offices": "Canary Wharf",
+  "clapham-busy-roads": "Clapham",
+  "heathrow-aircraft": "Heathrow Area",
+  "kings-cross-train-noise": "King's Cross",
+  "shoreditch-urban-noise": "Shoreditch",
+  "notting-hill-security": "Notting Hill",
+  "hackney-energy-efficiency": "Hackney",
+  "chelsea-draught-proofing": "Chelsea",
+  // Surrey locations
+  "virginia-water": "Virginia Water",
+  "weybridge": "Weybridge",
+  "cobham": "Cobham",
+  "esher": "Esher",
+  "guildford": "Guildford",
+  // Kent locations
+  "sevenoaks": "Sevenoaks",
+  "tunbridge-wells": "Tunbridge Wells",
+  // Buckinghamshire locations
+  "beaconsfield": "Beaconsfield",
+  "marlow": "Marlow",
+  "gerrards-cross": "Gerrards Cross",
+  // Hertfordshire locations
+  "rickmansworth": "Rickmansworth",
+  "chorleywood": "Chorleywood",
+  "radlett": "Radlett",
+  // Berkshire locations
+  "ascot": "Ascot",
+  // Essex locations
+  "chigwell": "Chigwell",
 };
 
 export const BreadcrumbNav = () => {

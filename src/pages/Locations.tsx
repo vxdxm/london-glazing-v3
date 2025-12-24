@@ -5,7 +5,15 @@ import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Building2, TreePine } from "lucide-react";
+import { MapPin, Building2, TreePine, Home, ChevronRight } from "lucide-react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 interface LocationItem {
   name: string;
@@ -115,6 +123,28 @@ const Locations = () => {
       <MainNav />
 
       <main className="min-h-screen">
+        {/* Breadcrumb */}
+        <div className="container mx-auto px-4 pt-8">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/" className="flex items-center gap-1">
+                    <Home className="h-4 w-4" />
+                    <span>Home</span>
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator>
+                <ChevronRight className="h-4 w-4" />
+              </BreadcrumbSeparator>
+              <BreadcrumbItem>
+                <BreadcrumbPage>Locations</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-primary/5 to-background py-16">
           <div className="container mx-auto px-4">
