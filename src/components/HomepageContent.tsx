@@ -349,7 +349,7 @@ export const HomepageContent = () => {
               <p className="text-sm text-muted-foreground">See examples of our completed projects</p>
             </Link>
             <Link 
-              to="/faq"
+              to="/faqs"
               className="p-4 bg-card rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group"
             >
               <h3 className="font-semibold text-foreground group-hover:text-primary mb-2">FAQs</h3>
@@ -405,7 +405,7 @@ export const HomepageContent = () => {
               Contact Us
             </Link>
             <Link 
-              to="/faq" 
+              to="/faqs"
               className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               Read Our FAQs
