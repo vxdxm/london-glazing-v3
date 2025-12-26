@@ -11,6 +11,7 @@ import { TrustBadges } from "@/components/TrustBadges";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
+import { ComprehensiveSchema } from "@/components/seo/ComprehensiveSchema";
 
 const Index = () => {
   const aiConfig = createPageAIConfig(
@@ -62,6 +63,13 @@ const Index = () => {
           "glazing specialist London"
         ]}
         includeLocalBusiness={true}
+      />
+      
+      <ComprehensiveSchema
+        pageName="Secondary Glazing Services London"
+        pageDescription="Expert secondary glazing solutions for residential and commercial properties across London"
+        serviceName="Secondary Glazing Installation"
+        serviceDescription="Professional secondary glazing services for listed buildings, conservation areas, and heritage properties. Reduce noise by up to 80%, improve thermal efficiency, and preserve your property's character."
       />
       
       <AIOverviewOptimizer

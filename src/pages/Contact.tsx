@@ -4,6 +4,7 @@ import { MainNav } from "@/components/MainNav";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { ComprehensiveSchema } from "@/components/seo/ComprehensiveSchema";
 
 const Contact = () => {
   return (
@@ -22,6 +23,13 @@ const Contact = () => {
         ]}
         serviceName="Secondary Glazing Consultation"
         includeLocalBusiness={true}
+      />
+      
+      <ComprehensiveSchema
+        pageName="Contact Secondary Glazing Specialist"
+        pageDescription="Get in touch with London's leading secondary glazing specialists for free consultations and quotes"
+        serviceName="Secondary Glazing Consultation"
+        serviceDescription="Free consultations, expert advice, and competitive quotes for secondary glazing installation across London."
       />
       
       <MainNav />

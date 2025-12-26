@@ -2,6 +2,7 @@ import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { ComprehensiveSchema } from "@/components/seo/ComprehensiveSchema";
 import { Link } from "react-router-dom";
 import { Building2, FileText, Home, MapPin, Shield, Award, Phone, CheckCircle, Users, Wrench } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,6 +23,13 @@ const About = () => {
           "conservation area windows",
           "period property specialists"
         ]}
+      />
+      
+      <ComprehensiveSchema
+        pageName="About Secondary Glazing Specialist"
+        pageDescription="London's leading provider of secondary glazing for listed buildings and heritage properties"
+        serviceName="Heritage Property Secondary Glazing"
+        serviceDescription="Specialist secondary glazing services for listed buildings, conservation areas, and period properties across London. Expert installations that preserve architectural character."
       />
 
       <MainNav />
