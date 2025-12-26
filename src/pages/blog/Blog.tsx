@@ -55,10 +55,10 @@ const blogPosts = [
   },
   {
     slug: "conservation-area-window-solutions",
-    title: "Window Solutions for Conservation Areas",
-    excerpt: "Understanding the planning requirements and best practices for upgrading windows in conservation areas across London.",
-    date: "2024-11-28",
-    readTime: "7 min read",
+    title: "Window Solutions for Conservation Areas: Complete 2026 Guide",
+    excerpt: "Comprehensive guide to window upgrades in London conservation areas. Learn about planning regulations, secondary glazing benefits, cost comparisons, and expert tips for preserving your heritage property.",
+    date: "2024-12-24",
+    readTime: "22 min read",
     category: "Conservation",
     image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png"
   },
