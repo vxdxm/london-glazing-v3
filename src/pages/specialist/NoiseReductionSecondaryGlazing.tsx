@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Volume2, VolumeX, Plane, Train, Car, Phone, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const NoiseReductionSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Noise Reduction Secondary Glazing"
+        serviceDescription="Expert acoustic secondary glazing solutions reducing external noise by up to 80% (45-50dB). Ideal for properties near busy roads, railways, airports, and urban centres across London."
+        pageName="Noise Reduction Secondary Glazing London"
+        pageDescription="Acoustic secondary glazing for noise reduction in residential and commercial properties"
+        priceRange={{ low: 400, high: 1000 }}
+        faqs={[
+          { question: "How much noise can secondary glazing reduce?", answer: "Secondary glazing can reduce external noise by up to 80% (45-50 decibels). Using acoustic laminated glass with a 100-150mm air gap provides maximum sound insulation." },
+          { question: "What glass is best for noise reduction?", answer: "We recommend 6.8mm or thicker acoustic laminated glass for optimal noise reduction. For severe noise problems, 10.8mm or 12.8mm acoustic glass provides even better performance." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Noise Reduction Secondary Glazing */}

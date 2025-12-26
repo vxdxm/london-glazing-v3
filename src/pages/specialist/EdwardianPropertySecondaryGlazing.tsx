@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Building2, Sun, Leaf, CheckCircle, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const EdwardianPropertySecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Edwardian Property Secondary Glazing"
+        serviceDescription="Expert secondary glazing for Edwardian homes across London. Preserve larger sash windows, decorative upper lights, and Arts & Crafts features while improving thermal efficiency and reducing noise by up to 80%."
+        pageName="Edwardian Property Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for Edwardian homes and period properties"
+        priceRange={{ low: 380, high: 950 }}
+        faqs={[
+          { question: "What makes Edwardian windows different from Victorian?", answer: "Edwardian windows are typically larger with simpler, more refined proportions. They often feature decorative glazing in upper lights and Arts & Crafts influences. Our secondary glazing respects these distinctive characteristics." },
+          { question: "Can secondary glazing improve my Edwardian home's EPC rating?", answer: "Yes, secondary glazing can significantly improve your EPC rating by reducing heat loss through windows by up to 75%. This is particularly valuable for Edwardian properties with large window areas." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Edwardian Property Secondary Glazing */}

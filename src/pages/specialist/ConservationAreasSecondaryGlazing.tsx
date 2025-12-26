@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { TreePine, MapPin, CheckCircle, Home, Phone, ThermometerSun, Volume2, Shield, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,6 +44,17 @@ const serviceAreas = [
 const ConservationAreasSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Conservation Areas Secondary Glazing"
+        serviceDescription="Sympathetic secondary glazing solutions for properties in London's 850+ conservation areas. Preserve architectural character while improving comfort, efficiency, and security."
+        pageName="Conservation Areas Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for conservation area properties preserving heritage character"
+        priceRange={{ low: 450, high: 1100 }}
+        faqs={[
+          { question: "Do I need planning permission for secondary glazing in a conservation area?", answer: "Secondary glazing is an internal modification that doesn't alter the external appearance, so planning permission is usually not required. We advise checking with your local conservation officer." },
+          { question: "Will secondary glazing affect my property's character?", answer: "No, secondary glazing is installed internally behind existing windows, preserving the external appearance completely. Our slim-profile systems are designed to be as discreet as possible." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Conservation Areas Secondary Glazing */}

@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Home, Thermometer, Volume2, Shield, Phone, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const VictorianWindowsSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Victorian Windows Secondary Glazing"
+        serviceDescription="Expert secondary glazing for Victorian properties across London. Preserve original sash windows, decorative glazing bars, and period character while improving thermal efficiency by 60% and reducing noise by 80%."
+        pageName="Victorian Windows Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for Victorian sash windows and period properties"
+        priceRange={{ low: 400, high: 1000 }}
+        faqs={[
+          { question: "Can secondary glazing match Victorian window styles?", answer: "Yes, our bespoke secondary glazing is designed to complement Victorian window features including box sash mechanisms, decorative glazing bars, and period proportions while remaining virtually invisible from inside." },
+          { question: "Will secondary glazing affect my Victorian sash windows?", answer: "No, secondary glazing is fitted internally behind your existing windows without any modification to the original sashes. The installation is fully reversible and preserves all period features." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Victorian Windows Secondary Glazing */}
