@@ -87,11 +87,26 @@ const Index = () => {
       <VoiceSearchOptimizer
         primaryKeywords={['secondary glazing London', 'noise reduction windows', 'thermal insulation']}
         conversationalQueries={[
-          'How much does secondary glazing cost?',
-          'What is the best way to reduce window noise?',
-          'Can I install secondary glazing in a listed building?',
-          'How effective is secondary glazing for energy saving?',
-          'Where can I get secondary glazing in London?'
+          {
+            question: 'How much does secondary glazing cost?',
+            answer: 'Secondary glazing costs £200-£600 per window in London, varying by size, glass type, and frame material. Standard 4mm glass is most affordable, while acoustic laminated glass costs more. We provide free no-obligation quotes.'
+          },
+          {
+            question: 'What is the best way to reduce window noise?',
+            answer: 'Secondary glazing is the most effective method to reduce window noise, cutting external sound by up to 80%. For optimal results, use laminated acoustic glass (6.4mm) with a 100-150mm air gap from your existing window.'
+          },
+          {
+            question: 'Can I install secondary glazing in a listed building?',
+            answer: 'Yes, secondary glazing is ideal for listed buildings as it installs internally without altering the external appearance. It is generally permitted without planning consent and is often recommended by conservation officers as a sympathetic improvement.'
+          },
+          {
+            question: 'How effective is secondary glazing for energy saving?',
+            answer: 'Secondary glazing improves thermal insulation by up to 60%, potentially reducing heating bills by 20%. It creates a thermal barrier that minimises heat loss, reduces draughts, and helps eliminate condensation on original windows.'
+          },
+          {
+            question: 'Where can I get secondary glazing in London?',
+            answer: 'We provide secondary glazing installation across all London boroughs including Westminster, Kensington, Camden, Islington, and throughout Greater London. Contact us for a free survey at your property.'
+          }
         ]}
         localContext={{
           city: 'London',

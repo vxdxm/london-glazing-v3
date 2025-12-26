@@ -119,11 +119,26 @@ const FAQs = () => {
       <VoiceSearchOptimizer 
         primaryKeywords={["secondary glazing", "window glazing", "noise reduction"]}
         conversationalQueries={[
-          "What is secondary glazing?",
-          "How much does secondary glazing cost?",
-          "Does secondary glazing reduce noise?",
-          "Can I get secondary glazing in London?",
-          "How long does secondary glazing installation take?"
+          {
+            question: "What is secondary glazing?",
+            answer: "Secondary glazing is an internal window system installed behind your existing windows. It creates an insulating air gap that reduces noise by up to 80%, improves thermal efficiency, and enhances security without altering the external appearance."
+          },
+          {
+            question: "How much does secondary glazing cost?",
+            answer: "Secondary glazing typically costs between £200-£600 per window in London, depending on window size, frame material, and glass specification. Larger windows and acoustic glass options cost more. We offer free surveys and quotes."
+          },
+          {
+            question: "Does secondary glazing reduce noise?",
+            answer: "Yes, secondary glazing is highly effective for noise reduction, blocking up to 80% of external noise (45-50 decibels). The air gap between panes acts as an acoustic buffer, making it ideal for homes near busy roads or flight paths."
+          },
+          {
+            question: "Can I get secondary glazing in London?",
+            answer: "Yes, we install secondary glazing throughout London and Greater London. Our service covers Central, West, East, North, and South London, with free surveys available for all residential and commercial properties."
+          },
+          {
+            question: "How long does secondary glazing installation take?",
+            answer: "Installation typically takes 1-2 days for an average home with 5-10 windows. Each window takes approximately 1-2 hours. We work efficiently to minimise disruption and complete most projects within a single day."
+          }
         ]}
         localContext={{
           city: "London",
