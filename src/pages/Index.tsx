@@ -91,23 +91,23 @@ const Index = () => {
         conversationalQueries={[
           {
             question: 'How much does secondary glazing cost?',
-            answer: 'Secondary glazing costs £200-£600 per window in London, varying by size, glass type, and frame material. Standard 4mm glass is most affordable, while acoustic laminated glass costs more. We provide free no-obligation quotes.'
+            answer: 'Secondary glazing typically costs between £350-450 per window for standard installations. For listed buildings and conservation areas, bespoke solutions range from £500-1,200 per window depending on size, glass specification, and heritage requirements. Factors affecting price include window size and type (sash, casement, bay), glass specification (standard, acoustic, thermal), installation complexity and access, heritage property requirements, and number of windows (volume discounts available). We provide free surveys and detailed quotes with no obligation. Contact us on 020 7060 1572 or request a quote online for a personalised assessment.'
           },
           {
             question: 'What is the best way to reduce window noise?',
-            answer: 'Secondary glazing is the most effective method to reduce window noise, cutting external sound by up to 80%. For optimal results, use laminated acoustic glass (6.4mm) with a 100-150mm air gap from your existing window.'
+            answer: 'Secondary glazing is the most effective noise reduction method available, cutting external sound by up to 80%. The best results come from using 6.8mm or thicker acoustic laminated glass with a 100-150mm air gap between your existing window and the secondary glazing unit. This dual-pane system creates a sound barrier that dramatically reduces traffic noise from busy roads, railway and Underground vibrations, aircraft noise near flight paths, street noise and nightlife activity, and construction and industrial sounds. For maximum noise reduction, we recommend 10.8mm or 12.8mm acoustic glass. The larger the air gap and thicker the acoustic glass, the better the sound insulation.'
           },
           {
             question: 'Can I install secondary glazing in a listed building?',
-            answer: 'Yes, secondary glazing is ideal for listed buildings as it installs internally without altering the external appearance. It is generally permitted without planning consent and is often recommended by conservation officers as a sympathetic improvement.'
+            answer: 'Yes! Secondary glazing is the preferred solution for listed buildings (Grade I, II*, and II) because it preserves your original historic windows while dramatically improving comfort and energy efficiency. Unlike replacement windows, secondary glazing requires minimal intervention to original features, is fully reversible if ever needed, preserves the external appearance completely, often gains conservation officer approval, and maintains heritage character and authenticity. We specialise in sympathetic installations across Westminster, Kensington & Chelsea, Camden, Richmond, and other heritage-rich London boroughs. We handle all planning permission liaison and provide detailed drawings for Listed Building Consent applications when required.'
           },
           {
             question: 'How effective is secondary glazing for energy saving?',
-            answer: 'Secondary glazing improves thermal insulation by up to 60%, potentially reducing heating bills by 20%. It creates a thermal barrier that minimises heat loss, reduces draughts, and helps eliminate condensation on original windows.'
+            answer: 'Secondary glazing can reduce heat loss by up to 75%, significantly lowering your heating bills and improving year-round comfort. The insulating air gap between your original window and the secondary glazing unit creates excellent thermal performance. Energy saving benefits include 15-30% reduction in heating costs (typical), reduced condensation and dampness, more consistent room temperatures, lower carbon footprint, improved EPC ratings for rental properties, and 3-7 year payback period on average. For listed buildings where replacement double glazing isn\'t permitted, secondary glazing is the only way to achieve modern energy efficiency standards while preserving historic windows.'
           },
           {
             question: 'Where can I get secondary glazing in London?',
-            answer: 'We provide secondary glazing installation across all London boroughs including Westminster, Kensington, Camden, Islington, and throughout Greater London. Contact us for a free survey at your property.'
+            answer: 'We provide professional secondary glazing installation across all London boroughs and the wider Home Counties. Central London: Westminster, Kensington & Chelsea, Camden, Islington, City of London. West London: Hammersmith & Fulham, Richmond upon Thames, Ealing, Hounslow. North London: Barnet, Enfield, Haringey, Hampstead, Highgate. East London: Tower Hamlets, Hackney, Newham, Waltham Forest. South London: Wandsworth, Lambeth, Southwark, Greenwich, Lewisham. Home Counties: Surrey, Kent, Essex, Hertfordshire, Buckinghamshire. We specialise in heritage properties throughout London\'s conservation areas including Belgravia, Chelsea, Notting Hill, Marylebone, Mayfair, and Bloomsbury. Call 020 7060 1572 or request a free quote online.'
           }
         ]}
         localContext={{
