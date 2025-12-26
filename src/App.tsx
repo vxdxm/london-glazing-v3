@@ -102,6 +102,13 @@ import GeorgianWindowsSecondaryGlazing from "./pages/specialist/GeorgianWindowsS
 import EdwardianPropertySecondaryGlazing from "./pages/specialist/EdwardianPropertySecondaryGlazing";
 import ThermalInsulationSecondaryGlazing from "./pages/specialist/ThermalInsulationSecondaryGlazing";
 import NoiseReductionSecondaryGlazing from "./pages/specialist/NoiseReductionSecondaryGlazing";
+import CentralLondon from "./pages/areas/CentralLondon";
+import NorthLondon from "./pages/areas/NorthLondon";
+import SouthLondon from "./pages/areas/SouthLondon";
+import EastLondon from "./pages/areas/EastLondon";
+import WestLondon from "./pages/areas/WestLondon";
+import GreaterLondon from "./pages/areas/GreaterLondon";
+import HomeCounties from "./pages/areas/HomeCounties";
 
 const queryClient = new QueryClient();
 
@@ -207,6 +214,13 @@ const AppRoutes = () => {
         <Route path="/edwardian-property-secondary-glazing" element={<EdwardianPropertySecondaryGlazing />} />
         <Route path="/thermal-insulation-secondary-glazing" element={<ThermalInsulationSecondaryGlazing />} />
         <Route path="/noise-reduction-secondary-glazing" element={<NoiseReductionSecondaryGlazing />} />
+        <Route path="/areas/central-london" element={<CentralLondon />} />
+        <Route path="/areas/north-london" element={<NorthLondon />} />
+        <Route path="/areas/south-london" element={<SouthLondon />} />
+        <Route path="/areas/east-london" element={<EastLondon />} />
+        <Route path="/areas/west-london" element={<WestLondon />} />
+        <Route path="/areas/greater-london" element={<GreaterLondon />} />
+        <Route path="/areas/home-counties" element={<HomeCounties />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
