@@ -29,7 +29,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-up">
-            Secondary Glazing Specialist - Listed Buildings & Conservation Areas
+            London's Specialist Secondary Glazing for Listed Buildings & Heritage Properties
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-up">
             Enhance your home's comfort and value with our expert{" "}
