@@ -55,10 +55,10 @@ const blogPosts = [
   },
   {
     slug: "secondary-glazing-vs-double-glazing",
-    title: "Secondary Glazing vs Double Glazing: Which Is Right for You?",
-    excerpt: "A comprehensive comparison of secondary glazing and double glazing to help you make the best choice for your property.",
+    title: "Secondary Glazing vs Double Glazing: Which is Best for Listed Buildings?",
+    excerpt: "A comprehensive comparison of secondary glazing and double glazing for Victorian, Georgian, and Edwardian properties. Discover which solution offers the best performance, compliance, and value.",
     date: "2024-11-15",
-    readTime: "9 min read",
+    readTime: "12 min read",
     category: "Guides",
     image: "/lovable-uploads/8c4a189d-e7e2-4118-a885-5a0a81e1bdf7.png"
   }
