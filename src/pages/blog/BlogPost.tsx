@@ -23,7 +23,7 @@ const blogPostsContent: Record<string, {
     date: "2024-12-20",
     readTime: "15 min read",
     category: "Planning",
-    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png",
+    image: "/images/blog/planning-permission-hero.webp",
     content: (
       <>
         <p className="lead">If you're a homeowner in a London conservation area wondering whether you need planning permission for secondary glazing, you're not alone. This is one of the most common concerns we hear from property owners in Westminster, Kensington & Chelsea, Camden, and other heritage-rich boroughs.</p>
@@ -35,6 +35,15 @@ const blogPostsContent: Record<string, {
         <p>Conservation areas are designated to preserve the special architectural and historic character of particular neighborhoods. London has over 1,000 conservation areas, with Westminster alone containing 75+ designated zones including Belgravia, Mayfair, and Covent Garden.</p>
         
         <p>Unlike listed building protection (which applies to individual properties), conservation area designation focuses on preserving the overall character and appearance of the streetscape. This means any external alterations that could affect the area's visual appeal may require planning permission.</p>
+        
+        <figure className="my-8">
+          <img 
+            src="/images/blog/planning-conservation-area.webp" 
+            alt="Aerial view of a London conservation area showing period properties and Georgian architecture" 
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-sm text-muted-foreground mt-2 text-center">Aerial view of a typical London conservation area with Georgian and Victorian architecture</figcaption>
+        </figure>
         
         <h2>When Planning Permission IS Required vs NOT Required</h2>
         
@@ -106,6 +115,15 @@ const blogPostsContent: Record<string, {
           </div>
         </div>
         
+        <figure className="my-8">
+          <img 
+            src="/images/blog/planning-sash-window.webp" 
+            alt="Traditional sash window with secondary glazing in a period property" 
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-sm text-muted-foreground mt-2 text-center">Secondary glazing installed on a traditional sash window preserves the original character</figcaption>
+        </figure>
+        
         <h2>How to Check Your Property's Status</h2>
         
         <p>Before proceeding with secondary glazing installation, verify your property's designation status:</p>
@@ -175,6 +193,15 @@ const blogPostsContent: Record<string, {
             <p>A Victorian terrace in Bloomsbury Conservation Area required consultation due to Article 4 Direction restrictions, but secondary glazing was approved as it didn't trigger the specific limitations.</p>
           </div>
         </div>
+        
+        <figure className="my-8">
+          <img 
+            src="/images/blog/planning-interior-room.webp" 
+            alt="Elegant period living room with tall sash windows featuring secondary glazing" 
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-sm text-muted-foreground mt-2 text-center">A beautifully preserved period room with secondary glazing maintaining the original window character</figcaption>
+        </figure>
         
         <h2>Recent Regulatory Changes (2024)</h2>
         

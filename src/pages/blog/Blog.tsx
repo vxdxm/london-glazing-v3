@@ -15,7 +15,7 @@ const blogPosts = [
     date: "2024-12-20",
     readTime: "15 min read",
     category: "Planning",
-    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png"
+    image: "/images/blog/planning-permission-hero.webp"
   },
   {
     slug: "secondary-glazing-listed-buildings-guide",
