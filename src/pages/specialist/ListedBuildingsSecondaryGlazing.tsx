@@ -271,14 +271,54 @@ const ListedBuildingsSecondaryGlazing = () => {
                   With over 15 years of experience working on heritage properties across London, we understand 
                   the unique requirements of listed buildings. Our portfolio includes Grade I listed Georgian 
                   townhouses in Mayfair, Grade II* <InlineLink href="/victorian-windows-secondary-glazing">Victorian mansions</InlineLink> in Hampstead, and Grade II 
-                  <InlineLink href="/edwardian-property-secondary-glazing">Edwardian properties</InlineLink> throughout the capital.
+                  <InlineLink href="/edwardian-property-secondary-glazing">Edwardian properties</InlineLink> throughout the capital. We serve 
+                  <InlineLink href="/service-areas/kensington-chelsea">Kensington & Chelsea</InlineLink>, 
+                  <InlineLink href="/locations/listed-kensington">Kensington</InlineLink>, and many other prestigious areas.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Every installation is carried out by trained heritage specialists who respect the 
                   craftsmanship of your building. We offer various glazing solutions including 
                   <InlineLink href="/residential/sash-windows">vertical sliding sash</InlineLink>, 
-                  <InlineLink href="/residential/casement-windows">hinged casement</InlineLink>, and 
+                  <InlineLink href="/residential/casement-windows">hinged casement</InlineLink>, 
+                  <InlineLink href="/residential/bay-windows">bay windows</InlineLink>, and 
                   <InlineLink href="/residential/fixed-secondary-glazing">fixed panel</InlineLink> systems.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Our expertise extends to <InlineLink href="/commercial">commercial properties</InlineLink> including 
+                  <InlineLink href="/commercial/office-buildings">historic office buildings</InlineLink>, 
+                  <InlineLink href="/commercial/hospitality-sector">heritage hotels</InlineLink>, and 
+                  <InlineLink href="/commercial/educational-sector">listed school buildings</InlineLink>. 
+                  We also offer <InlineLink href="/specialized/security-glazing">security glazing</InlineLink> and 
+                  <InlineLink href="/specialized/condensation-control">condensation control</InlineLink> solutions. 
+                  Explore our <InlineLink href="/case-studies">case studies</InlineLink> to see examples of our heritage work, 
+                  or learn more about the <InlineLink href="/benefits">benefits of secondary glazing</InlineLink>.
+                </p>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  London Areas We Serve
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  We provide listed building secondary glazing services across all London boroughs and the Home Counties. 
+                  Our specialists have particular expertise in areas with high concentrations of listed buildings including 
+                  <InlineLink href="/areas/central-london">Central London</InlineLink>, 
+                  <InlineLink href="/areas/west-london">West London</InlineLink>, 
+                  <InlineLink href="/areas/north-london">North London</InlineLink>, 
+                  <InlineLink href="/areas/south-london">South London</InlineLink>, 
+                  <InlineLink href="/areas/east-london">East London</InlineLink>, and the 
+                  <InlineLink href="/areas/home-counties">Home Counties</InlineLink>. 
+                  We also cover <InlineLink href="/areas/greater-london">Greater London</InlineLink> and surrounding areas.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Popular locations for listed building work include 
+                  <InlineLink href="/locations/listed-kensington">Kensington</InlineLink>, 
+                  <InlineLink href="/locations/georgian-belgravia">Belgravia</InlineLink>, 
+                  <InlineLink href="/locations/conservation-richmond">Richmond</InlineLink>, 
+                  <InlineLink href="/locations/edwardian-hampstead">Hampstead</InlineLink>, 
+                  <InlineLink href="/locations/victorian-islington">Islington</InlineLink>, and 
+                  <InlineLink href="/locations/chelsea-draught-proofing">Chelsea</InlineLink>. 
+                  For <InlineLink href="/secondary-glazing-repairs">repairs and maintenance</InlineLink> of existing 
+                  secondary glazing, please visit our dedicated service page. You can also explore our 
+                  <InlineLink href="/gallery">gallery</InlineLink> or read our <InlineLink href="/faqs">FAQs</InlineLink>.
                 </p>
 
                 <QuickLinksGrid 
