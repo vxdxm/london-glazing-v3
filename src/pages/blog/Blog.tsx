@@ -13,7 +13,7 @@ const blogPosts = [
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
     date: "2024-12-22",
-    readTime: "14 min read",
+    readTime: "18 min read",
     category: "Pricing",
     image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
   },
