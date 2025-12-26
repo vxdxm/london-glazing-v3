@@ -71,6 +71,218 @@ const KensingtonChelsea = () => {
 
   return (
     <div className="min-h-screen">
+      {/* SEO CONTENT - Hidden from users, visible to crawlers */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <header>
+          <h1>Secondary Glazing Kensington &amp; Chelsea | Heritage Property Specialists</h1>
+          <nav aria-label="Main Navigation">
+            <a href="/">Home</a>
+            <a href="/listed-buildings-secondary-glazing">Listed Buildings</a>
+            <a href="/conservation-areas-secondary-glazing">Conservation Areas</a>
+            <a href="/victorian-windows-secondary-glazing">Victorian Windows</a>
+            <a href="/sash-window-secondary-glazing">Sash Windows</a>
+            <a href="/georgian-windows-secondary-glazing">Georgian Windows</a>
+            <a href="/edwardian-property-secondary-glazing">Edwardian Properties</a>
+            <a href="/thermal-insulation-secondary-glazing">Thermal Insulation</a>
+            <a href="/noise-reduction-secondary-glazing">Noise Reduction</a>
+            <a href="/service-areas">Service Areas</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </header>
+
+        <main>
+          <article>
+            <section>
+              <h2>Expert Secondary Glazing Services in Kensington &amp; Chelsea</h2>
+              <p>The Royal Borough of Kensington and Chelsea is home to some of London's most prestigious <a href="/listed-buildings-secondary-glazing">listed buildings</a> and <a href="/conservation-areas-secondary-glazing">conservation areas</a>. With strict planning regulations protecting the borough's architectural heritage, secondary glazing offers the ideal solution for improving thermal efficiency and noise reduction without compromising the character of period properties.</p>
+              <p>Secondary Glazing Specialist provides expert <strong>secondary glazing services throughout Kensington &amp; Chelsea</strong>, including Kensington, Chelsea, Knightsbridge, South Kensington, Notting Hill, Holland Park, Earl's Court, and surrounding areas. Our specialist team has extensive experience working with the borough's planning department and conservation officers to deliver sympathetic solutions that meet strict heritage requirements.</p>
+              <p>Whether you own a <a href="/georgian-windows-secondary-glazing">Georgian townhouse</a> in Chelsea, a <a href="/victorian-windows-secondary-glazing">Victorian villa</a> in Kensington, or a period property in one of the borough's many conservation areas, we provide bespoke <a href="/thermal-insulation-secondary-glazing">secondary glazing solutions</a> that preserve architectural character while reducing heat loss by up to 75%.</p>
+            </section>
+
+            <section>
+              <h2>Areas We Serve in Kensington &amp; Chelsea</h2>
+              <h3>Kensington</h3>
+              <p>Kensington is renowned for its elegant Victorian and Edwardian properties, many of which are <a href="/listed-buildings-secondary-glazing">Grade II listed</a>. We provide secondary glazing services throughout:</p>
+              <ul>
+                <li><strong>South Kensington</strong> - Museum quarter with stunning Victorian townhouses</li>
+                <li><strong>High Street Kensington</strong> - Period properties along this historic thoroughfare</li>
+                <li><strong>Holland Park</strong> - Prestigious area with numerous listed buildings</li>
+                <li><strong>Earl's Court</strong> - Victorian terraces and mansion blocks</li>
+                <li><strong>West Kensington</strong> - Period properties requiring sympathetic improvements</li>
+              </ul>
+              <h3>Chelsea</h3>
+              <p>Chelsea features some of London's most valuable heritage properties, with numerous <a href="/conservation-areas-secondary-glazing">conservation areas</a> protecting its character:</p>
+              <ul>
+                <li><strong>King's Road</strong> - Historic shopping street with period properties above</li>
+                <li><strong>Cheyne Walk</strong> - Riverside Georgian and Victorian townhouses</li>
+                <li><strong>Chelsea Embankment</strong> - Prestigious addresses overlooking the Thames</li>
+                <li><strong>Sloane Square</strong> - Georgian and Victorian architecture</li>
+                <li><strong>World's End</strong> - Period properties and modern developments</li>
+              </ul>
+              <h3>Knightsbridge</h3>
+              <p>Knightsbridge features elegant period properties and high-profile addresses:</p>
+              <ul>
+                <li><strong>Brompton Road</strong> - Victorian and Edwardian properties</li>
+                <li><strong>Knightsbridge proper</strong> - Prestigious mansion blocks and townhouses</li>
+                <li><strong>Hans Place/Hans Crescent</strong> - Elegant period properties</li>
+              </ul>
+              <h3>Notting Hill</h3>
+              <p>Notting Hill is famous for its <a href="/victorian-windows-secondary-glazing">Victorian terraces</a> and strict conservation area regulations:</p>
+              <ul>
+                <li><strong>Ladbroke Grove</strong> - Victorian terraces in conservation areas</li>
+                <li><strong>Portobello Road</strong> - Historic market street with period properties</li>
+                <li><strong>Pembridge Villas/Square</strong> - Elegant Victorian townhouses</li>
+                <li><strong>Westbourne Grove</strong> - Period properties requiring heritage solutions</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Conservation Areas in Kensington &amp; Chelsea</h2>
+              <p>The Royal Borough of Kensington and Chelsea has <strong>over 80 conservation areas</strong> - more than any other London borough. Major conservation areas include:</p>
+              <ul>
+                <li><strong>Boltons Conservation Area</strong> - Victorian villas and crescent</li>
+                <li><strong>Brompton Conservation Area</strong> - Mixed period architecture</li>
+                <li><strong>Cheyne Conservation Area</strong> - Historic riverside properties</li>
+                <li><strong>Ladbroke Conservation Area</strong> - Victorian garden squares</li>
+                <li><strong>Queen's Gate Conservation Area</strong> - Grand Victorian townhouses</li>
+                <li><strong>Royal Hospital Conservation Area</strong> - Historic military architecture</li>
+                <li><strong>Stanley Conservation Area</strong> - Period terraces and squares</li>
+              </ul>
+              <p>We have extensive experience working within these conservation areas and provide full planning guidance for all secondary glazing installations.</p>
+            </section>
+
+            <section>
+              <h2>Listed Buildings in Kensington &amp; Chelsea</h2>
+              <p>The Royal Borough has <strong>over 4,000 listed buildings</strong>, including numerous Grade I and Grade II* properties. Our team specializes in providing <a href="/listed-buildings-secondary-glazing">secondary glazing solutions for listed buildings</a>, with a high success rate for Listed Building Consent applications.</p>
+              <p>We've successfully completed secondary glazing installations on:</p>
+              <ul>
+                <li><strong>Grade I listed Georgian townhouses</strong></li>
+                <li><strong>Grade II* Victorian villas</strong></li>
+                <li><strong>Grade II Edwardian mansion blocks</strong></li>
+                <li><strong>Period properties in conservation areas</strong></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Why Secondary Glazing for Kensington &amp; Chelsea Properties?</h2>
+              <h3>Meets Strict Planning Requirements</h3>
+              <p>Kensington &amp; Chelsea has some of the strictest planning regulations in London. Secondary glazing offers the perfect solution - installed internally without altering external appearance, it typically doesn't require planning permission (unless the property is also listed).</p>
+              <h3>Preserves Period Features</h3>
+              <p>Many properties in the borough feature original <a href="/sash-window-secondary-glazing">sash windows</a>, decorative glazing, and architectural details. Secondary glazing preserves these features while dramatically improving performance.</p>
+              <h3>Reduces Traffic Noise</h3>
+              <p>Major roads like Brompton Road, Fulham Road, and King's Road generate significant traffic noise. Secondary glazing blocks up to 80% of external <a href="/noise-reduction-secondary-glazing">noise pollution</a>, creating peaceful interiors.</p>
+              <h3>Dramatically Lowers Energy Bills</h3>
+              <p>Period properties in Kensington &amp; Chelsea often have high heating costs due to single glazing and poor insulation. <a href="/thermal-insulation-secondary-glazing">Secondary glazing</a> reduces heat loss by up to 75%, significantly lowering energy bills.</p>
+              <h3>Adds Property Value</h3>
+              <p>Improving energy efficiency while preserving period features makes properties more attractive to buyers - particularly important in this high-value market.</p>
+            </section>
+
+            <section>
+              <h2>Our Process for Kensington &amp; Chelsea Properties</h2>
+              <ol>
+                <li><strong>Free Heritage Property Survey</strong> - We visit your property to assess windows and discuss requirements</li>
+                <li><strong>Conservation/Planning Guidance</strong> - Expert advice on whether consent is required</li>
+                <li><strong>Bespoke Design</strong> - Custom solutions tailored to your specific property</li>
+                <li><strong>Application Support</strong> - Full support with Listed Building Consent applications if required</li>
+                <li><strong>Expert Installation</strong> - Professional installation by heritage property specialists</li>
+                <li><strong>Comprehensive Warranty</strong> - All work covered by warranty and aftercare</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2>Case Studies: Kensington &amp; Chelsea</h2>
+              <h3>Grade II Listed Victorian Villa, South Kensington</h3>
+              <p>A five-bedroom Victorian villa in the Queen's Gate Conservation Area required improved insulation without replacing original windows. We installed secondary glazing throughout, achieving:</p>
+              <ul>
+                <li><strong>72% reduction in heat loss</strong></li>
+                <li><strong>£850 annual energy saving</strong></li>
+                <li><strong>Listed Building Consent approved</strong> by conservation officer</li>
+                <li><strong>Original sash windows preserved</strong></li>
+              </ul>
+              <h3>Georgian Townhouse, Chelsea</h3>
+              <p>A Grade II* Georgian townhouse on Cheyne Walk required noise reduction from traffic while preserving its historic character. Secondary glazing provided:</p>
+              <ul>
+                <li><strong>78% reduction in traffic noise</strong></li>
+                <li><strong>No external alterations</strong> to the listed facade</li>
+                <li><strong>Reversible installation</strong> meeting heritage requirements</li>
+                <li><strong>Improved comfort throughout</strong></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Why Choose Secondary Glazing Specialist in Kensington &amp; Chelsea?</h2>
+              <ul>
+                <li><strong>Local expertise</strong> - Extensive experience in the Royal Borough</li>
+                <li><strong>Conservation knowledge</strong> - Deep understanding of local planning requirements</li>
+                <li><strong>Listed building specialists</strong> - High success rate with LBC applications</li>
+                <li><strong>Bespoke solutions</strong> - Tailored to period properties</li>
+                <li><strong>Free surveys</strong> - No-obligation property assessments</li>
+                <li><strong>Comprehensive warranty</strong> - All installations fully guaranteed</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Related Services</h2>
+              <ul>
+                <li><a href="/listed-buildings-secondary-glazing">Listed Buildings Secondary Glazing</a></li>
+                <li><a href="/conservation-areas-secondary-glazing">Conservation Areas Secondary Glazing</a></li>
+                <li><a href="/victorian-windows-secondary-glazing">Victorian Windows Secondary Glazing</a></li>
+                <li><a href="/georgian-windows-secondary-glazing">Georgian Windows Secondary Glazing</a></li>
+                <li><a href="/sash-window-secondary-glazing">Sash Window Secondary Glazing</a></li>
+                <li><a href="/thermal-insulation-secondary-glazing">Thermal Insulation Solutions</a></li>
+                <li><a href="/noise-reduction-secondary-glazing">Noise Reduction Glazing</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Other Areas We Serve</h2>
+              <ul>
+                <li><a href="/service-areas/westminster">Westminster Secondary Glazing</a></li>
+                <li><a href="/service-areas/camden">Camden Secondary Glazing</a></li>
+                <li><a href="/service-areas/islington">Islington Secondary Glazing</a></li>
+                <li><a href="/service-areas/hammersmith-fulham">Hammersmith &amp; Fulham Secondary Glazing</a></li>
+                <li><a href="/service-areas/wandsworth">Wandsworth Secondary Glazing</a></li>
+                <li><a href="/service-areas">View all 38 service areas</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Get Your Free Kensington &amp; Chelsea Property Survey</h2>
+              <p>Contact us today for a free, no-obligation survey of your Kensington &amp; Chelsea property. Our specialist team understands the unique requirements of the Royal Borough and will provide expert guidance on secondary glazing solutions that preserve your property's character.</p>
+              <p><a href="/contact">Contact us today</a> or <a href="/quote">request a free quote</a>.</p>
+            </section>
+          </article>
+        </main>
+
+        <footer>
+          <nav aria-label="Footer Navigation">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="/listed-buildings-secondary-glazing">Listed Buildings</a></li>
+              <li><a href="/conservation-areas-secondary-glazing">Conservation Areas</a></li>
+              <li><a href="/victorian-windows-secondary-glazing">Victorian Windows</a></li>
+              <li><a href="/sash-window-secondary-glazing">Sash Windows</a></li>
+            </ul>
+
+            <h3>Nearby Areas</h3>
+            <ul>
+              <li><a href="/service-areas/westminster">Westminster</a></li>
+              <li><a href="/service-areas/hammersmith-fulham">Hammersmith &amp; Fulham</a></li>
+              <li><a href="/service-areas/wandsworth">Wandsworth</a></li>
+              <li><a href="/service-areas">All Service Areas</a></li>
+            </ul>
+
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/quote">Get a Quote</a></li>
+            </ul>
+          </nav>
+          <p>&copy; 2025 <a href="/">Secondary Glazing Specialist</a>. All rights reserved.</p>
+        </footer>
+      </div>
+
       <EnhancedSEO
         title="Secondary Glazing Kensington & Chelsea | Listed Buildings & Conservation Areas"
         description="Expert secondary glazing for listed buildings and conservation areas in Kensington, Chelsea, Knightsbridge, South Kensington, and Notting Hill. Free heritage property surveys."
