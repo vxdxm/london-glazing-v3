@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Landmark, Shield, CheckCircle, FileText, Phone, ThermometerSun, Volume2, Lock, Droplets } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,6 +44,17 @@ const serviceAreas = [
 const ListedBuildingsSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Listed Buildings Secondary Glazing"
+        serviceDescription="Expert secondary glazing solutions for Grade I, II*, and II listed buildings across London. Preserve original windows while improving thermal efficiency, noise reduction, and security with fully reversible installations."
+        pageName="Listed Buildings Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for listed buildings and heritage properties"
+        priceRange={{ low: 500, high: 1200 }}
+        faqs={[
+          { question: "Can I install secondary glazing in a listed building?", answer: "Yes, secondary glazing is the preferred solution for listed buildings as it preserves original windows, is fully reversible, and doesn't alter the external appearance. We handle Listed Building Consent applications." },
+          { question: "Do I need planning permission for secondary glazing in a listed building?", answer: "Secondary glazing is an internal alteration, so planning permission is usually not required. However, Listed Building Consent may be needed for Grade I and II* buildings. We provide full guidance and handle applications." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} aria-hidden="true">
         <header>

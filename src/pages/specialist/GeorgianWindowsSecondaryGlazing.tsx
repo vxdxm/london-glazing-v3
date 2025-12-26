@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Castle, Eye, Shield, CheckCircle, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const GeorgianWindowsSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Georgian Windows Secondary Glazing"
+        serviceDescription="Sympathetic secondary glazing for Georgian properties across London. Preserve delicate glazing bars, fine proportions, and multi-pane sash configurations while improving thermal efficiency and reducing noise."
+        pageName="Georgian Windows Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for Georgian sash windows and period townhouses"
+        priceRange={{ low: 450, high: 1100 }}
+        faqs={[
+          { question: "Can secondary glazing work with multi-pane Georgian windows?", answer: "Yes, our slim-profile secondary glazing is specifically designed to work with Georgian six-over-six, nine-over-nine, and twelve-over-twelve pane configurations without obscuring the elegant glazing bar patterns." },
+          { question: "Is secondary glazing suitable for Georgian listed buildings?", answer: "Absolutely. Secondary glazing is the preferred solution for Georgian listed buildings as it preserves original windows completely and is fully reversible. We handle Listed Building Consent applications where required." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Georgian Windows Secondary Glazing */}

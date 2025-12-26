@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { ArrowUpDown, Thermometer, Wind, CheckCircle, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const SashWindowSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Sash Window Secondary Glazing"
+        serviceDescription="Expert secondary glazing for sash windows across London. Preserve traditional box sash mechanisms while dramatically improving thermal efficiency by 60% and reducing noise by up to 80%."
+        pageName="Sash Window Secondary Glazing London"
+        pageDescription="Specialist secondary glazing for traditional sash windows in period properties"
+        priceRange={{ low: 350, high: 900 }}
+        faqs={[
+          { question: "Can I still open my sash windows with secondary glazing?", answer: "Yes, our vertical sliding secondary glazing mirrors your original sash window operation. Both the primary and secondary windows can be opened independently for ventilation and cleaning." },
+          { question: "Does secondary glazing work with box sash windows?", answer: "Absolutely. Our systems are specifically designed to work with traditional box sash mechanisms, preserving full functionality while adding thermal and acoustic insulation." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Sash Window Secondary Glazing */}

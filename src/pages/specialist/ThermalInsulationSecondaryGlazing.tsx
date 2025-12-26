@@ -2,6 +2,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { SpecialistPageSchema } from "@/components/seo/SpecialistPageSchema";
 import { Link } from "react-router-dom";
 import { Thermometer, TrendingDown, Leaf, Flame, Phone, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -30,6 +31,17 @@ const relatedLinks = [
 const ThermalInsulationSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      <SpecialistPageSchema
+        serviceName="Thermal Insulation Secondary Glazing"
+        serviceDescription="Expert thermal secondary glazing reducing heat loss by up to 75% and lowering energy bills by 15-30%. Improve U-values from 5.0 to 1.8-2.8 W/m²K across London properties."
+        pageName="Thermal Insulation Secondary Glazing London"
+        pageDescription="Energy efficient secondary glazing for improved thermal performance and reduced heating costs"
+        priceRange={{ low: 350, high: 900 }}
+        faqs={[
+          { question: "How much can secondary glazing reduce heat loss?", answer: "Secondary glazing can reduce heat loss through windows by up to 75%, typically saving 15-30% on heating bills. U-values improve from approximately 5.0 to 1.8-2.8 W/m²K." },
+          { question: "Will secondary glazing help with condensation?", answer: "Yes, secondary glazing significantly reduces condensation by keeping the inner glass surface warmer. This prevents moisture buildup and associated dampness problems." }
+        ]}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Thermal Insulation Secondary Glazing */}
