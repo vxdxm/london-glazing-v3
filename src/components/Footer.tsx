@@ -16,6 +16,15 @@ const mainServices = [
   { title: "Residential Secondary Glazing", href: "/residential" },
 ];
 
+const windowTypes = [
+  { title: "Sash Windows", href: "/residential/sash-windows" },
+  { title: "Casement Windows", href: "/residential/casement-windows" },
+  { title: "Bay Windows", href: "/residential/bay-windows" },
+  { title: "Horizontal Sliding", href: "/residential/horizontal-sliding" },
+  { title: "Crittall Windows", href: "/residential/crittall-windows" },
+  { title: "Fixed Secondary Glazing", href: "/residential/fixed-secondary-glazing" },
+];
+
 const serviceAreas = [
   { title: "Central London", href: "/areas/central-london" },
   { title: "North London", href: "/areas/north-london" },
@@ -26,18 +35,27 @@ const serviceAreas = [
   { title: "Home Counties", href: "/areas/home-counties" },
 ];
 
+const locations = [
+  { title: "Kensington", href: "/locations/listed-kensington" },
+  { title: "Islington", href: "/locations/victorian-islington" },
+  { title: "Hampstead", href: "/locations/edwardian-hampstead" },
+  { title: "Richmond", href: "/locations/conservation-richmond" },
+  { title: "Chelsea", href: "/locations/chelsea-draught-proofing" },
+  { title: "Belgravia", href: "/locations/georgian-belgravia" },
+];
+
 const resources = [
   { title: "Quote Request", href: "/quote-request" },
-  { title: "Secondary Glazing Benefits", href: "/benefits" },
-  { title: "Case Studies", href: "/case-studies" },
-  { title: "FAQs", href: "/faq" },
-  { title: "Repairs & Maintenance", href: "/repairs" },
+  { title: "Gallery", href: "/gallery" },
+  { title: "FAQs", href: "/faqs" },
+  { title: "Secondary vs Double Glazing", href: "/guides/secondary-vs-double-glazing" },
+  { title: "DIY vs Professional", href: "/guides/diy-vs-professional" },
+  { title: "U-Values & dB Ratings", href: "/guides/u-values-db-ratings" },
 ];
 
 const companyInfo = [
-  { title: "About Us", href: "/about" },
   { title: "Contact Us", href: "/contact" },
-  { title: "Our Process", href: "/our-process" },
+  { title: "Locations", href: "/locations" },
 ];
 
 const legalLinks = [
@@ -48,17 +66,17 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary mt-8 py-12">
+    <footer className="bg-secondary mt-8 py-12" role="contentinfo">
       <div className="container mx-auto px-4">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3">
+            <address className="not-italic space-y-3">
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-1 text-primary" />
-                <p>0207 060 1572</p>
+                <a href="tel:02070601572" className="hover:text-primary">0207 060 1572</a>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 text-primary" />
@@ -74,10 +92,10 @@ export function Footer() {
                   <p className="text-muted-foreground text-sm">(by appointment only)</p>
                 </div>
               </div>
-            </div>
+            </address>
             
             {/* Social Links */}
-            <div className="mt-6">
+            <nav className="mt-6" aria-label="Social media links">
               <h4 className="text-sm font-semibold mb-3">Follow Us</h4>
               <div className="flex flex-wrap gap-3">
                 <a 
@@ -119,68 +137,110 @@ export function Footer() {
                   <Facebook className="w-4 h-4" />
                 </a>
               </div>
-            </div>
+            </nav>
           </div>
 
           {/* Main Services */}
-          <div className="lg:col-span-2">
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+          <nav aria-label="Services navigation">
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
               {mainServices.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.title}
-                </Link>
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </nav>
+
+          {/* Window Types */}
+          <nav aria-label="Window types navigation">
+            <h3 className="text-lg font-semibold mb-4">Window Types</h3>
+            <ul className="space-y-2">
+              {windowTypes.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           {/* Service Areas */}
-          <div>
+          <nav aria-label="Service areas navigation">
             <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
-            <div className="space-y-2">
+            <ul className="space-y-2">
               {serviceAreas.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.title}
-                </Link>
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </nav>
+
+          {/* Locations */}
+          <nav aria-label="Locations navigation">
+            <h3 className="text-lg font-semibold mb-4">Popular Locations</h3>
+            <ul className="space-y-2">
+              {locations.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
           {/* Resources & Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
-            <div className="space-y-2 mb-6">
-              {resources.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
+            <nav aria-label="Resources navigation">
+              <h3 className="text-lg font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 mb-6">
+                {resources.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
             
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <div className="space-y-2">
-              {companyInfo.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
+            <nav aria-label="Company navigation">
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2">
+                {companyInfo.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
 
@@ -188,19 +248,22 @@ export function Footer() {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Secondary Glazing London. All rights reserved.
+              &copy; {new Date().getFullYear()} Secondary Glazing Specialist London. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {legalLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
+            <nav aria-label="Legal links">
+              <ul className="flex flex-wrap justify-center gap-4">
+                {legalLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

@@ -117,13 +117,19 @@ const Index = () => {
         }}
       />
       
-      <MainNav />
-      <Hero />
-      <Services />
-      <SpecialistServices />
-      <HomepageContent />
-      <Testimonials />
-      <ContactForm />
+      <header>
+        <MainNav />
+      </header>
+      
+      <main>
+        <Hero />
+        <Services />
+        <SpecialistServices />
+        <HomepageContent />
+        <Testimonials />
+        <ContactForm />
+      </main>
+      
       <Footer />
     </div>
   );
