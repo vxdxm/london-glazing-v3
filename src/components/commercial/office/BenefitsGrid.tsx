@@ -2,11 +2,21 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Volume2, Thermometer, Clock, Shield } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const BenefitsGrid = () => {
   return (
     <div className="mb-16">
       <h2 className="text-2xl font-bold mb-6">Comprehensive Benefits for Commercial Properties</h2>
+      
+      <AspectRatio ratio={2 / 1} className="mb-8">
+        <OptimizedImage 
+          src="/images/commercial/office-before-after.webp" 
+          alt="Before and after comparison showing office noise and distraction versus calm productive workspace with secondary glazing" 
+          className="rounded-lg object-cover w-full h-full" 
+        />
+      </AspectRatio>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="border-primary/20">
