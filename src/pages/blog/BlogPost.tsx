@@ -906,7 +906,7 @@ const blogPostsContent: Record<string, {
     date: "2024-12-24",
     readTime: "22 min read",
     category: "Conservation",
-    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png",
+    image: "/images/blog/conservation-hero.webp",
     content: (
       <>
         <p className="lead">Living in a London conservation area comes with unique privileges and responsibilities. Your beautiful period property contributes to the capital's historic character, but it also means navigating specific regulations when it comes to window improvements. Whether you're dealing with draughty single-glazed windows, excessive noise, or rising energy bills, there are practical solutions that respect both planning requirements and your home's heritage.</p>
@@ -914,6 +914,12 @@ const blogPostsContent: Record<string, {
         <p>This comprehensive guide covers everything you need to know about window solutions for conservation areas in 2026, from understanding planning permission requirements to discovering why secondary glazing has become the preferred choice for thousands of London homeowners.</p>
         
         <h2>What Are Conservation Areas and Why Do They Matter?</h2>
+        
+        <img 
+          src="/images/blog/conservation-bay-window.webp" 
+          alt="Traditional bay window in a London conservation area with conservation area plaque visible" 
+          className="w-full rounded-lg my-8"
+        />
         
         <p>Conservation areas are special parts of London designated by local councils to preserve and enhance areas of particular architectural or historic interest. Currently, there are over <strong>650 conservation areas</strong> across London's boroughs, protecting everything from Georgian garden squares in Bloomsbury to Victorian terraces in Richmond.</p>
         
@@ -1095,6 +1101,12 @@ const blogPostsContent: Record<string, {
         </div>
         
         <h2>Case Studies: Conservation Area Success Stories</h2>
+        
+        <img 
+          src="/images/blog/conservation-interior.webp" 
+          alt="Elegant period living room with tall Georgian sash windows featuring secondary glazing" 
+          className="w-full rounded-lg my-8"
+        />
         
         <div className="space-y-6 my-8">
           <div className="bg-muted/50 p-6 rounded-lg">
