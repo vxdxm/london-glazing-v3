@@ -1,8 +1,17 @@
 import React from 'react';
 
+interface VoiceSearchQuery {
+  question: string;
+  answer: string;
+}
+
 interface VoiceSearchOptimizerProps {
   primaryKeywords: string[];
-  conversationalQueries: string[];
+  /**
+   * Each query must have a unique, specific answer - no generic templates!
+   * This is critical for SEO to avoid duplicate/thin content penalties.
+   */
+  conversationalQueries: VoiceSearchQuery[];
   localContext?: {
     city: string;
     region: string;
@@ -13,6 +22,9 @@ interface VoiceSearchOptimizerProps {
 /**
  * Voice Search Optimizer - Enhances content for voice search and AI assistants
  * Optimizes for conversational queries and featured snippets
+ * 
+ * IMPORTANT: Each question MUST have a unique, specific answer.
+ * Generic/duplicate answers will hurt SEO rankings.
  */
 export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
   primaryKeywords,
@@ -48,10 +60,10 @@ export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
       "@type": "FAQPage",
       "mainEntity": conversationalQueries.map(query => ({
         "@type": "Question",
-        "name": query,
+        "name": query.question,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `Yes, we provide ${primaryKeywords.join(", ")} services in ${localContext.city} and surrounding areas.`
+          "text": query.answer
         },
         "inLanguage": "en-GB",
         "audience": {
@@ -79,7 +91,7 @@ export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
     },
     "keywords": [
       ...primaryKeywords,
-      ...conversationalQueries,
+      ...conversationalQueries.map(q => q.question),
       `${primaryKeywords[0]} near me`,
       `${primaryKeywords[0]} in ${localContext.city}`,
       `best ${primaryKeywords[0]} ${localContext.city}`
@@ -95,15 +107,12 @@ export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
         }}
       />
       
-      {/* Hidden content optimized for voice search */}
+      {/* Hidden content optimized for voice search - each answer is unique */}
       <div style={{ display: 'none' }} className="voice-search-content">
         {conversationalQueries.map((query, index) => (
           <div key={index} className="voice-optimized">
-            <h3>{query}</h3>
-            <p>
-              Yes, we provide {primaryKeywords.join(", ")} services in {localContext.city}. 
-              Our team specializes in {primaryKeywords[0]} for properties throughout {localContext.serviceArea.join(", ")}.
-            </p>
+            <h3>{query.question}</h3>
+            <p>{query.answer}</p>
           </div>
         ))}
       </div>

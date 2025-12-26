@@ -79,11 +79,26 @@ const NoiseReduction = () => {
       <VoiceSearchOptimizer
         primaryKeywords={['noise reduction secondary glazing', 'acoustic windows', 'soundproof glazing']}
         conversationalQueries={[
-          'How can I reduce traffic noise in my home?',
-          'What is the best way to block street noise?',
-          'Does secondary glazing work for noise reduction?',
-          'How much does acoustic secondary glazing cost?',
-          'Can I install secondary glazing in a listed building?'
+          {
+            question: 'How can I reduce traffic noise in my home?',
+            answer: 'Secondary glazing with acoustic laminated glass reduces traffic noise by 70-80% (45-50 decibels). For best results, use 6.4mm laminated glass with a 100-150mm air gap. This blocks low-frequency traffic rumble and high-pitched sounds effectively.'
+          },
+          {
+            question: 'What is the best way to block street noise?',
+            answer: 'Install secondary glazing with laminated acoustic glass (6.4mm or 6.8mm) and ensure a minimum 100mm air gap from your primary window. Using different glass thicknesses prevents resonance and blocks a wider frequency range.'
+          },
+          {
+            question: 'Does secondary glazing work for noise reduction?',
+            answer: 'Yes, secondary glazing is highly effective, reducing noise by 45-50 decibels - that is a 70-80% reduction in perceived sound. It outperforms double glazing for acoustics because the larger air gap provides superior sound insulation.'
+          },
+          {
+            question: 'How much does acoustic secondary glazing cost?',
+            answer: 'Acoustic secondary glazing costs £300-£800 per window, depending on size and glass specification. Laminated acoustic glass adds approximately £50-£100 per window compared to standard glass but provides significantly better noise reduction.'
+          },
+          {
+            question: 'Can I install secondary glazing in a listed building?',
+            answer: 'Yes, secondary glazing is the preferred solution for listed buildings as it is installed internally and does not alter the external appearance. Conservation officers often recommend it as a reversible, sympathetic improvement that protects original windows.'
+          }
         ]}
         localContext={{
           city: 'London',
