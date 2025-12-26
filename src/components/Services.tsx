@@ -37,7 +37,14 @@ export const Services = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Our Services</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            We provide comprehensive secondary glazing solutions for residential and commercial properties across London. 
+            Whether you need acoustic insulation for a busy road, thermal efficiency improvements for an older property, 
+            or enhanced security for ground-floor windows, our expert team delivers tailored solutions with professional installation.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card 

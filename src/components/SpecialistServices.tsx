@@ -71,8 +71,14 @@ export const SpecialistServices = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Specialist Services
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-4">
             From heritage properties to modern noise reduction, we provide tailored secondary glazing solutions for every requirement.
+            Our specialist team has extensive experience working with Grade I, II*, and II listed buildings, 
+            conservation areas across Westminster, Kensington & Chelsea, Camden, and Richmond, 
+            and period properties including Victorian, Georgian, and Edwardian homes.
+          </p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            All installations come with a 10-year guarantee, free surveys, and expert planning permission guidance where required.
           </p>
         </div>
 
