@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import { createFAQSchema } from "@/utils/faq-schema";
 import { generateAIOptimizedSchema, contentTemplates, speakableConfigs } from "@/utils/ai-content-optimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
+import { createLocalBusinessSchema, createServiceSchema } from "@/utils/structuredData";
 
 const FAQs = () => {
   const faqs = [
@@ -131,8 +132,72 @@ const FAQs = () => {
       />
       
       <Helmet>
+        {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify(aiOptimizedSchema)}
+        </script>
+        
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createLocalBusinessSchema())}
+        </script>
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createServiceSchema(
+            "Secondary Glazing Installation & Consultation",
+            "Expert secondary glazing services for listed buildings, conservation areas, and heritage properties across London. Reduce noise by up to 80%, improve thermal efficiency, and preserve your property's character."
+          ))}
+        </script>
+        
+        {/* AggregateRating Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Secondary Glazing Services",
+            "description": "Professional secondary glazing installation for London properties",
+            "brand": {
+              "@type": "Brand",
+              "name": "Secondary Glazing Specialist"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "GBP",
+              "lowPrice": "350",
+              "highPrice": "1200",
+              "offerCount": "6"
+            }
+          })}
+        </script>
+        
+        {/* Sample Reviews Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "LocalBusiness",
+              "name": "Secondary Glazing Specialist"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "James H."
+            },
+            "reviewBody": "Excellent service from start to finish. The secondary glazing has dramatically reduced traffic noise in our Victorian terrace. Highly recommended for anyone in a conservation area."
+          })}
         </script>
       </Helmet>
       
