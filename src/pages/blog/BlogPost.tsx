@@ -17,6 +17,346 @@ const blogPostsContent: Record<string, {
   image: string;
   content: React.ReactNode;
 }> = {
+  "secondary-glazing-cost-london": {
+    title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
+    excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
+    date: "2024-12-22",
+    readTime: "14 min read",
+    category: "Pricing",
+    image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png",
+    content: (
+      <>
+        <p className="lead">Secondary glazing costs in London typically range from £350 to £1,200 per window, depending on size, glass type, and frame style. This comprehensive guide breaks down exactly what you can expect to pay and how to get the best value for your property.</p>
+        
+        <p>Whether you're looking to reduce noise from busy London streets, improve thermal efficiency in a Victorian terrace, or meet conservation requirements for a listed building, understanding the true cost of secondary glazing helps you budget effectively and avoid surprises.</p>
+        
+        <h2>Average Secondary Glazing Prices in London (2026)</h2>
+        
+        <p>Here's what London homeowners typically pay for professional secondary glazing installation:</p>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Window Type</th>
+                <th className="border border-border p-3 text-left font-semibold">Price Range</th>
+                <th className="border border-border p-3 text-left font-semibold">Average Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3">Small fixed panel (up to 1m²)</td>
+                <td className="border border-border p-3">£350 - £500</td>
+                <td className="border border-border p-3">£425</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">Standard sash window</td>
+                <td className="border border-border p-3">£500 - £800</td>
+                <td className="border border-border p-3">£650</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Large sash window (Victorian/Georgian)</td>
+                <td className="border border-border p-3">£700 - £1,000</td>
+                <td className="border border-border p-3">£850</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">Bay window (3 panels)</td>
+                <td className="border border-border p-3">£1,500 - £2,500</td>
+                <td className="border border-border p-3">£2,000</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Acoustic specialist glazing</td>
+                <td className="border border-border p-3">£800 - £1,200</td>
+                <td className="border border-border p-3">£1,000</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">Horizontal sliding unit</td>
+                <td className="border border-border p-3">£600 - £900</td>
+                <td className="border border-border p-3">£750</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <p><strong>Note:</strong> These prices include professional survey, manufacture, and installation. DIY kits are available from around £150-£300 per window but are not recommended for period properties or where acoustic performance is important.</p>
+        
+        <h2>What Affects Secondary Glazing Costs?</h2>
+        
+        <h3>1. Window Size and Shape</h3>
+        <p>Larger windows require more materials and more complex installation. Non-standard shapes (arched, circular, or triangular) significantly increase costs due to bespoke manufacturing requirements.</p>
+        <ul>
+          <li><strong>Standard rectangular:</strong> Base pricing applies</li>
+          <li><strong>Arched tops:</strong> Add 30-50% to base price</li>
+          <li><strong>Circular windows:</strong> Add 50-100% to base price</li>
+          <li><strong>Unusual shapes:</strong> Priced individually</li>
+        </ul>
+        
+        <h3>2. Glass Type and Specification</h3>
+        <p>The glass you choose has a major impact on both cost and performance:</p>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Glass Type</th>
+                <th className="border border-border p-3 text-left font-semibold">Cost Impact</th>
+                <th className="border border-border p-3 text-left font-semibold">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3">4mm standard float</td>
+                <td className="border border-border p-3">Base price</td>
+                <td className="border border-border p-3">Basic thermal improvement</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">6mm toughened</td>
+                <td className="border border-border p-3">+£30-50 per m²</td>
+                <td className="border border-border p-3">Safety and durability</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">6.4mm acoustic laminate</td>
+                <td className="border border-border p-3">+£60-80 per m²</td>
+                <td className="border border-border p-3">Noise reduction (roads)</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">10.8mm acoustic laminate</td>
+                <td className="border border-border p-3">+£100-150 per m²</td>
+                <td className="border border-border p-3">Maximum noise reduction</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Low-E coated</td>
+                <td className="border border-border p-3">+£40-60 per m²</td>
+                <td className="border border-border p-3">Enhanced thermal efficiency</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <h3>3. Frame Type and Finish</h3>
+        <p>Frame options range from budget aluminium to premium heritage profiles:</p>
+        <ul>
+          <li><strong>Standard white aluminium:</strong> Base price</li>
+          <li><strong>Powder-coated colours:</strong> +10-15%</li>
+          <li><strong>Wood-effect finishes:</strong> +15-20%</li>
+          <li><strong>Slim heritage profiles:</strong> +20-30%</li>
+          <li><strong>Timber frames:</strong> +40-60%</li>
+        </ul>
+        
+        <h3>4. Opening Mechanism</h3>
+        <p>How the secondary glazing opens affects both cost and functionality:</p>
+        <ul>
+          <li><strong>Fixed panels (lift-out):</strong> Most affordable option</li>
+          <li><strong>Horizontal sliding:</strong> Mid-range pricing</li>
+          <li><strong>Vertical sliding:</strong> Higher cost due to balance mechanisms</li>
+          <li><strong>Hinged casement:</strong> Similar to vertical sliding</li>
+          <li><strong>Tilt and turn:</strong> Premium option</li>
+        </ul>
+        
+        <h2>Cost by London Borough</h2>
+        
+        <p>Installation costs can vary slightly between London areas due to access, parking, and congestion charges:</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-8">
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3">Central London</h4>
+            <p className="text-sm mb-2">Westminster, Kensington & Chelsea, Camden</p>
+            <p className="text-primary font-semibold">+5-10% on base prices</p>
+            <p className="text-sm text-muted-foreground">Parking restrictions and access challenges</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3">Inner London</h4>
+            <p className="text-sm mb-2">Islington, Hackney, Lambeth, Southwark</p>
+            <p className="text-primary font-semibold">Standard pricing</p>
+            <p className="text-sm text-muted-foreground">Good access, standard installation</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3">Outer London</h4>
+            <p className="text-sm mb-2">Richmond, Bromley, Croydon, Barnet</p>
+            <p className="text-primary font-semibold">Standard to -5%</p>
+            <p className="text-sm text-muted-foreground">Easier access, less congestion</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-3">Home Counties</h4>
+            <p className="text-sm mb-2">Surrey, Kent, Essex, Hertfordshire</p>
+            <p className="text-primary font-semibold">Standard pricing</p>
+            <p className="text-sm text-muted-foreground">Travel costs offset by easier installation</p>
+          </div>
+        </div>
+        
+        <h2>Whole-House Cost Examples</h2>
+        
+        <p>To help you budget, here are typical costs for complete secondary glazing installations:</p>
+        
+        <div className="space-y-6 my-8">
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">2-Bed Victorian Flat (6 windows)</h4>
+            <div className="grid md:grid-cols-3 gap-4 mt-4">
+              <div>
+                <p className="text-sm text-muted-foreground">Budget Option</p>
+                <p className="text-xl font-bold text-primary">£2,800 - £3,500</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Standard Option</p>
+                <p className="text-xl font-bold text-primary">£3,500 - £4,500</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Premium Acoustic</p>
+                <p className="text-xl font-bold text-primary">£5,000 - £6,500</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">3-Bed Victorian Terrace (10 windows)</h4>
+            <div className="grid md:grid-cols-3 gap-4 mt-4">
+              <div>
+                <p className="text-sm text-muted-foreground">Budget Option</p>
+                <p className="text-xl font-bold text-primary">£4,500 - £5,500</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Standard Option</p>
+                <p className="text-xl font-bold text-primary">£6,000 - £8,000</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Premium Acoustic</p>
+                <p className="text-xl font-bold text-primary">£8,500 - £11,000</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">4-Bed Georgian Townhouse (15 windows)</h4>
+            <div className="grid md:grid-cols-3 gap-4 mt-4">
+              <div>
+                <p className="text-sm text-muted-foreground">Budget Option</p>
+                <p className="text-xl font-bold text-primary">£7,000 - £9,000</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Standard Option</p>
+                <p className="text-xl font-bold text-primary">£10,000 - £13,000</p>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Premium Acoustic</p>
+                <p className="text-xl font-bold text-primary">£14,000 - £18,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h2>Secondary Glazing vs Double Glazing: Cost Comparison</h2>
+        
+        <p>How does secondary glazing compare to replacing windows with double glazing?</p>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Factor</th>
+                <th className="border border-border p-3 text-left font-semibold">Secondary Glazing</th>
+                <th className="border border-border p-3 text-left font-semibold">Double Glazing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3 font-medium">Average cost per window</td>
+                <td className="border border-border p-3 text-primary font-semibold">£500 - £800</td>
+                <td className="border border-border p-3">£800 - £1,500</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3 font-medium">Installation time</td>
+                <td className="border border-border p-3 text-primary font-semibold">1-2 hours per window</td>
+                <td className="border border-border p-3">Half day per window</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3 font-medium">Disruption</td>
+                <td className="border border-border p-3 text-primary font-semibold">Minimal</td>
+                <td className="border border-border p-3">Significant</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3 font-medium">Planning permission</td>
+                <td className="border border-border p-3 text-primary font-semibold">Rarely needed</td>
+                <td className="border border-border p-3">Often required</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3 font-medium">Noise reduction</td>
+                <td className="border border-border p-3 text-primary font-semibold">Up to 80%</td>
+                <td className="border border-border p-3">Up to 50%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <p><strong>Bottom line:</strong> Secondary glazing costs approximately 40-60% less than double glazing replacement while providing superior noise reduction and requiring no planning permission for most properties.</p>
+        
+        <h2>How to Save Money on Secondary Glazing</h2>
+        
+        <ol>
+          <li><strong>Get multiple quotes</strong> — Always obtain at least 3 quotes from reputable installers</li>
+          <li><strong>Consider fixed panels</strong> — Lift-out panels cost less than sliding mechanisms</li>
+          <li><strong>Prioritise key rooms</strong> — Install in bedrooms and living areas first</li>
+          <li><strong>Bulk discounts</strong> — Whole-house installations often include 10-15% discounts</li>
+          <li><strong>Off-peak installation</strong> — Some companies offer discounts for flexible scheduling</li>
+          <li><strong>Standard glass for mild noise</strong> — Only upgrade to acoustic glass where truly needed</li>
+        </ol>
+        
+        <h2>What's Included in the Price?</h2>
+        
+        <p>A professional secondary glazing quote should include:</p>
+        <ul>
+          <li><strong>Free home survey</strong> — Accurate measurements and assessment</li>
+          <li><strong>Bespoke manufacture</strong> — Units made to exact specifications</li>
+          <li><strong>Professional installation</strong> — By trained fitters</li>
+          <li><strong>All materials and fixings</strong> — Nothing hidden</li>
+          <li><strong>Waste removal</strong> — Packaging and any debris</li>
+          <li><strong>Guarantee</strong> — Typically 10 years on frames, 5 years on glass</li>
+        </ul>
+        
+        <h2>Return on Investment</h2>
+        
+        <p>Secondary glazing provides excellent value through:</p>
+        <ul>
+          <li><strong>Energy savings:</strong> £200-£400 per year on heating bills</li>
+          <li><strong>Property value:</strong> Enhanced EPC rating and improved saleability</li>
+          <li><strong>Payback period:</strong> Typically 5-8 years through energy savings alone</li>
+          <li><strong>Noise reduction:</strong> Significant quality of life improvement (harder to quantify!)</li>
+        </ul>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Is secondary glazing worth the cost?</p>
+            <p className="mt-2">Yes, especially in London where noise pollution is significant and period properties cannot have replacement double glazing. The combination of noise reduction, thermal improvement, and heritage compliance makes it excellent value.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Can I install secondary glazing myself to save money?</p>
+            <p className="mt-2">DIY kits exist, but professional installation is recommended for period properties. Poor installation can reduce effectiveness by 50% or more and may not meet warranty requirements.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Do I need the most expensive acoustic glass?</p>
+            <p className="mt-2">Not always. Standard 6mm glass provides good noise reduction for typical street noise. Premium acoustic glass is best for properties facing main roads, railway lines, or flight paths.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Are there any grants available?</p>
+            <p className="mt-2">Currently, there are limited grants specifically for secondary glazing. However, some local authorities offer energy efficiency grants that may cover part of the cost. Check with your borough council.</p>
+          </div>
+        </div>
+        
+        <h2>Get Your Free Quote</h2>
+        
+        <p>Ready to find out exactly what secondary glazing would cost for your London property? We offer free, no-obligation surveys and quotes with transparent pricing.</p>
+        
+        <p><strong>Call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or request your free quote online. We'll provide a detailed breakdown of costs specific to your windows and requirements.</p>
+      </>
+    )
+  },
   "planning-permission-secondary-glazing-conservation-areas": {
     title: "Planning Permission for Secondary Glazing in Conservation Areas: Complete Guide 2026",
     excerpt: "Everything you need to know about planning regulations, permitted development rights, and conservation officer requirements for secondary glazing installations.",

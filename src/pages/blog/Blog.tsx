@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "secondary-glazing-cost-london",
+    title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
+    excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
+    date: "2024-12-22",
+    readTime: "14 min read",
+    category: "Pricing",
+    image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
+  },
+  {
     slug: "planning-permission-secondary-glazing-conservation-areas",
     title: "Planning Permission for Secondary Glazing in Conservation Areas: Complete Guide 2026",
     excerpt: "Everything you need to know about planning regulations, permitted development rights, and conservation officer requirements for secondary glazing installations in London.",
