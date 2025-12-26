@@ -5,6 +5,7 @@ import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
 import { 
   MapPin, 
   Phone, 
@@ -71,6 +72,12 @@ const KensingtonChelsea = () => {
 
   return (
     <div className="min-h-screen">
+      <ServiceAreaSchema
+        areaName="Kensington & Chelsea"
+        areaDescription="Expert secondary glazing services for listed buildings and conservation areas in Kensington & Chelsea, including South Kensington, Chelsea, Notting Hill, and Knightsbridge."
+        neighborhoods={["South Kensington", "Chelsea", "Notting Hill", "Knightsbridge", "Holland Park", "Earls Court"]}
+        conservationAreas={conservationAreas}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Kensington & Chelsea Secondary Glazing */}

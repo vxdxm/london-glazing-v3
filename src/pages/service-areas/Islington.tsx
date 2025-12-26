@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
 import { 
   MapPin, 
   Phone, 
@@ -65,6 +66,12 @@ const Islington = () => {
 
   return (
     <div className="min-h-screen">
+      <ServiceAreaSchema
+        areaName="Islington"
+        areaDescription="Expert secondary glazing services for Victorian terraces and conservation areas in Islington, including Barnsbury, Canonbury, Highbury, and Angel."
+        neighborhoods={["Barnsbury", "Canonbury", "Highbury", "Angel", "Upper Street", "Clerkenwell"]}
+        conservationAreas={conservationAreas}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} aria-hidden="true">
         <header>
