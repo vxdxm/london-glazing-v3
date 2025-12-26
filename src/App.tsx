@@ -60,6 +60,7 @@ import EnergyPerformance from "./pages/residential/EnergyPerformance";
 import ListedBuildings from "./pages/commercial/ListedBuildings";
 import FixedSecondaryGlazing from "./pages/residential/FixedSecondaryGlazing";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 import CasementModernSolutions from "./pages/residential/casement/ModernSolutions";
 import CasementTraditionalOptions from "./pages/residential/casement/TraditionalOptions";
 import EntryLevelGlass from "./pages/specialized/glass/EntryLevelGlass";
@@ -127,6 +128,7 @@ const AppRoutes = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
