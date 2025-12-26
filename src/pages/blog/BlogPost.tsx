@@ -1291,50 +1291,714 @@ const blogPostsContent: Record<string, {
     )
   },
   "sash-window-secondary-glazing-options": {
-    title: "Secondary Glazing Options for Sash Windows",
-    excerpt: "Explore the different secondary glazing solutions available for traditional sash windows, from vertical sliders to lift-out panels.",
-    date: "2024-11-20",
-    readTime: "6 min read",
+    title: "Complete Guide to Secondary Glazing for Sash Windows in London",
+    excerpt: "Comprehensive guide to secondary glazing options for period sash windows. Compare vertical sliding, lift-out, hinged and fixed systems with costs, performance data, and London case studies.",
+    date: "2024-12-26",
+    readTime: "25 min read",
     category: "Window Types",
-    image: "/lovable-uploads/c7e8e6e5-c8f0-4b15-9cc5-25481ef35ee8.png",
+    image: "/images/blog/sash-window-types.webp",
     content: (
       <>
-        <p className="lead">Sash windows are a defining feature of period London properties. Choosing the right secondary glazing option ensures you maintain their character while improving performance.</p>
+        <p className="lead">Sash windows are one of London's most iconic architectural features, gracing everything from Georgian terraces in Bloomsbury to Victorian mansions in Kensington. But while these beautiful windows define the character of period properties across the capital, they often come with significant drawbacks: draughts, noise, heat loss, and sky-high energy bills.</p>
         
-        <h2>Vertical Sliding Secondary Glazing</h2>
-        <p>The most popular option for sash windows, vertical sliders:</p>
+        <p>If you're living in a London period property with original sash windows, secondary glazing could be the perfect solution. It lets you keep the historic charm while dramatically improving comfort and energy efficiency – all without the planning headaches that come with window replacement in conservation areas.</p>
+        
+        <h2>Understanding London's Sash Windows</h2>
+        
+        <p>Sash windows have dominated London's residential architecture for over 300 years, and understanding your window type is crucial for choosing the right secondary glazing solution.</p>
+        
+        <div className="space-y-6 my-8">
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Georgian Sash Windows (1714-1830)</h4>
+            <p>Georgian sash windows feature distinctive 6-over-6 or 12-over-12 pane configurations with thick glazing bars and robust timber frames. These windows are typically found in areas like Marylebone, Bloomsbury, and parts of Westminster. The frames are usually substantial, making them ideal candidates for most secondary glazing options.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Victorian Box Sash Windows (1837-1901)</h4>
+            <p>Victorian sash windows evolved to include larger panes of glass with thinner glazing bars, often in 2-over-2 or 4-over-4 configurations. You'll find these throughout areas like Islington, Clapham, and Hampstead. Victorian sashes often feature decorative horns at the bottom rail and more sophisticated counterweight systems.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Edwardian Sash Windows (1901-1914)</h4>
+            <p>Edwardian windows continued the Victorian trend toward larger glass areas but often incorporated Art Nouveau influences. These are common in areas like Dulwich, Ealing, and parts of North London developed in the early 1900s.</p>
+          </div>
+        </div>
+        
+        <img 
+          src="/images/blog/sash-window-types.webp" 
+          alt="Different types of London sash windows including Georgian, Victorian and Edwardian styles" 
+          className="w-full rounded-lg my-8"
+        />
+        
+        <h2>Why Sash Windows Dominate London Properties</h2>
+        
+        <p>London's building regulations and fire safety requirements from the 18th century onwards made sash windows the preferred choice for urban development. The ability to open the top and bottom sashes created excellent ventilation – crucial in densely populated areas. Additionally, the Building Act of 1774 mandated specific window designs for different classes of houses, cementing the sash window's place in London architecture.</p>
+        
+        <p>Today, strict conservation area rules and listed building protections mean that millions of London homes still feature original or replica sash windows. While this preserves the city's historic character, it also means homeowners must work within these constraints when improving energy efficiency.</p>
+        
+        <h2>Common Problems with Original Sash Windows</h2>
+        
+        <p>Living with original sash windows in London comes with familiar frustrations:</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-8">
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>Draughts and Air Leakage</strong></p>
+            <p className="text-sm text-muted-foreground">Original sash windows can lose up to 25% of your home's heat through gaps in the frame, sashes, and around the glazing. This is particularly problematic in London's damp climate.</p>
+          </div>
+          
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>Noise Pollution</strong></p>
+            <p className="text-sm text-muted-foreground">London's urban environment means constant exposure to traffic noise, aircraft, sirens, and construction. Single-glazed sash windows offer virtually no acoustic protection, with noise levels often exceeding 65 decibels indoors.</p>
+          </div>
+          
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>Condensation Issues</strong></p>
+            <p className="text-sm text-muted-foreground">The combination of London's high humidity and poor thermal performance in single glazing creates persistent condensation problems, leading to mould growth and timber rot.</p>
+          </div>
+          
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>Security Vulnerabilities</strong></p>
+            <p className="text-sm text-muted-foreground">Traditional sash windows with original catches and latches offer minimal security protection. The window design makes them relatively easy to force open from outside.</p>
+          </div>
+          
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>Rattling and Operational Issues</strong></p>
+            <p className="text-sm text-muted-foreground">Settlement over time means many sash windows no longer fit properly in their frames, causing rattling in wind and difficulty opening or closing.</p>
+          </div>
+          
+          <div className="border-l-4 border-destructive pl-4">
+            <p><strong>High Energy Costs</strong></p>
+            <p className="text-sm text-muted-foreground">With U-values typically around 5.0 W/m²K, original sash windows are major contributors to high heating bills. London homeowners often see energy bills 20-30% higher than properties with modern glazing.</p>
+          </div>
+        </div>
+        
+        <h2>Why Secondary Glazing is Perfect for Sash Windows</h2>
+        
+        <p>Unlike window replacement, secondary glazing works with your existing sash windows rather than against them. Here's why it's the ideal solution for London period properties:</p>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-primary/10 p-4 rounded-lg">
+            <p><strong>Preserves Original Character</strong></p>
+            <p className="text-sm">Secondary glazing is installed on the interior side of your existing windows, leaving the external appearance completely unchanged. This means you can improve performance while maintaining the authentic look that defines your property's character.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-4 rounded-lg">
+            <p><strong>No Planning Permission Required</strong></p>
+            <p className="text-sm">Because secondary glazing doesn't alter the external appearance of your property, it typically doesn't require planning permission, even in conservation areas or for listed buildings. This eliminates months of bureaucratic delays and potential refusals.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-4 rounded-lg">
+            <p><strong>Reversible Solution</strong></p>
+            <p className="text-sm">Unlike replacement windows, secondary glazing can be completely removed without damaging the original windows. This reversibility is often a requirement for listed building consent.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-4 rounded-lg">
+            <p><strong>Works with Existing Hardware</strong></p>
+            <p className="text-sm">Quality secondary glazing systems are designed to work around existing window furniture, sash cords, and pulleys, preserving the original operating mechanism of your windows.</p>
+          </div>
+        </div>
+        
+        <img 
+          src="/images/blog/sash-window-options.webp" 
+          alt="Secondary glazing options for traditional sash windows showing various system types" 
+          className="w-full rounded-lg my-8"
+        />
+        
+        <h2>Complete Guide to Secondary Glazing Options for Sash Windows</h2>
+        
+        <h3>Vertical Sliding Secondary Glazing</h3>
+        
+        <p><strong>Best for:</strong> Windows you use regularly, properties where aesthetics are paramount</p>
+        
+        <p>Vertical sliding secondary glazing mirrors the operation of your original sash windows, with panes that slide up and down independently. This creates an authentic experience while providing modern performance benefits.</p>
+        
+        <p>The system uses lightweight aluminum frames that sit just 50-75mm from your original window, creating an optimal air gap for thermal and acoustic performance. The sliding mechanism is smooth and quiet, using modern materials and engineering while respecting the traditional sash window operation.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Advantages</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Maintains authentic window operation</li>
+              <li>• Excellent thermal and acoustic performance</li>
+              <li>• Easy access to original windows for cleaning</li>
+              <li>• Matches the architectural intent of sash windows</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-muted-foreground mb-2">Considerations</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Higher initial cost than fixed options</li>
+              <li>• Requires proper installation for smooth operation</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Lift-Out Secondary Glazing</h3>
+        
+        <p><strong>Best for:</strong> Windows rarely opened, budget-conscious installations, rental properties</p>
+        
+        <p>Lift-out panels provide excellent thermal and acoustic performance at the most affordable price point. The panels are held in place by magnetic strips or simple catches and can be completely removed when access to the original window is needed.</p>
+        
+        <p>This option is particularly popular with landlords and tenants because it provides significant benefits without permanent alterations to the property.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Advantages</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Most cost-effective option</li>
+              <li>• Easy to install and remove</li>
+              <li>• Excellent performance when closed</li>
+              <li>• No ongoing maintenance of moving parts</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-muted-foreground mb-2">Considerations</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Less convenient for regular use</li>
+              <li>• Storage space needed when panels removed</li>
+              <li>• May not suit windows requiring frequent opening</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Hinged Secondary Glazing</h3>
+        
+        <p><strong>Best for:</strong> Easy cleaning access, windows opened moderately, maintenance accessibility</p>
+        
+        <p>Hinged secondary glazing opens like a casement window, providing full access to your original sash window for cleaning and maintenance. The hinged panels can be configured to open inward or outward (where space permits) and can include multiple opening points for larger windows.</p>
+        
+        <p>Modern hinged systems use concealed hinges and secure locking mechanisms to maintain clean lines and security.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Advantages</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Easy access for cleaning both panes</li>
+              <li>• Good balance of performance and convenience</li>
+              <li>• Secure locking mechanisms available</li>
+              <li>• Suitable for various window sizes</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-muted-foreground mb-2">Considerations</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Requires adequate space for panel to open</li>
+              <li>• More complex installation than lift-out options</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Fixed Secondary Glazing</h3>
+        
+        <p><strong>Best for:</strong> Windows never opened, maximum performance, noise-critical areas</p>
+        
+        <p>Fixed secondary glazing provides the ultimate thermal and acoustic performance by eliminating all moving parts and potential air leaks. The panels are permanently fixed within the window reveal, creating an airtight seal.</p>
+        
+        <p>This option is ideal for windows facing busy roads, railway lines, or airport flight paths where maximum noise reduction is the priority.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Advantages</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Maximum thermal and acoustic performance</li>
+              <li>• No maintenance of moving parts</li>
+              <li>• Most secure option</li>
+              <li>• Lowest long-term cost</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-muted-foreground mb-2">Considerations</h4>
+            <ul className="text-sm space-y-1">
+              <li>• No access to original windows</li>
+              <li>• Permanent installation</li>
+              <li>• Not suitable if original windows need regular maintenance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Horizontal Sliding Secondary Glazing</h3>
+        
+        <p><strong>Best for:</strong> Wide windows, bay windows, windows with restricted head room</p>
+        
+        <p>Horizontal sliding systems work well for wider sash windows or bay window configurations where vertical sliding might not be practical. The panels slide horizontally across the window opening, providing access to different sections of the original window.</p>
+        
+        <p>This option is less common for traditional sash windows but can be ideal for Edwardian bay windows or unusually configured openings.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-primary mb-2">Advantages</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Suitable for wide openings</li>
+              <li>• Works in restricted height situations</li>
+              <li>• Can provide partial opening options</li>
+              <li>• Good for bay window configurations</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <h4 className="font-semibold text-muted-foreground mb-2">Considerations</h4>
+            <ul className="text-sm space-y-1">
+              <li>• Less traditional appearance for sash windows</li>
+              <li>• May require more space at sides</li>
+              <li>• More complex for very wide openings</li>
+            </ul>
+          </div>
+        </div>
+        
+        <img 
+          src="/images/blog/sash-window-guide.webp" 
+          alt="Complete guide to secondary glazing system types for sash windows" 
+          className="w-full rounded-lg my-8"
+        />
+        
+        <h2>Performance Benefits You Can Expect</h2>
+        
+        <h3>Thermal Insulation Improvements</h3>
+        
+        <p>Secondary glazing dramatically improves the thermal performance of your sash windows. While original single-glazed sash windows typically have U-values around 5.0 W/m²K, adding secondary glazing can reduce this to 1.8-2.8 W/m²K depending on the air gap and glass specification.</p>
+        
+        <p>This improvement translates to real energy savings. London homeowners typically see heating bill reductions of <strong>15-25%</strong> after installing secondary glazing on sash windows, with larger savings in particularly draughty properties.</p>
+        
+        <h3>Noise Reduction Performance</h3>
+        
+        <p>London's urban environment creates constant noise challenges, but secondary glazing can reduce external noise by <strong>45-65 decibels</strong>, depending on the system configuration and glass specification.</p>
+        
+        <p>For maximum noise reduction, acoustic laminated glass in the secondary glazing combined with a 100-150mm air gap can achieve reductions of up to 80%. This can transform a noisy street-facing room into a peaceful living space.</p>
+        
+        <h3>Draught Elimination</h3>
+        
+        <p>One of the most immediately noticeable benefits of secondary glazing is the complete elimination of draughts. The sealed air gap created by the secondary glazing stops cold air infiltration that makes period properties uncomfortable in winter.</p>
+        
+        <h3>Condensation Reduction</h3>
+        
+        <p>Secondary glazing creates a warmer interior surface temperature, virtually eliminating condensation problems on the inner pane. The air gap also provides some moisture buffer, reducing humidity-related issues.</p>
+        
+        <h2>Step-by-Step Installation Process</h2>
+        
+        <h3>Initial Survey and Measurement</h3>
+        
+        <p>Professional installation begins with a detailed survey of your existing sash windows. Experienced installers will:</p>
+        
         <ul>
-          <li>Mirror the operation of original sash windows</li>
-          <li>Allow full access to the original window for cleaning</li>
-          <li>Feature spring or spiral balances for smooth operation</li>
-          <li>Available in slim-profile aluminium frames</li>
+          <li>Measure each window opening precisely</li>
+          <li>Assess the condition of existing frames</li>
+          <li>Check for any irregularities or settlement issues</li>
+          <li>Discuss your priorities for thermal performance, acoustic performance, and ease of use</li>
+          <li>Identify any potential complications or special requirements</li>
         </ul>
         
-        <h2>Lift-Out Panels</h2>
-        <p>For windows that don't need regular opening:</p>
+        <h3>Custom Manufacturing</h3>
+        
+        <p>Secondary glazing for sash windows is always custom-made to ensure perfect fit and optimal performance. Manufacturing typically takes 3-4 weeks and includes:</p>
+        
         <ul>
-          <li>Simple installation and removal</li>
-          <li>Most cost-effective option</li>
-          <li>Excellent acoustic and thermal performance</li>
-          <li>Minimal frame profile for unobtrusive appearance</li>
+          <li>Precision cutting of aluminum frames</li>
+          <li>Glass cutting and edge polishing</li>
+          <li>Hardware fitting and adjustment</li>
+          <li>Quality control testing</li>
         </ul>
         
-        <h2>Horizontal Sliders</h2>
-        <p>An alternative for wide sash windows:</p>
+        <h3>Installation Day</h3>
+        
+        <p>Professional installation is usually completed in one day for most London homes:</p>
+        
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
+          <div className="space-y-4">
+            <div>
+              <p className="font-semibold">Morning Setup (9:00-10:00)</p>
+              <ul className="text-sm mt-1">
+                <li>• Arrival and workspace preparation</li>
+                <li>• Protection of furniture and flooring</li>
+                <li>• Tool and material setup</li>
+              </ul>
+            </div>
+            
+            <div>
+              <p className="font-semibold">Installation Process (10:00-15:00)</p>
+              <ul className="text-sm mt-1">
+                <li>• Mounting track or frame installation</li>
+                <li>• Panel fitting and adjustment</li>
+                <li>• Hardware calibration and testing</li>
+                <li>• Seal verification and performance checking</li>
+              </ul>
+            </div>
+            
+            <div>
+              <p className="font-semibold">Completion and Handover (15:00-16:00)</p>
+              <ul className="text-sm mt-1">
+                <li>• Final quality checks</li>
+                <li>• Operation demonstration</li>
+                <li>• Care and maintenance guidance</li>
+                <li>• Warranty documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <img 
+          src="/images/blog/sash-window-installation.webp" 
+          alt="Professional secondary glazing installation process for sash windows" 
+          className="w-full rounded-lg my-8"
+        />
+        
+        <h2>Cost Comparison: Secondary Glazing Options for London Sash Windows</h2>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Option</th>
+                <th className="border border-border p-3 text-left font-semibold">Price Range per Window</th>
+                <th className="border border-border p-3 text-left font-semibold">Best For</th>
+                <th className="border border-border p-3 text-left font-semibold">Thermal Performance</th>
+                <th className="border border-border p-3 text-left font-semibold">Acoustic Performance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3 font-medium">Vertical Sliding</td>
+                <td className="border border-border p-3">£500-£800</td>
+                <td className="border border-border p-3 text-sm">Regular use, authentic operation</td>
+                <td className="border border-border p-3 text-sm">Excellent (U-value 1.8-2.2)</td>
+                <td className="border border-border p-3 text-sm">Very Good (45-60dB reduction)</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3 font-medium">Lift-Out Panels</td>
+                <td className="border border-border p-3 text-primary font-semibold">£300-£500</td>
+                <td className="border border-border p-3 text-sm">Budget-conscious, occasional use</td>
+                <td className="border border-border p-3 text-sm">Excellent when closed (U-value 1.8-2.0)</td>
+                <td className="border border-border p-3 text-sm">Excellent when closed (50-65dB)</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3 font-medium">Hinged Units</td>
+                <td className="border border-border p-3">£400-£650</td>
+                <td className="border border-border p-3 text-sm">Easy maintenance access</td>
+                <td className="border border-border p-3 text-sm">Very Good (U-value 2.0-2.5)</td>
+                <td className="border border-border p-3 text-sm">Good (40-55dB reduction)</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3 font-medium">Fixed Panels</td>
+                <td className="border border-border p-3">£350-£550</td>
+                <td className="border border-border p-3 text-sm">Maximum performance</td>
+                <td className="border border-border p-3 text-sm text-primary font-semibold">Outstanding (U-value 1.6-1.9)</td>
+                <td className="border border-border p-3 text-sm text-primary font-semibold">Outstanding (55-80dB reduction)</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3 font-medium">Horizontal Sliding</td>
+                <td className="border border-border p-3">£550-£900</td>
+                <td className="border border-border p-3 text-sm">Wide windows, bay configurations</td>
+                <td className="border border-border p-3 text-sm">Good to Excellent (U-value 2.0-2.8)</td>
+                <td className="border border-border p-3 text-sm">Good to Very Good (40-60dB)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <p className="text-sm text-muted-foreground italic">Prices include professional installation and are typical for London installations as of 2026. Costs vary based on window size, glass specification, and installation complexity.</p>
+        
+        <h2>Real London Case Studies</h2>
+        
+        <img 
+          src="/images/blog/sash-window-case-studies.webp" 
+          alt="London case studies showing successful secondary glazing installations on period sash windows" 
+          className="w-full rounded-lg my-8"
+        />
+        
+        <div className="space-y-6 my-8">
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Case Study 1: Victorian Terraced House, Islington</h4>
+            <p className="text-sm text-muted-foreground mb-4"><strong>Property:</strong> 1880s Victorian terrace with original box sash windows<br/><strong>Challenge:</strong> Severe draughts, high energy bills, street noise from busy A-road<br/><strong>Solution:</strong> Vertical sliding secondary glazing with acoustic laminated glass</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <p className="font-semibold text-primary">Results:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• 28% reduction in heating bills</li>
+                  <li>• Noise levels reduced from 68dB to 35dB</li>
+                  <li>• Complete elimination of draughts</li>
+                  <li>• Total cost: £4,200 for 6 windows</li>
+                </ul>
+              </div>
+              <div className="bg-muted/30 p-4 rounded-lg">
+                <p className="text-sm italic">"The difference is incredible. We can actually use our front reception room in winter now, and we sleep through the night despite living on such a busy road."</p>
+                <p className="text-sm font-semibold mt-2">– Sarah M., Homeowner</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Case Study 2: Georgian Townhouse, Belgravia</h4>
+            <p className="text-sm text-muted-foreground mb-4"><strong>Property:</strong> Grade II listed 1820s townhouse with 12-over-12 sash windows<br/><strong>Challenge:</strong> Conservation restrictions, historic windows requiring preservation<br/><strong>Solution:</strong> Lift-out secondary glazing with slim aluminum frames</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <p className="font-semibold text-primary">Results:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• No planning permission required</li>
+                  <li>• 22% energy bill reduction</li>
+                  <li>• Windows easily removed for professional maintenance</li>
+                  <li>• Total cost: £3,600 for 8 windows</li>
+                </ul>
+              </div>
+              <div className="bg-muted/30 p-4 rounded-lg">
+                <p className="text-sm italic">"We needed a solution that wouldn't compromise the listed building status. The secondary glazing is virtually invisible from outside but has transformed the comfort inside."</p>
+                <p className="text-sm font-semibold mt-2">– James K., Property Owner</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-muted/50 p-6 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Case Study 3: Edwardian Semi-Detached, Hampstead</h4>
+            <p className="text-sm text-muted-foreground mb-4"><strong>Property:</strong> 1905 Edwardian house with large bay windows<br/><strong>Challenge:</strong> Complex bay window configuration, aircraft noise from Heathrow flight path<br/><strong>Solution:</strong> Combination of fixed panels and horizontal sliding for bay areas</p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div>
+                <p className="font-semibold text-primary">Results:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• 45dB aircraft noise reduction</li>
+                  <li>• 19% heating cost savings</li>
+                  <li>• Maintained bay window functionality</li>
+                  <li>• Total cost: £5,800 for 10 windows including complex bay configuration</li>
+                </ul>
+              </div>
+              <div className="bg-muted/30 p-4 rounded-lg">
+                <p className="text-sm italic">"Living under the Heathrow flight path was becoming unbearable. Now we barely notice the planes, and our energy bills have dropped significantly."</p>
+                <p className="text-sm font-semibold mt-2">– Maria P., Homeowner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h2>Planning Permission and Listed Building Considerations</h2>
+        
+        <h3>Conservation Area Properties</h3>
+        
+        <p>Secondary glazing typically doesn't require planning permission in London conservation areas because it doesn't alter the external appearance of the building. However, it's worth checking with your local planning authority, especially for:</p>
+        
         <ul>
-          <li>Two or more sliding panels</li>
-          <li>Easy access for ventilation</li>
-          <li>Good for bay windows with sash windows</li>
+          <li>Properties of particular historic significance</li>
+          <li>Areas with specific supplementary planning guidance</li>
+          <li>Buildings contributing significantly to the conservation area character</li>
         </ul>
         
-        <h2>Choosing the Right Option</h2>
-        <p>Consider these factors when selecting secondary glazing for sash windows:</p>
+        <h3>Listed Buildings</h3>
+        
+        <p>For Grade I, II*, and II listed buildings, secondary glazing is often the only permitted method of improving window performance. The reversible nature of secondary glazing makes it acceptable to most conservation officers, but listed building consent may still be required for:</p>
+        
         <ul>
-          <li>How often you open the windows</li>
-          <li>Available reveal depth</li>
-          <li>Primary concern (noise, heat, or both)</li>
-          <li>Budget considerations</li>
+          <li>Internal alterations to historic fabric</li>
+          <li>Buildings of exceptional historic significance</li>
+          <li>Properties where even minor changes require consent</li>
         </ul>
+        
+        <h3>Heritage Compliance Tips</h3>
+        
+        <ul>
+          <li>Choose slim-profile systems that minimize visual impact</li>
+          <li>Select frame colors that complement existing window furniture</li>
+          <li>Ensure the system can be completely removed without trace</li>
+          <li>Document the installation method for heritage records</li>
+          <li>Consider acoustic glass where noise reduction is the primary goal</li>
+        </ul>
+        
+        <h2>Maintenance and Care Guide</h2>
+        
+        <h3>Daily Operation</h3>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold mb-2">Vertical Sliding Systems:</p>
+            <ul className="text-sm space-y-1">
+              <li>• Operate smoothly with light pressure</li>
+              <li>• Clean tracks monthly with soft brush</li>
+              <li>• Lubricate runners annually with appropriate lubricant</li>
+            </ul>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold mb-2">Lift-Out Panels:</p>
+            <ul className="text-sm space-y-1">
+              <li>• Check magnetic seals for debris</li>
+              <li>• Store panels carefully when removed</li>
+              <li>• Clean contact surfaces regularly</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h3>Annual Maintenance</h3>
+        
+        <div className="space-y-4 my-6">
+          <div className="border-l-4 border-primary pl-4">
+            <p><strong>Glass Cleaning:</strong></p>
+            <p className="text-sm text-muted-foreground">Use standard window cleaning products. Access original windows when needed for exterior cleaning. Check seals and gaskets for wear.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p><strong>Hardware Checks:</strong></p>
+            <p className="text-sm text-muted-foreground">Inspect locking mechanisms. Test smooth operation of moving parts. Check for any loosening of fixings.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p><strong>Professional Servicing:</strong></p>
+            <p className="text-sm text-muted-foreground">Most secondary glazing systems require minimal maintenance, but annual professional checks ensure optimal performance and extend system life.</p>
+          </div>
+        </div>
+        
+        <h2>Choosing the Right Option for Your Needs</h2>
+        
+        <h3>Consider Your Usage Patterns</h3>
+        
+        <ul>
+          <li><strong>High-Use Windows:</strong> Choose vertical sliding or hinged options for windows you open regularly for ventilation.</li>
+          <li><strong>Low-Use Windows:</strong> Lift-out or fixed panels offer excellent performance for windows rarely opened.</li>
+          <li><strong>Mixed Use:</strong> Consider different options for different rooms based on specific requirements.</li>
+        </ul>
+        
+        <h3>Prioritize Your Main Concerns</h3>
+        
+        <ul>
+          <li><strong>Energy Efficiency Priority:</strong> Fixed or lift-out panels with optimal air gaps provide maximum thermal performance.</li>
+          <li><strong>Noise Reduction Priority:</strong> Acoustic laminated glass with larger air gaps offers superior sound reduction.</li>
+          <li><strong>Convenience Priority:</strong> Vertical sliding systems provide the most authentic and convenient operation.</li>
+          <li><strong>Budget Priority:</strong> Lift-out panels offer excellent value for money.</li>
+        </ul>
+        
+        <h3>Room-Specific Recommendations</h3>
+        
+        <div className="grid md:grid-cols-2 gap-4 my-6">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p><strong>Living Rooms:</strong> Vertical sliding for authentic operation and occasional ventilation</p>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p><strong>Bedrooms:</strong> Fixed panels for maximum noise reduction and thermal comfort</p>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p><strong>Kitchens:</strong> Hinged units for easy cleaning access</p>
+          </div>
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p><strong>Bathrooms:</strong> Lift-out panels (moisture considerations apply)</p>
+          </div>
+        </div>
+        
+        <h2>DIY vs. Professional Installation</h2>
+        
+        <h3>DIY Secondary Glazing</h3>
+        
+        <p>Some secondary glazing systems are designed for DIY installation, particularly magnetic lift-out systems. DIY advantages include:</p>
+        
+        <ul>
+          <li>Lower initial cost</li>
+          <li>Flexibility to work at your own pace</li>
+          <li>No need to coordinate with installers</li>
+        </ul>
+        
+        <p>However, DIY installations often compromise performance through:</p>
+        
+        <ul>
+          <li>Imprecise measurements leading to air gaps</li>
+          <li>Inadequate sealing reducing thermal performance</li>
+          <li>Poor acoustic performance from incorrect installation</li>
+        </ul>
+        
+        <h3>Professional Installation Benefits</h3>
+        
+        <p>Professional installation ensures:</p>
+        
+        <ul>
+          <li>Precise measurements and perfect fit</li>
+          <li>Optimal thermal and acoustic performance</li>
+          <li>Warranty coverage and ongoing support</li>
+          <li>Compliance with building regulations</li>
+          <li>Integration with existing window hardware</li>
+        </ul>
+        
+        <p><strong>Cost Difference:</strong> Professional installation typically adds £100-£200 per window but ensures optimal performance and longevity.</p>
+        
+        <h2>Common Mistakes to Avoid</h2>
+        
+        <h3>Installation Errors</h3>
+        
+        <ul>
+          <li><strong>Insufficient Air Gap:</strong> Air gaps smaller than 50mm significantly reduce performance benefits.</li>
+          <li><strong>Poor Sealing:</strong> Inadequate sealing around the perimeter eliminates most thermal and acoustic benefits.</li>
+          <li><strong>Wrong Glass Choice:</strong> Standard glass when acoustic glass is needed for noise-critical locations.</li>
+          <li><strong>Inadequate Hardware:</strong> Cheap fixings or inadequate hardware leading to operational problems.</li>
+        </ul>
+        
+        <h3>Planning Mistakes</h3>
+        
+        <ul>
+          <li><strong>Not Checking Regulations:</strong> Assuming no consent needed when specific permissions may apply.</li>
+          <li><strong>Ignoring Existing Problems:</strong> Installing secondary glazing over windows with existing maintenance issues.</li>
+          <li><strong>Wrong System Choice:</strong> Choosing based on cost alone rather than usage requirements.</li>
+          <li><strong>No Professional Survey:</strong> DIY measurements leading to poor fit and performance.</li>
+        </ul>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Will secondary glazing affect the appearance of my windows from inside?</p>
+            <p className="mt-2">Quality secondary glazing has minimal visual impact. Slim aluminum frames typically add only 20-30mm to window reveals and can be color-matched to existing fixtures.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Can I still open my original sash windows?</p>
+            <p className="mt-2">Yes, with most systems. Vertical sliding and hinged options allow full access to original windows, while lift-out panels can be easily removed when needed.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How long does secondary glazing last?</p>
+            <p className="mt-2">Quality systems typically last 15-20 years with minimal maintenance. Aluminum frames don't deteriorate, and components can be easily replaced if needed.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How much noise reduction can I expect?</p>
+            <p className="mt-2">Typical installations achieve 45-60dB noise reduction, with acoustic specifications reaching up to 80dB reduction in optimal configurations.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Will secondary glazing stop condensation?</p>
+            <p className="mt-2">Yes, secondary glazing virtually eliminates condensation on the inner pane by creating a warmer surface temperature and reducing humidity contact.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How much will I save on energy bills?</p>
+            <p className="mt-2">London homeowners typically see heating bill reductions of 15-25%, with larger savings in particularly draughty properties.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Do I need planning permission?</p>
+            <p className="mt-2">Secondary glazing typically doesn't require planning permission as it doesn't alter external appearance. Listed buildings may need consent for internal alterations.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Can secondary glazing be fitted to any sash window?</p>
+            <p className="mt-2">Yes, secondary glazing can be custom-made to fit virtually any window configuration, including irregular or settled frames common in period properties.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How disruptive is installation?</p>
+            <p className="mt-2">Installation is usually completed in one day with minimal disruption. No structural work is required, and windows can be used immediately after installation.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How do I clean secondary glazing?</p>
+            <p className="mt-2">Clean with standard window cleaning products. Most systems provide access to both sides of all glass surfaces for thorough cleaning.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Can secondary glazing be repaired if damaged?</p>
+            <p className="mt-2">Yes, individual components can be replaced without affecting the whole system. Glass panels, seals, and hardware are all replaceable.</p>
+          </div>
+        </div>
+        
+        <h2>Ready to Transform Your Sash Windows?</h2>
+        
+        <p>Secondary glazing offers the perfect solution for London homeowners who want to enjoy the character of period sash windows while achieving modern comfort and efficiency standards. Whether you're dealing with draughts, noise, or high energy bills, the right secondary glazing system can transform your living experience without compromising your property's historic character.</p>
+        
+        <p>The key to success is choosing the right system for your specific needs and ensuring professional installation for optimal performance. With proper specification and installation, secondary glazing provides decades of improved comfort, energy savings, and acoustic protection.</p>
+        
+        <p><strong>Ready to explore your options?</strong> Contact our team of secondary glazing specialists for a free consultation and quote. We'll assess your specific requirements and recommend the ideal solution for your London property's sash windows.</p>
+        
+        <p><strong>Get your free quote today</strong> – transform your period property's comfort while preserving its timeless character.</p>
+        
+        <p><strong>Call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or email <a href="mailto:info@secondaryglazingspecialist.co.uk" className="text-primary hover:underline">info@secondaryglazingspecialist.co.uk</a> to book your free consultation.</p>
       </>
     )
   },
