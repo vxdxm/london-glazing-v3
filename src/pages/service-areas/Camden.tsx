@@ -65,6 +65,138 @@ const Camden = () => {
 
   return (
     <div className="min-h-screen">
+      {/* SEO CONTENT - Hidden from users, visible to crawlers */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <header>
+          <h1>Secondary Glazing Camden | Hampstead &amp; Bloomsbury Specialists</h1>
+          <nav aria-label="Main Navigation">
+            <a href="/">Home</a>
+            <a href="/listed-buildings-secondary-glazing">Listed Buildings</a>
+            <a href="/conservation-areas-secondary-glazing">Conservation Areas</a>
+            <a href="/victorian-windows-secondary-glazing">Victorian Windows</a>
+            <a href="/sash-window-secondary-glazing">Sash Windows</a>
+            <a href="/georgian-windows-secondary-glazing">Georgian Windows</a>
+            <a href="/edwardian-property-secondary-glazing">Edwardian Properties</a>
+            <a href="/thermal-insulation-secondary-glazing">Thermal Insulation</a>
+            <a href="/noise-reduction-secondary-glazing">Noise Reduction</a>
+            <a href="/service-areas">Service Areas</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </header>
+
+        <main>
+          <article>
+            <section>
+              <h2>Secondary Glazing Experts for Camden</h2>
+              <p>Camden is renowned for its stunning <a href="/victorian-windows-secondary-glazing">Victorian</a> and <a href="/edwardian-property-secondary-glazing">Edwardian</a> architecture, from the grand villas of Hampstead to the elegant terraces of Bloomsbury. Our specialist secondary glazing protects these <a href="/listed-buildings-secondary-glazing">listed buildings</a> and <a href="/conservation-areas-secondary-glazing">conservation area</a> properties while delivering exceptional <a href="/thermal-insulation-secondary-glazing">thermal</a> and <a href="/noise-reduction-secondary-glazing">noise reduction</a> performance.</p>
+              <p>Camden boasts one of London's richest concentrations of period architecture. From the Edwardian villas of Hampstead to the <a href="/georgian-windows-secondary-glazing">Georgian squares</a> of Bloomsbury, the borough contains thousands of listed buildings and over 40 conservation areas that require sensitive window solutions.</p>
+              <p>Our <a href="/conservation-areas-secondary-glazing">conservation-approved secondary glazing</a> is the perfect solution for Camden homeowners. Installed internally behind your existing <a href="/sash-window-secondary-glazing">sash windows</a> or casement windows, it is completely invisible from the street, meaning no planning permission is typically required.</p>
+            </section>
+
+            <section>
+              <h2>Conservation Areas We Serve in Camden</h2>
+              <p>Camden has over 40 conservation areas. We provide specialist <a href="/conservation-areas-secondary-glazing">conservation-approved secondary glazing</a> across all of them, including:</p>
+              <ul>
+                <li><strong>Hampstead</strong> - Historic village with Edwardian villas</li>
+                <li><strong>Highgate</strong> - Georgian and Victorian properties</li>
+                <li><strong>Belsize Park</strong> - Victorian and Edwardian terraces</li>
+                <li><strong>Primrose Hill</strong> - Regency and Victorian villas</li>
+                <li><strong>Bloomsbury</strong> - Georgian squares and terraces</li>
+                <li><strong>Fitzrovia</strong> - Mixed period architecture</li>
+                <li><strong>Camden Town</strong> - Victorian commercial and residential</li>
+                <li><strong>Kentish Town</strong> - Victorian terraces</li>
+                <li><strong>Gospel Oak</strong> - Victorian residential streets</li>
+                <li><strong>Parliament Hill</strong> - Edwardian properties</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Benefits for Camden Properties</h2>
+              <h3>Thermal Insulation</h3>
+              <p>Reduce heat loss by up to 65% through your period windows. Essential for the large bay windows and tall sashes common in Camden Victorian properties. <a href="/thermal-insulation-secondary-glazing">Learn more about thermal insulation</a>.</p>
+              <h3>Noise Reduction</h3>
+              <p>Block up to 80% of traffic and rail noise with our <a href="/noise-reduction-secondary-glazing">acoustic glazing</a>. Ideal for properties near busy Camden roads and rail lines including Kings Cross.</p>
+              <h3>Heritage Preservation</h3>
+              <p>Preserve your original windows and the character of your <a href="/listed-buildings-secondary-glazing">listed building</a>. Our fully reversible installations leave no permanent alterations.</p>
+              <h3>Enhanced Security</h3>
+              <p>Add security with laminated glass options, providing significant resistance to forced entry for ground-floor and basement windows.</p>
+            </section>
+
+            <section>
+              <h2>Window Types We Work With</h2>
+              <ul>
+                <li><a href="/sash-window-secondary-glazing"><strong>Sash Windows</strong></a> - Vertical sliding windows typical in Victorian and Georgian properties</li>
+                <li><a href="/residential/casement-windows"><strong>Casement Windows</strong></a> - Side-hinged windows</li>
+                <li><a href="/residential/bay-windows"><strong>Bay Windows</strong></a> - Multi-angled installations</li>
+                <li><a href="/residential/crittall-windows"><strong>Crittall Windows</strong></a> - Steel-framed windows</li>
+                <li><strong>Arched Windows</strong> - Bespoke solutions for curved features</li>
+                <li><strong>Dormer Windows</strong> - Roof-level windows</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Related Services</h2>
+              <ul>
+                <li><a href="/listed-buildings-secondary-glazing">Listed Buildings Secondary Glazing</a></li>
+                <li><a href="/conservation-areas-secondary-glazing">Conservation Areas Secondary Glazing</a></li>
+                <li><a href="/victorian-windows-secondary-glazing">Victorian Windows Secondary Glazing</a></li>
+                <li><a href="/georgian-windows-secondary-glazing">Georgian Windows Secondary Glazing</a></li>
+                <li><a href="/edwardian-property-secondary-glazing">Edwardian Property Secondary Glazing</a></li>
+                <li><a href="/thermal-insulation-secondary-glazing">Thermal Insulation Solutions</a></li>
+                <li><a href="/noise-reduction-secondary-glazing">Noise Reduction Glazing</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Other Areas We Serve</h2>
+              <ul>
+                <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea Secondary Glazing</a></li>
+                <li><a href="/service-areas/westminster">Westminster Secondary Glazing</a></li>
+                <li><a href="/service-areas/islington">Islington Secondary Glazing</a></li>
+                <li><a href="/areas/north-london">North London Secondary Glazing</a></li>
+                <li><a href="/areas/central-london">Central London Secondary Glazing</a></li>
+                <li><a href="/areas/west-london">West London Secondary Glazing</a></li>
+                <li><a href="/service-areas">View all 38 service areas</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Get Your Free Camden Property Survey</h2>
+              <p>Contact us today for a free, no-obligation survey of your Camden property. Our heritage specialists will visit your property, assess your windows, and provide a detailed quote.</p>
+              <p><a href="/contact">Contact us today</a> or <a href="/quote-request">request a free quote</a>.</p>
+            </section>
+          </article>
+        </main>
+
+        <footer>
+          <nav aria-label="Footer Navigation">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="/listed-buildings-secondary-glazing">Listed Buildings</a></li>
+              <li><a href="/conservation-areas-secondary-glazing">Conservation Areas</a></li>
+              <li><a href="/victorian-windows-secondary-glazing">Victorian Windows</a></li>
+              <li><a href="/sash-window-secondary-glazing">Sash Windows</a></li>
+            </ul>
+
+            <h3>Nearby Areas</h3>
+            <ul>
+              <li><a href="/service-areas/islington">Islington</a></li>
+              <li><a href="/service-areas/westminster">Westminster</a></li>
+              <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea</a></li>
+              <li><a href="/service-areas">All Service Areas</a></li>
+            </ul>
+
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/quote-request">Get a Quote</a></li>
+            </ul>
+          </nav>
+          <p>&copy; 2025 <a href="/">Secondary Glazing Specialist</a>. All rights reserved.</p>
+        </footer>
+      </div>
+
       <Helmet>
         <title>Secondary Glazing Camden | Hampstead & Bloomsbury Specialists</title>
         <meta 
