@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const EastLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="East London"
+        areaDescription="Expert secondary glazing services for Victorian terraces and period properties across East London, including Hackney, Tower Hamlets, Walthamstow, and surrounding areas."
+        neighborhoods={boroughs}
+      />
       <Helmet>
         <title>Secondary Glazing East London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services in East London. Specialist installations for Victorian terraces and period properties in Hackney, Tower Hamlets, Walthamstow and surrounding areas." />

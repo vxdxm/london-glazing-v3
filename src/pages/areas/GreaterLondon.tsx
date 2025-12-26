@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const GreaterLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="Greater London"
+        areaDescription="Expert secondary glazing services across all 32 London boroughs. Complete coverage for residential and commercial properties throughout the metropolitan area."
+        neighborhoods={areas}
+      />
       <Helmet>
         <title>Secondary Glazing Greater London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services across Greater London. Complete coverage of all 32 London boroughs with specialist installations for residential and commercial properties." />

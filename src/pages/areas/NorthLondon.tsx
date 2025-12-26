@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const NorthLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="North London"
+        areaDescription="Expert secondary glazing services for Victorian and Edwardian properties across North London, including Hampstead, Highgate, Muswell Hill, and Barnet."
+        neighborhoods={boroughs}
+      />
       <Helmet>
         <title>Secondary Glazing North London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services in North London. Specialist installations for Victorian and Edwardian properties in Hampstead, Highgate, Muswell Hill, Barnet and surrounding areas." />
