@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
 import { 
   MapPin, 
   Phone, 
@@ -70,6 +71,12 @@ const Camden = () => {
 
   return (
     <div className="min-h-screen">
+      <ServiceAreaSchema
+        areaName="Camden"
+        areaDescription="Expert secondary glazing services for listed buildings and conservation areas in Camden, including Hampstead, Bloomsbury, Primrose Hill, and Highgate."
+        neighborhoods={["Hampstead", "Bloomsbury", "Primrose Hill", "Highgate", "Camden Town", "Belsize Park"]}
+        conservationAreas={conservationAreas}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content" aria-hidden="true">
         {/* CAMDEN SECONDARY GLAZING PAGE */}

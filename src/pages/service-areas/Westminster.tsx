@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ServiceAreaSchema } from "@/components/seo/ServiceAreaSchema";
 import { 
   MapPin, 
   Phone, 
@@ -65,6 +66,12 @@ const Westminster = () => {
 
   return (
     <div className="min-h-screen">
+      <ServiceAreaSchema
+        areaName="Westminster"
+        areaDescription="Expert secondary glazing services for listed buildings and conservation areas in Westminster, including Mayfair, Belgravia, Marylebone, Pimlico, and St James's."
+        neighborhoods={["Mayfair", "Belgravia", "Marylebone", "Pimlico", "St James's", "Soho", "Covent Garden"]}
+        conservationAreas={conservationAreas}
+      />
       {/* SEO CONTENT - Hidden from users, visible to crawlers */}
       <div style={{ display: 'none' }} className="seo-content">
         {/* SEO Content Block for Westminster Secondary Glazing */}
