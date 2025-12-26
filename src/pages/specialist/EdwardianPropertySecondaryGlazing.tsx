@@ -1,5 +1,4 @@
 import React from "react";
-import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
@@ -7,6 +6,26 @@ import { Link } from "react-router-dom";
 import { Building2, Sun, Leaf, CheckCircle, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { MainNav } from "@/components/MainNav";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
+import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
+import CTASection from "@/components/seo/CTASection";
+import { InlineLink, QuickLinksGrid, residentialGlazingLinks, serviceAreaLinks, specialistServicesLinks } from "@/components/seo/InternalLinks";
+
+const breadcrumbItems = [
+  { label: "Services", href: "/residential" },
+  { label: "Period Properties" },
+  { label: "Edwardian Property Secondary Glazing" },
+];
+
+const relatedLinks = [
+  { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
+  { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
+  { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
+  { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
+  { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
+  { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+];
 
 const EdwardianPropertySecondaryGlazing = () => {
   return (
@@ -27,6 +46,10 @@ const EdwardianPropertySecondaryGlazing = () => {
       
       <MainNav />
       
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={breadcrumbItems} />
+      </div>
+      
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-emerald-50 to-background py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -41,14 +64,14 @@ const EdwardianPropertySecondaryGlazing = () => {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Sympathetic secondary glazing solutions for Edwardian homes. We understand 
               the Arts and Crafts influences and decorative features that make Edwardian 
-              properties unique, and our installations are designed to complement them.
+              properties unique, providing excellent <InlineLink href="/thermal-insulation-secondary-glazing">thermal insulation</InlineLink> and <InlineLink href="/noise-reduction-secondary-glazing">noise reduction</InlineLink>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link to="/quote-request">Get Free Edwardian Survey</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="tel:+442034888227">
+                <a href="tel:02070601572">
                   <Phone className="mr-2 h-4 w-4" />
                   Speak to an Expert
                 </a>
@@ -58,215 +81,265 @@ const EdwardianPropertySecondaryGlazing = () => {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Main Content with Sidebar */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              The Edwardian Era (1901-1910)
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              The Edwardian period, though brief, produced some of London's most beloved 
-              residential architecture. Reacting against the heavier Victorian styles, 
-              Edwardian homes embrace lighter colours, larger windows, and a connection 
-              with nature through the Arts and Crafts movement. These properties feature 
-              generous proportions, decorative plasterwork, and distinctive window designs.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Edwardian windows often incorporate stained glass, leaded lights, and 
-              decorative fanlights that require special consideration when installing 
-              secondary glazing. Our approach ensures these beautiful features remain 
-              visible and protected.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            {/* Main Content */}
+            <div className="lg:col-span-3">
+              <div className="prose prose-lg max-w-none">
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  The Edwardian Era (1901-1910)
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  The Edwardian period, though brief, produced some of London's most beloved 
+                  residential architecture. Reacting against the heavier <InlineLink href="/victorian-windows-secondary-glazing">Victorian styles</InlineLink>, 
+                  Edwardian homes embrace lighter colours, larger windows, and a connection 
+                  with nature through the Arts and Crafts movement. These properties feature 
+                  generous proportions, decorative plasterwork, and distinctive window designs.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Edwardian windows often incorporate stained glass, leaded lights, and 
+                  decorative fanlights that require special consideration when installing 
+                  secondary glazing. Many are protected under <InlineLink href="/listed-buildings-secondary-glazing">listed building</InlineLink> or 
+                  <InlineLink href="/conservation-areas-secondary-glazing">conservation area</InlineLink> regulations.
+                </p>
 
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Distinctive Edwardian Window Features
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-6 mb-12 not-prose">
-              <Card className="border-emerald-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Sun className="h-6 w-6 text-emerald-600" />
-                    <h3 className="text-lg font-semibold">Stained Glass Panels</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Many Edwardian windows feature beautiful stained glass in the upper 
-                    sashes, often with Art Nouveau or stylised floral motifs.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Clear secondary glass preserves views
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      UV protection for coloured glass
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Distinctive Edwardian Window Features
+                </h2>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-12 not-prose">
+                  <Card className="border-emerald-200">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Sun className="h-6 w-6 text-emerald-600" />
+                        <h3 className="text-lg font-semibold">Stained Glass Panels</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Many Edwardian windows feature beautiful stained glass in the upper 
+                        sashes, often with Art Nouveau or stylised floral motifs.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Clear secondary glass preserves views
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          UV protection for coloured glass
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
 
-              <Card className="border-emerald-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Leaf className="h-6 w-6 text-emerald-600" />
-                    <h3 className="text-lg font-semibold">Leaded Lights</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Diamond or rectangular leaded panels in clear or textured glass, 
-                    typical of the Arts and Crafts style.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Protects delicate leadwork
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Reduces maintenance needs
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                  <Card className="border-emerald-200">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Leaf className="h-6 w-6 text-emerald-600" />
+                        <h3 className="text-lg font-semibold">Leaded Lights</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Diamond or rectangular leaded panels in clear or textured glass, 
+                        typical of the Arts and Crafts style.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Protects delicate leadwork
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Reduces maintenance needs
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
 
-              <Card className="border-emerald-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Building2 className="h-6 w-6 text-emerald-600" />
-                    <h3 className="text-lg font-semibold">Square Bay Windows</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Unlike Victorian curved bays, Edwardian bays are typically square 
-                    with distinct side windows.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Multi-section fitting
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Individual panel access
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                  <Card className="border-emerald-200">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Building2 className="h-6 w-6 text-emerald-600" />
+                        <h3 className="text-lg font-semibold">Square Bay Windows</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Unlike <InlineLink href="/victorian-windows-secondary-glazing">Victorian curved bays</InlineLink>, Edwardian bays are typically square 
+                        with distinct side windows.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Multi-section fitting
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <Link to="/residential/casement-windows" className="hover:text-primary">Individual panel access</Link>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
 
-              <Card className="border-emerald-200">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Sun className="h-6 w-6 text-emerald-600" />
-                    <h3 className="text-lg font-semibold">Generous Glazing</h3>
+                  <Card className="border-emerald-200">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Sun className="h-6 w-6 text-emerald-600" />
+                        <h3 className="text-lg font-semibold">Generous Glazing</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Edwardian homes prioritised natural light with larger windows 
+                        than <InlineLink href="/victorian-windows-secondary-glazing">Victorian properties</InlineLink>.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Maintains light levels
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          Reduces glare and UV
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Protecting Decorative Glass
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Stained glass and leaded lights are among the most valuable features of 
+                  Edwardian properties. These delicate elements are vulnerable to weathering, 
+                  impact damage, and deterioration of the lead came. Secondary glazing provides 
+                  an important protective layer, shielding the original glass from the elements 
+                  while maintaining its visibility - similar to our approach for <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink>.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  We always use clear glass in the secondary glazing to ensure that the 
+                  decorative elements remain the focal point. For enhanced protection, we can 
+                  specify UV-filtering glass that prevents fading of coloured glass while 
+                  remaining optically clear. We offer various options including <InlineLink href="/residential/fixed-secondary-glazing">fixed panels</InlineLink>, 
+                  <InlineLink href="/residential/casement-windows">hinged casements</InlineLink>, and <InlineLink href="/residential/sash-windows">vertical sliding</InlineLink> systems.
+                </p>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Benefits for Edwardian Homes
+                </h2>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-12 not-prose">
+                  <div className="bg-muted/30 rounded-lg p-6 text-center">
+                    <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-emerald-700 font-bold text-lg">65%</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">
+                      <Link to="/thermal-insulation-secondary-glazing" className="hover:text-primary">Heat Retention</Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Reduce heat loss through large Edwardian windows by up to 65%.
+                    </p>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Edwardian homes prioritised natural light with larger windows 
-                    than Victorian properties.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Maintains light levels
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-600" />
-                      Reduces glare and UV
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                  <div className="bg-muted/30 rounded-lg p-6 text-center">
+                    <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-emerald-700 font-bold text-lg">80%</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">
+                      <Link to="/noise-reduction-secondary-glazing" className="hover:text-primary">Noise Reduction</Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Acoustic glass options dramatically reduce traffic noise.
+                    </p>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-6 text-center">
+                    <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
+                      <span className="text-emerald-700 font-bold text-lg">99%</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2">UV Protection</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Protect interiors and stained glass from harmful UV rays.
+                    </p>
+                  </div>
+                </div>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Edwardian Areas We Serve
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  London has extensive areas of Edwardian housing, and we have particular 
+                  experience in these neighbourhoods:
+                </p>
+                <ul className="list-none space-y-2 mb-8 not-prose">
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <Link to="/areas/north-london" className="hover:text-primary">Hampstead Garden Suburb</Link>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <Link to="/areas/west-london" className="hover:text-primary">Bedford Park, Chiswick</Link>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <Link to="/areas/north-london" className="hover:text-primary">Muswell Hill and Crouch End</Link>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <Link to="/areas/south-london" className="hover:text-primary">Forest Hill and Brockley</Link>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <Link to="/areas/west-london" className="hover:text-primary">Ealing and Acton</Link>
+                  </li>
+                </ul>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Our Approach
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Every Edwardian property is surveyed individually, with particular attention 
+                  to decorative features that need to be accommodated. We work with you to 
+                  choose frame colours that complement your interior décor, and our installation 
+                  teams take great care to protect period features throughout the process. Our experience 
+                  with <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink> properties 
+                  ensures we understand the heritage context of your home.
+                </p>
+
+                <QuickLinksGrid 
+                  title="Explore Our Glazing Types" 
+                  links={residentialGlazingLinks} 
+                  columns={3}
+                />
+
+                <QuickLinksGrid 
+                  title="Our Specialist Services" 
+                  links={specialistServicesLinks.slice(0, 6)} 
+                  columns={3}
+                />
+
+                <QuickLinksGrid 
+                  title="Areas We Cover" 
+                  links={serviceAreaLinks} 
+                  columns={4}
+                />
+              </div>
+
+              {/* Hero CTA */}
+              <div className="mt-12">
+                <CTASection 
+                  variant="hero"
+                  title="Get Your Free Edwardian Property Survey"
+                  description="Our specialists will assess your Edwardian windows and recommend the ideal secondary glazing solution that respects your home's character."
+                />
+              </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Protecting Decorative Glass
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Stained glass and leaded lights are among the most valuable features of 
-              Edwardian properties. These delicate elements are vulnerable to weathering, 
-              impact damage, and deterioration of the lead came. Secondary glazing provides 
-              an important protective layer, shielding the original glass from the elements 
-              while maintaining its visibility.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              We always use clear glass in the secondary glazing to ensure that the 
-              decorative elements remain the focal point. For enhanced protection, we can 
-              specify UV-filtering glass that prevents fading of coloured glass while 
-              remaining optically clear.
-            </p>
-
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Benefits for Edwardian Homes
-            </h2>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-12 not-prose">
-              <div className="bg-muted/30 rounded-lg p-6 text-center">
-                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-emerald-700 font-bold text-lg">65%</span>
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Heat Retention</h3>
-                <p className="text-sm text-muted-foreground">
-                  Reduce heat loss through large Edwardian windows by up to 65%.
-                </p>
-              </div>
-              <div className="bg-muted/30 rounded-lg p-6 text-center">
-                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-emerald-700 font-bold text-lg">80%</span>
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">Noise Reduction</h3>
-                <p className="text-sm text-muted-foreground">
-                  Acoustic glass options dramatically reduce traffic noise.
-                </p>
-              </div>
-              <div className="bg-muted/30 rounded-lg p-6 text-center">
-                <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-emerald-700 font-bold text-lg">99%</span>
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">UV Protection</h3>
-                <p className="text-sm text-muted-foreground">
-                  Protect interiors and stained glass from harmful UV rays.
-                </p>
+            {/* Sidebar */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-6">
+                <RelatedContentSidebar 
+                  title="Related Services" 
+                  links={relatedLinks} 
+                />
+                <CTASection variant="compact" />
               </div>
             </div>
-
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Edwardian Areas We Serve
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              London has extensive areas of Edwardian housing, and we have particular 
-              experience in these neighbourhoods:
-            </p>
-            <ul className="list-none space-y-2 mb-8 not-prose">
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                Hampstead Garden Suburb
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                Bedford Park, Chiswick
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                Muswell Hill and Crouch End
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                Forest Hill and Brockley
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                Ealing and Acton
-              </li>
-            </ul>
-
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Our Approach
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Every Edwardian property is surveyed individually, with particular attention 
-              to decorative features that need to be accommodated. We work with you to 
-              choose frame colours that complement your interior décor, and our installation 
-              teams take great care to protect period features throughout the process.
-            </p>
           </div>
         </div>
       </section>
