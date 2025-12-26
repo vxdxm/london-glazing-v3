@@ -116,6 +116,8 @@ import EastLondon from "./pages/areas/EastLondon";
 import WestLondon from "./pages/areas/WestLondon";
 import GreaterLondon from "./pages/areas/GreaterLondon";
 import HomeCounties from "./pages/areas/HomeCounties";
+import Blog from "./pages/blog/Blog";
+import BlogPost from "./pages/blog/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -232,6 +234,8 @@ const AppRoutes = () => {
         <Route path="/areas/west-london" element={<WestLondon />} />
         <Route path="/areas/greater-london" element={<GreaterLondon />} />
         <Route path="/areas/home-counties" element={<HomeCounties />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />
         <Route path="/service-areas/camden" element={<Camden />} />
