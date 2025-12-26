@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { createPageSchema } from "@/utils/seo";
+import { createLocalBusinessSchema, createServiceSchema } from "@/utils/structuredData";
 
 const CommercialSolutions = () => {
   const pageMetadata = {
@@ -42,6 +43,46 @@ const CommercialSolutions = () => {
         
         {/* JSON-LD structured data */}
         <script type="application/ld+json">{pageSchema}</script>
+        
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createLocalBusinessSchema())}
+        </script>
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createServiceSchema(
+            "Commercial Secondary Glazing Installation",
+            "Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, healthcare facilities, and educational buildings."
+          ))}
+        </script>
+        
+        {/* Product Schema with Offers */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Commercial Secondary Glazing",
+            "description": "Professional secondary glazing for commercial properties",
+            "brand": {
+              "@type": "Brand",
+              "name": "Secondary Glazing Specialist"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "GBP",
+              "lowPrice": "400",
+              "highPrice": "2000",
+              "offerCount": "8"
+            }
+          })}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">

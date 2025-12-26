@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
@@ -72,6 +73,58 @@ const Index = () => {
         serviceName="Secondary Glazing Installation"
         serviceDescription="Professional secondary glazing services for listed buildings, conservation areas, and heritage properties. Reduce noise by up to 80%, improve thermal efficiency, and preserve your property's character."
       />
+      
+      {/* FAQPage Schema for Homepage FAQs */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is secondary glazing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Secondary glazing is an internal window system installed behind existing windows to improve thermal insulation, reduce noise by up to 80%, and enhance security without altering the original window appearance. It's ideal for listed buildings and conservation areas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does secondary glazing cost in London?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Secondary glazing typically costs between £350-450 per window for standard installations. For listed buildings and conservation areas, bespoke solutions range from £500-1,200 per window depending on size, glass specification, and heritage requirements. We provide free surveys and quotes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does secondary glazing reduce noise effectively?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, secondary glazing can reduce external noise by up to 80% (45-50 decibels), making it highly effective for homes near busy roads, railways, or flight paths in London. For maximum noise reduction, we recommend acoustic laminated glass with a 100-150mm air gap."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I install secondary glazing in a listed building?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, secondary glazing is the preferred solution for Grade I, II*, and II listed buildings because it preserves original windows, is fully reversible, and doesn't alter the external appearance. We handle all planning permission liaison and Listed Building Consent applications."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How effective is secondary glazing for energy saving?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Secondary glazing can reduce heat loss by up to 75%, typically saving 15-30% on heating bills. Most homeowners see a return on investment within 3-7 years through reduced energy costs and improved EPC ratings."
+                }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       
       <AIOverviewOptimizer
         config={aiConfig}
