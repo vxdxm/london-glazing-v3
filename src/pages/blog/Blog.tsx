@@ -60,7 +60,7 @@ const blogPosts = [
     date: "2024-12-24",
     readTime: "22 min read",
     category: "Conservation",
-    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png"
+    image: "/images/blog/conservation-hero.webp"
   },
   {
     slug: "sash-window-secondary-glazing-options",
