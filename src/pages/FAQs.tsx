@@ -17,35 +17,55 @@ const FAQs = () => {
   const faqs = [
     {
       question: "What is secondary glazing?",
-      answer: "Secondary glazing involves installing a supplementary internal window behind your existing windows. This creates an insulating layer of air that improves thermal efficiency, reduces noise, and enhances security without altering the external appearance of your property."
+      answer: "Secondary glazing involves installing a supplementary internal window behind your existing windows. This creates an insulating layer of air that improves thermal efficiency, reduces noise by up to 80%, and enhances security without altering the external appearance of your property. It's the ideal solution for listed buildings and conservation areas where replacing original windows isn't permitted."
     },
     {
       question: "How effective is secondary glazing at reducing noise?",
-      answer: "Secondary glazing is highly effective at reducing noise, capable of reducing external noise by up to 80% when properly installed. The air gap between the primary and secondary glazing acts as an excellent sound barrier."
+      answer: "Secondary glazing is highly effective at reducing noise, capable of blocking up to 80% of external sound (45-50 decibels) when properly installed with acoustic glass. The air gap between the primary and secondary glazing acts as an excellent sound barrier. For maximum noise reduction, we recommend 6.8mm or thicker acoustic laminated glass with a 100-150mm air gap."
     },
     {
       question: "Will secondary glazing affect the appearance of my property?",
-      answer: "Secondary glazing is installed on the room side of your existing windows, so it doesn't affect the external appearance of your property. This makes it particularly suitable for listed buildings and conservation areas."
+      answer: "Secondary glazing is installed on the room side of your existing windows, so it doesn't affect the external appearance of your property. This makes it particularly suitable for listed buildings and conservation areas where maintaining original character is essential. Our sympathetic installations are designed to be as discreet as possible."
     },
     {
       question: "How much can I save on heating costs?",
-      answer: "Secondary glazing can significantly reduce heat loss through windows, potentially saving up to 20% on heating bills. The exact savings depend on your current window efficiency and heating usage patterns."
+      answer: "Secondary glazing can reduce heat loss through windows by up to 75%, potentially saving 15-30% on heating bills. The exact savings depend on your current window efficiency, property size, and heating usage patterns. Most homeowners see a return on investment within 3-7 years through reduced energy costs."
     },
     {
       question: "Is secondary glazing difficult to maintain?",
-      answer: "No, secondary glazing is relatively easy to maintain. The panels can be easily cleaned and many systems feature removable panels for convenient access. Regular cleaning and occasional checks of seals and fixings are typically all that's required."
+      answer: "No, secondary glazing is relatively easy to maintain. The panels can be easily cleaned with standard glass cleaner, and many systems feature removable or hinged panels for convenient access to clean both sides. Regular cleaning and occasional checks of seals and fixings are typically all that's required. We recommend annual inspections to ensure optimal performance."
     },
     {
       question: "Can I open my windows with secondary glazing installed?",
-      answer: "Yes, secondary glazing systems are designed to allow access to your original windows. Many styles are available, including sliding, hinged, and lift-out options that can be easily operated when you need to open your windows."
+      answer: "Yes, secondary glazing systems are designed to allow full access to your original windows. Many styles are available including horizontal sliding, vertical sliding, hinged, tilt-in, and lift-out options. We'll recommend the best operating style based on your window type and how you use the room."
     },
     {
       question: "Is planning permission required for secondary glazing?",
-      answer: "Generally, planning permission is not required for secondary glazing as it's considered an internal alteration. However, if you live in a listed building, you should check with your local authority before proceeding."
+      answer: "Generally, planning permission is not required for secondary glazing as it's considered an internal alteration that doesn't affect the external appearance. However, if you live in a Grade I, II*, or II listed building, you may need Listed Building Consent. We handle all planning permission liaison and can advise on your specific requirements during your free survey."
     },
     {
       question: "How long does installation take?",
-      answer: "Installation time varies depending on the number and size of windows, but typically a professional team can install secondary glazing in an average home within 1-2 days with minimal disruption."
+      answer: "Installation typically takes 1-2 days for an average home with 5-10 windows. Each window takes approximately 1-2 hours depending on size and complexity. Larger projects or properties with unusual window shapes may take 3-5 days. We work efficiently to minimise disruption and keep your home clean throughout."
+    },
+    {
+      question: "Do I need to be home during installation?",
+      answer: "Yes, we require someone over 18 to be present during installation for access and to sign off the completed work. However, you don't need to supervise - our installers work independently and will call you if any decisions are needed. Many customers work from home or arrange for a family member to be present."
+    },
+    {
+      question: "What's your process from quote to completion?",
+      answer: "Our process is straightforward: 1) Free survey - we measure your windows and discuss your requirements. 2) Detailed quote - you receive a comprehensive written quote within 48 hours. 3) Manufacturing - once approved, your bespoke units are manufactured (typically 2-3 weeks). 4) Installation - our expert team installs your secondary glazing. 5) Final inspection - we ensure everything works perfectly and answer any questions."
+    },
+    {
+      question: "Do you offer guarantees?",
+      answer: "Yes, we provide comprehensive guarantees on all installations. Our standard package includes a 10-year guarantee on frames and hardware, plus manufacturer-backed guarantees on glass units. We also offer a 12-month installation workmanship guarantee. All guarantees are fully transferable if you sell your property."
+    },
+    {
+      question: "Can secondary glazing be painted?",
+      answer: "Yes, aluminium secondary glazing frames can be powder-coated in virtually any RAL colour to match your existing décor or window frames. We offer a wide range of standard colours including white, brown, black, and cream, plus custom colour matching for heritage properties. Timber secondary glazing can also be painted or stained to match existing woodwork."
+    },
+    {
+      question: "How much does secondary glazing cost?",
+      answer: "Secondary glazing typically costs between £350-450 per window for standard installations. For listed buildings and conservation areas, bespoke solutions range from £500-1,200 per window depending on size, glass specification, and heritage requirements. We provide free surveys and detailed quotes with no obligation. Volume discounts are available for larger projects."
     }
   ];
 
