@@ -9,6 +9,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
 import Index from "./pages/Index";
+import CaseStudies from "./pages/CaseStudies";
+import Benefits from "./pages/Benefits";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
@@ -121,6 +123,8 @@ const AppRoutes = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/benefits" element={<Benefits />} />
         <Route path="/sustainability-impact-tracker-secondary-glazing" element={<SustainabilityImpactTracker />} />
         <Route path="/secondary-glazing-repairs" element={<SecondaryGlazingRepairs />} />
         <Route path="/learn-about-spiral-balances" element={<LearnAboutSpiralBalances />} />

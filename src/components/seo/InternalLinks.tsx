@@ -41,10 +41,10 @@ export const serviceAreaLinks: InternalLink[] = [
 // Commercial Links
 export const commercialLinks: InternalLink[] = [
   { text: "commercial secondary glazing", href: "/commercial" },
-  { text: "office buildings", href: "/commercial/offices" },
-  { text: "hotels", href: "/commercial/hotels" },
-  { text: "schools", href: "/commercial/schools" },
-  { text: "hospitals", href: "/commercial/hospitals" },
+  { text: "office buildings", href: "/commercial/office-buildings" },
+  { text: "hotels", href: "/commercial/hospitality-sector" },
+  { text: "schools", href: "/commercial/educational-sector" },
+  { text: "hospitals", href: "/commercial/healthcare-industry" },
 ];
 
 // Resource Links
@@ -52,8 +52,8 @@ export const resourceLinks: InternalLink[] = [
   { text: "request a quote", href: "/quote-request" },
   { text: "case studies", href: "/case-studies" },
   { text: "benefits of secondary glazing", href: "/benefits" },
-  { text: "FAQs", href: "/faq" },
-  { text: "repairs and maintenance", href: "/repairs" },
+  { text: "FAQs", href: "/faqs" },
+  { text: "repairs and maintenance", href: "/secondary-glazing-repairs" },
 ];
 
 // Inline Link Component
