@@ -743,58 +743,453 @@ const blogPostsContent: Record<string, {
     title: "Complete Guide to Secondary Glazing for Listed Buildings",
     excerpt: "Everything you need to know about installing secondary glazing in Grade I and Grade II listed properties while maintaining heritage compliance.",
     date: "2024-12-15",
-    readTime: "8 min read",
+    readTime: "25 min read",
     category: "Heritage",
     image: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     content: (
       <>
-        <p className="lead">Installing secondary glazing in a listed building requires careful consideration of heritage requirements and planning regulations. This comprehensive guide walks you through everything you need to know.</p>
+        <p className="lead">Owning a listed building in London is both a privilege and a responsibility. These architectural treasures tell the story of our city's rich heritage, but they also present unique challenges when it comes to maintaining comfort, energy efficiency, and protection from London's urban noise. If you're struggling with draughty windows, soaring energy bills, or intrusive street noise, secondary glazing offers the perfect solution – one that preserves your building's historic character while delivering modern performance standards.</p>
         
         <h2>Understanding Listed Building Classifications</h2>
-        <p>In England, listed buildings are classified into three grades:</p>
+        
+        <p>London is home to over 18,000 listed buildings, each protected under strict heritage regulations. Understanding your building's classification is crucial before considering any window improvements.</p>
+        
+        <p><strong>Grade I</strong> buildings represent just 2.5% of all listed properties and are of exceptional national importance. Think of landmarks like the Houses of Parliament or St. Paul's Cathedral. These require the most careful approach to any modifications.</p>
+        
+        <p><strong>Grade II*</strong> (pronounced "Grade Two Star") are particularly important buildings of more than special interest, representing about 5.8% of listings. Many of London's finest Georgian squares and Victorian mansion blocks fall into this category.</p>
+        
+        <p><strong>Grade II</strong> buildings make up the vast majority (91.7%) of listed properties and are recognised as having special architectural or historic interest. This includes most period terraces, historic pubs, and converted Victorian houses across London's boroughs.</p>
+        
+        <h2>Common Window Problems in Listed Buildings</h2>
+        
+        <p>Historic windows in London's listed buildings face numerous challenges that compromise both comfort and the building's fabric:</p>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">Thermal Performance Issues</p>
+            <p className="mt-2">Original single-glazed windows can lose up to 25% of a building's heat, making properties expensive to heat and uncomfortable to live in during London's damp winters.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">Noise Intrusion</p>
+            <p className="mt-2">With London's traffic levels increasing year on year, many listed properties suffer from significant noise pollution, particularly those on main roads or near transport links.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">Draughts and Air Leakage</p>
+            <p className="mt-2">Aging window frames and traditional construction methods often result in substantial air infiltration, creating cold spots and increasing heating costs.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">Condensation Problems</p>
+            <p className="mt-2">The temperature differential between cold window surfaces and warm interior air leads to condensation, potentially causing damage to window frames, sills, and internal decorations.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">Security Concerns</p>
+            <p className="mt-2">Many original windows feature outdated locking mechanisms that don't meet modern security standards, leaving properties vulnerable.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg">
+            <p className="font-semibold">High Energy Costs</p>
+            <p className="mt-2">With U-values typically around 5.0 W/m²K, original sash windows are major contributors to high heating bills. London homeowners with single-glazed sash windows often see energy bills 20-30% higher than properties with modern glazing.</p>
+          </div>
+        </div>
+        
+        <h2>Why Secondary Glazing is the Ideal Solution for Listed Buildings</h2>
+        
+        <p>Secondary glazing represents the perfect compromise between heritage preservation and modern performance requirements. Unlike replacement windows, secondary glazing works by installing a discreet additional glazed panel on the room side of existing windows.</p>
+        
+        <div className="grid md:grid-cols-2 gap-6 my-8">
+          <div className="bg-primary/10 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Fully Reversible Installation</h4>
+            <p className="text-sm">The most crucial advantage for listed building owners is that secondary glazing can be completely removed without trace. This reversibility means future owners can restore windows to their original state if desired.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">No External Alterations</h4>
+            <p className="text-sm">Because secondary glazing is fitted internally, it doesn't change the external appearance of your building – a critical consideration for planning authorities and conservation officers.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Preserves Original Historic Fabric</h4>
+            <p className="text-sm">Your original windows remain untouched, maintaining their heritage value and the building's authentic character.</p>
+          </div>
+          
+          <div className="bg-primary/10 p-5 rounded-lg">
+            <h4 className="font-semibold text-lg mb-2">Exceptional Performance Gains</h4>
+            <p className="text-sm">Despite being reversible, secondary glazing can achieve thermal improvements of 60-70% and noise reduction of up to 80%.</p>
+          </div>
+        </div>
+        
+        <h2>Historic England Guidelines and Best Practice</h2>
+        
+        <p>Historic England, the government's heritage advisory body, actively supports secondary glazing for listed buildings. Their technical guidance states that secondary glazing "allows the original windows to be retained unaltered" and emphasises that "there is no loss of historic fabric, and in most cases, the installation is easily reversible."</p>
+        
+        <p>The organisation recommends secondary glazing as a preferred solution because it:</p>
+        
         <ul>
-          <li><strong>Grade I:</strong> Buildings of exceptional interest (only 2.5% of listed buildings)</li>
-          <li><strong>Grade II*:</strong> Particularly important buildings of more than special interest</li>
-          <li><strong>Grade II:</strong> Buildings of special interest, warranting every effort to preserve them</li>
+          <li>Maintains the historic window's contribution to the building's character</li>
+          <li>Avoids the carbon impact of manufacturing replacement windows</li>
+          <li>Provides superior thermal performance to most replacement options</li>
+          <li>Can be tailored to work with any historic window configuration</li>
         </ul>
         
-        <h2>Why Secondary Glazing Is Ideal for Listed Buildings</h2>
-        <p>Secondary glazing is often the preferred solution for listed buildings because:</p>
+        <p>Historic England's position is that secondary glazing represents best practice for improving the thermal performance of historic windows while preserving heritage value.</p>
+        
+        <h2>Listed Building Consent: When It's Required vs. When It's Not</h2>
+        
+        <p>Understanding when Listed Building Consent is required can save months of time and substantial costs. The good news is that secondary glazing rarely requires consent.</p>
+        
+        <h3>When Consent is NOT Required (most cases):</h3>
         <ul>
-          <li>It's fully reversible and non-invasive</li>
-          <li>Original windows remain untouched and preserved</li>
-          <li>It doesn't alter the external appearance of the property</li>
-          <li>Listed Building Consent is rarely required for internal works</li>
+          <li>Internal installation with no external visibility</li>
+          <li>Reversible fixings that don't damage historic fabric</li>
+          <li>Standard frame profiles and neutral colours</li>
+          <li>Installation behind existing window reveals</li>
         </ul>
         
-        <h2>Planning and Consent Requirements</h2>
-        <p>While secondary glazing typically doesn't require Listed Building Consent because it's an internal addition, we always recommend:</p>
+        <h3>When Consent MAY Be Required:</h3>
         <ul>
-          <li>Consulting with your local conservation officer</li>
-          <li>Documenting the existing windows before installation</li>
-          <li>Using sympathetic frame profiles that complement the period</li>
-          <li>Ensuring the secondary glazing is easily removable</li>
+          <li>Installation affecting historic internal features</li>
+          <li>Modifications to listed window furniture or fittings</li>
+          <li>Changes to internal room layouts or sightlines</li>
+          <li>Installation in particularly sensitive Grade I properties</li>
         </ul>
         
-        <h2>Best Secondary Glazing Options for Heritage Properties</h2>
-        <p>For listed buildings, we recommend:</p>
+        <p><strong>The Application Process (if required):</strong> If your local planning authority determines that consent is needed, the process typically takes 8-13 weeks. You'll need detailed drawings showing the proposed installation, heritage impact assessment, and demonstration of the installation's reversibility.</p>
+        
+        <h2>Secondary Glazing Options for Heritage Properties</h2>
+        
+        <p>Different listed buildings require different approaches. Here are the main options available:</p>
+        
+        <div className="space-y-6 my-8">
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Vertical Sliding Systems</p>
+            <p className="text-muted-foreground">Perfect for Georgian and Victorian sash windows, these systems mirror the operation of the original windows. The secondary glazing slides up and down on a track system, providing easy access for cleaning and maintenance.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Lift-Out Panels</p>
+            <p className="text-muted-foreground">The most reversible option, these panels can be completely removed when not needed. They're held in place with magnetic strips or simple catches, making them ideal for occasional-use rooms or seasonal installation.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Hinged Casement Systems</p>
+            <p className="text-muted-foreground">These open inward like traditional casement windows and work well with Tudor or Arts & Crafts properties. They provide excellent access for cleaning the primary window.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Fixed Panels</p>
+            <p className="text-muted-foreground">For maximum thermal and acoustic performance, fixed panels can't be opened but provide superior sealing. They're perfect for windows that aren't regularly accessed.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Horizontal Sliding Systems</p>
+            <p className="text-muted-foreground">Ideal for wide windows or where space constraints prevent other opening methods.</p>
+          </div>
+        </div>
+        
+        <h2>Technical Considerations for Listed Properties</h2>
+        
+        <p>The success of secondary glazing in a listed building depends on careful attention to technical details:</p>
+        
+        <p><strong>Frame Profiles:</strong> Slim-line frames (25-35mm) maintain sightlines and work best in properties with shallow window reveals. Standard profiles (50-70mm) provide superior performance but need adequate reveal depth.</p>
+        
+        <p><strong>Materials and Finishes:</strong> Frames can be powder-coated in heritage colours (white, cream, black, bronze, silver) or finished with wood-effect options to complement original timber windows.</p>
+        
+        <p><strong>Glazing Options:</strong> Standard 4mm glass works for most applications, but acoustic glass (6.8mm laminated) significantly improves noise reduction. Low-E glass enhances thermal performance.</p>
+        
+        <p><strong>Reveal Considerations:</strong> Listed buildings often have irregular or shallow reveals. Professional measurement and custom manufacturing ensure perfect fit without forcing or damaging original masonry.</p>
+        
+        <h2>Installation Process for Heritage Properties</h2>
+        
+        <p>Installing secondary glazing in listed buildings requires specialist expertise and careful planning:</p>
+        
+        <ol>
+          <li><strong>Pre-Installation Survey:</strong> Detailed measurement and assessment of each window, checking for level, square, and any irregularities in the reveals.</li>
+          <li><strong>Protection Measures:</strong> Original features, decorations, and finishes are carefully protected during installation using appropriate masking and protective materials.</li>
+          <li><strong>Minimal Intervention Fixing:</strong> Fixings are typically made to window frames or reveals using appropriate screws or magnetic strips, avoiding damage to historic masonry.</li>
+          <li><strong>Quality Control:</strong> Each installation is tested for proper operation, sealing performance, and visual appearance before completion.</li>
+        </ol>
+        
+        <p>The entire process typically takes 2-4 hours per window, with minimal disruption to the household.</p>
+        
+        <h2>Performance Benefits in Detail</h2>
+        
+        <p>Secondary glazing delivers measurable improvements across multiple performance criteria:</p>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Performance Area</th>
+                <th className="border border-border p-3 text-left font-semibold">Improvement</th>
+                <th className="border border-border p-3 text-left font-semibold">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3">Thermal Performance</td>
+                <td className="border border-border p-3">60-70% heat loss reduction</td>
+                <td className="border border-border p-3">U-values improve from 5.0+ to 2.0-2.8 W/m²K. Saves £300-500 annually.</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Acoustic Performance</td>
+                <td className="border border-border p-3">75-85% noise reduction</td>
+                <td className="border border-border p-3">Particularly effective against traffic noise and low-frequency disturbance.</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Draught Elimination</td>
+                <td className="border border-border p-3">Virtually 100%</td>
+                <td className="border border-border p-3">Proper installation eliminates draughts, improving comfort.</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Condensation Control</td>
+                <td className="border border-border p-3">Significant reduction</td>
+                <td className="border border-border p-3">Warmer internal surface dramatically reduces condensation.</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">UV Protection</td>
+                <td className="border border-border p-3">Available with UV glass</td>
+                <td className="border border-border p-3">Protects furnishings, artwork, and fabrics from fading.</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Enhanced Security</td>
+                <td className="border border-border p-3">Modern locking systems</td>
+                <td className="border border-border p-3">Improves security without altering historic external windows.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <h2>Cost Analysis by Building Grade</h2>
+        
+        <p>Investment levels vary according to building grade and complexity:</p>
+        
+        <div className="grid md:grid-cols-3 gap-6 my-8">
+          <div className="bg-muted/30 p-5 rounded-lg text-center">
+            <h4 className="font-semibold text-lg mb-2">Grade I Buildings</h4>
+            <p className="text-2xl font-bold text-primary">£800-£1,200</p>
+            <p className="text-sm text-muted-foreground">per window</p>
+            <p className="text-xs mt-2 text-muted-foreground">Premium installations requiring specialist heritage expertise</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg text-center">
+            <h4 className="font-semibold text-lg mb-2">Grade II* Buildings</h4>
+            <p className="text-2xl font-bold text-primary">£700-£1,000</p>
+            <p className="text-sm text-muted-foreground">per window</p>
+            <p className="text-xs mt-2 text-muted-foreground">High-quality with custom solutions for architectural features</p>
+          </div>
+          
+          <div className="bg-muted/30 p-5 rounded-lg text-center">
+            <h4 className="font-semibold text-lg mb-2">Grade II Buildings</h4>
+            <p className="text-2xl font-bold text-primary">£600-£900</p>
+            <p className="text-sm text-muted-foreground">per window</p>
+            <p className="text-xs mt-2 text-muted-foreground">Standard heritage installations with good performance</p>
+          </div>
+        </div>
+        
+        <p>Additional factors affecting cost include window size, accessibility, acoustic requirements, and any necessary structural adaptations.</p>
+        
+        <h2>Case Studies: Real London Installations</h2>
+        
+        <h3>Case Study 1: Grade I Georgian Townhouse, Belgravia</h3>
+        <p>This 1720s property required secondary glazing for six first-floor sash windows. The installation involved:</p>
         <ul>
-          <li><strong>Vertical sliding units:</strong> Perfect for sash windows, maintaining the original operating style</li>
-          <li><strong>Lift-out panels:</strong> Completely removable for maintenance and cleaning</li>
-          <li><strong>Hinged casements:</strong> Ideal for casement-style original windows</li>
+          <li>Custom vertical sliding systems matching original window proportions</li>
+          <li>Bronze powder-coated frames to complement restored ironwork</li>
+          <li>Acoustic glazing specified due to proximity to major traffic routes</li>
+          <li>18-week project timeline including Listed Building Consent application</li>
+        </ul>
+        <p><strong>Results:</strong> 68% reduction in heat loss, 82% noise reduction, annual saving of £450</p>
+        
+        <h3>Case Study 2: Grade II* Victorian Villa, Hampstead</h3>
+        <p>A sprawling 1860s villa with distinctive bay windows required comprehensive acoustic treatment:</p>
+        <ul>
+          <li>Bespoke curved secondary glazing for three-sided bay windows</li>
+          <li>Laminated acoustic glass throughout for superior noise reduction</li>
+          <li>Timber-effect frames to complement restored original windows</li>
+          <li>Installation completed over 5 days with minimal disruption</li>
+        </ul>
+        <p><strong>Results:</strong> 71% thermal improvement, virtual elimination of traffic noise, enhanced security</p>
+        
+        <h3>Case Study 3: Grade II Edwardian Terrace, Islington</h3>
+        <p>A typical London terrace conversion requiring cost-effective thermal improvement:</p>
+        <ul>
+          <li>Lift-out panels for bedroom windows (seasonal use)</li>
+          <li>Fixed panels for living areas (maximum performance)</li>
+          <li>Standard white frames for discrete appearance</li>
+          <li>2-day installation, no planning requirements</li>
+        </ul>
+        <p><strong>Results:</strong> 65% heat loss reduction, 3.2-year payback period, improved comfort</p>
+        
+        <h2>Borough-Specific Requirements Across London</h2>
+        
+        <p>Different London boroughs have varying approaches to heritage conservation:</p>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Westminster</p>
+            <p className="mt-1">Particularly strict due to high concentration of Grade I and II* buildings. Early consultation with conservation officers recommended.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Camden</p>
+            <p className="mt-1">Generally supportive of secondary glazing in listed buildings. Well-established policies recognise thermal improvement benefits.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Kensington & Chelsea</p>
+            <p className="mt-1">Emphasis on high-quality installations that complement prestigious addresses. Premium materials and finishes often required.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Richmond</p>
+            <p className="mt-1">Strong focus on maintaining historic market town character. Secondary glazing widely accepted as appropriate improvement method.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Islington</p>
+            <p className="mt-1">Proactive approach to encouraging energy efficiency improvements in heritage properties. Simplified approval processes.</p>
+          </div>
+        </div>
+        
+        <h2>Common Challenges and Solutions</h2>
+        
+        <p><strong>Narrow Window Reveals:</strong> Many London properties have shallow reveals that limit options. Ultra-slim profile systems (25mm) can work in reveals as narrow as 40mm depth.</p>
+        
+        <p><strong>Listed Window Furniture:</strong> Original window catches, stays, and handles must be preserved. Secondary glazing systems are designed to clear existing ironmongery.</p>
+        
+        <p><strong>Access Restrictions:</strong> Upper floor installations in terraced properties often require scaffolding or specialist access equipment, adding to project costs.</p>
+        
+        <p><strong>Building Regulations:</strong> While secondary glazing doesn't trigger Building Regulations, any associated electrical work (such as ventilation) must comply with current standards.</p>
+        
+        <p><strong>Party Wall Considerations:</strong> Major refurbishments involving secondary glazing might trigger Party Wall Act requirements if structural work is needed.</p>
+        
+        <h2>Finding Qualified Contractors and Specialists</h2>
+        
+        <p>Selecting the right contractor is crucial for listed building projects:</p>
+        
+        <h3>Essential Qualifications:</h3>
+        <ul>
+          <li>Proven track record with listed buildings</li>
+          <li>Understanding of conservation principles</li>
+          <li>References from similar Grade I/II projects</li>
+          <li>Professional insurance adequate for heritage work</li>
+          <li>Membership of relevant trade associations</li>
         </ul>
         
-        <h2>Performance Benefits</h2>
-        <p>Secondary glazing in listed buildings can achieve:</p>
+        <h3>Questions to Ask Potential Contractors:</h3>
         <ul>
-          <li>Up to 80% reduction in external noise</li>
-          <li>65% improvement in thermal insulation</li>
-          <li>Significant reduction in draughts</li>
-          <li>Protection of original window fabric</li>
+          <li>How many listed buildings have you worked on?</li>
+          <li>Can you provide references from conservation officers?</li>
+          <li>What's your approach to protecting historic features during installation?</li>
+          <li>How do you handle unexpected discoveries (hidden damage, irregular reveals)?</li>
+          <li>What guarantees do you offer on heritage installations?</li>
         </ul>
         
-        <h2>Get Expert Advice</h2>
-        <p>Our team has extensive experience working with Grade I and Grade II listed buildings across London. We understand the unique requirements and can guide you through the entire process.</p>
+        <h2>Expert Tips for Listed Building Owners</h2>
+        
+        <p><strong>Plan Early:</strong> Heritage projects often take longer than standard installations. Start planning 3-6 months ahead of your target installation date.</p>
+        
+        <p><strong>Engage with Conservation Officers:</strong> Building a relationship with your local conservation team can smooth the approval process and provide valuable guidance.</p>
+        
+        <p><strong>Document Everything:</strong> Maintain detailed records of your installation, including photographs, specifications, and contractor certifications. This helps with future maintenance and potential reversibility.</p>
+        
+        <p><strong>Consider Phased Installation:</strong> Large properties can benefit from phased installation, spreading costs and allowing you to assess performance before proceeding with remaining windows.</p>
+        
+        <p><strong>Maintain Originals:</strong> Continue maintaining your original windows alongside secondary glazing installation. This preserves heritage value and ensures longevity.</p>
+        
+        <h2>Maintenance and Long-Term Care</h2>
+        
+        <p>Secondary glazing in listed buildings requires minimal ongoing maintenance:</p>
+        
+        <ul>
+          <li><strong>Annual Checks:</strong> Inspect seals, hinges, and catches annually. Clean frames and glass as needed using appropriate heritage-friendly products.</li>
+          <li><strong>Professional Service:</strong> Annual professional maintenance ensures optimal performance and identifies any issues early.</li>
+          <li><strong>Documentation Updates:</strong> Keep installation records current, including any modifications or repairs undertaken.</li>
+          <li><strong>Reversibility Planning:</strong> Maintain removal instructions and original fixing hole positions should future reversibility be required.</li>
+        </ul>
+        
+        <h2>Heritage Grants and Funding Options</h2>
+        
+        <p>Several funding sources can help offset costs:</p>
+        
+        <div className="space-y-4 my-8">
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Historic England Grants</p>
+            <p className="text-muted-foreground">Available for outstanding Grade I and II* buildings, typically covering 25-40% of approved heritage improvement costs.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">National Trust Conservation Grants</p>
+            <p className="text-muted-foreground">For properties of exceptional significance, supporting reversible improvements that enhance conservation.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Local Authority Grants</p>
+            <p className="text-muted-foreground">Many London boroughs offer heritage improvement grants for listed buildings, particularly in conservation areas.</p>
+          </div>
+          
+          <div className="border-l-4 border-primary pl-4">
+            <p className="font-semibold">Energy Company Obligation (ECO) Schemes</p>
+            <p className="text-muted-foreground">Some secondary glazing installations qualify for ECO funding, particularly in lower-income households.</p>
+          </div>
+        </div>
+        
+        <h2>Timeline and Project Planning</h2>
+        
+        <p><strong>Typical Project Timeline:</strong></p>
+        <ul>
+          <li>Initial consultation and survey: 1-2 weeks</li>
+          <li>Quotation and specification: 1 week</li>
+          <li>Planning permission check (if required): 8-13 weeks</li>
+          <li>Manufacturing: 3-4 weeks</li>
+          <li>Installation: 1-3 days depending on project size</li>
+        </ul>
+        <p><strong>Total: 6-20 weeks depending on complexity</strong></p>
+        
+        <h2>Comprehensive FAQ Section</h2>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Will secondary glazing affect my building insurance?</p>
+            <p className="mt-2">Most insurers view secondary glazing favourably as it improves security and reduces damage risk. Always inform your insurer of any modifications.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">How do I clean the space between primary and secondary glazing?</p>
+            <p className="mt-2">Most systems allow access for cleaning. Hinged and sliding systems provide direct access, while lift-out panels can be removed entirely.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Can secondary glazing be installed in all window types?</p>
+            <p className="mt-2">Yes, secondary glazing can be custom-manufactured for any window configuration, including curved bays, arched windows, and irregular shapes.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">What's the typical lifespan of secondary glazing?</p>
+            <p className="mt-2">Quality installations typically last 20-25 years with minimal maintenance, often outlasting the original windows they're designed to protect.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Will secondary glazing affect natural ventilation?</p>
+            <p className="mt-2">Openable secondary glazing maintains ventilation options. Alternatively, fitted trickle vents can provide controlled ventilation while maintaining thermal performance.</p>
+          </div>
+        </div>
+        
+        <h2>Taking the Next Step</h2>
+        
+        <p>Secondary glazing represents the ideal solution for London's listed building owners seeking to improve comfort, reduce energy costs, and protect their heritage assets. The combination of regulatory compliance, performance benefits, and heritage preservation makes it the preferred choice of conservation professionals and property owners alike.</p>
+        
+        <p>If you're ready to transform your listed building's comfort and efficiency while preserving its historic character, the first step is a professional assessment. Our heritage specialists understand the unique requirements of Grade I, Grade II*, and Grade II properties across all London boroughs.</p>
+        
+        <p><strong>Get your free heritage property consultation today.</strong> We'll assess your windows, explain your options, and provide a detailed quotation tailored to your building's specific requirements and conservation considerations.</p>
+        
+        <p>Contact us at <a href="mailto:info@secondaryglazingspecialist.co.uk" className="text-primary hover:underline">info@secondaryglazingspecialist.co.uk</a> or call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a> for immediate advice on your listed building project. With over two decades of experience working with London's heritage properties, we're here to help you achieve the perfect balance between comfort, efficiency, and conservation.</p>
+        
+        <p>Your listed building deserves the best of both worlds – modern performance with heritage integrity. Secondary glazing delivers exactly that combination, ensuring your property remains a treasured part of London's architectural legacy while providing the comfort and efficiency you need for modern living.</p>
       </>
     )
   },
