@@ -43,21 +43,27 @@ export const HomepageContent = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Secondary glazing creates a substantial air gap between your original window and the new internal 
                 panel—typically 100mm to 150mm. This cavity acts as a highly effective acoustic buffer, reducing 
-                external noise by 45 to 50 decibels. For homes near busy roads, railways, airports, or urban 
-                centres, this can mean the difference between constant disruption and peaceful quiet. Our acoustic 
-                glass options, including 6.4mm and 6.8mm laminated glass, provide even greater sound insulation 
+                external noise by 45 to 50 decibels. Our{" "}
+                <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">
+                  noise reduction secondary glazing
+                </Link>{" "}
+                is ideal for homes near busy roads, railways, airports, or urban centres. Acoustic 
+                glass options, including 6.4mm and 6.8mm laminated glass, provide exceptional sound insulation 
                 for the most challenging environments.
               </p>
             </div>
             
             <div className="bg-card p-6 rounded-lg border">
-              <h3 className="text-xl font-semibold mb-4 text-card-foreground">Thermal Efficiency Improvement of 60%</h3>
+              <h3 className="text-xl font-semibold mb-4 text-card-foreground">Thermal Efficiency Improvement of 65%</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Heat loss through windows accounts for up to 30% of a building's total energy wastage. Secondary 
-                glazing dramatically reduces this by creating an insulating barrier that prevents warm air from 
-                escaping during winter and keeps interiors cooler in summer. Our customers typically report heating 
-                bill reductions of 15% to 25% following installation. Combined with our draught-proofing seals, 
-                secondary glazing eliminates cold spots near windows and reduces condensation on the original glass.
+                Heat loss through windows accounts for up to 30% of a building's total energy wastage. Our{" "}
+                <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">
+                  thermal insulation secondary glazing
+                </Link>{" "}
+                dramatically reduces this by creating an insulating barrier that prevents warm air from 
+                escaping during winter and keeps interiors cooler in summer. Customers typically report heating 
+                bill reductions of 15% to 25% following installation, with improved EPC ratings and 
+                eliminated cold spots near windows.
               </p>
             </div>
           </div>
@@ -77,13 +83,36 @@ export const HomepageContent = () => {
             <div className="bg-card p-6 rounded-lg border">
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">Listed Building Compliant</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Secondary glazing is the preferred solution for Grade I, Grade II*, and Grade II listed buildings 
-                because it is fully reversible and does not alter the external fabric of the property. Conservation 
-                officers regularly recommend secondary glazing as a sympathetic improvement that maintains 
-                heritage value while delivering modern performance standards. We work closely with local 
-                authorities and heritage consultants to ensure all installations meet regulatory requirements.
+                Whether you own a{" "}
+                <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">
+                  Grade I, II*, or II listed building
+                </Link>{" "}
+                or live in a{" "}
+                <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">
+                  conservation area
+                </Link>, our secondary glazing is fully reversible and does not alter the external fabric 
+                of your property. Conservation officers regularly recommend our solutions as sympathetic 
+                improvements that maintain heritage value while delivering modern performance standards.
               </p>
             </div>
+          </div>
+
+          <div className="mt-8 bg-muted/30 p-6 rounded-lg">
+            <p className="text-muted-foreground leading-relaxed">
+              With over 15 years of experience, we specialise in secondary glazing for heritage properties, 
+              including{" "}
+              <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">
+                Victorian sash windows
+              </Link>,{" "}
+              <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">
+                Georgian period properties
+              </Link>, and{" "}
+              <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">
+                Edwardian homes
+              </Link>. Our expert team works closely with homeowners to navigate planning requirements and 
+              deliver bespoke solutions that preserve architectural character while dramatically improving 
+              comfort and efficiency.
+            </p>
           </div>
         </section>
 
