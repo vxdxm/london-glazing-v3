@@ -40,13 +40,15 @@ export const Hero = () => {
               size="lg" 
               onClick={() => navigate("/quote-request")}
             >
-              Get Free Quote
+              Get a Free Survey
             </Button>
             <Button 
               size="lg" 
-              onClick={handleContactClick}
+              variant="outline"
+              onClick={() => navigate("/services")}
+              className="border-white text-white hover:bg-white hover:text-primary"
             >
-              Contact Us
+              View Our Services
             </Button>
           </div>
         </div>
