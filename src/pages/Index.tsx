@@ -8,6 +8,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { Testimonials } from "@/components/Testimonials";
 import { TrustBadges } from "@/components/TrustBadges";
+import { HomepageIntro } from "@/components/HomepageIntro";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
@@ -132,6 +133,7 @@ const Index = () => {
       
       <main>
         <Hero />
+        <HomepageIntro />
         <Services />
         <SpecialistServices />
         <HomepageContent />

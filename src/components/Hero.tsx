@@ -31,14 +31,19 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-up">
             London's Specialist Secondary Glazing for Listed Buildings & Heritage Properties
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-up">
+          <p className="text-lg md:text-xl text-white/90 mb-4 animate-fade-up">
             Enhance your home's comfort and value with our expert{" "}
             <Link to="/residential" className="underline hover:text-white">secondary glazing services</Link>. 
-            Reduce <Link to="/noise-reduction-secondary-glazing" className="underline hover:text-white">noise</Link>, 
-            improve <Link to="/thermal-insulation-secondary-glazing" className="underline hover:text-white">insulation</Link>, 
+            Reduce <Link to="/noise-reduction-secondary-glazing" className="underline hover:text-white">noise by up to 80%</Link>, 
+            improve <Link to="/thermal-insulation-secondary-glazing" className="underline hover:text-white">thermal insulation by 65%</Link>, 
             and maintain your{" "}
             <Link to="/listed-buildings-secondary-glazing" className="underline hover:text-white">listed building</Link> or{" "}
             <Link to="/conservation-areas-secondary-glazing" className="underline hover:text-white">conservation area</Link> property's character.
+          </p>
+          <p className="text-base md:text-lg text-white/80 mb-8 animate-fade-up max-w-2xl mx-auto">
+            Serving Westminster, Kensington & Chelsea, Camden, Islington, and all London boroughs. 
+            Free surveys, 10-year guarantees, and prices from £350 per window. Call{" "}
+            <a href="tel:02070601572" className="underline hover:text-white font-semibold">020 7060 1572</a> for a free quote.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-up">
             <Button 
