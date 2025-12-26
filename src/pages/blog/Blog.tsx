@@ -64,12 +64,12 @@ const blogPosts = [
   },
   {
     slug: "sash-window-secondary-glazing-options",
-    title: "Secondary Glazing Options for Sash Windows",
-    excerpt: "Explore the different secondary glazing solutions available for traditional sash windows, from vertical sliders to lift-out panels.",
-    date: "2024-11-20",
-    readTime: "6 min read",
+    title: "Complete Guide to Secondary Glazing for Sash Windows in London",
+    excerpt: "Comprehensive guide to secondary glazing options for period sash windows. Compare vertical sliding, lift-out, hinged and fixed systems with costs, performance data, and London case studies.",
+    date: "2024-12-26",
+    readTime: "25 min read",
     category: "Window Types",
-    image: "/lovable-uploads/c7e8e6e5-c8f0-4b15-9cc5-25481ef35ee8.png"
+    image: "/images/blog/sash-window-types.webp"
   },
   {
     slug: "secondary-glazing-vs-double-glazing",
