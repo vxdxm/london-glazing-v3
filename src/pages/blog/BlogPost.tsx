@@ -17,6 +17,194 @@ const blogPostsContent: Record<string, {
   image: string;
   content: React.ReactNode;
 }> = {
+  "planning-permission-secondary-glazing-conservation-areas": {
+    title: "Planning Permission for Secondary Glazing in Conservation Areas: Complete Guide 2026",
+    excerpt: "Everything you need to know about planning regulations, permitted development rights, and conservation officer requirements for secondary glazing installations.",
+    date: "2024-12-20",
+    readTime: "10 min read",
+    category: "Planning",
+    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png",
+    content: (
+      <>
+        <p className="lead">Understanding planning permission requirements is crucial before installing secondary glazing in a conservation area. This comprehensive guide covers everything property owners need to know about regulations, permitted development rights, and working with conservation officers in 2026.</p>
+        
+        <h2>Do You Need Planning Permission for Secondary Glazing?</h2>
+        
+        <p>The short answer: <strong>In most cases, no.</strong> Secondary glazing is classified as an internal alteration, which means it typically falls outside planning control. However, the specific requirements depend on your property type and location.</p>
+        
+        <h3>Standard Properties (Non-Listed, Non-Conservation Area)</h3>
+        <p>For standard residential properties, secondary glazing is considered permitted development. You do not need planning permission because:</p>
+        <ul>
+          <li>It is installed on the interior of existing windows</li>
+          <li>It does not alter the external appearance of the building</li>
+          <li>It is fully reversible without permanent modifications</li>
+          <li>It falls under home improvement works</li>
+        </ul>
+        
+        <h3>Properties in Conservation Areas</h3>
+        <p>Conservation areas have additional protections, but secondary glazing remains one of the few window improvements that typically does not require planning permission. This is because:</p>
+        <ul>
+          <li>The external appearance of your windows remains unchanged</li>
+          <li>Original windows are preserved, not replaced</li>
+          <li>No structural modifications are made to the building fabric</li>
+          <li>The installation is entirely internal</li>
+        </ul>
+        
+        <h3>Listed Buildings (Grade I, II*, and II)</h3>
+        <p>Listed buildings have the strictest regulations. While Listed Building Consent is required for works that affect a building's character, secondary glazing often escapes this requirement because:</p>
+        <ul>
+          <li>It preserves rather than alters historic windows</li>
+          <li>It is a reversible, non-invasive installation</li>
+          <li>It does not affect the building's special architectural interest</li>
+        </ul>
+        <p><strong>However:</strong> We always recommend consulting your local conservation officer before proceeding, as interpretations can vary between local authorities.</p>
+        
+        <h2>Understanding Conservation Areas</h2>
+        
+        <p>Conservation areas are designated zones where special attention is paid to preserving the architectural and historic character of the area. As of 2026, there are over 10,000 conservation areas in England, with London alone containing more than 1,000.</p>
+        
+        <h3>What Restrictions Apply?</h3>
+        <p>In conservation areas, you typically need planning permission to:</p>
+        <ul>
+          <li>Replace windows with different styles or materials</li>
+          <li>Change from timber to uPVC windows</li>
+          <li>Alter the external appearance of windows</li>
+          <li>Remove or modify original architectural features</li>
+        </ul>
+        
+        <p>Secondary glazing avoids all these triggers because it leaves your original windows completely untouched.</p>
+        
+        <h2>Working with Conservation Officers</h2>
+        
+        <p>Conservation officers are employed by local authorities to protect and enhance conservation areas and listed buildings. While you may not legally require their approval for secondary glazing, engaging with them can be beneficial.</p>
+        
+        <h3>When to Contact Your Conservation Officer</h3>
+        <ul>
+          <li>If your property is Grade I or Grade II* listed</li>
+          <li>If you are unsure whether secondary glazing affects your building's character</li>
+          <li>If you want written confirmation that no consent is required</li>
+          <li>If you plan to install secondary glazing in a prominent location</li>
+        </ul>
+        
+        <h3>What Conservation Officers Look For</h3>
+        <p>When assessing window improvements, conservation officers consider:</p>
+        <ul>
+          <li><strong>Reversibility:</strong> Can the installation be removed without damage?</li>
+          <li><strong>Visual impact:</strong> Does it alter views from outside?</li>
+          <li><strong>Material compatibility:</strong> Are materials sympathetic to the period?</li>
+          <li><strong>Preservation:</strong> Are original features protected?</li>
+        </ul>
+        <p>Secondary glazing scores highly on all these criteria, which is why it is consistently recommended by heritage bodies.</p>
+        
+        <h2>Permitted Development Rights Explained</h2>
+        
+        <p>Permitted development rights allow certain building works without needing planning permission. These rights are set by national legislation but can be restricted in certain areas.</p>
+        
+        <h3>Article 4 Directions</h3>
+        <p>Some conservation areas have Article 4 Directions in place, which remove permitted development rights for certain works. However, even with Article 4 Directions:</p>
+        <ul>
+          <li>Internal works are rarely affected</li>
+          <li>Secondary glazing typically remains permitted</li>
+          <li>Only external alterations are usually restricted</li>
+        </ul>
+        
+        <h2>Step-by-Step Planning Guide</h2>
+        
+        <div className="bg-muted/50 p-6 rounded-lg my-8">
+          <h3 className="text-xl font-semibold mb-4">Before Installation Checklist</h3>
+          <ol className="space-y-3">
+            <li><strong>1. Check your property status:</strong> Determine if your home is listed, in a conservation area, or both.</li>
+            <li><strong>2. Review local planning policies:</strong> Check your local authority's website for specific guidance.</li>
+            <li><strong>3. Consider a pre-application enquiry:</strong> For listed buildings, a free informal enquiry can provide clarity.</li>
+            <li><strong>4. Document existing windows:</strong> Photograph all windows before installation for your records.</li>
+            <li><strong>5. Choose appropriate frames:</strong> Select slim-profile frames that complement the period.</li>
+            <li><strong>6. Engage a specialist installer:</strong> Use a company experienced with heritage properties.</li>
+          </ol>
+        </div>
+        
+        <h2>London Borough-Specific Guidance</h2>
+        
+        <p>Planning policies can vary between London boroughs. Here is a summary of approaches in key areas:</p>
+        
+        <div className="overflow-x-auto my-8">
+          <table className="w-full border-collapse border border-border">
+            <thead>
+              <tr className="bg-muted">
+                <th className="border border-border p-3 text-left font-semibold">Borough</th>
+                <th className="border border-border p-3 text-left font-semibold">Conservation Areas</th>
+                <th className="border border-border p-3 text-left font-semibold">Secondary Glazing Approach</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-border p-3">Westminster</td>
+                <td className="border border-border p-3">55+</td>
+                <td className="border border-border p-3">Highly supportive of secondary glazing</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">Kensington & Chelsea</td>
+                <td className="border border-border p-3">38</td>
+                <td className="border border-border p-3">Recommended for all heritage properties</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Camden</td>
+                <td className="border border-border p-3">40+</td>
+                <td className="border border-border p-3">Encouraged as alternative to replacement</td>
+              </tr>
+              <tr className="bg-muted/50">
+                <td className="border border-border p-3">Islington</td>
+                <td className="border border-border p-3">44</td>
+                <td className="border border-border p-3">Preferred option for listed buildings</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-3">Richmond</td>
+                <td className="border border-border p-3">75+</td>
+                <td className="border border-border p-3">Strongly recommended for conservation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div className="space-y-4 my-8">
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Q: Do I need to notify my local authority before installing secondary glazing?</p>
+            <p className="mt-2">A: For most properties, no notification is required. However, for Grade I listed buildings, we recommend informing your conservation officer as a courtesy.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Q: Can my landlord or freeholder prevent secondary glazing installation?</p>
+            <p className="mt-2">A: While planning permission is not usually required, leaseholders should check their lease for any restrictions on internal alterations. Most leases permit reversible improvements.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Q: Will secondary glazing affect my building insurance?</p>
+            <p className="mt-2">A: No, secondary glazing is considered a home improvement and does not affect standard building insurance. Many insurers view it positively as it can enhance security.</p>
+          </div>
+          
+          <div className="bg-muted/30 p-4 rounded-lg">
+            <p className="font-semibold">Q: What if my planning application for window replacement was rejected?</p>
+            <p className="mt-2">A: Secondary glazing is often the ideal alternative when replacement window applications are refused. It provides similar benefits without requiring planning permission.</p>
+          </div>
+        </div>
+        
+        <h2>Key Takeaways</h2>
+        
+        <ul>
+          <li><strong>Secondary glazing rarely requires planning permission</strong> because it is an internal, reversible installation</li>
+          <li><strong>Conservation areas and listed buildings</strong> benefit most from secondary glazing as it preserves original features</li>
+          <li><strong>Conservation officers generally support</strong> secondary glazing as a heritage-friendly solution</li>
+          <li><strong>Always document your existing windows</strong> before installation for your records</li>
+          <li><strong>Choose a specialist installer</strong> experienced with heritage properties for best results</li>
+        </ul>
+        
+        <h2>Need Expert Guidance?</h2>
+        
+        <p>Our team has extensive experience working with conservation officers across London and the Home Counties. We provide free consultations and can advise on the best approach for your specific property, whether it is a Grade II listed Georgian townhouse or a Victorian terrace in a conservation area.</p>
+      </>
+    )
+  },
   "secondary-glazing-listed-buildings-guide": {
     title: "Complete Guide to Secondary Glazing for Listed Buildings",
     excerpt: "Everything you need to know about installing secondary glazing in Grade I and Grade II listed properties while maintaining heritage compliance.",
