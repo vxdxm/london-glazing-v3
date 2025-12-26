@@ -65,6 +65,138 @@ const Westminster = () => {
 
   return (
     <div className="min-h-screen">
+      {/* SEO CONTENT - Hidden from users, visible to crawlers */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <header>
+          <h1>Secondary Glazing Westminster | Heritage Window Specialists London</h1>
+          <nav aria-label="Main Navigation">
+            <a href="/">Home</a>
+            <a href="/listed-buildings-secondary-glazing">Listed Buildings</a>
+            <a href="/conservation-areas-secondary-glazing">Conservation Areas</a>
+            <a href="/victorian-windows-secondary-glazing">Victorian Windows</a>
+            <a href="/sash-window-secondary-glazing">Sash Windows</a>
+            <a href="/georgian-windows-secondary-glazing">Georgian Windows</a>
+            <a href="/edwardian-property-secondary-glazing">Edwardian Properties</a>
+            <a href="/thermal-insulation-secondary-glazing">Thermal Insulation</a>
+            <a href="/noise-reduction-secondary-glazing">Noise Reduction</a>
+            <a href="/service-areas">Service Areas</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </header>
+
+        <main>
+          <article>
+            <section>
+              <h2>Secondary Glazing Experts for Westminster</h2>
+              <p>Westminster is home to some of Britain's most iconic architecture, from the <a href="/georgian-windows-secondary-glazing">Georgian townhouses</a> of Mayfair and Belgravia to the <a href="/victorian-windows-secondary-glazing">Victorian terraces</a> of Pimlico. Our specialist secondary glazing solutions protect these <a href="/listed-buildings-secondary-glazing">listed buildings</a> and <a href="/conservation-areas-secondary-glazing">conservation area</a> properties while providing exceptional <a href="/thermal-insulation-secondary-glazing">thermal</a> and <a href="/noise-reduction-secondary-glazing">acoustic performance</a>.</p>
+              <p>The City of Westminster contains the highest concentration of Grade I listed buildings in London, including world-famous landmarks and prestigious residential addresses. From the stuccoed terraces of Belgravia to the mansion blocks of Marylebone, Westminster properties require the most sensitive approach to window improvements.</p>
+              <p>Our <a href="/listed-buildings-secondary-glazing">listed building secondary glazing</a> solutions are designed specifically for Westminster's heritage properties. Installed internally behind your existing <a href="/sash-window-secondary-glazing">sash windows</a> or casement windows, secondary glazing is invisible from the street, meaning no planning permission is typically required.</p>
+            </section>
+
+            <section>
+              <h2>Conservation Areas We Serve in Westminster</h2>
+              <p>Westminster has over 50 conservation areas protecting its unique architectural heritage. We provide <a href="/conservation-areas-secondary-glazing">conservation-approved secondary glazing</a> across all of them, including:</p>
+              <ul>
+                <li><strong>Westminster Abbey</strong> - Historic abbey precincts</li>
+                <li><strong>Whitehall</strong> - Government quarter conservation area</li>
+                <li><strong>Mayfair</strong> - Prestigious Georgian townhouses</li>
+                <li><strong>Belgravia</strong> - Stuccoed terraces and garden squares</li>
+                <li><strong>Pimlico</strong> - Victorian residential streets</li>
+                <li><strong>Marylebone</strong> - Georgian and Victorian mixed architecture</li>
+                <li><strong>St James's</strong> - Historic commercial and residential</li>
+                <li><strong>Fitzrovia</strong> - Georgian squares and Victorian terraces</li>
+                <li><strong>Regent's Park</strong> - Nash terraces and villas</li>
+                <li><strong>Bayswater</strong> - Victorian stucco-fronted properties</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Benefits for Westminster Properties</h2>
+              <h3>Thermal Insulation</h3>
+              <p>Reduce heat loss by up to 65% through your period windows. Essential for the tall sash windows common in Westminster's Georgian and Victorian properties. <a href="/thermal-insulation-secondary-glazing">Learn more about thermal insulation</a>.</p>
+              <h3>Noise Reduction</h3>
+              <p>Block up to 80% of traffic noise from busy Westminster streets with our <a href="/noise-reduction-secondary-glazing">acoustic glazing</a> options. Perfect for properties near major roads like Park Lane, Victoria Street, and the Embankment.</p>
+              <h3>Heritage Preservation</h3>
+              <p>Preserve your original windows and the character of your <a href="/listed-buildings-secondary-glazing">listed building</a>. Our fully reversible installations leave no permanent alterations.</p>
+              <h3>Enhanced Security</h3>
+              <p>Add an extra layer of security with laminated glass options, providing significant resistance to forced entry for ground-floor windows.</p>
+            </section>
+
+            <section>
+              <h2>Window Types We Work With</h2>
+              <ul>
+                <li><a href="/sash-window-secondary-glazing"><strong>Sash Windows</strong></a> - Vertical sliding windows typical in Georgian and Victorian properties</li>
+                <li><a href="/residential/casement-windows"><strong>Casement Windows</strong></a> - Side-hinged windows</li>
+                <li><a href="/residential/bay-windows"><strong>Bay Windows</strong></a> - Multi-angled installations</li>
+                <li><a href="/residential/crittall-windows"><strong>Crittall Windows</strong></a> - Steel-framed windows</li>
+                <li><strong>Arched Windows</strong> - Bespoke solutions for curved features</li>
+                <li><strong>Leaded Light Windows</strong> - Preserving decorative glazing</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Related Services</h2>
+              <ul>
+                <li><a href="/listed-buildings-secondary-glazing">Listed Buildings Secondary Glazing</a></li>
+                <li><a href="/conservation-areas-secondary-glazing">Conservation Areas Secondary Glazing</a></li>
+                <li><a href="/victorian-windows-secondary-glazing">Victorian Windows Secondary Glazing</a></li>
+                <li><a href="/georgian-windows-secondary-glazing">Georgian Windows Secondary Glazing</a></li>
+                <li><a href="/edwardian-property-secondary-glazing">Edwardian Property Secondary Glazing</a></li>
+                <li><a href="/thermal-insulation-secondary-glazing">Thermal Insulation Solutions</a></li>
+                <li><a href="/noise-reduction-secondary-glazing">Noise Reduction Glazing</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Other Areas We Serve</h2>
+              <ul>
+                <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea Secondary Glazing</a></li>
+                <li><a href="/service-areas/camden">Camden Secondary Glazing</a></li>
+                <li><a href="/service-areas/islington">Islington Secondary Glazing</a></li>
+                <li><a href="/areas/central-london">Central London Secondary Glazing</a></li>
+                <li><a href="/areas/north-london">North London Secondary Glazing</a></li>
+                <li><a href="/areas/south-london">South London Secondary Glazing</a></li>
+                <li><a href="/service-areas">View all 38 service areas</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Get Your Free Westminster Property Survey</h2>
+              <p>Contact us today for a free, no-obligation survey of your Westminster property. Our heritage specialists will visit your property, assess your windows, and provide a detailed quote.</p>
+              <p><a href="/contact">Contact us today</a> or <a href="/quote-request">request a free quote</a>.</p>
+            </section>
+          </article>
+        </main>
+
+        <footer>
+          <nav aria-label="Footer Navigation">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="/listed-buildings-secondary-glazing">Listed Buildings</a></li>
+              <li><a href="/conservation-areas-secondary-glazing">Conservation Areas</a></li>
+              <li><a href="/victorian-windows-secondary-glazing">Victorian Windows</a></li>
+              <li><a href="/sash-window-secondary-glazing">Sash Windows</a></li>
+            </ul>
+
+            <h3>Nearby Areas</h3>
+            <ul>
+              <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea</a></li>
+              <li><a href="/service-areas/camden">Camden</a></li>
+              <li><a href="/service-areas/islington">Islington</a></li>
+              <li><a href="/service-areas">All Service Areas</a></li>
+            </ul>
+
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/quote-request">Get a Quote</a></li>
+            </ul>
+          </nav>
+          <p>&copy; 2025 <a href="/">Secondary Glazing Specialist</a>. All rights reserved.</p>
+        </footer>
+      </div>
+
       <Helmet>
         <title>Secondary Glazing Westminster | Heritage Window Specialists London</title>
         <meta 
