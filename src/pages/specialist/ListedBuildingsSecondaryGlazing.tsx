@@ -43,6 +43,181 @@ const serviceAreas = [
 const ListedBuildingsSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
+      {/* SEO CONTENT - Hidden from users, visible to crawlers */}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <header>
+          <h1>Listed Buildings Secondary Glazing | Heritage Window Solutions</h1>
+          <nav aria-label="Main Navigation">
+            <a href="/">Home</a>
+            <a href="/listed-buildings-secondary-glazing">Listed Buildings</a>
+            <a href="/conservation-areas-secondary-glazing">Conservation Areas</a>
+            <a href="/victorian-windows-secondary-glazing">Victorian Windows</a>
+            <a href="/sash-window-secondary-glazing">Sash Windows</a>
+            <a href="/georgian-windows-secondary-glazing">Georgian Windows</a>
+            <a href="/edwardian-property-secondary-glazing">Edwardian Properties</a>
+            <a href="/thermal-insulation-secondary-glazing">Thermal Insulation</a>
+            <a href="/noise-reduction-secondary-glazing">Noise Reduction</a>
+            <a href="/service-areas">Service Areas</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </header>
+
+        <main>
+          <article>
+            <section>
+              <h2>Expert Secondary Glazing for Listed Buildings Across London</h2>
+              <p>Secondary Glazing Specialist is London's leading provider of <strong>secondary glazing solutions for listed buildings</strong>. Whether you own a <strong>Grade I, Grade II*, or Grade II listed property</strong>, we understand the unique challenges of preserving architectural heritage while improving thermal efficiency and noise reduction.</p>
+              <p>Our specialist team works closely with homeowners, conservation officers, and local planning authorities to deliver <a href="/conservation-areas-secondary-glazing">sympathetic secondary glazing installations</a> that meet strict heritage regulations while reducing heat loss by up to 75% and blocking up to 80% of external noise pollution.</p>
+              <p>With over 15 years of experience working on <strong>period properties across London's most historic boroughs</strong>, we provide bespoke solutions for <a href="/victorian-windows-secondary-glazing">Victorian</a>, <a href="/georgian-windows-secondary-glazing">Georgian</a>, and <a href="/edwardian-property-secondary-glazing">Edwardian homes</a> that preserve original windows while dramatically improving comfort and energy efficiency.</p>
+            </section>
+
+            <section>
+              <h2>Understanding Listed Building Grades</h2>
+              <h3>Grade I Listed Buildings</h3>
+              <p><strong>Grade I listed buildings</strong> represent buildings of exceptional interest (only 2.5% of listed buildings). These require the highest level of consent and the most sympathetic approach to any alterations. Our <a href="/thermal-insulation-secondary-glazing">secondary glazing solutions</a> are specifically designed to meet the stringent requirements of Grade I properties without compromising architectural integrity.</p>
+              <h3>Grade II* Listed Buildings</h3>
+              <p><strong>Grade II* (Grade Two Star) listed buildings</strong> are particularly important buildings of more than special interest (5.8% of listed buildings). Secondary glazing offers an ideal solution for improving thermal performance without replacing or altering original windows.</p>
+              <h3>Grade II Listed Buildings</h3>
+              <p><strong>Grade II listed buildings</strong> represent buildings of special interest (91.7% of all listed buildings). While regulations are slightly more flexible, any alterations still require <strong>Listed Building Consent</strong>. Our team provides full support throughout the planning permission process.</p>
+            </section>
+
+            <section>
+              <h2>Planning Permission for Listed Buildings</h2>
+              <p>Installing secondary glazing in a listed building typically requires <strong>Listed Building Consent</strong> from your local planning authority. The process involves:</p>
+              <ul>
+                <li><strong>Initial consultation</strong> to assess your property and requirements</li>
+                <li><strong>Heritage statement</strong> documenting the proposed works</li>
+                <li><strong>Detailed drawings</strong> showing the secondary glazing installation</li>
+                <li><strong>Materials specification</strong> demonstrating sympathetic approach</li>
+                <li><strong>Application submission</strong> to local planning authority</li>
+                <li><strong>Conservation officer liaison</strong> to address any concerns</li>
+              </ul>
+              <p>We provide comprehensive support throughout this process, with a high success rate for planning applications across <a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea</a>, <a href="/service-areas/westminster">Westminster</a>, <a href="/service-areas/camden">Camden</a>, and other heritage-rich London boroughs.</p>
+            </section>
+
+            <section>
+              <h2>Benefits of Secondary Glazing for Listed Buildings</h2>
+              <h3>Preserve Original Windows</h3>
+              <p>Unlike replacement windows, <strong>secondary glazing preserves your original historic windows</strong> intact. The secondary pane is installed on the interior, maintaining the external appearance and architectural character of your listed building.</p>
+              <h3>Reversible Installation</h3>
+              <p>Secondary glazing is <strong>completely reversible</strong> - a key requirement for listed buildings. If needed, the secondary glazing can be removed without any lasting impact on the original window frames.</p>
+              <h3>Superior Thermal Insulation</h3>
+              <p>The air gap between original window and secondary pane creates exceptional <a href="/thermal-insulation-secondary-glazing">thermal insulation</a>, reducing heat loss by up to 75% and dramatically lowering energy bills in period properties.</p>
+              <h3>Exceptional Noise Reduction</h3>
+              <p>Secondary glazing blocks up to 80% of external <a href="/noise-reduction-secondary-glazing">noise pollution</a>, creating peaceful living spaces in busy urban areas like <a href="/service-areas/islington">Islington</a> and <a href="/service-areas/tower-hamlets">Tower Hamlets</a>.</p>
+              <h3>Enhanced Security</h3>
+              <p>Adding a second layer of glazing provides additional security without compromising the aesthetic of historic windows.</p>
+              <h3>Reduced Condensation</h3>
+              <p>Proper secondary glazing installation significantly reduces condensation issues common in single-glazed period windows.</p>
+            </section>
+
+            <section>
+              <h2>Window Types We Work With</h2>
+              <ul>
+                <li><a href="/sash-window-secondary-glazing"><strong>Sash windows</strong></a> - Maintaining full functionality while adding insulation</li>
+                <li><strong>Casement windows</strong> - Side-hinged windows common in Georgian and Victorian properties</li>
+                <li><strong>Bay windows</strong> - Complex multi-angled installations requiring specialist expertise</li>
+                <li><strong>Dormer windows</strong> - Roof-level windows in period conversions</li>
+                <li><strong>Arched windows</strong> - Bespoke solutions for curved and arched heritage features</li>
+                <li><strong>Leaded light windows</strong> - Preserving decorative glazing patterns</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Areas We Serve</h2>
+              <p>We provide specialist <strong>listed building secondary glazing services</strong> across London's most historic boroughs:</p>
+              <ul>
+                <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea</a> - Home to some of London's finest listed properties</li>
+                <li><a href="/service-areas/westminster">Westminster</a> - Including conservation areas around Parliament and Belgravia</li>
+                <li><a href="/service-areas/camden">Camden</a> - Bloomsbury, Hampstead, and historic Camden Town</li>
+                <li><a href="/service-areas/islington">Islington</a> - Georgian squares and Victorian terraces</li>
+                <li><a href="/service-areas/richmond-upon-thames">Richmond upon Thames</a> - Riverside heritage properties</li>
+                <li><a href="/service-areas/wandsworth">Wandsworth</a> - Period homes in Battersea and Clapham</li>
+                <li><a href="/service-areas/hammersmith-fulham">Hammersmith &amp; Fulham</a> - Victorian properties across the borough</li>
+                <li><a href="/service-areas/lambeth">Lambeth</a> - Historic areas including Brixton and Clapham</li>
+                <li><a href="/service-areas/southwark">Southwark</a> - Period properties south of the Thames</li>
+                <li><a href="/service-areas/city-of-london">City of London</a> - Historic City properties</li>
+              </ul>
+              <p><a href="/service-areas">View all 38 service areas</a></p>
+            </section>
+
+            <section>
+              <h2>Our Process</h2>
+              <ol>
+                <li><strong>Free Heritage Property Survey</strong> - We visit your listed building to assess requirements and discuss options</li>
+                <li><strong>Planning Support</strong> - We help prepare your Listed Building Consent application with detailed drawings and specifications</li>
+                <li><strong>Bespoke Manufacturing</strong> - Each installation is custom-made to fit your exact window dimensions and heritage requirements</li>
+                <li><strong>Expert Installation</strong> - Our trained specialists install secondary glazing with minimal disruption</li>
+                <li><strong>Aftercare</strong> - Comprehensive warranty and ongoing support</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2>Why Choose Secondary Glazing Specialist?</h2>
+              <ul>
+                <li><strong>15+ years</strong> working exclusively with heritage properties</li>
+                <li><strong>High success rate</strong> with Listed Building Consent applications</li>
+                <li><strong>Specialist knowledge</strong> of period architecture and conservation requirements</li>
+                <li><strong>Bespoke solutions</strong> tailored to your specific property</li>
+                <li><strong>Reversible installations</strong> meeting heritage guidelines</li>
+                <li><strong>London-wide service</strong> across all boroughs</li>
+                <li><strong>Free surveys and quotes</strong> for listed properties</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Related Services</h2>
+              <ul>
+                <li><a href="/conservation-areas-secondary-glazing">Conservation Areas Secondary Glazing</a></li>
+                <li><a href="/victorian-windows-secondary-glazing">Victorian Windows Secondary Glazing</a></li>
+                <li><a href="/sash-window-secondary-glazing">Sash Window Secondary Glazing</a></li>
+                <li><a href="/georgian-windows-secondary-glazing">Georgian Windows Secondary Glazing</a></li>
+                <li><a href="/edwardian-property-secondary-glazing">Edwardian Property Secondary Glazing</a></li>
+                <li><a href="/thermal-insulation-secondary-glazing">Thermal Insulation Solutions</a></li>
+                <li><a href="/noise-reduction-secondary-glazing">Noise Reduction Glazing</a></li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Get Your Free Listed Building Survey</h2>
+              <p>Contact us today for a free, no-obligation survey of your listed building. Our specialist team will assess your property, discuss your requirements, and provide expert guidance on secondary glazing solutions that meet heritage regulations.</p>
+              <p><a href="/contact">Contact us today</a> or <a href="/quote">request a free quote</a>.</p>
+            </section>
+          </article>
+        </main>
+
+        <footer>
+          <nav aria-label="Footer Navigation">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="/listed-buildings-secondary-glazing">Listed Buildings</a></li>
+              <li><a href="/conservation-areas-secondary-glazing">Conservation Areas</a></li>
+              <li><a href="/victorian-windows-secondary-glazing">Victorian Windows</a></li>
+              <li><a href="/sash-window-secondary-glazing">Sash Windows</a></li>
+              <li><a href="/georgian-windows-secondary-glazing">Georgian Windows</a></li>
+              <li><a href="/edwardian-property-secondary-glazing">Edwardian Properties</a></li>
+            </ul>
+
+            <h3>Popular Areas</h3>
+            <ul>
+              <li><a href="/service-areas/kensington-chelsea">Kensington &amp; Chelsea</a></li>
+              <li><a href="/service-areas/westminster">Westminster</a></li>
+              <li><a href="/service-areas/camden">Camden</a></li>
+              <li><a href="/service-areas/islington">Islington</a></li>
+              <li><a href="/service-areas">All Service Areas</a></li>
+            </ul>
+
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/quote">Get a Quote</a></li>
+            </ul>
+          </nav>
+          <p>&copy; 2025 <a href="/">Secondary Glazing Specialist</a>. All rights reserved.</p>
+        </footer>
+      </div>
+
       <EnhancedSEO
         title="Listed Buildings Secondary Glazing | Expert Heritage Solutions London"
         description="Specialist secondary glazing for Grade I, II*, and II listed buildings. Preserve character, meet conservation requirements, and improve insulation. Free heritage property surveys across London."
