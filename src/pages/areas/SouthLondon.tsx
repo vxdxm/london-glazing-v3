@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const SouthLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="South London"
+        areaDescription="Expert secondary glazing services for period properties across South London, including Greenwich, Dulwich, Blackheath, Wandsworth, and surrounding areas."
+        neighborhoods={boroughs}
+      />
       <Helmet>
         <title>Secondary Glazing South London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services in South London. Specialist installations for period properties in Greenwich, Dulwich, Blackheath, Wandsworth and surrounding areas." />

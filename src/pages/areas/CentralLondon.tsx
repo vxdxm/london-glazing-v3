@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const CentralLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="Central London"
+        areaDescription="Expert secondary glazing services for listed buildings and conservation areas across Central London, including Westminster, Camden, Islington, and Kensington & Chelsea."
+        neighborhoods={boroughs}
+      />
       <Helmet>
         <title>Secondary Glazing Central London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services in Central London. Specialist installations for listed buildings, conservation areas, and period properties in Westminster, Camden, Islington and surrounding areas." />

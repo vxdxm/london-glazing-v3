@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const WestLondon = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="West London"
+        areaDescription="Expert secondary glazing services for prestigious properties across West London, including Kensington, Chelsea, Chiswick, Richmond, and surrounding areas."
+        neighborhoods={boroughs}
+      />
       <Helmet>
         <title>Secondary Glazing West London | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services in West London. Specialist installations for prestigious properties in Kensington, Chelsea, Chiswick, Richmond and surrounding areas." />

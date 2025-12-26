@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
+import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -23,6 +24,11 @@ const HomeCounties = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ServiceAreaSchema
+        areaName="Home Counties"
+        areaDescription="Expert secondary glazing services for country houses and period properties across the Home Counties, including Surrey, Kent, Essex, Hertfordshire, and Buckinghamshire."
+        neighborhoods={counties}
+      />
       <Helmet>
         <title>Secondary Glazing Home Counties | Expert Installation Services</title>
         <meta name="description" content="Professional secondary glazing services across the Home Counties. Specialist installations for country houses and period properties in Surrey, Kent, Essex, Hertfordshire and surrounding areas." />
