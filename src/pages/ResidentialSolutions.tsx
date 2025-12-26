@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { createLocalBusinessSchema, createServiceSchema } from "@/utils/structuredData";
 import { 
   FixedPanelIcon, 
   HingedPanelIcon, 
@@ -139,6 +140,46 @@ const ResidentialSolutions = () => {
         <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency with our custom combination window options." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.secondaryglazingspecialist.com/residential" />
+        
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createLocalBusinessSchema())}
+        </script>
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(createServiceSchema(
+            "Residential Secondary Glazing Installation",
+            "Expert residential secondary glazing solutions for homes across London. Installation for sash windows, casement windows, bay windows, and more. Reduce noise by up to 80%, improve thermal efficiency, and enhance security."
+          ))}
+        </script>
+        
+        {/* Product Schema with Offers */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Residential Secondary Glazing",
+            "description": "Professional secondary glazing for residential properties",
+            "brand": {
+              "@type": "Brand",
+              "name": "Secondary Glazing Specialist"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "GBP",
+              "lowPrice": "350",
+              "highPrice": "1200",
+              "offerCount": "12"
+            }
+          })}
+        </script>
       </Helmet>
       <MainNav />
       <div className="container mx-auto px-4 py-16">
