@@ -2,6 +2,7 @@ import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
+import { SpecialistServices } from "@/components/SpecialistServices";
 import { HomepageContent } from "@/components/HomepageContent";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
@@ -119,6 +120,7 @@ const Index = () => {
       <MainNav />
       <Hero />
       <Services />
+      <SpecialistServices />
       <HomepageContent />
       <Testimonials />
       <ContactForm />
