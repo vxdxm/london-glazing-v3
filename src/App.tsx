@@ -11,6 +11,7 @@ import FloatingContactForm from "@/components/FloatingContactForm";
 import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Benefits from "./pages/Benefits";
+import KensingtonChelsea from "./pages/service-areas/KensingtonChelsea";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
@@ -225,6 +226,7 @@ const AppRoutes = () => {
         <Route path="/areas/west-london" element={<WestLondon />} />
         <Route path="/areas/greater-london" element={<GreaterLondon />} />
         <Route path="/areas/home-counties" element={<HomeCounties />} />
+        <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -263,13 +263,48 @@ const ConservationAreasSecondaryGlazing = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   We have completed hundreds of secondary glazing installations in conservation areas 
                   across London. Our team understands the sensitivities involved and takes great care 
-                  to ensure every installation respects the character of your property and neighbourhood.
+                  to ensure every installation respects the character of your property and neighbourhood. 
+                  We have particular expertise in <InlineLink href="/service-areas/kensington-chelsea">Kensington & Chelsea</InlineLink>, 
+                  one of London's most prestigious conservation boroughs.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   From <InlineLink href="/victorian-windows-secondary-glazing">Victorian terraces</InlineLink> in Islington to 
                   <InlineLink href="/georgian-windows-secondary-glazing">Georgian townhouses</InlineLink> in Greenwich, we have 
                   the experience to deliver a solution that meets your needs while complying with 
-                  local planning requirements. We also work on <InlineLink href="/edwardian-property-secondary-glazing">Edwardian properties</InlineLink> throughout the capital.
+                  local planning requirements. We also work on <InlineLink href="/edwardian-property-secondary-glazing">Edwardian properties</InlineLink> and 
+                  <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink> throughout the capital.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Our services include <InlineLink href="/residential/sash-windows">sash windows</InlineLink>, 
+                  <InlineLink href="/residential/casement-windows">casement windows</InlineLink>, 
+                  <InlineLink href="/residential/bay-windows">bay windows</InlineLink>, 
+                  <InlineLink href="/residential/horizontal-sliding">horizontal sliding</InlineLink>, and 
+                  <InlineLink href="/residential/crittall-windows">Crittall windows</InlineLink>. 
+                  We also offer <InlineLink href="/specialized/security-glazing">security glazing</InlineLink>, 
+                  <InlineLink href="/specialized/condensation-control">condensation control</InlineLink>, and 
+                  <InlineLink href="/specialized/uv-protection">UV protection</InlineLink> solutions.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  For <InlineLink href="/commercial">commercial properties</InlineLink> in conservation areas, 
+                  including <InlineLink href="/commercial/office-buildings">offices</InlineLink>, 
+                  <InlineLink href="/commercial/hospitality-sector">hotels</InlineLink>, and 
+                  <InlineLink href="/commercial/healthcare-industry">healthcare facilities</InlineLink>, 
+                  we offer tailored solutions. Explore our <InlineLink href="/case-studies">case studies</InlineLink> or 
+                  learn about the <InlineLink href="/benefits">benefits of secondary glazing</InlineLink>. 
+                  For existing installations, see our <InlineLink href="/secondary-glazing-repairs">repairs service</InlineLink>.
+                </p>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Helpful Resources
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Visit our <InlineLink href="/faqs">FAQs</InlineLink> for answers to common questions, 
+                  browse our <InlineLink href="/gallery">gallery</InlineLink> for examples of our work, or 
+                  read our guides on <InlineLink href="/guides/secondary-vs-double-glazing">secondary vs double glazing</InlineLink>, 
+                  <InlineLink href="/guides/diy-vs-professional">DIY vs professional installation</InlineLink>, and 
+                  <InlineLink href="/guides/u-values-db-ratings">U-values and dB ratings</InlineLink>. 
+                  Ready to get started? <InlineLink href="/quote-request">Request a free quote</InlineLink> or 
+                  <InlineLink href="/contact">contact us</InlineLink> today.
                 </p>
 
                 <QuickLinksGrid 
