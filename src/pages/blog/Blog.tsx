@@ -15,7 +15,7 @@ const blogPosts = [
     date: "2024-12-22",
     readTime: "18 min read",
     category: "Pricing",
-    image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
+    image: "/images/blog/cost-guide-hero.webp"
   },
   {
     slug: "planning-permission-secondary-glazing-conservation-areas",

@@ -23,7 +23,7 @@ const blogPostsContent: Record<string, {
     date: "2024-12-22",
     readTime: "18 min read",
     category: "Pricing",
-    image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png",
+    image: "/images/blog/cost-guide-hero.webp",
     content: (
       <>
         <p className="lead">If you're considering secondary glazing for your London property, the first question on your mind is likely: "How much will this cost me?" Whether you're dealing with traffic noise on Marylebone Road, trying to improve energy efficiency in a Victorian terrace, or need planning-compliant solutions for a listed building in Westminster, understanding secondary glazing costs is crucial for making an informed decision.</p>
@@ -59,6 +59,12 @@ const blogPostsContent: Record<string, {
         <h3>Window Size & Dimensions</h3>
         
         <p>Window size is the primary cost driver. Here's how sizing affects pricing:</p>
+        
+        <img 
+          src="/images/blog/cost-window-size-type.webp" 
+          alt="Secondary Glazing Cost Guide showing window size and type pricing for London 2026" 
+          className="w-full rounded-lg my-8"
+        />
         
         <div className="space-y-4 my-6">
           <div className="border-l-4 border-primary pl-4">
@@ -185,6 +191,12 @@ const blogPostsContent: Record<string, {
         
         <h3>Location Within London</h3>
         
+        <img 
+          src="/images/blog/cost-london-zones.webp" 
+          alt="Secondary glazing pricing by London zones and installation complexity factors" 
+          className="w-full rounded-lg my-8"
+        />
+        
         <div className="grid md:grid-cols-2 gap-6 my-8">
           <div className="bg-muted/30 p-5 rounded-lg">
             <h4 className="font-semibold text-lg mb-2">Central London (Zones 1-2)</h4>
@@ -212,6 +224,12 @@ const blogPostsContent: Record<string, {
         </div>
         
         <h2>Complete Home Cost Examples</h2>
+        
+        <img 
+          src="/images/blog/cost-home-examples.webp" 
+          alt="Complete home cost examples for secondary glazing in London - Victorian, Georgian and Townhouse properties" 
+          className="w-full rounded-lg my-8"
+        />
         
         <div className="space-y-6 my-8">
           <div className="bg-muted/50 p-6 rounded-lg">
@@ -332,6 +350,12 @@ const blogPostsContent: Record<string, {
         
         <h2>Ways to Reduce Costs Without Compromising Quality</h2>
         
+        <img 
+          src="/images/blog/cost-reduce-tips.webp" 
+          alt="Ways to reduce secondary glazing costs without compromising quality - phased installation, smart glass selection and volume discounts" 
+          className="w-full rounded-lg my-8"
+        />
+        
         <h3>Prioritize Strategic Installation</h3>
         
         <ol>
@@ -340,6 +364,14 @@ const blogPostsContent: Record<string, {
           <li><strong>Phase 3:</strong> Living areas (comfort enhancement)</li>
           <li><strong>Phase 4:</strong> Secondary spaces (bathrooms, hallways)</li>
         </ol>
+        
+        <h3>Smart Glass Selection</h3>
+        
+        <ul>
+          <li><strong>Standard glass for low-noise areas:</strong> South-facing garden windows</li>
+          <li><strong>Acoustic glass for noise zones:</strong> Street-facing windows</li>
+          <li><strong>Thermal glass for problem areas:</strong> North-facing windows in older properties</li>
+        </ul>
         
         <h3>Volume Discounts</h3>
         
