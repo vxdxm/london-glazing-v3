@@ -94,6 +94,14 @@ import DIYvsProfessional from "./pages/guides/DIYvsProfessional";
 import UValuesDBRatings from "./pages/guides/UValuesDBRatings";
 import SecondaryGlazingAesthetics from "./pages/guides/SecondaryGlazingAesthetics";
 import Locations from "./pages/Locations";
+import ListedBuildingsSecondaryGlazing from "./pages/specialist/ListedBuildingsSecondaryGlazing";
+import ConservationAreasSecondaryGlazing from "./pages/specialist/ConservationAreasSecondaryGlazing";
+import VictorianWindowsSecondaryGlazing from "./pages/specialist/VictorianWindowsSecondaryGlazing";
+import SashWindowSecondaryGlazing from "./pages/specialist/SashWindowSecondaryGlazing";
+import GeorgianWindowsSecondaryGlazing from "./pages/specialist/GeorgianWindowsSecondaryGlazing";
+import EdwardianPropertySecondaryGlazing from "./pages/specialist/EdwardianPropertySecondaryGlazing";
+import ThermalInsulationSecondaryGlazing from "./pages/specialist/ThermalInsulationSecondaryGlazing";
+import NoiseReductionSecondaryGlazing from "./pages/specialist/NoiseReductionSecondaryGlazing";
 
 const queryClient = new QueryClient();
 
@@ -191,6 +199,14 @@ const AppRoutes = () => {
         <Route path="/guides/diy-vs-professional" element={<DIYvsProfessional />} />
         <Route path="/guides/u-values-db-ratings" element={<UValuesDBRatings />} />
         <Route path="/guides/secondary-glazing-aesthetics" element={<SecondaryGlazingAesthetics />} />
+        <Route path="/listed-buildings-secondary-glazing" element={<ListedBuildingsSecondaryGlazing />} />
+        <Route path="/conservation-areas-secondary-glazing" element={<ConservationAreasSecondaryGlazing />} />
+        <Route path="/victorian-windows-secondary-glazing" element={<VictorianWindowsSecondaryGlazing />} />
+        <Route path="/sash-window-secondary-glazing" element={<SashWindowSecondaryGlazing />} />
+        <Route path="/georgian-windows-secondary-glazing" element={<GeorgianWindowsSecondaryGlazing />} />
+        <Route path="/edwardian-property-secondary-glazing" element={<EdwardianPropertySecondaryGlazing />} />
+        <Route path="/thermal-insulation-secondary-glazing" element={<ThermalInsulationSecondaryGlazing />} />
+        <Route path="/noise-reduction-secondary-glazing" element={<NoiseReductionSecondaryGlazing />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
