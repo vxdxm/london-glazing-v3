@@ -17,8 +17,8 @@ const OfficeHero = () => {
       
       <AspectRatio ratio={21 / 9} className="mb-8">
         <OptimizedImage 
-          src="/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png" 
-          alt="Modern London office interior with secondary glazing installation showing floor-to-ceiling windows" 
+          src="/images/commercial/office-london-skyline.webp" 
+          alt="Aerial view of London's commercial district including the City, Canary Wharf and Thames at sunset" 
           className="rounded-lg object-cover w-full h-full" 
           priority={true}
         />
