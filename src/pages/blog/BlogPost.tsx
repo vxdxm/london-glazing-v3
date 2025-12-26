@@ -733,7 +733,7 @@ const blogPostsContent: Record<string, {
     date: "2024-12-05",
     readTime: "5 min read",
     category: "Energy Efficiency",
-    image: "/lovable-uploads/e79d2f3f-21eb-4775-bb5c-f173badcc02f.png",
+    image: "/images/blog/thermal-efficiency-hero.webp",
     content: (
       <>
         <p className="lead">With rising energy costs, improving your home's thermal efficiency has never been more important. Secondary glazing offers significant energy savings while preserving your original windows.</p>

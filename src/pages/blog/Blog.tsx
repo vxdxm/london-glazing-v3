@@ -51,7 +51,7 @@ const blogPosts = [
     date: "2024-12-05",
     readTime: "5 min read",
     category: "Energy Efficiency",
-    image: "/lovable-uploads/e79d2f3f-21eb-4775-bb5c-f173badcc02f.png"
+    image: "/images/blog/thermal-efficiency-hero.webp"
   },
   {
     slug: "conservation-area-window-solutions",
