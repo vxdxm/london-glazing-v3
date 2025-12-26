@@ -60,7 +60,7 @@ const blogPosts = [
     date: "2024-11-15",
     readTime: "12 min read",
     category: "Guides",
-    image: "/lovable-uploads/8c4a189d-e7e2-4118-a885-5a0a81e1bdf7.png"
+    image: "/images/blog/secondary-glazing-vs-double-glazing.webp"
   }
 ];
 

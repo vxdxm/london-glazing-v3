@@ -275,7 +275,7 @@ const blogPostsContent: Record<string, {
     date: "2024-11-15",
     readTime: "12 min read",
     category: "Guides",
-    image: "/lovable-uploads/8c4a189d-e7e2-4118-a885-5a0a81e1bdf7.png",
+    image: "/images/blog/secondary-glazing-vs-double-glazing.webp",
     content: (
       <>
         <p className="lead">If you own a Victorian terrace, Georgian townhouse, or any period property, you've likely faced this dilemma: how do you improve energy efficiency and reduce noise without compromising your home's historic character? The choice between secondary glazing and double glazing isn't just about performance — it's about preservation, planning permission, and practicality.</p>
