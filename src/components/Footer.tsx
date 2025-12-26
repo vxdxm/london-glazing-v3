@@ -47,6 +47,7 @@ const locations = [
 const resources = [
   { title: "Quote Request", href: "/quote-request" },
   { title: "Gallery", href: "/gallery" },
+  { title: "Blog", href: "/blog" },
   { title: "FAQs", href: "/faqs" },
   { title: "Secondary vs Double Glazing", href: "/guides/secondary-vs-double-glazing" },
   { title: "DIY vs Professional", href: "/guides/diy-vs-professional" },

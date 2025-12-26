@@ -73,6 +73,7 @@ export function MainNav() {
             </div>
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
+          <MobileNavItem to="/blog">Blog</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
           <MobileNavItem to="/contact">Contact Us</MobileNavItem>
           <div className="px-4 py-3 space-y-2">
@@ -154,6 +155,11 @@ export function MainNav() {
           <NavigationMenuItem>
             <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Gallery
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link to="/blog" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
+              Blog
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
