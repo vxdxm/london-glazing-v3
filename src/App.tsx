@@ -12,6 +12,9 @@ import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Benefits from "./pages/Benefits";
 import KensingtonChelsea from "./pages/service-areas/KensingtonChelsea";
+import Westminster from "./pages/service-areas/Westminster";
+import Camden from "./pages/service-areas/Camden";
+import Islington from "./pages/service-areas/Islington";
 import ResidentialSolutions from "./pages/ResidentialSolutions";
 import CommercialSolutions from "./pages/CommercialSolutions";
 import SpecializedServices from "./pages/SpecializedServices";
@@ -227,6 +230,9 @@ const AppRoutes = () => {
         <Route path="/areas/greater-london" element={<GreaterLondon />} />
         <Route path="/areas/home-counties" element={<HomeCounties />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
+        <Route path="/service-areas/westminster" element={<Westminster />} />
+        <Route path="/service-areas/camden" element={<Camden />} />
+        <Route path="/service-areas/islington" element={<Islington />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
