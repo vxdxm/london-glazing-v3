@@ -558,7 +558,7 @@ const BlogPost = () => {
           </div>
           
           {/* Content */}
-          <div className="prose prose-lg max-w-none prose-headings:mt-10 prose-headings:mb-4 prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:mb-5 prose-p:leading-relaxed prose-ul:my-6 prose-ul:space-y-2 prose-li:leading-relaxed prose-table:my-8 prose-strong:text-foreground">
+          <div className="prose prose-lg max-w-none prose-headings:mt-12 prose-headings:mb-6 prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:mb-6 prose-p:leading-8 prose-ul:my-8 prose-ul:space-y-3 prose-ol:my-8 prose-ol:space-y-3 prose-li:leading-8 prose-table:my-10 prose-strong:text-foreground [&>p+p]:mt-6 [&_.lead]:text-xl [&_.lead]:leading-9 [&_.lead]:mb-8 [&_.lead]:text-muted-foreground">
             {post.content}
           </div>
           
