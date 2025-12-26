@@ -3,14 +3,13 @@ import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Link } from "react-router-dom";
-import { TreePine, MapPin, CheckCircle, Home, Phone } from "lucide-react";
+import { TreePine, MapPin, CheckCircle, Home, Phone, ThermometerSun, Volume2, Shield, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MainNav } from "@/components/MainNav";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
 import CTASection from "@/components/seo/CTASection";
-import { InlineLink, QuickLinksGrid, specialistServicesLinks, serviceAreaLinks } from "@/components/seo/InternalLinks";
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
@@ -25,14 +24,28 @@ const relatedLinks = [
   { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
+  { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
+];
+
+const serviceAreas = [
+  { title: "Kensington & Chelsea", href: "/service-areas/kensington-chelsea", description: "South Kensington, Chelsea, Notting Hill" },
+  { title: "Westminster", href: "/service-areas/westminster", description: "Belgravia, Pimlico, Mayfair, St James's" },
+  { title: "Camden", href: "/service-areas/camden", description: "Bloomsbury, Hampstead, Primrose Hill" },
+  { title: "Islington", href: "/service-areas/islington", description: "Barnsbury, Canonbury, Highbury" },
+  { title: "Central London", href: "/areas/central-london", description: "City and Central boroughs" },
+  { title: "North London", href: "/areas/north-london", description: "Highgate, Muswell Hill, Crouch End" },
+  { title: "South London", href: "/areas/south-london", description: "Dulwich, Blackheath, Greenwich" },
+  { title: "West London", href: "/areas/west-london", description: "Fulham, Richmond, Chiswick" },
+  { title: "East London", href: "/areas/east-london", description: "Hackney, Stoke Newington" },
+  { title: "Home Counties", href: "/areas/home-counties", description: "Surrey, Hertfordshire, Essex" },
 ];
 
 const ConservationAreasSecondaryGlazing = () => {
   return (
     <div className="min-h-screen">
       <EnhancedSEO
-        title="Conservation Areas Secondary Glazing | Approved Heritage Solutions"
-        description="Secondary glazing solutions designed for conservation areas in London. Meet Article 4 requirements while improving thermal efficiency. No external changes to your property."
+        title="Conservation Area Secondary Glazing | Expert Heritage Solutions London"
+        description="Specialist secondary glazing for properties in conservation areas. Meet planning requirements while improving insulation and reducing noise. Free surveys across London conservation areas."
         canonicalPath="/conservation-areas-secondary-glazing"
         keywords={[
           "conservation area secondary glazing",
@@ -40,7 +53,9 @@ const ConservationAreasSecondaryGlazing = () => {
           "heritage area windows",
           "conservation approved glazing",
           "period property windows London",
-          "conservation officer approved"
+          "conservation officer approved",
+          "planning permission glazing",
+          "heritage property insulation"
         ]}
       />
       
@@ -59,12 +74,14 @@ const ConservationAreasSecondaryGlazing = () => {
               <span className="font-medium">Conservation Specialists</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Conservation Areas Secondary Glazing
+              Conservation Area Secondary Glazing | Preserve Character While Improving Efficiency
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Preserve the character of your conservation area property while enjoying modern comfort. 
-              Our secondary glazing solutions are designed to meet local authority requirements without 
-              altering your home's external appearance, providing excellent <InlineLink href="/thermal-insulation-secondary-glazing">thermal insulation</InlineLink> and <InlineLink href="/noise-reduction-secondary-glazing">noise reduction</InlineLink>.
+              If your property is located in a <strong>conservation area</strong>, you will understand the importance of 
+              preserving architectural character while maintaining comfort and energy efficiency. Our specialist 
+              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline"> thermal insulation</Link> and{" "}
+              <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link> solutions 
+              are designed specifically for heritage properties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -87,245 +104,423 @@ const ConservationAreasSecondaryGlazing = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-3">
-              <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Understanding Conservation Area Restrictions
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Conservation areas are designated to protect the special architectural and historic 
-                  interest of a place. If your property falls within a conservation area, you may face 
-                  restrictions on changes to windows, particularly if an Article 4 Direction is in place. 
-                  This often prevents the installation of uPVC double glazing or other modern window 
-                  replacements that would alter the property's appearance, similar to restrictions on <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink>.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  Secondary glazing offers the perfect solution because it is installed internally, 
-                  behind your existing windows. From the street, your property looks exactly the same, 
-                  preserving the cohesive character that conservation areas are designed to protect. Whether you have 
-                  <InlineLink href="/victorian-windows-secondary-glazing">Victorian sash windows</InlineLink> or 
-                  <InlineLink href="/georgian-windows-secondary-glazing">Georgian casements</InlineLink>, we have the solution.
-                </p>
-
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  London Conservation Areas We Serve
-                </h2>
+              <article className="prose prose-lg max-w-none">
                 
-                <div className="grid md:grid-cols-2 gap-6 mb-12 not-prose">
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <MapPin className="h-5 w-5 text-primary" />
-                        <h3 className="text-lg font-semibold">
-                          <Link to="/areas/central-london" className="hover:text-primary">Central London</Link>
-                        </h3>
+                {/* Introduction */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Expert Secondary Glazing for Conservation Areas Across London
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Secondary Glazing Specialist provides expert <strong>secondary glazing solutions for conservation area properties</strong> throughout 
+                    London, helping homeowners meet strict planning requirements while dramatically improving{" "}
+                    <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal insulation</Link> and{" "}
+                    <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link>.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    With over 15 years of experience working in London's conservation areas, we understand the unique challenges and 
+                    regulations governing period properties. Our bespoke secondary glazing installations preserve the external appearance 
+                    of your home while reducing heat loss by up to 75% and blocking up to 80% of external noise.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Whether you own a{" "}
+                    <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian terrace</Link>,{" "}
+                    <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian townhouse</Link>, or{" "}
+                    <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian property</Link>, 
+                    our specialist team delivers sympathetic solutions that satisfy conservation officers and enhance your quality of life.
+                  </p>
+                </section>
+
+                {/* Understanding Conservation Areas */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Understanding Conservation Areas
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    <strong>Conservation areas</strong> are designated areas of special architectural or historic interest, where the character 
+                    and appearance must be preserved and enhanced. London has over <strong>1,000 conservation areas</strong>, covering 
+                    approximately 25% of the capital.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Properties in conservation areas face restrictions on:
+                  </p>
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>External alterations</strong> - Any changes to the exterior typically require planning permission</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Window replacements</strong> - Replacing original windows often prohibited or heavily restricted</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Materials</strong> - Must be in keeping with the character of the area</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Design</strong> - Any additions must respect the existing architectural style</span>
+                    </li>
+                  </ul>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong>Secondary glazing offers the ideal solution</strong> - it provides all the benefits of modern double glazing 
+                    without altering the external appearance of your property.
+                  </p>
+                </section>
+
+                {/* Planning Permission */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Do I Need Planning Permission?
+                  </h2>
+                  
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Internal Secondary Glazing (Usually No Permission Required)</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    If the secondary glazing is installed entirely on the <strong>interior</strong> and does not alter the external appearance 
+                    of the property, planning permission is typically not required. This is one of the major advantages of secondary glazing 
+                    over replacement windows.
+                  </p>
+
+                  <h3 className="text-xl font-semibold text-foreground mb-3">When Permission May Be Required</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Planning permission may be required if:
+                  </p>
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">Your property is also <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed</Link> (requires Listed Building Consent)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">The installation affects the external appearance</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">The property fronts a main road or public highway</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">Your local authority has specific Article 4 directions in place</span>
+                    </li>
+                  </ul>
+
+                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <div className="flex items-start gap-4">
+                      <FileText className="h-8 w-8 text-primary flex-shrink-0" />
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-2">Free Planning Guidance</h3>
+                        <p className="text-muted-foreground text-sm mb-4">
+                          We provide <strong>free planning guidance</strong> for all conservation area properties and liaise directly 
+                          with conservation officers when required.
+                        </p>
+                        <Button asChild variant="outline" size="sm">
+                          <Link to="/quote-request">Request Planning Support</Link>
+                        </Button>
                       </div>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Belgravia Conservation Area</li>
-                        <li>• Mayfair Conservation Area</li>
-                        <li>• Bloomsbury Conservation Area</li>
-                        <li>• Marylebone Conservation Area</li>
-                        <li>• Pimlico Conservation Area</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
+                </section>
 
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <MapPin className="h-5 w-5 text-primary" />
-                        <h3 className="text-lg font-semibold">
-                          <Link to="/areas/north-london" className="hover:text-primary">North London</Link>
-                        </h3>
+                {/* Benefits */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Benefits of Secondary Glazing in Conservation Areas
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <Shield className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">Preserve Original Windows</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Secondary glazing allows you to <strong>keep your original period windows</strong> intact - essential in 
+                        conservation areas where window replacement is restricted.
+                      </p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <Home className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">No External Alterations</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Because secondary glazing is installed on the interior, <strong>there are no external changes</strong> to 
+                        your property - a key requirement in conservation areas.
+                      </p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <ThermometerSun className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">
+                        <Link to="/thermal-insulation-secondary-glazing" className="hover:text-primary">Superior Thermal Performance</Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        The air gap creates exceptional thermal insulation, <strong>reducing heat loss by up to 75%</strong> - 
+                        far superior to traditional single glazing.
+                      </p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <Volume2 className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">
+                        <Link to="/noise-reduction-secondary-glazing" className="hover:text-primary">Dramatic Noise Reduction</Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Secondary glazing <strong>blocks up to 80% of external noise pollution</strong> - particularly beneficial 
+                        in busy conservation areas.
+                      </p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <CheckCircle className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">Reversible Solution</h3>
+                      <p className="text-sm text-muted-foreground">
+                        If circumstances change, secondary glazing can be <strong>completely removed</strong> without any lasting 
+                        impact on your original windows.
+                      </p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <Home className="h-8 w-8 text-primary mb-4" />
+                      <h3 className="font-semibold text-foreground mb-2">Cost-Effective</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Secondary glazing is typically <strong>more affordable</strong> than attempting to replace windows in a 
+                        conservation area.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                {/* Window Types */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Window Types We Work With
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Our specialist team has experience installing secondary glazing on all period window types commonly found in conservation areas:
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline font-semibold">Sash windows</Link> - 
+                        Vertical sliding windows typical in Victorian and Georgian properties
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <Link to="/residential/casement-windows" className="text-primary hover:underline font-semibold">Casement windows</Link> - 
+                        Side-hinged windows common in Edwardian and Arts & Crafts properties
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <Link to="/residential/bay-windows" className="text-primary hover:underline font-semibold">Bay windows</Link> - 
+                        Multi-angled windows requiring specialist measurement and installation
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <strong>Arched windows</strong> - Gothic and Victorian arched features requiring bespoke solutions
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <strong>Leaded light windows</strong> - Decorative glazing patterns preserved behind secondary glazing
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground">
+                        <strong>Stained glass windows</strong> - Protecting valuable stained glass while improving insulation
+                      </span>
+                    </li>
+                  </ul>
+                </section>
+
+                {/* Conservation Areas We Serve */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Conservation Areas We Serve
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    We provide specialist <strong>conservation area secondary glazing services</strong> across London's most prestigious conservation areas:
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {serviceAreas.map((area, index) => (
+                      <Link
+                        key={index}
+                        to={area.href}
+                        className="flex flex-col p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors"
+                      >
+                        <div className="flex items-center gap-2 mb-1">
+                          <MapPin className="h-4 w-4 text-primary" />
+                          <span className="font-medium">{area.title}</span>
+                        </div>
+                        <span className="text-xs text-muted-foreground">{area.description}</span>
+                      </Link>
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mt-4">
+                    <Link to="/locations" className="text-primary hover:underline">View all 38 service areas across London</Link>
+                  </p>
+                </section>
+
+                {/* Our Process */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Our Process for Conservation Area Properties
+                  </h2>
+                  <ol className="space-y-4">
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">1</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Free Conservation Area Property Survey</h3>
+                        <p className="text-sm text-muted-foreground">We visit your home to assess your windows and discuss your requirements</p>
                       </div>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Hampstead Conservation Area</li>
-                        <li>• Highgate Conservation Area</li>
-                        <li>• Barnsbury Conservation Area</li>
-                        <li>• Canonbury Conservation Area</li>
-                        <li>• Muswell Hill Conservation Area</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <MapPin className="h-5 w-5 text-primary" />
-                        <h3 className="text-lg font-semibold">
-                          <Link to="/areas/west-london" className="hover:text-primary">West London</Link>
-                        </h3>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">2</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Planning Guidance</h3>
+                        <p className="text-sm text-muted-foreground">We advise whether planning permission is required and provide support if needed</p>
                       </div>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Holland Park Conservation Area</li>
-                        <li>• Notting Hill Conservation Area</li>
-                        <li>• Kensington Conservation Areas</li>
-                        <li>• Chelsea Conservation Area</li>
-                        <li>• Chiswick Conservation Area</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardContent className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <MapPin className="h-5 w-5 text-primary" />
-                        <h3 className="text-lg font-semibold">
-                          <Link to="/areas/south-london" className="hover:text-primary">South London</Link>
-                        </h3>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">3</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Bespoke Design</h3>
+                        <p className="text-sm text-muted-foreground">Each installation is custom-designed to complement your period property</p>
                       </div>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Dulwich Village Conservation Area</li>
-                        <li>• Blackheath Conservation Area</li>
-                        <li>• Richmond Conservation Area</li>
-                        <li>• Greenwich Conservation Area</li>
-                        <li>• Wandsworth Conservation Areas</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </div>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">4</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Conservation Officer Liaison</h3>
+                        <p className="text-sm text-muted-foreground">If required, we liaise with your local conservation officer</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">5</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Expert Installation</h3>
+                        <p className="text-sm text-muted-foreground">Our trained specialists install secondary glazing with care and precision</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold text-sm flex-shrink-0">6</span>
+                      <div>
+                        <h3 className="font-semibold text-foreground">Comprehensive Warranty</h3>
+                        <p className="text-sm text-muted-foreground">All installations covered by our warranty and aftercare service</p>
+                      </div>
+                    </li>
+                  </ol>
+                </section>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Article 4 Directions Explained
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  An Article 4 Direction removes certain permitted development rights, meaning changes 
-                  that would normally not need planning permission suddenly require approval. Many 
-                  conservation areas in London have Article 4 Directions covering window replacement, 
-                  making it extremely difficult to install modern double glazing.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  Secondary glazing bypasses these restrictions entirely because:
-                </p>
-                <ul className="list-none space-y-3 mb-8 not-prose">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">It is installed internally, not affecting the external appearance</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">Original windows remain in place and fully functional</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">The installation is completely reversible</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">No alterations to the building fabric are required</span>
-                  </li>
-                </ul>
-
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Benefits for Conservation Area Properties
-                </h2>
-                <div className="grid md:grid-cols-2 gap-6 mb-12 not-prose">
+                {/* Case Study */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Case Study: Victorian Terrace in Camden Conservation Area
+                  </h2>
                   <div className="bg-muted/30 rounded-lg p-6">
-                    <Home className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="font-semibold text-foreground mb-2">
-                      <Link to="/thermal-insulation-secondary-glazing" className="hover:text-primary">Thermal Efficiency</Link>
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Reduce heat loss through single-glazed windows by up to 65%, lowering your 
-                      heating bills while maintaining period character.
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      A Victorian terrace in the <strong>Camden conservation area</strong> was suffering from high energy bills and 
+                      significant street noise. The owners wanted to improve comfort without replacing their original{" "}
+                      <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash windows</Link>.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      We installed bespoke <strong>secondary glazing</strong> throughout the property, achieving:
+                    </p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-center gap-2 text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <strong>68% reduction</strong> in heat loss
+                      </li>
+                      <li className="flex items-center gap-2 text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <strong>£450 annual saving</strong> on heating bills
+                      </li>
+                      <li className="flex items-center gap-2 text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <strong>75% reduction</strong> in street noise
+                      </li>
+                      <li className="flex items-center gap-2 text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <strong>No planning permission required</strong> (internal installation)
+                      </li>
+                      <li className="flex items-center gap-2 text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-green-600" />
+                        <strong>Original windows preserved</strong> and protected
+                      </li>
+                    </ul>
+                    <p className="text-sm text-muted-foreground italic">
+                      The conservation officer praised the solution as "exemplary heritage conservation combined with modern efficiency."
                     </p>
                   </div>
-                  <div className="bg-muted/30 rounded-lg p-6">
-                    <Home className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="font-semibold text-foreground mb-2">
-                      <Link to="/noise-reduction-secondary-glazing" className="hover:text-primary">Noise Reduction</Link>
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Block up to 80% of external noise, perfect for properties on busy roads 
-                      or near transport links.
-                    </p>
+                  <p className="text-muted-foreground mt-4">
+                    <Link to="/case-studies" className="text-primary hover:underline">View more case studies</Link>
+                  </p>
+                </section>
+
+                {/* Why Choose Us */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Why Choose Secondary Glazing Specialist?
+                  </h2>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>15+ years</strong> working in London conservation areas</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Expert knowledge</strong> of conservation area regulations and requirements</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>High success rate</strong> with planning applications (when required)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Bespoke solutions</strong> tailored to period properties</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>No external alterations</strong> - maintain your property's character</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Free surveys and quotes</strong> for conservation area properties</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-muted-foreground"><strong>Comprehensive warranty</strong> and aftercare support</span>
+                    </li>
+                  </ul>
+                </section>
+
+                {/* Related Services */}
+                <section className="mb-12 not-prose">
+                  <h2 className="text-3xl font-bold text-foreground mb-6">
+                    Related Services
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Listed Buildings Secondary Glazing</Link>
+                    <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian Windows Secondary Glazing</Link>
+                    <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">Sash Window Secondary Glazing</Link>
+                    <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian Windows Secondary Glazing</Link>
+                    <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian Property Secondary Glazing</Link>
+                    <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Thermal Insulation Solutions</Link>
+                    <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Noise Reduction Glazing</Link>
+                    <Link to="/benefits" className="text-primary hover:underline">Benefits of Secondary Glazing</Link>
+                    <Link to="/secondary-glazing-repairs" className="text-primary hover:underline">Repairs & Maintenance</Link>
+                    <Link to="/gallery" className="text-primary hover:underline">View Gallery</Link>
                   </div>
-                  <div className="bg-muted/30 rounded-lg p-6">
-                    <Home className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="font-semibold text-foreground mb-2">Draught Elimination</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Seal gaps around original windows without affecting their operation 
-                      or appearance.
-                    </p>
-                  </div>
-                  <div className="bg-muted/30 rounded-lg p-6">
-                    <Home className="h-8 w-8 text-primary mb-4" />
-                    <h3 className="font-semibold text-foreground mb-2">Property Value</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Improve comfort and energy efficiency while preserving the original 
-                      features that add value to period homes.
-                    </p>
-                  </div>
-                </div>
+                </section>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Our Conservation Area Expertise
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  We have completed hundreds of secondary glazing installations in conservation areas 
-                  across London. Our team understands the sensitivities involved and takes great care 
-                  to ensure every installation respects the character of your property and neighbourhood. 
-                  We have particular expertise in <InlineLink href="/service-areas/kensington-chelsea">Kensington & Chelsea</InlineLink>, 
-                  one of London's most prestigious conservation boroughs.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  From <InlineLink href="/victorian-windows-secondary-glazing">Victorian terraces</InlineLink> in Islington to 
-                  <InlineLink href="/georgian-windows-secondary-glazing">Georgian townhouses</InlineLink> in Greenwich, we have 
-                  the experience to deliver a solution that meets your needs while complying with 
-                  local planning requirements. We also work on <InlineLink href="/edwardian-property-secondary-glazing">Edwardian properties</InlineLink> and 
-                  <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink> throughout the capital.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Our services include <InlineLink href="/residential/sash-windows">sash windows</InlineLink>, 
-                  <InlineLink href="/residential/casement-windows">casement windows</InlineLink>, 
-                  <InlineLink href="/residential/bay-windows">bay windows</InlineLink>, 
-                  <InlineLink href="/residential/horizontal-sliding">horizontal sliding</InlineLink>, and 
-                  <InlineLink href="/residential/crittall-windows">Crittall windows</InlineLink>. 
-                  We also offer <InlineLink href="/specialized/security-glazing">security glazing</InlineLink>, 
-                  <InlineLink href="/specialized/condensation-control">condensation control</InlineLink>, and 
-                  <InlineLink href="/specialized/uv-protection">UV protection</InlineLink> solutions.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  For <InlineLink href="/commercial">commercial properties</InlineLink> in conservation areas, 
-                  including <InlineLink href="/commercial/office-buildings">offices</InlineLink>, 
-                  <InlineLink href="/commercial/hospitality-sector">hotels</InlineLink>, and 
-                  <InlineLink href="/commercial/healthcare-industry">healthcare facilities</InlineLink>, 
-                  we offer tailored solutions. Explore our <InlineLink href="/case-studies">case studies</InlineLink> or 
-                  learn about the <InlineLink href="/benefits">benefits of secondary glazing</InlineLink>. 
-                  For existing installations, see our <InlineLink href="/secondary-glazing-repairs">repairs service</InlineLink>.
-                </p>
-
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Helpful Resources
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  Visit our <InlineLink href="/faqs">FAQs</InlineLink> for answers to common questions, 
-                  browse our <InlineLink href="/gallery">gallery</InlineLink> for examples of our work, or 
-                  read our guides on <InlineLink href="/guides/secondary-vs-double-glazing">secondary vs double glazing</InlineLink>, 
-                  <InlineLink href="/guides/diy-vs-professional">DIY vs professional installation</InlineLink>, and 
-                  <InlineLink href="/guides/u-values-db-ratings">U-values and dB ratings</InlineLink>. 
-                  Ready to get started? <InlineLink href="/quote-request">Request a free quote</InlineLink> or 
-                  <InlineLink href="/contact">contact us</InlineLink> today.
-                </p>
-
-                <QuickLinksGrid 
-                  title="Our Specialist Services" 
-                  links={specialistServicesLinks.slice(0, 6)} 
-                  columns={3}
-                />
-
-                <QuickLinksGrid 
-                  title="Areas We Cover" 
-                  links={serviceAreaLinks} 
-                  columns={4}
-                />
-              </div>
+              </article>
 
               {/* Hero CTA */}
               <div className="mt-12">
                 <CTASection 
                   variant="hero"
-                  title="Get Your Free Conservation Area Survey"
-                  description="Our specialists will assess your property and provide recommendations that meet conservation requirements."
+                  title="Get Your Free Conservation Area Property Survey"
+                  description="Contact us today for a free, no-obligation survey of your conservation area property. Our specialist team will assess your windows, advise on planning requirements, and provide expert guidance on secondary glazing solutions."
                 />
               </div>
             </div>
@@ -337,6 +532,18 @@ const ConservationAreasSecondaryGlazing = () => {
                   title="Related Services" 
                   links={relatedLinks} 
                 />
+                <Card>
+                  <CardContent className="p-4">
+                    <h3 className="font-semibold mb-3">Quick Links</h3>
+                    <ul className="space-y-2 text-sm">
+                      <li><Link to="/quote-request" className="text-primary hover:underline">Request a Quote</Link></li>
+                      <li><Link to="/gallery" className="text-primary hover:underline">View Gallery</Link></li>
+                      <li><Link to="/case-studies" className="text-primary hover:underline">Case Studies</Link></li>
+                      <li><Link to="/faqs" className="text-primary hover:underline">FAQs</Link></li>
+                      <li><Link to="/contact" className="text-primary hover:underline">Contact Us</Link></li>
+                    </ul>
+                  </CardContent>
+                </Card>
                 <CTASection variant="compact" />
               </div>
             </div>

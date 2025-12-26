@@ -1,7 +1,7 @@
 import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,18 +11,32 @@ import {
   CheckCircle, 
   Landmark, 
   Shield, 
-  Thermometer,
+  ThermometerSun,
   Volume2,
   Clock,
   Award
 } from "lucide-react";
 
 const KensingtonChelsea = () => {
+  const kensingtonAreas = [
+    "South Kensington", "High Street Kensington", "Holland Park", "Earls Court", "West Kensington"
+  ];
+  
+  const chelseaAreas = [
+    "Kings Road", "Cheyne Walk", "Chelsea Embankment", "Sloane Square", "Worlds End"
+  ];
+
+  const knightsbridgeAreas = [
+    "Brompton Road", "Knightsbridge proper", "Hans Place/Hans Crescent"
+  ];
+
+  const nottingHillAreas = [
+    "Ladbroke Grove", "Portobello Road", "Pembridge Villas/Square", "Westbourne Grove"
+  ];
+
   const conservationAreas = [
-    "Kensington Palace", "Holland Park", "Kensington Court", "De Vere", "Edwardes Square",
-    "Brompton", "Hans Town", "Chelsea", "Cheyne", "Royal Hospital", "Sloane Square",
-    "South Kensington", "Thurloe/Smith's Charity", "Courtfield", "Earl's Court Square",
-    "Nevern Square", "Philbeach", "Queen's Gate", "Kensington Green", "Pembridge"
+    "Boltons Conservation Area", "Brompton Conservation Area", "Cheyne Conservation Area",
+    "Ladbroke Conservation Area", "Queens Gate Conservation Area", "Royal Hospital Conservation Area", "Stanley Conservation Area"
   ];
 
   const services = [
@@ -31,7 +45,7 @@ const KensingtonChelsea = () => {
     { title: "Victorian Windows Secondary Glazing", href: "/victorian-windows-secondary-glazing", icon: Clock },
     { title: "Georgian Windows Secondary Glazing", href: "/georgian-windows-secondary-glazing", icon: Award },
     { title: "Sash Window Secondary Glazing", href: "/sash-window-secondary-glazing", icon: CheckCircle },
-    { title: "Thermal Insulation Secondary Glazing", href: "/thermal-insulation-secondary-glazing", icon: Thermometer },
+    { title: "Thermal Insulation Secondary Glazing", href: "/thermal-insulation-secondary-glazing", icon: ThermometerSun },
     { title: "Noise Reduction Secondary Glazing", href: "/noise-reduction-secondary-glazing", icon: Volume2 },
     { title: "Edwardian Property Secondary Glazing", href: "/edwardian-property-secondary-glazing", icon: Landmark },
   ];
@@ -46,38 +60,32 @@ const KensingtonChelsea = () => {
   ];
 
   const otherAreas = [
+    { title: "Westminster", href: "/service-areas/westminster" },
+    { title: "Camden", href: "/service-areas/camden" },
+    { title: "Islington", href: "/service-areas/islington" },
     { title: "Central London", href: "/areas/central-london" },
     { title: "West London", href: "/areas/west-london" },
-    { title: "North London", href: "/areas/north-london" },
     { title: "South London", href: "/areas/south-london" },
-    { title: "East London", href: "/areas/east-london" },
-    { title: "Greater London", href: "/areas/greater-london" },
     { title: "Home Counties", href: "/areas/home-counties" },
-  ];
-
-  const nearbyLocations = [
-    { title: "Listed Kensington", href: "/locations/listed-kensington" },
-    { title: "Chelsea Draught Proofing", href: "/locations/chelsea-draught-proofing" },
-    { title: "Notting Hill Security", href: "/locations/notting-hill-security" },
-    { title: "Georgian Belgravia", href: "/locations/georgian-belgravia" },
-    { title: "Conservation Richmond", href: "/locations/conservation-richmond" },
-    { title: "Edwardian Hampstead", href: "/locations/edwardian-hampstead" },
   ];
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Secondary Glazing Kensington & Chelsea | Heritage Window Specialists</title>
-        <meta 
-          name="description" 
-          content="Expert secondary glazing services for Kensington & Chelsea's listed buildings and conservation areas. Approved solutions for period properties. Free heritage surveys available."
-        />
-        <meta 
-          name="keywords" 
-          content="secondary glazing Kensington, Chelsea secondary glazing, RBKC glazing, listed building glazing Kensington, conservation area windows Chelsea, heritage glazing Kensington Chelsea"
-        />
-        <link rel="canonical" href="https://secondaryglazingspecialist.com/service-areas/kensington-chelsea" />
-      </Helmet>
+      <EnhancedSEO
+        title="Secondary Glazing Kensington & Chelsea | Listed Buildings & Conservation Areas"
+        description="Expert secondary glazing for listed buildings and conservation areas in Kensington, Chelsea, Knightsbridge, South Kensington, and Notting Hill. Free heritage property surveys."
+        canonicalPath="/service-areas/kensington-chelsea"
+        keywords={[
+          "secondary glazing Kensington",
+          "Chelsea secondary glazing",
+          "RBKC glazing",
+          "listed building glazing Kensington",
+          "conservation area windows Chelsea",
+          "heritage glazing Kensington Chelsea",
+          "Knightsbridge secondary glazing",
+          "Notting Hill glazing"
+        ]}
+      />
 
       <MainNav />
 
@@ -90,16 +98,17 @@ const KensingtonChelsea = () => {
               <span className="font-medium">Royal Borough Service Area</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Secondary Glazing Kensington & Chelsea
+              Secondary Glazing Kensington & Chelsea | Heritage Property Specialists
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              The Royal Borough of Kensington and Chelsea is home to some of London's finest period 
-              architecture, with over 4,000 <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and 
-              more than 35 <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>. 
-              Our specialist secondary glazing solutions are designed specifically for these heritage 
-              properties, providing exceptional <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal insulation</Link> and 
-              <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline"> noise reduction</Link> without 
-              compromising their historic character.
+              The Royal Borough of Kensington and Chelsea is home to some of London's most prestigious{" "}
+              <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and{" "}
+              <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>. 
+              With strict planning regulations protecting the borough's architectural heritage, secondary glazing offers 
+              the ideal solution for improving{" "}
+              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal efficiency</Link> and{" "}
+              <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link> without 
+              compromising the character of period properties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
@@ -152,145 +161,286 @@ const KensingtonChelsea = () => {
             {/* Main Content Column */}
             <div className="lg:col-span-2 space-y-12">
               
-              {/* Why Kensington & Chelsea */}
+              {/* Introduction */}
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold mb-6">Secondary Glazing Experts for Kensington & Chelsea</h2>
+                <h2 className="text-3xl font-bold mb-6">Expert Secondary Glazing Services in Kensington & Chelsea</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Kensington and Chelsea presents unique challenges for homeowners seeking to improve their 
-                  property's energy efficiency and comfort. The borough contains the highest concentration of 
-                  Grade I and Grade II* <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> in 
-                  London, along with stringent <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area</Link> regulations 
-                  that prohibit external window alterations.
+                  Secondary Glazing Specialist provides expert <strong>secondary glazing services throughout Kensington & Chelsea</strong>, 
+                  including Kensington, Chelsea, Knightsbridge, South Kensington, Notting Hill, Holland Park, Earls Court, and surrounding areas. 
+                  Our specialist team has extensive experience working with the borough's planning department and conservation officers to 
+                  deliver sympathetic solutions that meet strict heritage requirements.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our secondary glazing solutions are the ideal answer to these restrictions. Installed internally 
-                  behind your existing <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>, 
-                  <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline"> Georgian</Link>, or 
-                  <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline"> Edwardian windows</Link>, 
-                  secondary glazing is completely invisible from the street. This means no planning permission is 
-                  typically required, even in the most strictly protected areas.
+                  Whether you own a{" "}
+                  <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian townhouse</Link> in Chelsea, a{" "}
+                  <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian villa</Link> in Kensington, or a 
+                  period property in one of the borough's many conservation areas, we provide bespoke{" "}
+                  <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">secondary glazing solutions</Link> that 
+                  preserve architectural character while reducing heat loss by up to 75%.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Whether you own a period townhouse in Chelsea, a mansion flat in South Kensington, or a 
-                  <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline"> traditional sash-windowed</Link> property 
-                  in Holland Park, we have the expertise to deliver a bespoke solution that meets both your 
-                  comfort requirements and the borough's heritage standards. Our team regularly works with 
-                  RBKC conservation officers and understands the local planning requirements intimately.
-                </p>
+              </div>
+
+              {/* Areas We Serve */}
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Areas We Serve in Kensington & Chelsea</h2>
+                
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Kensington</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Kensington is renowned for its elegant Victorian and Edwardian properties, many of which are{" "}
+                        <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Grade II listed</Link>.
+                      </p>
+                      <ul className="space-y-1 text-sm">
+                        {kensingtonAreas.map((area, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <CheckCircle className="h-3 w-3 text-primary" />
+                            {area}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Chelsea</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Chelsea features some of London's most valuable heritage properties, with numerous{" "}
+                        <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>.
+                      </p>
+                      <ul className="space-y-1 text-sm">
+                        {chelseaAreas.map((area, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <CheckCircle className="h-3 w-3 text-primary" />
+                            {area}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Knightsbridge</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Knightsbridge features elegant period properties and high-profile addresses.
+                      </p>
+                      <ul className="space-y-1 text-sm">
+                        {knightsbridgeAreas.map((area, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <CheckCircle className="h-3 w-3 text-primary" />
+                            {area}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg">Notting Hill</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground mb-3">
+                        Notting Hill is famous for its{" "}
+                        <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian terraces</Link> and 
+                        strict conservation area regulations.
+                      </p>
+                      <ul className="space-y-1 text-sm">
+                        {nottingHillAreas.map((area, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <CheckCircle className="h-3 w-3 text-primary" />
+                            {area}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
 
               {/* Conservation Areas */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">Conservation Areas We Serve</h2>
-                <p className="text-muted-foreground mb-6">
-                  Kensington and Chelsea has over 35 designated conservation areas. We provide specialist 
-                  <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline"> conservation-approved secondary glazing</Link> across 
-                  all of them, including:
+                <h2 className="text-3xl font-bold mb-6">Conservation Areas in Kensington & Chelsea</h2>
+                <p className="text-muted-foreground mb-4">
+                  The Royal Borough of Kensington and Chelsea has <strong>over 80 conservation areas</strong> - more than any 
+                  other London borough. Major conservation areas include:
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-4">
                   {conservationAreas.map((area, index) => (
                     <div key={index} className="bg-muted/50 px-3 py-2 rounded text-sm">
                       {area}
                     </div>
                   ))}
                 </div>
+                <p className="text-muted-foreground">
+                  We have extensive experience working within these conservation areas and provide full planning guidance 
+                  for all secondary glazing installations.
+                </p>
               </div>
 
-              {/* Benefits Section */}
+              {/* Listed Buildings */}
               <div>
-                <h2 className="text-3xl font-bold mb-6">Benefits for Kensington & Chelsea Properties</h2>
+                <h2 className="text-3xl font-bold mb-6">Listed Buildings in Kensington & Chelsea</h2>
+                <p className="text-muted-foreground mb-4">
+                  The Royal Borough has <strong>over 4,000 listed buildings</strong>, including numerous Grade I and Grade II* properties. 
+                  Our team specializes in providing{" "}
+                  <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">secondary glazing solutions for listed buildings</Link>, 
+                  with a high success rate for Listed Building Consent applications.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  We have successfully completed secondary glazing installations on:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <strong>Grade I listed Georgian townhouses</strong>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <strong>Grade II* Victorian villas</strong>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <strong>Grade II Edwardian mansion blocks</strong>
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <CheckCircle className="h-4 w-4 text-primary" />
+                    <strong>Period properties in conservation areas</strong>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Why Secondary Glazing */}
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Why Secondary Glazing for Kensington & Chelsea Properties?</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <div className="flex items-center gap-3">
-                        <Thermometer className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-lg">
-                          <Link to="/thermal-insulation-secondary-glazing" className="hover:text-primary">Thermal Insulation</Link>
-                        </CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                      <Shield className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">Meets Strict Planning Requirements</h3>
                       <p className="text-sm text-muted-foreground">
-                        Reduce heat loss by up to 65% through your period windows. Essential for the large 
-                        bay windows and floor-to-ceiling sashes common in Kensington properties.
+                        Kensington & Chelsea has some of the strictest planning regulations in London. Secondary glazing 
+                        is installed internally without altering external appearance, typically not requiring planning permission.
                       </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <div className="flex items-center gap-3">
-                        <Volume2 className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-lg">
-                          <Link to="/noise-reduction-secondary-glazing" className="hover:text-primary">Noise Reduction</Link>
-                        </CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                      <Landmark className="h-6 w-6 text-green-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">Preserves Period Features</h3>
                       <p className="text-sm text-muted-foreground">
-                        Block up to 80% of traffic noise from busy roads like Kensington High Street, 
-                        King's Road, and Cromwell Road with our acoustic glazing options.
+                        Many properties feature original{" "}
+                        <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash windows</Link> and 
+                        decorative glazing. Secondary glazing preserves these while dramatically improving performance.
                       </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <div className="flex items-center gap-3">
-                        <Landmark className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-lg">
-                          <Link to="/listed-buildings-secondary-glazing" className="hover:text-primary">Heritage Preservation</Link>
-                        </CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
+                      <Volume2 className="h-6 w-6 text-purple-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        <Link to="/noise-reduction-secondary-glazing" className="hover:text-primary">Reduces Traffic Noise</Link>
+                      </h3>
                       <p className="text-sm text-muted-foreground">
-                        Preserve your original windows and the character of your listed building while 
-                        enjoying modern comfort. Fully reversible installation leaves no trace.
+                        Major roads like Brompton Road, Fulham Road, and Kings Road generate significant traffic noise. 
+                        Secondary glazing <strong>blocks up to 80%</strong> of external noise pollution.
                       </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <div className="flex items-center gap-3">
-                        <Shield className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-lg">
-                          <Link to="/specialized/security-glazing" className="hover:text-primary">Enhanced Security</Link>
-                        </CardTitle>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                      <ThermometerSun className="h-6 w-6 text-orange-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        <Link to="/thermal-insulation-secondary-glazing" className="hover:text-primary">Dramatically Lowers Energy Bills</Link>
+                      </h3>
                       <p className="text-sm text-muted-foreground">
-                        Add an extra layer of security to ground-floor and basement windows. Our 
-                        laminated glass options provide significant resistance to forced entry.
+                        Period properties often have high heating costs due to single glazing.{" "}
+                        <strong>Secondary glazing reduces heat loss by up to 75%</strong>, significantly lowering energy bills.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Our Approach */}
-              <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold mb-6">Our Kensington & Chelsea Service</h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  We have been providing secondary glazing solutions to properties in Kensington and Chelsea 
-                  for over 15 years. During this time, we have developed strong relationships with local 
-                  conservation officers and a deep understanding of what is required to gain approval for 
-                  installations in even the most sensitive heritage settings.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our process begins with a comprehensive survey of your property. We assess your existing 
-                  windows, whether they are <Link to="/residential/sash-windows" className="text-primary hover:underline">sash</Link>, 
-                  <Link to="/residential/casement-windows" className="text-primary hover:underline"> casement</Link>, 
-                  <Link to="/residential/bay-windows" className="text-primary hover:underline"> bay</Link>, or 
-                  <Link to="/residential/crittall-windows" className="text-primary hover:underline"> Crittall</Link>, and 
-                  recommend the most appropriate secondary glazing system. We provide detailed specifications 
-                  and, where required, support for any planning applications.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Installation is carried out by our trained heritage specialists with minimal disruption to 
-                  your home. Most rooms can be completed within a single day, and we always leave your property 
-                  clean and tidy. Explore our <Link to="/case-studies" className="text-primary hover:underline">case studies</Link> to 
-                  see examples of our work in similar properties, or read about the 
-                  <Link to="/benefits" className="text-primary hover:underline"> benefits of secondary glazing</Link>.
+              {/* Case Studies */}
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Case Studies: Kensington & Chelsea</h2>
+                <div className="space-y-6">
+                  <Card>
+                    <CardContent className="p-6">
+                      <h3 className="text-lg font-semibold mb-3">Grade II Listed Victorian Villa, South Kensington</h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        A five-bedroom Victorian villa in the Queens Gate Conservation Area required improved insulation 
+                        without replacing original windows. We installed secondary glazing throughout, achieving:
+                      </p>
+                      <ul className="grid grid-cols-2 gap-2">
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>72% reduction in heat loss</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>£850 annual energy saving</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>LBC approved</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>Original sash windows preserved</strong>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardContent className="p-6">
+                      <h3 className="text-lg font-semibold mb-3">Georgian Townhouse, Chelsea</h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        A Grade II* Georgian townhouse on Cheyne Walk required noise reduction from traffic while 
+                        preserving its historic character. Secondary glazing provided:
+                      </p>
+                      <ul className="grid grid-cols-2 gap-2">
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>78% reduction in traffic noise</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>No external alterations</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>Reversible installation</strong>
+                        </li>
+                        <li className="flex items-center gap-2 text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600" />
+                          <strong>Improved comfort throughout</strong>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+                <p className="text-muted-foreground mt-4">
+                  <Link to="/case-studies" className="text-primary hover:underline">View more case studies</Link>
                 </p>
               </div>
 
@@ -312,10 +462,11 @@ const KensingtonChelsea = () => {
 
               {/* CTA */}
               <div className="bg-primary text-primary-foreground rounded-lg p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Get Your Free Kensington & Chelsea Survey</h2>
+                <h2 className="text-2xl font-bold mb-4">Get Your Free Kensington & Chelsea Property Survey</h2>
                 <p className="mb-6 opacity-90">
-                  Our heritage specialists will visit your property, assess your windows, and provide 
-                  a detailed quote with no obligation.
+                  Contact us today for a free, no-obligation survey of your Kensington & Chelsea property. Our specialist 
+                  team understands the unique requirements of the Royal Borough and will provide expert guidance on 
+                  secondary glazing solutions that preserve your property's character.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" variant="secondary">
@@ -330,7 +481,6 @@ const KensingtonChelsea = () => {
 
             {/* Sidebar */}
             <div className="lg:col-span-1 space-y-8">
-              {/* Services */}
               <Card>
                 <CardHeader>
                   <CardTitle>Our Services</CardTitle>
@@ -352,49 +502,28 @@ const KensingtonChelsea = () => {
                 </CardContent>
               </Card>
 
-              {/* Other Areas */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Other Areas We Cover</CardTitle>
+                  <CardTitle>Other Areas We Serve</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {otherAreas.map((area, index) => (
                       <li key={index}>
-                        <Link 
-                          to={area.href}
-                          className="text-sm text-primary hover:underline"
-                        >
+                        <Link to={area.href} className="text-sm text-primary hover:underline">
                           {area.title}
                         </Link>
                       </li>
                     ))}
+                    <li>
+                      <Link to="/locations" className="text-sm text-primary hover:underline font-medium">
+                        View all 38 service areas
+                      </Link>
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
 
-              {/* Nearby Locations */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Nearby Locations</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {nearbyLocations.map((location, index) => (
-                      <li key={index}>
-                        <Link 
-                          to={location.href}
-                          className="text-sm text-primary hover:underline"
-                        >
-                          {location.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Quick Links */}
               <Card>
                 <CardHeader>
                   <CardTitle>Quick Links</CardTitle>
@@ -413,21 +542,16 @@ const KensingtonChelsea = () => {
                 </CardContent>
               </Card>
 
-              {/* Contact Card */}
               <Card className="bg-primary text-primary-foreground">
                 <CardHeader>
                   <CardTitle className="text-primary-foreground">Get In Touch</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-sm opacity-90">
-                    Ready to improve your Kensington or Chelsea property?
-                  </p>
-                  <div className="space-y-2">
-                    <a href="tel:02070601572" className="flex items-center gap-2 text-sm hover:underline">
-                      <Phone className="h-4 w-4" />
-                      020 7060 1572
-                    </a>
-                  </div>
+                  <p className="text-sm opacity-90">Ready to improve your Kensington or Chelsea property?</p>
+                  <a href="tel:02070601572" className="flex items-center gap-2 text-sm hover:underline">
+                    <Phone className="h-4 w-4" />
+                    020 7060 1572
+                  </a>
                   <Button asChild variant="secondary" className="w-full">
                     <Link to="/quote-request">Free Quote</Link>
                   </Button>
