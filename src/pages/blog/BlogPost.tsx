@@ -745,7 +745,7 @@ const blogPostsContent: Record<string, {
     date: "2024-12-15",
     readTime: "25 min read",
     category: "Heritage",
-    image: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
+    image: "/images/blog/listed-buildings-hero.webp",
     content: (
       <>
         <p className="lead">Owning a listed building in London is both a privilege and a responsibility. These architectural treasures tell the story of our city's rich heritage, but they also present unique challenges when it comes to maintaining comfort, energy efficiency, and protection from London's urban noise. If you're struggling with draughty windows, soaring energy bills, or intrusive street noise, secondary glazing offers the perfect solution – one that preserves your building's historic character while delivering modern performance standards.</p>
@@ -753,6 +753,12 @@ const blogPostsContent: Record<string, {
         <h2>Understanding Listed Building Classifications</h2>
         
         <p>London is home to over 18,000 listed buildings, each protected under strict heritage regulations. Understanding your building's classification is crucial before considering any window improvements.</p>
+        
+        <img 
+          src="/images/blog/listed-buildings-georgian.webp" 
+          alt="Georgian listed building facade in London with traditional sash windows" 
+          className="w-full rounded-lg my-8"
+        />
         
         <p><strong>Grade I</strong> buildings represent just 2.5% of all listed properties and are of exceptional national importance. Think of landmarks like the Houses of Parliament or St. Paul's Cathedral. These require the most careful approach to any modifications.</p>
         
@@ -837,6 +843,12 @@ const blogPostsContent: Record<string, {
         
         <p>Historic England's position is that secondary glazing represents best practice for improving the thermal performance of historic windows while preserving heritage value.</p>
         
+        <img 
+          src="/images/blog/listed-buildings-interior.webp" 
+          alt="Interior of a listed building showing elegant period windows with secondary glazing" 
+          className="w-full rounded-lg my-8"
+        />
+        
         <h2>Listed Building Consent: When It's Required vs. When It's Not</h2>
         
         <p>Understanding when Listed Building Consent is required can save months of time and substantial costs. The good news is that secondary glazing rarely requires consent.</p>
@@ -860,6 +872,12 @@ const blogPostsContent: Record<string, {
         <p><strong>The Application Process (if required):</strong> If your local planning authority determines that consent is needed, the process typically takes 8-13 weeks. You'll need detailed drawings showing the proposed installation, heritage impact assessment, and demonstration of the installation's reversibility.</p>
         
         <h2>Secondary Glazing Options for Heritage Properties</h2>
+        
+        <img 
+          src="/images/blog/listed-buildings-window-detail.webp" 
+          alt="Close-up detail of secondary glazing installed on a heritage sash window" 
+          className="w-full rounded-lg my-8"
+        />
         
         <p>Different listed buildings require different approaches. Here are the main options available:</p>
         
@@ -918,6 +936,12 @@ const blogPostsContent: Record<string, {
         <h2>Performance Benefits in Detail</h2>
         
         <p>Secondary glazing delivers measurable improvements across multiple performance criteria:</p>
+        
+        <img 
+          src="/images/blog/listed-buildings-before-after.webp" 
+          alt="Before and after comparison showing thermal performance improvement with secondary glazing on heritage windows" 
+          className="w-full rounded-lg my-8"
+        />
         
         <div className="overflow-x-auto my-8">
           <table className="w-full border-collapse border border-border">
