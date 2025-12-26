@@ -63,6 +63,7 @@
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.3",
     "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-prerender": "^1.0.8",
     "zod": "^3.23.8"
   },
   "devDependencies": {
