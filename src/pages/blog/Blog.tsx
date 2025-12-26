@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "planning-permission-secondary-glazing-conservation-areas",
+    title: "Planning Permission for Secondary Glazing in Conservation Areas: Complete Guide 2026",
+    excerpt: "Everything you need to know about planning regulations, permitted development rights, and conservation officer requirements for secondary glazing installations.",
+    date: "2024-12-20",
+    readTime: "10 min read",
+    category: "Planning",
+    image: "/lovable-uploads/b22e5c1c-3ce0-40fa-a0e6-479e72daed1b.png"
+  },
+  {
     slug: "secondary-glazing-listed-buildings-guide",
     title: "Complete Guide to Secondary Glazing for Listed Buildings",
     excerpt: "Everything you need to know about installing secondary glazing in Grade I and Grade II listed properties while maintaining heritage compliance.",
