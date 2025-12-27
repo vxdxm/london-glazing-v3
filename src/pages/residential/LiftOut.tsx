@@ -1,154 +1,56 @@
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import GlassOptions from "@/components/residential/GlassOptions";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
-import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { LiftOutIcon } from "@/components/icons/GlazingTypeIcons";
+import LiftOutSEO from "@/components/residential/liftout/LiftOutSEO";
+import LiftOutHero from "@/components/residential/liftout/LiftOutHero";
+import WhatIsLiftOut from "@/components/residential/liftout/WhatIsLiftOut";
+import WhenToChoose from "@/components/residential/liftout/WhenToChoose";
+import CostComparison from "@/components/residential/liftout/CostComparison";
+import SeasonalStrategy from "@/components/residential/liftout/SeasonalStrategy";
+import PerformanceSection from "@/components/residential/liftout/PerformanceSection";
+import ComparisonTable from "@/components/residential/liftout/ComparisonTable";
+import IdealApplications from "@/components/residential/liftout/IdealApplications";
+import LiftOutInstallation from "@/components/residential/liftout/LiftOutInstallation";
+import TradeOffs from "@/components/residential/liftout/TradeOffs";
+import LiftOutCaseStudies from "@/components/residential/liftout/LiftOutCaseStudies";
+import LiftOutFAQ from "@/components/residential/liftout/LiftOutFAQ";
+import LiftOutCTA from "@/components/residential/liftout/LiftOutCTA";
+
 const LiftOut = () => {
-  // Define page metadata
-  const pageMetadata = {
-    title: "Lift Out Secondary Glazing | Easy Access Window Solutions",
-    description: "Our lift out secondary glazing provides maximum accessibility and ease of maintenance. Perfect for windows requiring regular cleaning with excellent thermal and acoustic insulation.",
-    canonicalPath: "/residential/lift-out",
-    imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
-    type: "article" as const,
-    publishedDate: "2026-01-01",
-    modifiedDate: "2026-01-01",
-    keywords: ["lift out secondary glazing", "removable window panels", "easy maintenance windows", "heritage window solutions", "listed building glazing", "thermal insulation"]
-  };
-  const pageSchema = createPageSchema(pageMetadata);
-  return <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>{pageMetadata.title}</title>
-        <meta name="description" content={pageMetadata.description} />
-        <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
-        <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
-        
-        {/* Open Graph tags */}
-        <meta property="og:title" content={pageMetadata.title} />
-        <meta property="og:description" content={pageMetadata.description} />
-        <meta property="og:type" content={pageMetadata.type} />
-        <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
-        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
-        
-        {/* Twitter Card tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageMetadata.title} />
-        <meta name="twitter:description" content={pageMetadata.description} />
-        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
-        
-        {/* JSON-LD structured data */}
-        <script type="application/ld+json">{pageSchema}</script>
-      </Helmet>
-      
+  return (
+    <div className="min-h-screen bg-background">
+      <LiftOutSEO />
       <MainNav />
+      
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <div className="flex items-center gap-4 mb-4">
-              <LiftOutIcon size={56} className="text-primary" />
-              <h1 className="text-4xl font-bold">Lift Out Secondary Glazing</h1>
-            </div>
-            <p className="text-gray-700 mb-6">
-              Our lift out secondary glazing solutions offer maximum accessibility and ease of maintenance.
-              Perfect for windows that require regular cleaning or seasonal ventilation adjustments. These panels 
-              are designed with a unique lift-out mechanism that allows for complete removal without tools, 
-              making them ideal for listed buildings and properties where permanent alterations aren't permitted. 
-              The panels provide excellent thermal insulation and noise reduction while maintaining the original 
-              character of your windows.
-            </p>
-          </div>
-          <div>
-            <img src="/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png" alt="Lift out window demonstration" className="rounded-lg w-full h-[300px] object-cover" />
-          </div>
+        
+        <div className="flex items-center gap-4 mb-8">
+          <LiftOutIcon size={56} className="text-primary" />
+          <h1 className="text-4xl font-bold">Lift-Out Secondary Glazing</h1>
         </div>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Lift-Out Secondary Glazing</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Standard Lift Out Panel</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <img alt="Standard lift out panel" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/719f028f-e513-4cb2-9357-e1b93c87fac7.jpg" />
-                  <p className="text-gray-700">
-                    Our classic lift out panel design provides full access for cleaning and maintenance.
-                    Features secure fixing mechanisms and weather-tight seals.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Easy removal and replacement</li>
-                    <li>Secure fixing points</li>
-                    <li>Weather-resistant seals</li>
-                    <li>Lightweight aluminum frame</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card>
-              <CardHeader>
-                <CardTitle>Multi Function System</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <img src="/lovable-uploads/208cca9c-8392-4aef-b6f1-4361c44644a6.png" alt="Quick release system demonstration" className="rounded-lg w-full h-[200px] object-cover mb-4" />
-                  <p className="text-gray-700">
-                    Advanced quick-release mechanism for effortless panel removal.
-                    Perfect for frequent access requirements.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>One-touch release mechanism</li>
-                    <li>Enhanced safety features</li>
-                    <li>Tool-free operation</li>
-                    <li>Ideal for high-level windows</li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Technical Specifications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Frame Construction</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li>Aluminum alloy frame construction</li>
-                  <li>Powder-coated finish options</li>
-                  <li>Multiple color choices available</li>
-                  <li>Thermal break technology</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Security Features</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li>Anti-lift mechanisms</li>
-                  <li>Reinforced corner joints</li>
-                  <li>Tamper-resistant fixings</li>
-                  <li>Optional security glass</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        <GlassOptions />
+        
+        <article className="prose lg:prose-xl max-w-none prose-headings:font-bold prose-p:text-foreground/80">
+          <LiftOutHero />
+          <WhatIsLiftOut />
+          <WhenToChoose />
+          <CostComparison />
+          <SeasonalStrategy />
+          <PerformanceSection />
+          <ComparisonTable />
+          <IdealApplications />
+          <LiftOutInstallation />
+          <TradeOffs />
+          <LiftOutCaseStudies />
+          <LiftOutFAQ />
+          <LiftOutCTA />
+        </article>
       </div>
+      
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default LiftOut;
