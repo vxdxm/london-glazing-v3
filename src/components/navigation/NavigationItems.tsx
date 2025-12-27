@@ -36,6 +36,7 @@ export const glazingOptions: GlazingSection[] = [
       { title: "Bay Windows", href: "/residential/bay-windows", description: "Beautiful bay window installations.", icon: HingedPanelIcon },
       { title: "Horizontal Sliding", href: "/residential/horizontal-sliding", description: "Smooth-operating horizontal sliding solutions.", icon: HorizontalSlidingIcon },
       { title: "Lift Out", href: "/residential/lift-out", description: "Removable panels for easy maintenance.", icon: LiftOutIcon },
+      { title: "Fixed Secondary Glazing", href: "/residential/fixed-secondary-glazing", description: "Maximum performance permanent glazing solutions.", icon: FixedPanelIcon },
       { title: "Combination Units", href: "/residential/combination", description: "Versatile mixed-style window solutions.", icon: TiltTurnIcon },
       { title: "Energy Performance", href: "/residential/energy-performance", description: "Maximize home energy efficiency with secondary glazing.", icon: MagneticIcon },
       { title: "Modern Solutions", href: "/residential/modern-solutions", description: "Contemporary window design and functionality.", icon: HorizontalSlidingIcon },
