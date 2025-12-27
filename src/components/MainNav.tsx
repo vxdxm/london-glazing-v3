@@ -14,7 +14,6 @@ import { glazingOptions } from "./navigation/NavigationItems";
 import { useNavigation } from "./navigation/useNavigation";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Phone } from "lucide-react";
-import { SearchFunctionality } from "@/components/seo/SearchFunctionality";
 
 export function MainNav() {
   const {
@@ -44,9 +43,6 @@ export function MainNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto max-h-screen pt-10">
         <nav className="flex flex-col gap-4 pb-20">
-          <div className="px-4 pb-4 border-b">
-            <SearchFunctionality autoFocus />
-          </div>
           <MobileNavItem to="/">Home</MobileNavItem>
           {glazingOptions.map((section) => (
             <div key={section.title} className="space-y-3">
@@ -184,10 +180,6 @@ export function MainNav() {
       </NavigationMenu>
       
       <div className="flex items-center space-x-2">
-        <div className="hidden lg:block w-64">
-          <SearchFunctionality />
-        </div>
-        
         <Button 
           size="sm" 
           variant="outline" 
