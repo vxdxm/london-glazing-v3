@@ -1,14 +1,15 @@
 import React from "react";
-import { Shield, Thermometer, Volume2, Home } from "lucide-react";
+import { Thermometer, Volume2, Shield, Home } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BayHero = () => {
   return (
     <section className="mb-12">
       <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
         Transform your beautiful Victorian or Edwardian bay from a cold, draughty showcase into a warm, 
-        comfortable living space with professional secondary glazing. Whether you're battling soaring 
+        comfortable living space with professional secondary glazing. Maintain the character of original bay windows while improving performance - learn about <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">preserving Victorian windows</Link> and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian property glazing</Link>. Whether you're battling soaring 
         energy bills, street noise, or simply want to make your iconic bay window usable year-round, 
-        secondary glazing offers the perfect solution - preserving your period property's character 
+        secondary glazing offers the perfect solution - preserving your <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">period property's character</Link> 
         while delivering modern performance.
       </p>
       
