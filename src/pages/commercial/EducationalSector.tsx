@@ -11,6 +11,7 @@ import { InstallationProcess } from "@/components/commercial/education/Installat
 import { LondonChallenges } from "@/components/commercial/education/LondonChallenges";
 import { CaseStudies } from "@/components/commercial/education/CaseStudies";
 import { WhyChooseUs } from "@/components/commercial/education/WhyChooseUs";
+import { ServiceAreas } from "@/components/commercial/education/ServiceAreas";
 import { EducationFAQ } from "@/components/commercial/education/EducationFAQ";
 import { EducationCTA } from "@/components/commercial/education/EducationCTA";
 import { EducationSEO } from "@/components/commercial/education/EducationSEO";
@@ -32,6 +33,7 @@ const EducationalSector = () => {
         <LondonChallenges />
         <CaseStudies />
         <WhyChooseUs />
+        <ServiceAreas />
         <EducationFAQ />
         <EducationCTA />
       </main>
