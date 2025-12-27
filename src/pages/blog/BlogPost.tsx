@@ -474,6 +474,9 @@ const blogPostsContent: Record<string, {
         
         <p>Understanding the cost is just the first step. Every London property is unique, with specific challenges relating to heritage requirements, noise issues, and architectural features. Our free survey service ensures you receive accurate pricing tailored to your exact needs.</p>
         
+        <h3>Commercial Property Enquiries</h3>
+        <p>We also provide competitive secondary glazing solutions for commercial properties across London. Whether you manage <Link to="/commercial/office-buildings" className="text-primary hover:underline">office buildings</Link>, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels and restaurants</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools and universities</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">healthcare facilities</Link>, or <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link>, contact us for volume pricing and project consultations.</p>
+        
         <p><strong>Ready to transform your London property with secondary glazing?</strong></p>
         
         <p><strong>Call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> for your comprehensive FREE survey and detailed quotation. Our team understands London's unique property landscape and will provide transparent, competitive pricing with no hidden costs.</p>
@@ -730,6 +733,9 @@ const blogPostsContent: Record<string, {
         <h2>Getting Started: Your Next Steps</h2>
         
         <p>The key to successful secondary glazing installation in conservation areas is early consultation and professional guidance. While planning permission is usually unnecessary, understanding your property's specific status prevents delays and complications.</p>
+        
+        <h3>Commercial Properties in Conservation Areas</h3>
+        <p>Many London businesses operate from premises in conservation areas. We specialise in secondary glazing for <Link to="/commercial/office-buildings" className="text-primary hover:underline">period office conversions</Link>, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">boutique hotels and restaurants</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">heritage schools and colleges</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">high street retail properties</Link> requiring planning-compliant solutions.</p>
         
         <p><strong>Ready to explore secondary glazing for your heritage property?</strong> Our team specializes in conservation area and listed building installations across London. We provide free planning advice consultations and can guide you through any consent requirements specific to your property.</p>
         
@@ -1207,6 +1213,9 @@ const blogPostsContent: Record<string, {
         
         <p>Secondary glazing represents the ideal solution for London's listed building owners seeking to improve comfort, reduce energy costs, and protect their heritage assets. The combination of regulatory compliance, performance benefits, and heritage preservation makes it the preferred choice of conservation professionals and property owners alike.</p>
         
+        <h3>Listed Commercial Buildings</h3>
+        <p>Many of London's commercial properties occupy listed buildings. We provide specialist solutions for <Link to="/commercial/office-buildings" className="text-primary hover:underline">Grade II listed office buildings</Link>, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">heritage hotels and restaurants</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">Victorian and Georgian school buildings</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">listed healthcare facilities</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">protected retail premises</Link>.</p>
+        
         <p>If you're ready to transform your listed building's comfort and efficiency while preserving its historic character, the first step is a professional assessment. Our heritage specialists understand the unique requirements of Grade I, Grade II*, and Grade II properties across all London boroughs.</p>
         
         <p><strong>Get your free heritage property consultation today.</strong> We'll assess your windows, explain your options, and provide a detailed quotation tailored to your building's specific requirements and conservation considerations.</p>
@@ -1266,6 +1275,9 @@ const blogPostsContent: Record<string, {
         
         <h2>Real London Case Studies</h2>
         <p>We've helped hundreds of London residents escape noise pollution, from properties near Heathrow to homes on busy arterial roads in Central London.</p>
+        
+        <h3>Commercial Noise Solutions</h3>
+        <p>Noise reduction is equally important for businesses. We provide acoustic secondary glazing for <Link to="/commercial/office-buildings" className="text-primary hover:underline">open-plan offices</Link> near busy roads, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels requiring guest comfort</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools near flight paths</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">hospitals and clinics</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> in high-traffic locations.</p>
       </>
     )
   },
@@ -1316,6 +1328,9 @@ const blogPostsContent: Record<string, {
           <li>More even heating throughout rooms</li>
           <li>Reduced carbon footprint</li>
         </ul>
+        
+        <h3>Commercial Energy Savings</h3>
+        <p>Energy efficiency is critical for commercial buildings. We help <Link to="/commercial/office-buildings" className="text-primary hover:underline">office buildings</Link> reduce heating costs, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels maintain guest comfort</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools meet sustainability targets</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">healthcare facilities control patient environments</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> create comfortable shopping experiences.</p>
       </>
     )
   },

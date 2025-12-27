@@ -42,9 +42,19 @@ export const serviceAreaLinks: InternalLink[] = [
 export const commercialLinks: InternalLink[] = [
   { text: "commercial secondary glazing", href: "/commercial" },
   { text: "office buildings", href: "/commercial/office-buildings" },
+  { text: "retail spaces", href: "/commercial/retail-spaces" },
   { text: "hotels", href: "/commercial/hospitality-sector" },
   { text: "schools", href: "/commercial/educational-sector" },
   { text: "hospitals", href: "/commercial/healthcare-industry" },
+];
+
+// Commercial Related Links (for sidebar use)
+export const commercialRelatedLinks = [
+  { title: "Office Buildings", href: "/commercial/office-buildings", description: "Commercial office glazing" },
+  { title: "Educational Sector", href: "/commercial/educational-sector", description: "Schools & universities" },
+  { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Hotels & restaurants" },
+  { title: "Healthcare Industry", href: "/commercial/healthcare-industry", description: "Hospitals & clinics" },
+  { title: "Retail Spaces", href: "/commercial/retail-spaces", description: "Shops & showrooms" },
 ];
 
 // Resource Links

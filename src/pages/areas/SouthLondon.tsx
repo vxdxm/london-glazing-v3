@@ -20,6 +20,11 @@ const SouthLondon = () => {
     { title: "Sash Window Secondary Glazing", href: "/sash-window-secondary-glazing" },
     { title: "Noise Reduction Secondary Glazing", href: "/noise-reduction-secondary-glazing" },
     { title: "Thermal Insulation Secondary Glazing", href: "/thermal-insulation-secondary-glazing" },
+    { title: "Commercial Office Buildings", href: "/commercial/office-buildings" },
+    { title: "Hotels & Hospitality", href: "/commercial/hospitality-sector" },
+    { title: "Educational Institutions", href: "/commercial/educational-sector" },
+    { title: "Healthcare Facilities", href: "/commercial/healthcare-industry" },
+    { title: "Retail Spaces", href: "/commercial/retail-spaces" },
   ];
 
   return (
