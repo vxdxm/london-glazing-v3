@@ -1,4 +1,5 @@
 import { Thermometer, Volume2, Shield, Lock, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CasementBenefits = () => {
   const energyBenefits = [
@@ -9,7 +10,7 @@ const CasementBenefits = () => {
     "Even enhances modern double-glazed casements by adding a third thermal barrier",
     "Warmer rooms immediately - eliminates cold zones near windows",
     "Consistent comfortable temperatures throughout the day",
-    "Reduced condensation from warmer internal glass surfaces",
+    "Eliminates condensation problems from warmer internal glass surfaces",
     "Lower carbon footprint through significantly reduced heating energy demand",
   ];
 
@@ -61,7 +62,7 @@ const CasementBenefits = () => {
           Energy Efficiency & Dramatic Cost Savings
         </h3>
         <p className="text-muted-foreground mb-4">
-          Secondary glazing creates an insulating air gap that transforms casement window thermal performance:
+          <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Superior thermal performance</Link> creates an insulating air gap that transforms casement window thermal performance:
         </p>
         <div className="grid md:grid-cols-2 gap-3">
           {energyBenefits.map((benefit, index) => (
@@ -80,7 +81,7 @@ const CasementBenefits = () => {
           Noise Reduction & Acoustic Transformation
         </h3>
         <p className="text-muted-foreground mb-4">
-          The hinged gaps in casement windows are notorious for letting noise through:
+          <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Excellent acoustic insulation for urban properties</Link> - the hinged gaps in casement windows are notorious for letting noise through:
         </p>
         <div className="grid md:grid-cols-2 gap-3">
           {noiseBenefits.map((benefit, index) => (
@@ -123,7 +124,9 @@ const CasementBenefits = () => {
           <Lock className="h-5 w-5 text-purple-600" />
           Enhanced Security & Safety
         </h3>
-        <p className="text-muted-foreground mb-4">Additional security benefits include:</p>
+        <p className="text-muted-foreground mb-4">
+          <Link to="/benefits" className="text-primary hover:underline">Enhanced security features</Link> add protection to casement windows:
+        </p>
         <div className="space-y-3">
           {securityBenefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-2">

@@ -15,11 +15,11 @@ const CasementHero = () => {
     <section className="mb-16">
       <div className="bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/10 rounded-2xl p-8 md:p-12">
         <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8">
-          Transform your draughty, noisy casement windows into high-performance energy savers with secondary glazing. Whether you own a charming 1930s Art Deco property with original steel casements or a modern home with underperforming uPVC windows, secondary glazing delivers <strong>45-60% energy bill reductions</strong>, <strong>70-80% noise reduction</strong>, and preserves your original windows perfectly.
+          Transform your draughty, noisy casement windows into high-performance energy savers with secondary glazing. Ideal for preserving original casement windows in <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian properties</Link>. Whether you own a charming 1930s Art Deco property with original steel casements or a modern home with underperforming uPVC windows, secondary glazing delivers <strong>45-60% energy bill reductions</strong>, <strong>70-80% noise reduction</strong>, and preserves your original windows perfectly.
         </p>
 
         <p className="text-lg text-muted-foreground mb-8">
-          <strong>Trusted by London period property owners</strong> | Specialists in heritage and modern casement windows | Works with metal, timber, and uPVC casements | Full access to primary windows maintained
+          <strong>Trusted by London period property owners</strong> | Specialists in heritage and modern casement windows | Works with metal, timber, and uPVC casements | Full access to primary windows maintained. Perfect for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
