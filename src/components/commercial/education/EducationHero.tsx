@@ -63,9 +63,11 @@ export const EducationHero = () => {
           </div>
 
           <div className="relative">
-            <div className="w-full h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
-              <GraduationCap className="w-32 h-32 text-primary/40" />
-            </div>
+            <img 
+              src="/images/commercial/education-library.webp" 
+              alt="University library with secondary glazing and students studying" 
+              className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+            />
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border">
               <div className="text-3xl font-bold text-primary">25%</div>
               <div className="text-sm text-muted-foreground">Better Attainment</div>
