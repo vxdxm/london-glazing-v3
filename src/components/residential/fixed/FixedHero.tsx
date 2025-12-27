@@ -1,4 +1,5 @@
 import { FixedPanelIcon } from "@/components/icons/GlazingTypeIcons";
+import { Link } from "react-router-dom";
 
 export const FixedHero = () => {
   return (
@@ -9,7 +10,7 @@ export const FixedHero = () => {
       </div>
       
       <p className="text-lg text-muted-foreground mb-6">
-        Fixed secondary glazing offers London homeowners the ultimate combination of maximum thermal and acoustic performance at the lowest cost. Perfect for properties with never-opened windows, extreme noise environments, and budget-conscious homeowners seeking the best value, fixed units deliver superior results without the complexity of opening mechanisms.
+        Fixed secondary glazing offers London homeowners the ultimate combination of maximum thermal and acoustic performance at the lowest cost. Providing maximum performance for <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">preserving original Victorian</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian windows</Link>. Perfect for properties with never-opened windows, extreme noise environments, and budget-conscious homeowners seeking the best value. Ideal for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>, fixed units deliver superior results without the complexity of opening mechanisms.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
