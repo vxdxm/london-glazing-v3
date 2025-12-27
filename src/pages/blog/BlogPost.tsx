@@ -1280,8 +1280,17 @@ const blogPostsContent: Record<string, {
         <h2>Real London Case Studies</h2>
         <p>We've helped hundreds of London residents escape noise pollution, from properties near Heathrow to homes on busy arterial roads in <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>. See more on our <Link to="/case-studies" className="text-primary hover:underline">Case Studies page</Link>.</p>
         
+        <h3>Window Types for Noise Reduction</h3>
+        <p>Different secondary glazing systems offer varying acoustic performance. <Link to="/residential/fixed-secondary-glazing" className="text-primary hover:underline">Fixed panels</Link> provide the best noise reduction as they're completely sealed. <Link to="/residential/sash-windows" className="text-primary hover:underline">Vertical sliding systems</Link> suit period <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash windows</Link> while still offering excellent acoustic performance. For seasonal use, <Link to="/residential/lift-out" className="text-primary hover:underline">lift-out panels</Link> provide outstanding noise reduction when installed.</p>
+        
+        <h3>Heritage Properties and Noise</h3>
+        <p>Many of London's noisiest locations have beautiful heritage properties. Secondary glazing is ideal for <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian terraces</Link> on busy roads, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian townhouses</Link> in urban areas, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian homes</Link> near transport hubs. It's fully compatible with <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>.</p>
+        
         <h3>Commercial Noise Solutions</h3>
         <p>Noise reduction is equally important for businesses. We provide acoustic secondary glazing for <Link to="/commercial/office-buildings" className="text-primary hover:underline">open-plan offices</Link> near busy roads, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels requiring guest comfort</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools near flight paths</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">hospitals and clinics</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> in high-traffic locations.</p>
+
+        <h3>Service Areas for Noise Reduction</h3>
+        <p>We provide acoustic glazing solutions across <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>, <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link> (including Heathrow flight paths), <Link to="/areas/north-london" className="text-primary hover:underline">North London</Link>, <Link to="/areas/south-london" className="text-primary hover:underline">South London</Link>, <Link to="/areas/east-london" className="text-primary hover:underline">East London</Link>, and the <Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties</Link>. See our <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">cost guide</Link> for pricing information.</p>
       </>
     )
   },
@@ -1333,10 +1342,20 @@ const blogPostsContent: Record<string, {
           <li>Elimination of cold spots near windows</li>
           <li>More even heating throughout rooms</li>
           <li>Reduced carbon footprint</li>
+          <li>Enhanced <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link> as a bonus</li>
         </ul>
+        
+        <h3>Window Types for Maximum Thermal Performance</h3>
+        <p>Different secondary glazing systems offer varying thermal benefits. <Link to="/residential/fixed-secondary-glazing" className="text-primary hover:underline">Fixed panels</Link> provide the best thermal performance as they're completely sealed, while <Link to="/residential/lift-out" className="text-primary hover:underline">lift-out panels</Link> offer excellent insulation during winter months. <Link to="/residential/sash-windows" className="text-primary hover:underline">Vertical sliding systems</Link> suit period <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash windows</Link> while maintaining good thermal efficiency.</p>
+        
+        <h3>Heritage Property Thermal Upgrades</h3>
+        <p>Secondary glazing is particularly valuable for <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian properties</Link> where replacing original windows isn't an option. See our <Link to="/blog/secondary-glazing-vs-double-glazing" className="text-primary hover:underline">secondary glazing vs double glazing comparison</Link> for detailed performance data.</p>
         
         <h3>Commercial Energy Savings</h3>
         <p>Energy efficiency is critical for commercial buildings. We help <Link to="/commercial/office-buildings" className="text-primary hover:underline">office buildings</Link> reduce heating costs, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels maintain guest comfort</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools meet sustainability targets</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">healthcare facilities control patient environments</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> create comfortable shopping experiences.</p>
+
+        <h3>Service Areas</h3>
+        <p>We provide thermal efficiency solutions across <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>, <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link>, <Link to="/areas/north-london" className="text-primary hover:underline">North London</Link>, <Link to="/areas/south-london" className="text-primary hover:underline">South London</Link>, <Link to="/areas/east-london" className="text-primary hover:underline">East London</Link>, and the <Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties</Link>. View our <Link to="/case-studies" className="text-primary hover:underline">case studies</Link> for real energy saving results.</p>
       </>
     )
   },
@@ -2451,16 +2470,16 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/secondary-glazing-vs-double-glazing.webp",
     content: (
       <>
-        <p className="lead">If you own a Victorian terrace, Georgian townhouse, or any period property, you've likely faced this dilemma: how do you improve energy efficiency and reduce noise without compromising your home's historic character? The choice between secondary glazing and double glazing isn't just about performance — it's about preservation, planning permission, and practicality.</p>
+        <p className="lead">If you own a <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian terrace</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian townhouse</Link>, or any period property, you've likely faced this dilemma: how do you improve <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">energy efficiency</Link> and reduce <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise</Link> without compromising your home's historic character? The choice between <Link to="/residential" className="text-primary hover:underline">secondary glazing</Link> and double glazing isn't just about performance — it's about preservation, <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">planning permission</Link>, and practicality.</p>
         
-        <p><strong>For listed buildings and conservation areas, secondary glazing is almost always the superior choice.</strong> Here's why, backed by real data and expert insights.</p>
+        <p><strong>For <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>, secondary glazing is almost always the superior choice.</strong> Here's why, backed by real data and expert insights.</p>
         
         <h2>What is Secondary Glazing?</h2>
-        <p>Secondary glazing involves adding a second pane of glass to the interior side of your existing windows, creating an insulating air gap typically between 100-150mm. This system preserves your original windows completely while providing modern thermal and acoustic benefits.</p>
+        <p>Secondary glazing involves adding a second pane of glass to the interior side of your existing windows, creating an insulating air gap typically between 100-150mm. This system preserves your original windows completely while providing modern thermal and acoustic benefits. Options include <Link to="/residential/sash-windows" className="text-primary hover:underline">vertical sliding</Link> for sash windows, <Link to="/residential/horizontal-sliding" className="text-primary hover:underline">horizontal sliding</Link> for wide openings, <Link to="/residential/lift-out" className="text-primary hover:underline">lift-out panels</Link> for seasonal use, and <Link to="/residential/fixed-secondary-glazing" className="text-primary hover:underline">fixed panels</Link> for maximum performance.</p>
         <p>The key advantage? <strong>It's practically invisible from the street</strong>, maintaining your property's authentic appearance while delivering measurable performance improvements.</p>
         
         <h2>What is Double Glazing?</h2>
-        <p>Double glazing replaces your entire window with two panes of glass separated by a 12-20mm cavity, usually filled with argon gas. While highly effective for modern properties, it fundamentally alters the window's appearance and structure.</p>
+        <p>Double glazing replaces your entire window with two panes of glass separated by a 12-20mm cavity, usually filled with argon gas. While highly effective for modern properties, it fundamentally alters the window's appearance and structure — a significant issue for <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian</Link>, Victorian, and Georgian properties.</p>
         
         <h2>Head-to-Head Performance Comparison</h2>
         <div className="overflow-x-auto my-8">
@@ -2631,10 +2650,16 @@ const blogPostsContent: Record<string, {
           <li>Half the cost of replacement</li>
         </ul>
         
-        <p>The question isn't whether secondary glazing performs as well as double glazing — it's whether you can achieve double glazing legally and appropriately for your heritage property. In most cases, you can't.</p>
+        <p>The question isn't whether secondary glazing performs as well as double glazing — it's whether you can achieve double glazing legally and appropriately for your heritage property. In most cases, you can't. Learn more in our <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">planning permission guide</Link> or see our <Link to="/blog/secondary-glazing-listed-buildings-guide" className="text-primary hover:underline">listed buildings guide</Link>.</p>
         
         <h2>Ready to Upgrade Your Period Property?</h2>
-        <p>If you own a listed building or period property in London, secondary glazing offers the perfect solution for modern comfort without compromising historic integrity. Our heritage property specialists provide free consultations, planning guidance, and bespoke solutions for Victorian, Georgian, and Edwardian windows.</p>
+        <p>If you own a <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building</Link> or period property in London, secondary glazing offers the perfect solution for modern comfort without compromising historic integrity. Our heritage property specialists provide free consultations, planning guidance, and bespoke solutions for <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian</Link> windows.</p>
+
+        <h3>Commercial Property Comparison</h3>
+        <p>The same principles apply to commercial buildings. We help <Link to="/commercial/office-buildings" className="text-primary hover:underline">office buildings</Link>, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">healthcare facilities</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> upgrade their heritage windows without compromising protected status.</p>
+
+        <h3>Service Areas</h3>
+        <p>We serve properties across <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>, <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link>, <Link to="/areas/north-london" className="text-primary hover:underline">North London</Link>, <Link to="/areas/south-london" className="text-primary hover:underline">South London</Link>, <Link to="/areas/east-london" className="text-primary hover:underline">East London</Link>, <Link to="/areas/greater-london" className="text-primary hover:underline">Greater London</Link>, and the <Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties</Link>. See our <Link to="/case-studies" className="text-primary hover:underline">case studies</Link> for real examples of successful installations.</p>
       </>
     )
   }
