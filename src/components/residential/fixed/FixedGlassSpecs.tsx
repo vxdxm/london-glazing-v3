@@ -1,5 +1,5 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-
+import { Link } from "react-router-dom";
 export const FixedGlassSpecs = () => {
   const glassOptions = [
     {
@@ -38,7 +38,7 @@ export const FixedGlassSpecs = () => {
     <section className="mb-12">
       <h2 className="text-3xl font-bold mb-6">Glass Specifications Guide</h2>
       <p className="text-muted-foreground mb-8">
-        Choosing appropriate glass thickness depends on your specific noise environment and budget:
+        Choosing appropriate glass thickness depends on your specific noise environment and budget. Read our <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">complete cost guide</Link> for detailed pricing information:
       </p>
       
       <div className="grid md:grid-cols-2 gap-8">
