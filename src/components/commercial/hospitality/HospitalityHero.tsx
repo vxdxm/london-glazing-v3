@@ -2,6 +2,7 @@
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Link } from "react-router-dom";
 
 const HospitalityHero = () => {
   return (
@@ -10,11 +11,15 @@ const HospitalityHero = () => {
         <h1 className="text-4xl font-bold mb-6">Premium Secondary Glazing for London Hospitality Venues</h1>
         <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
           Transform your London hospitality venue with premium secondary glazing solutions that enhance guest satisfaction, 
-          reduce energy costs, and preserve historic character. Our specialized hospitality installations deliver up to 80% 
-          noise reduction, 50% energy savings, and significantly improved guest reviews – all with minimal operational disruption.
+          reduce energy costs, and preserve historic character. Our specialized hospitality installations deliver up to 80%{' '}
+          <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link>, 50%{' '}
+          <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">energy savings</Link>, and significantly improved guest reviews – all with minimal operational disruption.
         </p>
         <p className="text-base font-semibold text-primary max-w-3xl mx-auto">
-          Trusted by boutique hotels, fine dining restaurants, and heritage venues across Mayfair, Westminster, Bloomsbury, and beyond.
+          Trusted by boutique hotels, fine dining restaurants, and heritage venues across{' '}
+          <Link to="/locations/georgian-belgravia" className="hover:underline">Mayfair</Link>,{' '}
+          <Link to="/areas/central-london" className="hover:underline">Westminster</Link>,{' '}
+          <Link to="/areas/central-london" className="hover:underline">Bloomsbury</Link>, and beyond.
         </p>
       </section>
 

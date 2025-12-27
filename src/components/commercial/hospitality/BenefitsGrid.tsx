@@ -4,11 +4,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, Zap, TrendingUp } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Link } from "react-router-dom";
 
 const BenefitsGrid = () => {
   return (
     <div className="mb-16">
       <h2 className="text-2xl font-bold mb-6">Critical Business Benefits for Hotels & Restaurants</h2>
+      
+      <p className="text-muted-foreground mb-6">
+        Guest comfort depends on <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link> and{' '}
+        <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">temperature control</Link>. Our secondary glazing delivers both, 
+        creating the peaceful, comfortable environment your guests expect.
+      </p>
       
       <AspectRatio ratio={2 / 1} className="mb-8">
         <OptimizedImage 
@@ -26,7 +33,8 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Noise is the #1 complaint in hotel guest reviews. Our secondary glazing delivers 70-80% noise reduction, 
+              Noise is the #1 complaint in hotel guest reviews. Our secondary glazing delivers 70-80%{' '}
+              <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link>, 
               creating the peaceful environment guests expect for quality sleep and comfortable dining.
             </p>
             <p className="text-sm font-medium text-primary">
@@ -42,6 +50,7 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
+              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve thermal efficiency to reduce heating costs</Link>. 
               Hospitality venues typically save 30-50% on heating and cooling costs after installation. 
               For a 50-room hotel, this translates to £8,000-£15,000 annual savings.
             </p>
@@ -59,7 +68,7 @@ const BenefitsGrid = () => {
           <CardContent>
             <p className="text-muted-foreground mb-4">
               Better guest comfort leads to positive reviews, increased direct bookings, and higher guest loyalty. 
-              Properties often command premium rates after improvements.
+              Properties often command premium rates after improvements. <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read our complete guide to secondary glazing costs</Link>.
             </p>
             <p className="text-sm font-medium text-primary">
               Reduced complaints eliminate costly refunds and compensation claims

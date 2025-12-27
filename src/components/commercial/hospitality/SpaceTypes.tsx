@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bed, UtensilsCrossed, Users, Landmark } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Link } from "react-router-dom";
 
 const SpaceTypes = () => {
   const spaces = [
@@ -48,6 +49,12 @@ const SpaceTypes = () => {
   return (
     <div className="mb-16">
       <h2 className="text-2xl font-bold mb-6">Specialized Solutions by Space Type</h2>
+      
+      <p className="text-muted-foreground mb-6">
+        Our solutions work with <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash windows common in heritage hotels</Link>,{' '}
+        delivering superior <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic performance</Link> and{' '}
+        <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal efficiency</Link> across every space type.
+      </p>
       
       <AspectRatio ratio={2.5 / 1} className="mb-8">
         <OptimizedImage 

@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertTriangle, TrendingDown, Star, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WhyChooseSection = () => {
   const challenges = [
@@ -32,7 +33,9 @@ const WhyChooseSection = () => {
       <h2 className="text-2xl font-bold mb-4">Why London Hospitality Venues Choose Secondary Glazing</h2>
       <p className="text-muted-foreground mb-6">
         London's hospitality sector faces unique challenges that directly impact guest satisfaction and business performance. 
-        Poor thermal comfort leads to guest complaints and negative reviews, while heritage building restrictions limit window replacement options.
+        <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline"> Reduce noise pollution from traffic and street activity</Link> while 
+        addressing poor thermal comfort that leads to guest complaints. Many historic hotels and restaurants operate in{' '}
+        <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> where window replacement is not permitted.
       </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
