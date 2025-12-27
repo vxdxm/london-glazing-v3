@@ -57,6 +57,14 @@ export const SpaceTypes = () => {
           </p>
         </div>
 
+        <div className="mb-12">
+          <img 
+            src="/images/commercial/healthcare-care-home.webp" 
+            alt="Care home resident room with secondary glazing providing comfort and natural light" 
+            className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+          />
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {spaces.map((space, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
