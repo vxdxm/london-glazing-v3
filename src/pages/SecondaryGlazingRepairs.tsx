@@ -4,16 +4,19 @@ import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import RepairsHero from "@/components/repairs/RepairsHero";
-import SpiralBalanceSection from "@/components/repairs/SpiralBalanceSection";
-import CommonIssues from "@/components/repairs/CommonIssues";
-import AdditionalServices from "@/components/repairs/AdditionalServices";
+import CommonRepairIssues from "@/components/repairs/CommonRepairIssues";
+import WarningSignsSection from "@/components/repairs/WarningSignsSection";
+import RepairCostGuide from "@/components/repairs/RepairCostGuide";
+import RepairProcess from "@/components/repairs/RepairProcess";
+import BrandsWeRepair from "@/components/repairs/BrandsWeRepair";
+import EmergencyServices from "@/components/repairs/EmergencyServices";
+import HeritageRepairs from "@/components/repairs/HeritageRepairs";
+import RepairCaseStudies from "@/components/repairs/RepairCaseStudies";
+import MaintenancePrevention from "@/components/repairs/MaintenancePrevention";
 import RepairsFAQ from "@/components/repairs/RepairsFAQ";
 import RepairsCTA from "@/components/repairs/RepairsCTA";
 import RepairsSEO from "@/components/repairs/RepairsSEO";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const SecondaryGlazingRepairs = () => {
   useScrollToHash();
@@ -29,25 +32,49 @@ const SecondaryGlazingRepairs = () => {
         <main id="main-content">
           <RepairsHero />
 
-          <div id="spiral-balances" className="scroll-mt-24">
-            <SpiralBalanceSection />
+          <div id="common-issues" className="scroll-mt-24">
+            <CommonRepairIssues />
+          </div>
+
+          <div id="warning-signs" className="scroll-mt-24">
+            <WarningSignsSection />
           </div>
           
-          <section id="common-issues" aria-labelledby="common-issues-heading" className="scroll-mt-24">
-            <CommonIssues />
-          </section>
+          <div id="costs" className="scroll-mt-24">
+            <RepairCostGuide />
+          </div>
+
+          <div id="process" className="scroll-mt-24">
+            <RepairProcess />
+          </div>
+
+          <div id="brands" className="scroll-mt-24">
+            <BrandsWeRepair />
+          </div>
+
+          <div id="emergency" className="scroll-mt-24">
+            <EmergencyServices />
+          </div>
+
+          <div id="heritage" className="scroll-mt-24">
+            <HeritageRepairs />
+          </div>
+
+          <div id="case-studies" className="scroll-mt-24">
+            <RepairCaseStudies />
+          </div>
+
+          <div id="maintenance" className="scroll-mt-24">
+            <MaintenancePrevention />
+          </div>
           
-          <section id="additional-services" aria-labelledby="additional-services-heading" className="scroll-mt-24">
-            <AdditionalServices />
-          </section>
-          
-          <section id="faq" aria-labelledby="faq-heading" className="scroll-mt-24">
+          <div id="faq" className="scroll-mt-24">
             <RepairsFAQ />
-          </section>
+          </div>
           
-          <section id="contact" className="scroll-mt-24">
+          <div id="contact" className="scroll-mt-24">
             <RepairsCTA />
-          </section>
+          </div>
         </main>
       </div>
       
