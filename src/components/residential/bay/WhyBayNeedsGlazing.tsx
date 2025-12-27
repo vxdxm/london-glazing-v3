@@ -61,7 +61,7 @@ const WhyBayNeedsGlazing = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/8La7JhW86UP.webp" 
+        src="/images/bay-windows/bay-window-1.jpg" 
         alt="Victorian bay window requiring secondary glazing" 
         className="w-full rounded-lg mb-8 shadow-lg"
       />

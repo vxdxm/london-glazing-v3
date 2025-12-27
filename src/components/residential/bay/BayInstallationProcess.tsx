@@ -52,7 +52,7 @@ const BayInstallationProcess = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/45iujxjsDyz.webp" 
+        src="/images/bay-windows/bay-window-2.jpg" 
         alt="Professional bay window secondary glazing installation" 
         className="w-full rounded-lg shadow-lg"
       />
