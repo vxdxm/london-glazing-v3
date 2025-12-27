@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Thermometer, Volume2, Building2, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SashBenefits = () => {
   return (
@@ -17,7 +18,7 @@ const SashBenefits = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-muted-foreground">
-              Secondary glazing delivers proven energy performance improvements specifically valuable for period sash windows:
+              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Superior thermal insulation</Link> delivers proven energy performance improvements specifically valuable for period sash windows:
             </p>
             <ul className="space-y-3">
               <li className="text-foreground/80">
@@ -30,7 +31,7 @@ const SashBenefits = () => {
                 <strong>ROI payback period of 4-7 years</strong> makes this a sound financial investment that continues delivering value over its 20+ year lifespan.
               </li>
               <li className="text-foreground/80">
-                <strong>Immediate comfort improvements</strong> include warmer rooms, elimination of cold window zones, consistent temperatures, and reduced condensation.
+                <strong>Prevents condensation buildup</strong> common in sash windows, including warmer rooms, elimination of cold window zones, consistent temperatures, and reduced moisture issues.
               </li>
             </ul>
           </CardContent>
@@ -46,7 +47,7 @@ const SashBenefits = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-muted-foreground">
-              The acoustic benefits of secondary glazing are particularly transformative for London period properties:
+              The <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic benefits of secondary glazing</Link> are particularly transformative for London period properties:
             </p>
             <ul className="space-y-3">
               <li className="text-foreground/80">
@@ -76,10 +77,10 @@ const SashBenefits = () => {
             </p>
             <ul className="space-y-3">
               <li className="text-foreground/80">
-                <strong>Perfect for listed buildings</strong> (Grade I, II*, and II) as it preserves original window fabric completely while improving performance dramatically
+                <strong>Perfect for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link></strong> (Grade I, II*, and II) as it preserves original window fabric completely while improving performance dramatically
               </li>
               <li className="text-foreground/80">
-                <strong>Ideal for conservation areas</strong> across London boroughs where external alterations are restricted but internal improvements are typically permitted
+                <strong>Ideal for <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link></strong> across London boroughs where external alterations are restricted but internal improvements are typically permitted
               </li>
               <li className="text-foreground/80">
                 <strong>Conservation officer approved</strong> approach that maintains period character while delivering modern performance standards
@@ -104,7 +105,7 @@ const SashBenefits = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-muted-foreground">
-              Additional security benefits include:
+              <Link to="/benefits" className="text-primary hover:underline">Enhanced security options</Link> available with additional security benefits including:
             </p>
             <ul className="space-y-3">
               <li className="text-foreground/80">
