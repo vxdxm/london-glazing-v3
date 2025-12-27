@@ -26,7 +26,7 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/cost-guide-hero.webp",
     content: (
       <>
-        <p className="lead">If you're considering secondary glazing for your London property, the first question on your mind is likely: "How much will this cost me?" Whether you're dealing with traffic noise on Marylebone Road, trying to improve energy efficiency in a Victorian terrace, or need planning-compliant solutions for a listed building in Westminster, understanding secondary glazing costs is crucial for making an informed decision.</p>
+        <p className="lead">If you're considering <Link to="/residential" className="text-primary hover:underline">secondary glazing</Link> for your London property, the first question on your mind is likely: "How much will this cost me?" Whether you're dealing with traffic noise on Marylebone Road, trying to improve <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">energy efficiency</Link> in a <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian terrace</Link>, or need planning-compliant solutions for a <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building</Link> in Westminster, understanding secondary glazing costs is crucial for making an informed decision.</p>
         
         <h2>Quick Answer: Secondary Glazing Costs in London</h2>
         
@@ -103,17 +103,17 @@ const blogPostsContent: Record<string, {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-border p-3 font-medium">Victorian Sash Windows</td>
+                <td className="border border-border p-3 font-medium"><Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian Sash Windows</Link></td>
                 <td className="border border-border p-3">£450-£700</td>
-                <td className="border border-border p-3 text-sm">Most common in London, require vertical sliding or lift-out systems</td>
+                <td className="border border-border p-3 text-sm">Most common in London, require <Link to="/residential/sash-windows" className="text-primary hover:underline">vertical sliding</Link> or <Link to="/residential/lift-out" className="text-primary hover:underline">lift-out systems</Link></td>
               </tr>
               <tr className="bg-muted/50">
-                <td className="border border-border p-3 font-medium">Georgian Multi-Pane Sash</td>
+                <td className="border border-border p-3 font-medium"><Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian Multi-Pane Sash</Link></td>
                 <td className="border border-border p-3">£600-£900</td>
                 <td className="border border-border p-3 text-sm">Complex glazing bar patterns, heritage requirements</td>
               </tr>
               <tr>
-                <td className="border border-border p-3 font-medium">Casement Windows</td>
+                <td className="border border-border p-3 font-medium"><Link to="/residential/casement-windows" className="text-primary hover:underline">Casement Windows</Link></td>
                 <td className="border border-border p-3">£350-£500</td>
                 <td className="border border-border p-3 text-sm">Simpler installation, various opening options</td>
               </tr>
@@ -172,11 +172,11 @@ const blogPostsContent: Record<string, {
         <h3>Frame Types & Operation</h3>
         
         <ul>
-          <li><strong>Fixed Panels:</strong> Most economical — no opening mechanism, suitable where ventilation not required</li>
-          <li><strong>Horizontal Sliding:</strong> Standard pricing — most popular option, easy daily use</li>
-          <li><strong>Vertical Sliding:</strong> +10-15% cost premium — essential for sash windows, maintains period appearance</li>
+          <li><strong><Link to="/residential/fixed-secondary-glazing" className="text-primary hover:underline">Fixed Panels</Link>:</strong> Most economical — no opening mechanism, suitable where ventilation not required</li>
+          <li><strong><Link to="/residential/horizontal-sliding" className="text-primary hover:underline">Horizontal Sliding</Link>:</strong> Standard pricing — most popular option, easy daily use</li>
+          <li><strong><Link to="/residential/sash-windows" className="text-primary hover:underline">Vertical Sliding</Link>:</strong> +10-15% cost premium — essential for sash windows, maintains period appearance</li>
           <li><strong>Hinged Opening:</strong> +15-25% cost premium — full opening access, required for emergency egress</li>
-          <li><strong>Lift-Out Panels:</strong> +20-30% cost premium — seasonal removal option, popular for listed buildings</li>
+          <li><strong><Link to="/residential/lift-out" className="text-primary hover:underline">Lift-Out Panels</Link>:</strong> +20-30% cost premium — seasonal removal option, popular for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link></li>
         </ul>
         
         <h2>Installation Complexity Factors</h2>
@@ -186,7 +186,7 @@ const blogPostsContent: Record<string, {
         <ul>
           <li><strong>Ground Floor Installation:</strong> Standard pricing — easy access for materials and tools</li>
           <li><strong>Upper Floor Installation:</strong> +£50-£100 per window — ladder or scaffold access required</li>
-          <li><strong>Listed Building Requirements:</strong> +20-50% premium — specialist heritage expertise, reversible fixing methods</li>
+          <li><strong><Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Listed Building Requirements</Link>:</strong> +20-50% premium — specialist heritage expertise, reversible fixing methods</li>
         </ul>
         
         <h3>Location Within London</h3>
@@ -199,25 +199,25 @@ const blogPostsContent: Record<string, {
         
         <div className="grid md:grid-cols-2 gap-6 my-8">
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Central London (Zones 1-2)</h4>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link> (Zones 1-2)</h4>
             <p className="text-sm mb-2">Westminster, Kensington & Chelsea</p>
             <p className="font-semibold">Standard rates quoted above</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
             <h4 className="font-semibold text-lg mb-2">Inner London (Zones 3-4)</h4>
-            <p className="text-sm mb-2">Wandsworth, Hackney</p>
+            <p className="text-sm mb-2"><Link to="/areas/south-london" className="text-primary hover:underline">Wandsworth</Link>, <Link to="/areas/east-london" className="text-primary hover:underline">Hackney</Link></p>
             <p className="font-semibold text-primary">-5-10% discount</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Outer London (Zones 5-6)</h4>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/areas/greater-london" className="text-primary hover:underline">Outer London</Link> (Zones 5-6)</h4>
             <p className="text-sm mb-2">Croydon, Kingston</p>
             <p className="font-semibold text-primary">-10-15% discount</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Home Counties</h4>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties</Link></h4>
             <p className="text-sm mb-2">Surrey, Kent, Essex, Hertfordshire</p>
             <p className="font-semibold">Standard pricing</p>
           </div>
@@ -233,8 +233,8 @@ const blogPostsContent: Record<string, {
         
         <div className="space-y-6 my-8">
           <div className="bg-muted/50 p-6 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">2-Bedroom Victorian Conversion (8 windows)</h4>
-            <p className="text-sm text-muted-foreground mb-4">Top floor flat in Clapham, mix of sash and casement, 6.4mm acoustic (facing road)</p>
+            <h4 className="font-semibold text-lg mb-2">2-Bedroom <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian Conversion</Link> (8 windows)</h4>
+            <p className="text-sm text-muted-foreground mb-4">Top floor flat in <Link to="/areas/south-london" className="text-primary hover:underline">Clapham</Link>, mix of <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">sash</Link> and <Link to="/residential/casement-windows" className="text-primary hover:underline">casement</Link>, 6.4mm <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic</Link> (facing road)</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm">4 x sash windows: £2,200-£2,800</p>
@@ -247,8 +247,8 @@ const blogPostsContent: Record<string, {
           </div>
           
           <div className="bg-muted/50 p-6 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">3-Bedroom Georgian Terraced House (12 windows)</h4>
-            <p className="text-sm text-muted-foreground mb-4">Grade II listed in Bloomsbury, all Georgian sash multi-pane</p>
+            <h4 className="font-semibold text-lg mb-2">3-Bedroom <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian Terraced House</Link> (12 windows)</h4>
+            <p className="text-sm text-muted-foreground mb-4"><Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Grade II listed</Link> in <Link to="/locations/georgian-belgravia" className="text-primary hover:underline">Bloomsbury</Link>, all Georgian sash multi-pane</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm">8 x standard Georgian sash: £4,800-£6,400</p>
@@ -262,7 +262,7 @@ const blogPostsContent: Record<string, {
           
           <div className="bg-muted/50 p-6 rounded-lg">
             <h4 className="font-semibold text-lg mb-2">4-Bedroom Townhouse (18 windows)</h4>
-            <p className="text-sm text-muted-foreground mb-4">Conservation area in Marylebone, mixed Victorian/Georgian, high-spec acoustic</p>
+            <p className="text-sm text-muted-foreground mb-4"><Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">Conservation area</Link> in <Link to="/areas/central-london" className="text-primary hover:underline">Marylebone</Link>, mixed <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>/<Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, high-spec <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic</Link></p>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <p className="text-sm">Various sized sash windows: £8,400-£12,600</p>
@@ -492,15 +492,15 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/planning-permission-hero.webp",
     content: (
       <>
-        <p className="lead">If you're a homeowner in a London conservation area wondering whether you need planning permission for secondary glazing, you're not alone. This is one of the most common concerns we hear from property owners in Westminster, Kensington & Chelsea, Camden, and other heritage-rich boroughs.</p>
+        <p className="lead">If you're a homeowner in a London <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area</Link> wondering whether you need planning permission for <Link to="/residential" className="text-primary hover:underline">secondary glazing</Link>, you're not alone. This is one of the most common concerns we hear from property owners in <Link to="/areas/central-london" className="text-primary hover:underline">Westminster, Kensington & Chelsea, Camden</Link>, and other heritage-rich boroughs.</p>
         
         <p>The good news? <strong>Secondary glazing typically doesn't require planning permission in conservation areas</strong> because it's installed internally and doesn't alter the external appearance of your property. However, there are important exceptions and considerations you need to understand before proceeding.</p>
         
         <h2>Understanding Conservation Areas in London</h2>
         
-        <p>Conservation areas are designated to preserve the special architectural and historic character of particular neighborhoods. London has over 1,000 conservation areas, with Westminster alone containing 75+ designated zones including Belgravia, Mayfair, and Covent Garden.</p>
+        <p>Conservation areas are designated to preserve the special architectural and historic character of particular neighborhoods. London has over 1,000 conservation areas, with <Link to="/areas/central-london" className="text-primary hover:underline">Westminster</Link> alone containing 75+ designated zones including <Link to="/locations/georgian-belgravia" className="text-primary hover:underline">Belgravia</Link>, Mayfair, and Covent Garden.</p>
         
-        <p>Unlike listed building protection (which applies to individual properties), conservation area designation focuses on preserving the overall character and appearance of the streetscape. This means any external alterations that could affect the area's visual appeal may require planning permission.</p>
+        <p>Unlike <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building protection</Link> (which applies to individual properties), conservation area designation focuses on preserving the overall character and appearance of the streetscape. This means any external alterations that could affect the area's visual appeal may require planning permission.</p>
         
         <figure className="my-8">
           <img 
@@ -532,7 +532,7 @@ const blogPostsContent: Record<string, {
           <li>Properties where internal alterations could impact the building's historic fabric</li>
         </ul>
         
-        <p><strong>Listed buildings within conservation areas</strong> face dual protection. While conservation area rules might not require permission, Listed Building Consent is typically needed due to the building's individual protected status.</p>
+        <p><strong><Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Listed buildings</Link> within conservation areas</strong> face dual protection. While conservation area rules might not require permission, Listed Building Consent is typically needed due to the building's individual protected status.</p>
         
         <h2>Article 4 Directions Explained</h2>
         
@@ -604,15 +604,15 @@ const blogPostsContent: Record<string, {
         
         <div className="space-y-4 my-6">
           <div className="border-l-4 border-primary pl-4">
-            <p><strong>Westminster:</strong> With 11,000+ listed buildings and extensive conservation areas, pre-consultation is especially important. Areas like Belgravia and St. James's have strict heritage protection.</p>
+            <p><strong><Link to="/areas/central-london" className="text-primary hover:underline">Westminster</Link>:</strong> With 11,000+ <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and extensive <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>, pre-consultation is especially important. Areas like <Link to="/locations/georgian-belgravia" className="text-primary hover:underline">Belgravia</Link> and St. James's have strict heritage protection.</p>
           </div>
           
           <div className="border-l-4 border-primary pl-4">
-            <p><strong>Kensington & Chelsea:</strong> The borough's 70+ conservation areas include South Kensington and Knightsbridge. Many properties face dual listed building and conservation area protection.</p>
+            <p><strong><Link to="/areas/west-london" className="text-primary hover:underline">Kensington & Chelsea</Link>:</strong> The borough's 70+ conservation areas include <Link to="/locations/listed-kensington" className="text-primary hover:underline">South Kensington</Link> and Knightsbridge. Many properties face dual listed building and conservation area protection.</p>
           </div>
           
           <div className="border-l-4 border-primary pl-4">
-            <p><strong>Camden:</strong> Areas like Bloomsbury and Regent's Park have specific conservation policies that may affect installation methods.</p>
+            <p><strong><Link to="/areas/north-london" className="text-primary hover:underline">Camden</Link>:</strong> Areas like Bloomsbury and Regent's Park have specific conservation policies that may affect installation methods. Many <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link> and <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> properties.</p>
           </div>
         </div>
         
@@ -636,27 +636,31 @@ const blogPostsContent: Record<string, {
         <ul>
           <li><strong>Preserves original windows</strong> — No damage to historic fabric</li>
           <li><strong>Fully reversible</strong> — Can be removed without trace</li>
-          <li><strong>Improves building performance</strong> — Supports conservation through better thermal efficiency</li>
+          <li><strong>Improves building performance</strong> — Supports conservation through better <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal efficiency</Link></li>
           <li><strong>Reduces condensation</strong> — Protects original window frames from moisture damage</li>
           <li><strong>Heritage-sensitive approach</strong> — Maintains authentic external appearance</li>
         </ul>
         
+        <p>For more detailed information on secondary glazing for listed properties, see our <Link to="/blog/secondary-glazing-listed-buildings-guide" className="text-primary hover:underline">Complete Guide to Secondary Glazing for Listed Buildings</Link>.</p>
+        
         <h2>Real Case Studies from London</h2>
+        
+        <p>For more real-world examples, visit our <Link to="/case-studies" className="text-primary hover:underline">Case Studies page</Link>.</p>
         
         <div className="space-y-6 my-8">
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold mb-2">Westminster Georgian Townhouse</h4>
-            <p>A Grade II listed Georgian property in Pimlico required Listed Building Consent for acoustic secondary glazing. The application emphasized the reversible nature and heritage benefits, receiving approval within 10 weeks.</p>
+            <h4 className="font-semibold mb-2">Westminster <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> Townhouse</h4>
+            <p>A <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Grade II listed Georgian property</Link> in Pimlico required Listed Building Consent for <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic secondary glazing</Link>. The application emphasized the reversible nature and heritage benefits, receiving approval within 10 weeks.</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold mb-2">Kensington Conservation Area Flat</h4>
+            <h4 className="font-semibold mb-2"><Link to="/locations/listed-kensington" className="text-primary hover:underline">Kensington</Link> Conservation Area Flat</h4>
             <p>A mansion flat in South Kensington Conservation Area installed secondary glazing without planning permission, as the work didn't affect the principal elevation and remained entirely internal.</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold mb-2">Camden Victorian Terrace</h4>
-            <p>A Victorian terrace in Bloomsbury Conservation Area required consultation due to Article 4 Direction restrictions, but secondary glazing was approved as it didn't trigger the specific limitations.</p>
+            <h4 className="font-semibold mb-2">Camden <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link> Terrace</h4>
+            <p>A <Link to="/locations/victorian-islington" className="text-primary hover:underline">Victorian terrace</Link> in Bloomsbury Conservation Area required consultation due to Article 4 Direction restrictions, but secondary glazing was approved as it didn't trigger the specific limitations.</p>
           </div>
         </div>
         
@@ -694,8 +698,8 @@ const blogPostsContent: Record<string, {
         
         <p>Choose installers experienced with heritage properties who understand:</p>
         <ul>
-          <li>Conservation area requirements</li>
-          <li>Listed building sensitivities</li>
+          <li><Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">Conservation area</Link> requirements</li>
+          <li><Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Listed building</Link> sensitivities</li>
           <li>Appropriate materials and techniques</li>
           <li>Reversibility requirements</li>
           <li>Local authority expectations</li>
@@ -1235,7 +1239,7 @@ const blogPostsContent: Record<string, {
     image: "/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png",
     content: (
       <>
-        <p className="lead">Living in London means dealing with constant noise from traffic, construction, and urban life. Secondary glazing offers an effective solution to create a peaceful sanctuary in your home.</p>
+        <p className="lead">Living in London means dealing with constant noise from traffic, construction, and urban life. <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Secondary glazing</Link> offers an effective solution to create a peaceful sanctuary in your home.</p>
         
         <h2>Understanding Sound and Decibels</h2>
         <p>Sound is measured in decibels (dB). Here's what different levels mean:</p>
@@ -1247,12 +1251,12 @@ const blogPostsContent: Record<string, {
         </ul>
         
         <h2>How Secondary Glazing Reduces Noise</h2>
-        <p>Secondary glazing works by creating an air gap between the original window and the secondary unit. This gap acts as a buffer zone that significantly reduces sound transmission.</p>
+        <p><Link to="/residential" className="text-primary hover:underline">Secondary glazing</Link> works by creating an air gap between the original window and the secondary unit. This gap acts as a buffer zone that significantly reduces sound transmission.</p>
         <p>The key factors affecting noise reduction are:</p>
         <ul>
           <li><strong>Air gap size:</strong> Larger gaps (100mm+) provide better acoustic performance</li>
           <li><strong>Glass thickness:</strong> Thicker or laminated glass absorbs more sound energy</li>
-          <li><strong>Frame sealing:</strong> Airtight seals prevent sound leakage</li>
+          <li><strong>Frame sealing:</strong> Airtight seals prevent sound leakage - <Link to="/residential/fixed-secondary-glazing" className="text-primary hover:underline">fixed panels</Link> offer the best seal</li>
           <li><strong>Glass mass:</strong> Heavier glass blocks more sound</li>
         </ul>
         
@@ -1267,14 +1271,14 @@ const blogPostsContent: Record<string, {
         <h2>Best Solutions for Different Noise Sources</h2>
         <p>Different noise problems require different solutions:</p>
         <ul>
-          <li><strong>Road traffic:</strong> 10mm+ laminated acoustic glass</li>
-          <li><strong>Aircraft noise:</strong> Maximum air gap with heavy glass</li>
-          <li><strong>Railway noise:</strong> Laminated glass with vibration-dampening seals</li>
-          <li><strong>Nightlife/bars:</strong> Triple-layer acoustic glazing</li>
+          <li><strong>Road traffic:</strong> 10mm+ laminated acoustic glass - see <Link to="/locations/clapham-busy-roads" className="text-primary hover:underline">busy roads solutions</Link></li>
+          <li><strong>Aircraft noise:</strong> Maximum air gap with heavy glass - see <Link to="/locations/heathrow-aircraft" className="text-primary hover:underline">Heathrow flight path solutions</Link></li>
+          <li><strong>Railway noise:</strong> Laminated glass with vibration-dampening seals - see <Link to="/locations/kings-cross-train-noise" className="text-primary hover:underline">train noise solutions</Link></li>
+          <li><strong>Nightlife/bars:</strong> Triple-layer acoustic glazing - see <Link to="/locations/shoreditch-urban-noise" className="text-primary hover:underline">urban noise solutions</Link></li>
         </ul>
         
         <h2>Real London Case Studies</h2>
-        <p>We've helped hundreds of London residents escape noise pollution, from properties near Heathrow to homes on busy arterial roads in Central London.</p>
+        <p>We've helped hundreds of London residents escape noise pollution, from properties near Heathrow to homes on busy arterial roads in <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>. See more on our <Link to="/case-studies" className="text-primary hover:underline">Case Studies page</Link>.</p>
         
         <h3>Commercial Noise Solutions</h3>
         <p>Noise reduction is equally important for businesses. We provide acoustic secondary glazing for <Link to="/commercial/office-buildings" className="text-primary hover:underline">open-plan offices</Link> near busy roads, <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels requiring guest comfort</Link>, <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools near flight paths</Link>, <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">hospitals and clinics</Link>, and <Link to="/commercial/retail-spaces" className="text-primary hover:underline">retail spaces</Link> in high-traffic locations.</p>
@@ -1290,10 +1294,10 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/thermal-efficiency-hero.webp",
     content: (
       <>
-        <p className="lead">With rising energy costs, improving your home's thermal efficiency has never been more important. Secondary glazing offers significant energy savings while preserving your original windows.</p>
+        <p className="lead">With rising energy costs, improving your home's <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal efficiency</Link> has never been more important. <Link to="/residential" className="text-primary hover:underline">Secondary glazing</Link> offers significant energy savings while preserving your original windows.</p>
         
         <h2>Understanding Heat Loss Through Windows</h2>
-        <p>Windows are responsible for approximately 20-30% of heat loss in a typical home. Single-glazed windows, common in period properties, are particularly inefficient.</p>
+        <p>Windows are responsible for approximately 20-30% of heat loss in a typical home. Single-glazed windows, common in <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link> and <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> period properties, are particularly inefficient.</p>
         
         <h2>How Secondary Glazing Improves Thermal Performance</h2>
         <p>Secondary glazing creates a trapped air layer that acts as insulation. This layer:</p>
@@ -1316,9 +1320,11 @@ const blogPostsContent: Record<string, {
         <p>Our customers typically see:</p>
         <ul>
           <li>10-15% reduction in annual heating bills</li>
-          <li>Payback period of 5-7 years</li>
+          <li>Payback period of 5-7 years - see our <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">cost guide</Link></li>
           <li>Improved EPC ratings for property sales/rentals</li>
         </ul>
+        
+        <p>For <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area properties</Link>, secondary glazing is often the only permitted thermal upgrade option.</p>
         
         <h2>Additional Benefits</h2>
         <p>Beyond thermal efficiency, you'll also experience:</p>
@@ -1343,9 +1349,9 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/conservation-hero.webp",
     content: (
       <>
-        <p className="lead">Living in a London conservation area comes with unique privileges and responsibilities. Your beautiful period property contributes to the capital's historic character, but it also means navigating specific regulations when it comes to window improvements. Whether you're dealing with draughty single-glazed windows, excessive noise, or rising energy bills, there are practical solutions that respect both planning requirements and your home's heritage.</p>
+        <p className="lead">Living in a London <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area</Link> comes with unique privileges and responsibilities. Your beautiful period property contributes to the capital's historic character, but it also means navigating specific regulations when it comes to window improvements. Whether you're dealing with draughty single-glazed windows, excessive <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise</Link>, or rising energy bills, there are practical solutions that respect both <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">planning requirements</Link> and your home's heritage.</p>
         
-        <p>This comprehensive guide covers everything you need to know about window solutions for conservation areas in 2026, from understanding planning permission requirements to discovering why secondary glazing has become the preferred choice for thousands of London homeowners.</p>
+        <p>This comprehensive guide covers everything you need to know about window solutions for conservation areas in 2026, from understanding planning permission requirements to discovering why <Link to="/residential" className="text-primary hover:underline">secondary glazing</Link> has become the preferred choice for thousands of London homeowners.</p>
         
         <h2>What Are Conservation Areas and Why Do They Matter?</h2>
         
@@ -1733,9 +1739,9 @@ const blogPostsContent: Record<string, {
     image: "/images/blog/sash-window-types.webp",
     content: (
       <>
-        <p className="lead">Sash windows are one of London's most iconic architectural features, gracing everything from Georgian terraces in Bloomsbury to Victorian mansions in Kensington. But while these beautiful windows define the character of period properties across the capital, they often come with significant drawbacks: draughts, noise, heat loss, and sky-high energy bills.</p>
+        <p className="lead"><Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">Sash windows</Link> are one of London's most iconic architectural features, gracing everything from <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian terraces</Link> in Bloomsbury to <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian mansions</Link> in Kensington. But while these beautiful windows define the character of period properties across the capital, they often come with significant drawbacks: draughts, noise, heat loss, and sky-high energy bills.</p>
         
-        <p>If you're living in a London period property with original sash windows, secondary glazing could be the perfect solution. It lets you keep the historic charm while dramatically improving comfort and energy efficiency – all without the planning headaches that come with window replacement in conservation areas.</p>
+        <p>If you're living in a London period property with original sash windows, <Link to="/residential" className="text-primary hover:underline">secondary glazing</Link> could be the perfect solution. It lets you keep the historic charm while dramatically improving comfort and energy efficiency – all without the planning headaches that come with window replacement in <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>.</p>
         
         <h2>Understanding London's Sash Windows</h2>
         
@@ -1743,18 +1749,18 @@ const blogPostsContent: Record<string, {
         
         <div className="space-y-6 my-8">
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Georgian Sash Windows (1714-1830)</h4>
-            <p>Georgian sash windows feature distinctive 6-over-6 or 12-over-12 pane configurations with thick glazing bars and robust timber frames. These windows are typically found in areas like Marylebone, Bloomsbury, and parts of Westminster. The frames are usually substantial, making them ideal candidates for most secondary glazing options.</p>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian Sash Windows</Link> (1714-1830)</h4>
+            <p>Georgian sash windows feature distinctive 6-over-6 or 12-over-12 pane configurations with thick glazing bars and robust timber frames. These windows are typically found in areas like <Link to="/areas/central-london" className="text-primary hover:underline">Marylebone, Bloomsbury, and Westminster</Link>. The frames are usually substantial, making them ideal candidates for most secondary glazing options.</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Victorian Box Sash Windows (1837-1901)</h4>
-            <p>Victorian sash windows evolved to include larger panes of glass with thinner glazing bars, often in 2-over-2 or 4-over-4 configurations. You'll find these throughout areas like Islington, Clapham, and Hampstead. Victorian sashes often feature decorative horns at the bottom rail and more sophisticated counterweight systems.</p>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian Box Sash Windows</Link> (1837-1901)</h4>
+            <p>Victorian sash windows evolved to include larger panes of glass with thinner glazing bars, often in 2-over-2 or 4-over-4 configurations. You'll find these throughout areas like <Link to="/locations/victorian-islington" className="text-primary hover:underline">Islington</Link>, <Link to="/areas/south-london" className="text-primary hover:underline">Clapham</Link>, and <Link to="/locations/edwardian-hampstead" className="text-primary hover:underline">Hampstead</Link>. Victorian sashes often feature decorative horns at the bottom rail and more sophisticated counterweight systems.</p>
           </div>
           
           <div className="bg-muted/30 p-5 rounded-lg">
-            <h4 className="font-semibold text-lg mb-2">Edwardian Sash Windows (1901-1914)</h4>
-            <p>Edwardian windows continued the Victorian trend toward larger glass areas but often incorporated Art Nouveau influences. These are common in areas like Dulwich, Ealing, and parts of North London developed in the early 1900s.</p>
+            <h4 className="font-semibold text-lg mb-2"><Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian Sash Windows</Link> (1901-1914)</h4>
+            <p>Edwardian windows continued the Victorian trend toward larger glass areas but often incorporated Art Nouveau influences. These are common in areas like Dulwich, Ealing, and parts of <Link to="/areas/north-london" className="text-primary hover:underline">North London</Link> developed in the early 1900s.</p>
           </div>
         </div>
         
@@ -1768,7 +1774,7 @@ const blogPostsContent: Record<string, {
         
         <p>London's building regulations and fire safety requirements from the 18th century onwards made sash windows the preferred choice for urban development. The ability to open the top and bottom sashes created excellent ventilation – crucial in densely populated areas. Additionally, the Building Act of 1774 mandated specific window designs for different classes of houses, cementing the sash window's place in London architecture.</p>
         
-        <p>Today, strict conservation area rules and listed building protections mean that millions of London homes still feature original or replica sash windows. While this preserves the city's historic character, it also means homeowners must work within these constraints when improving energy efficiency.</p>
+        <p>Today, strict <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area</Link> rules and <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building</Link> protections mean that millions of London homes still feature original or replica sash windows. While this preserves the city's historic character, it also means homeowners must work within these constraints when improving energy efficiency.</p>
         
         <h2>Common Problems with Original Sash Windows</h2>
         
@@ -1777,12 +1783,12 @@ const blogPostsContent: Record<string, {
         <div className="grid md:grid-cols-2 gap-6 my-8">
           <div className="border-l-4 border-destructive pl-4">
             <p><strong>Draughts and Air Leakage</strong></p>
-            <p className="text-sm text-muted-foreground">Original sash windows can lose up to 25% of your home's heat through gaps in the frame, sashes, and around the glazing. This is particularly problematic in London's damp climate.</p>
+            <p className="text-sm text-muted-foreground">Original sash windows can lose up to 25% of your home's heat through gaps in the frame, sashes, and around the glazing. Learn more about <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal insulation solutions</Link>.</p>
           </div>
           
           <div className="border-l-4 border-destructive pl-4">
             <p><strong>Noise Pollution</strong></p>
-            <p className="text-sm text-muted-foreground">London's urban environment means constant exposure to traffic noise, aircraft, sirens, and construction. Single-glazed sash windows offer virtually no acoustic protection, with noise levels often exceeding 65 decibels indoors.</p>
+            <p className="text-sm text-muted-foreground">London's urban environment means constant exposure to traffic noise, aircraft, sirens, and construction. See our <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction solutions</Link> for acoustic protection.</p>
           </div>
           
           <div className="border-l-4 border-destructive pl-4">
@@ -1792,7 +1798,7 @@ const blogPostsContent: Record<string, {
           
           <div className="border-l-4 border-destructive pl-4">
             <p><strong>Security Vulnerabilities</strong></p>
-            <p className="text-sm text-muted-foreground">Traditional sash windows with original catches and latches offer minimal security protection. The window design makes them relatively easy to force open from outside.</p>
+            <p className="text-sm text-muted-foreground">Traditional sash windows with original catches and latches offer minimal security protection. See our <Link to="/locations/notting-hill-security" className="text-primary hover:underline">security solutions</Link>.</p>
           </div>
           
           <div className="border-l-4 border-destructive pl-4">
@@ -1802,7 +1808,7 @@ const blogPostsContent: Record<string, {
           
           <div className="border-l-4 border-destructive pl-4">
             <p><strong>High Energy Costs</strong></p>
-            <p className="text-sm text-muted-foreground">With U-values typically around 5.0 W/m²K, original sash windows are major contributors to high heating bills. London homeowners often see energy bills 20-30% higher than properties with modern glazing.</p>
+            <p className="text-sm text-muted-foreground">With U-values typically around 5.0 W/m²K, original sash windows are major contributors to high heating bills. London homeowners often see energy bills 20-30% higher than properties with modern glazing. Read our <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">cost guide</Link>.</p>
           </div>
         </div>
         
@@ -1818,17 +1824,17 @@ const blogPostsContent: Record<string, {
           
           <div className="bg-primary/10 p-4 rounded-lg">
             <p><strong>No Planning Permission Required</strong></p>
-            <p className="text-sm">Because secondary glazing doesn't alter the external appearance of your property, it typically doesn't require planning permission, even in conservation areas or for listed buildings. This eliminates months of bureaucratic delays and potential refusals.</p>
+            <p className="text-sm">Because secondary glazing doesn't alter the external appearance of your property, it typically doesn't require planning permission, even in <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link> or for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link>. See our <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">planning permission guide</Link>.</p>
           </div>
           
           <div className="bg-primary/10 p-4 rounded-lg">
             <p><strong>Reversible Solution</strong></p>
-            <p className="text-sm">Unlike replacement windows, secondary glazing can be completely removed without damaging the original windows. This reversibility is often a requirement for listed building consent.</p>
+            <p className="text-sm">Unlike replacement windows, secondary glazing can be completely removed without damaging the original windows. This reversibility is often a requirement for listed building consent. Learn more with our <Link to="/residential/lift-out" className="text-primary hover:underline">lift-out panel systems</Link>.</p>
           </div>
           
           <div className="bg-primary/10 p-4 rounded-lg">
             <p><strong>Works with Existing Hardware</strong></p>
-            <p className="text-sm">Quality secondary glazing systems are designed to work around existing window furniture, sash cords, and pulleys, preserving the original operating mechanism of your windows.</p>
+            <p className="text-sm">Quality secondary glazing systems are designed to work around existing window furniture, sash cords, and pulleys, preserving the original operating mechanism of your windows. Check our <Link to="/case-studies" className="text-primary hover:underline">case studies</Link> for examples.</p>
           </div>
         </div>
         
