@@ -22,6 +22,7 @@ import OfficeBuildings from "./pages/commercial/OfficeBuildings";
 import HospitalitySector from "./pages/commercial/HospitalitySector";
 import HealthcareIndustry from "./pages/commercial/HealthcareIndustry";
 import EducationalSector from "./pages/commercial/EducationalSector";
+import RetailSpaces from "./pages/commercial/RetailSpaces";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQs";
@@ -156,6 +157,7 @@ const AppRoutes = () => {
         <Route path="/commercial/hospitality-sector" element={<HospitalitySector />} />
         <Route path="/commercial/healthcare-industry" element={<HealthcareIndustry />} />
         <Route path="/commercial/educational-sector" element={<EducationalSector />} />
+        <Route path="/commercial/retail-spaces" element={<RetailSpaces />} />
         <Route path="/commercial/listed-buildings" element={<ListedBuildings />} />
         <Route path="/specialized" element={<SpecializedServices />} />
         <Route path="/specialized/acoustic-glazing" element={<AcousticGlazing />} />

@@ -156,6 +156,22 @@ const CommercialSolutions = () => {
               </CardContent>
             </Card>
           </Link>
+
+          <Link to="/commercial/retail-spaces">
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
+              <div className="w-full h-48 overflow-hidden">
+                <img alt="Modern retail storefront" src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" className="w-full h-full object-cover" />
+              </div>
+              <CardHeader>
+                <CardTitle>Retail Spaces & Shops Solutions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Enhance customer experience and protect merchandise with our retail glazing solutions offering noise reduction, security, and UV protection for shop displays.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
       </div>
       <Footer />
