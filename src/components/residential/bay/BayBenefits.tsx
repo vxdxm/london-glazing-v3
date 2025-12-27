@@ -65,7 +65,7 @@ const BayBenefits = () => {
       </div>
 
       <img 
-        src="/images/bay-windows/bay-window-4.jpg" 
+        src="/images/bay-windows/bay-window-5.jpg" 
         alt="Bay window with secondary glazing benefits" 
         className="w-full rounded-lg shadow-lg"
       />
