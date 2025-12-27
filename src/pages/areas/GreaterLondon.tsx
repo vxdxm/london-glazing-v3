@@ -27,6 +27,13 @@ const GreaterLondon = () => {
     { title: "Retail Spaces", href: "/commercial/retail-spaces" },
   ];
 
+  const specificLocations = [
+    { title: "Heathrow Aircraft Noise", href: "/locations/heathrow-aircraft" },
+    { title: "Chelsea Draught Proofing", href: "/locations/chelsea-draught-proofing" },
+    { title: "Clapham Busy Roads", href: "/locations/clapham-busy-roads" },
+    { title: "Kings Cross Train Noise", href: "/locations/kings-cross-train-noise" },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <ServiceAreaSchema
@@ -172,6 +179,22 @@ const GreaterLondon = () => {
                         className="flex items-center justify-between p-3 bg-background rounded hover:bg-primary/5 transition-colors group"
                       >
                         <span>{service.title}</span>
+                        <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-secondary p-6 rounded-lg">
+                  <h3 className="text-xl font-bold mb-4">Specific Locations</h3>
+                  <div className="space-y-2">
+                    {specificLocations.map((location) => (
+                      <Link 
+                        key={location.href}
+                        to={location.href}
+                        className="flex items-center justify-between p-3 bg-background rounded hover:bg-primary/5 transition-colors group"
+                      >
+                        <span>{location.title}</span>
                         <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
                       </Link>
                     ))}

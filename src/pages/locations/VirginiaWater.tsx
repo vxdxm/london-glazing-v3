@@ -32,12 +32,20 @@ const VirginiaWater = () => {
             <div>
               <p className="text-lg mb-4">
                 Virginia Water represents the pinnacle of Surrey living, home to the prestigious Wentworth Estate 
-                and some of the UK's most exclusive properties. Our secondary glazing solutions are tailored 
+                and some of the UK's most exclusive properties. Our <Link to="/residential" className="text-primary hover:underline">secondary glazing solutions</Link> are tailored 
                 to meet the exacting standards of these magnificent homes.
               </p>
-              <p className="mb-6">
-                From grand Georgian mansions to contemporary luxury builds, we provide bespoke installations 
+              <p className="mb-4">
+                From grand <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian mansions</Link> to contemporary luxury builds, we provide bespoke installations 
                 that enhance comfort, security, and energy efficiency while respecting architectural integrity.
+              </p>
+              <p className="mb-6 text-muted-foreground">
+                We serve the entire <Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties region</Link>, including nearby areas like{' '}
+                <Link to="/locations/weybridge" className="text-primary hover:underline">Weybridge</Link>,{' '}
+                <Link to="/locations/cobham" className="text-primary hover:underline">Cobham</Link>, and{' '}
+                <Link to="/locations/ascot" className="text-primary hover:underline">Ascot</Link>. 
+                For commercial properties, see our <Link to="/commercial/office-buildings" className="text-primary hover:underline">office</Link> and{' '}
+                <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hospitality</Link> solutions.
               </p>
               <Button asChild>
                 <Link to="/quote-request">Request Premium Quote</Link>

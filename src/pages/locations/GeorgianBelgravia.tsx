@@ -24,14 +24,21 @@ const GeorgianBelgravia = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-lg mb-4">
-                Belgravia's prestigious Georgian properties demand secondary glazing solutions that respect 
+                Belgravia's prestigious <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian properties</Link> demand secondary glazing solutions that respect 
                 their architectural heritage while addressing modern comfort requirements. Our expertise in 
                 Georgian window styles ensures unobtrusive installations that enhance performance.
               </p>
-              <p className="mb-6">
+              <p className="mb-4">
                 Specializing in the unique challenges of Georgian architecture, we provide bespoke solutions 
-                for noise reduction and heat retention while preserving the elegant proportions and classical 
+                for <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link> and heat retention while preserving the elegant proportions and classical 
                 details that define these magnificent properties.
+              </p>
+              <p className="mb-6 text-muted-foreground">
+                We also serve <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link> including nearby{' '}
+                <Link to="/locations/listed-kensington" className="text-primary hover:underline">Kensington</Link> and{' '}
+                <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link>. 
+                For <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels</Link> and{' '}
+                <Link to="/commercial/office-buildings" className="text-primary hover:underline">commercial offices</Link> in Belgravia, we offer tailored solutions.
               </p>
               <Button asChild>
                 <Link to="/quote">Get Georgian Quote</Link>

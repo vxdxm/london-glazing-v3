@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import LocationBreadcrumb from "@/components/locations/LocationBreadcrumb";
@@ -17,8 +18,15 @@ const HeathrowAircraft = () => {
         <div className="prose max-w-none mb-12">
           <p className="text-lg mb-6">
             Properties in Hounslow, Feltham, and surrounding areas face unique challenges from persistent aircraft noise. 
-            Our specialized acoustic secondary glazing systems are specifically designed to combat high-frequency jet 
+            Our specialized <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic secondary glazing</Link> systems are specifically designed to combat high-frequency jet 
             engine noise and provide substantial acoustic relief for homes under Heathrow's flight paths.
+          </p>
+          <p className="text-muted-foreground mb-6">
+            We serve the entire <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link> and{' '}
+            <Link to="/areas/greater-london" className="text-primary hover:underline">Greater London</Link> region. For{' '}
+            <Link to="/commercial/hospitality-sector" className="text-primary hover:underline">hotels</Link> and{' '}
+            <Link to="/commercial/office-buildings" className="text-primary hover:underline">commercial offices</Link> near Heathrow, we offer tailored solutions.
+            See our work in nearby <Link to="/locations/conservation-richmond" className="text-primary hover:underline">Richmond</Link>.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { MapPin } from "lucide-react";
+import { MapPin, Building2 } from "lucide-react";
 
 interface LocationLink {
   name: string;
@@ -74,11 +74,19 @@ const RelatedLocations: React.FC<RelatedLocationsProps> = ({ currentLocation, cu
   // Get nearby regions to show
   const nearbyRegions = allLocations.filter(r => r.region !== currentRegion).slice(0, 2);
 
+  const commercialSectors = [
+    { name: "Office Buildings", path: "/commercial/office-buildings" },
+    { name: "Hospitality Sector", path: "/commercial/hospitality-sector" },
+    { name: "Educational Sector", path: "/commercial/educational-sector" },
+    { name: "Healthcare Industry", path: "/commercial/healthcare-industry" },
+    { name: "Retail Spaces", path: "/commercial/retail-spaces" },
+  ];
+
   return (
     <section className="mb-12">
       <SectionHeading title="We Also Serve Nearby Areas" />
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Same region locations */}
         {sameRegionLocations.length > 0 && (
           <div className="bg-muted/50 rounded-lg p-6">
@@ -122,6 +130,26 @@ const RelatedLocations: React.FC<RelatedLocationsProps> = ({ currentLocation, cu
             </ul>
           </div>
         ))}
+
+        {/* Commercial sectors */}
+        <div className="bg-muted/50 rounded-lg p-6">
+          <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+            <Building2 className="h-5 w-5 text-primary" />
+            Commercial Services
+          </h3>
+          <ul className="space-y-2">
+            {commercialSectors.map((sector) => (
+              <li key={sector.path}>
+                <Link 
+                  to={sector.path}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {sector.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
