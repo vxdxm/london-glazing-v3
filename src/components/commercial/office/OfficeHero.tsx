@@ -3,6 +3,7 @@ import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OfficeHero = () => {
   return (
@@ -11,7 +12,7 @@ const OfficeHero = () => {
       
       <div className="prose max-w-none mb-8 text-muted-foreground">
         <p className="text-xl font-medium text-foreground">
-          Transform your London office building with professional secondary glazing solutions that deliver immediate results: 70-80% noise reduction, 30-50% energy savings, and minimal business disruption. Trusted by leading firms across the City, Canary Wharf, and West End for over two decades.
+          Transform your London office building with professional secondary glazing solutions that deliver immediate results: <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">70-80% noise reduction</Link>, <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">30-50% energy savings</Link>, and minimal business disruption. Trusted by leading firms across <Link to="/areas/central-london" className="text-primary hover:underline">the City, Canary Wharf, and West End</Link> for over two decades.
         </p>
       </div>
       
@@ -27,7 +28,11 @@ const OfficeHero = () => {
       <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
         <h2 className="text-2xl font-bold mb-4">Why London Office Buildings Choose Secondary Glazing</h2>
         <p className="text-muted-foreground mb-4">
-          Modern office environments face unprecedented challenges that directly impact productivity and operational costs. External noise from traffic, construction, and urban activity creates distracting workspaces, while poor thermal insulation leads to uncomfortable temperatures and soaring energy bills.
+          Modern office environments face unprecedented challenges that directly impact productivity and operational costs. External <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise from traffic</Link>, construction, and urban activity creates distracting workspaces, while poor <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal insulation</Link> leads to uncomfortable temperatures and soaring energy bills.
+        </p>
+        
+        <p className="text-muted-foreground mb-4">
+          Many London office buildings are in <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed structures or conservation areas</Link>, making secondary glazing the ideal solution as it preserves original windows while dramatically improving performance. Our solutions work in <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian commercial buildings</Link> across <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link>, from <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian offices in Mayfair</Link> to modern spaces in Canary Wharf.
         </p>
         
         <h3 className="font-semibold text-lg mb-3">The Business Impact is Real:</h3>

@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, CheckCircle } from "lucide-react";
+import { Building2, CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -15,7 +16,11 @@ const CaseStudies = () => {
         "£4,000 annual energy savings",
         "Improved client satisfaction",
         "Successful planning compliance"
-      ]
+      ],
+      links: {
+        listed: "/listed-buildings-secondary-glazing",
+        noise: "/noise-reduction-secondary-glazing"
+      }
     },
     {
       title: "Tech Startup, Shoreditch",
@@ -27,7 +32,11 @@ const CaseStudies = () => {
         "EPC rating improved from E to C",
         "35% reduction in heating costs",
         "Dramatically improved comfort levels"
-      ]
+      ],
+      links: {
+        thermal: "/thermal-insulation-secondary-glazing",
+        area: "/areas/east-london"
+      }
     },
     {
       title: "Financial Services, Canary Wharf",
@@ -39,7 +48,11 @@ const CaseStudies = () => {
         "Seamless installation",
         "40% reduction in HVAC load",
         "Enhanced acoustic privacy for trading floor"
-      ]
+      ],
+      links: {
+        area: "/areas/east-london",
+        noise: "/noise-reduction-secondary-glazing"
+      }
     }
   ];
 
@@ -47,7 +60,7 @@ const CaseStudies = () => {
     <div className="mb-16">
       <h2 className="text-2xl font-bold mb-6">Real Commercial Success Stories</h2>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
         {caseStudies.map((study, index) => (
           <Card key={index} className="border-border">
             <CardHeader className="pb-2">
@@ -83,6 +96,15 @@ const CaseStudies = () => {
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      <div className="bg-secondary/30 rounded-lg p-6 text-center">
+        <p className="text-muted-foreground mb-4">
+          View more examples of our commercial work across London's office buildings
+        </p>
+        <Link to="/case-studies" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium">
+          View All Case Studies <ArrowRight className="h-4 w-4" />
+        </Link>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Volume2, Thermometer, Clock, Shield } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { Link } from "react-router-dom";
 
 const BenefitsGrid = () => {
   return (
@@ -30,13 +31,13 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Our secondary glazing systems deliver <strong>40-50dB noise reduction</strong>, transforming noisy street-facing offices into productive workspaces.
+              Our <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">secondary glazing systems</Link> deliver <strong>40-50dB noise reduction</strong>, transforming noisy street-facing offices into productive workspaces.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Acoustic laminated glass options for superior sound insulation</li>
               <li>Essential for meeting rooms and concentration areas</li>
               <li>Perfect for client-facing spaces requiring privacy</li>
-              <li>Reduces external traffic, construction, and urban noise</li>
+              <li><Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Reduces external traffic, construction, and urban noise</Link></li>
             </ul>
           </CardContent>
         </Card>
@@ -52,11 +53,11 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Achieve <strong>30-50% reduction</strong> in heating and cooling costs with our thermal secondary glazing solutions.
+              Achieve <strong>30-50% reduction</strong> in heating and cooling costs with our <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal secondary glazing solutions</Link>.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Double-glazed units with Low-E coating</li>
-              <li>Improve EPC rating from D to B</li>
+              <li><Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve EPC rating from D to B</Link></li>
               <li>Increase rental values by 5-10%</li>
               <li>Reduce carbon footprint significantly</li>
             </ul>
@@ -80,7 +81,7 @@ const BenefitsGrid = () => {
               <li>Evening, weekend, and holiday installation options</li>
               <li>No structural modifications required</li>
               <li>Existing windows remain untouched</li>
-              <li>Maintains building warranties and planning compliance</li>
+              <li>Maintains building warranties and <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">planning compliance</Link></li>
             </ul>
           </CardContent>
         </Card>
