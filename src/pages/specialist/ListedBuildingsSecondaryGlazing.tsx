@@ -26,6 +26,8 @@ const relatedLinks = [
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss significantly" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
   { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
+  { title: "Office Buildings", href: "/commercial/office-buildings", description: "Listed commercial buildings" },
+  { title: "Educational Sector", href: "/commercial/educational-sector", description: "Heritage schools & colleges" },
 ];
 
 const serviceAreas = [

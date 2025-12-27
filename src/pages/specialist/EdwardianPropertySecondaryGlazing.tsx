@@ -26,6 +26,9 @@ const relatedLinks = [
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  { title: "Office Buildings", href: "/commercial/office-buildings", description: "Edwardian office buildings" },
+  { title: "Educational Sector", href: "/commercial/educational-sector", description: "Edwardian schools" },
+  { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Period hotels & restaurants" },
 ];
 
 const EdwardianPropertySecondaryGlazing = () => {

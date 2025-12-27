@@ -26,6 +26,9 @@ const relatedLinks = [
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  { title: "Office Buildings", href: "/commercial/office-buildings", description: "Victorian office conversions" },
+  { title: "Educational Sector", href: "/commercial/educational-sector", description: "Victorian schools" },
+  { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Period hotels & restaurants" },
 ];
 
 const VictorianWindowsSecondaryGlazing = () => {

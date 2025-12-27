@@ -26,6 +26,8 @@ const relatedLinks = [
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
   { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
+  { title: "Office Buildings", href: "/commercial/office-buildings", description: "Conservation area offices" },
+  { title: "Educational Sector", href: "/commercial/educational-sector", description: "Heritage schools & colleges" },
 ];
 
 const serviceAreas = [
