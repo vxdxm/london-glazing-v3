@@ -66,7 +66,7 @@ const LiftOutCaseStudies = () => {
 
         <div>
           <OptimizedImage
-            src="https://cdn.marblism.com/5TIpkCnT6r9.webp"
+            src="/images/liftout/liftout-fixed-panel.jpg"
             alt="Lift-out secondary glazing case study installation in London"
             className="rounded-lg shadow-lg w-full h-full min-h-[400px] object-cover"
             width={600}

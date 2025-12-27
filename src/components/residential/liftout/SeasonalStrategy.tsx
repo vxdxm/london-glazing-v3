@@ -31,7 +31,7 @@ const SeasonalStrategy = () => {
 
         <div>
           <OptimizedImage
-            src="https://cdn.marblism.com/20_IVpYxl-j.webp"
+            src="/images/liftout/liftout-sash-window.jpg"
             alt="Seasonal secondary glazing installation in London property"
             className="rounded-lg shadow-lg w-full h-full min-h-[300px] object-cover"
             width={600}

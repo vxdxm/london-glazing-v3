@@ -51,7 +51,7 @@ const IdealApplications = () => {
 
         <div>
           <OptimizedImage
-            src="https://cdn.marblism.com/oKuKXTk-Jyo.webp"
+            src="/images/liftout/liftout-door-panel.jpg"
             alt="Lift-out secondary glazing ideal for rental and heritage properties"
             className="rounded-lg shadow-lg w-full h-full min-h-[400px] object-cover"
             width={600}

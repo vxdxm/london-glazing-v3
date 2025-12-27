@@ -33,8 +33,8 @@ const LiftOutHero = () => {
         </div>
         <div>
           <OptimizedImage
-            src="https://cdn.marblism.com/teuTWb0RCMD.webp"
-            alt="Lift-out secondary glazing panel being removed from window reveal"
+            src="/images/liftout/liftout-sash-window.jpg"
+            alt="Lift-out secondary glazing panel installed on sash window in London home"
             className="rounded-lg shadow-lg w-full h-[400px] object-cover"
             width={800}
             height={400}
