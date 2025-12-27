@@ -33,11 +33,17 @@ const Sevenoaks = () => {
               <p className="text-lg mb-4">
                 Sevenoaks is a classic Kent commuter town, renowned for its excellent grammar schools, 
                 the magnificent Knole Park, and direct rail links to London Bridge. The town's 
-                beautiful period properties deserve glazing solutions that match their character.
+                beautiful <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">period properties</Link> deserve glazing solutions that match their character.
               </p>
-              <p className="mb-6">
-                Our expertise in heritage properties makes us the trusted choice for Sevenoaks' 
-                Victorian, Edwardian, and Georgian homes throughout the town and surrounding villages.
+              <p className="mb-4">
+                Our expertise in <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">heritage properties</Link> makes us the trusted choice for Sevenoaks' 
+                <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline"> Victorian</Link>, <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian</Link>, and <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> homes throughout the town and surrounding villages.
+              </p>
+              <p className="mb-6 text-muted-foreground">
+                We serve the entire <Link to="/areas/home-counties" className="text-primary hover:underline">Home Counties region</Link> including nearby{' '}
+                <Link to="/locations/tunbridge-wells" className="text-primary hover:underline">Tunbridge Wells</Link>. For{' '}
+                <Link to="/commercial/educational-sector" className="text-primary hover:underline">schools</Link> and{' '}
+                <Link to="/commercial/office-buildings" className="text-primary hover:underline">offices</Link> in Sevenoaks, we offer commercial solutions.
               </p>
               <Button asChild>
                 <Link to="/quote-request">Get Your Quote</Link>
