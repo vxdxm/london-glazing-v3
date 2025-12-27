@@ -20,12 +20,22 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
   { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
+  { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
+  // Blogs
+  { title: "Thermal Efficiency Blog", href: "/blog/thermal-efficiency-benefits", description: "Energy saving benefits" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Hackney Energy Efficiency", href: "/locations/hackney-energy-efficiency", description: "Energy solutions in Hackney" },
+  { title: "Georgian Belgravia", href: "/locations/georgian-belgravia", description: "Georgian properties in Belgravia" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const ThermalInsulationSecondaryGlazing = () => {

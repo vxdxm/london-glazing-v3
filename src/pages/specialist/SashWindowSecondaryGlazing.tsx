@@ -20,12 +20,25 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian sash glazing" },
-  { title: "Vertical Sliding", href: "/residential/sash-windows", description: "Residential sash options" },
-  { title: "Lift Out Panels", href: "/residential/lift-out", description: "Removable panel systems" },
+  { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
+  { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
+  { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  // Residential Types
+  { title: "Vertical Sliding", href: "/residential/sash-windows", description: "Residential sash options" },
+  { title: "Lift Out Panels", href: "/residential/lift-out", description: "Removable panel systems" },
+  // Blogs
+  { title: "Sash Windows Blog", href: "/blog/sash-window-secondary-glazing-options", description: "Complete sash window guide" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Victorian Islington", href: "/locations/victorian-islington", description: "Victorian properties in Islington" },
+  { title: "Georgian Belgravia", href: "/locations/georgian-belgravia", description: "Georgian properties in Belgravia" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const SashWindowSecondaryGlazing = () => {

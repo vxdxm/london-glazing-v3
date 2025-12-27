@@ -20,12 +20,25 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss by 75%" },
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
+  { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
+  { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
   { title: "Sash Window Glazing", href: "/sash-window-secondary-glazing", description: "Vertical sliding solutions" },
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
+  // Residential Types
   { title: "Fixed Panels", href: "/residential/fixed-secondary-glazing", description: "Best acoustic seal" },
+  // Blogs
+  { title: "Noise Reduction Blog", href: "/blog/noise-reduction-london-homes", description: "How to reduce noise" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Heathrow Aircraft Noise", href: "/locations/heathrow-aircraft", description: "Flight path solutions" },
+  { title: "Kings Cross Train Noise", href: "/locations/kings-cross-train-noise", description: "Railway noise solutions" },
+  { title: "Shoreditch Urban Noise", href: "/locations/shoreditch-urban-noise", description: "Urban noise solutions" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const NoiseReductionSecondaryGlazing = () => {
