@@ -1,5 +1,6 @@
 import { Volume2, Thermometer, PoundSterling, Building } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const WhyChallenges = () => {
   const challenges = [
@@ -33,8 +34,9 @@ export const WhyChallenges = () => {
             Why London Schools & Universities Choose Secondary Glazing
           </h2>
           <p className="text-lg text-muted-foreground">
-            Educational facilities across London face unique challenges that directly impact student learning and operational budgets. 
-            Research consistently shows that noise distraction can reduce student attainment by up to 25%, while cold, uncomfortable 
+            Many London schools operate in <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link>, including{' '}
+            <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian schools in Islington and Camden</Link> across{' '}
+            <Link to="/areas/north-london" className="text-primary hover:underline">North London</Link>. Research consistently shows that noise distraction can reduce student attainment by up to 25%, while cold, uncomfortable 
             classrooms lead to increased absence and behavioral issues.
           </p>
         </div>
@@ -56,7 +58,7 @@ export const WhyChallenges = () => {
             <p className="text-muted-foreground text-center max-w-3xl mx-auto">
               For special educational needs (SEND) students, particularly those with autism or ADHD, acoustic and thermal 
               instability can trigger daily meltdowns and prevent effective learning. Secondary glazing creates the stable, 
-              sensory-friendly environments these vulnerable students need.
+              sensory-friendly environments these vulnerable students need. <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Creating optimal acoustic environments for concentration and learning</Link> is essential.
             </p>
           </CardContent>
         </Card>

@@ -1,5 +1,6 @@
 import { CheckCircle, ClipboardCheck, Landmark } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const RegulatoryCompliance = () => {
   const standards = [
@@ -31,7 +32,8 @@ export const RegulatoryCompliance = () => {
             Educational Standards & Regulatory Compliance
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Meeting and exceeding DfE, Ofsted, and heritage building requirements
+            Meeting and exceeding DfE, Ofsted, and heritage building requirements.{' '}
+            <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">Understanding planning requirements for educational buildings</Link> is essential.
           </p>
         </div>
 
@@ -50,6 +52,14 @@ export const RegulatoryCompliance = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <p className="text-muted-foreground">
+            Learn more about{' '}
+            <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building solutions</Link> and{' '}
+            <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation area compliance</Link>.
+          </p>
         </div>
       </div>
     </section>

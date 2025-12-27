@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { GraduationCap, Volume2, ThermometerSun, PoundSterling } from "lucide-react";
 
 export const EducationHero = () => {
@@ -21,18 +21,19 @@ export const EducationHero = () => {
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Transform your educational facility with secondary glazing solutions that improve student learning outcomes, 
-              meet BB93 acoustic standards, reduce energy costs by up to 50%, and preserve heritage buildings. Our comprehensive 
+              meet BB93 acoustic standards, <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">reduce energy costs by up to 50%</Link>, and preserve{' '}
+              <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">heritage buildings</Link>. Our comprehensive 
               systems create optimal learning environments across London schools, colleges, and universities.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Volume2 className="w-5 h-5 text-primary" />
-                <span className="text-sm">80% Noise Reduction</span>
+                <span className="text-sm">80% <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Noise Reduction</Link></span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <ThermometerSun className="w-5 h-5 text-primary" />
-                <span className="text-sm">50% Energy Savings</span>
+                <span className="text-sm">50% <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Energy Savings</Link></span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <GraduationCap className="w-5 h-5 text-primary" />
