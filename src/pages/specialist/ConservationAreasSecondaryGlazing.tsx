@@ -19,15 +19,25 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Listed Buildings Glazing", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Period sash window solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
   { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
+  { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
-  { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
+  // Commercial
   { title: "Office Buildings", href: "/commercial/office-buildings", description: "Conservation area offices" },
   { title: "Educational Sector", href: "/commercial/educational-sector", description: "Heritage schools & colleges" },
+  // Blogs
+  { title: "Conservation Areas Guide", href: "/blog/conservation-area-window-solutions", description: "Complete conservation guide" },
+  { title: "Planning Permission Guide", href: "/blog/planning-permission-secondary-glazing-conservation-areas", description: "Planning regulations explained" },
+  // Locations
+  { title: "Richmond Conservation", href: "/locations/conservation-richmond", description: "Conservation areas in Richmond" },
+  { title: "Victorian Islington", href: "/locations/victorian-islington", description: "Victorian properties in Islington" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const serviceAreas = [

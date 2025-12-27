@@ -20,15 +20,26 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Sash Window Glazing", href: "/sash-window-secondary-glazing", description: "Vertical sliding solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
   { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
+  // Commercial
   { title: "Office Buildings", href: "/commercial/office-buildings", description: "Victorian office conversions" },
   { title: "Educational Sector", href: "/commercial/educational-sector", description: "Victorian schools" },
   { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Period hotels & restaurants" },
+  // Blogs
+  { title: "Sash Windows Blog", href: "/blog/sash-window-secondary-glazing-options", description: "Complete sash window guide" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Victorian Islington", href: "/locations/victorian-islington", description: "Victorian properties in Islington" },
+  { title: "Victorian Terraces", href: "/locations/victorian-terraces-islington", description: "Islington terraces" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const VictorianWindowsSecondaryGlazing = () => {

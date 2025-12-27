@@ -19,15 +19,25 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Conservation Areas Glazing", href: "/conservation-areas-secondary-glazing", description: "Solutions for conservation areas" },
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Period-appropriate solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Heritage Georgian properties" },
   { title: "Sash Window Glazing", href: "/sash-window-secondary-glazing", description: "Traditional sash window solutions" },
+  { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss significantly" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
-  { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
+  // Commercial
   { title: "Office Buildings", href: "/commercial/office-buildings", description: "Listed commercial buildings" },
   { title: "Educational Sector", href: "/commercial/educational-sector", description: "Heritage schools & colleges" },
+  // Blogs
+  { title: "Listed Buildings Guide", href: "/blog/secondary-glazing-listed-buildings-guide", description: "Complete heritage guide" },
+  { title: "Planning Permission Guide", href: "/blog/planning-permission-secondary-glazing-conservation-areas", description: "Planning regulations explained" },
+  // Locations
+  { title: "Kensington Listed Properties", href: "/locations/listed-kensington", description: "Listed buildings in Kensington" },
+  { title: "Georgian Belgravia", href: "/locations/georgian-belgravia", description: "Georgian properties in Belgravia" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const serviceAreas = [

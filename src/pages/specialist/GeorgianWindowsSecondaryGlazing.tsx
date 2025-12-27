@@ -20,15 +20,26 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
   { title: "Sash Window Glazing", href: "/sash-window-secondary-glazing", description: "Vertical sliding solutions" },
+  { title: "Edwardian Properties", href: "/edwardian-property-secondary-glazing", description: "Edwardian home solutions" },
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  // Commercial
   { title: "Office Buildings", href: "/commercial/office-buildings", description: "Georgian office conversions" },
   { title: "Educational Sector", href: "/commercial/educational-sector", description: "Georgian schools" },
   { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Period hotels & restaurants" },
+  // Blogs
+  { title: "Listed Buildings Guide", href: "/blog/secondary-glazing-listed-buildings-guide", description: "Complete heritage guide" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Georgian Belgravia", href: "/locations/georgian-belgravia", description: "Georgian properties in Belgravia" },
+  { title: "Richmond Conservation", href: "/locations/conservation-richmond", description: "Conservation areas in Richmond" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const GeorgianWindowsSecondaryGlazing = () => {

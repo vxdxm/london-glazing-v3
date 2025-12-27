@@ -20,15 +20,26 @@ const breadcrumbItems = [
 ];
 
 const relatedLinks = [
+  // Heritage Cross-Links
   { title: "Victorian Windows", href: "/victorian-windows-secondary-glazing", description: "Victorian sash solutions" },
   { title: "Georgian Windows", href: "/georgian-windows-secondary-glazing", description: "Georgian property glazing" },
+  { title: "Sash Windows", href: "/sash-window-secondary-glazing", description: "Traditional sash solutions" },
   { title: "Listed Buildings", href: "/listed-buildings-secondary-glazing", description: "Grade I, II*, II solutions" },
   { title: "Conservation Areas", href: "/conservation-areas-secondary-glazing", description: "Heritage area solutions" },
   { title: "Thermal Insulation", href: "/thermal-insulation-secondary-glazing", description: "Reduce heat loss" },
   { title: "Noise Reduction", href: "/noise-reduction-secondary-glazing", description: "Block external noise" },
+  // Commercial
   { title: "Office Buildings", href: "/commercial/office-buildings", description: "Edwardian office buildings" },
   { title: "Educational Sector", href: "/commercial/educational-sector", description: "Edwardian schools" },
   { title: "Hospitality Sector", href: "/commercial/hospitality-sector", description: "Period hotels & restaurants" },
+  // Blogs
+  { title: "Thermal Efficiency Blog", href: "/blog/thermal-efficiency-benefits", description: "Energy saving benefits" },
+  { title: "Cost Guide", href: "/blog/secondary-glazing-cost-london", description: "London pricing guide" },
+  // Locations
+  { title: "Edwardian Hampstead", href: "/locations/edwardian-hampstead", description: "Edwardian properties in Hampstead" },
+  { title: "Victorian Islington", href: "/locations/victorian-islington", description: "Victorian properties in Islington" },
+  // Case Studies
+  { title: "Case Studies", href: "/case-studies", description: "Real project examples" },
 ];
 
 const EdwardianPropertySecondaryGlazing = () => {
