@@ -7,7 +7,7 @@ export const HealthcareSEO = () => {
     title: "Healthcare Secondary Glazing Solutions | NHS & Hospital Windows London",
     description: "Specialized secondary glazing for healthcare facilities. CQC compliant solutions with 80% noise reduction, 50% energy savings for NHS hospitals, care homes, and private clinics across London.",
     canonicalPath: "/commercial/healthcare-industry",
-    imageUrl: "/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg",
+    imageUrl: "/images/commercial/healthcare-hospital-ward.webp",
     type: "website" as const,
     publishedDate: "2025-02-15",
     modifiedDate: "2025-05-17",

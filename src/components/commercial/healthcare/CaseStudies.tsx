@@ -74,6 +74,19 @@ export const CaseStudies = () => {
           </p>
         </div>
 
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <img 
+            src="/images/commercial/healthcare-clinic-waiting.webp" 
+            alt="London clinic waiting area with secondary glazing overlooking Westminster" 
+            className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+          />
+          <img 
+            src="/images/commercial/healthcare-harley-street.webp" 
+            alt="Harley Street private clinic consultation room with heritage secondary glazing" 
+            className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {cases.map((caseStudy, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow overflow-hidden">

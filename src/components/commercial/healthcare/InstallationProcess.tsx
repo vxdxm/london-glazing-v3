@@ -36,6 +36,14 @@ export const InstallationProcess = () => {
           </p>
         </div>
 
+        <div className="mb-12">
+          <img 
+            src="/images/commercial/healthcare-installation.webp" 
+            alt="Professional secondary glazing installation in hospital with minimal disruption to patient care" 
+            className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+          />
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">

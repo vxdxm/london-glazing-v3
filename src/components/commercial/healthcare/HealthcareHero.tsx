@@ -68,8 +68,8 @@ export const HealthcareHero = () => {
 
           <div className="relative">
             <img 
-              src="/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg" 
-              alt="Modern healthcare facility with secondary glazing" 
+              src="/images/commercial/healthcare-hospital-ward.webp" 
+              alt="Modern hospital ward with secondary glazing for patient comfort" 
               className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border">
