@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const windowOptions = [
   {
@@ -51,7 +52,11 @@ const windowOptions = [
 const SashWindowOptions = () => {
   return (
     <section className="mb-12">
-      <h2 className="text-3xl font-semibold mb-8">Sash Window Secondary Glazing Options</h2>
+      <h2 className="text-3xl font-semibold mb-4">Sash Window Secondary Glazing Options</h2>
+      
+      <p className="text-muted-foreground mb-8">
+        Achieve excellent <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic performance</Link> with vertical sliders designed specifically for sash windows. Our systems use optimal air gap spacing for <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">maximum thermal performance</Link>.
+      </p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {windowOptions.map((option, index) => (

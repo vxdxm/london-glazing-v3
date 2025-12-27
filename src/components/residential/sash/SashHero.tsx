@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Check } from "lucide-react";
 
 const SashHero = () => {
@@ -17,11 +17,11 @@ const SashHero = () => {
     <section className="mb-12">
       <div className="bg-gradient-to-br from-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12">
         <p className="text-lg md:text-xl text-foreground/90 mb-6 max-w-4xl">
-          <strong>Transform your period property with secondary glazing that preserves your beautiful original sash windows while delivering exceptional energy and acoustic performance.</strong>
+          <strong>Transform your period property with secondary glazing that preserves your beautiful original sash windows while delivering exceptional energy and acoustic performance.</strong> Perfect for preserving original sash windows in <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link>, <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link>, and <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian period properties</Link>.
         </p>
         
         <p className="text-muted-foreground mb-8 max-w-4xl">
-          Trusted by London period property owners, our sash window secondary glazing specialists help you cut energy bills by 50-65% (saving £300-£600 annually per window), reduce noise by 70-80%, and preserve your heritage windows perfectly. Ideal for listed buildings and conservation areas with no planning permission required.
+          Trusted by London period property owners, our sash window secondary glazing specialists help you cut energy bills by 50-65% (saving £300-£600 annually per window), reduce noise by 70-80%, and preserve your heritage windows perfectly. Ideal for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link> with no planning permission required.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
