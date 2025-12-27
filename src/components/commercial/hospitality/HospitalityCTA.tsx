@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Phone, Mail, Calendar } from "lucide-react";
 
 const HospitalityCTA = () => {
@@ -47,9 +47,15 @@ const HospitalityCTA = () => {
         </Button>
       </div>
       
-      <p className="text-sm text-muted-foreground mt-4">
-        Serving London's leading hospitality venues with professional secondary glazing solutions since 2000.
-      </p>
+      <div className="text-sm text-muted-foreground mt-6 space-y-2">
+        <p>Serving London's leading hospitality venues with professional secondary glazing solutions since 2000.</p>
+        <p>
+          Also serving other commercial sectors:{' '}
+          <Link to="/commercial/office-buildings" className="text-primary hover:underline">Offices</Link>,{' '}
+          <Link to="/commercial/educational-sector" className="text-primary hover:underline">Schools</Link>, and{' '}
+          <Link to="/commercial/healthcare-industry" className="text-primary hover:underline">Healthcare Facilities</Link>
+        </p>
+      </div>
     </section>
   );
 };
