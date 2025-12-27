@@ -49,7 +49,7 @@ const WhatIsHorizontalSliding = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/duKyvpcY_Os.webp" 
+        src="/images/horizontal-sliding/horizontal-1.jpg" 
         alt="Horizontal sliding secondary glazing mechanism" 
         className="w-full rounded-lg mb-8 shadow-lg"
       />

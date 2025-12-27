@@ -74,7 +74,7 @@ const WhyChooseHorizontal = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/JzC_RWw5GUb.webp" 
+        src="/images/horizontal-sliding/horizontal-3.jpg" 
         alt="Wide horizontal sliding secondary glazing installation" 
         className="w-full rounded-lg mb-8 shadow-lg"
       />

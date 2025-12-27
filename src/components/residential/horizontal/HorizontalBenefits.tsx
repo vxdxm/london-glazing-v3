@@ -74,7 +74,7 @@ const HorizontalBenefits = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/0hjIGnzdfuN.webp" 
+        src="/images/horizontal-sliding/horizontal-2.jpg" 
         alt="Benefits of horizontal sliding secondary glazing" 
         className="w-full rounded-lg mb-8 shadow-lg"
       />
