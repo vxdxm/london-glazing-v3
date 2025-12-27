@@ -51,7 +51,7 @@ export const FixedPerformance = () => {
         <div>
           <AspectRatio ratio={3/4} className="bg-muted rounded-lg overflow-hidden">
             <img 
-              src="https://cdn.marblism.com/j77Di4WcD1U.webp" 
+              src="/images/fixed/fixed-3.jpg" 
               alt="Fixed secondary glazing performance benefits demonstration" 
               className="object-cover w-full h-full"
             />
