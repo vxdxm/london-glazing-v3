@@ -1,4 +1,5 @@
 import { Check, Volume2, Thermometer, Plane, Train, Car } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CasementGlassSpecs = () => {
   const glassOptions = [
@@ -49,7 +50,7 @@ const CasementGlassSpecs = () => {
     <section className="mb-16">
       <h2 className="text-3xl font-bold mb-4">Glass Specifications for Every Situation</h2>
       <p className="text-lg text-muted-foreground mb-8">
-        Choose the right glass thickness for your specific noise and thermal needs:
+        Understanding air gap sizing is critical for casement installations. Choose the right glass thickness for your specific <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">acoustic insulation</Link> and <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal performance</Link> needs. Read our <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">complete guide to secondary glazing costs</Link> for detailed pricing.
       </p>
 
       <div className="grid md:grid-cols-2 gap-4 mb-8">
