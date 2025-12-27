@@ -1,5 +1,6 @@
 import React from "react";
-import { Thermometer, Volume2, Maximize2, Paintbrush, Settings } from "lucide-react";
+import { Thermometer, Volume2, Maximize2, Paintbrush, Settings, Droplets, Lock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HorizontalBenefits = () => {
   return (
@@ -15,8 +16,8 @@ const HorizontalBenefits = () => {
             <h3 className="text-xl font-semibold text-foreground">Energy Efficiency and Substantial Cost Savings</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Horizontal sliding secondary glazing delivers <strong className="text-foreground">50-65% reduction in heat loss</strong> through 
-            windows, with particularly dramatic impact on large glass areas common in modern properties.
+            <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Superior thermal performance</Link> delivers <strong className="text-foreground">50-65% reduction in heat loss</strong> through 
+            windows, with particularly dramatic impact on large glass areas common in modern properties. Understanding <Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">optimal air gap sizing</Link> for horizontal sliders maximises performance.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div className="bg-green-50 dark:bg-green-950/30 rounded-lg p-3 text-center">
@@ -46,7 +47,7 @@ const HorizontalBenefits = () => {
             <h3 className="text-xl font-semibold text-foreground">Dramatic Noise Reduction for Urban Living</h3>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">70-80% noise reduction</strong> transforms even the busiest London locations 
+            <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Excellent acoustic insulation</Link> achieving <strong className="text-foreground">70-80% noise reduction</strong> transforms even the busiest London locations 
             into peaceful sanctuaries. High-quality sealing between overlapping panels creates effective acoustic 
             barriers, while laminated glass options (6.8mm to 12.8mm) provide exceptional performance for extreme 
             noise situations such as main roads, railway lines, or flight paths.
@@ -69,6 +70,32 @@ const HorizontalBenefits = () => {
               <li>• <strong className="text-foreground">Maximum summer ventilation</strong> at full capacity</li>
               <li>• <strong className="text-foreground">No swing space obstruction</strong> - room layout unchanged</li>
             </ul>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-card border border-border rounded-lg p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg">
+                <Droplets className="h-6 w-6 text-cyan-600 dark:text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Condensation Prevention</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              Prevents condensation by keeping the inner glass surface warmer, eliminating moisture buildup that can damage frames and cause mould growth in wide window installations.
+            </p>
+          </div>
+
+          <div className="bg-card border border-border rounded-lg p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                <Lock className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Security Upgrades Available</h3>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">
+              <Link to="/benefits" className="text-primary hover:underline">Available with security upgrades</Link> including laminated glass that holds together when broken, additional locking mechanisms, and enhanced protection for ground-floor wide windows.
+            </p>
           </div>
         </div>
       </div>
