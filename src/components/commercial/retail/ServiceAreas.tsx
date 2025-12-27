@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 export const ServiceAreas = () => {
   const areas = [
-    { name: "Harley Street", description: "Private medical quarter specialists", link: "/areas/central-london" },
-    { name: "Great Ormond Street & Bloomsbury", description: "Major hospital clusters", link: "/areas/central-london" },
-    { name: "Royal London Hospital, Whitechapel", description: "East London NHS facilities", link: "/areas/east-london" },
-    { name: "Westminster & Victoria", description: "Central London hospital concentrations", link: "/areas/central-london" },
-    { name: "Chelsea Hospital Corridor", description: "South West London healthcare hubs", link: "/areas/west-london" },
-    { name: "Hampstead & Highgate", description: "Care homes and clinics", link: "/areas/north-london" },
-    { name: "Kensington & Chelsea", description: "Premium healthcare facilities", link: "/areas/west-london" },
-    { name: "Richmond upon Thames", description: "Care homes and medical centers", link: "/areas/greater-london" }
+    { name: "Oxford Street & Regent Street", description: "Flagship stores and department stores", link: "/areas/central-london" },
+    { name: "Bond Street & Mayfair", description: "Luxury retail and designer boutiques", link: "/locations/georgian-belgravia" },
+    { name: "Covent Garden", description: "Heritage market and retail venues", link: "/areas/central-london" },
+    { name: "King's Road & Chelsea", description: "Boutique retail and antiques", link: "/areas/west-london" },
+    { name: "Kensington High Street", description: "Premium high street retail", link: "/areas/west-london" },
+    { name: "Knightsbridge", description: "Luxury department stores", link: "/areas/central-london" },
+    { name: "Notting Hill", description: "Independent boutiques and antique markets", link: "/areas/west-london" },
+    { name: "Shoreditch & Spitalfields", description: "Creative retail and markets", link: "/areas/east-london" }
   ];
 
   const relatedLocations = [
     { name: "Central London", path: "/areas/central-london" },
-    { name: "North London", path: "/areas/north-london" },
     { name: "West London", path: "/areas/west-london" },
     { name: "East London", path: "/areas/east-london" },
+    { name: "Georgian Belgravia", path: "/locations/georgian-belgravia" },
     { name: "Greater London", path: "/areas/greater-london" },
     { name: "Home Counties", path: "/areas/home-counties" }
   ];
@@ -27,10 +27,10 @@ export const ServiceAreas = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            London Healthcare Locations We Serve
+            London Retail Locations We Serve
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive coverage across all London boroughs and the Home Counties
+            From flagship department stores to independent boutiques across London
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export const ServiceAreas = () => {
           ))}
         </div>
 
-        <div className="bg-secondary/30 rounded-lg p-6 mb-8">
+        <div className="bg-secondary/30 rounded-lg p-6">
           <h3 className="font-semibold mb-4 text-center">Explore Our London Coverage</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {relatedLocations.map((location, index) => (
@@ -63,11 +63,9 @@ export const ServiceAreas = () => {
             ))}
           </div>
         </div>
-
-        <p className="text-center text-muted-foreground">
-          We serve GP surgeries, dental practices, and specialized healthcare facilities throughout the Home Counties.
-        </p>
       </div>
     </section>
   );
 };
+
+export default ServiceAreas;

@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, FileText, Calculator } from "lucide-react";
+import { ArrowRight, Phone, FileText, Calculator, MapPin } from "lucide-react";
 
 const CommercialCTA = () => {
+  const serviceAreas = [
+    { name: "Central London", path: "/areas/central-london" },
+    { name: "West London", path: "/areas/west-london" },
+    { name: "East London", path: "/areas/east-london" },
+    { name: "North London", path: "/areas/north-london" },
+    { name: "South London", path: "/areas/south-london" },
+    { name: "Greater London", path: "/areas/greater-london" },
+    { name: "Home Counties", path: "/areas/home-counties" }
+  ];
+
   return (
     <section className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 text-center">
@@ -29,6 +39,25 @@ const CommercialCTA = () => {
           <div className="bg-primary-foreground/10 rounded-lg p-4">
             <ArrowRight className="w-6 h-6 mx-auto mb-2" />
             <p className="font-medium text-sm">Download Commercial Brochure</p>
+          </div>
+        </div>
+
+        {/* Service Areas Links */}
+        <div className="bg-primary-foreground/10 rounded-lg p-6 max-w-4xl mx-auto mb-8">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <MapPin className="w-5 h-5" />
+            <h3 className="font-semibold">Commercial Service Areas</h3>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {serviceAreas.map((area, index) => (
+              <Link
+                key={index}
+                to={area.path}
+                className="text-sm hover:underline underline-offset-2 opacity-90 hover:opacity-100 transition-opacity"
+              >
+                {area.name}
+              </Link>
+            ))}
           </div>
         </div>
 
