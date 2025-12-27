@@ -1,27 +1,35 @@
-
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "react-router-dom";
 import { Footer } from "@/components/Footer";
 import { createPageSchema } from "@/utils/seo";
 import { createLocalBusinessSchema, createServiceSchema } from "@/utils/structuredData";
+import CommercialHero from "@/components/commercial/CommercialHero";
+import WhyCommercialNeeds from "@/components/commercial/WhyCommercialNeeds";
+import CommercialBenefits from "@/components/commercial/CommercialBenefits";
+import CommercialSectors from "@/components/commercial/CommercialSectors";
+import CommercialCaseStudies from "@/components/commercial/CommercialCaseStudies";
+import CommercialProcess from "@/components/commercial/CommercialProcess";
+import WhyChooseCommercial from "@/components/commercial/WhyChooseCommercial";
+import CommercialInvestment from "@/components/commercial/CommercialInvestment";
+import CommercialFAQ from "@/components/commercial/CommercialFAQ";
+import CommercialCTA from "@/components/commercial/CommercialCTA";
 
 const CommercialSolutions = () => {
   const pageMetadata = {
     title: "Commercial Secondary Glazing London | Business & Office Solutions",
-    description: "Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, and commercial buildings.",
+    description: "Reduce energy costs by 30-50%, improve occupant comfort, and preserve heritage properties with secondary glazing trusted by 100+ London businesses. 3-5 year payback typical.",
     canonicalPath: "/commercial",
     imageUrl: "/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg",
     type: "website" as const,
     publishedDate: "2024-12-15",
     modifiedDate: "2025-05-17",
-    keywords: ["commercial glazing", "office glazing", "business windows", "hotel windows", "commercial property", "noise reduction", "energy efficiency", "London commercial"]
+    keywords: ["commercial glazing", "office glazing", "business windows", "hotel windows", "commercial property", "noise reduction", "energy efficiency", "London commercial", "heritage buildings", "listed buildings"]
   };
 
   const pageSchema = createPageSchema(pageMetadata);
   
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>{pageMetadata.title}</title>
         <meta name="description" content={pageMetadata.description} />
@@ -53,7 +61,7 @@ const CommercialSolutions = () => {
         <script type="application/ld+json">
           {JSON.stringify(createServiceSchema(
             "Commercial Secondary Glazing Installation",
-            "Professional commercial secondary glazing solutions for London businesses. Improve energy efficiency, reduce noise, and enhance security in offices, hotels, healthcare facilities, and educational buildings."
+            "Reduce energy costs by 30-50%, improve occupant comfort, and preserve heritage properties with secondary glazing trusted by 100+ London businesses."
           ))}
         </script>
         
@@ -63,7 +71,7 @@ const CommercialSolutions = () => {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Commercial Secondary Glazing",
-            "description": "Professional secondary glazing for commercial properties",
+            "description": "Professional secondary glazing for commercial properties with 30-50% energy savings",
             "brand": {
               "@type": "Brand",
               "name": "Secondary Glazing Specialist"
@@ -77,105 +85,66 @@ const CommercialSolutions = () => {
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "GBP",
-              "lowPrice": "400",
-              "highPrice": "2000",
+              "lowPrice": "8000",
+              "highPrice": "100000",
               "offerCount": "8"
             }
           })}
         </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much can we save on energy costs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Typically 30-50% reduction in heating/cooling costs. A medium office building can save £8,000-£15,000 annually."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you install without disrupting business operations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We install around your operations with out-of-hours and weekend options. No building closure required."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it suitable for listed commercial buildings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes - ideal for listed buildings as it preserves original windows and typically doesn't require planning permission."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
+      
       <MainNav />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-4">Commercial Secondary Glazing Solutions</h1>
-        <div className="prose max-w-none mb-8 text-gray-600">
-          <p className="text-lg">
-            Commercial secondary glazing solutions involve adding an additional layer of glass or transparent material to existing windows in commercial buildings. This system serves to improve insulation, reduce noise pollution, and enhance energy efficiency without the need for full window replacement. Secondary glazing can also help in reducing heat loss, contributing to lower energy bills, and improving the overall comfort within the space. These solutions are often tailored to meet aesthetic and functional needs, ensuring compliance with building regulations while maintaining the original character of the property.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link to="/commercial/office-buildings">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-              <div className="w-full h-48 overflow-hidden">
-                <img alt="Modern office building" className="w-full h-full object-cover" src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" />
-              </div>
-              <CardHeader>
-                <CardTitle>Office Glazing Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Enhance your office environment with our secondary glazing solutions that provide excellent thermal insulation and noise reduction. Perfect for busy urban settings.
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Link to="/commercial/hospitality-sector">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-              <div className="w-full h-48 overflow-hidden">
-                <img alt="Modern hotel building" className="w-full h-full object-cover" src="/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg" />
-              </div>
-              <CardHeader>
-                <CardTitle>Hotel & Hospitality Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Create a peaceful atmosphere for your guests with our specialized hotel glazing solutions, designed to reduce noise and improve energy efficiency.
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Link to="/commercial/healthcare-industry">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-              <div className="w-full h-48 overflow-hidden">
-                <img alt="Modern healthcare facility" className="w-full h-full object-cover" src="/lovable-uploads/056a60d0-4ffa-4e1c-977a-c2bbe100e809.jpg" />
-              </div>
-              <CardHeader>
-                <CardTitle>Healthcare Industry Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Specialized glazing solutions for healthcare facilities, ensuring optimal temperature control, sound insulation, and maintaining a sterile environment for patient comfort.
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Link to="/commercial/educational-sector">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-              <div className="w-full h-48 overflow-hidden">
-                <img alt="Modern educational facility" src="/lovable-uploads/1c6ae08e-8c9d-4d76-a036-5b7643b5f28a.jpg" className="w-full h-full object-fill" />
-              </div>
-              <CardHeader>
-                <CardTitle>Educational Sector Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Create the perfect learning environment with our secondary glazing solutions designed specifically for schools, universities, and other educational institutions.
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-
-          <Link to="/commercial/retail-spaces">
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-              <div className="w-full h-48 overflow-hidden">
-                <img alt="Modern retail storefront" src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" className="w-full h-full object-cover" />
-              </div>
-              <CardHeader>
-                <CardTitle>Retail Spaces & Shops Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Enhance customer experience and protect merchandise with our retail glazing solutions offering noise reduction, security, and UV protection for shop displays.
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-        </div>
-      </div>
+      
+      <main>
+        <CommercialHero />
+        <WhyCommercialNeeds />
+        <CommercialBenefits />
+        <CommercialSectors />
+        <CommercialCaseStudies />
+        <CommercialProcess />
+        <WhyChooseCommercial />
+        <CommercialInvestment />
+        <CommercialFAQ />
+        <CommercialCTA />
+      </main>
+      
       <Footer />
-    </div>;
+    </div>
+  );
 };
 
 export default CommercialSolutions;
