@@ -73,7 +73,7 @@ const BayCaseStudies = () => {
       </div>
 
       <img 
-        src="/images/bay-windows/bay-window-5.jpg" 
+        src="/images/bay-windows/bay-window-4.jpg" 
         alt="Bay window secondary glazing case study results" 
         className="w-full rounded-lg shadow-lg"
       />

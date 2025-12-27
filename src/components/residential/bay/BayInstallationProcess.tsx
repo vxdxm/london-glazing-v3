@@ -52,7 +52,7 @@ const BayInstallationProcess = () => {
       </div>
 
       <img 
-        src="/images/bay-windows/bay-window-2.jpg" 
+        src="/images/bay-windows/bay-window-3.jpg" 
         alt="Professional bay window secondary glazing installation" 
         className="w-full rounded-lg shadow-lg"
       />
