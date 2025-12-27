@@ -99,7 +99,7 @@ const HorizontalCaseStudies = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/eifnDCCBji0.webp" 
+        src="/images/horizontal-sliding/horizontal-5.jpg" 
         alt="Horizontal sliding secondary glazing case study" 
         className="w-full rounded-lg shadow-lg"
       />

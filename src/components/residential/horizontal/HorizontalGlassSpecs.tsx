@@ -29,7 +29,7 @@ const HorizontalGlassSpecs = () => {
       </div>
 
       <img 
-        src="https://cdn.marblism.com/0rpCHIxS1ND.webp" 
+        src="/images/horizontal-sliding/horizontal-4.jpg" 
         alt="Glass specifications for horizontal sliding secondary glazing" 
         className="w-full rounded-lg mb-8 shadow-lg"
       />
