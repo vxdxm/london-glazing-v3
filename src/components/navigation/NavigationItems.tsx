@@ -54,7 +54,6 @@ export const glazingOptions: GlazingSection[] = [
       { title: "Healthcare Industry", href: "/commercial/healthcare-industry", description: "Premium solutions for healthcare facilities.", icon: FixedPanelIcon },
       { title: "Educational Sector", href: "/commercial/educational-sector", description: "Specialized solutions for educational institutions.", icon: CasementIcon },
       { title: "Retail Spaces", href: "/commercial/retail-spaces", description: "Solutions for shops and retail environments.", icon: FixedPanelIcon },
-      { title: "Listed Buildings", href: "/commercial/listed-buildings", description: "Conservation-compliant solutions for listed properties.", icon: VerticalSlidingIcon },
     ],
   },
   {
