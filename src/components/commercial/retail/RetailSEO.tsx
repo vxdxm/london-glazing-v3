@@ -7,7 +7,7 @@ export const RetailSEO = () => {
     title: "Retail Secondary Glazing Solutions | Shop & Store Windows London",
     description: "Specialized secondary glazing for retail spaces and shops. Boost customer comfort, reduce energy costs by 50%, enhance security, and preserve heritage shopfronts across London.",
     canonicalPath: "/commercial/retail-spaces",
-    imageUrl: "/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg",
+    imageUrl: "/images/commercial/retail-heritage.webp",
     type: "website" as const,
     keywords: [
       "retail glazing",
