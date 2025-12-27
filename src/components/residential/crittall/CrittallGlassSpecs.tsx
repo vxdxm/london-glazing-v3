@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/ui/section-heading";
+import { Link } from "react-router-dom";
 
 export const CrittallGlassSpecs = () => {
   return (
@@ -11,7 +12,7 @@ export const CrittallGlassSpecs = () => {
       <div className="bg-muted/50 rounded-lg p-6 mb-8">
         <h3 className="text-xl font-semibold mb-4">Standard Options with Crittall-Specific Guidance</h3>
         <p className="text-muted-foreground mb-4">
-          Since your Crittall already has thin single glazing, even 4mm standard secondary glass adds significant performance through the dual-layer effect. For thermal improvement, the air gap size matters more than glass thickness—focus on maximizing cavity depth.
+          Since your Crittall already has thin single glazing, even 4mm standard secondary glass adds significant performance through the dual-layer effect. Understanding <Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">air gap requirements for metal-framed windows</Link> is critical - for thermal improvement, the air gap size matters more than glass thickness. Focus on maximizing cavity depth. Learn <Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">how to prevent condensation on Crittall frames</Link> through proper air gap sizing.
         </p>
       </div>
       
