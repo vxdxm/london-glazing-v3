@@ -7,19 +7,22 @@ const HospitalityHero = () => {
   return (
     <>
       <section className="text-center space-y-4">
-        <h1 className="text-4xl font-bold mb-6">Premium Secondary Glazing for Hospitality Sector</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Create the perfect environment for your guests with our premium secondary glazing solutions, 
-          designed specifically for hotels, restaurants, and leisure facilities.
+        <h1 className="text-4xl font-bold mb-6">Premium Secondary Glazing for London Hospitality Venues</h1>
+        <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+          Transform your London hospitality venue with premium secondary glazing solutions that enhance guest satisfaction, 
+          reduce energy costs, and preserve historic character. Our specialized hospitality installations deliver up to 80% 
+          noise reduction, 50% energy savings, and significantly improved guest reviews – all with minimal operational disruption.
+        </p>
+        <p className="text-base font-semibold text-primary max-w-3xl mx-auto">
+          Trusted by boutique hotels, fine dining restaurants, and heritage venues across Mayfair, Westminster, Bloomsbury, and beyond.
         </p>
       </section>
 
-      {/* Main Image */}
       <div className="w-full">
         <AspectRatio ratio={21/9}>
           <OptimizedImage
-            src="/lovable-uploads/96faaaa8-1961-4d56-897f-cf5fba13e0cd.png"
-            alt="Secondary glazing installation in a historic building"
+            src="https://cdn.marblism.com/ZJ5jnl5eN8z.webp"
+            alt="Luxury London hotel with secondary glazing installation showing elegant interior"
             className="rounded-lg object-cover w-full h-full"
             priority={true}
           />
