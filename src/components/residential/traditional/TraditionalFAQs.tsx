@@ -10,24 +10,24 @@ import { AIOptimizedFAQ } from "@/components/seo/AIOptimizedFAQ";
 
 const faqs = [
   {
-    question: "What is secondary glazing?",
-    answer: "Secondary glazing involves adding an additional layer of glass or acrylic to existing windows to improve insulation and energy efficiency without replacing the original windows."
+    question: "What makes secondary glazing 'traditional'?",
+    answer: "Traditional refers to operating styles (hinged/slider), materials (timber/slim aluminum), aesthetics (slim profiles), and heritage approach (conservation-approved)."
   },
   {
-    question: "Can secondary glazing be installed on all types of listed windows?",
-    answer: "Yes, secondary glazing can be designed and customized to fit various styles of listed windows, including sash and casement windows, while preserving their historical features."
+    question: "Do I need planning permission?",
+    answer: "Most listed building installations require no permission as they're internal modifications. Conservation areas may require approval - traditional solutions increase likelihood."
   },
   {
-    question: "How does secondary glazing affect the exterior appearance of a listed building?",
-    answer: "When properly installed, secondary glazing can be virtually invisible from the exterior, maintaining the original look of the building while enhancing energy performance."
+    question: "How do costs compare?",
+    answer: "Traditional options cost £400-£900 per window depending on material and operation. While premium over basic solutions, they're essential for heritage properties."
   },
   {
-    question: "Is secondary glazing a cost-effective solution?",
-    answer: "Yes, secondary glazing can lead to significant energy savings over time, making it a cost-effective solution for improving the comfort and efficiency of listed buildings."
+    question: "Can traditional systems match my period windows?",
+    answer: "Yes - vertical sliders suit Georgian/Victorian sash windows, side-hung hinged match casements, with period-appropriate materials and colors."
   },
   {
-    question: "What materials are best for secondary glazing?",
-    answer: "Low-emissivity (Low-E) glass is often preferred for secondary glazing due to its excellent thermal insulation properties. Acrylic can also be used for certain applications because of its lightweight and easy installation."
+    question: "What about maintenance?",
+    answer: "Aluminum frames require minimal maintenance, timber frames need repainting every 5-7 years, hinged systems may need occasional adjustment."
   }
 ];
 
