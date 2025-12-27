@@ -1,167 +1,145 @@
-
 import React from "react";
 import { MainNav } from "@/components/MainNav";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Footer } from "@/components/Footer";
-import { SectionHeading } from "@/components/ui/section-heading";
-import { TraditionalFAQs } from "@/components/residential/traditional/TraditionalFAQs";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Helmet } from "react-helmet";
 import { createPageSchema } from "@/utils/seo";
-import { VerticalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
+import { TraditionalHero } from "@/components/residential/traditional/TraditionalHero";
+import { WhatIsTraditional } from "@/components/residential/traditional/WhatIsTraditional";
+import { TraditionalOperatingStyles } from "@/components/residential/traditional/TraditionalOperatingStyles";
+import { TraditionalMaterials } from "@/components/residential/traditional/TraditionalMaterials";
+import { HeritagePropertyApplications } from "@/components/residential/traditional/HeritagePropertyApplications";
+import { PlanningPermission } from "@/components/residential/traditional/PlanningPermission";
+import { TraditionalCostAnalysis } from "@/components/residential/traditional/TraditionalCostAnalysis";
+import { TraditionalCaseStudies } from "@/components/residential/traditional/TraditionalCaseStudies";
+import { TraditionalInstallation } from "@/components/residential/traditional/TraditionalInstallation";
+import { TraditionalFAQs } from "@/components/residential/traditional/TraditionalFAQs";
+import { TraditionalCTA } from "@/components/residential/traditional/TraditionalCTA";
 
 const TraditionalOptions = () => {
-  // Define page metadata
   const pageMetadata = {
-    title: "Traditional Secondary Glazing Options for Listed Windows",
-    description: "Discover how traditional secondary glazing solutions can enhance the insulation and heritage value of listed windows while complying with conservation requirements.",
+    title: "Traditional Secondary Glazing for Heritage Properties | London Specialists",
+    description: "Traditional secondary glazing for London's period properties. Heritage-approved solutions with authentic operating styles, period materials, and conservation-friendly aesthetics. £400-£900 per window.",
     canonicalPath: "/residential/traditional-options",
     imageUrl: "/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
     type: "article" as const,
-    publishedDate: "2026-01-01",
-    modifiedDate: "2026-01-01",
-    keywords: ["traditional secondary glazing", "listed buildings", "heritage windows", "energy efficiency", "window preservation", "conservation areas"]
+    publishedDate: "2025-01-01",
+    modifiedDate: "2025-01-15",
+    keywords: ["traditional secondary glazing", "heritage windows", "listed buildings", "conservation areas", "Victorian windows", "Georgian windows", "Edwardian properties", "timber frames", "vertical slider", "side-hung hinged"]
   };
 
   const pageSchema = createPageSchema(pageMetadata);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes secondary glazing 'traditional'?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Traditional refers to operating styles (hinged/slider), materials (timber/slim aluminum), aesthetics (slim profiles), and heritage approach (conservation-approved)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need planning permission for traditional secondary glazing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most listed building installations require no permission as they're internal modifications. Conservation areas may require approval - traditional solutions increase likelihood."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does traditional secondary glazing cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Traditional options cost £400-£900 per window depending on material and operation. Side-hung hinged aluminum costs £400-£700, vertical slider aluminum £450-£750, and timber frames £500-£900."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can traditional systems match my period windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes - vertical sliders suit Georgian/Victorian sash windows, side-hung hinged match casements, with period-appropriate materials and colors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What maintenance do traditional secondary glazing systems require?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aluminum frames require minimal maintenance, timber frames need repainting every 5-7 years, hinged systems may need occasional adjustment."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://secondaryglazingspecialist.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Residential",
+        "item": "https://secondaryglazingspecialist.com/residential"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Traditional Options",
+        "item": "https://secondaryglazingspecialist.com/residential/traditional-options"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>{pageMetadata.title} | Secondary Glazing Specialist</title>
+        <title>{pageMetadata.title}</title>
         <meta name="description" content={pageMetadata.description} />
         <meta name="keywords" content={pageMetadata.keywords?.join(", ")} />
         <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
         
-        {/* Open Graph tags */}
         <meta property="og:title" content={pageMetadata.title} />
         <meta property="og:description" content={pageMetadata.description} />
         <meta property="og:type" content={pageMetadata.type} />
         <meta property="og:url" content={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
-        {pageMetadata.imageUrl && <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        <meta property="og:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />
         
-        {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageMetadata.title} />
         <meta name="twitter:description" content={pageMetadata.description} />
-        {pageMetadata.imageUrl && <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />}
+        <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />
         
-        {/* JSON-LD structured data */}
         <script type="application/ld+json">{pageSchema}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
-        <div className="flex items-center gap-4 mb-8">
-          <VerticalSlidingIcon size={56} className="text-primary" />
-          <h1 className="text-4xl font-bold">{pageMetadata.title}</h1>
-        </div>
-        
-        {/* Introduction */}
-        <Card className="mb-8">
-          <CardContent className="pt-6">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-2xl font-semibold mb-4">Secondary Glazing &amp; Listed Buildings </h2>
-                <p className="text-gray-600">
-                  Windows are a crucial component of any building, providing natural light, ventilation, and an aesthetic appeal. However, in listed buildings, the challenge lies in maintaining the historical integrity while also enhancing energy efficiency. This article explores how secondary glazing solutions can effectively improve both the insulation properties and aesthetic value of listed windows.
-                </p>
-              </div>
-              <div className="relative h-64">
-                <img src="/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png" alt="Traditional window with secondary glazing" className="w-full h-full object-cover rounded-lg" />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Energy Efficiency Benefits */}
-        <SectionHeading title="Energy Efficiency Benefits" subtitle="Understanding the impact of secondary glazing on energy performance" />
-        
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle>Understanding Heat Loss</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="mb-6">
-                <img src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png" alt="Heat loss diagram" className="w-full h-48 object-cover rounded-lg mb-4" />
-              </div>
-              <p className="text-gray-600">
-                Listed windows, typically single-glazed, are notorious for their poor insulation characteristics. Heat loss through these windows can account for a significant portion of a building's overall energy loss, leading to uncomfortable interior temperatures and increased energy expenditure.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Secondary Glazing Benefits</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="mb-6">
-                <img src="/lovable-uploads/2f4fa321-a97b-487b-a0f2-bb38093e6ca3.jpg" alt="Energy efficiency improvement" className="w-full h-48 object-cover rounded-lg mb-4" />
-              </div>
-              <p className="text-gray-600">
-                Secondary glazing can reduce heat loss by up to 50%, drastically improving the thermal efficiency of listed buildings. Additionally, it helps mitigate noise pollution and reduces energy bills significantly over time.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Aesthetic Enhancement */}
-        <SectionHeading title="Aesthetic Enhancement Techniques" subtitle="Preserving historical integrity while improving performance" />
-        
-        <Card className="mb-8">
-          <CardContent className="pt-6">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1">
-                <img src="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" alt="Traditional window preservation" className="w-full h-64 object-cover rounded-lg" />
-              </div>
-              <div className="order-1 md:order-2">
-                <h3 className="text-xl font-semibold mb-3">Preserving Historical Integrity</h3>
-                <p className="text-gray-600">
-                  Secondary glazing can be designed to complement existing window styles, whether Victorian, Georgian, or another period. Our solutions maintain the original appearance while achieving modern performance standards.
-                </p>
-                <ul className="list-disc list-inside text-gray-600 mt-4 space-y-2">
-                  <li>Custom-designed frames to match period features</li>
-                  <li>Slim profiles for minimal visual impact</li>
-                  <li>Clear or lightly tinted glass options</li>
-                  <li>Reversible installation methods</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Case Studies */}
-        <SectionHeading title="Case Studies" subtitle="Real-world examples of successful installations" />
-
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle>Residential Project</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                A Victorian townhouse achieved 40% reduction in heating costs after installing our secondary glazing solutions, while maintaining its historical character.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Commercial Project</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">
-                A historic commercial building successfully balanced modern energy standards with heritage preservation through custom secondary glazing installation.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* FAQs */}
+        <TraditionalHero />
+        <WhatIsTraditional />
+        <TraditionalOperatingStyles />
+        <TraditionalMaterials />
+        <HeritagePropertyApplications />
+        <PlanningPermission />
+        <TraditionalCostAnalysis />
+        <TraditionalCaseStudies />
+        <TraditionalInstallation />
         <TraditionalFAQs />
+        <TraditionalCTA />
       </div>
       <Footer />
     </div>
