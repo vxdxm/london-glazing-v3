@@ -74,6 +74,19 @@ export const CaseStudies = () => {
           </p>
         </div>
 
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <img 
+            src="/images/commercial/retail-installation.webp" 
+            alt="Secondary glazing installation in progress at London boutique with minimal disruption" 
+            className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+          />
+          <img 
+            src="/images/commercial/retail-cafe.webp" 
+            alt="Cozy London cafe with warm window seating after secondary glazing installation" 
+            className="w-full h-[300px] object-cover rounded-xl shadow-lg"
+          />
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {cases.map((caseStudy, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow overflow-hidden">
