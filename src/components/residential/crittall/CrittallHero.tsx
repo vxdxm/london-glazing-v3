@@ -12,7 +12,7 @@ export const CrittallHero = () => {
       
       <div className="bg-primary/5 rounded-lg p-8 mb-8">
         <p className="text-xl text-foreground mb-6">
-          <strong>Preserve your iconic Crittall grids completely while achieving 50-65% energy reduction and avoiding £12,000-£18,000 replacement costs.</strong> Our secondary glazing stops metal frame heat conduction, eliminates condensation on Crittall frames, and reduces noise by 70-80%, all while maintaining your property's authentic 1920s-1950s architectural heritage. Listed building and conservation area approved. Reversible solution protects heritage value.
+          <strong>Perfect for preserving original Crittall windows completely while achieving 50-65% energy reduction and avoiding £12,000-£18,000 replacement costs.</strong> Our secondary glazing stops metal frame heat conduction, eliminates condensation on Crittall frames, and reduces noise by 70-80%, all while maintaining your property's authentic 1920s-1950s architectural heritage. Ideal for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> and <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>. Reversible solution protects heritage value.
         </p>
         
         <p className="text-lg text-muted-foreground mb-6">
