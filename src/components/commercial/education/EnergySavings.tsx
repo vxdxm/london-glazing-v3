@@ -1,5 +1,6 @@
 import { PoundSterling, TrendingDown, Leaf, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const EnergySavings = () => {
   const savings = [
@@ -51,6 +52,7 @@ export const EnergySavings = () => {
             Energy Savings & Budget Relief
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Reduce energy costs while meeting sustainability targets</Link>. 
             Educational institutions face relentless budget pressure, with heating costs often consuming 20-30% of operational budgets. 
             Secondary glazing delivers savings that governors and bursars appreciate.
           </p>
@@ -85,6 +87,11 @@ export const EnergySavings = () => {
             </Card>
           ))}
         </div>
+
+        <p className="text-center text-muted-foreground mt-8">
+          <Link to="/blog/thermal-efficiency-secondary-glazing-benefits" className="text-primary hover:underline">Read more about thermal efficiency benefits</Link> |{' '}
+          <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read about secondary glazing costs for educational institutions</Link>
+        </p>
       </div>
     </section>
   );

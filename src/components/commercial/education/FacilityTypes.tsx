@@ -1,5 +1,6 @@
 import { School, GraduationCap, Heart, Church, Building2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const FacilityTypes = () => {
   const facilities = [
@@ -68,7 +69,9 @@ export const FacilityTypes = () => {
             Comprehensive Educational Facility Coverage
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Specialized solutions for every type of educational environment
+            Specialized solutions for every type of educational environment, from{' '}
+            <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> and{' '}
+            <Link to="/edwardian-property-secondary-glazing" className="text-primary hover:underline">Edwardian school buildings</Link> to modern facilities.
           </p>
         </div>
 
@@ -121,6 +124,14 @@ export const FacilityTypes = () => {
             </Card>
           ))}
         </div>
+
+        <p className="text-center text-muted-foreground mt-8">
+          Heritage school buildings with <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">original sash windows</Link> are our specialty. 
+          We work with schools in <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link> across{' '}
+          <Link to="/areas/west-london" className="text-primary hover:underline">Kensington</Link>,{' '}
+          <Link to="/areas/central-london" className="text-primary hover:underline">Westminster</Link>, and{' '}
+          <Link to="/locations/conservation-richmond" className="text-primary hover:underline">Richmond</Link>.
+        </p>
       </div>
     </section>
   );

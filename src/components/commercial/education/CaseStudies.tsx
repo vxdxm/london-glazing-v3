@@ -1,5 +1,6 @@
 import { School, GraduationCap, Heart, CheckCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const CaseStudies = () => {
   const cases = [
@@ -15,7 +16,11 @@ export const CaseStudies = () => {
         "Improved SATs performance",
         "35% heating cost reduction (£4,200 annual saving)",
         "Outstanding Ofsted praise for learning environment"
-      ]
+      ],
+      links: {
+        area: "/areas/north-london",
+        heritage: "/victorian-windows-secondary-glazing"
+      }
     },
     {
       icon: GraduationCap,
@@ -29,7 +34,11 @@ export const CaseStudies = () => {
         "Improved student exam performance",
         "Stress-free examination environment",
         "Staff and student satisfaction improved"
-      ]
+      ],
+      links: {
+        area: "/areas/central-london",
+        noise: "/noise-reduction-secondary-glazing"
+      }
     },
     {
       icon: Heart,
@@ -43,7 +52,10 @@ export const CaseStudies = () => {
         "Pupils able to learn effectively",
         "Transformed outcomes for vulnerable students",
         "Staff wellbeing significantly improved"
-      ]
+      ],
+      links: {
+        area: "/areas/east-london"
+      }
     }
   ];
 
@@ -55,7 +67,9 @@ export const CaseStudies = () => {
             Real-World Educational Success Stories
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Proven results from schools across London
+            Proven results from schools across London – including{' '}
+            <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian schools</Link> and{' '}
+            <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link>
           </p>
         </div>
 
@@ -82,7 +96,7 @@ export const CaseStudies = () => {
                   <span className="text-sm font-medium text-foreground">Investment: </span>
                   <span className="text-sm text-primary font-semibold">{caseStudy.investment}</span>
                 </div>
-                <div>
+                <div className="mb-4">
                   <span className="text-sm font-medium text-foreground block mb-2">Results:</span>
                   <ul className="space-y-2">
                     {caseStudy.results.map((result, idx) => (
@@ -92,6 +106,18 @@ export const CaseStudies = () => {
                       </li>
                     ))}
                   </ul>
+                </div>
+                <div className="pt-2 border-t">
+                  <p className="text-xs text-muted-foreground">
+                    See more:{' '}
+                    <Link to={caseStudy.links.area} className="text-primary hover:underline">Area info</Link>
+                    {caseStudy.links.heritage && (
+                      <> | <Link to={caseStudy.links.heritage} className="text-primary hover:underline">Heritage solutions</Link></>
+                    )}
+                    {caseStudy.links.noise && (
+                      <> | <Link to={caseStudy.links.noise} className="text-primary hover:underline">Noise reduction</Link></>
+                    )}
+                  </p>
                 </div>
               </CardContent>
             </Card>

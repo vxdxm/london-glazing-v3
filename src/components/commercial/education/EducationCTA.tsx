@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Phone, Mail, ArrowRight } from "lucide-react";
 
 export const EducationCTA = () => {
@@ -37,13 +37,13 @@ export const EducationCTA = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center text-sm mb-8">
             <a 
-              href="tel:02012345678" 
+              href="tel:02070601572" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity justify-center"
             >
               <Phone className="w-4 h-4" />
-              020 1234 5678
+              0207 060 1572
             </a>
             <a 
               href="mailto:info@secondaryglazingspecialist.co.uk" 
@@ -52,6 +52,16 @@ export const EducationCTA = () => {
               <Mail className="w-4 h-4" />
               info@secondaryglazingspecialist.co.uk
             </a>
+          </div>
+
+          <div className="text-sm opacity-80">
+            <p>Also serving other commercial sectors:</p>
+            <p className="mt-2">
+              <Link to="/commercial/office-buildings" className="hover:underline">Offices</Link> |{' '}
+              <Link to="/commercial/hospitality-sector" className="hover:underline">Hotels & Restaurants</Link> |{' '}
+              <Link to="/commercial/healthcare-industry" className="hover:underline">Healthcare Facilities</Link> |{' '}
+              <Link to="/commercial/retail-spaces" className="hover:underline">Retail Spaces</Link>
+            </p>
           </div>
         </div>
       </div>

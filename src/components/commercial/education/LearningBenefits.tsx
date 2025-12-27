@@ -1,5 +1,6 @@
 import { Brain, Heart, Users, Calendar } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const LearningBenefits = () => {
   const benefits = [
@@ -37,7 +38,8 @@ export const LearningBenefits = () => {
             Critical Benefits for Student Learning & Development
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Evidence-based improvements that directly impact educational outcomes
+            <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Creating optimal acoustic environments for concentration and learning</Link> delivers 
+            evidence-based improvements that directly impact educational outcomes.
           </p>
         </div>
 
