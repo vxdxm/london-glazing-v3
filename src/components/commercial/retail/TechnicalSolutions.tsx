@@ -1,5 +1,6 @@
 import { Eye, DoorOpen, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const TechnicalSolutions = () => {
   const solutions = [
@@ -46,7 +47,7 @@ export const TechnicalSolutions = () => {
             Technical Solutions for Different Retail Needs
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tailored approaches for every area of your retail space
+            Tailored approaches for every area of your retail space. <Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">Understanding air gap requirements for retail</Link>.
           </p>
         </div>
 
