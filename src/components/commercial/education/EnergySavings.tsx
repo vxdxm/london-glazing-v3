@@ -52,9 +52,9 @@ export const EnergySavings = () => {
             Energy Savings & Budget Relief
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Reduce energy costs while meeting sustainability targets</Link>. 
+            <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve thermal efficiency for year-round comfort</Link>. 
             Educational institutions face relentless budget pressure, with heating costs often consuming 20-30% of operational budgets. 
-            Secondary glazing delivers savings that governors and bursars appreciate.
+            Secondary glazing delivers savings that governors and bursars appreciate. <Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">Prevent condensation that affects air quality</Link>.
           </p>
         </div>
 
@@ -90,7 +90,8 @@ export const EnergySavings = () => {
 
         <p className="text-center text-muted-foreground mt-8">
           <Link to="/blog/thermal-efficiency-secondary-glazing-benefits" className="text-primary hover:underline">Read more about thermal efficiency benefits</Link> |{' '}
-          <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read about secondary glazing costs for educational institutions</Link>
+          <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read about secondary glazing costs for educational institutions</Link> |{' '}
+          <Link to="/blog/environmental-impact-secondary-glazing" className="text-primary hover:underline">Use our sustainability tracker as a teaching tool</Link>
         </p>
       </div>
     </section>

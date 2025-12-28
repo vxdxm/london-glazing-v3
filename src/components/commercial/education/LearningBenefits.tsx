@@ -39,7 +39,7 @@ export const LearningBenefits = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Creating optimal acoustic environments for concentration and learning</Link> delivers 
-            evidence-based improvements that directly impact educational outcomes.
+            evidence-based improvements that directly impact educational outcomes. <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">Understanding sound transmission in educational settings</Link> is essential for school planners. <Link to="/noise-reduction-calculator" className="text-primary hover:underline">Calculate noise reduction for your school</Link>.
           </p>
         </div>
 

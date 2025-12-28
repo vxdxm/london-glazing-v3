@@ -20,7 +20,8 @@ export const EducationHero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Transform your educational facility with secondary glazing solutions that improve student learning outcomes, 
+              Transform your educational facility with secondary glazing solutions that{' '}
+              <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">create optimal learning environments with acoustic solutions</Link>, 
               meet BB93 acoustic standards, <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">reduce energy costs by up to 50%</Link>, and preserve{' '}
               <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">heritage buildings</Link>. Our comprehensive 
               systems create optimal learning environments across London schools, colleges, and universities.

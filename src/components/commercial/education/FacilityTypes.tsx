@@ -10,7 +10,7 @@ export const FacilityTypes = () => {
       areas: [
         "Reception classes requiring warm, secure environments",
         "Key Stage 2 classrooms needing acoustic focus",
-        "Child-safe installations with toughened glass",
+        "Child-safe installations with toughened glass meeting school security glazing requirements",
         "Secure locking systems meeting safeguarding requirements",
         "Peace of mind for parents and governors"
       ]
@@ -126,11 +126,11 @@ export const FacilityTypes = () => {
         </div>
 
         <p className="text-center text-muted-foreground mt-8">
-          Heritage school buildings with <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">original sash windows</Link> are our specialty. 
+          <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Many schools are listed buildings - preserve original windows</Link>. Heritage school buildings with <Link to="/sash-window-secondary-glazing" className="text-primary hover:underline">original sash windows</Link> are our specialty. 
           We work with schools in <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link> across{' '}
           <Link to="/areas/west-london" className="text-primary hover:underline">Kensington</Link>,{' '}
           <Link to="/areas/central-london" className="text-primary hover:underline">Westminster</Link>, and{' '}
-          <Link to="/locations/conservation-richmond" className="text-primary hover:underline">Richmond</Link>.
+          <Link to="/locations/conservation-richmond" className="text-primary hover:underline">Richmond</Link>. <Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">Technical specifications like air gap sizing for STEM lessons</Link>.
         </p>
       </div>
     </section>
