@@ -11,7 +11,7 @@ const HeritageExpertise = () => {
       <p className="text-muted-foreground mb-6">
         Many of London's most prestigious hotels occupy <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link> in{' '}
         <Link to="/conservation-areas-secondary-glazing" className="text-primary hover:underline">conservation areas</Link>. Westminster hotels, 
-        Kensington mansion blocks, and Bloomsbury Georgian terraces face strict planning restrictions that prevent window replacement.
+        Kensington mansion blocks, and Bloomsbury Georgian terraces face strict planning restrictions that prevent window replacement. <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Listed hotel? Learn about preserving original windows</Link>.
       </p>
       
       <p className="text-muted-foreground mb-6">
@@ -54,7 +54,7 @@ const HeritageExpertise = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground text-sm">
-              We provide documentation for planning applications when required. <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">Read our guide about planning permission for commercial properties</Link>.
+              We provide documentation for planning applications when required. <Link to="/blog/planning-permission-secondary-glazing-conservation-areas" className="text-primary hover:underline">Read our guide about planning permission for commercial properties</Link>. <Link to="/blog/environmental-impact-secondary-glazing" className="text-primary hover:underline">Show guests your sustainability commitment</Link>.
             </p>
           </CardContent>
         </Card>
