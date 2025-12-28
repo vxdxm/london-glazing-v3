@@ -35,7 +35,10 @@ const BenefitsGrid = () => {
             <p className="text-muted-foreground mb-4">
               Noise is the #1 complaint in hotel guest reviews. Our secondary glazing delivers 70-80%{' '}
               <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link>, 
-              creating the peaceful environment guests expect for quality sleep and comfortable dining.
+              creating the peaceful environment guests expect. <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">Essential sound transmission information for hotels</Link>.
+            </p>
+            <p className="text-sm text-muted-foreground mb-2">
+              <Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">Prevent condensation on windows that affects guest perception</Link>.
             </p>
             <p className="text-sm font-medium text-primary">
               Properties report ratings jumping from 3.5 to 4.5 stars within months
@@ -50,9 +53,12 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve thermal efficiency to reduce heating costs</Link>. 
+              <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve thermal insulation to reduce energy bills</Link>. 
               Hospitality venues typically save 30-50% on heating and cooling costs after installation. 
               For a 50-room hotel, this translates to £8,000-£15,000 annual savings.
+            </p>
+            <p className="text-sm text-muted-foreground mb-2">
+              <Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">Understanding air gap sizing for hospitality</Link>.
             </p>
             <p className="text-sm font-medium text-primary">
               Typical payback period of 2-4 years with 20+ years of value
@@ -68,7 +74,7 @@ const BenefitsGrid = () => {
           <CardContent>
             <p className="text-muted-foreground mb-4">
               Better guest comfort leads to positive reviews, increased direct bookings, and higher guest loyalty. 
-              Properties often command premium rates after improvements. <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read our complete guide to secondary glazing costs</Link>.
+              Properties often command premium rates after improvements. <Link to="/security-secondary-glazing" className="text-primary hover:underline">Ground-floor security glazing for hotels</Link> adds peace of mind. <Link to="/blog/secondary-glazing-cost-london" className="text-primary hover:underline">Read our complete guide to secondary glazing costs</Link>.
             </p>
             <p className="text-sm font-medium text-primary">
               Reduced complaints eliminate costly refunds and compensation claims
