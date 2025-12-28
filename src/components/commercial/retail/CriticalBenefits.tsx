@@ -1,5 +1,6 @@
 import { ShoppingBag, PoundSterling, Landmark, ShieldCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const CriticalBenefits = () => {
   const benefits = [
@@ -7,25 +8,33 @@ export const CriticalBenefits = () => {
       icon: ShoppingBag,
       title: "Customer Experience & Sales Impact",
       description: "Comfortable shop temperatures directly correlate with increased sales. When customers feel warm and comfortable, they browse 30-40% longer.",
-      details: "Showcase windows become properly functional display areas. Products remain in better condition without temperature fluctuations, while reduced UV transmission prevents fading and damage to valuable stock."
+      details: "Showcase windows become properly functional display areas. Products remain in better condition without temperature fluctuations, while reduced UV transmission prevents fading and damage to valuable stock.",
+      link: "/noise-reduction-secondary-glazing",
+      linkText: "Create a peaceful shopping environment with acoustic glazing"
     },
     {
       icon: PoundSterling,
       title: "Energy Cost Savings That Improve Margins",
       description: "Retail heating costs typically represent 15-25% of operating expenses, with showcase windows responsible for up to 60% of heat loss.",
-      details: "Secondary glazing delivers 30-50% reduction in heating and cooling costs, translating to annual savings of £2,000-£15,000+ depending on shop size."
+      details: "Secondary glazing delivers 30-50% reduction in heating and cooling costs, translating to annual savings of £2,000-£15,000+ depending on shop size.",
+      link: "/thermal-insulation-secondary-glazing",
+      linkText: "Reduce heating/cooling costs with thermal insulation"
     },
     {
       icon: Landmark,
       title: "Heritage Shop Front Preservation",
       description: "Many London high streets feature beautiful Georgian, Victorian, and Edwardian shop fronts protected by conservation area restrictions.",
-      details: "Secondary glazing preserves these heritage features while delivering modern performance, requiring no planning permission and maintaining original character."
+      details: "Secondary glazing preserves these heritage features while delivering modern performance, requiring no planning permission and maintaining original character.",
+      link: "/listed-buildings-secondary-glazing",
+      linkText: "Historic shops can preserve original shopfronts"
     },
     {
       icon: ShieldCheck,
       title: "Enhanced Security for Ground Floor Retail",
       description: "Street-level retail premises face constant security concerns from smash-and-grab theft.",
-      details: "Secondary glazing provides an additional barrier with toughened and laminated glass options, often reducing insurance premiums while providing peace of mind for valuable stock."
+      details: "Secondary glazing provides an additional barrier with toughened and laminated glass options, often reducing insurance premiums while providing peace of mind for valuable stock.",
+      link: "/security-secondary-glazing",
+      linkText: "Storefront security glazing"
     }
   ];
 
@@ -62,7 +71,10 @@ export const CriticalBenefits = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-3">{benefit.description}</p>
-                <p className="text-sm text-muted-foreground/80 italic">{benefit.details}</p>
+                <p className="text-sm text-muted-foreground/80 italic mb-2">{benefit.details}</p>
+                {benefit.link && (
+                  <Link to={benefit.link} className="text-sm text-primary hover:underline">{benefit.linkText}</Link>
+                )}
               </CardContent>
             </Card>
           ))}

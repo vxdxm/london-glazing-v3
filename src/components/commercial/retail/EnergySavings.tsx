@@ -1,5 +1,6 @@
-import { PoundSterling } from "lucide-react";
+import { PoundSterling, TrendingDown, Leaf, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const EnergySavings = () => {
   const savings = [
@@ -28,8 +29,8 @@ export const EnergySavings = () => {
             Energy Savings & Profit Improvement
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            The financial impact extends far beyond reduced heating bills. Comfortable shops generate higher sales 
-            through increased customer dwell time, while staff productivity improves in pleasant working conditions.
+            The financial impact extends far beyond reduced heating bills. <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Reduce heating/cooling costs with thermal insulation</Link>. Comfortable shops generate higher sales 
+            through increased customer dwell time, while staff productivity improves in pleasant working conditions. <Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">Prevent condensation on display windows</Link>.
           </p>
         </div>
 
