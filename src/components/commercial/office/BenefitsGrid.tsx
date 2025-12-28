@@ -31,13 +31,13 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Our <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">secondary glazing systems</Link> deliver <strong>40-50dB noise reduction</strong>, transforming noisy street-facing offices into productive workspaces.
+              Our <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">secondary glazing systems</Link> deliver <strong>40-50dB noise reduction</strong>, transforming noisy street-facing offices into productive workspaces. <Link to="/specialized/sound-transmission-guide" className="text-primary hover:underline">Learn how sound transmission works in commercial settings</Link>.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Acoustic laminated glass options for superior sound insulation</li>
               <li>Essential for meeting rooms and concentration areas</li>
               <li>Perfect for client-facing spaces requiring privacy</li>
-              <li><Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">Reduces external traffic, construction, and urban noise</Link></li>
+              <li><Link to="/noise-reduction-calculator" className="text-primary hover:underline">Use our noise reduction calculator for your office</Link></li>
             </ul>
           </CardContent>
         </Card>
@@ -53,12 +53,12 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Achieve <strong>30-50% reduction</strong> in heating and cooling costs with our <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal secondary glazing solutions</Link>.
+              Achieve <strong>30-50% reduction</strong> in heating and cooling costs with our <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">thermal secondary glazing solutions that improve performance and reduce HVAC costs</Link>.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Double-glazed units with Low-E coating</li>
               <li><Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">Improve EPC rating from D to B</Link></li>
-              <li>Increase rental values by 5-10%</li>
+              <li><Link to="/specialized/air-gap-secondary-glazing" className="text-primary hover:underline">Understanding air gap specifications for commercial installations</Link></li>
               <li>Reduce carbon footprint significantly</li>
             </ul>
           </CardContent>
@@ -97,13 +97,13 @@ const BenefitsGrid = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Toughened and laminated glass options provide an additional security layer while meeting commercial safety standards.
+              Toughened and laminated glass options provide <Link to="/security-secondary-glazing" className="text-primary hover:underline">commercial security glazing solutions</Link> while meeting commercial safety standards.
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
               <li>Perfect for ground-floor offices and reception areas</li>
               <li>Ideal for buildings in high-traffic locations</li>
               <li>UV protection for furniture and equipment</li>
-              <li>Condensation reduction and easy maintenance</li>
+              <li><Link to="/blog/thermal-efficiency-benefits" className="text-primary hover:underline">Prevent condensation issues in air-conditioned offices</Link></li>
             </ul>
           </CardContent>
         </Card>

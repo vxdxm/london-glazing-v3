@@ -12,7 +12,7 @@ const OfficeHero = () => {
       
       <div className="prose max-w-none mb-8 text-muted-foreground">
         <p className="text-xl font-medium text-foreground">
-          Transform your London office building with professional secondary glazing solutions that deliver immediate results: <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">70-80% noise reduction</Link>, <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">30-50% energy savings</Link>, and minimal business disruption. Trusted by leading firms across <Link to="/areas/central-london" className="text-primary hover:underline">the City, Canary Wharf, and West End</Link> for over two decades.
+          Transform your London office building with professional secondary glazing solutions that deliver immediate results: <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">creating productive work environments with superior acoustic performance</Link>, <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">30-50% energy savings</Link>, and minimal business disruption. Trusted by leading firms across <Link to="/areas/central-london" className="text-primary hover:underline">the City, Canary Wharf, and West End</Link> for over two decades.
         </p>
       </div>
       
