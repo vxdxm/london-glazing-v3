@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TechnicalSpecs = () => {
   return (
@@ -90,12 +91,12 @@ const TechnicalSpecs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <p className="text-muted-foreground">
-                All commercial installations meet <strong>Part L Building Regulations</strong> for thermal performance and energy efficiency. Our systems carry full acoustic testing certificates, fire safety ratings, and contribute towards <strong>BREEAM sustainability assessments</strong>.
+                All commercial installations meet <strong>Part L Building Regulations</strong> for thermal performance and energy efficiency. Our systems carry full acoustic testing certificates, fire safety ratings, and contribute towards <strong>BREEAM sustainability assessments</strong>. <Link to="/blog/environmental-impact-secondary-glazing" className="text-primary hover:underline">Track your building's sustainability impact</Link>.
               </p>
             </div>
             <div>
               <p className="text-muted-foreground">
-                <strong>Health & Safety compliance</strong> includes safe working protocols for occupied buildings, full risk assessments, and coordination with facility management teams.
+                <strong>Health & Safety compliance</strong> includes safe working protocols for occupied buildings, full risk assessments, and coordination with facility management teams. <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">Perfect for preserving original windows in listed office buildings</Link>.
               </p>
             </div>
           </div>
