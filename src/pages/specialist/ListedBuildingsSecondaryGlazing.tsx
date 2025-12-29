@@ -765,6 +765,28 @@ const ListedBuildingsSecondaryGlazing = () => {
         </div>
       </section>
 
+      {/* Sister Service Promo */}
+      <section className="py-8 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-muted-foreground leading-relaxed">
+              For comprehensive installation guidance specifically for listed properties, including 
+              step-by-step planning permission advice and detailed case studies, visit our{" "}
+              <a 
+                href="https://www.secondaryglazinginstallers.com/listed-building-windows"
+                className="text-primary hover:text-primary/80 font-medium underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                professional listed building installers
+              </a>{" "}
+              service. Their specialist team provides detailed installation processes and 
+              transparent pricing for Grade I, II*, and II listed buildings.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <ContactForm />
       <Footer />
     </div>
