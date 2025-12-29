@@ -739,7 +739,37 @@ const SashWindowSecondaryGlazing = () => {
                   order and delivered ready for installation.
                 </p>
 
-                <QuickLinksGrid 
+                {/* Sister Service Promo */}
+                <div className="bg-muted/50 p-6 rounded-lg my-8 not-prose">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    Installation Services for Sash Windows
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Our{" "}
+                    <a 
+                      href="https://www.secondaryglazinginstallers.com/sash-window-secondary-glazing"
+                      className="text-primary hover:text-primary/80 font-medium underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      sash window installation specialists
+                    </a>{" "}
+                    provide detailed guides covering vertical sliding systems, horizontal sliders, 
+                    and bespoke solutions for Georgian and Victorian properties. Get instant pricing with 
+                    their{" "}
+                    <a 
+                      href="https://www.secondaryglazinginstallers.com/calculator"
+                      className="text-primary hover:text-primary/80 font-medium underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      cost calculator
+                    </a>{" "}
+                    or explore installation options by window configuration.
+                  </p>
+                </div>
+
+                <QuickLinksGrid
                   title="Explore Our Glazing Types" 
                   links={residentialGlazingLinks} 
                   columns={3}
