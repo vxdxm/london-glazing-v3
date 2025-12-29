@@ -650,6 +650,24 @@ const NoiseReductionSecondaryGlazing = () => {
                   </Card>
                 </div>
 
+                {/* Sister Service Callout */}
+                <div className="border-2 border-primary/20 bg-primary/5 p-6 rounded-lg my-8 not-prose">
+                  <p className="text-foreground mb-0">
+                    <strong>💡 Professional Installation Tip:</strong> Maximum noise reduction requires 
+                    precise fitting and proper sealing. Our{" "}
+                    <a 
+                      href="https://www.secondaryglazinginstallers.com/noise-reduction"
+                      className="text-primary hover:text-primary/80 font-medium underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      acoustic secondary glazing installers
+                    </a>{" "}
+                    achieve up to 80% noise reduction with specialist acoustic glass and expert 
+                    installation techniques.
+                  </p>
+                </div>
+
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Acoustic Glass Options
                 </h2>
