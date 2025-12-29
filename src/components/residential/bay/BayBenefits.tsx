@@ -89,6 +89,21 @@ const BayBenefits = () => {
         </div>
       </div>
 
+      <p className="text-muted-foreground leading-relaxed mb-6">
+        For detailed bay window installation processes, including complex multi-panel configurations 
+        and curved bay solutions, see our{" "}
+        <a 
+          href="https://www.secondaryglazinginstallers.com/bay-window-secondary-glazing"
+          className="text-primary hover:text-primary/80 font-medium underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          bay window installation guide
+        </a>. 
+        It covers everything from initial measurements to final fitting for both traditional and 
+        contemporary bay window styles.
+      </p>
+
       <img 
         src="/images/bay-windows/bay-window-5.jpg" 
         alt="Bay window with secondary glazing benefits" 
