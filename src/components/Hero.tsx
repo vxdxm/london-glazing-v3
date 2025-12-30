@@ -58,6 +58,13 @@ export const Hero = () => {
             >
               Contact Us
             </Button>
+            <Button 
+              size="lg" 
+              variant="secondary"
+              onClick={() => navigate("/case-studies")}
+            >
+              📊 See Proof
+            </Button>
           </div>
           {/* Quick navigation links */}
           <div className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-white/80 animate-fade-up">
