@@ -1,21 +1,30 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
-import { Services } from "@/components/Services";
-import { SpecialistServices } from "@/components/SpecialistServices";
-import { HomepageContent } from "@/components/HomepageContent";
-import { ContactForm } from "@/components/ContactForm";
-import { Footer } from "@/components/Footer";
-import { Testimonials } from "@/components/Testimonials";
-import { TrustBadges } from "@/components/TrustBadges";
 import { HomepageIntro } from "@/components/HomepageIntro";
-import { SisterServicePromo } from "@/components/SisterServicePromo";
-import { FeaturedContent } from "@/components/FeaturedContent";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
 import { ComprehensiveSchema } from "@/components/seo/ComprehensiveSchema";
+
+// Lazy load below-fold components for better initial load performance
+const Services = lazy(() => import("@/components/Services").then(m => ({ default: m.Services })));
+const SpecialistServices = lazy(() => import("@/components/SpecialistServices").then(m => ({ default: m.SpecialistServices })));
+const HomepageContent = lazy(() => import("@/components/HomepageContent").then(m => ({ default: m.HomepageContent })));
+const ContactForm = lazy(() => import("@/components/ContactForm").then(m => ({ default: m.ContactForm })));
+const Footer = lazy(() => import("@/components/Footer").then(m => ({ default: m.Footer })));
+const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
+const TrustBadges = lazy(() => import("@/components/TrustBadges").then(m => ({ default: m.TrustBadges })));
+const SisterServicePromo = lazy(() => import("@/components/SisterServicePromo").then(m => ({ default: m.SisterServicePromo })));
+const FeaturedContent = lazy(() => import("@/components/FeaturedContent").then(m => ({ default: m.FeaturedContent })));
+
+// Loading fallback for lazy components
+const SectionLoader = () => (
+  <div className="w-full py-8 md:py-16 flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 const Index = () => {
   const aiConfig = createPageAIConfig(
@@ -187,19 +196,40 @@ const Index = () => {
       </header>
       
       <main>
+        {/* Critical above-fold content - loads immediately */}
         <Hero />
         <HomepageIntro />
-        <SisterServicePromo />
-        <Services />
-        <SpecialistServices />
-        <HomepageContent />
-        <TrustBadges />
-        <Testimonials />
-        <FeaturedContent />
-        <ContactForm />
+        
+        {/* Below-fold content - lazy loaded for better performance */}
+        <Suspense fallback={<SectionLoader />}>
+          <SisterServicePromo />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <SpecialistServices />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <HomepageContent />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <TrustBadges />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Testimonials />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <FeaturedContent />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <ContactForm />
+        </Suspense>
       </main>
       
-      <Footer />
+      <Suspense fallback={<SectionLoader />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
