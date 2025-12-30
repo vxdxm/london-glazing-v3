@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { TrustBadges } from "@/components/TrustBadges";
 import { HomepageIntro } from "@/components/HomepageIntro";
 import { SisterServicePromo } from "@/components/SisterServicePromo";
+import { FeaturedContent } from "@/components/FeaturedContent";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
@@ -194,6 +195,7 @@ const Index = () => {
         <HomepageContent />
         <TrustBadges />
         <Testimonials />
+        <FeaturedContent />
         <ContactForm />
       </main>
       
