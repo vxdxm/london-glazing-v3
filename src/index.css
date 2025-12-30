@@ -97,5 +97,52 @@
 
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* Mobile performance optimizations */
+  @media (max-width: 768px) {
+    /* Reduce motion for users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    
+    /* Optimize touch targets */
+    button, a, [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* GPU acceleration for smooth scrolling */
+    .scroll-container {
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Prevent layout shifts from font loading */
+    body {
+      font-display: swap;
+    }
+  }
+  
+  /* Optimize image rendering */
+  img {
+    content-visibility: auto;
+  }
+  
+  /* Critical content always visible */
+  .above-fold {
+    content-visibility: visible;
+  }
+  
+  /* Lazy render below fold content */
+  .below-fold {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
   }
 }
