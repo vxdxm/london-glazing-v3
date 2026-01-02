@@ -55,6 +55,35 @@
     <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
     <link rel="alternate" hreflang="en-GB" href="https://secondaryglazingspecialist.com/" />
     
+    <!-- Critical CSS for above-fold content - eliminates render blocking -->
+    <style>
+      /* Critical CSS inlined for faster FCP/LCP */
+      *,::after,::before{box-sizing:border-box;border:0 solid}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif}
+      body{margin:0;line-height:inherit;-webkit-font-smoothing:antialiased}
+      img,video{max-width:100%;height:auto;display:block}
+      button,input,select,textarea{font:inherit}
+      h1,h2,h3,p{margin:0}
+      a{color:inherit;text-decoration:inherit}
+      .bg-background{background-color:hsl(0 0% 100%)}
+      .text-foreground{color:hsl(222.2 84% 4.9%)}
+      .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+      @media(min-width:640px){.container{max-width:640px}}
+      @media(min-width:768px){.container{max-width:768px}}
+      @media(min-width:1024px){.container{max-width:1024px}}
+      @media(min-width:1280px){.container{max-width:1280px}}
+      .flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}
+      .text-center{text-align:center}.font-bold{font-weight:700}
+      .px-4{padding-left:1rem;padding-right:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}
+      .rounded-lg{border-radius:0.5rem}.shadow-lg{box-shadow:0 10px 15px -3px rgb(0 0 0/0.1)}
+      .bg-primary{background-color:hsl(222.2 47.4% 11.2%)}.text-white{color:#fff}
+      .min-h-screen{min-height:100vh}.relative{position:relative}
+      /* Loading skeleton for hero */
+      #root:empty{min-height:100vh;background:linear-gradient(180deg,hsl(0 0% 100%) 0%,hsl(210 40% 96.1%) 100%)}
+      #root:empty::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border:3px solid hsl(222.2 47.4% 11.2%);border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+    </style>
+    
     <!-- Service Worker for Enhanced Performance -->
     <script>
       if ('serviceWorker' in navigator) {
