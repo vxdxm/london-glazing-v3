@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate, Link } from "react-router-dom";
 import { memo, useCallback } from "react";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
-import { OptimizedImage } from "@/components/ui/optimized-image";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 
 const HeroComponent = () => {
   const navigate = useNavigate();
@@ -22,22 +22,15 @@ const HeroComponent = () => {
 
   return (
     <div className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center above-fold">
-      {/* Background Image - optimized for mobile */}
+      {/* Background Image - optimized with WebP and responsive srcset */}
       <div className="absolute inset-0">
-        <picture>
-          {/* Mobile-optimized image (smaller file size) */}
-          <source 
-            media="(max-width: 768px)" 
-            srcSet="/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png?w=768&q=75"
-          />
-          {/* Desktop image */}
-          <OptimizedImage
-            src="/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
-            alt="Heritage window with secondary glazing in traditional London home"
-            className="w-full h-full object-cover"
-            priority={true}
-          />
-        </picture>
+        <ResponsiveImage
+          src="/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png"
+          alt="Heritage window with secondary glazing in traditional London home"
+          className="object-cover"
+          priority={true}
+          sizes="100vw"
+        />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       <div className="container mx-auto px-4 z-10">
