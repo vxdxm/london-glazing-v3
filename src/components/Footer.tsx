@@ -67,27 +67,27 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary mt-8 py-12" role="contentinfo">
+    <footer className="bg-secondary mt-8 py-12" role="contentinfo" aria-label="Site footer">
       <div className="container mx-auto px-4">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <address className="not-italic space-y-3">
+            <h3 className="text-lg font-semibold mb-4" id="contact-heading">Contact Us</h3>
+            <address className="not-italic space-y-3" aria-labelledby="contact-heading">
               <div className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-1 text-primary" />
-                <a href="tel:02070601572" className="hover:text-primary">0207 060 1572</a>
+                <Phone className="w-4 h-4 mt-1 text-primary" aria-hidden="true" />
+                <a href="tel:02070601572" className="hover:text-primary" aria-label="Phone: 0207 060 1572">0207 060 1572</a>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-1 text-primary" />
+                <MapPin className="w-4 h-4 mt-1 text-primary" aria-hidden="true" />
                 <div>
                   <p>Arch 141, MacFarlane Road,</p>
                   <p>London, W12 7LA</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">
-                <Clock className="w-4 h-4 mt-1 text-primary" />
+                <Clock className="w-4 h-4 mt-1 text-primary" aria-hidden="true" />
                 <div>
                   <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
                   <p className="text-muted-foreground text-sm">(by appointment only)</p>

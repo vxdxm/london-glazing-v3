@@ -41,8 +41,8 @@ export function MainNav() {
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto max-h-screen pt-10">
-        <nav className="flex flex-col gap-4 pb-20">
+      <SheetContent side="left" className="w-[300px] sm:w-[400px] overflow-y-auto max-h-screen pt-10" aria-label="Mobile navigation menu">
+        <nav className="flex flex-col gap-4 pb-20" role="navigation" aria-label="Mobile menu">
           <MobileNavItem to="/">Home</MobileNavItem>
           {glazingOptions.map((section) => (
             <div key={section.title} className="space-y-3">
@@ -96,14 +96,14 @@ export function MainNav() {
   );
 
   return (
-    <div className="flex justify-between items-center w-full px-4">
+    <header className="flex justify-between items-center w-full px-4" role="banner">
       <div className="flex items-center">
         <div className="md:hidden">
           <MobileNav />
         </div>
       </div>
       
-      <NavigationMenu className="relative z-50">
+      <NavigationMenu className="relative z-50" aria-label="Main navigation">
         <NavigationMenuList className="hidden md:flex md:space-x-4">
           <NavigationMenuItem>
             <Link to="/" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
@@ -122,11 +122,15 @@ export function MainNav() {
                 onMouseEnter={() => handleMouseEnter(section.title)}
                 onMouseLeave={() => handleMouseLeave(section.title)}
               >
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  <li className="col-span-2">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]" role="menu" aria-label={`${section.title} submenu`}>
+                  <li className="col-span-2" role="none">
                     <div
                       onClick={() => handleNavigation(section.mainLink)}
+                      onKeyDown={(e) => e.key === 'Enter' && handleNavigation(section.mainLink)}
                       className="cursor-pointer block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      role="menuitem"
+                      tabIndex={0}
+                      aria-label={`View all ${section.title} options`}
                     >
                       <div className="text-sm font-medium leading-none">{section.title}</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
@@ -172,6 +176,7 @@ export function MainNav() {
             <Button
               onClick={() => handleNavigation("/quote-request")}
               className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 p-3"
+              aria-label="Get a free quote for secondary glazing"
             >
               Get Quote
             </Button>
@@ -186,12 +191,12 @@ export function MainNav() {
           className="hidden sm:flex items-center space-x-1"
           asChild
         >
-          <a href="tel:02070601572">
-            <Phone className="h-4 w-4" />
+          <a href="tel:02070601572" aria-label="Call us at 0207 060 1572">
+            <Phone className="h-4 w-4" aria-hidden="true" />
             <span className="hidden md:inline">Call Us</span>
           </a>
         </Button>
       </div>
-    </div>
+    </header>
   );
 }
