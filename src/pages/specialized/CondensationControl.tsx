@@ -6,7 +6,7 @@ import { CondensationHeader } from "@/components/specialized/condensation/Conden
 import { CondensationInfoCards } from "@/components/specialized/condensation/CondensationInfoCards";
 import { CondensationExplanationCards } from "@/components/specialized/condensation/CondensationExplanationCards";
 import { VentilationOptions } from "@/components/specialized/condensation/VentilationOptions";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const CondensationControl = () => {

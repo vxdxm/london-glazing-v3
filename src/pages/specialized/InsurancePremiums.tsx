@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import InsurancePremiumCalculator from "@/components/insurance/InsurancePremiumCalculator";
 import { Shield, Lock } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const InsurancePremiums = () => {

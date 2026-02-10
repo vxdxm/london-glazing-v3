@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";

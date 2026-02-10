@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const HospitalityIndustry = () => {

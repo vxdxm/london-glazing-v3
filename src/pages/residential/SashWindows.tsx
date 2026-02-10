@@ -11,7 +11,7 @@ import SashInvestment from "@/components/residential/sash/SashInvestment";
 import SashFAQ from "@/components/residential/sash/SashFAQ";
 import SashWindowCTA from "@/components/residential/sash/SashWindowCTA";
 import { OptimizedImage } from "@/components/ui/optimized-image";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { VerticalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const SashWindows = () => {

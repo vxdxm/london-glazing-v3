@@ -6,7 +6,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Shield, Sun, Sofa, Palette } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { lazy, Suspense } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 // Lazy load components that aren't needed for initial render

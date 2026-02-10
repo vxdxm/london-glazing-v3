@@ -8,7 +8,7 @@ import {
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createFAQSchema } from "@/utils/faq-schema";
 import { generateAIOptimizedSchema, contentTemplates, speakableConfigs } from "@/utils/ai-content-optimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";

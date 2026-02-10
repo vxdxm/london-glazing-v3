@@ -14,7 +14,7 @@ import BayComparison from "@/components/residential/bay/BayComparison";
 import BayFAQ from "@/components/residential/bay/BayFAQ";
 import BayWindowCTANew from "@/components/residential/bay/BayWindowCTANew";
 import GlassOptions from "@/components/residential/GlassOptions";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { HingedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 
 const BayWindows = () => {

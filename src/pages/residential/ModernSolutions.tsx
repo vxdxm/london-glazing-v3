@@ -13,7 +13,7 @@ import BenefitsSection from "@/components/residential/modern/BenefitsSection";
 import ConclusionSection from "@/components/residential/modern/ConclusionSection";
 import FAQsSection from "@/components/residential/modern/FAQsSection";
 import PageFooter from "@/components/residential/modern/PageFooter";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 import { HorizontalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 

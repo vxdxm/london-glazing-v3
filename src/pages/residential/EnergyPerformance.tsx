@@ -7,7 +7,7 @@ import { EnergyPerformanceCalculator } from "@/components/residential/energy/Ene
 import { EnergyPerformanceHero } from "@/components/residential/energy/EnergyPerformanceHero";
 import { EnergyPerformanceArticle } from "@/components/residential/energy/EnergyPerformanceArticle";
 import { EnergyPerformanceFAQ } from "@/components/residential/energy/EnergyPerformanceFAQ";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 import { MagneticIcon } from "@/components/icons/GlazingTypeIcons";
 

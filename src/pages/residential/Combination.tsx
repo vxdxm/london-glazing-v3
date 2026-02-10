@@ -8,7 +8,7 @@ import AvailableCombinations from "@/components/residential/combination/Availabl
 import TechnicalSpecs from "@/components/residential/combination/TechnicalSpecs";
 import CombinationCTA from "@/components/residential/combination/CombinationCTA";
 import GlassOptions from "@/components/residential/GlassOptions";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 import { TiltTurnIcon } from "@/components/icons/GlazingTypeIcons";
 

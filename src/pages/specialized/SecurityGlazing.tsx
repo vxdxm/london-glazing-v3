@@ -5,7 +5,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Shield, Lock, Wrench, CheckCircle } from "lucide-react";
 import SecurityBreakInCalculator from "@/components/SecurityBreakInCalculator";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const SecurityGlazing = () => {

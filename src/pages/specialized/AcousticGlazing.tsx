@@ -6,7 +6,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const AcousticGlazing = () => {
