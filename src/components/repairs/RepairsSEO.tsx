@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const RepairsSEO = () => {
   const currentDate = new Date().toISOString().split('T')[0];

@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SingleDoubleGlazedIntro } from "@/components/residential/single-double/SingleDoubleGlazedIntro";
 import { SingleDoubleGlazedBenefits } from "@/components/residential/single-double/SingleDoubleGlazedBenefits";
 import { SingleDoubleGlazedComparison } from "@/components/residential/single-double/SingleDoubleGlazedComparison";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { FixedPanelIcon } from "@/components/icons/GlazingTypeIcons";

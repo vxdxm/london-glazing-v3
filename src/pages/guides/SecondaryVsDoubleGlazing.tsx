@@ -2,7 +2,7 @@ import React from 'react';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbNav } from '@/components/ui/breadcrumb-nav';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { ComparisonHero } from '@/components/guides/secondary-vs-double/ComparisonHero';
 import { WhatIsSecondaryGlazing } from '@/components/guides/secondary-vs-double/WhatIsSecondaryGlazing';
 import { WhatIsDoubleGlazing } from '@/components/guides/secondary-vs-double/WhatIsDoubleGlazing';

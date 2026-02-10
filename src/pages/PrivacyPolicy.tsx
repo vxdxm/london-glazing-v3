@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import PrivacyPolicySEO from "@/components/legal/PrivacyPolicySEO";

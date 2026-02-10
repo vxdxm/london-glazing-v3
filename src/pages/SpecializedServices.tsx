@@ -5,7 +5,7 @@ import { ServiceCards } from "@/components/specialized/ServiceCards";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const SpecializedServices = () => {

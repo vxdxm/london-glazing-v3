@@ -13,7 +13,7 @@ import { CrittallCaseStudies } from "@/components/residential/crittall/CrittallC
 import { CrittallComparison } from "@/components/residential/crittall/CrittallComparison";
 import { CrittallNewFAQ } from "@/components/residential/crittall/CrittallNewFAQ";
 import { CrittallCTA } from "@/components/residential/crittall/CrittallCTA";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 
 const CrittallWindows = () => {

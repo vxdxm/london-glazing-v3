@@ -6,7 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Info } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const SecondaryGlazingBuildingRegulations = () => {

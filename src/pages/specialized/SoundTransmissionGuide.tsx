@@ -3,7 +3,7 @@ import React from "react";
 import SoundGuideLayout from "@/components/sound-guide/SoundGuideLayout";
 import SoundGuideHeader from "@/components/sound-guide/SoundGuideHeader";
 import SoundGuideContent from "@/components/sound-guide/SoundGuideContent";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const SoundTransmissionGuide = () => {

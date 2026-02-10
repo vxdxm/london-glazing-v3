@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const AcousticSecondaryGlazingWindows = () => {

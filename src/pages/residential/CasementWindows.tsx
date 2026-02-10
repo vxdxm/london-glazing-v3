@@ -1,6 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { CasementIcon } from "@/components/icons/GlazingTypeIcons";
 import CasementHero from "@/components/residential/casement/CasementHero";
 import WhyCasementNeedsGlazing from "@/components/residential/casement/WhyCasementNeedsGlazing";

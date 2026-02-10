@@ -9,7 +9,7 @@ import { UnderstandingAirGap } from "@/components/specialized/airgap/Understandi
 import { StandardCavity } from "@/components/specialized/airgap/StandardCavity";
 import { EnhancedCavity } from "@/components/specialized/airgap/EnhancedCavity";
 import { FactorsAffectingCavity } from "@/components/specialized/airgap/FactorsAffectingCavity";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 
 const AirGapSecondaryGlazing = () => {

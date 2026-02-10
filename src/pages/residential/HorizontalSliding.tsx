@@ -14,7 +14,7 @@ import HorizontalCaseStudies from "@/components/residential/horizontal/Horizonta
 import HorizontalComparison from "@/components/residential/horizontal/HorizontalComparison";
 import HorizontalFAQ from "@/components/residential/horizontal/HorizontalFAQ";
 import HorizontalCTA from "@/components/residential/horizontal/HorizontalCTA";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { HorizontalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 
 const HorizontalSliding = () => {

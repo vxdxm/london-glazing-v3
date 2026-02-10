@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent } from "@/components/ui/card";
 import SustainabilityCalculator from "@/components/sustainability/SustainabilityCalculator";

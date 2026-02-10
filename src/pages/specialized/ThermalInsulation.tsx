@@ -8,7 +8,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { KeyPoint } from "@/components/ui/key-point";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
 import { UValuesComparison } from "@/components/specialized/thermal/UValuesComparison";
 import { CO2SavingsCalculator } from "@/components/specialized/thermal/CO2SavingsCalculator";
