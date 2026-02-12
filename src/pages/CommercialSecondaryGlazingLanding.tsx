@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 import { Building2, Zap, ShieldCheck, GraduationCap, Hotel, Landmark, ArrowRight, Send, CheckCircle } from "lucide-react";
 
 const sectors = [
@@ -15,6 +16,16 @@ const sectors = [
   { icon: Hotel, title: "Hotels & Hospitality", description: "Guest satisfaction starts with a quiet room. Our solutions deliver 5-star silence without compromising period character.", href: "/commercial/hospitality-sector" },
   { icon: GraduationCap, title: "Schools & Universities", description: "Create distraction-free learning environments while meeting DfE acoustic standards (BB93).", href: "/commercial/educational-sector" },
   { icon: Landmark, title: "Listed Buildings", description: "Heritage-compliant glazing for museums, galleries, civic buildings, and Grade I/II commercial properties.", href: "/commercial/listed-buildings" },
+];
+
+const comparisonData = [
+  { metric: "Primary Benefit", hotels: "Acoustic comfort for guests", offices: "Energy cost reduction" },
+  { metric: "Noise Reduction", hotels: "Up to 80% (10.8mm Stadip Silence)", offices: "Up to 65% (standard acoustic)" },
+  { metric: "Thermal Improvement", hotels: "30% heat loss reduction", offices: "60% heat loss reduction" },
+  { metric: "Typical ROI Period", hotels: "2-4 years (via guest satisfaction)", offices: "3-5 years (via energy savings)" },
+  { metric: "Glass Specification", hotels: "10.8mm laminate + 100mm gap", offices: "6.8mm laminate + low-E coating" },
+  { metric: "Installation Disruption", hotels: "Room-by-room, overnight install", offices: "Floor-by-floor, weekend install" },
+  { metric: "Key Regulation", hotels: "Building Regs Part E (Sound)", offices: "Building Regs Part L (Energy)" },
 ];
 
 const CommercialSecondaryGlazing = () => {
@@ -46,7 +57,7 @@ const CommercialSecondaryGlazing = () => {
   return (
     <>
       <EnhancedSEO
-        title="Commercial Secondary Glazing London | Offices, Hotels & Listed Buildings"
+        title="Commercial Secondary Glazing: Energy & Acoustic Solutions for London Businesses"
         description="Large-scale secondary glazing for commercial properties in London. Energy savings, Net-Zero compliance, and acoustic performance for offices, hotels, schools, and heritage buildings."
         canonicalPath="/commercial-secondary-glazing"
         type="website"
@@ -82,7 +93,7 @@ const CommercialSecondaryGlazing = () => {
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider mb-3 block">Commercial Solutions</span>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
-            Secondary Glazing for Commercial Properties
+            Commercial Secondary Glazing: Energy &amp; Acoustic Solutions for London Businesses
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Targeted at facilities managers, architects, and property owners. Reduce energy costs, meet Net-Zero regulations, and deliver acoustic comfort at scale.
@@ -124,8 +135,42 @@ const CommercialSecondaryGlazing = () => {
         </div>
       </section>
 
-      {/* Net-Zero Compliance */}
+      {/* Comparison Table: Hotels vs Offices */}
       <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 text-center">Noise Reduction for Hotels vs Thermal Efficiency for Offices</h2>
+          <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
+            Different commercial sectors have different priorities. Here's how our specifications compare.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-background rounded-xl overflow-hidden border border-border">
+              <thead>
+                <tr className="bg-primary/10">
+                  <th className="text-left p-4 text-sm font-bold text-foreground border-b border-border">Metric</th>
+                  <th className="text-left p-4 text-sm font-bold text-foreground border-b border-border">
+                    <span className="flex items-center gap-2"><Hotel className="h-4 w-4 text-primary" /> Hotels</span>
+                  </th>
+                  <th className="text-left p-4 text-sm font-bold text-foreground border-b border-border">
+                    <span className="flex items-center gap-2"><Building2 className="h-4 w-4 text-primary" /> Offices</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((row, i) => (
+                  <tr key={row.metric} className={i % 2 === 0 ? "bg-background" : "bg-muted/30"}>
+                    <td className="p-4 text-sm font-semibold text-foreground border-b border-border">{row.metric}</td>
+                    <td className="p-4 text-sm text-muted-foreground border-b border-border">{row.hotels}</td>
+                    <td className="p-4 text-sm text-muted-foreground border-b border-border">{row.offices}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Net-Zero Compliance */}
+      <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-start gap-4">
             <div className="bg-primary text-primary-foreground rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 mt-1">
@@ -150,7 +195,7 @@ const CommercialSecondaryGlazing = () => {
       </section>
 
       {/* Sector Specifics */}
-      <section className="py-16">
+      <section className="py-16 bg-muted/20">
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10">Sector-Specific Solutions</h2>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -166,6 +211,13 @@ const CommercialSecondaryGlazing = () => {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Resources */}
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <RelatedGuides currentSlug="commercial" />
         </div>
       </section>
 
