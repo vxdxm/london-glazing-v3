@@ -63,6 +63,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/GzOZow2Lbmo.webp"
   },
   {
+    slug: "education-secondary-glazing-schools",
+    title: "5 Ways Secondary Glazing Transforms School Learning Environments",
+    excerpt: "How secondary glazing helps UK schools meet BB93 acoustic standards, cut heating bills by 65%, and support neurodiverse learners. Zero-disruption half-term installation.",
+    date: "2026-02-12",
+    readTime: "15 min read",
+    category: "Education",
+    image: "https://cdn.marblism.com/tCWers5eiC4.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
