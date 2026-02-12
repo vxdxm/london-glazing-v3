@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { HomepageIntro } from "@/components/HomepageIntro";
+import { LondonExpertise } from "@/components/LondonExpertise";
+import { LondonBoroughsGrid } from "@/components/LondonBoroughsGrid";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
@@ -85,7 +87,7 @@ const Index = () => {
         serviceDescription="Professional secondary glazing services for listed buildings, conservation areas, and heritage properties. Reduce noise by up to 80%, improve thermal efficiency, and preserve your property's character."
       />
       
-      {/* FAQPage Schema for Homepage FAQs */}
+      {/* FAQPage Schema + HomeImprovementBusiness Schema */}
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({
@@ -133,6 +135,28 @@ const Index = () => {
                 }
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HomeImprovementBusiness",
+            "name": "Secondary Glazing London",
+            "description": "Professional secondary glazing installation across London for noise reduction and energy efficiency.",
+            "areaServed": "London, UK",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "London",
+              "addressCountry": "GB"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Secondary Glazing Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acoustic Secondary Glazing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermal Insulation for Listed Buildings" } }
+              ]
+            }
           })}
         </script>
       </Helmet>
@@ -198,6 +222,8 @@ const Index = () => {
       <main>
         {/* Critical above-fold content - loads immediately */}
         <Hero />
+        <LondonExpertise />
+        <LondonBoroughsGrid />
         <HomepageIntro />
         
         {/* Below-fold content - lazy loaded for better performance */}
