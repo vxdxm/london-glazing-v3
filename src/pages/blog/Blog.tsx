@@ -27,6 +27,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/aOHcpxw0n9w.webp"
   },
   {
+    slug: "epc-energy-efficiency-guide",
+    title: "How Secondary Glazing Cuts Heating Bills by 15-30% and Boosts Your EPC Rating",
+    excerpt: "Essential guide for homeowners and landlords. Learn how secondary glazing improves EPC ratings, reduces heating bills, and helps meet MEES regulations for London properties.",
+    date: "2025-01-25",
+    readTime: "15 min read",
+    category: "Energy Efficiency",
+    image: "https://cdn.marblism.com/6GWAbKSlQsx.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
