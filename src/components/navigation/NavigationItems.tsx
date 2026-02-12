@@ -58,6 +58,19 @@ export const glazingOptions: GlazingSection[] = [
     ],
   },
   {
+    title: "Areas",
+    description: "Find secondary glazing specialists in your area.",
+    mainLink: "/locations",
+    items: [
+      { title: "Central London", href: "/areas/central-london", description: "Westminster, City, Kensington & Chelsea.", icon: FixedPanelIcon },
+      { title: "North London", href: "/areas/north-london", description: "Camden, Islington, Barnet, Hampstead.", icon: FixedPanelIcon },
+      { title: "South London", href: "/areas/south-london", description: "Wandsworth, Greenwich, Richmond.", icon: FixedPanelIcon },
+      { title: "West London", href: "/areas/west-london", description: "Hammersmith, Ealing, Hounslow.", icon: FixedPanelIcon },
+      { title: "East London", href: "/areas/east-london", description: "Hackney, Tower Hamlets, Newham.", icon: FixedPanelIcon },
+      { title: "Home Counties", href: "/areas/home-counties", description: "Surrey, Kent, Hertfordshire, Buckinghamshire.", icon: FixedPanelIcon },
+    ],
+  },
+  {
     title: "Specialized",
     description: "Learn about our specialized glazing options.",
     mainLink: "/specialized",

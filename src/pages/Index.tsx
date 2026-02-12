@@ -20,6 +20,8 @@ const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({
 const TrustBadges = lazy(() => import("@/components/TrustBadges").then(m => ({ default: m.TrustBadges })));
 const SisterServicePromo = lazy(() => import("@/components/SisterServicePromo").then(m => ({ default: m.SisterServicePromo })));
 const FeaturedContent = lazy(() => import("@/components/FeaturedContent").then(m => ({ default: m.FeaturedContent })));
+const ExpertResourcesSection = lazy(() => import("@/components/ExpertResourcesSection").then(m => ({ default: m.ExpertResourcesSection })));
+const BeforeAfterSlider = lazy(() => import("@/components/BeforeAfterSlider").then(m => ({ default: m.BeforeAfterSlider })));
 
 // Loading fallback for lazy components
 const SectionLoader = () => (
@@ -141,20 +143,35 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HomeImprovementBusiness",
-            "name": "Secondary Glazing London",
-            "description": "Professional secondary glazing installation across London for noise reduction and energy efficiency.",
-            "areaServed": "London, UK",
+            "name": "Secondary Glazing Specialist",
+            "description": "Professional secondary glazing installation across London for noise reduction, thermal insulation, and heritage window preservation.",
+            "url": "https://secondaryglazingspecialist.com",
+            "telephone": "+442070601572",
+            "areaServed": {
+              "@type": "City",
+              "name": "London",
+              "containedInPlace": { "@type": "Country", "name": "United Kingdom" }
+            },
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "London",
               "addressCountry": "GB"
             },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5"
+            },
+            "priceRange": "££",
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
               "name": "Secondary Glazing Services",
               "itemListElement": [
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acoustic Secondary Glazing" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermal Insulation for Listed Buildings" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermal Insulation for Listed Buildings" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conservation Area Window Solutions" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Secondary Glazing" } }
               ]
             }
           })}
@@ -247,6 +264,12 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <FeaturedContent />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <ExpertResourcesSection />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <BeforeAfterSlider />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <ContactForm />

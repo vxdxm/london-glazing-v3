@@ -69,6 +69,7 @@ export function MainNav() {
             </div>
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
+          <MobileNavItem to="/locations">Areas We Serve</MobileNavItem>
           <MobileNavItem to="/blog">Blog</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
           <MobileNavItem to="/contact">Contact Us</MobileNavItem>

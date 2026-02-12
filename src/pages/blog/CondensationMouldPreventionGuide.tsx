@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Calendar, Clock, ArrowLeft, Droplets, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 
 const ThermalBridgeDiagram = () => (
   <div className="my-12 bg-muted/30 border border-border rounded-2xl p-6 md:p-8">
@@ -321,6 +322,8 @@ const CondensationMouldPreventionGuide = () => {
               </Button>
             </Link>
           </div>
+
+          <RelatedGuides currentSlug="condensation-mould-prevention-guide" />
         </article>
       </main>
 
