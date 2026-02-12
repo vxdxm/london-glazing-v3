@@ -7,6 +7,7 @@ import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Calendar, Clock, ArrowLeft, TrendingDown, AlertTriangle, Calculator, PoundSterling } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 
 const SavingsCalculator = () => {
   const [annualBill, setAnnualBill] = useState([1800]);
@@ -402,6 +403,8 @@ const EPCEnergyEfficiencyGuide = () => {
               </Link>
             </div>
           </div>
+
+          <RelatedGuides currentSlug="epc-energy-efficiency-guide" />
         </article>
       </main>
 

@@ -6,6 +6,8 @@ import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Calendar, Clock, ArrowLeft, Volume2, VolumeX, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
+import { VideoPlaceholder } from "@/components/VideoPlaceholder";
 
 const SoundComparison = () => {
   const [isBefore, setIsBefore] = useState(true);
@@ -435,6 +437,12 @@ const AcousticSecondaryGlazingGuide = () => {
 
             <p>And once you've experienced it, you'll wonder how you ever lived without it.</p>
           </div>
+
+          {/* Video Placeholder */}
+          <VideoPlaceholder title="Noise Reduction Video Demo — London Traffic vs Acoustic Glazing" />
+
+          {/* Related Guides */}
+          <RelatedGuides currentSlug="acoustic-secondary-glazing-guide" />
 
           {/* Bottom CTA */}
           <div className="mt-12 bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center">

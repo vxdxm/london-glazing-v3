@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 
 const ConservationBadge = () => (
   <div className="flex items-center gap-3 bg-primary/10 border border-primary/30 rounded-xl px-5 py-3 mb-8 w-fit">
@@ -378,6 +379,8 @@ const ListedBuildingSecondaryGlazingGuide = () => {
           <div id="heritage-consultation">
             <HeritageConsultationForm />
           </div>
+
+          <RelatedGuides currentSlug="listed-building-secondary-glazing-guide" />
         </article>
       </main>
 

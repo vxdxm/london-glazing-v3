@@ -123,6 +123,8 @@ import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazing
 import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
+import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
+import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
 
 const queryClient = new QueryClient();
 
@@ -138,6 +140,7 @@ const AppRoutes = () => {
         <Route path="/quote" element={<Navigate to="/quote-request" replace />} />
         <Route path="/services" element={<Navigate to="/specialized" replace />} />
         <Route path="/areas-we-serve" element={<Navigate to="/locations" replace />} />
+        <Route path="/commercial-secondary-glazing" element={<CommercialSecondaryGlazingLanding />} />
         <Route path="/testimonials" element={<Navigate to="/case-studies" replace />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
@@ -237,6 +240,7 @@ const AppRoutes = () => {
         <Route path="/edwardian-property-secondary-glazing" element={<EdwardianPropertySecondaryGlazing />} />
         <Route path="/thermal-insulation-secondary-glazing" element={<ThermalInsulationSecondaryGlazing />} />
         <Route path="/noise-reduction-secondary-glazing" element={<NoiseReductionSecondaryGlazing />} />
+        <Route path="/areas/kensington-chelsea" element={<KensingtonChelseaArea />} />
         <Route path="/areas/central-london" element={<CentralLondon />} />
         <Route path="/areas/north-london" element={<NorthLondon />} />
         <Route path="/areas/south-london" element={<SouthLondon />} />
