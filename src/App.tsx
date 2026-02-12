@@ -123,6 +123,7 @@ import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazing
 import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
+import CommercialMEESComplianceGuide from "./pages/blog/CommercialMEESComplianceGuide";
 import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
 import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
 import AreasWeServe from "./pages/areas/AreasWeServe";
@@ -254,6 +255,7 @@ const AppRoutes = () => {
         <Route path="/blog/listed-building-secondary-glazing-guide" element={<ListedBuildingSecondaryGlazingGuide />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
         <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
+        <Route path="/blog/commercial-mees-compliance-secondary-glazing" element={<CommercialMEESComplianceGuide />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />

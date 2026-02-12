@@ -45,6 +45,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/e1o-1fuIm0f.webp"
   },
   {
+    slug: "commercial-mees-compliance-secondary-glazing",
+    title: "MEES 2030 Compliance: Why Commercial Landlords Are Choosing Secondary Glazing",
+    excerpt: "How secondary glazing helps London commercial landlords meet MEES EPC C rating by 2030. Cost-effective compliance for listed buildings, offices, and heritage properties.",
+    date: "2026-02-12",
+    readTime: "14 min read",
+    category: "Commercial",
+    image: "https://cdn.marblism.com/mbnmDdlBu5b.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
