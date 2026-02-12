@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "acoustic-secondary-glazing-guide",
+    title: "Acoustic Secondary Glazing: The Ultimate Guide to Soundproofing London Period Homes",
+    excerpt: "Expert guide to acoustic secondary glazing using 10.8mm Stadip Silence glass and 100mm air gaps. Learn how to achieve 70-80% noise reduction in listed buildings and conservation areas.",
+    date: "2025-01-15",
+    readTime: "20 min read",
+    category: "Acoustic Glazing",
+    image: "https://cdn.marblism.com/p_JLSZ_DV64.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
