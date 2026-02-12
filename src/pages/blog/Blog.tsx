@@ -18,6 +18,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/p_JLSZ_DV64.webp"
   },
   {
+    slug: "listed-building-secondary-glazing-guide",
+    title: "Secondary Glazing for Listed Buildings: Preserving the Past, Protecting Your Comfort",
+    excerpt: "Conservation-approved secondary glazing for Grade I & II listed buildings. Fully reversible heritage window solutions that don't require planning permission.",
+    date: "2025-01-20",
+    readTime: "18 min read",
+    category: "Heritage",
+    image: "https://cdn.marblism.com/aOHcpxw0n9w.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
