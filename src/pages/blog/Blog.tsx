@@ -54,6 +54,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/mbnmDdlBu5b.webp"
   },
   {
+    slug: "hospitality-secondary-glazing-noise-reduction",
+    title: "Hotel Secondary Glazing: Stop Noise Complaints & Protect Your TripAdvisor Rating",
+    excerpt: "How London boutique hotels use acoustic secondary glazing to eliminate noise complaints, boost TripAdvisor scores, and increase occupancy by 18%. Room-by-room installation with zero disruption.",
+    date: "2026-02-12",
+    readTime: "16 min read",
+    category: "Hospitality",
+    image: "https://cdn.marblism.com/GzOZow2Lbmo.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
