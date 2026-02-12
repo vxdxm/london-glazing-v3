@@ -36,6 +36,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/6GWAbKSlQsx.webp"
   },
   {
+    slug: "condensation-mould-prevention-guide",
+    title: "How to Stop Window Condensation & Prevent Mould on Sash Windows",
+    excerpt: "Why period homes suffer from condensation, the science behind thermal bridges, and how secondary glazing achieves 99% condensation reduction. Essential reading for London homeowners.",
+    date: "2025-02-01",
+    readTime: "16 min read",
+    category: "Condensation",
+    image: "https://cdn.marblism.com/e1o-1fuIm0f.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
