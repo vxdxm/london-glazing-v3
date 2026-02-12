@@ -120,6 +120,7 @@ import HomeCounties from "./pages/areas/HomeCounties";
 import Blog from "./pages/blog/Blog";
 import BlogPost from "./pages/blog/BlogPost";
 import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazingGuide";
+import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
 
 const queryClient = new QueryClient();
 
@@ -243,6 +244,7 @@ const AppRoutes = () => {
         <Route path="/areas/home-counties" element={<HomeCounties />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/acoustic-secondary-glazing-guide" element={<AcousticSecondaryGlazingGuide />} />
+        <Route path="/blog/listed-building-secondary-glazing-guide" element={<ListedBuildingSecondaryGlazingGuide />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />
