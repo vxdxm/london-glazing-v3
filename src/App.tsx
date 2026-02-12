@@ -122,6 +122,7 @@ import BlogPost from "./pages/blog/BlogPost";
 import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazingGuide";
 import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
+import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
 
 const queryClient = new QueryClient();
 
@@ -247,6 +248,7 @@ const AppRoutes = () => {
         <Route path="/blog/acoustic-secondary-glazing-guide" element={<AcousticSecondaryGlazingGuide />} />
         <Route path="/blog/listed-building-secondary-glazing-guide" element={<ListedBuildingSecondaryGlazingGuide />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
+        <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />
