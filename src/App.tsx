@@ -125,6 +125,7 @@ import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
 import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
 import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
+import AreasWeServe from "./pages/areas/AreasWeServe";
 
 const queryClient = new QueryClient();
 
@@ -139,7 +140,7 @@ const AppRoutes = () => {
         <Route path="/faq" element={<Navigate to="/faqs" replace />} />
         <Route path="/quote" element={<Navigate to="/quote-request" replace />} />
         <Route path="/services" element={<Navigate to="/specialized" replace />} />
-        <Route path="/areas-we-serve" element={<Navigate to="/locations" replace />} />
+        <Route path="/areas-we-serve" element={<AreasWeServe />} />
         <Route path="/commercial-secondary-glazing" element={<CommercialSecondaryGlazingLanding />} />
         <Route path="/testimonials" element={<Navigate to="/case-studies" replace />} />
         <Route path="/contact" element={<Contact />} />
