@@ -52,6 +52,7 @@ const resources = [
   { title: "Secondary vs Double Glazing", href: "/guides/secondary-vs-double-glazing" },
   { title: "DIY vs Professional", href: "/guides/diy-vs-professional" },
   { title: "U-Values & dB Ratings", href: "/guides/u-values-db-ratings" },
+  { title: "View our comprehensive Heritage & Acoustic Glazing Guides", href: "https://secondaryglazingspecialist.com", external: true },
 ];
 
 const companyInfo = [
@@ -216,12 +217,23 @@ export function Footer() {
               <ul className="space-y-2 mb-6">
                 {resources.map((link) => (
                   <li key={link.href}>
-                    <Link
-                      to={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      {link.title}
-                    </Link>
+                    {'external' in link && link.external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {link.title}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.href}
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        {link.title}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

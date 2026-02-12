@@ -18,7 +18,7 @@ const HomeSEO = () => {
       <meta property="og:url" content="https://secondaryglazingspecialist.com/" />
       <meta property="og:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
       <meta property="og:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
-      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       
@@ -29,7 +29,7 @@ const HomeSEO = () => {
       <meta name="twitter:url" content="https://secondaryglazingspecialist.com/" />
       <meta name="twitter:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
       <meta name="twitter:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
-      <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png" />
       
       {/* Schema.org structured data */}
       <script type="application/ld+json">

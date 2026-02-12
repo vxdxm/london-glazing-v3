@@ -36,16 +36,10 @@ const HeroComponent = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6">
-            London's Specialist Secondary Glazing for Listed Buildings & Heritage Properties
+            Expert Secondary Glazing Installers in London | Acoustic & Thermal Specialists
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white mb-3 md:mb-4">
-            Enhance your home's comfort and value with our expert{" "}
-            <Link to="/residential" className="underline hover:text-white/90">secondary glazing services</Link>. 
-            Reduce <Link to="/noise-reduction-secondary-glazing" className="underline hover:text-white/90">noise by up to 80%</Link>, 
-            improve <Link to="/thermal-insulation-secondary-glazing" className="underline hover:text-white/90">thermal insulation by 65%</Link>, 
-            and maintain your{" "}
-            <Link to="/listed-buildings-secondary-glazing" className="underline hover:text-white/90">listed building</Link> or{" "}
-            <Link to="/conservation-areas-secondary-glazing" className="underline hover:text-white/90">conservation area</Link> property's character.
+            Protecting London's Heritage Homes with High-Performance Soundproofing and Thermal Insulation.
           </p>
           <p className="text-sm sm:text-base md:text-lg text-white mb-6 md:mb-8 max-w-2xl mx-auto">
             Serving Westminster, Kensington & Chelsea, Camden, Islington, and all London boroughs. 
