@@ -23,7 +23,6 @@ Disallow: /*#*
 Disallow: /private/
 Disallow: /temp/
 Disallow: /*.json$
-Disallow: /*.xml$
 Disallow: /*_=*
 
 # Block problematic crawlers
