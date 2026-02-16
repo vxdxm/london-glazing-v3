@@ -370,11 +370,11 @@ export const HomepageContent = () => {
               <p className="text-sm text-muted-foreground">Secondary glazing repair services</p>
             </Link>
             <Link 
-              to="/contact"
+              to="/blog/secondary-glazing-london-borough-guide"
               className="p-4 bg-card rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group"
             >
-              <h3 className="font-semibold text-foreground group-hover:text-primary mb-2">Contact Us</h3>
-              <p className="text-sm text-muted-foreground">Get in touch with our team</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary mb-2">London Borough Noise Guide</h3>
+              <p className="text-sm text-muted-foreground">Borough-by-borough soundproofing guide</p>
             </Link>
           </div>
         </section>

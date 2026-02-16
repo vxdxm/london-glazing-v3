@@ -72,6 +72,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/tCWers5eiC4.webp"
   },
   {
+    slug: "secondary-glazing-london-borough-guide",
+    title: "Secondary Glazing London: The Borough-by-Borough Guide to Soundproofing Your Home",
+    excerpt: "Discover how secondary glazing reduces noise by up to 80% across London boroughs. Expert guide covering Kensington, Islington, Hackney, Clapham, and Heathrow flight paths.",
+    date: "2026-02-16",
+    readTime: "22 min read",
+    category: "London Guide",
+    image: "https://cdn.marblism.com/uk6fLpdpaD0.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",

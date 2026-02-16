@@ -52,7 +52,7 @@ const resources = [
   { title: "Secondary vs Double Glazing", href: "/guides/secondary-vs-double-glazing" },
   { title: "DIY vs Professional", href: "/guides/diy-vs-professional" },
   { title: "U-Values & dB Ratings", href: "/guides/u-values-db-ratings" },
-  { title: "View our comprehensive Heritage & Acoustic Glazing Guides", href: "https://secondaryglazingspecialist.com", external: true },
+  { title: "London Borough Noise Guide", href: "/blog/secondary-glazing-london-borough-guide" },
 ];
 
 const companyInfo = [
