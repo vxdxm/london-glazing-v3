@@ -53,6 +53,7 @@ const resources = [
   { title: "DIY vs Professional", href: "/guides/diy-vs-professional" },
   { title: "U-Values & dB Ratings", href: "/guides/u-values-db-ratings" },
   { title: "London Borough Noise Guide", href: "/blog/secondary-glazing-london-borough-guide" },
+  { title: "2026 London Cost Guide", href: "/blog/secondary-glazing-london-cost-guide" },
 ];
 
 const companyInfo = [

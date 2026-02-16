@@ -127,6 +127,7 @@ import CommercialMEESComplianceGuide from "./pages/blog/CommercialMEESCompliance
 import HospitalitySecondaryGlazingGuide from "./pages/blog/HospitalitySecondaryGlazingGuide";
 import EducationSecondaryGlazingGuide from "./pages/blog/EducationSecondaryGlazingGuide";
 import LondonBoroughNoiseGuide from "./pages/blog/LondonBoroughNoiseGuide";
+import LondonCostGuide from "./pages/blog/LondonCostGuide";
 import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
 import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
 import AreasWeServe from "./pages/areas/AreasWeServe";
@@ -262,6 +263,7 @@ const AppRoutes = () => {
         <Route path="/blog/hospitality-secondary-glazing-noise-reduction" element={<HospitalitySecondaryGlazingGuide />} />
         <Route path="/blog/education-secondary-glazing-schools" element={<EducationSecondaryGlazingGuide />} />
         <Route path="/blog/secondary-glazing-london-borough-guide" element={<LondonBoroughNoiseGuide />} />
+        <Route path="/blog/secondary-glazing-london-cost-guide" element={<LondonCostGuide />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />

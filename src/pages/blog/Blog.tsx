@@ -81,6 +81,15 @@ const blogPosts = [
     image: "https://cdn.marblism.com/uk6fLpdpaD0.webp"
   },
   {
+    slug: "secondary-glazing-london-cost-guide",
+    title: "Secondary Glazing London: 2026 Guide to Costs & Acoustic Glass",
+    excerpt: "Discover the costs of secondary glazing in London for 2026. Learn about 10.8mm acoustic laminate glass for listed buildings and noise reduction.",
+    date: "2026-02-16",
+    readTime: "18 min read",
+    category: "Cost Guide",
+    image: "https://cdn.marblism.com/-aagD-AZKvX.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
