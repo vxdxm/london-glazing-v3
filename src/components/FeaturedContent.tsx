@@ -70,6 +70,27 @@ const FeaturedContentComponent = () => {
 
         </div>
 
+        {/* Cost Guide Card */}
+        <div className="mt-6 max-w-6xl mx-auto">
+          <Link
+            to="/blog/secondary-glazing-london-cost-guide"
+            className="bg-card p-5 md:p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow border border-border flex items-center gap-4 min-h-[44px]"
+          >
+            <div className="text-3xl md:text-4xl" aria-hidden="true">💷</div>
+            <div>
+              <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">
+                2026 London Cost Guide
+              </h3>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Complete pricing breakdown for secondary glazing in London period homes — from £200 per window.
+              </p>
+            </div>
+            <span className="text-primary font-semibold hover:underline text-sm md:text-base ml-auto whitespace-nowrap hidden sm:inline">
+              Read Guide →
+            </span>
+          </Link>
+        </div>
+
         {/* View All Link */}
         <div className="text-center mt-8 md:mt-10">
           <Link 
