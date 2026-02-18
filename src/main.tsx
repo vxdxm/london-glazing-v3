@@ -20,7 +20,7 @@ root.render(
   </React.StrictMode>
 );
 
-// Signal to vite-plugin-prerender that the app has rendered and helmet tags are ready
+// Dispatch render event for any future SSG tooling
 requestAnimationFrame(() => {
   document.dispatchEvent(new Event('x-app-rendered'));
 });

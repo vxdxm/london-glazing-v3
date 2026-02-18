@@ -128,6 +128,8 @@ import HospitalitySecondaryGlazingGuide from "./pages/blog/HospitalitySecondaryG
 import EducationSecondaryGlazingGuide from "./pages/blog/EducationSecondaryGlazingGuide";
 import LondonBoroughNoiseGuide from "./pages/blog/LondonBoroughNoiseGuide";
 import LondonCostGuide from "./pages/blog/LondonCostGuide";
+import SoundproofNurseryGuide from "./pages/blog/SoundproofNurseryGuide";
+import PhysicsOfSilenceGuide from "./pages/blog/PhysicsOfSilenceGuide";
 import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
 import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
 import AreasWeServe from "./pages/areas/AreasWeServe";
@@ -264,6 +266,8 @@ const AppRoutes = () => {
         <Route path="/blog/education-secondary-glazing-schools" element={<EducationSecondaryGlazingGuide />} />
         <Route path="/blog/secondary-glazing-london-borough-guide" element={<LondonBoroughNoiseGuide />} />
         <Route path="/blog/secondary-glazing-london-cost-guide" element={<LondonCostGuide />} />
+        <Route path="/blog/soundproof-nursery-54db-reduction" element={<SoundproofNurseryGuide />} />
+        <Route path="/blog/physics-of-silence-acoustic-glass" element={<PhysicsOfSilenceGuide />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/service-areas/kensington-chelsea" element={<KensingtonChelsea />} />
         <Route path="/service-areas/westminster" element={<Westminster />} />
