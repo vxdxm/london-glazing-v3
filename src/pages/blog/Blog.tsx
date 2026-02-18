@@ -90,6 +90,24 @@ const blogPosts = [
     image: "https://cdn.marblism.com/-aagD-AZKvX.webp"
   },
   {
+    slug: "soundproof-nursery-54db-reduction",
+    title: "The Silent Nursery: Why a 54dB Noise Reduction Is the Best Gift for Your New Arrival",
+    excerpt: "Expert guide to soundproofing nurseries in London period homes. Learn why 10.8mm acoustic laminate glass and a 100mm air gap create the perfect sleeping environment for babies.",
+    date: "2026-02-18",
+    readTime: "14 min read",
+    category: "Baby & Family",
+    image: "https://cdn.marblism.com/p_JLSZ_DV64.webp"
+  },
+  {
+    slug: "physics-of-silence-acoustic-glass",
+    title: "The Physics of Silence: How to Block Low-Frequency Bus and Lorry Rumbling",
+    excerpt: "Technical deep dive into Mass Law, PVB acoustic interlayers, and the 100mm air gap. Understand the science behind why secondary glazing outperforms double glazing for noise.",
+    date: "2026-02-18",
+    readTime: "16 min read",
+    category: "Technical",
+    image: "https://cdn.marblism.com/96HLWaKW8Kw.webp"
+  },
+  {
     slug: "secondary-glazing-cost-london",
     title: "How Much Does Secondary Glazing Cost in London? Complete 2026 Price Guide",
     excerpt: "Comprehensive pricing guide for secondary glazing in London. From budget options at £350 per window to premium acoustic solutions, discover what affects costs and how to get the best value.",
