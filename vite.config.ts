@@ -4,6 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import viteCompression from 'vite-plugin-compression';
+import vitePrerender from 'vite-plugin-prerender';
+const PuppeteerRenderer = vitePrerender.PuppeteerRenderer;
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -32,6 +34,54 @@ export default defineConfig(({ mode }) => ({
       threshold: 10240,
       deleteOriginFile: false,
       filter: /\.(js|css|html|svg|json)$/i,
+    }),
+    // Prerender key pages for SSG with helmet extraction
+    mode === 'production' && vitePrerender({
+      staticDir: path.join(__dirname, 'dist'),
+      routes: [
+        '/',
+        '/contact',
+        '/quote-request',
+        '/gallery',
+        '/faqs',
+        '/about',
+        '/case-studies',
+        '/benefits',
+        '/residential',
+        '/commercial',
+        '/specialized',
+        '/blog',
+        '/listed-buildings-secondary-glazing',
+        '/conservation-areas-secondary-glazing',
+        '/victorian-windows-secondary-glazing',
+        '/sash-window-secondary-glazing',
+        '/georgian-windows-secondary-glazing',
+        '/edwardian-property-secondary-glazing',
+        '/thermal-insulation-secondary-glazing',
+        '/noise-reduction-secondary-glazing',
+        '/areas/central-london',
+        '/areas/north-london',
+        '/areas/south-london',
+        '/areas/east-london',
+        '/areas/west-london',
+        '/areas/greater-london',
+        '/areas/home-counties',
+        '/areas/kensington-chelsea',
+        '/blog/acoustic-secondary-glazing-guide',
+        '/blog/listed-building-secondary-glazing-guide',
+        '/blog/epc-energy-efficiency-guide',
+        '/blog/condensation-mould-prevention-guide',
+        '/blog/commercial-mees-compliance-secondary-glazing',
+        '/blog/hospitality-secondary-glazing-noise-reduction',
+        '/blog/education-secondary-glazing-schools',
+        '/blog/secondary-glazing-london-borough-guide',
+        '/blog/secondary-glazing-london-cost-guide',
+      ],
+      renderer: new PuppeteerRenderer({
+        renderAfterDocumentEvent: 'x-app-rendered',
+        renderAfterTime: 5000,
+        headless: true,
+      }),
     }),
   ].filter(Boolean),
   resolve: {
