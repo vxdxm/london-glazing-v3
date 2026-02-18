@@ -63,8 +63,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <EnhancedSEO
-        title="Secondary Glazing Specialist | UK's Leading Glazing Solutions"
-        description="Expert secondary glazing solutions for residential and commercial properties. Reduce noise, improve thermal insulation, and enhance security with our specialist services."
+        title="Secondary Glazing Specialist | London's Leading Heritage & Listed Building Experts"
+        description="Professional secondary glazing installers in London. Specialists in Grade I & II listed buildings and conservation areas. Achieve 54dB noise reduction and 60% better heat retention with our discreet, bespoke installations."
         canonicalPath="/"
         type="website"
         keywords={[
@@ -83,14 +83,74 @@ const Index = () => {
       />
       
       <ComprehensiveSchema
-        pageName="Secondary Glazing Services London"
-        pageDescription="Expert secondary glazing solutions for residential and commercial properties across London"
+        pageName="Secondary Glazing Specialist London"
+        pageDescription="Professional secondary glazing installers in London. Specialists in Grade I & II listed buildings and conservation areas."
         serviceName="Secondary Glazing Installation"
         serviceDescription="Professional secondary glazing services for listed buildings, conservation areas, and heritage properties. Reduce noise by up to 80%, improve thermal efficiency, and preserve your property's character."
       />
       
-      {/* FAQPage Schema + HomeImprovementBusiness Schema */}
+      {/* LocalBusiness + FAQPage + HomeImprovementBusiness Schema */}
       <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Secondary Glazing Specialist",
+            "description": "Professional secondary glazing installers in London. Specialists in Grade I & II listed buildings and conservation areas. Achieve 54dB noise reduction and 60% better heat retention.",
+            "url": "https://secondaryglazingspecialist.com",
+            "logo": "https://secondaryglazingspecialist.com/lovable-uploads/b39446b8-e7b5-4000-ac4b-a7a691a5bb14.png",
+            "image": "https://secondaryglazingspecialist.com/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png",
+            "telephone": "+442039293960",
+            "email": "info@secondaryglazingspecialist.com",
+            "priceRange": "££",
+            "currenciesAccepted": "GBP",
+            "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+            "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-16:00"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Arch 141, MacFarlane Road",
+              "addressLocality": "London",
+              "addressRegion": "Greater London",
+              "postalCode": "W12 7LA",
+              "addressCountry": "GB"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            },
+            "areaServed": [
+              { "@type": "City", "name": "London" },
+              { "@type": "AdministrativeArea", "name": "Greater London" },
+              { "@type": "AdministrativeArea", "name": "Surrey" },
+              { "@type": "AdministrativeArea", "name": "Kent" },
+              { "@type": "AdministrativeArea", "name": "Hertfordshire" }
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Secondary Glazing Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Listed Buildings Secondary Glazing", "url": "https://secondaryglazingspecialist.com/listed-buildings-secondary-glazing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soundproof Secondary Glazing", "url": "https://secondaryglazingspecialist.com/noise-reduction-secondary-glazing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermal Insulation Glazing", "url": "https://secondaryglazingspecialist.com/thermal-insulation-secondary-glazing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conservation Area Solutions", "url": "https://secondaryglazingspecialist.com/conservation-areas-secondary-glazing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Secondary Glazing", "url": "https://secondaryglazingspecialist.com/commercial" } }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5"
+            },
+            "sameAs": [
+              "https://www.instagram.com/secondaryglazinglondon/",
+              "https://www.linkedin.com/in/secondary-glazing-specialist-7500653a2/",
+              "https://x.com/Sec0ndaryGlazin",
+              "https://web.facebook.com/profile.php?id=61585744672659"
+            ]
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -117,7 +177,7 @@ const Index = () => {
                 "name": "Does secondary glazing reduce noise effectively?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, secondary glazing can reduce external noise by up to 80% (45-50 decibels), making it highly effective for homes near busy roads, railways, or flight paths in London. For maximum noise reduction, we recommend acoustic laminated glass with a 100-150mm air gap."
+                  "text": "Yes, secondary glazing with 10.8mm Stadip Silence acoustic laminate glass can reduce external noise by up to 54 decibels, making it highly effective for homes near busy roads, railways, or flight paths in London."
                 }
               },
               {
@@ -130,50 +190,13 @@ const Index = () => {
               },
               {
                 "@type": "Question",
-                "name": "How effective is secondary glazing for energy saving?",
+                "name": "What is 10.8mm acoustic laminate glass?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Secondary glazing can reduce heat loss by up to 75%, typically saving 15-30% on heating bills. Most homeowners see a return on investment within 3-7 years through reduced energy costs and improved EPC ratings."
+                  "text": "10.8mm Stadip Silence is a specialist acoustic laminate glass comprising two glass panes bonded with a PVB acoustic interlayer. Combined with a 100mm air gap, it delivers up to 54dB noise reduction—ideal for London properties near Heathrow flight paths, railway lines, and busy roads."
                 }
               }
             ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HomeImprovementBusiness",
-            "name": "Secondary Glazing Specialist",
-            "description": "Professional secondary glazing installation across London for noise reduction, thermal insulation, and heritage window preservation.",
-            "url": "https://secondaryglazingspecialist.com",
-            "telephone": "+442070601572",
-            "areaServed": {
-              "@type": "City",
-              "name": "London",
-              "containedInPlace": { "@type": "Country", "name": "United Kingdom" }
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "London",
-              "addressCountry": "GB"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5"
-            },
-            "priceRange": "££",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Secondary Glazing Services",
-              "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acoustic Secondary Glazing" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermal Insulation for Listed Buildings" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conservation Area Window Solutions" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Secondary Glazing" } }
-              ]
-            }
           })}
         </script>
       </Helmet>
@@ -237,46 +260,46 @@ const Index = () => {
       </header>
       
       <main>
-        {/* Critical above-fold content - loads immediately */}
+        {/* Critical above-fold content - loads immediately, no Suspense wrapper for SSG crawlability */}
         <Hero />
         <LondonExpertise />
         <LondonBoroughsGrid />
         <HomepageIntro />
         
-        {/* Below-fold content - lazy loaded for better performance */}
-        <Suspense fallback={<SectionLoader />}>
+        {/* Below-fold content - wrapped in Suspense with SSG-friendly noscript fallbacks */}
+        <Suspense fallback={<noscript><p>Loading specialist services...</p></noscript>}>
           <SisterServicePromo />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading services...</p></noscript>}>
           <Services />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading specialist services...</p></noscript>}>
           <SpecialistServices />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading content...</p></noscript>}>
           <HomepageContent />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading trust badges...</p></noscript>}>
           <TrustBadges />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading testimonials...</p></noscript>}>
           <Testimonials />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading featured content...</p></noscript>}>
           <FeaturedContent />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading resources...</p></noscript>}>
           <ExpertResourcesSection />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading gallery...</p></noscript>}>
           <BeforeAfterSlider />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
+        <Suspense fallback={<noscript><p>Loading contact form...</p></noscript>}>
           <ContactForm />
         </Suspense>
       </main>
       
-      <Suspense fallback={<SectionLoader />}>
+      <Suspense fallback={<noscript><p>Loading footer...</p></noscript>}>
         <Footer />
       </Suspense>
     </div>

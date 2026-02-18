@@ -284,7 +284,71 @@ export const HomepageContent = () => {
           </div>
         </section>
 
-        {/* Service Areas - Major Section */}
+        {/* Technical Excellence Section */}
+        <section className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">
+            Technical Excellence: Our Glass Specifications
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            The performance of any secondary glazing system depends heavily on the glass specification. We use only the highest-grade materials, selected for their proven acoustic and thermal properties in demanding London environments.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-card p-6 rounded-lg border">
+              <h3 className="text-xl font-semibold mb-4 text-card-foreground">
+                10.8mm Stadip Silence Acoustic Laminate Glass
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Our gold-standard acoustic specification for urban noise reduction. This laminated glass comprises two panes bonded with a specialised PVB (polyvinyl butyral) acoustic interlayer that absorbs sound vibrations at the molecular level. Combined with a 100mm air gap, it delivers up to <strong className="text-foreground">54dB noise reduction</strong>—the difference between a busy London high street and a quiet country lane.
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Targets low-frequency rumble from traffic, Tube lines, and aircraft</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Ideal for properties under Heathrow flight paths and near railway corridors</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Slim profile maintains discreet appearance for <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed buildings</Link></span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-card p-6 rounded-lg border">
+              <h3 className="text-xl font-semibold mb-4 text-card-foreground">
+                Pilkington K Glass™ Low-Emissivity Coating
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                For maximum thermal performance, we specify Pilkington K Glass with its microscopically thin metallic oxide coating. This low-emissivity (Low-E) glass reflects radiant heat back into the room while allowing natural light to pass through freely. The result: up to <strong className="text-foreground">60% improvement in heat retention</strong> compared to uncoated single glazing.
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Reduces U-values from 5.0 W/m²K (single glazed) to below 2.0 W/m²K</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Virtually invisible coating preserves natural light transmission</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Significantly improves <Link to="/thermal-insulation-secondary-glazing" className="text-primary hover:underline">EPC ratings</Link> for rental and sale properties</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="bg-muted/30 p-6 rounded-lg">
+            <p className="text-muted-foreground leading-relaxed">
+              <strong className="text-foreground">Combined specification:</strong> For the ultimate in both acoustic and thermal performance, we can pair 10.8mm acoustic laminate glass with a Pilkington K Glass Low-E coating on the same unit. This dual-purpose specification is particularly popular with owners of <Link to="/victorian-windows-secondary-glazing" className="text-primary hover:underline">Victorian</Link> and <Link to="/georgian-windows-secondary-glazing" className="text-primary hover:underline">Georgian</Link> properties seeking the highest possible comfort standards without any external alteration to their heritage windows.
+            </p>
+          </div>
+        </section>
+
+        {/* Areas We Serve - Borough Links for Local SEO */}
         <section className="max-w-4xl mx-auto mb-16 bg-muted/30 rounded-xl p-8">
           <div className="flex items-center gap-3 mb-6">
             <MapPin className="w-8 h-8 text-primary" />
@@ -293,16 +357,43 @@ export const HomepageContent = () => {
             </h2>
           </div>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            From our base in <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link>, we provide{" "}
-            <Link to="/residential" className="text-primary hover:underline">secondary glazing installation</Link>,{" "}
-            <Link to="/repairs" className="text-primary hover:underline">repair</Link>, and maintenance 
-            services throughout <Link to="/areas/greater-london" className="text-primary hover:underline">Greater London</Link> and the surrounding counties. Our coverage includes{" "}
-            <Link to="/areas/central-london" className="text-primary hover:underline">Central London</Link> boroughs such as Westminster, Kensington and Chelsea, Camden, and the City of London, as 
-            well as residential areas in <Link to="/areas/north-london" className="text-primary hover:underline">North</Link>,{" "}
-            <Link to="/areas/south-london" className="text-primary hover:underline">South</Link>,{" "}
-            <Link to="/areas/east-london" className="text-primary hover:underline">East</Link>, and{" "}
-            <Link to="/areas/west-london" className="text-primary hover:underline">West London</Link>.
+            We provide specialist secondary glazing installations across every London borough, with particular expertise in heritage-rich areas where conservation compliance is essential.
           </p>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
+            <Link to="/service-areas/kensington-chelsea" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Kensington & Chelsea</span>
+            </Link>
+            <Link to="/service-areas/westminster" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Westminster</span>
+            </Link>
+            <Link to="/locations/georgian-belgravia" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Belgravia</span>
+            </Link>
+            <Link to="/locations/victorian-terraces-islington" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Islington</span>
+            </Link>
+            <Link to="/locations/edwardian-hampstead" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Hampstead</span>
+            </Link>
+            <Link to="/locations/listed-kensington" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Listed Kensington</span>
+            </Link>
+            <Link to="/locations/conservation-richmond" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Richmond</span>
+            </Link>
+            <Link to="/locations/chelsea-draught-proofing" className="flex items-center gap-2 p-3 bg-background rounded-lg border hover:border-primary/50 hover:shadow-sm transition-all group">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="text-foreground group-hover:text-primary transition-colors">Chelsea</span>
+            </Link>
+          </div>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
             {serviceAreas.map((area) => (

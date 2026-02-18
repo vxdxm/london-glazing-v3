@@ -5,10 +5,10 @@ import { Helmet } from "react-helmet-async";
 const HomeSEO = () => {
   return (
     <Helmet>
-      <title>Secondary Glazing Specialist | Heritage & Modern Homes</title>
+      <title>Secondary Glazing Specialist | London's Leading Heritage & Listed Building Experts</title>
       <meta 
         name="description" 
-        content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise pollution." 
+        content="Professional secondary glazing installers in London. Specialists in Grade I & II listed buildings and conservation areas. Achieve 54dB noise reduction and 60% better heat retention with our discreet, bespoke installations." 
       />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
