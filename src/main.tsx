@@ -9,7 +9,8 @@ import { HelmetProvider } from "react-helmet-async";
 // Expose helmetContext for SSG/SSR head extraction during build
 export const helmetContext = {};
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(
   <React.StrictMode>
     <HelmetProvider context={helmetContext}>
       <LazyLoadProvider>
@@ -18,3 +19,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// Signal to vite-plugin-prerender that the app has rendered and helmet tags are ready
+requestAnimationFrame(() => {
+  document.dispatchEvent(new Event('x-app-rendered'));
+});
