@@ -36,7 +36,7 @@ const OfficeCTA = () => {
           <Button 
             size="lg" 
             variant="outline"
-            onClick={() => window.location.href = "mailto:info@secondaryglazingspecialist.co.uk"}
+            onClick={() => window.location.href = "mailto:info@secondaryglazingspecialist.com"}
             className="gap-2"
           >
             <Mail className="h-4 w-4" />

@@ -1224,7 +1224,7 @@ const blogPostsContent: Record<string, {
         
         <p><strong>Get your free heritage property consultation today.</strong> We'll assess your windows, explain your options, and provide a detailed quotation tailored to your building's specific requirements and conservation considerations.</p>
         
-        <p>Contact us at <a href="mailto:info@secondaryglazingspecialist.co.uk" className="text-primary hover:underline">info@secondaryglazingspecialist.co.uk</a> or call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a> for immediate advice on your listed building project. With over two decades of experience working with London's heritage properties, we're here to help you achieve the perfect balance between comfort, efficiency, and conservation.</p>
+        <p>Contact us at <a href="mailto:info@secondaryglazingspecialist.com" className="text-primary hover:underline">info@secondaryglazingspecialist.com</a> or call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a> for immediate advice on your listed building project. With over two decades of experience working with London's heritage properties, we're here to help you achieve the perfect balance between comfort, efficiency, and conservation.</p>
         
         <p>Your listed building deserves the best of both worlds – modern performance with heritage integrity. Secondary glazing delivers exactly that combination, ensuring your property remains a treasured part of London's architectural legacy while providing the comfort and efficiency you need for modern living.</p>
       </>
@@ -1745,7 +1745,7 @@ const blogPostsContent: Record<string, {
         
         <p><strong>Ready to explore your options?</strong> Contact our conservation area specialists for a free consultation and quotation. We'll assess your specific property, explain the relevant planning considerations, and design a solution that enhances both comfort and character.</p>
         
-        <p><strong>Call us today on <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or email <a href="mailto:info@secondaryglazingspecialist.co.uk" className="text-primary hover:underline">info@secondaryglazingspecialist.co.uk</a> to book your free conservation area consultation.</p>
+        <p><strong>Call us today on <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or email <a href="mailto:info@secondaryglazingspecialist.com" className="text-primary hover:underline">info@secondaryglazingspecialist.com</a> to book your free conservation area consultation.</p>
       </>
     )
   },
@@ -2457,7 +2457,7 @@ const blogPostsContent: Record<string, {
         
         <p><strong>Get your free quote today</strong> – transform your period property's comfort while preserving its timeless character.</p>
         
-        <p><strong>Call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or email <a href="mailto:info@secondaryglazingspecialist.co.uk" className="text-primary hover:underline">info@secondaryglazingspecialist.co.uk</a> to book your free consultation.</p>
+        <p><strong>Call <a href="tel:02070601572" className="text-primary hover:underline">020 7060 1572</a></strong> or email <a href="mailto:info@secondaryglazingspecialist.com" className="text-primary hover:underline">info@secondaryglazingspecialist.com</a> to book your free consultation.</p>
       </>
     )
   },

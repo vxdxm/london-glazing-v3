@@ -10,21 +10,21 @@ const FAQSEO = () => {
         name="description" 
         content="Answers to common secondary glazing questions covering installation, acoustics, thermal benefits and costs. Expert advice from London's leading glazing specialists." 
       />
-      <link rel="canonical" href="https://www.secondaryglazingspecialist.com/faqs" />
+      <link rel="canonical" href="https://secondaryglazingspecialist.com/faqs" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.secondaryglazingspecialist.com/faqs" />
+      <meta property="og:url" content="https://secondaryglazingspecialist.com/faqs" />
       <meta property="og:title" content="Secondary Glazing FAQs | Expert Answers to Common Questions" />
       <meta property="og:description" content="Answers to common secondary glazing questions covering installation, acoustics, thermal benefits and costs. Expert advice from London's leading glazing specialists." />
-      <meta property="og:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://www.secondaryglazingspecialist.com/faqs" />
+      <meta property="twitter:url" content="https://secondaryglazingspecialist.com/faqs" />
       <meta property="twitter:title" content="Secondary Glazing FAQs | Expert Answers to Common Questions" />
       <meta property="twitter:description" content="Answers to common secondary glazing questions covering installation, acoustics, thermal benefits and costs. Expert advice from London's leading glazing specialists." />
-      <meta property="twitter:image" content="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
+      <meta property="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       
       {/* Structured Data */}
       <script type="application/ld+json">
