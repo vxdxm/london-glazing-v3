@@ -139,7 +139,7 @@ const ResidentialSolutions = () => {
         <meta property="og:title" content="Residential Secondary Glazing Solutions | Home Window Upgrades" />
         <meta property="og:description" content="Expert residential secondary glazing solutions for your home. Enhance comfort, reduce noise, and improve energy efficiency with our custom combination window options." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.secondaryglazingspecialist.com/residential" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/residential" />
         
         {/* LocalBusiness Schema */}
         <script type="application/ld+json">

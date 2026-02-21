@@ -40,7 +40,7 @@ const HospitalityCTA = () => {
           variant="outline"
           size="lg"
           className="gap-2"
-          onClick={() => window.location.href = 'mailto:info@secondaryglazingspecialist.co.uk'}
+          onClick={() => window.location.href = 'mailto:info@secondaryglazingspecialist.com'}
         >
           <Mail className="h-5 w-5" />
           Email Us

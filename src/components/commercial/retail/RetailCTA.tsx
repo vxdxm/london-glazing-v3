@@ -46,11 +46,11 @@ export const RetailCTA = () => {
               020 1234 5678
             </a>
             <a 
-              href="mailto:info@secondaryglazingspecialist.co.uk" 
+              href="mailto:info@secondaryglazingspecialist.com" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity justify-center"
             >
               <Mail className="w-4 h-4" />
-              info@secondaryglazingspecialist.co.uk
+              info@secondaryglazingspecialist.com
             </a>
           </div>
         </div>
