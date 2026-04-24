@@ -5,7 +5,7 @@ export const useNavigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [openMenus, setOpenMenus] = useState<string[]>([]);
-  const closeTimeoutRef = useRef<NodeJS.Timeout>();
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   const handleNavigation = (path: string) => {
     console.log("Navigating to:", path);

@@ -175,7 +175,7 @@ export const useWebVitals = () => {
 export const WebVitalsDisplay: React.FC = () => {
   const { metrics, getMetricStatus, getOverallScore } = useWebVitals();
 
-  if (process.env.NODE_ENV !== 'development') {
+  if (import.meta.env.MODE !== 'development') {
     return null; // Only show in development
   }
 
