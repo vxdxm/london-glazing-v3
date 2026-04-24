@@ -1,9 +1,19 @@
 import { MainNav } from "@/components/MainNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 
 const PremiumGlass = () => {
   return (
     <div className="min-h-screen bg-background">
+      <EnhancedSEO
+        title="12.8mm Premium Acoustic Glass | 41dB Noise Reduction London"
+        description="Premium 12.8mm acoustic laminated glass delivering up to 41dB noise reduction. Ideal for properties near airports, busy roads & professional studios across London."
+        canonicalPath="/specialized/glass/premium-glass"
+        type="product"
+        serviceName="12.8mm Premium Acoustic Laminated Glass"
+        keywords={["premium acoustic glass", "12.8mm laminated glass", "41dB noise reduction", "airport noise glazing London"]}
+        includeLocalBusiness
+      />
       <MainNav />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">12.8mm Premium Acoustic Glass</h1>
