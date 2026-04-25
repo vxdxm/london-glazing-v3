@@ -129,16 +129,27 @@ const KingsCrossTrainNoise = () => {
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
               <h3 className="text-xl font-semibold mb-3 text-blue-800">Moderate Exposure Properties</h3>
-              <li>• Flats with railway views but greater distance</li>
-              <li>• Properties shielded by other buildings</li>
-              <li>• Areas affected mainly by underground services</li>
-              <li>• Locations with intermittent train noise</li>
+              <ul className="space-y-2 text-blue-700">
+                <li>• Flats with railway views but greater distance</li>
+                <li>• Properties shielded by other buildings</li>
+                <li>• Areas affected mainly by underground services</li>
+                <li>• Locations with intermittent train noise</li>
+              </ul>
             </div>
           </div>
         </section>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Realistic Performance Expectations</h2>
+          <p className="text-muted-foreground mb-6">
+            HS1 trains running at line speed past York Way and the Regent's Canal corridor produce façade levels of
+            74–82 dBA SEL per pass-by. Thameslink and East Coast Main Line departures from King's Cross and St Pancras
+            generate 70–78 dBA, with low-frequency wheel-rail roar concentrated in the 250–500 Hz band. Northern,
+            Piccadilly, Victoria, Metropolitan, Hammersmith &amp; City, and Circle Line tunnels run beneath much of N1C,
+            adding structure-borne tonal content at 50–80 Hz that secondary glazing cannot address — only resilient
+            ceiling, wall, and floor isolation will reduce structure-borne vibration. We're explicit about this on
+            survey so clients commission the right combination of measures.
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-green-50 p-6 rounded-lg border border-green-200">
               <h3 className="text-xl font-semibold mb-3 text-green-800">What We Can Achieve</h3>
