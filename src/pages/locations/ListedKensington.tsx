@@ -207,6 +207,24 @@ const ListedKensington = () => {
 
         {/* CTA Section */}
         <section className="text-center bg-muted p-8 rounded-lg">
+          <div className="text-left mb-8">
+            <h2 className="text-2xl font-bold mb-4">SW7, W8, SW5 Listed Building Specification</h2>
+            <p className="text-muted-foreground mb-4">
+              Kensington's listed-building stock spans Italianate stucco terraces in SW7 (Queen's Gate, Cromwell Road,
+              Exhibition Road), red-brick Queen Anne in W8 (Kensington Square, Holland Park), and Victorian Gothic in
+              SW5 (Earl's Court). Cromwell Road and Kensington High Street carry façade Leq,16h of 70–75 dBA; the
+              quieter side streets (Hyde Park Gate, Cottesmore Gardens) sit at 55–60 dBA. RBKC's conservation officers
+              consent secondary glazing as the preferred thermal and acoustic upgrade for Grade II and Grade II* listed
+              properties because the install does not alter listed fabric.
+            </p>
+            <ul className="space-y-2 text-muted-foreground mb-4">
+              <li><strong>Cromwell/Kensington High frontages:</strong> 10.8mm Stadip Silence + 200mm cavity, Rw 52 dB combined, indoor LAeq &lt;35 dBA</li>
+              <li><strong>Side streets and garden squares:</strong> 8.8mm acoustic + 150mm cavity, Rw 48 dB combined, Uw 1.7 W/m²K</li>
+              <li><strong>Frame:</strong> 18mm slim-line aluminium, RAL-matched to original timber joinery, concealed sub-frame fixings (no penetration of listed fabric)</li>
+              <li><strong>LBC submission:</strong> Heritage Statement, drawings, and reversible-install schedule supplied for RBKC planning</li>
+              <li><strong>Article 4 compliance:</strong> meets the additional restrictions applied to Kensington Square and Holland Park conservation areas</li>
+            </ul>
+          </div>
           <h2 className="text-2xl font-bold mb-4">Preserve Your Listed Building's Heritage</h2>
           <p className="mb-6 text-lg">
             Get expert advice on conservation-compliant secondary glazing for your Kensington listed property. 

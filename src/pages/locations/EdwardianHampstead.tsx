@@ -191,6 +191,24 @@ const EdwardianHampstead = () => {
 
         {/* CTA Section */}
         <section className="text-center bg-muted p-8 rounded-lg">
+          <div className="text-left mb-8">
+            <h2 className="text-2xl font-bold mb-4">NW3, NW6 Edwardian Specification</h2>
+            <p className="text-muted-foreground mb-4">
+              Hampstead's Edwardian housing stock — large red-brick villas, mansion blocks around Belsize Park, and the
+              Garden Suburb to the north — typically features oversize bay windows (3-light and 5-light), stained-glass
+              top lights, and original 4mm cylinder-drawn glass in timber sashes. Façade Leq,16h is 55–62 dBA on most
+              residential streets, rising to 66–70 dBA on Finchley Road (A41) and Haverstock Hill. Primary briefs are
+              thermal (large rooms, high ceilings, single-glazed primaries lose heat at 5.0–5.8 W/m²K) and acoustic
+              for the A41 frontages.
+            </p>
+            <ul className="space-y-2 text-muted-foreground mb-4">
+              <li><strong>Standard Hampstead villa spec:</strong> 6.8mm acoustic + 150mm cavity with Low-E coating, Rw 46 dB combined, Uw 1.6 W/m²K</li>
+              <li><strong>A41/Haverstock Hill frontages:</strong> 8.8mm acoustic + 150mm cavity, Rw 48 dB combined, indoor LAeq &lt;35 dBA</li>
+              <li><strong>Bay window solutions:</strong> faceted side-hinged units following the bay geometry; curved bays in segmented configuration with site-measured templates</li>
+              <li><strong>Thermal performance:</strong> typical Hampstead villa with 18m² of single-glazed primary glazing saves 1,800–2,400 kWh/year of heat, equivalent to £130–£175 at 2025 gas rates</li>
+              <li><strong>Conservation Area:</strong> Hampstead, Hampstead Garden Suburb, and Belsize have Article 4 designations; secondary glazing is the consented thermal upgrade route</li>
+            </ul>
+          </div>
           <h2 className="text-2xl font-bold mb-4">Transform Your Edwardian Home in Hampstead</h2>
           <p className="mb-6 text-lg">
             Get expert advice on secondary glazing solutions specifically designed for Edwardian properties. 

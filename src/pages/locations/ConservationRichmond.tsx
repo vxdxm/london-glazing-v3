@@ -246,6 +246,24 @@ const ConservationRichmond = () => {
 
         {/* CTA Section */}
         <section className="text-center bg-muted p-8 rounded-lg">
+          <div className="text-left mb-8">
+            <h2 className="text-2xl font-bold mb-4">TW9, TW10 Conservation Area Specification</h2>
+            <p className="text-muted-foreground mb-4">
+              Richmond upon Thames covers 70+ designated conservation areas — Richmond Hill, Richmond Green, Petersham,
+              Ham Common, Kew Green, and the riverside frontages. The dominant noise source for most TW9/TW10 properties
+              is Heathrow approach traffic during easterly operations (around 30% of the year), with Lmax pass-by levels
+              of 70–78 dBA. Secondary noise sources are the A316 (50–60 dBA at distance), the District Line and Richmond
+              station, and Thames boat traffic in summer. LBH Richmond's planning policy CP7 explicitly identifies
+              secondary glazing as the preferred upgrade route for conservation-area and listed properties.
+            </p>
+            <ul className="space-y-2 text-muted-foreground mb-4">
+              <li><strong>Properties under Heathrow approach (north Richmond, Kew):</strong> 10.8mm acoustic + 200mm cavity, Rw 52 dB combined</li>
+              <li><strong>A316-adjacent (East Sheen, Mortlake):</strong> 8.8mm acoustic + 150mm cavity, Rw 48 dB combined</li>
+              <li><strong>Riverside and quieter conservation interiors:</strong> 6.8mm acoustic + 150mm cavity, Rw 46 dB combined</li>
+              <li><strong>Thermal-led briefs:</strong> Low-E secondary glass + 150mm cavity, Uw 1.6 W/m²K (74% reduction over single-glazed primary)</li>
+              <li><strong>Conservation Area Consent:</strong> we supply CAC submission packages including drawings, performance schedules, and Historic England compliance notes</li>
+            </ul>
+          </div>
           <h2 className="text-2xl font-bold mb-4">Transform Your Richmond Conservation Property</h2>
           <p className="mb-6 text-lg">
             Get expert advice on conservation-compliant secondary glazing for your Richmond property. 
