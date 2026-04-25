@@ -21,6 +21,23 @@ const KingsCrossTrainNoise = () => {
             while acknowledging the limitations for structural vibrations, providing comprehensive solutions 
             for railway-adjacent residential properties.
           </p>
+          <p className="mb-6">
+            The N1C postcode sits over and alongside one of the densest railway interfaces in Europe. Within 400
+            metres of King's Cross and St Pancras stations you have High Speed 1 (HS1) Eurostar and Southeastern
+            services, the East Coast Main Line, Thameslink, the Midland Main Line, six Underground lines, and the
+            heavy goods routes that run overnight from the freight loops to the north. Apartments in the King's
+            Cross Central master plan — Gasholders, Plimsoll Building, Tapestry Building, and the Goods Yard
+            developments — were built to BS 8233:2014 internal targets but are increasingly retrofitted with
+            secondary glazing where the original specification has not aged well, particularly for the bedrooms
+            on the eastern (railway-facing) elevations.
+          </p>
+          <p className="mb-6">
+            Our specification approach for the N1, N1C, and adjoining NW1 postcodes starts with a measured façade
+            survey using Class 1 sound-level metering across a typical 24-hour cycle, capturing the 06:00 first
+            departures, the 17:00–19:00 peak, and the 23:30–04:30 freight window. This data drives the glass and
+            cavity specification — typically 10.8mm or 12.8mm acoustic laminated in a 200mm cavity with absorbent
+            reveal lining for properties closer than 80 metres to the running lines.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -129,16 +146,27 @@ const KingsCrossTrainNoise = () => {
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
               <h3 className="text-xl font-semibold mb-3 text-blue-800">Moderate Exposure Properties</h3>
-              <li>• Flats with railway views but greater distance</li>
-              <li>• Properties shielded by other buildings</li>
-              <li>• Areas affected mainly by underground services</li>
-              <li>• Locations with intermittent train noise</li>
+              <ul className="space-y-2 text-blue-700">
+                <li>• Flats with railway views but greater distance</li>
+                <li>• Properties shielded by other buildings</li>
+                <li>• Areas affected mainly by underground services</li>
+                <li>• Locations with intermittent train noise</li>
+              </ul>
             </div>
           </div>
         </section>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Realistic Performance Expectations</h2>
+          <p className="text-muted-foreground mb-6">
+            HS1 trains running at line speed past York Way and the Regent's Canal corridor produce façade levels of
+            74–82 dBA SEL per pass-by. Thameslink and East Coast Main Line departures from King's Cross and St Pancras
+            generate 70–78 dBA, with low-frequency wheel-rail roar concentrated in the 250–500 Hz band. Northern,
+            Piccadilly, Victoria, Metropolitan, Hammersmith &amp; City, and Circle Line tunnels run beneath much of N1C,
+            adding structure-borne tonal content at 50–80 Hz that secondary glazing cannot address — only resilient
+            ceiling, wall, and floor isolation will reduce structure-borne vibration. We're explicit about this on
+            survey so clients commission the right combination of measures.
+          </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-green-50 p-6 rounded-lg border border-green-200">
               <h3 className="text-xl font-semibold mb-3 text-green-800">What We Can Achieve</h3>
