@@ -76,7 +76,7 @@ const MediumPerformanceGlass = () => {
           WHO Lnight &lt;40 dBA in directly-affected bedrooms. In those cases we step up to 10.8mm or 12.8mm.
         </p>
 
-        <h2 className="text-2xl function font-semibold mb-4">Why Acoustic PVB Outperforms Standard Laminated</h2>
+        <h2 className="text-2xl font-semibold mb-4">Why Acoustic PVB Outperforms Standard Laminated</h2>
         <p className="mb-6">
           A standard 8.8mm laminated glass uses two 4mm panes bonded with a 0.76mm safety PVB. It achieves Rw 35 dB.
           Substituting the safety PVB for an acoustic PVB of the same thickness lifts performance to Rw 38 dB — a 3 dB
