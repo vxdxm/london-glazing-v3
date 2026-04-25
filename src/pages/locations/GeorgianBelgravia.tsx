@@ -208,6 +208,22 @@ const GeorgianBelgravia = () => {
 
         {/* CTA Section */}
         <section className="text-center bg-muted p-8 rounded-lg">
+          <div className="text-left mb-8">
+            <h2 className="text-2xl font-bold mb-4">SW1X Acoustic and Thermal Specification</h2>
+            <p className="text-muted-foreground mb-4">
+              Belgravia (SW1X) sits between Knightsbridge, Sloane Square, and Victoria — bordered by the A4 (Knightsbridge),
+              the A3217 (Sloane Street), and Buckingham Palace Road. Façade-level Leq,16h on the principal frontages reaches
+              66–72 dBA, dropping to 55–60 dBA in the garden squares (Belgrave, Eaton, Chester). Secondary glazing in
+              SW1X is almost exclusively retrofit to single-glazed timber sashes in Grade II and Grade II* listed Cubitt
+              terraces; replacement windows are not consented under Westminster's Article 4 direction.
+            </p>
+            <ul className="space-y-2 text-muted-foreground mb-4">
+              <li><strong>Standard SW1X Georgian sash spec:</strong> 8.8mm Stadip Silence acoustic + 150mm cavity, 18mm slim aluminium frame, RAL-matched to existing joinery — Rw 48 dB combined, Uw 1.7 W/m²K</li>
+              <li><strong>Principal-frontage upgrade:</strong> 10.8mm acoustic + 200mm cavity with mineral-fibre reveal absorbent — Rw 52 dB combined, hits BS 8233 bedroom Lnight 30 dBA against 70 dBA façade</li>
+              <li><strong>Glazing-bar overlay:</strong> aluminium astragals matched to the primary 6-over-6 or 9-over-9 Georgian pattern at 25mm width</li>
+              <li><strong>Listed Building Consent:</strong> we supply Heritage Statements and reversible-fix details for Westminster City Council LBC submissions</li>
+            </ul>
+          </div>
           <h2 className="text-2xl font-bold mb-4">Enhance Your Georgian Property in Belgravia</h2>
           <p className="mb-6 text-lg">
             Get specialist advice on secondary glazing solutions designed specifically for Georgian architecture. 
