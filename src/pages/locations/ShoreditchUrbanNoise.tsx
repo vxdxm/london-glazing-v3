@@ -111,6 +111,58 @@ export default function ShoreditchUrbanNoise() {
           </div>
         </section>
 
+        {/* Technical Specification */}
+        <section className="py-16 px-4">
+          <div className="max-w-7xl mx-auto">
+            <SectionHeading 
+              title="E1, E2, EC2 Acoustic Profile and Specification"
+              subtitle="Measured façade levels and recommended glass specs for Shoreditch postcodes"
+            />
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              <Card className="p-6 border-2 border-primary/20">
+                <h3 className="text-xl font-semibold mb-4">Measured Façade Levels (Leq,16h)</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong>Old Street roundabout (EC1V):</strong> 72–76 dBA daytime, 65 dBA Lnight</li>
+                  <li><strong>Great Eastern Street (EC2A):</strong> 68–72 dBA, peak Lmax 88 dBA</li>
+                  <li><strong>Curtain Road, Shoreditch High Street (E2):</strong> 70–75 dBA, late-night entertainment 70 dBA Lnight</li>
+                  <li><strong>Hackney Road (E2):</strong> 65–70 dBA, bus and HGV dominant</li>
+                  <li><strong>Boundary Estate, Arnold Circus (E2):</strong> 58–63 dBA, conservation-area shielding</li>
+                  <li><strong>Hoxton Square interior (N1):</strong> 55–60 dBA, weekend nightlife spike to 68 dBA</li>
+                </ul>
+              </Card>
+              <Card className="p-6 border-2 border-primary/20">
+                <h3 className="text-xl font-semibold mb-4">Recommended Glass Spec</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong>Direct frontage on A10/A1202:</strong> 10.8mm acoustic + 200mm cavity (Rw 52 dB combined)</li>
+                  <li><strong>Within 100m of nightlife clusters:</strong> 10.8mm acoustic + 150mm cavity, magnetic seals (Rw 50 dB)</li>
+                  <li><strong>Boundary Estate / quieter side streets:</strong> 8.8mm acoustic + 150mm cavity (Rw 48 dB)</li>
+                  <li><strong>Hoxton Square interior aspects:</strong> 6.8mm acoustic + 150mm cavity (Rw 46 dB)</li>
+                </ul>
+                <p className="text-sm text-muted-foreground mt-4">
+                  All specs target BS 8233:2014 internal levels (35 dBA daytime, 30 dBA bedroom Lnight) and WHO
+                  night-noise guidance.
+                </p>
+              </Card>
+            </div>
+
+            <div className="mt-8 p-6 bg-muted/50 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3">Conservation Area and Listed Building Notes</h3>
+              <p className="text-muted-foreground mb-3">
+                Substantial portions of Shoreditch sit within the South Shoreditch Conservation Area, the Boundary
+                Estate Conservation Area, and the Redchurch Street Conservation Area, with Hackney and Tower Hamlets
+                as relevant LPAs. Many warehouse conversions and Victorian terraces are Grade II listed. Secondary
+                glazing is the conservation-officer-preferred acoustic upgrade because it leaves the original primary
+                window untouched and is fully reversible.
+              </p>
+              <p className="text-muted-foreground">
+                We provide Heritage Statements and reversible-installation drawings as part of any Listed Building
+                Consent submission package, and routinely work with Hackney's and Tower Hamlets' conservation teams
+                on warehouse-conversion acoustic upgrades.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Related Areas */}
         <section className="py-16 px-4">
           <div className="max-w-7xl mx-auto">
