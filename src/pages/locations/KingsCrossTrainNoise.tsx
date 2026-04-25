@@ -21,6 +21,23 @@ const KingsCrossTrainNoise = () => {
             while acknowledging the limitations for structural vibrations, providing comprehensive solutions 
             for railway-adjacent residential properties.
           </p>
+          <p className="mb-6">
+            The N1C postcode sits over and alongside one of the densest railway interfaces in Europe. Within 400
+            metres of King's Cross and St Pancras stations you have High Speed 1 (HS1) Eurostar and Southeastern
+            services, the East Coast Main Line, Thameslink, the Midland Main Line, six Underground lines, and the
+            heavy goods routes that run overnight from the freight loops to the north. Apartments in the King's
+            Cross Central master plan — Gasholders, Plimsoll Building, Tapestry Building, and the Goods Yard
+            developments — were built to BS 8233:2014 internal targets but are increasingly retrofitted with
+            secondary glazing where the original specification has not aged well, particularly for the bedrooms
+            on the eastern (railway-facing) elevations.
+          </p>
+          <p className="mb-6">
+            Our specification approach for the N1, N1C, and adjoining NW1 postcodes starts with a measured façade
+            survey using Class 1 sound-level metering across a typical 24-hour cycle, capturing the 06:00 first
+            departures, the 17:00–19:00 peak, and the 23:30–04:30 freight window. This data drives the glass and
+            cavity specification — typically 10.8mm or 12.8mm acoustic laminated in a 200mm cavity with absorbent
+            reveal lining for properties closer than 80 metres to the running lines.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
