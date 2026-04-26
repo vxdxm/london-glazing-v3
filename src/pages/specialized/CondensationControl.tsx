@@ -162,4 +162,3 @@ const CondensationControl = () => {
 };
 
 export default CondensationControl;
-export default CondensationControl;
