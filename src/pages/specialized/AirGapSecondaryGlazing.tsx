@@ -100,6 +100,76 @@ const AirGapSecondaryGlazing = () => {
             <h2 id="calculator-heading" className="text-3xl font-semibold mb-6 text-center">Calculate Your Noise Reduction</h2>
             <NoiseReductionCalculator />
           </section>
+
+          <section aria-labelledby="cavity-spec-heading" className="my-12">
+            <h2 id="cavity-spec-heading" className="text-3xl font-semibold mb-6">Cavity Performance Specification</h2>
+            <p className="text-muted-foreground mb-6">
+              The air cavity between the primary window and the secondary glazed unit is the single largest variable
+              influencing acoustic and thermal performance. Acoustic performance is governed by the mass-air-mass (MAM)
+              resonance frequency, defined in ISO 10140-2 and BS EN 12354-3. As cavity depth increases, the MAM resonance
+              shifts to lower frequencies — moving destructive interference below the speech and traffic-noise band
+              (typically 100–3,150 Hz weighted under BS EN ISO 717-1).
+            </p>
+
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm border-collapse border border-border">
+                <thead className="bg-muted">
+                  <tr>
+                    <th className="border border-border p-3 text-left">Cavity Depth</th>
+                    <th className="border border-border p-3 text-left">MAM Resonance (approx.)</th>
+                    <th className="border border-border p-3 text-left">Acoustic Rw (with 6.8mm laminate)</th>
+                    <th className="border border-border p-3 text-left">Combined U-value</th>
+                    <th className="border border-border p-3 text-left">Typical Application</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-border p-3">20mm</td>
+                    <td className="border border-border p-3">~150 Hz</td>
+                    <td className="border border-border p-3">30 dB</td>
+                    <td className="border border-border p-3">2.4 W/m²K</td>
+                    <td className="border border-border p-3">Reveal-restricted retrofit</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3">100mm</td>
+                    <td className="border border-border p-3">~70 Hz</td>
+                    <td className="border border-border p-3">38 dB</td>
+                    <td className="border border-border p-3">1.9 W/m²K</td>
+                    <td className="border border-border p-3">Standard residential</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3">150mm</td>
+                    <td className="border border-border p-3">~55 Hz</td>
+                    <td className="border border-border p-3">42 dB</td>
+                    <td className="border border-border p-3">1.7 W/m²K</td>
+                    <td className="border border-border p-3">BS 8233 'good' bedrooms</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3">200mm</td>
+                    <td className="border border-border p-3">~45 Hz</td>
+                    <td className="border border-border p-3">45 dB</td>
+                    <td className="border border-border p-3">1.6 W/m²K</td>
+                    <td className="border border-border p-3">Heritage / heavy traffic</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="text-2xl font-semibold mb-3">Compliance & Specification Notes</h3>
+            <p className="text-muted-foreground mb-3">
+              For projects targeting the BS 8233:2014 indoor ambient noise levels (35 dB LAeq,16h living rooms, 30 dB
+              LAeq,8h bedrooms), a 100mm cavity is the practical minimum where façade levels exceed 65 dB LAeq. Where
+              external levels exceed 70 dB LAeq — common on TfL Red Routes, A-roads, and within the Heathrow 57 dB Lden
+              contour — a 150–200mm cavity paired with 8.8mm or 10.8mm acoustic laminate is required to satisfy WHO
+              Community Noise Guidelines and the Agent of Change principle under NPPF Paragraph 187.
+            </p>
+            <p className="text-muted-foreground">
+              Thermal U-value figures are calculated to BS EN ISO 12567-1 against a single-glazed primary window of
+              U = 4.8 W/m²K. The diminishing returns above 200mm reflect convective heat loss within the cavity once
+              the Rayleigh number exceeds the critical threshold for laminar airflow (typically Ra ≈ 1,700) — a phenomenon
+              documented in CIBSE Guide A Section 3.3.6.
+            </p>
+          </section>
         </div>
       </main>
       <Footer />
