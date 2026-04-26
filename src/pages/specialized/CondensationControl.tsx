@@ -162,10 +162,4 @@ const CondensationControl = () => {
 };
 
 export default CondensationControl;
-      </div>
-      <Footer />
-    </div>
-  );
-};
-
 export default CondensationControl;
