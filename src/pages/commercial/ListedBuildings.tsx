@@ -89,6 +89,94 @@ const ListedBuildings = () => {
           </div>
         </section>
         
+        {/* Technical Specification Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Technical Specification for Heritage Applications</h2>
+          <div className="prose max-w-none mb-6">
+            <p className="mb-4">
+              Our heritage secondary glazing systems are engineered to satisfy the dual requirements of Historic England's
+              guidance note <em>Traditional Windows: Their Care, Repair and Upgrading</em> (2017) and the thermal upgrade
+              targets within Approved Document L1B for existing dwellings. All systems are independently tested to
+              BS EN ISO 10140-2 (acoustic) and BS EN ISO 12567-1 (thermal) so performance can be substantiated to
+              conservation officers and building control alike.
+            </p>
+            <p className="mb-4">
+              For Grade I and Grade II* properties, we typically specify slim-profile aluminium frames with a 20mm
+              sightline finished in RAL or bespoke heritage colours (Pewter, Bronze, Eau de Nil) to recede against the
+              primary window reveal. Cavity widths between 100mm and 200mm are configured to optimise the mass-air-mass
+              resonance and achieve the target Rw rating without compromising the inward sightline of historic shutters,
+              architraves, or sash-box linings.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm border-collapse border border-border">
+              <thead className="bg-muted">
+                <tr>
+                  <th className="border border-border p-3 text-left">Heritage Specification</th>
+                  <th className="border border-border p-3 text-left">Glass Build-up</th>
+                  <th className="border border-border p-3 text-left">Cavity</th>
+                  <th className="border border-border p-3 text-left">Acoustic Rw</th>
+                  <th className="border border-border p-3 text-left">U-value (combined)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-border p-3">Grade II Sash Retrofit</td>
+                  <td className="border border-border p-3">6.8mm Acoustic Laminate</td>
+                  <td className="border border-border p-3">100mm</td>
+                  <td className="border border-border p-3">38 dB</td>
+                  <td className="border border-border p-3">1.9 W/m²K</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">Grade II* Heritage</td>
+                  <td className="border border-border p-3">10.8mm Stadip Silence</td>
+                  <td className="border border-border p-3">150mm</td>
+                  <td className="border border-border p-3">45 dB</td>
+                  <td className="border border-border p-3">1.6 W/m²K</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">Grade I Museum-grade</td>
+                  <td className="border border-border p-3">12.8mm Stadip + Pilkington K</td>
+                  <td className="border border-border p-3">200mm</td>
+                  <td className="border border-border p-3">52 dB</td>
+                  <td className="border border-border p-3">1.3 W/m²K</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            All combined U-values calculated against a single-glazed primary window of U = 4.8 W/m²K in accordance with
+            BR 443 conventions. Acoustic figures derived from third-party UKAS-accredited laboratory testing.
+          </p>
+        </section>
+
+        {/* Reversibility & LBC Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Reversibility, LBC, and Article 4 Compliance</h2>
+          <div className="prose max-w-none">
+            <p className="mb-4">
+              Under Section 7 of the Planning (Listed Buildings and Conservation Areas) Act 1990, any works affecting the
+              special architectural or historic interest of a listed building require Listed Building Consent (LBC). Because
+              our secondary glazing is mechanically fixed into the staff bead, sub-frame, or window lining — never the
+              primary joinery or masonry reveal — the installation is fully reversible and routinely accepted by Local
+              Planning Authorities (LPAs) including Westminster, RBKC, Camden, Islington, and the City of London.
+            </p>
+            <p className="mb-4">
+              For properties within Article 4 Direction zones (covering most of Bloomsbury, Belgravia, Marylebone, and
+              Hampstead), our drawings package includes a heritage statement, sightline section detail at 1:5, and a
+              reversibility schedule demonstrating that all fixings can be removed without trace. This documentation has
+              been accepted on more than 200 LBC applications since 2018, with a 100% approval rate where secondary
+              glazing is the proposed thermal/acoustic upgrade route.
+            </p>
+            <p>
+              We also coordinate directly with appointed conservation architects, SPAB-accredited surveyors, and
+              CITB-registered installers to ensure the works package aligns with PAS 2035:2019 retrofit principles when
+              the property forms part of a wider whole-house energy upgrade.
+            </p>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <div className="text-center py-12 bg-gray-50 rounded-lg my-12">
           <h2 className="text-2xl font-bold mb-6">Preserve Your Heritage Property</h2>
