@@ -27,6 +27,7 @@ import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import FAQs from "./pages/FAQs";
 import NotFound from "./pages/404";
+import ComplianceHub from "./pages/ComplianceHub";
 import SashWindows from "./pages/residential/SashWindows";
 import CasementWindows from "./pages/residential/CasementWindows";
 import BayWindows from "./pages/residential/BayWindows";
@@ -145,6 +146,8 @@ const AppRoutes = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/faq" element={<Navigate to="/faqs" replace />} />
+        <Route path="/compliance-hub" element={<ComplianceHub />} />
+        <Route path="/compliance" element={<Navigate to="/compliance-hub" replace />} />
         <Route path="/quote" element={<Navigate to="/quote-request" replace />} />
         <Route path="/services" element={<Navigate to="/specialized" replace />} />
         <Route path="/areas-we-serve" element={<AreasWeServe />} />

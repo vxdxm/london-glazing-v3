@@ -270,6 +270,19 @@ const FAQs = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          <div className="mt-10 p-6 bg-card border border-border rounded-lg text-center">
+            <h2 className="text-xl font-semibold mb-2">Need detailed compliance guidance?</h2>
+            <p className="text-muted-foreground mb-4">
+              Visit our specifier-focused Compliance Hub for planning, Building Regulations,
+              PAS 2035, BS 8233 acoustics and condensation control references.
+            </p>
+            <a
+              href="/compliance-hub"
+              className="inline-block px-5 py-2.5 rounded-md bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+            >
+              Open Compliance Hub →
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
