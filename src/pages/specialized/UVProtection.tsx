@@ -176,6 +176,89 @@ const UVProtection = () => {
               </div>
             </CardContent>
           </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">UV Filtering Technology & Performance Data</h2>
+              <p className="text-gray-600 mb-4">
+                Our UV-filtering secondary glazing combines low-iron toughened or laminated glass with a PVB (polyvinyl
+                butyral) interlayer engineered to absorb radiation across the UVA (315–400nm) and UVB (280–315nm) bands.
+                The interlayer chemistry blocks ≥99% of radiation below 380nm and ≥98% up to 400nm when measured to
+                ISO 9050:2003 (Glass in Building — Determination of Light Transmittance, Solar Direct Transmittance,
+                Total Solar Energy Transmittance, Ultraviolet Transmittance and Related Glazing Factors).
+              </p>
+              <p className="text-gray-600 mb-4">
+                For museum and conservation environments, we also specify glass tested to ISO 18934:2011 (Imaging
+                Materials — Multiple Media Archives — Storage Environment) and CIBSE Lighting Guide LG8: Lighting for
+                Museums and Art Galleries. Damage rate (Tdw-ISO) is independently calculated to BS EN 410, allowing
+                conservators to model cumulative exposure in lux-hours per annum against ISO Blue Wool reference standards.
+              </p>
+
+              <div className="overflow-x-auto mt-6">
+                <table className="w-full text-sm border-collapse border border-border">
+                  <thead className="bg-muted">
+                    <tr>
+                      <th className="border border-border p-3 text-left">Glass Specification</th>
+                      <th className="border border-border p-3 text-left">UV Block (≤380nm)</th>
+                      <th className="border border-border p-3 text-left">Visible Light (LT)</th>
+                      <th className="border border-border p-3 text-left">Tdw-ISO Damage Factor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-border p-3">Standard Float (control)</td>
+                      <td className="border border-border p-3">~25%</td>
+                      <td className="border border-border p-3">90%</td>
+                      <td className="border border-border p-3">0.69</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-border p-3">6.8mm Laminate (acoustic PVB)</td>
+                      <td className="border border-border p-3">99.5%</td>
+                      <td className="border border-border p-3">88%</td>
+                      <td className="border border-border p-3">0.42</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-border p-3">10.8mm Stadip Silence + Optilam UV</td>
+                      <td className="border border-border p-3">99.9%</td>
+                      <td className="border border-border p-3">85%</td>
+                      <td className="border border-border p-3">0.31</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-muted-foreground mt-3">
+                Damage Factor figures derived from BS EN 410:2011 Annex A using CIE 89/3 weighting. Lower values indicate
+                slower fading rates for ISO Blue Wool 1–3 sensitive materials (silk, watercolour pigments, dyed wool).
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">Specifying for Galleries, Archives & Heritage Interiors</h2>
+              <p className="text-gray-600 mb-4">
+                When specifying UV-filtering secondary glazing for ACR (Accreditation Scheme for Museums and Galleries)
+                registered institutions, the design brief should reference Benchmarks in Collection Care 2.0 (Collections
+                Trust) and PAS 198:2012 — Specification for Managing Environmental Conditions for Cultural Collections.
+                Our standard heritage build-up — 10.8mm Stadip Silence with an Optilam UV interlayer set in a slim
+                aluminium sub-frame — meets the Cat. 1 sensitivity requirements (50 lux ceiling, 15,000 lux-hours/year)
+                without resorting to applied window films, which can degrade, bubble, or yellow within 7–10 years.
+              </p>
+              <p className="text-gray-600 mb-4">
+                For Grade I and Grade II* listed properties, the secondary glazing is mechanically fixed to the sub-frame
+                or staff bead with no adhesive contact to historic joinery, satisfying SPAB and Historic England guidance
+                on reversible interventions. Combined with a 100–150mm cavity, the same panel delivers Rw 38–45 dB
+                acoustic attenuation and a combined U-value of 1.6–1.9 W/m²K, addressing UV, noise, and thermal
+                performance in a single specification line.
+              </p>
+              <p className="text-gray-600">
+                Typical applications include national trust properties, livery hall portrait collections, RIBA-listed
+                interwar interiors, and private collections in conservation areas across Mayfair, Belgravia, and
+                Holland Park. Sample panels and BS EN 410 test certificates are available on request for inclusion in
+                NBS specification clauses (Section L40 / Pr_25_30_98_75).
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
       <Suspense fallback={<div className="h-40 bg-gray-100"></div>}>
