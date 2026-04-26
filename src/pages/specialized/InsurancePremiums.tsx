@@ -145,6 +145,77 @@ const InsurancePremiums = () => {
             <li>The overall security system in place</li>
           </ul>
         </div>
+
+        <div className="prose max-w-none text-muted-foreground mb-12">
+          <h2 className="text-3xl font-semibold mb-4 text-foreground">Security Glazing Standards & Insurer Recognition</h2>
+          <p className="mb-4">
+            UK insurers — including Hiscox, AXA Art, Chubb, and the LV= High Net Worth division — typically require
+            documented compliance with one of three impact-classification standards before applying a security premium
+            discount. For secondary glazing, the relevant tests are conducted on the secondary unit independently of
+            the primary window, and certificates must be issued by a UKAS-accredited laboratory.
+          </p>
+
+          <div className="overflow-x-auto mb-6 not-prose">
+            <table className="w-full text-sm border-collapse border border-border">
+              <thead className="bg-muted">
+                <tr>
+                  <th className="border border-border p-3 text-left">Standard</th>
+                  <th className="border border-border p-3 text-left">Test Method</th>
+                  <th className="border border-border p-3 text-left">Glazing Spec Required</th>
+                  <th className="border border-border p-3 text-left">Typical Insurer Discount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-border p-3">BS EN 356:2000 P1A</td>
+                  <td className="border border-border p-3">Drop-ball, 3 strikes</td>
+                  <td className="border border-border p-3">6.8mm laminated</td>
+                  <td className="border border-border p-3">5–8%</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">BS EN 356:2000 P4A</td>
+                  <td className="border border-border p-3">Drop-ball, 30 strikes</td>
+                  <td className="border border-border p-3">8.8mm laminated</td>
+                  <td className="border border-border p-3">10–15%</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">BS EN 356:2000 P6B</td>
+                  <td className="border border-border p-3">Axe attack, 30–50 blows</td>
+                  <td className="border border-border p-3">11.5mm+ laminated</td>
+                  <td className="border border-border p-3">15–20%</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">LPS 1175 SR2</td>
+                  <td className="border border-border p-3">3-min manual attack</td>
+                  <td className="border border-border p-3">10.8mm + reinforced frame</td>
+                  <td className="border border-border p-3">15–25%</td>
+                </tr>
+                <tr>
+                  <td className="border border-border p-3">PAS 24:2022</td>
+                  <td className="border border-border p-3">Manipulation + impact</td>
+                  <td className="border border-border p-3">Full assembly tested</td>
+                  <td className="border border-border p-3">10–18%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-3 text-foreground">Specification Notes for HNW & Listed Properties</h3>
+          <p className="mb-4">
+            For high-net-worth residential cover (typically policies above £2m sum-insured), insurers commonly stipulate
+            BS EN 356 P4A as the minimum on all ground-floor and accessible upper-floor openings. Where the property is
+            listed and the primary window cannot be modified, secondary glazing tested to LPS 1175 SR2 by the Loss
+            Prevention Certification Board (LPCB) is the route most frequently accepted by Chubb Masterpiece and Hiscox
+            708 underwriting. Our standard SR2 specification combines 10.8mm laminated glass, Sentryglas® ionoplast
+            interlayer, and a 4-point shoot-bolt locking system in a steel-reinforced aluminium frame.
+          </p>
+          <p>
+            We supply the full certification package — including UKAS test reports, NBS specification clauses
+            (Pr_25_30_98_75), and installer competence statements — for direct submission to the underwriter. This
+            documentation has historically secured premium reductions of 12–22% on London-based heritage policies, with
+            the exact figure depending on postcode risk band (ABI risk codes) and existing perimeter security.
+          </p>
+        </div>
       </div>
     </div>;
 };
