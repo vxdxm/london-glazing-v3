@@ -369,6 +369,120 @@ Yours faithfully,
           </Accordion>
         </section>
 
+        {/* Article 4 & Conservation Area guidance */}
+        <section id="article-4" className="mb-12 scroll-mt-24">
+          <div className="flex items-center gap-3 mb-4">
+            <Landmark className="h-6 w-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Article 4 Directions &amp; Conservation Areas</h2>
+          </div>
+          <p className="text-muted-foreground mb-6">
+            Article 4 Directions withdraw specified Permitted Development rights — most commonly
+            those affecting front elevations, doors, windows and roof alterations on
+            single-family dwellings within designated Conservation Areas. Because secondary
+            glazing is fitted internally, it almost always falls outside the scope of an
+            Article 4(1) Direction; however, a written confirmation from the Local Planning
+            Authority (LPA) is best practice for specifier records and conveyancing.
+          </p>
+
+          {/* Two-column guidance + checklist */}
+          <div className="grid gap-6 md:grid-cols-2 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">When to engage the LPA</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-3">
+                <p>
+                  Engage the conservation officer or planning duty desk in writing whenever
+                  any of the following apply:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Property is listed (Grade I, II* or II) — LBC enquiry is mandatory.</li>
+                  <li>Property sits within an Article 4(1) Direction zone (e.g. Bloomsbury, Belgravia, Marylebone, Hampstead, Spitalfields).</li>
+                  <li>The Conservation Area Appraisal explicitly references window treatments.</li>
+                  <li>The proposal includes a fanlight, transom, oriel or stained-glass panel.</li>
+                  <li>Works form part of a wider PAS 2035 retrofit requiring evidenced compliance.</li>
+                  <li>Insurer or lender requires written planning confirmation.</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Documents to attach</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-3">
+                <p>
+                  A complete pre-application pack accelerates LPA response and reduces the
+                  risk of conditions being attached at consent stage:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Existing &amp; proposed window section at 1:5.</li>
+                  <li>Reversibility schedule (fixings, removal sequence, making-good).</li>
+                  <li>Manufacturer datasheet and frame profile drawings.</li>
+                  <li>UKAS-accredited Rw and U-value certificates (BS EN ISO 10140-2 / BS EN 12567-1).</li>
+                  <li>Heritage impact statement referencing Historic England HEAG 161 / 326.</li>
+                  <li>Site photographs of the relevant elevation and internal reveal.</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* LPA email template */}
+          <Card className="border-primary/30">
+            <CardHeader>
+              <div className="flex items-start justify-between gap-4 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-lg">LPA pre-application email template</CardTitle>
+                </div>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  onClick={handleCopyEmail}
+                  aria-label="Copy LPA email template to clipboard"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="h-4 w-4 mr-2" />
+                      Copied
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-4 w-4 mr-2" />
+                      Copy template
+                    </>
+                  )}
+                </Button>
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">
+                Replace the bracketed fields and address to your borough's planning or
+                conservation team. This template is drafted to elicit a written
+                confirmation that planning permission and (where applicable) Listed
+                Building Consent are not required, or to scope the documents needed if
+                they are.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="rounded-lg bg-muted/50 border border-border p-4 text-sm">
+                <p className="font-semibold mb-2">
+                  Subject: <span className="font-normal">{lpaEmailSubject}</span>
+                </p>
+                <pre className="whitespace-pre-wrap font-sans text-foreground/90 leading-relaxed">
+{lpaEmailBody}
+                </pre>
+              </div>
+              <p className="text-xs text-muted-foreground mt-4">
+                Tip: most London LPAs accept pre-application enquiries via a dedicated
+                planning portal (e.g. Westminster, RBKC, Camden, Islington). Where a fee
+                applies it is typically £50–£300 for residential pre-app on listed
+                buildings, with a 15–25 working-day response. Keep the written reply with
+                your project file as evidence of compliance.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
         <section id="building-regs" className="mb-12 scroll-mt-24">
           <div className="flex items-center gap-3 mb-4">
             <FileCheck className="h-6 w-6 text-primary" />
