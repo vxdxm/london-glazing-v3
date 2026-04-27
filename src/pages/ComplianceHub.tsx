@@ -481,6 +481,154 @@ Yours faithfully,
               </p>
             </CardContent>
           </Card>
+
+          {/* Borough-specific LPA contact directory */}
+          <Card className="mt-8">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <Building2 className="h-5 w-5 text-primary" />
+                <CardTitle className="text-lg">Where to submit: London borough LPA contact directory</CardTitle>
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">
+                The correct submission channel varies by borough. Listed buildings and
+                Article 4 enquiries are usually best routed via the borough's pre-application
+                service or directly to the duty conservation officer. Always verify on the
+                council website before sending — fees and forms are reviewed annually.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b border-border bg-muted/40">
+                      <th className="text-left py-2 px-3 font-semibold">Borough</th>
+                      <th className="text-left py-2 px-3 font-semibold">Best channel</th>
+                      <th className="text-left py-2 px-3 font-semibold">Contact / portal</th>
+                      <th className="text-left py-2 px-3 font-semibold">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Westminster</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.westminster.gov.uk/planning-building-and-environmental-regulations/planning-applications/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">westminster.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planningenquiries@westminster.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Heavy Article 4 coverage (Belgravia, Mayfair, Marylebone). Conservation team responds within ~15 working days.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Kensington &amp; Chelsea (RBKC)</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.rbkc.gov.uk/planning-and-building-control/planning-applications/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">rbkc.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@rbkc.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Strict on stucco terraces; route LBC queries via dedicated heritage officer.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Camden</td>
+                      <td className="py-2 px-3">Email + portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.camden.gov.uk/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">camden.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@camden.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Bloomsbury, Hampstead and Fitzrovia Article 4 zones. Conservation duty desk Tue/Thu.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Islington</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.islington.gov.uk/planning/planning-applications/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">islington.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@islington.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Canonbury, Barnsbury and Highbury Conservation Areas — Victorian/Georgian sash detail expected.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">City of London</td>
+                      <td className="py-2 px-3">Direct email</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.cityoflondon.gov.uk/services/planning/planning-applications/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cityoflondon.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">plans@cityoflondon.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Predominantly commercial / listed offices. Acoustic and BCO coordination usually required.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Tower Hamlets</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.towerhamlets.gov.uk/lgnl/planning_and_building_control/planning_advice/pre-application_advice.aspx" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">towerhamlets.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@towerhamlets.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Spitalfields and Fournier Street Article 4. Heritage officer review for any window-related works.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Hackney</td>
+                      <td className="py-2 px-3">Email + portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://hackney.gov.uk/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">hackney.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@hackney.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">De Beauvoir, Clapton Square Conservation Areas. Article 4 affects external alterations only.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Southwark</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.southwark.gov.uk/planning-and-building-control/planning-applications/before-applying/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">southwark.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@southwark.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Bankside and Borough listed buildings — written LBC confirmation typically issued within 20 working days.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Wandsworth</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.wandsworth.gov.uk/planning-and-building-control/planning-applications/pre-application-advice/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">wandsworth.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">dceast@wandsworth.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Battersea and Clapham Conservation Areas — secondary glazing typically accepted on Victorian terraces.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Lambeth</td>
+                      <td className="py-2 px-3">Email + portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.lambeth.gov.uk/planning-building-control/planning-applications/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">lambeth.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@lambeth.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Stockwell, Kennington and Vauxhall heritage zones. Acoustic justification valued near rail corridors.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Richmond upon Thames</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.richmond.gov.uk/services/planning/planning_applications/pre_application_advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">richmond.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">envprotection@richmond.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">River-front Article 4 (Strand on the Green, Petersham). Heritage statement expected for any sash works.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 px-3 font-medium">Hammersmith &amp; Fulham</td>
+                      <td className="py-2 px-3">Pre-app portal</td>
+                      <td className="py-2 px-3">
+                        <a href="https://www.lbhf.gov.uk/planning/planning-applications-and-decisions/pre-application-advice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">lbhf.gov.uk pre-app</a><br />
+                        <span className="text-xs text-muted-foreground">planning@lbhf.gov.uk</span>
+                      </td>
+                      <td className="py-2 px-3 text-muted-foreground">Brackenbury, Bedford Park (W4) and St Peter's Square Article 4 — strict on visible internal sightlines.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-muted-foreground mt-4">
+                Channel guidance: use the <strong>pre-application portal</strong> route for
+                priced written advice you can rely on at consent stage. Use the generic
+                <strong> planning@ inbox</strong> only for binary confirmations (e.g. "is LBC
+                required for internal secondary glazing?") where no formal advice fee is
+                triggered. For listed buildings, always cc the named conservation officer if
+                identified on the council's heritage team page.
+              </p>
+            </CardContent>
+          </Card>
         </section>
 
         <section id="building-regs" className="mb-12 scroll-mt-24">
