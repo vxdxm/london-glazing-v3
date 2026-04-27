@@ -12,11 +12,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ShieldCheck, FileCheck, Thermometer, Volume2, Droplets, Building2, Scale, ScrollText } from "lucide-react";
+import { ShieldCheck, FileCheck, Thermometer, Volume2, Droplets, Building2, Scale, ScrollText, Landmark, Mail, Copy, Check } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 import { createFAQSchema } from "@/utils/faq-schema";
 
 const sections = [
   { id: "planning", label: "Planning & LBC", icon: Building2 },
+  { id: "article-4", label: "Article 4 & Conservation", icon: Landmark },
   { id: "building-regs", label: "Building Regulations", icon: FileCheck },
   { id: "pas-2035", label: "PAS 2035 / MEES", icon: ScrollText },
   { id: "acoustics", label: "Acoustic Compliance", icon: Volume2 },
