@@ -12,11 +12,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ShieldCheck, FileCheck, Thermometer, Volume2, Droplets, Building2, Scale, ScrollText } from "lucide-react";
+import { ShieldCheck, FileCheck, Thermometer, Volume2, Droplets, Building2, Scale, ScrollText, Landmark, Mail, Copy, Check } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 import { createFAQSchema } from "@/utils/faq-schema";
 
 const sections = [
   { id: "planning", label: "Planning & LBC", icon: Building2 },
+  { id: "article-4", label: "Article 4 & Conservation", icon: Landmark },
   { id: "building-regs", label: "Building Regulations", icon: FileCheck },
   { id: "pas-2035", label: "PAS 2035 / MEES", icon: ScrollText },
   { id: "acoustics", label: "Acoustic Compliance", icon: Volume2 },
@@ -157,6 +160,54 @@ const allFAQs = [
 ];
 
 const ComplianceHub = () => {
+  const { toast } = useToast();
+  const [copied, setCopied] = useState(false);
+
+  const lpaEmailSubject = "Pre-application enquiry: internal secondary glazing — [Property address, Postcode]";
+  const lpaEmailBody = `Dear [Conservation Officer / Planning Team],
+
+I am writing to confirm the planning and Listed Building Consent (LBC) position for the proposed installation of internal secondary glazing at the address below.
+
+Property: [Full address, postcode]
+Designation: [Grade II listed / within [Name] Conservation Area / subject to Article 4(1) Direction dated [date]]
+UPRN / Planning Ref (if known): [____]
+Applicant / Agent: [Name, role]
+
+Proposal summary
+- Installation of slimline aluminium secondary glazing on the room side of existing windows.
+- Frame depth approx. 22–40mm, finished in [RAL / heritage colour] to recede behind primary reveal.
+- Glass build-up: [e.g. 6.8mm Stadip Silence acoustic laminate] at a [100–200mm] cavity.
+- Mechanical fixings into existing staff bead / sub-frame / window lining only — no fixings into primary joinery, masonry reveal, or historic plasterwork.
+- Fully reversible: all components removable without trace and without damage to the host fabric.
+- No alteration to the external elevation; no change to opening lights, sightlines, glazing bars, shutters, architraves or sash boxes as viewed from outside.
+
+Confirmation requested
+1. Planning permission: Please confirm that the works fall outside the definition of "development" under the Town and Country Planning Act 1990 s.55, and that any Article 4(1) Direction in force at this address does not extend to internal alterations of this nature.
+2. Listed Building Consent: Please confirm whether LBC is required under the Planning (Listed Buildings and Conservation Areas) Act 1990 s.7, given the reversible internal nature of the works and their alignment with Historic England guidance HEAG 161 (Energy Efficiency and Historic Buildings) and HEAG 326 (Traditional Windows: Their Care, Repair and Upgrading, 2017).
+3. Conservation Area Appraisal: Please confirm whether the relevant Conservation Area Appraisal or Management Plan identifies secondary glazing as an acceptable thermal/acoustic upgrade route.
+4. Submission requirements: If LBC is required, please confirm the documents you wish to receive (we can supply: 1:5 sightline section, manufacturer datasheet, Rw / U-value certification to BS EN ISO 10140-2 and BS EN 12567-1, heritage impact statement, reversibility schedule, method statement).
+5. Pre-application fee: Please confirm any applicable pre-app fee and expected response timescale.
+
+I would be grateful for written confirmation that we can append to the project record. Please contact me on [phone] or [email] if any clarification is needed before formal submission.
+
+Yours faithfully,
+
+[Name]
+[Practice / Company]
+[RIBA / RICS / CIAT membership number, if applicable]
+[Phone] | [Email]`;
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(`Subject: ${lpaEmailSubject}\n\n${lpaEmailBody}`);
+      setCopied(true);
+      toast({ title: "Email template copied", description: "Paste into your mail client and replace the bracketed fields." });
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      toast({ title: "Copy failed", description: "Please select the text manually and copy.", variant: "destructive" });
+    }
+  };
+
   const faqSchema = createFAQSchema(allFAQs, {
     includeAIOptimization: true,
     audience: "architects, specifiers, retrofit coordinators and property owners",
@@ -316,6 +367,120 @@ const ComplianceHub = () => {
               </AccordionItem>
             ))}
           </Accordion>
+        </section>
+
+        {/* Article 4 & Conservation Area guidance */}
+        <section id="article-4" className="mb-12 scroll-mt-24">
+          <div className="flex items-center gap-3 mb-4">
+            <Landmark className="h-6 w-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Article 4 Directions &amp; Conservation Areas</h2>
+          </div>
+          <p className="text-muted-foreground mb-6">
+            Article 4 Directions withdraw specified Permitted Development rights — most commonly
+            those affecting front elevations, doors, windows and roof alterations on
+            single-family dwellings within designated Conservation Areas. Because secondary
+            glazing is fitted internally, it almost always falls outside the scope of an
+            Article 4(1) Direction; however, a written confirmation from the Local Planning
+            Authority (LPA) is best practice for specifier records and conveyancing.
+          </p>
+
+          {/* Two-column guidance + checklist */}
+          <div className="grid gap-6 md:grid-cols-2 mb-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">When to engage the LPA</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-3">
+                <p>
+                  Engage the conservation officer or planning duty desk in writing whenever
+                  any of the following apply:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Property is listed (Grade I, II* or II) — LBC enquiry is mandatory.</li>
+                  <li>Property sits within an Article 4(1) Direction zone (e.g. Bloomsbury, Belgravia, Marylebone, Hampstead, Spitalfields).</li>
+                  <li>The Conservation Area Appraisal explicitly references window treatments.</li>
+                  <li>The proposal includes a fanlight, transom, oriel or stained-glass panel.</li>
+                  <li>Works form part of a wider PAS 2035 retrofit requiring evidenced compliance.</li>
+                  <li>Insurer or lender requires written planning confirmation.</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Documents to attach</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-3">
+                <p>
+                  A complete pre-application pack accelerates LPA response and reduces the
+                  risk of conditions being attached at consent stage:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Existing &amp; proposed window section at 1:5.</li>
+                  <li>Reversibility schedule (fixings, removal sequence, making-good).</li>
+                  <li>Manufacturer datasheet and frame profile drawings.</li>
+                  <li>UKAS-accredited Rw and U-value certificates (BS EN ISO 10140-2 / BS EN 12567-1).</li>
+                  <li>Heritage impact statement referencing Historic England HEAG 161 / 326.</li>
+                  <li>Site photographs of the relevant elevation and internal reveal.</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* LPA email template */}
+          <Card className="border-primary/30">
+            <CardHeader>
+              <div className="flex items-start justify-between gap-4 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-lg">LPA pre-application email template</CardTitle>
+                </div>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  onClick={handleCopyEmail}
+                  aria-label="Copy LPA email template to clipboard"
+                >
+                  {copied ? (
+                    <>
+                      <Check className="h-4 w-4 mr-2" />
+                      Copied
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="h-4 w-4 mr-2" />
+                      Copy template
+                    </>
+                  )}
+                </Button>
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">
+                Replace the bracketed fields and address to your borough's planning or
+                conservation team. This template is drafted to elicit a written
+                confirmation that planning permission and (where applicable) Listed
+                Building Consent are not required, or to scope the documents needed if
+                they are.
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="rounded-lg bg-muted/50 border border-border p-4 text-sm">
+                <p className="font-semibold mb-2">
+                  Subject: <span className="font-normal">{lpaEmailSubject}</span>
+                </p>
+                <pre className="whitespace-pre-wrap font-sans text-foreground/90 leading-relaxed">
+{lpaEmailBody}
+                </pre>
+              </div>
+              <p className="text-xs text-muted-foreground mt-4">
+                Tip: most London LPAs accept pre-application enquiries via a dedicated
+                planning portal (e.g. Westminster, RBKC, Camden, Islington). Where a fee
+                applies it is typically £50–£300 for residential pre-app on listed
+                buildings, with a 15–25 working-day response. Keep the written reply with
+                your project file as evidence of compliance.
+              </p>
+            </CardContent>
+          </Card>
         </section>
 
         <section id="building-regs" className="mb-12 scroll-mt-24">
