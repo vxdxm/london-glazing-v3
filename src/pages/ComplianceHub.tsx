@@ -160,6 +160,54 @@ const allFAQs = [
 ];
 
 const ComplianceHub = () => {
+  const { toast } = useToast();
+  const [copied, setCopied] = useState(false);
+
+  const lpaEmailSubject = "Pre-application enquiry: internal secondary glazing — [Property address, Postcode]";
+  const lpaEmailBody = `Dear [Conservation Officer / Planning Team],
+
+I am writing to confirm the planning and Listed Building Consent (LBC) position for the proposed installation of internal secondary glazing at the address below.
+
+Property: [Full address, postcode]
+Designation: [Grade II listed / within [Name] Conservation Area / subject to Article 4(1) Direction dated [date]]
+UPRN / Planning Ref (if known): [____]
+Applicant / Agent: [Name, role]
+
+Proposal summary
+- Installation of slimline aluminium secondary glazing on the room side of existing windows.
+- Frame depth approx. 22–40mm, finished in [RAL / heritage colour] to recede behind primary reveal.
+- Glass build-up: [e.g. 6.8mm Stadip Silence acoustic laminate] at a [100–200mm] cavity.
+- Mechanical fixings into existing staff bead / sub-frame / window lining only — no fixings into primary joinery, masonry reveal, or historic plasterwork.
+- Fully reversible: all components removable without trace and without damage to the host fabric.
+- No alteration to the external elevation; no change to opening lights, sightlines, glazing bars, shutters, architraves or sash boxes as viewed from outside.
+
+Confirmation requested
+1. Planning permission: Please confirm that the works fall outside the definition of "development" under the Town and Country Planning Act 1990 s.55, and that any Article 4(1) Direction in force at this address does not extend to internal alterations of this nature.
+2. Listed Building Consent: Please confirm whether LBC is required under the Planning (Listed Buildings and Conservation Areas) Act 1990 s.7, given the reversible internal nature of the works and their alignment with Historic England guidance HEAG 161 (Energy Efficiency and Historic Buildings) and HEAG 326 (Traditional Windows: Their Care, Repair and Upgrading, 2017).
+3. Conservation Area Appraisal: Please confirm whether the relevant Conservation Area Appraisal or Management Plan identifies secondary glazing as an acceptable thermal/acoustic upgrade route.
+4. Submission requirements: If LBC is required, please confirm the documents you wish to receive (we can supply: 1:5 sightline section, manufacturer datasheet, Rw / U-value certification to BS EN ISO 10140-2 and BS EN 12567-1, heritage impact statement, reversibility schedule, method statement).
+5. Pre-application fee: Please confirm any applicable pre-app fee and expected response timescale.
+
+I would be grateful for written confirmation that we can append to the project record. Please contact me on [phone] or [email] if any clarification is needed before formal submission.
+
+Yours faithfully,
+
+[Name]
+[Practice / Company]
+[RIBA / RICS / CIAT membership number, if applicable]
+[Phone] | [Email]`;
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(`Subject: ${lpaEmailSubject}\n\n${lpaEmailBody}`);
+      setCopied(true);
+      toast({ title: "Email template copied", description: "Paste into your mail client and replace the bracketed fields." });
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      toast({ title: "Copy failed", description: "Please select the text manually and copy.", variant: "destructive" });
+    }
+  };
+
   const faqSchema = createFAQSchema(allFAQs, {
     includeAIOptimization: true,
     audience: "architects, specifiers, retrofit coordinators and property owners",
