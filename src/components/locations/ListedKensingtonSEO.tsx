@@ -23,14 +23,14 @@ const ListedKensingtonSEO = () => {
       <meta property="og:url" content="https://secondaryglazingspecialist.com/locations/listed-kensington" />
       <meta property="og:title" content="Listed Building Secondary Glazing Kensington | Conservation Approved" />
       <meta property="og:description" content="Conservation-approved secondary glazing for listed buildings in Kensington. Discreet, reversible designs meeting heritage requirements." />
-      <meta property="og:image" content="/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
+      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content="https://secondaryglazingspecialist.com/locations/listed-kensington" />
       <meta name="twitter:title" content="Listed Building Secondary Glazing Kensington | Conservation Approved" />
       <meta name="twitter:description" content="Conservation-approved secondary glazing for listed buildings in Kensington. Discreet, reversible designs meeting heritage requirements." />
-      <meta property="twitter:image" content="/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
+      <meta property="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
       
       {/* Structured Data */}
       <script type="application/ld+json">

@@ -12,8 +12,8 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <EnhancedSEO
-        title="About Secondary Glazing Specialist | London Heritage Property Experts"
-        description="London's leading provider of secondary glazing for listed buildings, conservation areas, and period properties. Specialists in Victorian, Georgian, and Edwardian homes."
+        title="About Us | Secondary Glazing Specialist London"
+        description="London's leading secondary glazing experts for listed buildings, conservation areas & Victorian, Georgian and Edwardian period properties."
         canonicalPath="/about"
         type="website"
         keywords={[

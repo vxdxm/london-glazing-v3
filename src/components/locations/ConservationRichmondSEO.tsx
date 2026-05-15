@@ -23,14 +23,14 @@ const ConservationRichmondSEO = () => {
       <meta property="og:url" content="https://secondaryglazingspecialist.com/locations/conservation-richmond" />
       <meta property="og:title" content="Conservation Area Secondary Glazing Richmond | Planning Approved Solutions" />
       <meta property="og:description" content="Planning-compliant secondary glazing for Richmond conservation areas. Expert noise reduction & energy efficiency solutions with full local authority support." />
-      <meta property="og:image" content="/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
+      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content="https://secondaryglazingspecialist.com/locations/conservation-richmond" />
       <meta name="twitter:title" content="Conservation Area Secondary Glazing Richmond | Planning Approved Solutions" />
       <meta name="twitter:description" content="Planning-compliant secondary glazing for Richmond conservation areas. Expert noise reduction & energy efficiency solutions with full local authority support." />
-      <meta property="twitter:image" content="/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
+      <meta property="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/c346e589-42af-4989-9b7d-29bc69feea06.png" />
       
       {/* Structured Data */}
       <script type="application/ld+json">
