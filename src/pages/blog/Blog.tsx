@@ -185,8 +185,8 @@ const Blog = () => {
   return (
     <>
       <EnhancedSEO
-        title="Secondary Glazing Blog | Expert Insights & Guides | London Specialist"
-        description="Expert articles, guides, and insights on secondary glazing for listed buildings, noise reduction, thermal efficiency, and more. Stay informed with London's leading specialists."
+        title="Secondary Glazing Blog | Expert Guides | London Specialist"
+        description="Expert guides on secondary glazing for listed buildings, noise reduction and thermal efficiency from London's leading specialists."
         canonicalPath="/blog"
         type="website"
         keywords={["secondary glazing blog", "window glazing articles", "listed building windows", "noise reduction tips", "thermal insulation guides"]}
