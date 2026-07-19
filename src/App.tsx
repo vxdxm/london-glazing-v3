@@ -4,7 +4,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
@@ -285,9 +284,6 @@ const AppRoutes = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/">
