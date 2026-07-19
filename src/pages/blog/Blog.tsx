@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "listed-building-planning-approved-guide",
+    title: "Listed Building Secondary Glazing: The Complete Guide to Planning-Approved Window Upgrades",
+    excerpt: "Planning permission vs Listed Building Consent, Grade I & II scrutiny, reversibility, shutters and original glass — the complete planning-approved guide for London heritage homes.",
+    date: "2026-07-19",
+    readTime: "10 min read",
+    category: "Heritage",
+    image: "https://cdn.marblism.com/A4-3AjjI-RJ.webp"
+  },
+  {
     slug: "acoustic-secondary-glazing-guide",
     title: "Acoustic Secondary Glazing: The Ultimate Guide to Soundproofing London Period Homes",
     excerpt: "Expert guide to acoustic secondary glazing using 10.8mm Stadip Silence glass and 100mm air gaps. Learn how to achieve 70-80% noise reduction in listed buildings and conservation areas.",
