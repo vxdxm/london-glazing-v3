@@ -10,7 +10,6 @@ const HomeSEO = () => {
         name="description" 
         content="London secondary glazing specialists for Grade I & II listed buildings. 54dB noise reduction & 60% better heat retention with bespoke installs." 
       />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
       
       {/* Open Graph / Facebook */}
