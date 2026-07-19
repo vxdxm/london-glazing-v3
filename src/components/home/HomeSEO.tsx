@@ -5,32 +5,8 @@ import { Helmet } from "react-helmet-async";
 const HomeSEO = () => {
   return (
     <Helmet>
-      <title>Secondary Glazing London | Listed & Heritage Specialists</title>
-      <meta 
-        name="description" 
-        content="London secondary glazing specialists for Grade I & II listed buildings. 54dB noise reduction & 60% better heat retention with bespoke installs." 
-      />
-      <link rel="canonical" href="https://secondaryglazingspecialist.com/" />
-      
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://secondaryglazingspecialist.com/" />
-      <meta property="og:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
-      <meta property="og:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
-      <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@Sec0ndaryGlazin" />
-      <meta name="twitter:creator" content="@Sec0ndaryGlazin" />
-      <meta name="twitter:url" content="https://secondaryglazingspecialist.com/" />
-      <meta name="twitter:title" content="Secondary Glazing Specialist | Heritage & Modern Homes" />
-      <meta name="twitter:description" content="London's leading secondary glazing specialists offering expert installation, repairs and acoustic solutions. Enhance your home's thermal efficiency and reduce noise." />
-      <meta name="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/675b8861-030a-48d3-adbe-f9706ec54947.png" />
-      
-      {/* Schema.org structured data */}
+      {/* Title, description, canonical, og:*, twitter:* are emitted by EnhancedSEO
+          on the Index page to avoid duplicate meta tags. Only unique JSON-LD lives here. */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",

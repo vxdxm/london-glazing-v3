@@ -285,9 +285,6 @@ const AppRoutes = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/">
