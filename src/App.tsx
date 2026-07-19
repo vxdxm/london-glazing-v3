@@ -121,6 +121,7 @@ import Blog from "./pages/blog/Blog";
 import BlogPost from "./pages/blog/BlogPost";
 import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazingGuide";
 import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
+import ListedBuildingPlanningApprovedGuide from "./pages/blog/ListedBuildingPlanningApprovedGuide";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
 import CommercialMEESComplianceGuide from "./pages/blog/CommercialMEESComplianceGuide";
@@ -261,6 +262,7 @@ const AppRoutes = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/acoustic-secondary-glazing-guide" element={<AcousticSecondaryGlazingGuide />} />
         <Route path="/blog/listed-building-secondary-glazing-guide" element={<ListedBuildingSecondaryGlazingGuide />} />
+        <Route path="/blog/listed-building-planning-approved-guide" element={<ListedBuildingPlanningApprovedGuide />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
         <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
         <Route path="/blog/commercial-mees-compliance-secondary-glazing" element={<CommercialMEESComplianceGuide />} />
