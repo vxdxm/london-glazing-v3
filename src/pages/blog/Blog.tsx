@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "energy-saving-mistakes-old-windows",
+    title: "7 Energy-Saving Mistakes Most Homeowners Make with Old Windows",
+    excerpt: "Avoid the seven costliest energy-saving mistakes homeowners make with old windows. Learn why secondary glazing beats replacement for period properties and conservation areas.",
+    date: "2026-07-20",
+    readTime: "11 min read",
+    category: "Energy Efficiency",
+    image: "https://cdn.marblism.com/q3qq_C7ebys.webp"
+  },
+  {
     slug: "best-acoustic-glass-secondary-glazing-compared",
     title: "How to Choose the Best Acoustic Glass for Secondary Glazing (Compared)",
     excerpt: "Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing. Learn which glass stops traffic noise, how air gaps affect performance, and what suits listed buildings.",
