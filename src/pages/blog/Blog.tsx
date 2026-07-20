@@ -9,7 +9,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 import { blogPosts, POSTS_PER_PAGE } from "@/data/blogPosts";
 
-const POSTS_PER_PAGE = 9;
 const SITE_URL = "https://secondaryglazingspecialist.com";
 
 const buildPagePath = (page: number) => (page <= 1 ? "/blog" : `/blog?page=${page}`);
