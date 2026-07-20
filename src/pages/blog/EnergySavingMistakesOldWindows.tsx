@@ -38,7 +38,7 @@ const EnergySavingMistakesOldWindows = () => {
   return (
     <>
       <EnhancedSEO
-        title="7 Energy-Saving Mistakes Most Homeowners Make with Old Windows"
+        title="Energy-Saving Mistakes Homeowners Make with Old Windows"
         description="Avoid the seven most common and costly energy-saving mistakes homeowners make with old windows. Learn why secondary glazing beats replacement for period properties."
         canonicalPath={`/blog/${SLUG}`}
         type="article"
