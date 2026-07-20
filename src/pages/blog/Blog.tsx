@@ -9,6 +9,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const blogPosts = [
   {
+    slug: "best-acoustic-glass-secondary-glazing-compared",
+    title: "How to Choose the Best Acoustic Glass for Secondary Glazing (Compared)",
+    excerpt: "Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing. Learn which glass stops traffic noise, how air gaps affect performance, and what suits listed buildings.",
+    date: "2026-07-20",
+    readTime: "12 min read",
+    category: "Acoustic Glazing",
+    image: "https://cdn.marblism.com/Ps-0xlRMa8q.webp"
+  },
+  {
     slug: "listed-building-planning-approved-guide",
     title: "Listed Building Secondary Glazing: The Complete Guide to Planning-Approved Window Upgrades",
     excerpt: "Planning permission vs Listed Building Consent, Grade I & II scrutiny, reversibility, shutters and original glass — the complete planning-approved guide for London heritage homes.",
