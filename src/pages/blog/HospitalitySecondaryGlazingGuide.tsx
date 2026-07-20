@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock, Star, TrendingUp, Quote } from "lucide-react";
 
@@ -311,6 +312,10 @@ const HospitalitySecondaryGlazingGuide = () => {
           </div>
         </div>
       </section>
+
+      <div className="container mx-auto px-4">
+        <RelatedGuides currentSlug="hospitality-secondary-glazing-noise-reduction" />
+      </div>
 
       <Footer />
     </>
