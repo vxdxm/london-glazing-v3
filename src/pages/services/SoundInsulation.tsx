@@ -70,7 +70,7 @@ const SoundInsulation = () => {
             <li>Butt-jointed corners with silicone acoustic sealant, not mitred foam gaskets.</li>
           </ul>
 
-          <h2 className="text-2xl function mt-8 mb-3 text-2xl font-semibold">Verification: field measurement</h2>
+          <h2 className="text-2xl font-semibold mt-8 mb-3">Verification: field measurement</h2>
           <p>On completion we can arrange a UKAS-accredited third-party field test to BS EN ISO 16283-3 (façade sound insulation), producing a D<sub>2m,nT,w</sub> value directly comparable to Building Regulations Approved Document E and BB93 (schools). Typical London acoustic-glazing projects achieve D<sub>2m,nT,w</sub> ≥ 43 dB — sufficient to bring a bedroom overlooking the A40 within WHO night-noise guidelines.</p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Common noise sources and target Rw</h2>
