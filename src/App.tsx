@@ -123,6 +123,7 @@ import AcousticSecondaryGlazingGuide from "./pages/blog/AcousticSecondaryGlazing
 import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSecondaryGlazingGuide";
 import ListedBuildingPlanningApprovedGuide from "./pages/blog/ListedBuildingPlanningApprovedGuide";
 import BestAcousticGlassSecondaryGlazing from "./pages/blog/BestAcousticGlassSecondaryGlazing";
+import EnergySavingMistakesOldWindows from "./pages/blog/EnergySavingMistakesOldWindows";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
 import CommercialMEESComplianceGuide from "./pages/blog/CommercialMEESComplianceGuide";
@@ -265,6 +266,7 @@ const AppRoutes = () => {
         <Route path="/blog/listed-building-secondary-glazing-guide" element={<ListedBuildingSecondaryGlazingGuide />} />
         <Route path="/blog/listed-building-planning-approved-guide" element={<ListedBuildingPlanningApprovedGuide />} />
         <Route path="/blog/best-acoustic-glass-secondary-glazing-compared" element={<BestAcousticGlassSecondaryGlazing />} />
+        <Route path="/blog/energy-saving-mistakes-old-windows" element={<EnergySavingMistakesOldWindows />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
         <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
         <Route path="/blog/commercial-mees-compliance-secondary-glazing" element={<CommercialMEESComplianceGuide />} />
