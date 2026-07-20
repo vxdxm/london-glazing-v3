@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
+import { AutoBreadcrumbSchema } from "@/components/seo/AutoBreadcrumbSchema";
 import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Benefits from "./pages/Benefits";
@@ -142,6 +143,7 @@ const queryClient = new QueryClient();
 const AppRoutes = () => {
   return (
     <>
+      <AutoBreadcrumbSchema />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
