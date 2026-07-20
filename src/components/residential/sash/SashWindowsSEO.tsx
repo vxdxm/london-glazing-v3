@@ -14,7 +14,7 @@ const SashWindowsSEO = () => {
         content="Preserve your period property's character with sash window secondary glazing. Enhance thermal and acoustic performance while maintaining original Victorian and Georgian features." 
       />
       <meta name="keywords" content="sash window secondary glazing, period property glazing, victorian window insulation, georgian windows, sliding sash windows, noise reduction, thermal insulation" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/sash-windows" />
       
       {/* Open Graph / Facebook */}

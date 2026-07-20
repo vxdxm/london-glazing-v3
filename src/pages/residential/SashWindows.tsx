@@ -91,7 +91,7 @@ const SashWindows = () => {
           name="keywords" 
           content="sash window secondary glazing, period property glazing London, Victorian window insulation, Georgian sash windows, listed building glazing, noise reduction sash windows, thermal insulation period windows, secondary glazing cost" 
         />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/sash-windows" />
         
         {/* Open Graph */}

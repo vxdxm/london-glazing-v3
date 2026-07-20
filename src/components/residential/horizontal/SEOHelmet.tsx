@@ -15,7 +15,7 @@ const SEOHelmet = () => {
       />
       <meta name="keywords" content="horizontal sliding windows, sliding secondary glazing, thermal insulation, noise reduction, wide window openings, residential glazing" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/horizontal-sliding" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:title" content="Horizontal Sliding Secondary Glazing" />

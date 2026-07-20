@@ -15,7 +15,7 @@ const ConservationRichmondSEO = () => {
         name="keywords" 
         content="Richmond conservation area secondary glazing, conservation area planning, Richmond planning permission, heritage secondary glazing, Richmond council approved" 
       />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/conservation-richmond" />
       
       {/* Open Graph / Facebook */}

@@ -15,7 +15,7 @@ const ListedKensingtonSEO = () => {
         name="keywords" 
         content="listed building secondary glazing, Kensington conservation area, heritage glazing, conservation approved, listed building consent, RBKC planning" 
       />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/listed-kensington" />
       
       {/* Open Graph / Facebook */}

@@ -108,7 +108,7 @@ const LiftOutSEO = () => {
         name="keywords" 
         content="lift-out secondary glazing, removable secondary glazing, seasonal secondary glazing London, rental property glazing, listed building trial glazing, magnetic secondary glazing, clip-in glazing panels, reversible window insulation" 
       />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/lift-out" />
       
       {/* Open Graph */}

@@ -14,7 +14,7 @@ const BayWindowsSEO = () => {
         content="Expert secondary glazing for bay windows that preserves period features while enhancing thermal and acoustic performance. Bespoke solutions for London properties." 
       />
       <meta name="keywords" content="bay window secondary glazing, bay window insulation, heritage bay windows, thermal performance, acoustic glazing, traditional bay window solutions" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/bay-windows" />
       
       {/* Open Graph / Facebook */}

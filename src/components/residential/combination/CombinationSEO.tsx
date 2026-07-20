@@ -14,7 +14,7 @@ const CombinationSEO = () => {
         content="Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs." 
       />
       <meta name="keywords" content="combination windows, mixed window styles, secondary glazing, sash windows, casement windows, bay windows, noise reduction, thermal insulation" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/residential/combination" />
       
       {/* Open Graph / Facebook */}

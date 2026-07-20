@@ -15,7 +15,7 @@ const VictorianIslingtonSEO = () => {
         name="keywords" 
         content="Victorian terrace secondary glazing, Islington sash windows, period property glazing, draught proofing, Victorian windows Islington, heritage glazing" 
       />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/victorian-islington" />
       
       {/* Open Graph / Facebook */}

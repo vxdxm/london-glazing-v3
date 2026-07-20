@@ -39,6 +39,9 @@ export const StandardSEO: React.FC<SEOProps> = ({
 
   const pageSchema = createPageSchema(pageMetadata);
   const fullUrl = `https://secondaryglazingspecialist.com${canonicalPath}`;
+  const absoluteImageUrl = imageUrl.startsWith("http")
+    ? imageUrl
+    : `https://secondaryglazingspecialist.com${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
 
   return (
     <Helmet>
@@ -46,20 +49,22 @@ export const StandardSEO: React.FC<SEOProps> = ({
       <meta name="description" content={description} />
       {keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
       <link rel="canonical" href={fullUrl} />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image" content={absoluteImageUrl} />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={fullUrl} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={imageUrl} />
+      <meta property="twitter:image" content={absoluteImageUrl} />
       
       {/* Structured Data */}
       <script type="application/ld+json">{pageSchema}</script>
