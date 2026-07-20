@@ -47,6 +47,39 @@ export const EnergyPerformanceSEO = () => {
           }
         `}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does secondary glazing improve energy performance?",
+              "acceptedAnswer": { "@type": "Answer", "text": "By adding a sealed inner pane with a 100mm+ air cavity, secondary glazing reduces conductive and convective heat loss through windows by up to 60%, lowering the whole-window U-value from ~4.8 W/m²K to 1.6–1.9 W/m²K." }
+            },
+            {
+              "@type": "Question",
+              "name": "Will secondary glazing improve my EPC rating?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. When entered as a retrofit measure in RdSAP with low-e glass, secondary glazing typically lifts an EPC by 3–8 points, often enough to move a D-rated Victorian terrace into a C band." }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the payback period?",
+              "acceptedAnswer": { "@type": "Answer", "text": "For a typical London home, energy savings of £400–£900 per year give payback of 6–10 years, with the additional benefit of eliminating draughts and cold-radiant discomfort from day one." }
+            },
+            {
+              "@type": "Question",
+              "name": "Does secondary glazing qualify under PAS 2035?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is recognised in PAS 2035:2019 as an appropriate retrofit measure for traditional and heritage buildings where primary window replacement would compromise fabric or character." }
+            },
+            {
+              "@type": "Question",
+              "name": "Is condensation a risk after fitting?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Interstitial condensation is prevented by the warm inner pane raising interior surface temperatures above dew point. Minor trickle ventilation of the cavity is specified where existing sashes are not draught-proofed." }
+            }
+          ]
+        })}
+      </script>
     </Helmet>
   );
 };
