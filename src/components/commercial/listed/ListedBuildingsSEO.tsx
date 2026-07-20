@@ -80,6 +80,39 @@ const ListedBuildingsSEO = () => {
           }
         })}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is secondary glazing acceptable in listed buildings?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Historic England and most LPAs prefer secondary glazing over primary window replacement in Grade I, II* and II properties because it is internal, reversible and does not alter the historic fabric or external appearance." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need Listed Building Consent?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Listed Building Consent is generally required for any works to a listed building. Applications for slimline internal secondary glazing are routinely approved when supported by a Heritage Statement demonstrating reversibility and minimal visual impact." }
+            },
+            {
+              "@type": "Question",
+              "name": "How does it comply with conservation area rules?",
+              "acceptedAnswer": { "@type": "Answer", "text": "As secondary glazing sits internally, it is invisible from the public realm and does not require planning permission in conservation areas. Article 4 directions restricting primary window replacement do not affect internal secondary glazing." }
+            },
+            {
+              "@type": "Question",
+              "name": "Can sightlines match original glazing bars?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Slimline aluminium systems with 20–25mm frames can be aligned with existing muntins and painted to match, keeping the historic elevation reading unchanged." }
+            },
+            {
+              "@type": "Question",
+              "name": "What thermal and acoustic performance is achievable?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Typical listed-building installations achieve U-values of 1.6–1.9 W/m²K and 45–52dB Rw with laminated acoustic glass, meeting Part L retrofit and BS 8233 residential noise criteria without altering primary joinery." }
+            }
+          ]
+        })}
+      </script>
     </Helmet>
   );
 };
