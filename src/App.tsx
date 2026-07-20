@@ -137,6 +137,11 @@ import PhysicsOfSilenceGuide from "./pages/blog/PhysicsOfSilenceGuide";
 import KensingtonChelseaArea from "./pages/areas/KensingtonChelsea";
 import CommercialSecondaryGlazingLanding from "./pages/CommercialSecondaryGlazingLanding";
 import AreasWeServe from "./pages/areas/AreasWeServe";
+import SashWindowsService from "./pages/services/SashWindowsService";
+import BayWindowOptions from "./pages/services/BayWindowOptions";
+import HeritageListed from "./pages/services/HeritageListed";
+import SoundInsulation from "./pages/services/SoundInsulation";
+import CostGuide from "./pages/services/CostGuide";
 
 const queryClient = new QueryClient();
 
@@ -283,6 +288,11 @@ const AppRoutes = () => {
         <Route path="/service-areas/westminster" element={<Westminster />} />
         <Route path="/service-areas/camden" element={<Camden />} />
         <Route path="/service-areas/islington" element={<Islington />} />
+        <Route path="/sash-windows" element={<SashWindowsService />} />
+        <Route path="/bay-window-options" element={<BayWindowOptions />} />
+        <Route path="/heritage-listed" element={<HeritageListed />} />
+        <Route path="/sound-insulation" element={<SoundInsulation />} />
+        <Route path="/cost-guide" element={<CostGuide />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
