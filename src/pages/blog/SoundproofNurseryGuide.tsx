@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
+import { RelatedGuides } from "@/components/blog/RelatedGuides";
 import { ArrowRight, ArrowLeft, Baby, Moon, Volume2, ShieldCheck } from "lucide-react";
 
 const SoundproofNurseryGuide = () => {
@@ -192,6 +193,7 @@ const SoundproofNurseryGuide = () => {
               Request a Free Quote <ArrowRight className="h-5 w-5" />
             </Link>
           </section>
+          <RelatedGuides currentSlug="soundproof-nursery-54db-reduction" />
         </article>
       </main>
 
