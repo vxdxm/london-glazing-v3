@@ -59,6 +59,54 @@ export const ThermalInsulationSEO = () => {
           "keywords": "thermal insulation, secondary glazing, energy efficiency, heat loss reduction, energy bills, thermal barriers, double glazed secondary glazing"
         })}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much can secondary glazing reduce heat loss?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Secondary glazing with Pilkington K low-e glass and a 100mm cavity reduces window U-values from ~4.8 W/m²K (single glazed) to ~1.6–1.9 W/m²K, cutting window heat loss by up to 60%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What U-value can secondary glazing achieve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Combined system U-values of 1.6–2.0 W/m²K are typical with low-e coated 4mm glass; 1.2–1.4 W/m²K is achievable using sealed double-glazed units as the secondary pane."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does secondary glazing meet Part L / PAS 2035 requirements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Secondary glazing with low-e glass is a recognised retrofit measure under PAS 2035 for heritage and traditional buildings where primary window replacement is not appropriate, and satisfies Approved Document L requirements for renovated thermal elements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much can I save on heating bills?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A typical London Victorian terrace with 8–12 single-glazed sashes sees 15–25% reduction in space-heating demand, equating to £400–£900 annual savings at current tariffs, with payback typically in 6–10 years."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does low-e coating affect appearance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern soft-coat low-e glass (Pilkington K, Planitherm) is visually near-neutral with light transmission of 82–89%, making it suitable for listed and conservation-area properties where visual clarity is critical."
+              }
+            }
+          ]
+        })}
+      </script>
     </Helmet>
   );
 };
