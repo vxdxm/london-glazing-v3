@@ -1,5 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -90,6 +91,10 @@ const HeritageListed = () => {
           </div>
         </article>
       </main>
+      <LondonServiceAreas
+        heading="Listed Building Coverage Across London"
+        subheading="Conservation officers, LPA liaison and heritage installers in every borough."
+      />
       <Footer />
     </div>
   );

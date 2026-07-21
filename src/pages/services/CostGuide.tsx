@@ -1,5 +1,6 @@
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -111,6 +112,11 @@ const CostGuide = () => {
           </div>
         </article>
       </main>
+      <LondonServiceAreas
+        heading="Local Pricing Across London"
+        subheading="Access, parking and heritage requirements vary borough by borough — see the areas we cover."
+        compact
+      />
       <Footer />
     </div>
   );

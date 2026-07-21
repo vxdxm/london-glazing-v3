@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -234,6 +235,10 @@ const ResidentialSolutions = () => {
           </Button>
         </div>
       </div>
+      <LondonServiceAreas
+        heading="Residential Secondary Glazing Across London"
+        subheading="Heritage-sensitive installations in every London borough and the Home Counties."
+      />
       <Footer />
     </div>
   );

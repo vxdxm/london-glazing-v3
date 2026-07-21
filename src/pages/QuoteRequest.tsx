@@ -4,6 +4,7 @@ import { QuoteRequestForm } from "@/components/quote/QuoteRequestForm";
 import { QuoteRequestHeader } from "@/components/quote/QuoteRequestHeader";
 import { Footer } from "@/components/Footer";
 import QuoteRequestSEO from "@/components/quote/QuoteRequestSEO";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 
 const QuoteRequest = () => {
   return (
@@ -14,6 +15,11 @@ const QuoteRequest = () => {
         <QuoteRequestHeader />
         <QuoteRequestForm />
       </div>
+      <LondonServiceAreas
+        heading="Local Surveyors Across London"
+        subheading="Free on-site surveys in every borough — usually within 5–7 working days."
+        compact
+      />
       <Footer />
     </div>
   );

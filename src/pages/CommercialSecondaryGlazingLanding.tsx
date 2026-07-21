@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -249,6 +250,10 @@ const CommercialSecondaryGlazing = () => {
         </div>
       </section>
 
+      <LondonServiceAreas
+        heading="Commercial Coverage Across London"
+        subheading="Office towers, hotels, schools and listed civic buildings — surveyed and installed borough by borough."
+      />
       <Footer />
     </>
   );

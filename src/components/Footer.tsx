@@ -42,6 +42,13 @@ const locations = [
   { title: "Richmond", href: "/locations/conservation-richmond" },
   { title: "Chelsea", href: "/locations/chelsea-draught-proofing" },
   { title: "Belgravia", href: "/locations/georgian-belgravia" },
+  { title: "Notting Hill", href: "/locations/notting-hill-security" },
+  { title: "Shoreditch", href: "/locations/shoreditch-urban-noise" },
+  { title: "Clapham", href: "/locations/clapham-busy-roads" },
+  { title: "King's Cross", href: "/locations/kings-cross-train-noise" },
+  { title: "Canary Wharf", href: "/locations/canary-wharf-offices" },
+  { title: "Heathrow Corridor", href: "/locations/heathrow-aircraft" },
+  { title: "All areas we serve →", href: "/areas-we-serve" },
 ];
 
 const resources = [

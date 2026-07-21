@@ -4,7 +4,7 @@ import { MainNav } from "@/components/MainNav";
 import { Hero } from "@/components/Hero";
 import { HomepageIntro } from "@/components/HomepageIntro";
 import { LondonExpertise } from "@/components/LondonExpertise";
-import { LondonBoroughsGrid } from "@/components/LondonBoroughsGrid";
+import { LondonServiceAreas } from "@/components/seo/LondonServiceAreas";
 import { EnhancedSEO } from "@/components/seo/EnhancedSEO";
 import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOverviewOptimizer";
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
@@ -263,7 +263,10 @@ const Index = () => {
         {/* Critical above-fold content - loads immediately, no Suspense wrapper for SSG crawlability */}
         <Hero />
         <LondonExpertise />
-        <LondonBoroughsGrid />
+        <LondonServiceAreas
+          heading="Secondary Glazing Across London"
+          subheading="Local specialists covering every London borough and neighbourhood — from heritage terraces in Chelsea to riverside homes in Richmond."
+        />
         <HomepageIntro />
         
         {/* Below-fold content - wrapped in Suspense with SSG-friendly noscript fallbacks */}
