@@ -48,6 +48,14 @@ const locations = [
   { title: "King's Cross", href: "/locations/kings-cross-train-noise" },
   { title: "Canary Wharf", href: "/locations/canary-wharf-offices" },
   { title: "Heathrow Corridor", href: "/locations/heathrow-aircraft" },
+  { title: "Mayfair", href: "/locations/mayfair" },
+  { title: "Marylebone", href: "/locations/marylebone" },
+  { title: "Fitzrovia", href: "/locations/fitzrovia" },
+  { title: "Bloomsbury", href: "/locations/bloomsbury" },
+  { title: "Pimlico", href: "/locations/pimlico" },
+  { title: "Fulham", href: "/locations/fulham" },
+  { title: "Wimbledon", href: "/locations/wimbledon" },
+  { title: "Highgate", href: "/locations/highgate" },
   { title: "All areas we serve →", href: "/areas-we-serve" },
 ];
 

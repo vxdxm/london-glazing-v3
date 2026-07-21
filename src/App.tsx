@@ -142,6 +142,7 @@ import BayWindowOptions from "./pages/services/BayWindowOptions";
 import HeritageListed from "./pages/services/HeritageListed";
 import SoundInsulation from "./pages/services/SoundInsulation";
 import CostGuide from "./pages/services/CostGuide";
+import NeighbourhoodPage from "./pages/locations/NeighbourhoodPage";
 
 const queryClient = new QueryClient();
 
@@ -233,6 +234,7 @@ const AppRoutes = () => {
         <Route path="/locations/notting-hill-security" element={<NottingHillSecurity />} />
         <Route path="/locations/hackney-energy-efficiency" element={<HackneyEnergyEfficiency />} />
         <Route path="/locations/chelsea-draught-proofing" element={<ChelseaDraughtProofing />} />
+        <Route path="/locations/:slug" element={<NeighbourhoodPage />} />
         <Route path="/locations/virginia-water" element={<VirginiaWater />} />
         <Route path="/locations/ascot" element={<Ascot />} />
         <Route path="/locations/beaconsfield" element={<Beaconsfield />} />
