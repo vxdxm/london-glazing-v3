@@ -1,14 +1,14 @@
+# Netlify redirects for secondaryglazingspecialist.com
+# Processed top-to-bottom; first match wins.
 
-# Specific files that should be served directly
-/sitemap.xml /sitemap.xml 200
-/sitemap-*.xml /sitemap-:splat.xml 200
-/robots.txt /robots.txt 200
+# 1. Remove trailing slashes to avoid duplicate content
+/*/ /:splat 301!
 
-# Legacy redirects with proper 301 status - optimized for efficiency
+# 2. Legacy URL redirects (301 permanent)
 /noise-calculator /specialized/noise-reduction#calculator 301!
 /sustainability-impact-tracker /sustainability-impact-tracker-secondary-glazing 301!
 /secondary-glazing-building-regulations /specialized/secondary-glazing-building-regulations 301!
 /air-gap-secondary-glazing /specialized/air-gap-secondary-glazing 301!
 
-# Ensure all requests go to index.html for SPA routing
+# 3. SPA fallback: serve index.html for all client-side routes
 /* /index.html 200
