@@ -63,8 +63,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <EnhancedSEO
-        title="Secondary Glazing Specialist | London's Leading Heritage & Listed Building Experts"
-        description="Professional secondary glazing installers in London. Specialists in Grade I & II listed buildings and conservation areas. Achieve 54dB noise reduction and 60% better heat retention with our discreet, bespoke installations."
+        title="Secondary Glazing London | Heritage & Listed Specialists"
+        description="London secondary glazing for listed buildings & conservation areas. 54dB noise reduction, 60% better heat retention. Discreet, bespoke installs."
         canonicalPath="/"
         type="website"
         keywords={[
