@@ -58,8 +58,8 @@ const CommercialSecondaryGlazing = () => {
   return (
     <>
       <EnhancedSEO
-        title="Commercial Secondary Glazing: Energy & Acoustic Solutions for London Businesses"
-        description="Large-scale secondary glazing for commercial properties in London. Energy savings, Net-Zero compliance, and acoustic performance for offices, hotels, schools, and heritage buildings."
+        title="Commercial Secondary Glazing London | Energy & Acoustic"
+        description="Large-scale commercial secondary glazing in London. Energy savings, Net-Zero compliance & acoustic performance for offices, hotels and schools."
         canonicalPath="/commercial-secondary-glazing"
         type="website"
         keywords={[
