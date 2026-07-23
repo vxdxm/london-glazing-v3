@@ -125,6 +125,7 @@ import ListedBuildingSecondaryGlazingGuide from "./pages/blog/ListedBuildingSeco
 import ListedBuildingPlanningApprovedGuide from "./pages/blog/ListedBuildingPlanningApprovedGuide";
 import BestAcousticGlassSecondaryGlazing from "./pages/blog/BestAcousticGlassSecondaryGlazing";
 import EnergySavingMistakesOldWindows from "./pages/blog/EnergySavingMistakesOldWindows";
+import AcousticGlassNoiseReductionComparison from "./pages/blog/AcousticGlassNoiseReductionComparison";
 import EPCEnergyEfficiencyGuide from "./pages/blog/EPCEnergyEfficiencyGuide";
 import CondensationMouldPreventionGuide from "./pages/blog/CondensationMouldPreventionGuide";
 import CommercialMEESComplianceGuide from "./pages/blog/CommercialMEESComplianceGuide";
