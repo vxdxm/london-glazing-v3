@@ -277,6 +277,7 @@ const AppRoutes = () => {
         <Route path="/blog/listed-building-planning-approved-guide" element={<ListedBuildingPlanningApprovedGuide />} />
         <Route path="/blog/best-acoustic-glass-secondary-glazing-compared" element={<BestAcousticGlassSecondaryGlazing />} />
         <Route path="/blog/energy-saving-mistakes-old-windows" element={<EnergySavingMistakesOldWindows />} />
+        <Route path="/blog/acoustic-glass-noise-reduction-comparison" element={<AcousticGlassNoiseReductionComparison />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
         <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
         <Route path="/blog/commercial-mees-compliance-secondary-glazing" element={<CommercialMEESComplianceGuide />} />

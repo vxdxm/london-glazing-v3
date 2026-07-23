@@ -10,6 +10,15 @@ export interface BlogPostSummary {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "acoustic-glass-noise-reduction-comparison",
+    title: "Acoustic Glass for Noise Reduction: The Complete Comparison Guide",
+    excerpt: "Specifier-focused comparison of 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence acoustic glass — with Rw values, third-octave data and air-gap sensitivity.",
+    date: "2026-07-23",
+    readTime: "14 min read",
+    category: "Acoustic Glazing",
+    image: "https://cdn.marblism.com/Ps-0xlRMa8q.webp"
+  },
+  {
     slug: "energy-saving-mistakes-old-windows",
     title: "7 Energy-Saving Mistakes Most Homeowners Make with Old Windows",
     excerpt: "Avoid the seven costliest energy-saving mistakes homeowners make with old windows. Learn why secondary glazing beats replacement for period properties and conservation areas.",
