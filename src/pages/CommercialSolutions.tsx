@@ -16,10 +16,10 @@ import CommercialCTA from "@/components/commercial/CommercialCTA";
 
 const CommercialSolutions = () => {
   const pageMetadata = {
-    title: "Commercial Secondary Glazing London | Business & Office Solutions",
-    description: "Reduce energy costs by 30-50%, improve occupant comfort, and preserve heritage properties with secondary glazing trusted by 100+ London businesses. 3-5 year payback typical.",
+    title: "Commercial Secondary Glazing London | Office Solutions",
+    description: "Cut energy costs 30-50% and improve occupant comfort with commercial secondary glazing trusted by 100+ London businesses. 3-5 year payback.",
     canonicalPath: "/commercial",
-    imageUrl: "/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg",
+    imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg",
     type: "website" as const,
     publishedDate: "2024-12-15",
     modifiedDate: "2025-05-17",
