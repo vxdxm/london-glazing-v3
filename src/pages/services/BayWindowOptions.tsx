@@ -83,6 +83,7 @@ const BayWindowOptions = () => {
             <li><Link to="/residential/bay-windows" className="underline">Bay windows — full product overview</Link></li>
             <li><Link to="/sash-windows" className="underline">Sash window secondary glazing</Link></li>
             <li><Link to="/heritage-listed" className="underline">Secondary glazing for listed buildings</Link></li>
+            <li><Link to="/blog/acoustic-glass-noise-reduction-comparison" className="underline">Acoustic glass comparison guide</Link></li>
           </ul>
 
           <div className="mt-10 flex gap-3">

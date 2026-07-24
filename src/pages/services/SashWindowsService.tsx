@@ -88,6 +88,7 @@ const SashWindowsService = () => {
           <ul className="list-disc pl-6 space-y-1">
             <li><Link to="/residential/sash-windows" className="underline">Sash windows — full product page</Link></li>
             <li><Link to="/specialist/sash-window-secondary-glazing" className="underline">Sash window secondary glazing (specialist)</Link></li>
+            <li><Link to="/blog/acoustic-glass-noise-reduction-comparison" className="underline">Acoustic glass for noise reduction: complete comparison</Link></li>
             <li><Link to="/blog/best-acoustic-glass-secondary-glazing-compared" className="underline">Best acoustic glass compared</Link></li>
           </ul>
 

@@ -83,6 +83,7 @@ const HeritageListed = () => {
             <li><Link to="/compliance-hub" className="underline">Compliance Hub — LBC and Article 4 guidance</Link></li>
             <li><Link to="/specialist/listed-buildings-secondary-glazing" className="underline">Listed buildings specialist page</Link></li>
             <li><Link to="/blog/listed-building-planning-approved-guide" className="underline">Listed building planning guide</Link></li>
+            <li><Link to="/blog/acoustic-glass-noise-reduction-comparison" className="underline">Acoustic glass comparison for heritage properties</Link></li>
           </ul>
 
           <div className="mt-10 flex gap-3">

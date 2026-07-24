@@ -234,6 +234,16 @@ const ResidentialSolutions = () => {
             <Link to="/secondary-glazing-repairs">View Repair Services</Link>
           </Button>
         </div>
+
+        <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+          <h2 className="text-2xl font-semibold mb-4">Acoustic glass: which build is right for your home?</h2>
+          <p className="text-gray-700 mb-4">
+            Traffic noise, flight paths and busy streets need the right glass specification. Our comparison guide explains 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence options with real Rw performance data.
+          </p>
+          <Button asChild variant="outline">
+            <Link to="/blog/acoustic-glass-noise-reduction-comparison">Compare acoustic glass options</Link>
+          </Button>
+        </div>
       </div>
       <LondonServiceAreas
         heading="Residential Secondary Glazing Across London"

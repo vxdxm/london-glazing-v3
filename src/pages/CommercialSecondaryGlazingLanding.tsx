@@ -215,6 +215,21 @@ const CommercialSecondaryGlazing = () => {
         </div>
       </section>
 
+      {/* Acoustic glass guide */}
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
+            <h2 className="text-xl font-bold text-foreground mb-2">Specifier guide: acoustic glass for noise reduction</h2>
+            <p className="text-muted-foreground mb-4">
+              Compare glass builds, Rw ratings and cavity depths for hotels, offices and mixed-use schemes. Useful when writing performance specifications for M&E and facade packages.
+            </p>
+            <Link to="/blog/acoustic-glass-noise-reduction-comparison" className="inline-flex items-center gap-2 text-primary hover:underline font-medium">
+              Acoustic glass comparison guide →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Resources */}
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-5xl">
