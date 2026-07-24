@@ -85,6 +85,7 @@ const SoundInsulation = () => {
           <ul className="list-disc pl-6 space-y-1">
             <li><Link to="/specialized/acoustic-glazing" className="underline">Acoustic glazing service overview</Link></li>
             <li><Link to="/specialized/sound-transmission-guide" className="underline">Sound transmission guide</Link></li>
+            <li><Link to="/blog/acoustic-glass-noise-reduction-comparison" className="underline">Acoustic glass comparison guide</Link></li>
             <li><Link to="/blog/best-acoustic-glass-secondary-glazing-compared" className="underline">Best acoustic glass compared</Link></li>
             <li><Link to="/blog/physics-of-silence-guide" className="underline">The physics of silence</Link></li>
           </ul>

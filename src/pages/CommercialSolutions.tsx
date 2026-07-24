@@ -139,6 +139,24 @@ const CommercialSolutions = () => {
         <WhyChooseCommercial />
         <CommercialInvestment />
         <CommercialFAQ />
+        
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="bg-background border border-border rounded-xl p-6 sm:p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-3">Acoustic glass specification for commercial projects</h2>
+              <p className="text-muted-foreground mb-4">
+                Specifying the right glass build is critical for hotels, offices and educational buildings. Our comparison guide breaks down 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence options with Rw values and air-gap sensitivity.
+              </p>
+              <a 
+                href="/blog/acoustic-glass-noise-reduction-comparison" 
+                className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+              >
+                Read the acoustic glass comparison guide →
+              </a>
+            </div>
+          </div>
+        </section>
+        
         <CommercialCTA />
       </main>
       

@@ -104,6 +104,7 @@ const CostGuide = () => {
             <li><Link to="/sash-windows" className="underline">Sash window secondary glazing</Link></li>
             <li><Link to="/sound-insulation" className="underline">Acoustic window inserts</Link></li>
             <li><Link to="/heritage-listed" className="underline">Listed building secondary glazing</Link></li>
+            <li><Link to="/blog/acoustic-glass-noise-reduction-comparison" className="underline">Acoustic glass comparison guide</Link></li>
           </ul>
 
           <div className="mt-10 flex gap-3">
