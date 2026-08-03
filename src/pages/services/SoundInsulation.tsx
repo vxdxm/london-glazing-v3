@@ -4,10 +4,9 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sound-insulation";
-
-import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const FAQ_ITEMS: ServiceFAQItem[] = [
   { question: "What are acoustic window inserts?", answer: "Acoustic window inserts are secondary glazing units fitted inside the room reveal, forming a sealed air cavity behind the primary window. The mass of laminated acoustic glass plus the decoupled cavity delivers 40–54 dB Rw sound reduction — the same principle used in recording studios." },
@@ -29,7 +28,6 @@ const SoundInsulation = () => {
         <meta property="og:description" content="Up to 54 dB Rw with laminated acoustic glass and decoupled cavity — engineered for London traffic, rail and aircraft noise." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -80,6 +78,8 @@ const SoundInsulation = () => {
             <li>Mainline rail (70–75 dB): target Rw ≥ 48 dB — 6.8mm Stadip Silence at 150mm.</li>
             <li>Heathrow flight path (75–80 dB): target Rw ≥ 52 dB — 10.8mm Stadip Silence at 200mm.</li>
           </ul>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Sound insulation FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">
