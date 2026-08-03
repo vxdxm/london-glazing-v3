@@ -5,21 +5,20 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/heritage-listed";
 
-const HeritageListed = () => {
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "Does secondary double glazing require Listed Building Consent?", acceptedAnswer: { "@type": "Answer", text: "In most cases no — because the installation is entirely internal, mechanically reversible and does not alter the historic fabric. However, Grade I and Grade II* buildings, or any works involving alteration to internal joinery, do require LBC. We recommend a formal pre-application enquiry for every listed property." } },
-      { "@type": "Question", name: "What does Historic England say about secondary glazing?", acceptedAnswer: { "@type": "Answer", text: "Historic England's guidance Traditional Windows: Their Care, Repair and Upgrading (2017) explicitly endorses secondary glazing as the preferred energy-efficiency upgrade for listed windows, describing it as 'a reversible intervention that retains the original window and its significance'." } },
-      { "@type": "Question", name: "How thin can the secondary frame be to satisfy conservation officers?", acceptedAnswer: { "@type": "Answer", text: "Our slim aluminium sash-line profile is 20mm face-width, with an 8mm interlock. From within the room the primary window's glazing bars remain the dominant visual element. We supply full-scale profile drawings and mock-ups for pre-application submissions." } },
-      { "@type": "Question", name: "Will it damage the primary window when removed?", acceptedAnswer: { "@type": "Answer", text: "No. Fixings are made into the timber lining or plaster reveal — never the primary window itself. Removal leaves only pilot-drilled holes in the internal reveal, easily filled and redecorated. This satisfies the reversibility test central to LBC assessments." } },
-    ],
-  };
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "Does secondary double glazing require Listed Building Consent?", answer: "In most cases no — because the installation is entirely internal, mechanically reversible and does not alter the historic fabric. However, Grade I and Grade II* buildings, or any works involving alteration to internal joinery, do require LBC. We recommend a formal pre-application enquiry for every listed property." },
+  { question: "What does Historic England say about secondary glazing?", answer: "Historic England's guidance Traditional Windows: Their Care, Repair and Upgrading (2017) explicitly endorses secondary glazing as the preferred energy-efficiency upgrade for listed windows, describing it as a reversible intervention that retains the original window and its significance." },
+  { question: "How thin can the secondary frame be to satisfy conservation officers?", answer: "Our slim aluminium sash-line profile is 20mm face-width, with an 8mm interlock. From within the room the primary window's glazing bars remain the dominant visual element. We supply full-scale profile drawings and mock-ups for pre-application submissions." },
+  { question: "Will it damage the primary window when removed?", answer: "No. Fixings are made into the timber lining or plaster reveal — never the primary window itself. Removal leaves only pilot-drilled holes in the internal reveal, easily filled and redecorated. This satisfies the reversibility test central to LBC assessments." },
+  { question: "What should I submit to the local planning authority?", answer: "A heritage statement, existing and proposed internal elevations, a 1:5 section through the reveal showing the fixing line, the frame profile drawing and a product datasheet with acoustic and thermal test values. Our Compliance Hub includes a copy-ready LPA pre-application email template and a borough contact directory." },
+  { question: "Does secondary glazing work in conservation areas and Article 4 zones?", answer: "Yes. Conservation area designation and Article 4 directions control external appearance and permitted development rights, and an internal, reversible secondary unit normally falls outside their scope. Where a bay or shopfront is visible from the street we colour-match frames and align sightlines with the primary glazing bars." },
+];
 
+const HeritageListed = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -30,7 +29,6 @@ const HeritageListed = () => {
         <meta property="og:description" content="Reversible, LBC-compliant secondary double glazing endorsed by Historic England." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -77,6 +75,8 @@ const HeritageListed = () => {
             <li>Ventilation and condensation risk assessment (Glaser method).</li>
             <li>Acoustic performance certificate from BRE-accredited testing.</li>
           </ul>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Heritage and listed building FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">
