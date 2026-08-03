@@ -7,6 +7,17 @@ import { Button } from "@/components/ui/button";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sound-insulation";
 
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "What are acoustic window inserts?", answer: "Acoustic window inserts are secondary glazing units fitted inside the room reveal, forming a sealed air cavity behind the primary window. The mass of laminated acoustic glass plus the decoupled cavity delivers 40–54 dB Rw sound reduction — the same principle used in recording studios." },
+  { question: "How much noise reduction do acoustic window inserts provide?", answer: "With 10.8mm Stadip Silence laminated glass and a 150–200mm cavity, we routinely measure 50–54 dB Rw — a perceived reduction of 75–80%. A 60 dB traffic noise level at the window drops to 6–10 dB inside the room, quieter than a library." },
+  { question: "What cavity depth is optimal for sound insulation?", answer: "Acoustically, wider is better. 100mm is the practical minimum; 150–200mm is optimal; beyond 200mm the mass-air-mass resonance frequency drops below 60 Hz and further gains are minimal. Deep reveals in London townhouses often permit 200mm without joinery modification." },
+  { question: "Do acoustic window inserts help with low-frequency noise?", answer: "Yes — laminated acoustic glass with PVB interlayer specifically targets the 125–500 Hz band that dominates traffic, rail and aircraft noise. The C_tr correction on our 10.8mm build is only -2 dB, versus -5 to -8 dB for equivalent-thickness IGUs." },
+  { question: "Which glass should I specify for traffic, rail or aircraft noise?", answer: "For general traffic noise 6.8mm laminate over a 100mm cavity is usually sufficient. For arterial roads, rail corridors and Heathrow flight paths specify 10.8mm Stadip Silence with a 150–200mm cavity, which holds performance across the 125–500 Hz band where those sources concentrate energy." },
+  { question: "How much does acoustic secondary glazing cost per window?", answer: "Acoustic specification units range from £750 to £1,400 supplied and installed per opening, depending on size, opening type and cavity depth. The uplift over a standard 4mm float specification is typically 30–45%." },
+];
+
 const SoundInsulation = () => {
   return (
     <div className="min-h-screen bg-background">
