@@ -4,21 +4,20 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sound-insulation";
 
-const SoundInsulation = () => {
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "What are acoustic window inserts?", acceptedAnswer: { "@type": "Answer", text: "Acoustic window inserts are secondary glazing units fitted inside the room reveal, forming a sealed air cavity behind the primary window. The mass of laminated acoustic glass plus the decoupled cavity delivers 40–54 dB Rw sound reduction — the same principle used in recording studios." } },
-      { "@type": "Question", name: "How much noise reduction do acoustic window inserts provide?", acceptedAnswer: { "@type": "Answer", text: "With 10.8mm Stadip Silence laminated glass and a 150–200mm cavity, we routinely measure 50–54 dB Rw — a perceived reduction of 75–80%. A 60 dB traffic noise level at the window drops to 6–10 dB inside the room, quieter than a library." } },
-      { "@type": "Question", name: "What cavity depth is optimal for sound insulation?", acceptedAnswer: { "@type": "Answer", text: "Acoustically, wider is better. 100mm is the practical minimum; 150–200mm is optimal; beyond 200mm the mass-air-mass resonance frequency drops below 60 Hz and further gains are minimal. Deep reveals in London townhouses often permit 200mm without joinery modification." } },
-      { "@type": "Question", name: "Do acoustic window inserts help with low-frequency noise?", acceptedAnswer: { "@type": "Answer", text: "Yes — laminated acoustic glass with PVB interlayer specifically targets the 125–500 Hz band that dominates traffic, rail and aircraft noise. The C_tr correction on our 10.8mm build is only -2 dB, versus -5 to -8 dB for equivalent-thickness IGUs." } },
-    ],
-  };
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "What are acoustic window inserts?", answer: "Acoustic window inserts are secondary glazing units fitted inside the room reveal, forming a sealed air cavity behind the primary window. The mass of laminated acoustic glass plus the decoupled cavity delivers 40–54 dB Rw sound reduction — the same principle used in recording studios." },
+  { question: "How much noise reduction do acoustic window inserts provide?", answer: "With 10.8mm Stadip Silence laminated glass and a 150–200mm cavity, we routinely measure 50–54 dB Rw — a perceived reduction of 75–80%. A 60 dB traffic noise level at the window drops to 6–10 dB inside the room, quieter than a library." },
+  { question: "What cavity depth is optimal for sound insulation?", answer: "Acoustically, wider is better. 100mm is the practical minimum; 150–200mm is optimal; beyond 200mm the mass-air-mass resonance frequency drops below 60 Hz and further gains are minimal. Deep reveals in London townhouses often permit 200mm without joinery modification." },
+  { question: "Do acoustic window inserts help with low-frequency noise?", answer: "Yes — laminated acoustic glass with PVB interlayer specifically targets the 125–500 Hz band that dominates traffic, rail and aircraft noise. The C_tr correction on our 10.8mm build is only -2 dB, versus -5 to -8 dB for equivalent-thickness IGUs." },
+  { question: "Which glass should I specify for traffic, rail or aircraft noise?", answer: "For general traffic noise 6.8mm laminate over a 100mm cavity is usually sufficient. For arterial roads, rail corridors and Heathrow flight paths specify 10.8mm Stadip Silence with a 150–200mm cavity, which holds performance across the 125–500 Hz band where those sources concentrate energy." },
+  { question: "How much does acoustic secondary glazing cost per window?", answer: "Acoustic specification units range from £750 to £1,400 supplied and installed per opening, depending on size, opening type and cavity depth. The uplift over a standard 4mm float specification is typically 30–45%." },
+];
 
+const SoundInsulation = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -29,7 +28,6 @@ const SoundInsulation = () => {
         <meta property="og:description" content="Up to 54 dB Rw with laminated acoustic glass and decoupled cavity — engineered for London traffic, rail and aircraft noise." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -80,6 +78,8 @@ const SoundInsulation = () => {
             <li>Mainline rail (70–75 dB): target Rw ≥ 48 dB — 6.8mm Stadip Silence at 150mm.</li>
             <li>Heathrow flight path (75–80 dB): target Rw ≥ 52 dB — 10.8mm Stadip Silence at 200mm.</li>
           </ul>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Sound insulation FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">

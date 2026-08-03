@@ -4,21 +4,20 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/bay-window-options";
 
-const BayWindowOptions = () => {
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "Can secondary glazing be fitted to a curved or splayed bay?", acceptedAnswer: { "@type": "Answer", text: "Yes. We survey each facet independently and fabricate matching horizontal-sliders, casements or fixed panels. Splayed bays (90–135°) receive purpose-made angled couplings; curved Victorian bays are approximated with a five- or seven-facet arrangement, each unit ≤600mm wide." } },
-      { "@type": "Question", name: "Should the bay be treated as one continuous unit or separate windows?", acceptedAnswer: { "@type": "Answer", text: "Separate units per facet — always. Continuous glazing across the corner mullions would defeat the thermal break at the structural post and complicate future removal. Discrete units also allow selective ventilation and cleaning." } },
-      { "@type": "Question", name: "How is the head detail handled where the bay meets a curved cornice?", acceptedAnswer: { "@type": "Answer", text: "We fit a bespoke aluminium sub-frame scribed to the plaster cornice line; a compressible EPDM gasket accommodates 3–5mm of tolerance without damaging decorative mouldings. On Grade II bays we agree the head profile with the conservation officer in advance." } },
-      { "@type": "Question", name: "What does bay window secondary glazing cost?", acceptedAnswer: { "@type": "Answer", text: "Typical three-facet Victorian bays cost £2,400–£4,200 supplied and installed. Five-facet Edwardian bays cost £3,800–£6,500. Pricing depends on glass specification, frame finish and access requirements at bay-window heights above ground-floor level." } },
-    ],
-  };
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "Can secondary glazing be fitted to a curved or splayed bay?", answer: "Yes. We survey each facet independently and fabricate matching horizontal-sliders, casements or fixed panels. Splayed bays (90–135°) receive purpose-made angled couplings; curved Victorian bays are approximated with a five- or seven-facet arrangement, each unit ≤600mm wide." },
+  { question: "Should the bay be treated as one continuous unit or separate windows?", answer: "Separate units per facet — always. Continuous glazing across the corner mullions would defeat the thermal break at the structural post and complicate future removal. Discrete units also allow selective ventilation and cleaning." },
+  { question: "How is the head detail handled where the bay meets a curved cornice?", answer: "We fit a bespoke aluminium sub-frame scribed to the plaster cornice line; a compressible EPDM gasket accommodates 3–5mm of tolerance without damaging decorative mouldings. On Grade II bays we agree the head profile with the conservation officer in advance." },
+  { question: "What does bay window secondary glazing cost?", answer: "Typical three-facet Victorian bays cost £2,400–£4,200 supplied and installed. Five-facet Edwardian bays cost £3,800–£6,500. Pricing depends on glass specification, frame finish and access requirements at bay-window heights above ground-floor level." },
+  { question: "Which opening type works best in a bay?", answer: "Horizontal sliders suit wide facets and shallow reveals; vertical sliders mirror sash operation on tall Victorian bays; fixed or lift-out panels are the cheapest and most acoustically effective where the facet is never opened. Most bays combine types — openers on the centre facet, fixed panels on the flanks." },
+  { question: "How much heat loss does treating a bay window save?", answer: "An untreated Victorian bay can represent up to 35% of a room's external envelope with a U-value of 4.8–5.2 W/m²K. Secondary glazing with low-e glass brings the combined figure to 1.6–1.9 W/m²K, typically removing the cold-radiance and draught effects that make bay-window seating unusable in winter." },
+];
 
+const BayWindowOptions = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -29,7 +28,6 @@ const BayWindowOptions = () => {
         <meta property="og:description" content="Facet-by-facet bay window secondary glazing — acoustic, thermal and heritage-compliant installations across London." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -77,6 +75,8 @@ const BayWindowOptions = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Heritage and Article 4 considerations</h2>
           <p>Bay windows on conservation-area terraces are often subject to Article 4 Directions restricting external alteration. Because our secondary glazing is entirely internal, it falls outside those restrictions in almost every London borough. See the <Link to="/compliance-hub" className="underline">Compliance Hub</Link> for borough-by-borough LPA guidance, including Kensington &amp; Chelsea, Westminster, Camden and Islington.</p>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Bay window secondary glazing FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related pages</h2>
           <ul className="list-disc pl-6 space-y-1">

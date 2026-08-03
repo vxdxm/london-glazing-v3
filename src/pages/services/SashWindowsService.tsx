@@ -4,22 +4,20 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sash-windows";
 
-const SashWindowsService = () => {
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "Does secondary glazing for sash windows preserve the original box frame and sashes?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our vertical-sliding secondary units are fitted to the internal reveal and never touch the primary box sash. All original glazing bars, horns, cords, weights and staff/parting beads remain in situ, keeping the fabric fully reversible for Listed Building Consent." } },
-      { "@type": "Question", name: "What acoustic performance can I expect on a Victorian sash window?", acceptedAnswer: { "@type": "Answer", text: "With a 100–150mm cavity and 6.8mm or 10.8mm Stadip Silence laminated acoustic glass, we routinely achieve 45–54 dB Rw — a 70–80% perceived reduction in traffic and rail noise, tested to BS EN ISO 10140-2." } },
-      { "@type": "Question", name: "How does it compare thermally to a replacement double-glazed sash?", acceptedAnswer: { "@type": "Answer", text: "A single-glazed sash typically has a U-value of 4.8–5.2 W/m²K. Adding secondary glazing with Pilkington K low-e reduces the combined U-value to 1.6–1.9 W/m²K — comparable to modern IGUs and compliant with Approved Document L for existing dwellings." } },
-      { "@type": "Question", name: "Will the sash still open normally after installation?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our vertical sliders mirror the primary sash operation and can be raised for ventilation independently. Original cords, weights and pulleys remain fully functional." } },
-      { "@type": "Question", name: "How much does secondary glazing for a sash window cost?", acceptedAnswer: { "@type": "Answer", text: "Vertical-sliding secondary units for a typical London sash range from £550 to £1,100 supplied and installed, depending on cavity depth, glass specification (4mm float, 6.8mm laminate or 10.8mm Stadip Silence) and frame finish." } },
-    ],
-  };
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "Does secondary glazing for sash windows preserve the original box frame and sashes?", answer: "Yes. Our vertical-sliding secondary units are fitted to the internal reveal and never touch the primary box sash. All original glazing bars, horns, cords, weights and staff/parting beads remain in situ, keeping the fabric fully reversible for Listed Building Consent." },
+  { question: "What acoustic performance can I expect on a Victorian sash window?", answer: "With a 100–150mm cavity and 6.8mm or 10.8mm Stadip Silence laminated acoustic glass, we routinely achieve 45–54 dB Rw — a 70–80% perceived reduction in traffic and rail noise, tested to BS EN ISO 10140-2." },
+  { question: "How does it compare thermally to a replacement double-glazed sash?", answer: "A single-glazed sash typically has a U-value of 4.8–5.2 W/m²K. Adding secondary glazing with Pilkington K low-e reduces the combined U-value to 1.6–1.9 W/m²K — comparable to modern IGUs and compliant with Approved Document L for existing dwellings." },
+  { question: "Will the sash still open normally after installation?", answer: "Yes. Our vertical sliders mirror the primary sash operation and can be raised for ventilation independently. Original cords, weights and pulleys remain fully functional." },
+  { question: "How much does secondary glazing for a sash window cost?", answer: "Vertical-sliding secondary units for a typical London sash range from £550 to £1,100 supplied and installed, depending on cavity depth, glass specification (4mm float, 6.8mm laminate or 10.8mm Stadip Silence) and frame finish." },
+  { question: "Does secondary glazing stop draughts and condensation on sash windows?", answer: "Yes. The sealed inner unit removes the draught path through the meeting rail and parting bead, and raises the internal glass surface temperature so room-side condensation largely disappears. We always specify a small ventilated slot to the outer sash side to control interstitial condensation in the cavity." },
+];
 
+const SashWindowsService = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -30,7 +28,6 @@ const SashWindowsService = () => {
         <meta property="og:description" content="Reversible vertical-sliding secondary units for Victorian, Georgian & Edwardian sash windows — 54 dB Rw acoustic, 1.6 W/m²K thermal." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -83,6 +80,8 @@ const SashWindowsService = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Heritage and planning</h2>
           <p>Because the secondary unit is entirely internal and mechanically reversible, it is generally accepted by London LPAs under Historic England's <em>Traditional Windows: Their Care, Repair and Upgrading</em> (2017) and does not usually require Listed Building Consent — though we recommend a pre-application enquiry for Grade I/II* buildings. See our <Link to="/compliance-hub" className="underline">Compliance Hub</Link> for the borough-by-borough LPA contact directory and a copy-ready LPA email template.</p>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Sash window secondary glazing FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">

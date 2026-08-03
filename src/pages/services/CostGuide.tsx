@@ -5,21 +5,20 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
+import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/cost-guide";
 
-const CostGuide = () => {
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "How much does secondary glazing cost per window in London (2026)?", acceptedAnswer: { "@type": "Answer", text: "Typical London installed prices range from £450 for a small fixed panel with 4mm float glass to £1,400 for a large vertical-sliding sash unit with 10.8mm acoustic laminated glass. Most three-bed terraces fall between £4,500 and £9,500 for a whole-house install." } },
-      { "@type": "Question", name: "Is secondary glazing cheaper than replacement double glazing?", acceptedAnswer: { "@type": "Answer", text: "For heritage or listed windows, yes — typically 40–60% cheaper. Replacement sash windows cost £2,200–£4,500 per opening; secondary glazing achieves comparable thermal performance at £550–£1,100 while preserving the primary window." } },
-      { "@type": "Question", name: "What drives the price difference between quotes?", acceptedAnswer: { "@type": "Answer", text: "Four variables dominate: glass specification (4mm float vs 10.8mm acoustic laminate can double the price), frame finish (mill anodised vs RAL powder-coat), opening type (fixed vs vertical slider), and access (ground floor vs upper-floor with scaffolding)." } },
-      { "@type": "Question", name: "Are there any VAT reductions available?", acceptedAnswer: { "@type": "Answer", text: "Secondary glazing installed as an energy-saving material in a residential dwelling qualifies for the reduced 5% VAT rate under HMRC Notice 708/6 until March 2027. Commercial installations remain at 20%. Listed building repairs may qualify for zero-rating under specific conditions." } },
-    ],
-  };
+const FAQ_ITEMS: ServiceFAQItem[] = [
+  { question: "How much does secondary glazing cost per window in London (2026)?", answer: "Typical London installed prices range from £450 for a small fixed panel with 4mm float glass to £1,400 for a large vertical-sliding sash unit with 10.8mm acoustic laminated glass. Most three-bed terraces fall between £4,500 and £9,500 for a whole-house install." },
+  { question: "Is secondary glazing cheaper than replacement double glazing?", answer: "For heritage or listed windows, yes — typically 40–60% cheaper. Replacement sash windows cost £2,200–£4,500 per opening; secondary glazing achieves comparable thermal performance at £550–£1,100 while preserving the primary window." },
+  { question: "What drives the price difference between quotes?", answer: "Four variables dominate: glass specification (4mm float vs 10.8mm acoustic laminate can double the price), frame finish (mill anodised vs RAL powder-coat), opening type (fixed vs vertical slider), and access (ground floor vs upper-floor with scaffolding)." },
+  { question: "Are there any VAT reductions available?", answer: "Secondary glazing installed as an energy-saving material in a residential dwelling qualifies for the reduced 5% VAT rate under HMRC Notice 708/6 until March 2027. Commercial installations remain at 20%. Listed building repairs may qualify for zero-rating under specific conditions." },
+  { question: "How much does a whole-house secondary glazing project cost?", answer: "Budget £2,600–£4,800 for a 1-bed flat (4–6 openings), £6,500–£12,500 for a 3-bed Victorian house (10–14 openings) on standard specification, and £10,500–£18,500 for the same property on a 10.8mm acoustic specification." },
+  { question: "What is the payback period on secondary glazing?", answer: "Measured savings on a 3-bed Victorian terrace with untreated single glazing are £340–£520 per year at 2026 Ofgem cap prices, giving a 16–25 year simple payback on an £8,500 project — alongside immediate acoustic, draught and comfort gains and a 1.5–3% heritage property value uplift." },
+];
 
+const CostGuide = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -30,7 +29,6 @@ const CostGuide = () => {
         <meta property="og:description" content="Full 2026 price breakdown for London secondary glazing — by glass, frame, opening style and property size." />
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify(faq)}</script>
       </Helmet>
       <MainNav />
       <main className="container mx-auto px-4 py-16">
@@ -97,6 +95,8 @@ const CostGuide = () => {
             <li>ECO4 flex funding available in eligible boroughs — see our <Link to="/compliance-hub" className="underline">Compliance Hub</Link>.</li>
             <li>Listed building repair works may qualify for zero-rating; we advise a specialist VAT consultant.</li>
           </ul>
+
+          <ServiceFAQ items={FAQ_ITEMS} heading="Secondary glazing cost FAQs" canonical={CANONICAL} />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related pages</h2>
           <ul className="list-disc pl-6 space-y-1">
