@@ -1,4 +1,9 @@
 import { Helmet } from "react-helmet-async";
+import {
+  testimonials as defaultTestimonials,
+  aggregateFromTestimonials,
+  type Testimonial,
+} from "@/data/testimonials";
 
 const SITE = "https://secondaryglazingspecialist.com";
 
@@ -9,6 +14,8 @@ export interface ServiceLocalBusinessProps {
   serviceName: string;
   /** Short description of the service */
   serviceDescription: string;
+  /** Reviews to mark up. Defaults to the shared testimonial set. */
+  reviews?: Testimonial[];
 }
 
 /**
@@ -20,7 +27,34 @@ export const ServiceLocalBusiness = ({
   pageUrl,
   serviceName,
   serviceDescription,
+  reviews = defaultTestimonials,
 }: ServiceLocalBusinessProps) => {
+  const hasReviews = reviews.length > 0;
+  const aggregate = hasReviews ? aggregateFromTestimonials(reviews) : null;
+
+  const reviewNodes = reviews.map((r) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: r.name },
+    datePublished: r.date,
+    reviewBody: r.text,
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: String(r.rating),
+      bestRating: "5",
+      worstRating: "1",
+    },
+  }));
+
+  const aggregateNode = aggregate
+    ? {
+        "@type": "AggregateRating",
+        ratingValue: aggregate.ratingValue,
+        reviewCount: aggregate.reviewCount,
+        bestRating: "5",
+        worstRating: "1",
+      }
+    : undefined;
+
   const business = {
     "@type": "LocalBusiness",
     "@id": `${SITE}/#business`,
@@ -68,6 +102,7 @@ export const ServiceLocalBusiness = ({
     provider: { "@id": `${SITE}/#business` },
     areaServed: { "@type": "City", name: "London" },
     url: pageUrl,
+    ...(hasReviews ? { aggregateRating: aggregateNode, review: reviewNodes } : {}),
   };
 
   const schema = {

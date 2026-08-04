@@ -6,6 +6,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
+import { ServiceReviews } from "@/components/seo/ServiceReviews";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sound-insulation";
 
@@ -86,6 +87,8 @@ const SoundInsulation = () => {
           </ul>
 
           <ServiceFAQ items={FAQ_ITEMS} heading="Sound insulation FAQs" canonical={CANONICAL} />
+
+          <ServiceReviews heading="Acoustic project reviews" />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">

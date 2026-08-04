@@ -7,6 +7,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
+import { ServiceReviews } from "@/components/seo/ServiceReviews";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/cost-guide";
 
@@ -103,6 +104,8 @@ const CostGuide = () => {
           </ul>
 
           <ServiceFAQ items={FAQ_ITEMS} heading="Secondary glazing cost FAQs" canonical={CANONICAL} />
+
+          <ServiceReviews heading="Client reviews on pricing and value" />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related pages</h2>
           <ul className="list-disc pl-6 space-y-1">
