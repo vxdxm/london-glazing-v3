@@ -6,6 +6,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
+import { ServiceReviews } from "@/components/seo/ServiceReviews";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sash-windows";
 
@@ -88,6 +89,8 @@ const SashWindowsService = () => {
           <p>Because the secondary unit is entirely internal and mechanically reversible, it is generally accepted by London LPAs under Historic England's <em>Traditional Windows: Their Care, Repair and Upgrading</em> (2017) and does not usually require Listed Building Consent — though we recommend a pre-application enquiry for Grade I/II* buildings. See our <Link to="/compliance-hub" className="underline">Compliance Hub</Link> for the borough-by-borough LPA contact directory and a copy-ready LPA email template.</p>
 
           <ServiceFAQ items={FAQ_ITEMS} heading="Sash window secondary glazing FAQs" canonical={CANONICAL} />
+
+          <ServiceReviews heading="Client reviews" />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related resources</h2>
           <ul className="list-disc pl-6 space-y-1">
