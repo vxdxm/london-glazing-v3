@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sound-insulation";
 
@@ -29,6 +30,11 @@ const SoundInsulation = () => {
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
       </Helmet>
+      <ServiceLocalBusiness
+        pageUrl={CANONICAL}
+        serviceName="Acoustic Secondary Glazing and Sound Insulation"
+        serviceDescription="Acoustic secondary glazing for London properties using 10.8mm Stadip Silence at 100mm cavity, delivering up to 54 dB Rw against traffic, rail and aircraft noise."
+      />
       <MainNav />
       <main className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
