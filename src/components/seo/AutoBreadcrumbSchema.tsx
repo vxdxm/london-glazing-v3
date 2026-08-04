@@ -43,7 +43,6 @@ const LABELS: Record<string, string> = {
   "listed-buildings": "Listed Buildings",
   "compliance-hub": "Compliance Hub",
   "quote-request": "Request a Quote",
-  "sash-windows": "Sash Window Secondary Glazing",
   "bay-window-options": "Bay Window Options",
   "heritage-listed": "Heritage & Listed Buildings",
   "sound-insulation": "Sound Insulation",
