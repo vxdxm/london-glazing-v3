@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/cost-guide";
 
@@ -30,6 +31,11 @@ const CostGuide = () => {
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
       </Helmet>
+      <ServiceLocalBusiness
+        pageUrl={CANONICAL}
+        serviceName="Secondary Glazing Supply and Installation"
+        serviceDescription="Fixed-price secondary glazing supply and installation across London and the Home Counties, from £450 per fixed panel to £1,400 per acoustic vertical slider."
+      />
       <MainNav />
       <main className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
