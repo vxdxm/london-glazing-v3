@@ -6,6 +6,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
 import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
+import { ServiceReviews } from "@/components/seo/ServiceReviews";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/bay-window-options";
 
@@ -83,6 +84,8 @@ const BayWindowOptions = () => {
           <p>Bay windows on conservation-area terraces are often subject to Article 4 Directions restricting external alteration. Because our secondary glazing is entirely internal, it falls outside those restrictions in almost every London borough. See the <Link to="/compliance-hub" className="underline">Compliance Hub</Link> for borough-by-borough LPA guidance, including Kensington &amp; Chelsea, Westminster, Camden and Islington.</p>
 
           <ServiceFAQ items={FAQ_ITEMS} heading="Bay window secondary glazing FAQs" canonical={CANONICAL} />
+
+          <ServiceReviews heading="Client reviews" />
 
           <h2 className="text-2xl font-semibold mt-8 mb-3">Related pages</h2>
           <ul className="list-disc pl-6 space-y-1">
