@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/sash-windows";
 
@@ -29,6 +30,11 @@ const SashWindowsService = () => {
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
       </Helmet>
+      <ServiceLocalBusiness
+        pageUrl={CANONICAL}
+        serviceName="Sash Window Secondary Glazing"
+        serviceDescription="Vertical-sliding secondary glazing for Georgian, Victorian and Edwardian box sash windows in London, preserving original joinery and sash operation."
+      />
       <MainNav />
       <main className="container mx-auto px-4 py-16">
         <BreadcrumbNav />

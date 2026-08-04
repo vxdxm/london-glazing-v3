@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/heritage-listed";
 
@@ -30,6 +31,11 @@ const HeritageListed = () => {
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
       </Helmet>
+      <ServiceLocalBusiness
+        pageUrl={CANONICAL}
+        serviceName="Listed Building and Heritage Secondary Glazing"
+        serviceDescription="Fully reversible secondary glazing for Grade I, Grade II* and Grade II listed buildings and conservation areas across London, specified to Historic England guidance."
+      />
       <MainNav />
       <main className="container mx-auto px-4 py-16">
         <BreadcrumbNav />

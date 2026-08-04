@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Button } from "@/components/ui/button";
 import { ServiceFAQ, type ServiceFAQItem } from "@/components/seo/ServiceFAQ";
+import { ServiceLocalBusiness } from "@/components/seo/ServiceLocalBusiness";
 
 const CANONICAL = "https://secondaryglazingspecialist.com/bay-window-options";
 
@@ -29,6 +30,11 @@ const BayWindowOptions = () => {
         <meta property="og:url" content={CANONICAL} />
         <meta property="og:type" content="article" />
       </Helmet>
+      <ServiceLocalBusiness
+        pageUrl={CANONICAL}
+        serviceName="Bay Window Secondary Glazing"
+        serviceDescription="Facet-by-facet bay window secondary glazing for Victorian, Edwardian, splayed and curved bays across London, with colour-matched frames and up to 54 dB acoustic reduction."
+      />
       <MainNav />
       <main className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
