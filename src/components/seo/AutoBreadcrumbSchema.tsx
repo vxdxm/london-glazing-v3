@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const SITE = "https://secondaryglazingspecialist.com";
 
@@ -70,36 +71,76 @@ const prettify = (slug: string): string => {
 export const AutoBreadcrumbSchema = () => {
   const { pathname } = useLocation();
   const clean = pathname.split("?")[0].split("#")[0].replace(/\/+$/, "");
-  if (!clean || clean === "/") return null;
-
   const segments = clean.split("/").filter(Boolean);
-  if (segments.length === 0) return null;
 
-  const items = [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: `${SITE}/`,
-    },
-    ...segments.map((seg, i) => ({
-      "@type": "ListItem",
-      position: i + 2,
-      name: prettify(seg),
-      item: `${SITE}/${segments.slice(0, i + 1).join("/")}`,
-    })),
-  ];
+  const schemaJson = segments.length
+    ? JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+          ...segments.map((seg, i) => ({
+            "@type": "ListItem",
+            position: i + 2,
+            name: prettify(seg),
+            item: `${SITE}/${segments.slice(0, i + 1).join("/")}`,
+          })),
+        ],
+      })
+    : "";
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items,
-  };
+  // De-duplicate: some legacy page components still emit their own
+  // BreadcrumbList. Two competing BreadcrumbList blocks on one URL can stop
+  // Google rendering breadcrumbs, so keep this global one as the single source.
+  useEffect(() => {
+    const dedupe = () => {
+      const scripts = Array.from(
+        document.querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]')
+      );
+      for (const el of scripts) {
+        const text = el.textContent || "";
+        if (schemaJson && text.trim() === schemaJson) continue; // our own block
+        if (!text.includes("BreadcrumbList")) continue;
+        let data: unknown;
+        try {
+          data = JSON.parse(text);
+        } catch {
+          continue;
+        }
+        const isBc = (n: any) => n && typeof n === "object" && n["@type"] === "BreadcrumbList";
+        if (isBc(data)) {
+          el.remove();
+          continue;
+        }
+        const obj = data as any;
+        if (Array.isArray(obj?.["@graph"])) {
+          const kept = obj["@graph"].filter((n: any) => !isBc(n));
+          if (kept.length !== obj["@graph"].length) {
+            if (kept.length === 0) el.remove();
+            else el.textContent = JSON.stringify({ ...obj, "@graph": kept });
+          }
+        } else if (Array.isArray(data)) {
+          const kept = (data as any[]).filter((n) => !isBc(n));
+          if (kept.length !== (data as any[]).length) {
+            if (kept.length === 0) el.remove();
+            else el.textContent = JSON.stringify(kept);
+          }
+        }
+      }
+    };
+
+    dedupe();
+    const observer = new MutationObserver(() => dedupe());
+    observer.observe(document.head, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, [schemaJson]);
+
+  if (!schemaJson) return null;
 
   return (
     <Helmet>
       <script type="application/ld+json" data-schema="breadcrumb-auto">
-        {JSON.stringify(schema)}
+        {schemaJson}
       </script>
     </Helmet>
   );
