@@ -70,6 +70,24 @@ const prettify = (slug: string): string => {
  */
 export const AutoBreadcrumbSchema = () => {
   const { pathname } = useLocation();
+  const clean = pathname.split("?")[0].split("#")[0].replace(/\/+$/, "");
+  const segments = clean.split("/").filter(Boolean);
+
+  const schemaJson = segments.length
+    ? JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+          ...segments.map((seg, i) => ({
+            "@type": "ListItem",
+            position: i + 2,
+            name: prettify(seg),
+            item: `${SITE}/${segments.slice(0, i + 1).join("/")}`,
+          })),
+        ],
+      })
+    : "";
 
   // De-duplicate: some legacy page components still emit their own
   // BreadcrumbList. Two competing BreadcrumbList blocks on one URL can stop
@@ -80,8 +98,8 @@ export const AutoBreadcrumbSchema = () => {
         document.querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]')
       );
       for (const el of scripts) {
-        if (el.dataset.schema === "breadcrumb-auto") continue;
         const text = el.textContent || "";
+        if (schemaJson && text.trim() === schemaJson) continue; // our own block
         if (!text.includes("BreadcrumbList")) continue;
         let data: unknown;
         try {
@@ -115,39 +133,14 @@ export const AutoBreadcrumbSchema = () => {
     const observer = new MutationObserver(() => dedupe());
     observer.observe(document.head, { childList: true, subtree: true });
     return () => observer.disconnect();
-  }, [pathname]);
+  }, [schemaJson]);
 
-  const clean = pathname.split("?")[0].split("#")[0].replace(/\/+$/, "");
-  if (!clean || clean === "/") return null;
-
-  const segments = clean.split("/").filter(Boolean);
-  if (segments.length === 0) return null;
-
-  const items = [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: `${SITE}/`,
-    },
-    ...segments.map((seg, i) => ({
-      "@type": "ListItem",
-      position: i + 2,
-      name: prettify(seg),
-      item: `${SITE}/${segments.slice(0, i + 1).join("/")}`,
-    })),
-  ];
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items,
-  };
+  if (!schemaJson) return null;
 
   return (
     <Helmet>
       <script type="application/ld+json" data-schema="breadcrumb-auto">
-        {JSON.stringify(schema)}
+        {schemaJson}
       </script>
     </Helmet>
   );
