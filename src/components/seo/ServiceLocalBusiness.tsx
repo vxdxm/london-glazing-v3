@@ -7,6 +7,67 @@ import {
 
 const SITE = "https://secondaryglazingspecialist.com";
 
+/** Boroughs and Home Counties towns covered by the business. */
+const SERVED_BOROUGHS = [
+  "Westminster",
+  "Kensington and Chelsea",
+  "Camden",
+  "Islington",
+  "Hammersmith and Fulham",
+  "Richmond upon Thames",
+  "Wandsworth",
+  "Lambeth",
+  "Southwark",
+  "Hackney",
+  "Tower Hamlets",
+  "Haringey",
+  "Barnet",
+  "Ealing",
+  "Merton",
+  "Greenwich",
+];
+
+const SERVED_TOWNS = [
+  "Guildford",
+  "Sevenoaks",
+  "Tunbridge Wells",
+  "Esher",
+  "Cobham",
+  "Weybridge",
+  "Ascot",
+  "Virginia Water",
+  "Beaconsfield",
+  "Gerrards Cross",
+  "Marlow",
+  "Chorleywood",
+  "Rickmansworth",
+  "Radlett",
+  "Chigwell",
+];
+
+const SERVICE_AREA_GEO = {
+  "@type": "GeoCircle",
+  geoMidpoint: {
+    "@type": "GeoCoordinates",
+    latitude: 51.5074,
+    longitude: -0.1278,
+  },
+  geoRadius: "80000",
+  description: "Greater London and the Home Counties within an 80km radius of central London",
+};
+
+const AREA_SERVED = [
+  { "@type": "City", name: "London" },
+  { "@type": "AdministrativeArea", name: "Greater London" },
+  { "@type": "AdministrativeArea", name: "Home Counties" },
+  ...SERVED_BOROUGHS.map((name) => ({
+    "@type": "AdministrativeArea" as const,
+    name,
+    containedInPlace: { "@type": "AdministrativeArea", name: "Greater London" },
+  })),
+  ...SERVED_TOWNS.map((name) => ({ "@type": "City" as const, name })),
+];
+
 export interface ServiceLocalBusinessProps {
   /** Canonical URL of the page this schema is emitted on */
   pageUrl: string;
@@ -73,11 +134,9 @@ export const ServiceLocalBusiness = ({
       addressCountry: "GB",
     },
     geo: { "@type": "GeoCoordinates", latitude: 51.5074, longitude: -0.1278 },
-    areaServed: [
-      { "@type": "City", name: "London" },
-      { "@type": "AdministrativeArea", name: "Greater London" },
-      { "@type": "AdministrativeArea", name: "Home Counties" },
-    ],
+    areaServed: AREA_SERVED,
+    serviceArea: SERVICE_AREA_GEO,
+    hasMap: "https://www.google.com/maps/search/?api=1&query=51.5074,-0.1278",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -100,7 +159,19 @@ export const ServiceLocalBusiness = ({
     description: serviceDescription,
     serviceType: serviceName,
     provider: { "@id": `${SITE}/#business` },
-    areaServed: { "@type": "City", name: "London" },
+    areaServed: AREA_SERVED,
+    serviceArea: SERVICE_AREA_GEO,
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: `${SITE}/quote-request`,
+      servicePhone: { "@type": "ContactPoint", telephone: "+44 20 7060 1572" },
+      availableLanguage: { "@type": "Language", name: "English" },
+      serviceLocation: {
+        "@type": "Place",
+        name: "Greater London and the Home Counties",
+        geo: SERVICE_AREA_GEO,
+      },
+    },
     url: pageUrl,
     ...(hasReviews ? { aggregateRating: aggregateNode, review: reviewNodes } : {}),
   };
