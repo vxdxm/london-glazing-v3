@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { LocationBreadcrumb } from "@/components/locations/LocationBreadcrumb";
 import { ClaphamBusyRoadsSEO } from "@/components/locations/ClaphamBusyRoadsSEO";
 import { SEOImage } from "@/components/ui/seo-image";
+import RelatedResources from "@/components/seo/RelatedResources";
 
 export default function ClaphamBusyRoads() {
   return (
@@ -58,6 +59,72 @@ export default function ClaphamBusyRoads() {
               <li><strong>Night-time traffic:</strong> 55-60 dB → Reduced to 30-35 dB (25 dB reduction)</li>
             </ul>
           </div>
+
+          <h2 className="text-3xl font-semibold mb-6 text-foreground">Specification for Clapham Properties</h2>
+          <p className="mb-6 text-muted-foreground">
+            Clapham's housing stock is dominated by Victorian and Edwardian terraces with tall vertical sliding sashes,
+            many of them in the Clapham Common, Old Town and Grafton Square conservation areas. Those large single-glazed
+            openings are the weakest acoustic element of the façade, typically delivering only 25–28dB of reduction.
+            Secondary glazing addresses them without altering the street elevation, which is why it is the specification
+            route conservation officers in Lambeth and Wandsworth accept.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <caption className="sr-only">Recommended glazing specification by Clapham location</caption>
+              <thead>
+                <tr className="bg-muted">
+                  <th scope="col" className="text-left p-3 border">Location</th>
+                  <th scope="col" className="text-left p-3 border">Dominant noise source</th>
+                  <th scope="col" className="text-left p-3 border">Specification</th>
+                  <th scope="col" className="text-left p-3 border">Indicative Rw</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border">Clapham High Street / A3</td>
+                  <td className="p-3 border">Bus and HGV low-frequency rumble</td>
+                  <td className="p-3 border">10.8mm Stadip Silence, 150mm cavity</td>
+                  <td className="p-3 border">48–54dB</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">Wandsworth Road / Cedars Road</td>
+                  <td className="p-3 border">Continuous arterial traffic</td>
+                  <td className="p-3 border">8.8mm acoustic laminate, 100mm cavity</td>
+                  <td className="p-3 border">42–46dB</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">Abbeville Village side streets</td>
+                  <td className="p-3 border">Intermittent local traffic</td>
+                  <td className="p-3 border">6.4mm laminate, 100mm cavity</td>
+                  <td className="p-3 border">38–41dB</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">Clapham Common frontages</td>
+                  <td className="p-3 border">Evening and weekend activity noise</td>
+                  <td className="p-3 border">6.4mm laminate with low-E coating</td>
+                  <td className="p-3 border">38–41dB</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">Meeting BS 8233 in a Clapham bedroom</h3>
+          <p className="mb-6 text-muted-foreground">
+            BS 8233:2014 sets a 30dB L<sub>Aeq,8hr</sub> night-time bedroom target and 45dB L<sub>Amax</sub> for
+            individual events such as a passing bus. A front bedroom on Clapham High Street commonly measures 68–72dB
+            free-field at the façade, so roughly 40dB of façade reduction is required once the standard 3dB correction
+            is applied. That is achievable with 8.8mm laminate, but where night buses drive the L<sub>Amax</sub> peaks
+            we specify 10.8mm acoustic laminate and a deeper cavity to buy the extra margin.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-4 text-foreground">Detailing for Victorian reveals</h3>
+          <ul className="list-disc pl-6 mb-8 text-muted-foreground space-y-2">
+            <li>Deep original reveals allow 100–150mm cavities without projecting into the room.</li>
+            <li>Asymmetric pane thicknesses avoid coincidence dip alignment with the original 3–4mm glass.</li>
+            <li>Continuous compressible perimeter seals — a 1% air gap can cost 10dB of measured performance.</li>
+            <li>Acoustic-attenuated trickle vents preserve Part F background ventilation on habitable rooms.</li>
+            <li>Slimline white or heritage-bronze frames align with existing sash meeting rails for a discreet finish.</li>
+          </ul>
 
           <h2 className="text-3xl font-semibold mb-6 text-foreground">Specialist Solutions for Other London Areas</h2>
           <p className="mb-6 text-muted-foreground">
