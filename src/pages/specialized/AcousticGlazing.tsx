@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
+import RelatedResources from "@/components/seo/RelatedResources";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
@@ -59,10 +60,8 @@ const AcousticGlazing = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div>
-            <SectionHeading 
-              title="Acoustic Glazing Solutions"
-              subtitle="Create a quieter, more peaceful environment" 
-            />
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2">Acoustic Glazing Solutions</h1>
+            <p className="text-gray-600 mb-4">Specifier-grade sound insulation for London properties</p>
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
               Our acoustic glazing solutions provide exceptional sound insulation, creating a quieter and more peaceful indoor environment. 
               Perfect for properties near busy roads, flight paths, or in urban areas with high noise pollution.
@@ -125,6 +124,77 @@ const AcousticGlazing = () => {
           </Card>
         </div>
         
+        <section className="mb-12" aria-labelledby="acoustic-spec">
+          <h2 id="acoustic-spec" className="text-2xl font-semibold mb-4">Acoustic performance specification</h2>
+          <p className="text-gray-700 mb-4">
+            Acoustic performance is governed by three specifiable variables: the mass and damping of the
+            secondary pane, the depth of the isolating cavity, and the airtightness of the perimeter seal.
+            Weighted sound reduction index (Rw, measured to BS EN ISO 10140) rises as each is optimised, but
+            traffic and rail noise are dominated by low-frequency energy, so the C<sub>tr</sub> spectrum
+            adaptation term is the figure that matters on a London arterial route. A unit quoted at Rw 45dB with
+            C<sub>tr</sub> −7 delivers roughly 38dB against bus and HGV rumble.
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm border-collapse">
+              <caption className="sr-only">Typical acoustic secondary glazing configurations and performance</caption>
+              <thead>
+                <tr className="bg-muted">
+                  <th scope="col" className="text-left p-3 border">Glass specification</th>
+                  <th scope="col" className="text-left p-3 border">Cavity</th>
+                  <th scope="col" className="text-left p-3 border">Indicative Rw</th>
+                  <th scope="col" className="text-left p-3 border">Best suited to</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border">4mm float</td>
+                  <td className="p-3 border">50–70mm</td>
+                  <td className="p-3 border">32–35dB</td>
+                  <td className="p-3 border">Quiet side roads, thermal-led projects</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">6.4mm laminated</td>
+                  <td className="p-3 border">100mm</td>
+                  <td className="p-3 border">38–41dB</td>
+                  <td className="p-3 border">Residential streets with steady traffic</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">8.8mm acoustic laminate</td>
+                  <td className="p-3 border">100mm</td>
+                  <td className="p-3 border">42–46dB</td>
+                  <td className="p-3 border">Bus routes, high streets, night-time noise</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border">10.8mm Stadip Silence</td>
+                  <td className="p-3 border">100–150mm</td>
+                  <td className="p-3 border">48–54dB</td>
+                  <td className="p-3 border">Arterial roads, rail corridors, flight paths</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Design targets and standards</h3>
+          <p className="text-gray-700 mb-4">
+            BS 8233:2014 sets internal ambient noise guidance of 35dB L<sub>Aeq,16hr</sub> in living rooms and
+            30dB L<sub>Aeq,8hr</sub> in bedrooms, with 45dB L<sub>Amax</sub> for individual night-time events.
+            Working back from a measured façade level gives the required façade sound reduction: a 70dB free-field
+            level outside a bedroom needs roughly 40dB of glazing performance once the 3dB façade correction is
+            applied. Where a planning condition cites these targets, we issue calculated performance figures for
+            each opening rather than a single headline number.
+          </p>
+          <h3 className="text-xl font-semibold mb-2">Detailing that protects the numbers</h3>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+            <li><strong>Perimeter sealing:</strong> a 1% unsealed gap can cost 10dB, so frames are bedded to the reveal with a continuous compressible seal.</li>
+            <li><strong>Asymmetric panes:</strong> pairing dissimilar glass thicknesses avoids coincidence dip alignment between the primary and secondary pane.</li>
+            <li><strong>Cavity linings:</strong> acoustically absorbent reveal linings suppress cavity resonance in deep Georgian and Victorian reveals.</li>
+            <li><strong>Trickle ventilation:</strong> acoustic-attenuated vents maintain Part F background ventilation without short-circuiting the acoustic seal.</li>
+          </ul>
+          <p className="text-gray-700">
+            Because the original window is untouched, this specification route remains available in listed buildings
+            and conservation areas where replacement double glazing would be refused.
+          </p>
+        </section>
+
         <div className="bg-secondary/60 p-4 sm:p-5 rounded-lg mb-8 sm:mb-12">
           <h2 className="text-xl font-semibold mb-2 text-primary">Learn More: Secondary Glazing Noise Reduction</h2>
           <p className="text-gray-700 mb-4">
@@ -166,6 +236,22 @@ const AcousticGlazing = () => {
           </div>
         </div>
         
+        <RelatedResources
+          title="Related acoustic and specification resources"
+          intro="Continue with the detailed guidance behind these figures, or see how the same specification is applied on London's noisiest streets."
+          links={[
+            { title: "Best acoustic glass compared", href: "/blog/best-acoustic-glass-secondary-glazing-compared", description: "Stadip Silence vs standard laminate, with Rw and Ctr data." },
+            { title: "Acoustic glass noise comparison guide", href: "/blog/acoustic-glass-noise-reduction-comparison", description: "Decision tree for choosing glass by noise source." },
+            { title: "Sound insulation service", href: "/sound-insulation", description: "Survey, specification and installation for noise-led projects." },
+            { title: "Air gap performance", href: "/specialized/air-gap-secondary-glazing", description: "How cavity depth changes acoustic and thermal results." },
+            { title: "Clapham busy roads", href: "/locations/clapham-busy-roads", description: "Arterial traffic noise treatment in South London." },
+            { title: "King's Cross rail noise", href: "/locations/kings-cross-train-noise", description: "Low-frequency rail noise specification." },
+            { title: "Heathrow flight paths", href: "/locations/heathrow-aircraft", description: "Aircraft noise glazing under the western approach." },
+            { title: "Compliance hub", href: "/compliance-hub", description: "BS 8233, Part F and listed building consent guidance." },
+            { title: "Listed buildings glazing", href: "/listed-buildings-secondary-glazing", description: "Acoustic upgrades that keep original windows intact." },
+          ]}
+        />
+
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-base sm:text-lg mb-3 sm:mb-4">Ready to create a quieter home or office environment?</p>
           <Link 

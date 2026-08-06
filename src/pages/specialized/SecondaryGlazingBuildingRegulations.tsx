@@ -8,6 +8,7 @@ import { Info } from "lucide-react";
 import { OptimizedImage } from "@/components/ui/optimized-image";
 import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
+import RelatedResources from "@/components/seo/RelatedResources";
 
 const SecondaryGlazingBuildingRegulations = () => {
   // Add current date for SEO freshness signals
@@ -176,6 +177,70 @@ const SecondaryGlazingBuildingRegulations = () => {
                     </div>
                   </div>
 
+                  <div className="mt-8 space-y-6 text-gray-700">
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Part L in practice: what assessors accept</h3>
+                      <p className="mb-2">
+                        Approved Document L1B treats secondary glazing as a controlled fitting only when the whole
+                        window assembly is altered; a reversible internal secondary unit is normally assessed as an
+                        improvement measure rather than a replacement. In practice, an original single-glazed sash at
+                        roughly 4.8 W/m²K improves to about 1.9 W/m²K with a low-emissivity secondary pane, and to
+                        about 1.6 W/m²K where a wider cavity and Pilkington K glass are combined. Those figures are
+                        sufficient for SAP and RdSAP uplift, which is why the measure is routinely used to lift a
+                        rented property over the MEES minimum EPC threshold without touching the façade.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Part F: keeping background ventilation intact</h3>
+                      <p className="mb-2">
+                        Where the primary window has trickle vents, the secondary unit must not seal them off.
+                        The two compliant details are an aligned acoustic-attenuated trickle vent through the secondary
+                        frame, or a deliberately ventilated cavity that leaves the existing vent path open. Habitable
+                        rooms require 8,000mm² equivalent area and wet rooms 4,000mm²; acoustic vents typically cost
+                        3–5dB of measured performance, so on noise-critical elevations we specify mechanical extract
+                        instead and record the decision in the handover pack.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Part B: egress and escape windows</h3>
+                      <p className="mb-2">
+                        Any opening relied on for escape must retain a clear openable area of at least 0.33m² with a
+                        minimum 450mm clear height and width, and a cill no higher than 1,100mm above floor level.
+                        On escape openings we specify side-hung or lift-out secondary panels with a single-action
+                        release that can be operated without a key, so the escape route stays usable in darkness.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Part K and Part N: impact safety glazing</h3>
+                      <p className="mb-2">
+                        Critical locations — glazing below 800mm from floor level, and glazing within 300mm of a door
+                        edge below 1,500mm — must meet BS EN 12600 Class 2(B)2 or better. Laminated glass satisfies
+                        this while also carrying the acoustic and security benefits, so it is our default in
+                        low-cill Georgian and Victorian reveals rather than a toughened alternative.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Listed buildings, Article 4 and consent</h3>
+                      <p className="mb-2">
+                        Building Regulations and planning consent are separate consents. Listed Building Consent is
+                        usually required for Grade I and Grade II properties and is normally granted because the
+                        installation is reversible and the historic fabric is preserved. In conservation areas and
+                        Article 4 zones a short pre-application enquiry removes the risk; our compliance hub carries a
+                        borough-by-borough contact directory and a ready-to-send enquiry template.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-2">Documentation issued on completion</h3>
+                      <ul className="list-disc pl-6 space-y-2">
+                        <li>Glass specification sheet with U-value, Rw and C<sub>tr</sub> figures per opening</li>
+                        <li>BS EN 12600 impact classification certificates for critical locations</li>
+                        <li>Ventilation strategy record demonstrating Part F equivalent areas</li>
+                        <li>Egress schedule for any opening forming part of the escape route</li>
+                        <li>Reversibility statement for listed building and conservation area files</li>
+                      </ul>
+                    </div>
+                  </div>
+
                   <div className="mt-8 p-4 bg-blue-50 rounded-lg">
                     <h3 className="text-lg font-semibold mb-2">Professional Installation</h3>
                     <p className="text-gray-600">
@@ -186,6 +251,21 @@ const SecondaryGlazingBuildingRegulations = () => {
               </CardContent>
             </Card>
           </div>
+          <RelatedResources
+            title="Related compliance resources"
+            intro="Standards, consent routes and performance data referenced above."
+            links={[
+              { title: "Compliance hub", href: "/compliance-hub", description: "Planning, PAS 2035, Article 4 and LPA contact directory." },
+              { title: "Heritage & listed buildings", href: "/heritage-listed", description: "Consent-friendly specification for protected fabric." },
+              { title: "Listed buildings secondary glazing", href: "/listed-buildings-secondary-glazing", description: "Reversible upgrades for Grade I and II properties." },
+              { title: "Conservation areas", href: "/conservation-areas-secondary-glazing", description: "What conservation officers look for in an application." },
+              { title: "Thermal insulation", href: "/specialized/thermal-insulation", description: "U-value improvement and EPC uplift detail." },
+              { title: "Sound insulation", href: "/sound-insulation", description: "BS 8233 internal noise targets and glass selection." },
+              { title: "Condensation control", href: "/specialized/condensation-control", description: "Dew point, surface temperature and Part F interaction." },
+              { title: "Cost guide", href: "/cost-guide", description: "Budget ranges by opening type and glass specification." },
+              { title: "Request a survey", href: "/quote-request", description: "Opening-by-opening compliance and performance schedule." },
+            ]}
+          />
         </main>
       </div>
       <Footer />
