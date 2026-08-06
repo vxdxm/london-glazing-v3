@@ -236,6 +236,22 @@ const AcousticGlazing = () => {
           </div>
         </div>
         
+        <RelatedResources
+          title="Related acoustic and specification resources"
+          intro="Continue with the detailed guidance behind these figures, or see how the same specification is applied on London's noisiest streets."
+          links={[
+            { title: "Best acoustic glass compared", href: "/blog/best-acoustic-glass-secondary-glazing-compared", description: "Stadip Silence vs standard laminate, with Rw and Ctr data." },
+            { title: "Acoustic glass noise comparison guide", href: "/blog/acoustic-glass-noise-reduction-comparison", description: "Decision tree for choosing glass by noise source." },
+            { title: "Sound insulation service", href: "/sound-insulation", description: "Survey, specification and installation for noise-led projects." },
+            { title: "Air gap performance", href: "/specialized/air-gap-secondary-glazing", description: "How cavity depth changes acoustic and thermal results." },
+            { title: "Clapham busy roads", href: "/locations/clapham-busy-roads", description: "Arterial traffic noise treatment in South London." },
+            { title: "King's Cross rail noise", href: "/locations/kings-cross-train-noise", description: "Low-frequency rail noise specification." },
+            { title: "Heathrow flight paths", href: "/locations/heathrow-aircraft", description: "Aircraft noise glazing under the western approach." },
+            { title: "Compliance hub", href: "/compliance-hub", description: "BS 8233, Part F and listed building consent guidance." },
+            { title: "Listed buildings glazing", href: "/listed-buildings-secondary-glazing", description: "Acoustic upgrades that keep original windows intact." },
+          ]}
+        />
+
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-base sm:text-lg mb-3 sm:mb-4">Ready to create a quieter home or office environment?</p>
           <Link 
