@@ -8,6 +8,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
 import { AutoBreadcrumbSchema } from "@/components/seo/AutoBreadcrumbSchema";
+import { SiteIdentitySchema } from "@/components/seo/SiteIdentitySchema";
 import Index from "./pages/Index";
 import CaseStudies from "./pages/CaseStudies";
 import Benefits from "./pages/Benefits";
@@ -151,6 +152,7 @@ const AppRoutes = () => {
   return (
     <>
       <AutoBreadcrumbSchema />
+      <SiteIdentitySchema />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
