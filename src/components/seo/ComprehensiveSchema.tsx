@@ -111,26 +111,7 @@ export const ComprehensiveSchema: React.FC<ComprehensiveSchemaProps> = ({
         </script>
       ))}
 
-      {/* Organization Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Secondary Glazing Specialist",
-          "url": "https://secondaryglazingspecialist.com",
-          "logo": "https://secondaryglazingspecialist.com/lovable-uploads/b39446b8-e7b5-4000-ac4b-a7a691a5bb14.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+44-20-7060-1572",
-            "contactType": "customer service",
-            "areaServed": "GB",
-            "availableLanguage": "English"
-          },
-          "sameAs": [
-            "https://secondaryglazingspecialist.com"
-          ]
-        })}
-      </script>
+      {/* Organization schema is emitted sitewide by SiteIdentitySchema. */}
     </Helmet>
   );
 };
