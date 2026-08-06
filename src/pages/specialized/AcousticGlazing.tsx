@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "@/components/ui/section-heading";
+import RelatedResources from "@/components/seo/RelatedResources";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { createPageSchema } from "@/utils/seo";
@@ -59,10 +60,8 @@ const AcousticGlazing = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div>
-            <SectionHeading 
-              title="Acoustic Glazing Solutions"
-              subtitle="Create a quieter, more peaceful environment" 
-            />
+            <h1 className="text-3xl sm:text-4xl font-bold mb-2">Acoustic Glazing Solutions</h1>
+            <p className="text-gray-600 mb-4">Specifier-grade sound insulation for London properties</p>
             <p className="text-base sm:text-lg mb-4 sm:mb-6">
               Our acoustic glazing solutions provide exceptional sound insulation, creating a quieter and more peaceful indoor environment. 
               Perfect for properties near busy roads, flight paths, or in urban areas with high noise pollution.
