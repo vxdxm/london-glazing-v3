@@ -193,6 +193,18 @@ export default function ClaphamBusyRoads() {
             </div>
           </div>
 
+          <RelatedResources
+            title="Related acoustic resources"
+            links={[
+              { title: "Sound insulation service", href: "/sound-insulation", description: "Acoustic survey, specification and installation." },
+              { title: "Acoustic glazing", href: "/specialized/acoustic-glazing", description: "Rw and Ctr performance by glass build-up." },
+              { title: "Best acoustic glass compared", href: "/blog/best-acoustic-glass-secondary-glazing-compared", description: "Which laminate suits which noise source." },
+              { title: "Air gap performance", href: "/specialized/air-gap-secondary-glazing", description: "Why 100mm+ cavities outperform double glazing." },
+              { title: "South London coverage", href: "/areas/south-london", description: "Boroughs and neighbourhoods we cover nearby." },
+              { title: "Compliance hub", href: "/compliance-hub", description: "Conservation area and Part F guidance for Lambeth." },
+            ]}
+          />
+
           <div className="bg-muted/30 p-8 rounded-lg text-center">
             <h3 className="text-2xl font-semibold mb-4 text-foreground">Ready for Peace and Quiet in Clapham?</h3>
             <p className="text-muted-foreground mb-6">
