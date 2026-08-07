@@ -88,7 +88,7 @@ const InsurancePremiums = () => {
 
         <div className="mb-12 w-full max-w-4xl mx-auto">
           <AspectRatio ratio={16 / 9} className="bg-muted">
-            <img alt="A secure and well-protected living room with secondary glazing" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/3d97865e-eb3e-4558-adcf-5fef6f809746.jpg" />
+            <img loading="lazy" decoding="async" alt="A secure and well-protected living room with secondary glazing" className="object-cover w-full h-full rounded-lg" src="/lovable-uploads/3d97865e-eb3e-4558-adcf-5fef6f809746.jpg" />
           </AspectRatio>
         </div>
 

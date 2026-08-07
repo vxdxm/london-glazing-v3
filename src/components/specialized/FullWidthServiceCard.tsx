@@ -29,7 +29,7 @@ export const FullWidthServiceCard = ({
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2">
             <AspectRatio ratio={16/9} className="h-full">
-              <img
+              <img loading="lazy" decoding="async"
                 src={imageSrc}
                 alt={imageAlt}
                 className="w-full h-full object-cover md:rounded-l-lg md:rounded-r-none rounded-t-lg md:rounded-t-none"

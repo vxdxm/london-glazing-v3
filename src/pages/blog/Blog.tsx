@@ -132,7 +132,7 @@ const Blog = () => {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="aspect-video md:aspect-auto">
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={featuredPost.image}
                     alt={featuredPost.title}
                     className="w-full h-full object-cover"
@@ -164,7 +164,7 @@ const Blog = () => {
               <Link key={post.slug} to={`/blog/${post.slug}`}>
                 <Card className="h-full hover:shadow-lg transition-shadow overflow-hidden">
                   <div className="aspect-video">
-                    <img 
+                    <img loading="lazy" decoding="async" 
                       src={post.image} 
                       alt={post.title}
                       className="w-full h-full object-cover"

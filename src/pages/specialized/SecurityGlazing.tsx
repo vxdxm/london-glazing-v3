@@ -93,7 +93,7 @@ const SecurityGlazing = () => {
           <Card className="col-span-1 md:col-span-3 hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
               <AspectRatio ratio={21 / 9}>
-                <img alt="Security glazing system installation showcase" className="w-full h-full object-cover" src="/lovable-uploads/ef528e3e-c607-4674-a887-b1635565f167.jpg" />
+                <img loading="lazy" decoding="async" alt="Security glazing system installation showcase" className="w-full h-full object-cover" src="/lovable-uploads/ef528e3e-c607-4674-a887-b1635565f167.jpg" />
               </AspectRatio>
               <div className="p-6">
                 <h2 className="text-2xl font-semibold mb-4">Advanced Security Features</h2>

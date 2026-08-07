@@ -75,12 +75,12 @@ export const CaseStudies = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/commercial/retail-installation.webp" 
             alt="Secondary glazing installation in progress at London boutique with minimal disruption" 
             className="w-full h-[300px] object-cover rounded-xl shadow-lg"
           />
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/commercial/retail-cafe.webp" 
             alt="Cozy London cafe with warm window seating after secondary glazing installation" 
             className="w-full h-[300px] object-cover rounded-xl shadow-lg"

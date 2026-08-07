@@ -28,7 +28,7 @@ export const ServiceCard = ({
     <Card className="hover:shadow-lg transition-shadow">
       <CardContent className="p-0">
         <AspectRatio ratio={16/9}>
-          <img
+          <img loading="lazy" decoding="async"
             src={imageSrc}
             alt={imageAlt}
             className="w-full h-full object-cover rounded-t-lg"

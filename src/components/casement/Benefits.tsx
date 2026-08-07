@@ -10,7 +10,7 @@ const Benefits = () => {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <img alt="Thermal insulation demonstration" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/6c55e910-40fc-40eb-9b56-6c464e1e1c72.jpg" />
+              <img loading="lazy" decoding="async" alt="Thermal insulation demonstration" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/6c55e910-40fc-40eb-9b56-6c464e1e1c72.jpg" />
               <p className="text-gray-700">
                 Significantly reduces heat loss through windows, potentially cutting energy bills by up to 40%. Creates an effective thermal barrier between your interior and exterior environments.
               </p>
@@ -24,7 +24,7 @@ const Benefits = () => {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <img alt="Noise reduction visualization" src="/lovable-uploads/bd7952fe-d76a-4c87-96f0-3505aa8ca4b4.jpg" className="rounded-lg w-full h-[200px] mb-4 object-fill" />
+              <img loading="lazy" decoding="async" alt="Noise reduction visualization" src="/lovable-uploads/bd7952fe-d76a-4c87-96f0-3505aa8ca4b4.jpg" className="rounded-lg w-full h-[200px] mb-4 object-fill" />
               <p className="text-gray-700">
                 Reduces external noise by up to 80% when properly installed. Ideal for properties in high-traffic areas or near noise sources.
               </p>

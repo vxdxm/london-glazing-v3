@@ -74,7 +74,7 @@ const CasementInvestment = () => {
 
       {/* Image */}
       <div className="mb-6">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="https://cdn.marblism.com/H8ljiyD5gLZ.webp" 
           alt="Casement window investment value" 
           className="w-full rounded-xl shadow-lg"

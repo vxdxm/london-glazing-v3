@@ -76,7 +76,7 @@ const CommercialMEESComplianceGuide = () => {
       {/* Hero */}
       <section className="relative bg-foreground text-background overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" decoding="async"
             src="https://cdn.marblism.com/mbnmDdlBu5b.webp"
             alt="London commercial office building with period sash windows requiring MEES compliance upgrade"
             className="w-full h-full object-cover opacity-30"
@@ -130,7 +130,7 @@ const CommercialMEESComplianceGuide = () => {
                 </div>
               </div>
 
-              <img src="https://cdn.marblism.com/mbnmDdlBu5b.webp" alt="Home Energy Model assessment criteria: fabric performance, heating systems, and smart energy features" className="rounded-xl" />
+              <img loading="lazy" decoding="async" src="https://cdn.marblism.com/mbnmDdlBu5b.webp" alt="Home Energy Model assessment criteria: fabric performance, heating systems, and smart energy features" className="rounded-xl" />
 
               <p>The new HEM system looks at three main areas:</p>
 
@@ -175,7 +175,7 @@ const CommercialMEESComplianceGuide = () => {
 
               <p>For landlords with listed buildings or properties in conservation areas, this is huge. You can upgrade your thermal performance <strong>without needing planning permission</strong> in most cases, because you're not altering the building's external appearance.</p>
 
-              <img src="https://cdn.marblism.com/smz2X1XoFsb.webp" alt="Secondary glazing installation on Victorian sash window showing thermal insulation and heat retention" className="rounded-xl" />
+              <img loading="lazy" decoding="async" src="https://cdn.marblism.com/smz2X1XoFsb.webp" alt="Secondary glazing installation on Victorian sash window showing thermal insulation and heat retention" className="rounded-xl" />
 
               <h3>2. Cost-Effective EPC Improvements Offices Can Actually Afford</h3>
 
@@ -191,7 +191,7 @@ const CommercialMEESComplianceGuide = () => {
 
               <p>London commercial properties — especially those near busy roads, train lines, or construction zones — suffer from noise complaints. <strong>10.8mm acoustic laminate glass</strong> is the sweet spot for secondary glazing in noisy areas.</p>
 
-              <img src="https://cdn.marblism.com/TroNXvgZoGc.webp" alt="Acoustic secondary glazing blocking traffic noise in London office during video conference call" className="rounded-xl" />
+              <img loading="lazy" decoding="async" src="https://cdn.marblism.com/TroNXvgZoGc.webp" alt="Acoustic secondary glazing blocking traffic noise in London office during video conference call" className="rounded-xl" />
 
               <p>A properly specified acoustic secondary glazing system can reduce noise by <strong className="text-primary text-xl">45–50 decibels</strong>. That's the difference between a tenant being able to run Zoom calls with traffic outside versus needing to move to an interior room.</p>
 
@@ -221,7 +221,7 @@ const CommercialMEESComplianceGuide = () => {
 
               <p><strong>4. Combine with Other Low-Cost Upgrades</strong><br />Secondary glazing works best as part of a package. Adding draught-proofing to doors, insulating loft spaces, and fitting thermostatic radiator valves are all low-cost moves that stack up on your EPC score.</p>
 
-              <img src="https://cdn.marblism.com/0GCoDAYcvPa.webp" alt="EPC rating certificate showing C grade target for commercial property MEES compliance planning" className="rounded-xl" />
+              <img loading="lazy" decoding="async" src="https://cdn.marblism.com/0GCoDAYcvPa.webp" alt="EPC rating certificate showing C grade target for commercial property MEES compliance planning" className="rounded-xl" />
 
               <h2>The 2026–2030 Window Is Closing</h2>
 

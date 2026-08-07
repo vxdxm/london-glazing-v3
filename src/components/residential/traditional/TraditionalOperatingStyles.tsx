@@ -56,14 +56,14 @@ export function TraditionalOperatingStyles() {
         
         <div className="space-y-6">
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png" 
               alt="Traditional side-hung hinged secondary glazing" 
               className="object-cover w-full h-full"
             />
           </AspectRatio>
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png" 
               alt="Vertical slider secondary glazing on sash window" 
               className="object-cover w-full h-full"

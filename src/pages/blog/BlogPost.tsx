@@ -60,7 +60,7 @@ const blogPostsContent: Record<string, {
         
         <p>Window size is the primary cost driver. Here's how sizing affects pricing:</p>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/cost-window-size-type.webp" 
           alt="Secondary Glazing Cost Guide showing window size and type pricing for London 2026" 
           className="w-full rounded-lg my-8"
@@ -191,7 +191,7 @@ const blogPostsContent: Record<string, {
         
         <h3>Location Within London</h3>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/cost-london-zones.webp" 
           alt="Secondary glazing pricing by London zones and installation complexity factors" 
           className="w-full rounded-lg my-8"
@@ -225,7 +225,7 @@ const blogPostsContent: Record<string, {
         
         <h2>Complete Home Cost Examples</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/cost-home-examples.webp" 
           alt="Complete home cost examples for secondary glazing in London - Victorian, Georgian and Townhouse properties" 
           className="w-full rounded-lg my-8"
@@ -350,7 +350,7 @@ const blogPostsContent: Record<string, {
         
         <h2>Ways to Reduce Costs Without Compromising Quality</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/cost-reduce-tips.webp" 
           alt="Ways to reduce secondary glazing costs without compromising quality - phased installation, smart glass selection and volume discounts" 
           className="w-full rounded-lg my-8"
@@ -503,7 +503,7 @@ const blogPostsContent: Record<string, {
         <p>Unlike <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">listed building protection</Link> (which applies to individual properties), conservation area designation focuses on preserving the overall character and appearance of the streetscape. This means any external alterations that could affect the area's visual appeal may require planning permission.</p>
         
         <figure className="my-8">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/blog/planning-conservation-area.webp" 
             alt="Aerial view of a London conservation area showing period properties and Georgian architecture" 
             className="w-full rounded-lg"
@@ -582,7 +582,7 @@ const blogPostsContent: Record<string, {
         </div>
         
         <figure className="my-8">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/blog/planning-sash-window.webp" 
             alt="Traditional sash window with secondary glazing in a period property" 
             className="w-full rounded-lg"
@@ -665,7 +665,7 @@ const blogPostsContent: Record<string, {
         </div>
         
         <figure className="my-8">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/blog/planning-interior-room.webp" 
             alt="Elegant period living room with tall sash windows featuring secondary glazing" 
             className="w-full rounded-lg"
@@ -764,7 +764,7 @@ const blogPostsContent: Record<string, {
         
         <p>London is home to over 18,000 listed buildings, each protected under strict heritage regulations. Understanding your building's classification is crucial before considering any window improvements.</p>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/listed-buildings-georgian.webp" 
           alt="Georgian listed building facade in London with traditional sash windows" 
           className="w-full rounded-lg my-8"
@@ -853,7 +853,7 @@ const blogPostsContent: Record<string, {
         
         <p>Historic England's position is that secondary glazing represents best practice for improving the thermal performance of historic windows while preserving heritage value.</p>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/listed-buildings-interior.webp" 
           alt="Interior of a listed building showing elegant period windows with secondary glazing" 
           className="w-full rounded-lg my-8"
@@ -883,7 +883,7 @@ const blogPostsContent: Record<string, {
         
         <h2>Secondary Glazing Options for Heritage Properties</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/listed-buildings-window-detail.webp" 
           alt="Close-up detail of secondary glazing installed on a heritage sash window" 
           className="w-full rounded-lg my-8"
@@ -947,7 +947,7 @@ const blogPostsContent: Record<string, {
         
         <p>Secondary glazing delivers measurable improvements across multiple performance criteria:</p>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/listed-buildings-before-after.webp" 
           alt="Before and after comparison showing thermal performance improvement with secondary glazing on heritage windows" 
           className="w-full rounded-lg my-8"
@@ -1374,7 +1374,7 @@ const blogPostsContent: Record<string, {
         
         <h2>What Are Conservation Areas and Why Do They Matter?</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/conservation-bay-window.webp" 
           alt="Traditional bay window in a London conservation area with conservation area plaque visible" 
           className="w-full rounded-lg my-8"
@@ -1561,7 +1561,7 @@ const blogPostsContent: Record<string, {
         
         <h2>Case Studies: Conservation Area Success Stories</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/conservation-interior.webp" 
           alt="Elegant period living room with tall Georgian sash windows featuring secondary glazing" 
           className="w-full rounded-lg my-8"
@@ -1783,7 +1783,7 @@ const blogPostsContent: Record<string, {
           </div>
         </div>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/sash-window-types.webp" 
           alt="Different types of London sash windows including Georgian, Victorian and Edwardian styles" 
           className="w-full rounded-lg my-8"
@@ -1857,7 +1857,7 @@ const blogPostsContent: Record<string, {
           </div>
         </div>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/sash-window-options.webp" 
           alt="Secondary glazing options for traditional sash windows showing various system types" 
           className="w-full rounded-lg my-8"
@@ -2003,7 +2003,7 @@ const blogPostsContent: Record<string, {
           </div>
         </div>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/sash-window-guide.webp" 
           alt="Complete guide to secondary glazing system types for sash windows" 
           className="w-full rounded-lg my-8"
@@ -2093,7 +2093,7 @@ const blogPostsContent: Record<string, {
           </div>
         </div>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/sash-window-installation.webp" 
           alt="Professional secondary glazing installation process for sash windows" 
           className="w-full rounded-lg my-8"
@@ -2156,7 +2156,7 @@ const blogPostsContent: Record<string, {
         
         <h2>Real London Case Studies</h2>
         
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/images/blog/sash-window-case-studies.webp" 
           alt="London case studies showing successful secondary glazing installations on period sash windows" 
           className="w-full rounded-lg my-8"
@@ -2748,7 +2748,7 @@ const BlogPost = () => {
           
           {/* Featured Image */}
           <div className="aspect-video mb-8 rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src={post.image} 
               alt={post.title}
               className="w-full h-full object-cover"

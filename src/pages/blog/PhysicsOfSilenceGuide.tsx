@@ -45,7 +45,7 @@ const PhysicsOfSilenceGuide = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Published 18 February 2026 · 16 min read
             </p>
-            <img
+            <img loading="lazy" decoding="async"
               src="https://cdn.marblism.com/96HLWaKW8Kw.webp"
               alt="Sound wave diagram illustrating acoustic glass noise reduction principles"
               className="w-full rounded-xl aspect-video object-cover"
@@ -114,7 +114,7 @@ const PhysicsOfSilenceGuide = () => {
               <Waves className="h-7 w-7 text-primary" />
               The PVB Acoustic Interlayer: Damping What Mass Can't
             </h2>
-            <img
+            <img loading="lazy" decoding="async"
               src="https://cdn.marblism.com/129r5xgGvjS.webp"
               alt="Detailed cross-section of acoustic laminate glass showing PVB damping interlayer between glass panes"
               className="w-full rounded-xl aspect-video object-cover mb-6"

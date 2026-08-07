@@ -68,7 +68,7 @@ const AcousticGlazing = () => {
             </p>
           </div>
           <div className="h-[200px] sm:h-[300px]">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/lovable-uploads/3ad0aa57-ae50-4494-9fb7-f0420cffc5aa.png" 
               alt="Stairway window with secondary glazing installation showcasing acoustic insulation properties" 
               className="rounded-lg w-full h-full object-cover"
@@ -81,7 +81,7 @@ const AcousticGlazing = () => {
             <CardContent className="p-4 sm:p-6">
               <h2 className="text-2xl font-semibold mb-4">How Acoustic Glazing Works</h2>
               <div className="mb-4">
-                <img src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" alt="Diagram showing acoustic secondary glazing layers and sound wave reduction" className="rounded-lg w-full h-[200px] object-cover mb-4" />
+                <img loading="lazy" decoding="async" src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg" alt="Diagram showing acoustic secondary glazing layers and sound wave reduction" className="rounded-lg w-full h-[200px] object-cover mb-4" />
               </div>
               <p className="text-gray-700 mb-4">
                 Acoustic secondary glazing creates an additional barrier against sound, with the air gap between your existing window 
@@ -101,7 +101,7 @@ const AcousticGlazing = () => {
             <CardContent className="p-4 sm:p-6">
               <h2 className="text-2xl font-semibold mb-4">Benefits of Acoustic Glazing</h2>
               <div className="mb-4">
-                <img src="/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg" alt="Before and after comparison of acoustic secondary glazing installation showing noise reduction benefits" className="rounded-lg w-full h-[200px] object-cover mb-4" />
+                <img loading="lazy" decoding="async" src="/lovable-uploads/8c405e6d-83e1-4a0e-8cf5-de325c39e542.jpg" alt="Before and after comparison of acoustic secondary glazing installation showing noise reduction benefits" className="rounded-lg w-full h-[200px] object-cover mb-4" />
               </div>
               <ul className="list-disc pl-6 space-y-2 text-gray-700">
                 <li>
@@ -211,7 +211,7 @@ const AcousticGlazing = () => {
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <div className="mb-4">
-                  <img src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg" alt="Sound transmission demonstration through secondary glazed window" className="rounded-lg w-full h-[160px] object-cover" />
+                  <img loading="lazy" decoding="async" src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg" alt="Sound transmission demonstration through secondary glazed window" className="rounded-lg w-full h-[160px] object-cover" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Sound Transmission Guide</h3>
                 <p className="text-gray-600 mb-4">Learn about how sound travels through windows and how secondary glazing creates effective barriers.</p>
@@ -224,7 +224,7 @@ const AcousticGlazing = () => {
             <Card className="hover:shadow-md transition-shadow">
               <CardContent className="p-6">
                 <div className="mb-4">
-                  <img alt="Interactive noise reduction calculator interface showing decibel reduction levels" className="rounded-lg w-full h-[160px] object-cover" src="/lovable-uploads/6ec1e201-5107-4f52-bb73-2cb26d88efa8.jpg" />
+                  <img loading="lazy" decoding="async" alt="Interactive noise reduction calculator interface showing decibel reduction levels" className="rounded-lg w-full h-[160px] object-cover" src="/lovable-uploads/6ec1e201-5107-4f52-bb73-2cb26d88efa8.jpg" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Noise Reduction Calculator</h3>
                 <p className="text-gray-600 mb-4">Calculate potential noise reduction based on your specific window configuration and requirements.</p>

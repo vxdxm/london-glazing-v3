@@ -101,7 +101,7 @@ const WhyCasementNeedsGlazing = () => {
 
       {/* Image placeholder */}
       <div className="mb-8">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="https://cdn.marblism.com/eLlsRPgx3pm.webp" 
           alt="Casement window secondary glazing installation" 
           className="w-full rounded-xl shadow-lg"

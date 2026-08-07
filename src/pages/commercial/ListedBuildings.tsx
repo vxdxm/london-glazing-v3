@@ -31,7 +31,7 @@ const ListedBuildings = () => {
           </div>
           
           <AspectRatio ratio={21/9} className="mb-8">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/lovable-uploads/1f5c80d9-95be-441b-ab84-b068ce4d1d08.jpg"
               alt="Secondary glazing installation in a listed building"
               className="rounded-lg object-cover w-full h-full"

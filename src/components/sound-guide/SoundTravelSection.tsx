@@ -28,7 +28,7 @@ const SoundTravelSection = () => {
           
           <div className="mt-6 rounded-lg overflow-hidden">
             <AspectRatio ratio={4/3}>
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" 
                 alt="Sound waves traveling through windows" 
                 className="object-cover w-full h-full"
@@ -39,7 +39,7 @@ const SoundTravelSection = () => {
         <Card className="p-6 bg-secondary/30">
           <div className="mb-4">
             <AspectRatio ratio={16/9}>
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/lovable-uploads/9bfb006c-0e46-48b3-a8d6-9e00277a2bcd.png" 
                 alt="Sash windows with secondary glazing installed" 
                 className="w-full h-full object-cover rounded-lg"

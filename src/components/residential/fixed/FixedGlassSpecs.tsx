@@ -62,7 +62,7 @@ export const FixedGlassSpecs = () => {
         
         <div>
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden mb-4">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="https://cdn.marblism.com/kTbAgQgHmNq.webp" 
               alt="Glass thickness options for fixed secondary glazing" 
               className="object-cover w-full h-full"

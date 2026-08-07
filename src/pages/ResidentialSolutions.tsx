@@ -197,7 +197,7 @@ const ResidentialSolutions = () => {
               >
                 <CardHeader>
                   <div className="w-full h-48 mb-4 overflow-hidden rounded-t-lg relative">
-                    <img 
+                    <img loading="lazy" decoding="async" 
                       src={service.image} 
                       alt={service.title}
                       className="w-full h-full object-cover"

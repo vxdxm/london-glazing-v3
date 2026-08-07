@@ -6,7 +6,7 @@ export const CrittallBenefits = () => {
         <Card className="hover:shadow-lg transition-shadow">
           <CardHeader>
             <div className="mb-6">
-              <img src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png" alt="Thermal efficiency demonstration on Crittall window" className="w-full h-48 object-cover rounded-lg mb-4" />
+              <img loading="lazy" decoding="async" src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png" alt="Thermal efficiency demonstration on Crittall window" className="w-full h-48 object-cover rounded-lg mb-4" />
             </div>
             <Thermometer className="w-12 h-12 text-primary mb-4" />
             <CardTitle>Energy Efficiency</CardTitle>
@@ -23,7 +23,7 @@ export const CrittallBenefits = () => {
         <Card className="hover:shadow-lg transition-shadow">
           <CardHeader>
             <div className="mb-6">
-              <img alt="Noise reduction visualization for secondary glazing" src="/lovable-uploads/ba2dcf94-13c7-4eef-bad6-1d3f75576e56.jpg" className="w-full h-48 rounded-lg mb-4 object-fill" />
+              <img loading="lazy" decoding="async" alt="Noise reduction visualization for secondary glazing" src="/lovable-uploads/ba2dcf94-13c7-4eef-bad6-1d3f75576e56.jpg" className="w-full h-48 rounded-lg mb-4 object-fill" />
             </div>
             <VolumeX className="w-12 h-12 text-primary mb-4" />
             <CardTitle>Noise Reduction</CardTitle>

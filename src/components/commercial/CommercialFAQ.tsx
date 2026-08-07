@@ -56,7 +56,7 @@ const CommercialFAQ = () => {
         </div>
 
         <div className="mt-12">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="https://cdn.marblism.com/6A0oLCZKQzB.webp" 
             alt="Commercial secondary glazing FAQ and support" 
             className="w-full h-[400px] object-cover rounded-2xl shadow-lg"

@@ -95,7 +95,7 @@ const CasementBenefits = () => {
 
       {/* Image */}
       <div className="mb-6">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="https://cdn.marblism.com/WPdW4YMFKe1.webp" 
           alt="Casement window noise reduction benefits" 
           className="w-full rounded-xl shadow-lg"

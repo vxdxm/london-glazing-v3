@@ -52,7 +52,7 @@ export const CrittallDilemma = () => {
         subtitle="Understanding the challenges faced by Crittall window owners"
       />
       
-      <img 
+      <img loading="lazy" decoding="async" 
         src="https://cdn.marblism.com/DE3wUKu66r0.webp" 
         alt="Crittall window showing thermal and performance challenges"
         className="w-full rounded-lg mb-8 shadow-lg"

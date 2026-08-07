@@ -52,7 +52,7 @@ const HospitalityIndustry = () => {
           <h1 className="text-4xl font-bold mb-6">Secondary Glazing for Hospitality Industry</h1>
           
           <div className="mb-8">
-            <img
+            <img loading="lazy" decoding="async"
               src="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
               alt="Modern hotel building facade"
               className="w-full h-[400px] object-cover rounded-lg shadow-lg mb-6"

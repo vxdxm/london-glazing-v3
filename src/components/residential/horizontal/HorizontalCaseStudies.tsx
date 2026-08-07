@@ -98,7 +98,7 @@ const HorizontalCaseStudies = () => {
         ))}
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/horizontal-sliding/horizontal-5.jpg" 
         alt="Horizontal sliding secondary glazing case study" 
         className="w-full rounded-lg shadow-lg"

@@ -37,7 +37,7 @@ export const InstallationProcess = () => {
         </div>
 
         <div className="mb-12">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/commercial/healthcare-installation.webp" 
             alt="Professional secondary glazing installation in hospital with minimal disruption to patient care" 
             className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
