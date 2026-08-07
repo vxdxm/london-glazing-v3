@@ -10,6 +10,15 @@ export interface BlogPostSummary {
 
 export const blogPosts: BlogPostSummary[] = [
   {
+    slug: "10-8mm-acoustic-laminate-vs-6-4mm-laminated-glass",
+    title: "10.8mm Acoustic Laminate vs 6.4mm Laminated Glass: Full Performance Data Comparison",
+    excerpt: "Rw and Ctr data, frequency response, weight loads, U-values and safety class compared across 6.4mm laminated, 6.8mm acoustic and 10.8mm Stadip Silence glass.",
+    date: "2026-08-07",
+    readTime: "13 min read",
+    category: "Acoustic Glazing",
+    image: "https://cdn.marblism.com/p7FYKcQX_3A.webp"
+  },
+  {
     slug: "acoustic-glass-noise-reduction-comparison",
     title: "Acoustic Glass for Noise Reduction: The Complete Comparison Guide",
     excerpt: "Specifier-focused comparison of 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence acoustic glass — with Rw values, third-octave data and air-gap sensitivity.",
