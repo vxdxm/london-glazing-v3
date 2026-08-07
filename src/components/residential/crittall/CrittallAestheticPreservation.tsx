@@ -9,7 +9,7 @@ export const CrittallAestheticPreservation = () => {
         subtitle="Complete grid pattern preservation with zero external alteration"
       />
       
-      <img 
+      <img loading="lazy" decoding="async" 
         src="https://cdn.marblism.com/qY64DlWuS7P.webp" 
         alt="Secondary glazing preserving Crittall grid aesthetic"
         className="w-full rounded-lg mb-8 shadow-lg"

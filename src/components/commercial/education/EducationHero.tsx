@@ -65,7 +65,7 @@ export const EducationHero = () => {
           </div>
 
           <div className="relative">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/commercial/education-library.webp" 
               alt="University library with secondary glazing and students studying" 
               className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"

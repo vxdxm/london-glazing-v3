@@ -58,7 +58,7 @@ const SustainabilityImpactTracker = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div>
             <div className="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/lovable-uploads/41ac9ed1-11cf-4479-90f7-8aa763917c75.jpg"
                 alt="Eco-friendly secondary glazing installation in London home"
                 className="w-full h-full object-cover"
@@ -78,7 +78,7 @@ const SustainabilityImpactTracker = () => {
           
           <div>
             <div className="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
-              <img
+              <img loading="lazy" decoding="async"
                 src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg"
                 alt="Energy-efficient secondary glazing with visible thermal improvement in London home"
                 className="w-full h-full object-cover"

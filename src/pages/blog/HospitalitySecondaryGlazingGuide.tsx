@@ -48,7 +48,7 @@ const HospitalitySecondaryGlazingGuide = () => {
       {/* Hero */}
       <section className="relative bg-foreground text-background overflow-hidden min-h-[420px] flex items-center">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" decoding="async"
             src="https://cdn.marblism.com/GzOZow2Lbmo.webp"
             alt="Luxury London boutique hotel bedroom with large heritage sash windows and acoustic secondary glazing"
             className="w-full h-full object-cover opacity-25"
@@ -95,7 +95,7 @@ const HospitalitySecondaryGlazingGuide = () => {
 
             <p>For larger hotel chains, noise-related compensation — refunds, free nights, room upgrades — costs between <strong className="text-primary">£20,000 and £50,000 annually</strong>. But the real damage isn't the immediate cost. It's the long-term erosion of your brand.</p>
 
-            <img src="https://cdn.marblism.com/GzOZow2Lbmo.webp" alt="Exhausted hotel guest in London boutique hotel room suffering from street noise complaints" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/GzOZow2Lbmo.webp" alt="Exhausted hotel guest in London boutique hotel room suffering from street noise complaints" className="rounded-xl" />
 
             <p>Every time a guest complains about street noise, nightclub bass, or early-morning bin lorries, you're not just losing one customer. You're losing everyone who reads that review. And in London's competitive hospitality market, where boutique hotels are fighting for the same high-spending clientele, your TripAdvisor score is your lifeline.</p>
 
@@ -117,7 +117,7 @@ const HospitalitySecondaryGlazingGuide = () => {
 
             <p>What you need is <strong>10.8mm acoustic laminate glass</strong>. This is a specialized product where two panes of glass are bonded together with a noise-dampening PVB (polyvinyl butyral) interlayer.</p>
 
-            <img src="https://cdn.marblism.com/YVUxhWK7fEc.webp" alt="Cross-section diagram showing 10.8mm acoustic laminate secondary glazing noise reduction layers" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/YVUxhWK7fEc.webp" alt="Cross-section diagram showing 10.8mm acoustic laminate secondary glazing noise reduction layers" className="rounded-xl" />
 
             {/* 80% noise reduction stat */}
             <div className="not-prose bg-primary/5 border border-primary/20 rounded-2xl p-8 my-10 text-center">
@@ -159,7 +159,7 @@ const HospitalitySecondaryGlazingGuide = () => {
 
             <p>A standard hotel room takes 3–4 hours to install secondary glazing. The process is clean, quiet, and doesn't require scaffolding or external access. You can schedule installations around your occupancy calendar — doing low-booking weekdays first, or targeting specific floors during quieter seasons.</p>
 
-            <img src="https://cdn.marblism.com/HXLXoT01TFi.webp" alt="Professional installer fitting soundproof secondary glazing in luxury hotel room without disruption" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/HXLXoT01TFi.webp" alt="Professional installer fitting soundproof secondary glazing in luxury hotel room without disruption" className="rounded-xl" />
 
             <p>For a 30-room boutique hotel, you could have acoustic glass installed across every guest room in a single month, with no need to turn away bookings.</p>
 
@@ -212,7 +212,7 @@ const HospitalitySecondaryGlazingGuide = () => {
 
             <p><Link to="/blog/listed-building-secondary-glazing-guide" className="text-primary hover:underline font-semibold">Secondary glazing for listed buildings</Link> sidesteps this entirely. Because the installation is <strong>internal and reversible</strong>, it's not considered a material alteration under most conservation area rules.</p>
 
-            <img src="https://cdn.marblism.com/nM4yhJyRfuq.webp" alt="Before and after comparison of London hotel window with secondary glazing reducing street noise" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/nM4yhJyRfuq.webp" alt="Before and after comparison of London hotel window with secondary glazing reducing street noise" className="rounded-xl" />
 
             <p>This matters for three reasons:</p>
 

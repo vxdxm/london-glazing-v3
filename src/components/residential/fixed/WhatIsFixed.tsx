@@ -30,7 +30,7 @@ export const WhatIsFixed = () => {
         
         <div>
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/fixed/fixed-1.jpg" 
               alt="Fixed secondary glazing installation showing permanently sealed unit" 
               className="object-cover w-full h-full"

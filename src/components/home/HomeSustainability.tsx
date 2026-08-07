@@ -14,7 +14,7 @@ const HomeSustainability = () => {
             <div className="flex flex-col md:flex-row">
               <div className="md:w-2/5">
                 <div className="h-full">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg"
                     alt="Secondary glazing environmental impact visualization"
                     className="w-full h-full object-cover"

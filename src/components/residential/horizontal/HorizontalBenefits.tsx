@@ -100,7 +100,7 @@ const HorizontalBenefits = () => {
         </div>
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/horizontal-sliding/horizontal-2.jpg" 
         alt="Benefits of horizontal sliding secondary glazing" 
         className="w-full rounded-lg mb-8 shadow-lg"

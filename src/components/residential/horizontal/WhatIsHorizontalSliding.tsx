@@ -48,7 +48,7 @@ const WhatIsHorizontalSliding = () => {
         </p>
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/horizontal-sliding/horizontal-1.jpg" 
         alt="Horizontal sliding secondary glazing mechanism" 
         className="w-full rounded-lg mb-8 shadow-lg"

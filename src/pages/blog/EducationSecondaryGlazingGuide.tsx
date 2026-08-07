@@ -47,7 +47,7 @@ const EducationSecondaryGlazingGuide = () => {
       {/* Hero */}
       <section className="relative bg-foreground text-background overflow-hidden min-h-[420px] flex items-center">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" decoding="async"
             src="https://cdn.marblism.com/tCWers5eiC4.webp"
             alt="Bright modern classroom with traditional Victorian windows and secondary glazing for acoustic improvement"
             className="w-full h-full object-cover opacity-25"
@@ -129,7 +129,7 @@ const EducationSecondaryGlazingGuide = () => {
 
             <p>This is where secondary glazing becomes the education sector's secret weapon. It's the <strong>only acoustic and thermal upgrade</strong> that delivers immediate results without disrupting term time, planning battles, or blowing the annual maintenance budget.</p>
 
-            <img src="https://cdn.marblism.com/tCWers5eiC4.webp" alt="Secondary glazing installation in progress in a bright school classroom with Victorian windows" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/tCWers5eiC4.webp" alt="Secondary glazing installation in progress in a bright school classroom with Victorian windows" className="rounded-xl" />
 
             <h2>1. Meeting BB93 Acoustic Standards (Without the Headache)</h2>
 
@@ -147,7 +147,7 @@ const EducationSecondaryGlazingGuide = () => {
 
             <p>For neurodiverse learners — including students with ADHD, autism spectrum conditions, or sensory processing disorders — the impact is even more pronounced. A 2019 study by University College London found that students with auditory processing difficulties performed up to <strong className="text-primary">30% worse on comprehension tasks</strong> in noisy environments compared to their neurotypical peers.</p>
 
-            <img src="https://cdn.marblism.com/f7-ceMTdMZ6.webp" alt="Primary school students focused on learning in a quiet classroom with improved acoustics" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/f7-ceMTdMZ6.webp" alt="Primary school students focused on learning in a quiet classroom with improved acoustics" className="rounded-xl" />
 
             <p>Secondary glazing creates what one head teacher described as a "bubble of calm." The dramatic reduction in traffic noise, sirens, and construction din allows all students to focus, but the benefits are particularly transformative for those who struggle with sensory overload.</p>
 
@@ -194,7 +194,7 @@ const EducationSecondaryGlazingGuide = () => {
 
             <p>Secondary glazing offers a middle path. By creating an insulating air gap between the original window and the new internal pane, heat loss is reduced by up to <strong className="text-primary text-xl">65%</strong>. That's approximately <strong>10% more efficient than standard double glazing</strong>, and it can be retrofitted for a fraction of the cost.</p>
 
-            <img src="https://cdn.marblism.com/pDYh7LGGUSv.webp" alt="Cross-section diagram showing secondary glazing thermal insulation and air gap in school window" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/pDYh7LGGUSv.webp" alt="Cross-section diagram showing secondary glazing thermal insulation and air gap in school window" className="rounded-xl" />
 
             <p>One secondary school in Hackney reported annual heating cost savings of <strong className="text-primary">£8,400</strong> after installing secondary glazing across 18 classrooms. The payback period was under four years, and the school simultaneously improved its EPC rating from E to C.</p>
 
@@ -227,7 +227,7 @@ const EducationSecondaryGlazingGuide = () => {
 
             <p>Modern safeguarding requirements mean schools need to think carefully about building security. Secondary glazing adds a second physical barrier that significantly improves resistance to forced entry — without the visual harshness of bars or shutters.</p>
 
-            <img src="https://cdn.marblism.com/8kh0kOXW50H.webp" alt="Victorian school building exterior with discreet weekend secondary glazing installation" className="rounded-xl" />
+            <img loading="lazy" decoding="async" src="https://cdn.marblism.com/8kh0kOXW50H.webp" alt="Victorian school building exterior with discreet weekend secondary glazing installation" className="rounded-xl" />
 
             <p>Importantly, secondary glazing can be designed with <strong>tilt or sliding mechanisms</strong> that preserve natural ventilation. Unlike sealed double glazing, which can create stuffy, airless classrooms, secondary glazing systems can incorporate openable sections that meet the Education Regulations' requirements for air circulation.</p>
 

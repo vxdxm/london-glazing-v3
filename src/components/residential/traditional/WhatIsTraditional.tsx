@@ -53,7 +53,7 @@ export function WhatIsTraditional() {
         
         <div>
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png" 
               alt="Traditional secondary glazing on heritage property window" 
               className="object-cover w-full h-full"

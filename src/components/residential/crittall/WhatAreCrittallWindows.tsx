@@ -8,7 +8,7 @@ export const WhatAreCrittallWindows = () => {
         subtitle="Iconic British design heritage from the 1920s-1950s"
       />
       
-      <img 
+      <img loading="lazy" decoding="async" 
         src="https://cdn.marblism.com/K1-HaLoYVmT.webp" 
         alt="Original Crittall windows showing distinctive grid pattern"
         className="w-full rounded-lg mb-8 shadow-lg"

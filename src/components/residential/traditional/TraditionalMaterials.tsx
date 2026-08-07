@@ -82,7 +82,7 @@ export function TraditionalMaterials() {
       
       <div className="mt-8">
         <AspectRatio ratio={21/9} className="bg-muted rounded-lg overflow-hidden">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/lovable-uploads/2f4fa321-a97b-487b-a0f2-bb38093e6ca3.jpg" 
             alt="Comparison of timber and aluminum secondary glazing frames" 
             className="object-cover w-full h-full"

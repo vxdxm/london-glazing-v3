@@ -5,7 +5,7 @@ export const CrittallPreservation = () => {
       <div className="grid gap-6">
         <InfoCard title="Preserve Historical Features" className="bg-background">
           <div className="mb-6">
-            <img alt="Historical Crittall window with secondary glazing" className="w-full h-48 object-cover rounded-lg mb-4" src="/lovable-uploads/d86b005b-f2ec-4bd1-bb0a-72077d3407bf.jpg" />
+            <img loading="lazy" decoding="async" alt="Historical Crittall window with secondary glazing" className="w-full h-48 object-cover rounded-lg mb-4" src="/lovable-uploads/d86b005b-f2ec-4bd1-bb0a-72077d3407bf.jpg" />
           </div>
           <p className="text-gray-700">
             Secondary glazing allows you to maintain the integrity of your Crittall windows 
@@ -16,7 +16,7 @@ export const CrittallPreservation = () => {
         
         <InfoCard title="Cost-Effective Solution" className="bg-background">
           <div className="mb-6">
-            <img alt="Secondary glazing installation process" className="w-full h-48 object-cover rounded-lg mb-4" src="/lovable-uploads/fc04ceed-1edc-4d38-a181-cc9c01c66bef.jpg" />
+            <img loading="lazy" decoding="async" alt="Secondary glazing installation process" className="w-full h-48 object-cover rounded-lg mb-4" src="/lovable-uploads/fc04ceed-1edc-4d38-a181-cc9c01c66bef.jpg" />
           </div>
           <p className="text-gray-700">
             Secondary glazing offers a cost-effective alternative to window replacement, 

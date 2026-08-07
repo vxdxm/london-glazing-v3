@@ -72,7 +72,7 @@ const BayCaseStudies = () => {
         ))}
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/bay-windows/bay-window-4.jpg" 
         alt="Bay window secondary glazing case study results" 
         className="w-full rounded-lg shadow-lg"

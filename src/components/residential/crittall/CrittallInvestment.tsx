@@ -9,7 +9,7 @@ export const CrittallInvestment = () => {
         subtitle="Understanding the significant cost savings"
       />
       
-      <img 
+      <img loading="lazy" decoding="async" 
         src="https://cdn.marblism.com/-7S_p8RCPes.webp" 
         alt="Secondary glazing investment comparison"
         className="w-full rounded-lg mb-8 shadow-lg"

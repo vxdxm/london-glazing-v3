@@ -51,7 +51,7 @@ export const CriticalBenefits = () => {
         </div>
 
         <div className="mb-12">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/images/commercial/retail-before-after.webp" 
             alt="Before and after comparison of retail shop windows with secondary glazing" 
             className="w-full h-[400px] object-cover rounded-2xl shadow-lg"

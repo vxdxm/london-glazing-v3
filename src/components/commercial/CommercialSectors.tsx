@@ -53,7 +53,7 @@ const CommercialSectors = () => {
             <Link key={index} to={sector.link} className="group">
               <Card className="h-full hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <div className="h-48 overflow-hidden">
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={sector.image} 
                     alt={sector.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -77,7 +77,7 @@ const CommercialSectors = () => {
         </div>
 
         <div className="mt-12">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="https://cdn.marblism.com/I0_AREdQM6z.webp" 
             alt="Commercial building exterior with modern glazing solutions" 
             className="w-full h-[400px] object-cover rounded-2xl shadow-lg"

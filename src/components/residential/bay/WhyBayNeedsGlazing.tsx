@@ -60,7 +60,7 @@ const WhyBayNeedsGlazing = () => {
         </div>
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/bay-windows/bay-window-6.jpg" 
         alt="Victorian bay window requiring secondary glazing" 
         className="w-full rounded-lg mb-8 shadow-lg"

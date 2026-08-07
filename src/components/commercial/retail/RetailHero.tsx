@@ -63,7 +63,7 @@ export const RetailHero = () => {
           </div>
 
           <div className="relative">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/commercial/retail-heritage.webp" 
               alt="Heritage London shopfront with secondary glazing" 
               className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"

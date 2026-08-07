@@ -104,7 +104,7 @@ const BayBenefits = () => {
         contemporary bay window styles.
       </p>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/bay-windows/bay-window-5.jpg" 
         alt="Bay window with secondary glazing benefits" 
         className="w-full rounded-lg shadow-lg"

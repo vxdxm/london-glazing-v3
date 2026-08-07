@@ -120,7 +120,7 @@ const LearnAboutSpiralBalances = () => (
         </p>
       </div>
       <div className="flex items-center justify-center mb-8">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/lovable-uploads/3fab2280-476f-4095-a2cf-83d2f4485ca3.png" 
           alt="Spiral balance mechanism in secondary glazing"
           className="rounded-lg shadow-lg w-full max-w-md"

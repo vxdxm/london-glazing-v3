@@ -71,7 +71,7 @@ export const FixedPerformance = () => {
         
         <div>
           <AspectRatio ratio={3/4} className="bg-muted rounded-lg overflow-hidden">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/fixed/fixed-3.jpg" 
               alt="Fixed secondary glazing performance benefits demonstration" 
               className="object-cover w-full h-full"

@@ -34,7 +34,7 @@ const AcousticSecondaryGlazingWindows = () => {
           <Card>
             <CardContent className="p-6">
               <AspectRatio ratio={16/9} className="mb-6">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src="/lovable-uploads/f3eb05a4-a9c1-49c4-bc8a-81cb8ef23da9.png"
                   alt="Acoustic secondary glazing installation demonstrating sound insulation properties"
                   className="w-full h-full object-cover rounded-lg"
@@ -78,7 +78,7 @@ const AcousticSecondaryGlazingWindows = () => {
           <Card>
             <CardContent className="p-6">
               <AspectRatio ratio={16/9} className="mb-6">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src="/lovable-uploads/09754466-a230-4ca4-a233-601125c832fc.png"
                   alt="Technical demonstration of acoustic glazing layers and sound waves"
                   className="w-full h-full object-cover rounded-lg"

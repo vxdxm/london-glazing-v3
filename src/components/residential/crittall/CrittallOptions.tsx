@@ -43,7 +43,7 @@ export const CrittallOptions = () => {
         subtitle="Choose the right system for your specific Crittall type"
       />
       
-      <img 
+      <img loading="lazy" decoding="async" 
         src="https://cdn.marblism.com/9299UEWdUf4.webp" 
         alt="Secondary glazing options for Crittall windows"
         className="w-full rounded-lg mb-8 shadow-lg"

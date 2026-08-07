@@ -45,7 +45,7 @@ const SoundproofNurseryGuide = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Published 18 February 2026 · 14 min read
             </p>
-            <img
+            <img loading="lazy" decoding="async"
               src="https://cdn.marblism.com/p_JLSZ_DV64.webp"
               alt="Peaceful nursery in a London period home with secondary glazing installed on sash windows"
               className="w-full rounded-xl aspect-video object-cover"
@@ -94,7 +94,7 @@ const SoundproofNurseryGuide = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
               How 10.8mm Acoustic Glass Creates a Silent Room
             </h2>
-            <img
+            <img loading="lazy" decoding="async"
               src="https://cdn.marblism.com/dRBZDMPo8ni.webp"
               alt="Cross-section diagram of 10.8mm acoustic laminate glass showing PVB soundproofing interlayer"
               className="w-full rounded-xl aspect-video object-cover mb-6"

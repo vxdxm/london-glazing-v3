@@ -67,7 +67,7 @@ export const HealthcareHero = () => {
           </div>
 
           <div className="relative">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/commercial/healthcare-hospital-ward.webp" 
               alt="Modern hospital ward with secondary glazing for patient comfort" 
               className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"

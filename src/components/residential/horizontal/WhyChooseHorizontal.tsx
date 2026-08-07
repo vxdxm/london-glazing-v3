@@ -73,7 +73,7 @@ const WhyChooseHorizontal = () => {
         </div>
       </div>
 
-      <img 
+      <img loading="lazy" decoding="async" 
         src="/images/horizontal-sliding/horizontal-3.jpg" 
         alt="Wide horizontal sliding secondary glazing installation" 
         className="w-full rounded-lg mb-8 shadow-lg"

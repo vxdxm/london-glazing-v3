@@ -9,7 +9,7 @@ const AcousticSolutions = () => {
       
       <div className="mb-6 sm:mb-8 rounded-lg overflow-hidden">
         <AspectRatio ratio={21/9}>
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/lovable-uploads/56e6bf65-3f25-4fcd-b697-e286aa479776.jpg" 
             alt="Acoustic glazing solution in a modern apartment" 
             className="object-cover w-full h-full"

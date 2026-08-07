@@ -41,7 +41,7 @@ export const FixedCostValue = () => {
         
         <div>
           <AspectRatio ratio={4/3} className="bg-muted rounded-lg overflow-hidden mb-4">
-            <img 
+            <img loading="lazy" decoding="async" 
               src="/images/fixed/fixed-2.jpg" 
               alt="Cost-effective fixed secondary glazing installation" 
               className="object-cover w-full h-full"

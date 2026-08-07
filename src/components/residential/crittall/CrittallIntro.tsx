@@ -7,7 +7,7 @@ export const CrittallIntro = () => {
     <div>
       <div className="mb-12 w-full max-w-4xl mx-auto">
         <AspectRatio ratio={16 / 9} className="bg-muted">
-          <img 
+          <img loading="lazy" decoding="async" 
             src="/lovable-uploads/bb016762-b43f-498a-be1c-7e477fcb368a.jpg" 
             alt="Elegant Crittall windows with secondary glazing installed"
             className="object-cover w-full h-full rounded-lg"

@@ -123,7 +123,7 @@ const CasementOptions = () => {
 
       {/* Image */}
       <div className="mb-6">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="https://cdn.marblism.com/uLWvpdI2TZo.webp" 
           alt="Casement window secondary glazing options" 
           className="w-full rounded-xl shadow-lg"

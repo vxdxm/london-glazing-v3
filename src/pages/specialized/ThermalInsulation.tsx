@@ -81,7 +81,7 @@ const ThermalInsulation = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="w-full h-64 mb-8 overflow-hidden rounded-lg">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png"
                 alt="Secondary glazing installation in progress showing thermal insulation benefits"
                 className="w-full h-full object-cover"
@@ -90,7 +90,7 @@ const ThermalInsulation = () => {
           </div>
           <Card className="hover:shadow-lg transition-shadow overflow-hidden">
             <div className="w-full h-48 overflow-hidden">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/lovable-uploads/218776ee-eff4-4f63-8d88-27dd86763e28.png"
                 alt="Decorative stained glass window showing thermal efficiency through traditional design"
                 className="w-full h-full object-cover"
@@ -113,7 +113,7 @@ const ThermalInsulation = () => {
           </Card>
           <Card className="hover:shadow-lg transition-shadow overflow-hidden">
             <div className="w-full h-48 overflow-hidden">
-              <img 
+              <img loading="lazy" decoding="async" 
                 src="/lovable-uploads/3853a532-5ab4-43d2-8e86-a0cdbfede781.png"
                 alt="Close-up of secondary glazing installation with radiator showing thermal efficiency features"
                 className="w-full h-full object-cover"

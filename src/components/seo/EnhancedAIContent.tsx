@@ -124,7 +124,7 @@ export const AIOptimizedStep: React.FC<{
       {description}
     </p>
     {image && (
-      <img 
+      <img loading="lazy" decoding="async" 
         src={image} 
         alt={title}
         className="rounded-lg my-4 max-w-2xl"
