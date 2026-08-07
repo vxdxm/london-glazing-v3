@@ -44,13 +44,16 @@ export default defineConfig(({ mode }) => ({
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-components': ['@/components/ui/index'],
-          'charts': ['recharts'],
-          'forms': ['react-hook-form', '@hookform/resolvers', 'zod'],
-          'utils': ['@/lib/utils'],
-          'lucide': ['lucide-react'],
+        // Keep vendor libs in stable long-cached chunks, but let Rollup split
+        // application code per lazy route so each page ships only what it needs.
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return;
+          if (/[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|scheduler)[\\/]/.test(id)) return 'react-vendor';
+          if (id.includes('recharts') || id.includes('d3-')) return 'charts';
+          if (id.includes('react-hook-form') || id.includes('@hookform') || id.includes('zod')) return 'forms';
+          if (id.includes('lucide-react')) return 'lucide';
+          if (id.includes('@radix-ui')) return 'radix';
+          return 'vendor';
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
         entryFileNames: 'assets/js/[name]-[hash].js',
