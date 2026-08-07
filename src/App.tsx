@@ -129,6 +129,7 @@ const ListedBuildingPlanningApprovedGuide = lazy(() => import("./pages/blog/List
 const BestAcousticGlassSecondaryGlazing = lazy(() => import("./pages/blog/BestAcousticGlassSecondaryGlazing"));
 const EnergySavingMistakesOldWindows = lazy(() => import("./pages/blog/EnergySavingMistakesOldWindows"));
 const AcousticGlassNoiseReductionComparison = lazy(() => import("./pages/blog/AcousticGlassNoiseReductionComparison"));
+const AcousticLaminateThicknessComparison = lazy(() => import("./pages/blog/AcousticLaminateThicknessComparison"));
 const EPCEnergyEfficiencyGuide = lazy(() => import("./pages/blog/EPCEnergyEfficiencyGuide"));
 const CondensationMouldPreventionGuide = lazy(() => import("./pages/blog/CondensationMouldPreventionGuide"));
 const CommercialMEESComplianceGuide = lazy(() => import("./pages/blog/CommercialMEESComplianceGuide"));
@@ -289,6 +290,7 @@ const AppRoutes = () => {
         <Route path="/blog/best-acoustic-glass-secondary-glazing-compared" element={<BestAcousticGlassSecondaryGlazing />} />
         <Route path="/blog/energy-saving-mistakes-old-windows" element={<EnergySavingMistakesOldWindows />} />
         <Route path="/blog/acoustic-glass-noise-reduction-comparison" element={<AcousticGlassNoiseReductionComparison />} />
+        <Route path="/blog/10-8mm-acoustic-laminate-vs-6-4mm-laminated-glass" element={<AcousticLaminateThicknessComparison />} />
         <Route path="/blog/epc-energy-efficiency-guide" element={<EPCEnergyEfficiencyGuide />} />
         <Route path="/blog/condensation-mould-prevention-guide" element={<CondensationMouldPreventionGuide />} />
         <Route path="/blog/commercial-mees-compliance-secondary-glazing" element={<CommercialMEESComplianceGuide />} />

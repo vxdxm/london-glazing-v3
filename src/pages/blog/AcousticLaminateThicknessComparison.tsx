@@ -181,7 +181,7 @@ const AcousticLaminateThicknessComparison = () => {
             <h2>5. Thermal performance: the U-value reality</h2>
             <p>
               Glass thickness alone does little for heat retention. A single pane of 6.4mm glass has a U-value of about 5.7 W/m²K; 10.8mm might reach 5.6 W/m²K — negligible in isolation. The gain comes from the <strong>air gap</strong>. The original window, the large cavity and the new laminate pane together form an effective thermal barrier, and a well-detailed{" "}
-              <Link to="/specialized/secondary-glazing-listed-buildings" className="text-primary hover:underline">secondary glazing installation for listed buildings</Link>{" "}
+              <Link to="/listed-buildings-secondary-glazing" className="text-primary hover:underline">secondary glazing installation for listed buildings</Link>{" "}
               can cut heat loss by over 60% without touching the heritage frames.
             </p>
 
