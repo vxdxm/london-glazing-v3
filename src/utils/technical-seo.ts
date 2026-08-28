@@ -72,12 +72,8 @@ export const enhanceMobileFirstIndexing = () => {
 };
 
 export const optimizePageSpeed = () => {
-  // Add resource hints for better loading
-  const resourceHints = document.createElement('link');
-  resourceHints.rel = 'preload';
-  resourceHints.href = '/sw.js';
-  resourceHints.as = 'script';
-  document.head.appendChild(resourceHints);
+  
+
   
   // Optimize image loading
   const images = document.querySelectorAll('img');
