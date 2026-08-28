@@ -134,20 +134,39 @@
       @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
     </style>
     
-    <!-- Service Worker for Enhanced Performance -->
+    <!-- Service worker kill-switch: remove stale caches that broke chunk loading -->
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registered: ', registration);
-            })
-            .catch((registrationError) => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (r) { r.unregister(); });
+        }).catch(function () {});
       }
+      if (window.caches && caches.keys) {
+        caches.keys().then(function (keys) {
+          keys.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      // Recover once from failed lazy-chunk imports (stale cached asset hashes)
+      window.addEventListener('error', function (e) {
+        var msg = (e && e.message) || '';
+        if (/Failed to fetch dynamically imported module|Importing a module script failed|Loading chunk/i.test(msg)) {
+          if (!sessionStorage.getItem('chunk-reload')) {
+            sessionStorage.setItem('chunk-reload', '1');
+            location.reload();
+          }
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (e) {
+        var msg = (e && e.reason && e.reason.message) || '';
+        if (/Failed to fetch dynamically imported module|Importing a module script failed|Loading chunk/i.test(msg)) {
+          if (!sessionStorage.getItem('chunk-reload')) {
+            sessionStorage.setItem('chunk-reload', '1');
+            location.reload();
+          }
+        }
+      });
     </script>
+
   </head>
 
   <body>
