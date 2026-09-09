@@ -469,7 +469,7 @@ const VictorianWindowsSecondaryGlazing = () => {
                   Victorian properties, built between 1837 and 1901, feature some of the most 
                   beautiful windows ever designed. The tall, elegant <InlineLink href="/sash-window-secondary-glazing">sash windows</InlineLink> with their 
                   slender glazing bars and handmade glass are architectural treasures that 
-                  define the character of London's residential streets. Many are protected under 
+                  define the character of London's residential streets. Many are protected under{" "}
                   <InlineLink href="/listed-buildings-secondary-glazing">listed building</InlineLink> or <InlineLink href="/conservation-areas-secondary-glazing">conservation area</InlineLink> regulations.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
@@ -626,8 +626,8 @@ const VictorianWindowsSecondaryGlazing = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   London has more Victorian housing than any other city in the world, and we 
-                  have worked on properties across the capital. From the grand villas of 
-                  <InlineLink href="/areas/north-london">Hampstead</InlineLink> to the classic terraces of Islington, Hackney, and 
+                  have worked on properties across the capital. From the grand villas of{" "}
+                  <InlineLink href="/areas/north-london">Hampstead</InlineLink> to the classic terraces of Islington, Hackney, and{" "}
                   <InlineLink href="/areas/south-london">Clapham</InlineLink>, our team has extensive experience with every type of Victorian window.
                 </p>
 

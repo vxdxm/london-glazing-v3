@@ -615,7 +615,7 @@ const GeorgianWindowsSecondaryGlazing = () => {
                   classical elegance. The windows of this era, typically featuring six-over-six 
                   or twelve-over-twelve pane configurations, are central to the Georgian aesthetic. 
                   Their multiple glazing bars and slender timber frames create the distinctive 
-                  appearance that makes Georgian properties so desirable, especially those in 
+                  appearance that makes Georgian properties so desirable, especially those in{" "}
                   <InlineLink href="/conservation-areas-secondary-glazing">conservation areas</InlineLink> or with <InlineLink href="/listed-buildings-secondary-glazing">listed building</InlineLink> status.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
@@ -796,7 +796,7 @@ const GeorgianWindowsSecondaryGlazing = () => {
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   The substantial timber reveals also allow for neat installation with the 
                   secondary glazing frames hidden within the window opening, further reducing 
-                  visual impact from inside the room. This is also ideal for later 
+                  visual impact from inside the room. This is also ideal for later{" "}
                   <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and <InlineLink href="/edwardian-property-secondary-glazing">Edwardian</InlineLink> properties.
                 </p>
 
