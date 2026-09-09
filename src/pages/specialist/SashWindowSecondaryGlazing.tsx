@@ -534,6 +534,38 @@ const SashWindowSecondaryGlazing = () => {
         </div>
       </section>
 
+      {/* Jump to section */}
+      <nav aria-label="Jump to section" className="border-y bg-muted/40">
+        <div className="container mx-auto px-4 py-6">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">
+              Jump to section
+            </p>
+            <ul className="flex flex-wrap gap-2">
+              {[
+                { id: "why-vertical-sliding", label: "Why vertical sliding" },
+                { id: "glazing-options", label: "Glazing options" },
+                { id: "performance-benefits", label: "Performance benefits" },
+                { id: "sash-window-challenge", label: "The sash window challenge" },
+                { id: "planning-leasehold", label: "Planning, councils & leasehold" },
+                { id: "installation-process", label: "Installation process" },
+              ].map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    className="inline-flex items-center rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
       {/* Main Content with Sidebar */}
       <section className="py-16">
         <div className="container mx-auto px-4">
