@@ -12,6 +12,7 @@ import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
 import CTASection from "@/components/seo/CTASection";
 import { InlineLink, QuickLinksGrid, residentialGlazingLinks, serviceAreaLinks } from "@/components/seo/InternalLinks";
+import sashTechnicalSketch from "@/assets/sash-secondary-glazing-technical-sketch.webp.asset.json";
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
@@ -544,6 +545,7 @@ const SashWindowSecondaryGlazing = () => {
             <ul className="flex flex-wrap gap-2">
               {[
                 { id: "why-vertical-sliding", label: "Why vertical sliding" },
+                { id: "technical-drawing", label: "Technical drawing" },
                 { id: "glazing-options", label: "Glazing options" },
                 { id: "performance-benefits", label: "Performance benefits" },
                 { id: "sash-window-challenge", label: "The sash window challenge" },
