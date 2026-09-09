@@ -568,6 +568,7 @@ const SashWindowSecondaryGlazing = () => {
             <ul className="flex flex-wrap gap-2">
               {[
                 { id: "why-vertical-sliding", label: "Why vertical sliding" },
+                { id: "gallery", label: "Gallery" },
                 { id: "technical-drawing", label: "Technical drawing" },
                 { id: "unit-types", label: "Unit types" },
                 { id: "glazing-options", label: "Glass options" },
