@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export interface InternalLink {
   text: string;
@@ -101,21 +102,31 @@ export const QuickLinksGrid = ({
   };
 
   return (
-    <div className="my-6">
-      {title && <h4 className="font-semibold mb-3">{title}</h4>}
-      <div className={`grid ${gridCols[columns]} gap-2`}>
+    <div className="my-8 not-prose">
+      {title && (
+        <div className="mb-4 flex items-center gap-3">
+          <h4 className="text-lg font-semibold text-foreground">{title}</h4>
+          <span className="h-px flex-1 bg-border" aria-hidden="true" />
+        </div>
+      )}
+      <div className={`grid ${gridCols[columns]} gap-3`}>
         {links.map((link) => (
           <Link
             key={link.href}
             to={link.href}
-            className="text-sm text-primary hover:underline"
+            className="group flex items-center justify-between gap-3 rounded-lg border border-border bg-card px-4 py-3 text-sm font-medium text-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:text-primary hover:shadow-md"
           >
-            {link.text}
+            <span>{link.text}</span>
+            <ArrowRight
+              className="h-4 w-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary"
+              aria-hidden="true"
+            />
           </Link>
         ))}
       </div>
     </div>
   );
 };
+
 
 export default InlineLink;
