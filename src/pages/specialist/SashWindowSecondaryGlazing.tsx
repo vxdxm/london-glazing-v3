@@ -602,6 +602,7 @@ const SashWindowSecondaryGlazing = () => {
                 { ref: "22", title: "Meeting rail interlock", body: "Interlocking rail with brush and compression seals — the critical joint for acoustic performance." },
                 { ref: "65", title: "Bottom sash rail", body: "Lower sliding sash rail carrying the glazing bead and lift-handle hardware." },
                 { ref: "64", title: "Sill / cill section", body: "Sill member with drainage path, set forward of the primary window to maintain the air gap." },
+                { ref: "43", title: "Outer frame section size", body: "The outer frame is a 43mm x 43mm square profile — 43mm in both height and width — slim on the face while deep enough to pack, level and seal into an out-of-square reveal." },
               ].map((item) => (
                 <div key={item.ref} className="rounded-lg border bg-card p-5">
                   <div className="flex items-baseline gap-3">
