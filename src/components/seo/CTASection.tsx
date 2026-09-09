@@ -39,23 +39,24 @@ const CTASection = ({
         <p className="mb-6 text-primary-foreground/90 max-w-2xl mx-auto">{description}</p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link to="/quote-request">
-            <Button variant="secondary" size="lg" className="gap-2">
+            <Button variant="secondary" size="lg" className="gap-2 bg-background text-foreground hover:bg-background/90">
               <FileText className="w-5 h-5" />
               Request a Quote
             </Button>
           </Link>
           <a href="tel:02070601572">
-            <Button variant="outline" size="lg" className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="outline" size="lg" className="gap-2 bg-transparent border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground">
               <Phone className="w-5 h-5" />
               Call 0207 060 1572
             </Button>
           </a>
           <Link to="/contact">
-            <Button variant="outline" size="lg" className="gap-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="outline" size="lg" className="gap-2 bg-transparent border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground">
               <MessageCircle className="w-5 h-5" />
               Contact Us
             </Button>
           </Link>
+
         </div>
       </div>
     );
