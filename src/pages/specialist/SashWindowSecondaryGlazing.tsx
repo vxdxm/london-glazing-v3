@@ -546,7 +546,8 @@ const SashWindowSecondaryGlazing = () => {
               {[
                 { id: "why-vertical-sliding", label: "Why vertical sliding" },
                 { id: "technical-drawing", label: "Technical drawing" },
-                { id: "glazing-options", label: "Glazing options" },
+                { id: "unit-types", label: "Unit types" },
+                { id: "glazing-options", label: "Glass options" },
                 { id: "performance-benefits", label: "Performance benefits" },
                 { id: "sash-window-challenge", label: "The sash window challenge" },
                 { id: "planning-leasehold", label: "Planning, councils & leasehold" },
