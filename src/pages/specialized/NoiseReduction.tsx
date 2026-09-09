@@ -6,6 +6,7 @@ import { AIOverviewOptimizer, createPageAIConfig } from "@/components/seo/AIOver
 import { VoiceSearchOptimizer } from "@/components/seo/VoiceSearchOptimizer";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 
 const NoiseReduction = () => {
   const aiConfig = createPageAIConfig(
@@ -136,6 +137,7 @@ const NoiseReduction = () => {
             Explore Secondary Glazing Noise Reduction
           </a>
         </div>
+        <ServiceFAQ items={aiConfig.commonQuestions} emitSchema={false} />
       </div>
       <Footer />
     </div>

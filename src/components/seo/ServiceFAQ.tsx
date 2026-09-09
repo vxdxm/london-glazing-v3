@@ -10,6 +10,8 @@ interface ServiceFAQProps {
   heading?: string;
   /** Absolute URL of the page, used for the @id of the FAQPage node. */
   canonical?: string;
+  /** Set false when another component on the page already emits the FAQPage node. */
+  emitSchema?: boolean;
 }
 
 /**
@@ -17,7 +19,7 @@ interface ServiceFAQProps {
  * Google only honours FAQ rich results when the same Q&A text is visible
  * on the page, so schema and markup are emitted from a single source.
  */
-export const ServiceFAQ = ({ items, heading = "Frequently asked questions", canonical }: ServiceFAQProps) => {
+export const ServiceFAQ = ({ items, heading = "Frequently asked questions", canonical, emitSchema = true }: ServiceFAQProps) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -31,9 +33,11 @@ export const ServiceFAQ = ({ items, heading = "Frequently asked questions", cano
 
   return (
     <section aria-labelledby="service-faq-heading" className="mt-12">
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(schema)}</script>
-      </Helmet>
+      {emitSchema && (
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(schema)}</script>
+        </Helmet>
+      )}
       <h2 id="service-faq-heading" className="text-2xl font-semibold mt-8 mb-3">
         {heading}
       </h2>
