@@ -6,7 +6,7 @@ import { createPageSchema } from "@/utils/seo";
 const ListedBuildingsSEO = () => {
   const pageMetadata = {
     title: "Secondary Glazing for Listed Buildings | Heritage Conservation London",
-    description: "Conservation-compliant secondary glazing for listed buildings. Improve thermal and acoustic performance while preserving architectural heritage - planning permission friendly.",
+    description: "Conservation-compliant secondary glazing for listed buildings.",
     canonicalPath: "/commercial/listed-buildings",
     imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
     type: "article" as const,

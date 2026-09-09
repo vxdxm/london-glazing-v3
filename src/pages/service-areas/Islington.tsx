@@ -77,7 +77,7 @@ const Islington = () => {
         <title>Secondary Glazing Islington | Victorian Terrace Specialists</title>
         <meta 
           name="description" 
-          content="Expert secondary glazing for Islington's Victorian terraces and Georgian squares. Specialists in Barnsbury, Canonbury and Highbury conservation areas. Free surveys."
+          content="Expert secondary glazing for Islington's Victorian terraces and Georgian squares. Specialists in Barnsbury, Canonbury and Highbury conservation areas."
         />
         <meta 
           name="keywords" 

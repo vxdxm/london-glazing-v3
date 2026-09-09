@@ -62,7 +62,7 @@ const VictorianWindowsSecondaryGlazing = () => {
       />
       <EnhancedSEO
         title="Victorian Windows Secondary Glazing | Protect Original Sash Windows"
-        description="Specialist secondary glazing for Victorian sash windows in London. Preserve original timber frames while improving insulation by 65%. Expert installation for period properties."
+        description="Specialist secondary glazing for Victorian sash windows in London. Preserve original timber frames while improving insulation by 65%."
         canonicalPath="/victorian-windows-secondary-glazing"
         keywords={[
           "Victorian windows secondary glazing",

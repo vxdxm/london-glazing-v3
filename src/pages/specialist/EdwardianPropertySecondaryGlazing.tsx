@@ -62,7 +62,7 @@ const EdwardianPropertySecondaryGlazing = () => {
       />
       <EnhancedSEO
         title="Edwardian Property Secondary Glazing | Sympathetic Period Solutions"
-        description="Expert secondary glazing for Edwardian homes in London. Preserve decorative features, stained glass, and original windows. Improve insulation while maintaining character."
+        description="Expert secondary glazing for Edwardian homes in London. Preserve decorative features, stained glass, and original windows."
         canonicalPath="/edwardian-property-secondary-glazing"
         keywords={[
           "Edwardian property secondary glazing",

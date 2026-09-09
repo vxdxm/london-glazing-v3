@@ -74,7 +74,7 @@ const ConservationAreasSecondaryGlazing = () => {
 
       <EnhancedSEO
         title="Conservation Area Secondary Glazing | Expert Heritage Solutions London"
-        description="Specialist secondary glazing for properties in conservation areas. Meet planning requirements while improving insulation and reducing noise. Free surveys across London conservation areas."
+        description="Specialist secondary glazing for properties in conservation areas. Meet planning requirements while improving insulation and reducing noise."
         canonicalPath="/conservation-areas-secondary-glazing"
         keywords={[
           "conservation area secondary glazing",

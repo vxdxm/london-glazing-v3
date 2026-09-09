@@ -95,7 +95,7 @@ const CondensationMouldPreventionGuide = () => {
     <>
       <EnhancedSEO
         title="How to Stop Window Condensation & Mould on Sash Windows | London Guide"
-        description="Expert guide to eliminating condensation and black mould on period sash windows. Learn how secondary glazing achieves 99% condensation reduction in London heritage homes."
+        description="Expert guide to eliminating condensation and black mould on period sash windows."
         canonicalPath="/blog/condensation-mould-prevention-guide"
         type="article"
         keywords={[

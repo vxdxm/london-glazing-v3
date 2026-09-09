@@ -50,7 +50,7 @@ const LiftOutSEO = () => {
       <title>Lift-Out Secondary Glazing London | Seasonal Flexibility £300-£500 | Removable Panels</title>
       <meta 
         name="description" 
-        content="Lift-out secondary glazing offers seasonal flexibility at £300-£500 per window. Install in winter for 50-60% heat savings, remove in summer. Perfect for rentals and listed building trials. Free consultation." 
+        content="Lift-out secondary glazing offers seasonal flexibility at £300-£500 per window. Install in winter for 50-60% heat savings, remove in summer." 
       />
       <meta 
         name="keywords" 

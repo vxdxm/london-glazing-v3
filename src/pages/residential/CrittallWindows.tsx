@@ -20,7 +20,7 @@ import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
 const CrittallWindows = () => {
   const pageMetadata = {
     title: "Secondary Glazing for Crittall Windows | Heritage Window Solutions London",
-    description: "Preserve your iconic Crittall grids while achieving 50-65% energy reduction and avoiding £12,000-£18,000 replacement costs. Listed building approved. 70-80% noise reduction.",
+    description: "Preserve your iconic Crittall grids while achieving 50-65% energy reduction and avoiding £12,000-£18,000 replacement costs. Listed building approved.",
     canonicalPath: "/residential/crittall-windows",
     imageUrl: "/lovable-uploads/5592528a-f976-44e2-a6af-e79c4a3c3f18.png",
     keywords: ["crittall windows", "secondary glazing", "art deco windows", "heritage windows", "listed building", "W20 crittall", "W40 crittall", "noise reduction", "energy efficiency", "condensation", "London"]

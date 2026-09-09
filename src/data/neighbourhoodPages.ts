@@ -30,7 +30,7 @@ export const neighbourhoodPages: NeighbourhoodData[] = [
     postcodes: "W1J, W1K, W1S",
     metaTitle: "Secondary Glazing Mayfair W1 | Listed & Georgian Specialists",
     metaDescription:
-      "Discreet, planning-approved secondary glazing for Mayfair's Grade II listed Georgian townhouses, embassies and luxury retail. 45–54dB noise reduction, Westminster LPA compliant.",
+      "Discreet, planning-approved secondary glazing for Mayfair's Grade II listed Georgian townhouses, embassies and luxury retail.",
     h1: "Secondary Glazing in Mayfair",
     intro:
       "Mayfair sits inside the Mayfair Conservation Area and holds one of the highest densities of Grade II listed Georgian and early Victorian townhouses in Central London. Traffic noise from Park Lane, Piccadilly and Berkeley Square, combined with heritage constraints on external window replacement, makes reversible secondary glazing the compliant route to modern acoustic and thermal performance.",
@@ -83,7 +83,7 @@ export const neighbourhoodPages: NeighbourhoodData[] = [
     postcodes: "W1G, W1H, W1U, NW1",
     metaTitle: "Secondary Glazing Marylebone W1 | Harley Street & Georgian Homes",
     metaDescription:
-      "Secondary glazing for Marylebone's Harley Street clinics, Georgian townhouses and mansion blocks. Discreet acoustic and thermal upgrades approved by Westminster LPA.",
+      "Secondary glazing for Marylebone's Harley Street clinics, Georgian townhouses and mansion blocks.",
     h1: "Secondary Glazing in Marylebone",
     intro:
       "Marylebone combines dense Georgian and Victorian residential fabric with the Harley Street medical quarter. Marylebone High Street, Baker Street and Marylebone Road generate sustained road noise, and much of the area sits inside the Harley Street or East Marylebone conservation areas where original window fabric must be retained.",
@@ -243,7 +243,7 @@ export const neighbourhoodPages: NeighbourhoodData[] = [
     postcodes: "SW1V, SW1P",
     metaTitle: "Secondary Glazing Pimlico SW1 | Regency Terraces & Riverside",
     metaDescription:
-      "Secondary glazing for Pimlico's Regency stucco terraces, Dolphin Square mansion flats and Millbank riverside properties. Westminster LPA compliant, planning-approved.",
+      "Secondary glazing for Pimlico's Regency stucco terraces, Dolphin Square mansion flats and Millbank riverside properties.",
     h1: "Secondary Glazing in Pimlico",
     intro:
       "Pimlico's Cubitt-planned Regency stucco squares and terraces are among Westminster's most intact 19th-century streetscapes. Nearly the entire area sits inside the Pimlico Conservation Area, with concentrated listing around Warwick Square, Eccleston Square and St George's Square.",
@@ -296,7 +296,7 @@ export const neighbourhoodPages: NeighbourhoodData[] = [
     postcodes: "SW6, SW10",
     metaTitle: "Secondary Glazing Fulham SW6 | Victorian Terraces & Family Homes",
     metaDescription:
-      "Acoustic and thermal secondary glazing for Fulham's Victorian and Edwardian terraces. Hammersmith & Fulham LPA compliant. Save on energy bills and reduce road noise.",
+      "Acoustic and thermal secondary glazing for Fulham's Victorian and Edwardian terraces. Hammersmith & Fulham LPA compliant.",
     h1: "Secondary Glazing in Fulham",
     intro:
       "Fulham's grid of late Victorian and Edwardian terraces stretches from Parsons Green to Fulham Palace Road. Family houses on Wandsworth Bridge Road, Fulham Palace Road and New King's Road face heavy through-traffic, while properties near Stamford Bridge experience concentrated match-day noise.",
@@ -349,7 +349,7 @@ export const neighbourhoodPages: NeighbourhoodData[] = [
     postcodes: "SW19, SW20",
     metaTitle: "Secondary Glazing Wimbledon SW19 | Village Conservation & Family Homes",
     metaDescription:
-      "Heritage secondary glazing for Wimbledon Village conservation properties and Victorian family homes across SW19. Merton LPA-approved, acoustic and thermal upgrades.",
+      "Heritage secondary glazing for Wimbledon Village conservation properties and Victorian family homes across SW19.",
     h1: "Secondary Glazing in Wimbledon",
     intro:
       "Wimbledon combines the Wimbledon Village Conservation Area — with its Georgian and early Victorian High Street properties — with dense Victorian and Edwardian family-home stock around the Common, Merton Park and South Park Gardens. Aircraft noise from the Heathrow corridor and A3 traffic are the two dominant acoustic factors.",

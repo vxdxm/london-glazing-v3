@@ -20,7 +20,7 @@ import { TraditionalCTA } from "@/components/residential/traditional/Traditional
 const TraditionalOptions = () => {
   const pageMetadata = {
     title: "Traditional Secondary Glazing for Heritage Properties | London Specialists",
-    description: "Traditional secondary glazing for London's period properties. Heritage-approved solutions with authentic operating styles, period materials, and conservation-friendly aesthetics. £400-£900 per window.",
+    description: "Traditional secondary glazing for London's period properties.",
     canonicalPath: "/residential/traditional-options",
     imageUrl: "/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
     type: "article" as const,

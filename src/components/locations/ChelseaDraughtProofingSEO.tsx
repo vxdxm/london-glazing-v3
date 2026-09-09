@@ -3,7 +3,7 @@ import { SEOMonster } from '@/components/seo/SEOMonster';
 
 export function ChelseaDraughtProofingSEO() {
   const title = "Draught Proofing Period Windows Chelsea | Secondary Glazing Specialist";
-  const description = "Eliminate draughts in your Chelsea period property with specialist secondary glazing. Preserve Georgian & Victorian windows while achieving 95% air infiltration reduction.";
+  const description = "Eliminate draughts in your Chelsea period property with specialist secondary glazing.";
   
   const keywords = [
     "chelsea draught proofing",

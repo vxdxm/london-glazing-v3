@@ -74,7 +74,7 @@ const ListedBuildingsSecondaryGlazing = () => {
 
       <EnhancedSEO
         title="Listed Buildings Secondary Glazing | Expert Heritage Solutions London"
-        description="Specialist secondary glazing for Grade I, II*, and II listed buildings. Preserve character, meet conservation requirements, and improve insulation. Free heritage property surveys across London."
+        description="Specialist secondary glazing for Grade I, II*, and II listed buildings. Preserve character, meet conservation requirements, and improve insulation."
         canonicalPath="/listed-buildings-secondary-glazing"
         keywords={[
           "listed building secondary glazing",

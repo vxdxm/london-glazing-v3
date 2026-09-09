@@ -7,7 +7,7 @@ export const EnergyPerformanceSEO = () => {
       <title>Energy Performance & Secondary Glazing | Improve Your Home's Efficiency</title>
       <meta 
         name="description" 
-        content="Boost your home's energy performance with secondary glazing. Calculate your potential savings from improved insulation and reduced heat loss - up to 60% more efficient." 
+        content="Boost your home's energy performance with secondary glazing." 
       />
       <meta 
         name="keywords" 
@@ -16,7 +16,7 @@ export const EnergyPerformanceSEO = () => {
       <meta property="og:title" content="Energy Performance & Secondary Glazing | Improve Your Home's Efficiency" />
       <meta 
         property="og:description" 
-        content="Boost your home's energy performance with secondary glazing. Calculate your potential savings from improved insulation and reduced heat loss - up to 60% more efficient." 
+        content="Boost your home's energy performance with secondary glazing." 
       />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/energy-performance" />

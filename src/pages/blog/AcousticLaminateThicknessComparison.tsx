@@ -35,7 +35,7 @@ const AcousticLaminateThicknessComparison = () => {
     <>
       <EnhancedSEO
         title="10.8mm vs 6.4mm Laminated Glass: Performance Data"
-        description="Full performance comparison of 6.4mm laminated, 6.8mm acoustic and 10.8mm Stadip Silence glass — Rw and Ctr values, frequency response, weight loads, U-values and safety classification."
+        description="Full performance comparison of 6.4mm laminated, 6.8mm acoustic and 10.8mm Stadip Silence glass — Rw and Ctr values, frequency response, weight loads."
         canonicalPath={`/blog/${SLUG}`}
         type="article"
         keywords={[

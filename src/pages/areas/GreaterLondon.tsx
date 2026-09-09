@@ -43,7 +43,7 @@ const GreaterLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing Greater London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services across Greater London. Complete coverage of all 32 London boroughs with specialist installations for residential and commercial properties." />
+        <meta name="description" content="Professional secondary glazing services across Greater London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/greater-london" />
         <meta name="keywords" content="secondary glazing Greater London, double glazing London boroughs, window insulation M25, soundproof windows outer London, heritage glazing suburbs" />
       </Helmet>

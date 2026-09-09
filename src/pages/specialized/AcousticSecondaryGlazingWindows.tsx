@@ -10,7 +10,7 @@ const AcousticSecondaryGlazingWindows = () => {
         <title>Acoustic Secondary Glazing Windows London | Expert Sound Insulation</title>
         <meta 
           name="description" 
-          content="Discover our premium acoustic secondary glazing windows in London. Superior sound insulation with up to 48dB noise reduction. Expert installation and consultation available." 
+          content="Discover our premium acoustic secondary glazing windows in London. Superior sound insulation with up to 48dB noise reduction." 
         />
         <meta 
           name="keywords" 

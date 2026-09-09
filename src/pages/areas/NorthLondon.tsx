@@ -42,7 +42,7 @@ const NorthLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing North London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in North London. Specialist installations for Victorian and Edwardian properties in Hampstead, Highgate, Muswell Hill, Barnet and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in North London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/north-london" />
         <meta name="keywords" content="secondary glazing North London, double glazing Hampstead, window insulation Highgate, soundproof windows Muswell Hill, heritage glazing Barnet" />
       </Helmet>

@@ -8,7 +8,7 @@ const QuoteRequestSEO = () => {
       <title>Free Secondary Glazing Quote Request | London Specialists</title>
       <meta 
         name="description" 
-        content="Request your free, no-obligation secondary glazing quote from London's specialists. Enhance thermal efficiency and reduce noise with our bespoke window solutions." 
+        content="Request your free, no-obligation secondary glazing quote from London's specialists." 
       />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/quote-request" />
@@ -17,7 +17,7 @@ const QuoteRequestSEO = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/quote-request" />
       <meta property="og:title" content="Free Secondary Glazing Quote Request | London Specialists" />
-      <meta property="og:description" content="Request your free, no-obligation secondary glazing quote from London's specialists. Enhance thermal efficiency and reduce noise with our bespoke window solutions." />
+      <meta property="og:description" content="Request your free, no-obligation secondary glazing quote from London's specialists." />
       <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -26,7 +26,7 @@ const QuoteRequestSEO = () => {
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://secondaryglazingspecialist.com/quote-request" />
       <meta property="twitter:title" content="Free Secondary Glazing Quote Request | London Specialists" />
-      <meta property="twitter:description" content="Request your free, no-obligation secondary glazing quote from London's specialists. Enhance thermal efficiency and reduce noise with our bespoke window solutions." />
+      <meta property="twitter:description" content="Request your free, no-obligation secondary glazing quote from London's specialists." />
       <meta property="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg" />
       
       {/* Structured Data */}
@@ -35,7 +35,7 @@ const QuoteRequestSEO = () => {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "headline": "Free Secondary Glazing Quote Request",
-          "description": "Request your free, no-obligation secondary glazing quote from London's specialists. Enhance thermal efficiency and reduce noise with our bespoke window solutions.",
+          "description": "Request your free, no-obligation secondary glazing quote from London's specialists.",
           "url": "https://secondaryglazingspecialist.com/quote-request",
           "image": "https://secondaryglazingspecialist.com/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
           "author": {

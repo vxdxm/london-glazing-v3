@@ -5,7 +5,7 @@ import { createFAQSchema } from "@/utils/faq-schema";
 export const HealthcareSEO = () => {
   const pageMetadata = {
     title: "Healthcare Secondary Glazing Solutions | NHS & Hospital Windows London",
-    description: "Specialized secondary glazing for healthcare facilities. CQC compliant solutions with 80% noise reduction, 50% energy savings for NHS hospitals, care homes, and private clinics across London.",
+    description: "Specialized secondary glazing for healthcare facilities.",
     canonicalPath: "/commercial/healthcare-industry",
     imageUrl: "/images/commercial/healthcare-hospital-ward.webp",
     type: "website" as const,

@@ -16,7 +16,7 @@ const VirginiaWater = () => {
         <title>Secondary Glazing Virginia Water | Wentworth Estate Specialists</title>
         <meta 
           name="description" 
-          content="Premium secondary glazing for Virginia Water's luxury properties. Wentworth Estate specialists. Noise reduction, thermal efficiency & security for exclusive homes." 
+          content="Premium secondary glazing for Virginia Water's luxury properties. Wentworth Estate specialists." 
         />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/virginia-water" />
       </Helmet>

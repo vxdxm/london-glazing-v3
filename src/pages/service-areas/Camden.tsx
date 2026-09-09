@@ -82,7 +82,7 @@ const Camden = () => {
         <title>Camden Secondary Glazing | Heritage Property Specialists</title>
         <meta 
           name="description" 
-          content="Expert secondary glazing for Camden's listed buildings, conservation areas, and period properties. Specialists in Bloomsbury, Hampstead, Kentish Town. Free surveys."
+          content="Expert secondary glazing for Camden's listed buildings, conservation areas, and period properties. Specialists in Bloomsbury, Hampstead, Kentish Town."
         />
         <meta 
           name="keywords" 

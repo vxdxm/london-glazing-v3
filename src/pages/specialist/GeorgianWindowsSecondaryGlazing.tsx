@@ -62,7 +62,7 @@ const GeorgianWindowsSecondaryGlazing = () => {
       />
       <EnhancedSEO
         title="Georgian Windows Secondary Glazing | Period-Appropriate Solutions"
-        description="Specialist secondary glazing for Georgian windows in London. Preserve original 6-over-6 and 12-pane sash windows while improving insulation. Heritage-sensitive installation."
+        description="Specialist secondary glazing for Georgian windows in London. Preserve original 6-over-6 and 12-pane sash windows while improving insulation."
         canonicalPath="/georgian-windows-secondary-glazing"
         keywords={[
           "Georgian windows secondary glazing",

@@ -8,7 +8,7 @@ import { createPageSchema } from "@/utils/seo";
 const DoubleGlazedUnits = () => {
   const pageMetadata = {
     title: "Double Glazed Secondary Glazing Units London | Enhanced Thermal & Acoustic Performance",
-    description: "Discover our premium double glazed secondary glazing units in London. Superior thermal insulation and noise reduction with two separate air gaps. Expert installation guaranteed.",
+    description: "Discover our premium double glazed secondary glazing units in London. Superior thermal insulation and noise reduction with two separate air gaps.",
     canonicalPath: "/specialized/double-glazed-units",
     imageUrl: "/lovable-uploads/23b3d2e8-2c4b-4efd-8548-2c2bb6cd5bbf.png",
     type: "article" as const,

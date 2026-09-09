@@ -14,7 +14,7 @@ const KensingtonChelseaArea = () => {
     <>
       <EnhancedSEO
         title="Specialist Secondary Glazing for Kensington & Chelsea Heritage Homes"
-        description="Conservation-approved secondary glazing for Kensington & Chelsea listed buildings, stucco terraces, and Victorian sash windows. 80% noise reduction, 60% heat loss improvement. Free survey."
+        description="Conservation-approved secondary glazing for Kensington & Chelsea listed buildings, stucco terraces, and Victorian sash windows."
         canonicalPath="/areas/kensington-chelsea"
         type="website"
         keywords={[

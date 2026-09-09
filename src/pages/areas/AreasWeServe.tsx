@@ -28,7 +28,7 @@ const AreasWeServe = () => {
     <>
       <EnhancedSEO
         title="Areas We Serve | Secondary Glazing Across London Boroughs"
-        description="Expert secondary glazing installation across all London boroughs. Find your local specialist for heritage homes, listed buildings, and conservation areas in Kensington, Westminster, Camden & more."
+        description="Expert secondary glazing installation across all London boroughs."
         canonicalPath="/areas-we-serve"
         type="website"
         keywords={[

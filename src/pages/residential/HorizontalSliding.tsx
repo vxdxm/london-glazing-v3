@@ -21,7 +21,7 @@ import { HorizontalSlidingIcon } from "@/components/icons/GlazingTypeIcons";
 const HorizontalSliding = () => {
   const pageMetadata = {
     title: "Horizontal Sliding Secondary Glazing London | Wide Windows & Modern Properties",
-    description: "Horizontal sliding secondary glazing for wide windows 2-5m+. 50-65% energy reduction, 70-80% noise reduction. Smooth gliding operation ideal for modern properties and large glass areas.",
+    description: "Horizontal sliding secondary glazing for wide windows 2-5m+. 50-65% energy reduction, 70-80% noise reduction.",
     canonicalPath: "/residential/horizontal-sliding",
     imageUrl: "/lovable-uploads/9ff3e6d6-15f4-4553-8354-cd715631af50.png",
     keywords: ["horizontal sliding secondary glazing", "wide window glazing", "multi-track glazing", "modern secondary glazing", "panoramic window glazing", "patio door secondary glazing"]

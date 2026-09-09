@@ -6,7 +6,7 @@ import { createPageSchema } from "@/utils/seo";
 const OfficeSEO = () => {
   const pageMetadata = {
     title: "Secondary Glazing for Office Buildings London | 70-80% Noise Reduction",
-    description: "Transform your London office with professional secondary glazing. 70-80% noise reduction, 30-50% energy savings, minimal disruption. Trusted by City, Canary Wharf & West End firms.",
+    description: "Transform your London office with professional secondary glazing. 70-80% noise reduction, 30-50% energy savings, minimal disruption.",
     canonicalPath: "/commercial/office-buildings",
     imageUrl: "/lovable-uploads/9161feeb-12cc-4a83-adf6-9c9cc52dc4aa.png",
     type: "website" as const,

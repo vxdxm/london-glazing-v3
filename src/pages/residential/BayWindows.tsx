@@ -20,7 +20,7 @@ import { HingedPanelIcon } from "@/components/icons/GlazingTypeIcons";
 const BayWindows = () => {
   const pageMetadata = {
     title: "Bay Window Secondary Glazing London | Victorian & Edwardian Bays",
-    description: "Transform cold, draughty bay windows into warm, comfortable spaces. 45-60% heat loss reduction, 70-80% noise reduction. Specialist bay window secondary glazing for Victorian and Edwardian properties across London.",
+    description: "Transform cold, draughty bay windows into warm, comfortable spaces. 45-60% heat loss reduction, 70-80% noise reduction.",
     canonicalPath: "/residential/bay-windows",
     imageUrl: "/lovable-uploads/01ceac78-bd50-418e-9067-b15d13145c5c.png",
     keywords: ["bay window secondary glazing", "Victorian bay windows", "Edwardian bay windows", "box bay glazing", "canted bay windows", "bow window glazing", "heritage bay windows", "London bay window specialists"]

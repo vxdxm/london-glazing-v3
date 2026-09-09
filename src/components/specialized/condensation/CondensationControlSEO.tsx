@@ -8,7 +8,7 @@ export const CondensationControlSEO = () => {
       <title>Condensation Control Secondary Glazing | Window Moisture Solutions</title>
       <meta 
         name="description" 
-        content="Expert condensation control solutions through secondary glazing. Prevent moisture buildup, mold growth and protect your windows with our specialized installations." 
+        content="Expert condensation control solutions through secondary glazing." 
       />
       <meta 
         name="keywords" 
@@ -36,7 +36,7 @@ export const CondensationControlSEO = () => {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "headline": "Condensation Control Secondary Glazing Solutions",
-          "description": "Expert condensation control solutions through secondary glazing. Prevent moisture buildup, mold growth and protect your windows with our specialized installations.",
+          "description": "Expert condensation control solutions through secondary glazing.",
           "image": "/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png",
           "url": "https://secondaryglazingspecialist.com/specialized/condensation-control",
           "speakable": {

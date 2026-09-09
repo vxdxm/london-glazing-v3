@@ -32,7 +32,7 @@ export default function SecondaryVsDoubleGlazing() {
     <>
       <Helmet>
         <title>Secondary Glazing vs Double Glazing for Listed Buildings | Complete Guide</title>
-        <meta name="description" content="Compare secondary glazing vs double glazing for listed buildings. Learn why secondary glazing offers superior noise reduction, no planning permission, and 80% cost savings." />
+        <meta name="description" content="Compare secondary glazing vs double glazing for listed buildings." />
         <meta name="keywords" content="secondary glazing vs double glazing, listed building windows, conservation area glazing, heritage windows, noise reduction glazing" />
         <link rel="canonical" href="https://secondarydoubleglazing.co.uk/guides/secondary-vs-double-glazing" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

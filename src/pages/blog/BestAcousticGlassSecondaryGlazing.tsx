@@ -39,7 +39,7 @@ const BestAcousticGlassSecondaryGlazing = () => {
     <>
       <EnhancedSEO
         title="How to Choose the Best Acoustic Glass for Secondary Glazing"
-        description="Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing. Learn which glass stops traffic noise, how air gaps affect performance, and what suits listed buildings."
+        description="Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing."
         canonicalPath={`/blog/${SLUG}`}
         type="article"
         keywords={[

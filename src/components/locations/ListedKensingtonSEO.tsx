@@ -9,7 +9,7 @@ const ListedKensingtonSEO = () => {
       <title>Listed Building Secondary Glazing Kensington | Conservation Approved</title>
       <meta 
         name="description" 
-        content="Conservation-approved secondary glazing for listed buildings in Kensington. Discreet, reversible designs meeting heritage requirements. Expert planning support included." 
+        content="Conservation-approved secondary glazing for listed buildings in Kensington. Discreet, reversible designs meeting heritage requirements." 
       />
       <meta 
         name="keywords" 

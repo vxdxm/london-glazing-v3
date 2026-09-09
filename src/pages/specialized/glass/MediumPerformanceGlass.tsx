@@ -10,7 +10,7 @@ const MediumPerformanceGlass = () => {
   const navigate = useNavigate();
   const pageMetadata = {
     title: "8.8mm Medium Performance Acoustic Glass | Rw 38dB | Stadip Silence",
-    description: "8.8mm acoustic laminated glass — Rw 38dB single-pane, up to Rw 50dB combined with secondary glazing. The most-specified mid-tier product for urban residential briefs across London.",
+    description: "8.8mm acoustic laminated glass — Rw 38dB single-pane, up to Rw 50dB combined with secondary glazing.",
     canonicalPath: "/specialized/glass/medium-performance-glass",
     imageUrl: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     type: "product" as const,

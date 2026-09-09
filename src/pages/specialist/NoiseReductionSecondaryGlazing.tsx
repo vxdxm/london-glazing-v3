@@ -61,7 +61,7 @@ const NoiseReductionSecondaryGlazing = () => {
       />
       <EnhancedSEO
         title="Noise Reduction Secondary Glazing | Block 80% External Noise"
-        description="Reduce external noise by up to 80% with our acoustic secondary glazing. Ideal for properties near roads, railways, and flight paths. Expert installation across London."
+        description="Reduce external noise by up to 80% with our acoustic secondary glazing. Ideal for properties near roads, railways, and flight paths."
         canonicalPath="/noise-reduction-secondary-glazing"
         keywords={[
           "noise reduction secondary glazing",

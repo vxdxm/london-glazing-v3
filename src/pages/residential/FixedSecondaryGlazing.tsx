@@ -19,7 +19,7 @@ import { FixedCTA } from "@/components/residential/fixed/FixedCTA";
 const FixedSecondaryGlazing = () => {
   const pageMetadata = {
     title: "Fixed Secondary Glazing | Maximum Performance, Lowest Cost | London",
-    description: "Fixed secondary glazing offers maximum thermal (60-70% heat reduction) and acoustic performance (75-85% noise reduction) at the lowest cost from £250-£550 per window. Perfect for never-opened windows and extreme noise environments.",
+    description: "Fixed secondary glazing offers maximum thermal (60-70% heat reduction) and acoustic performance (75-85% noise reduction) at the lowest cost from £250-£550.",
     canonicalPath: "/residential/fixed-secondary-glazing",
     imageUrl: "/lovable-uploads/79704a01-b2d6-4a7a-bafa-92ca6af81c70.png",
     type: "article" as const,

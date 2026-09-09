@@ -58,7 +58,7 @@ const ThermalInsulationSecondaryGlazing = () => {
       />
       <EnhancedSEO
         title="Thermal Insulation Secondary Glazing | Reduce Heat Loss by 75%"
-        description="Cut heat loss through windows by up to 75% with our thermal secondary glazing. Lower energy bills, eliminate cold spots, and improve your home's EPC rating. London specialists."
+        description="Cut heat loss through windows by up to 75% with our thermal secondary glazing. Lower energy bills, eliminate cold spots, and improve your home's EPC rating."
         canonicalPath="/thermal-insulation-secondary-glazing"
         keywords={[
           "thermal insulation secondary glazing",

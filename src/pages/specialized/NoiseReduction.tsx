@@ -42,7 +42,7 @@ const NoiseReduction = () => {
     <div className="min-h-screen bg-background">
       <StandardSEO
         title="Noise Reduction Secondary Glazing | Acoustic Solutions London"
-        description="Our noise reduction secondary glazing solutions offer exceptional sound insulation with various glass configurations. Reduce external noise by up to 80% with our expert installations."
+        description="Our noise reduction secondary glazing solutions offer exceptional sound insulation with various glass configurations."
         canonicalPath="/specialized/noise-reduction"
         imageUrl="/lovable-uploads/6ec1e201-5107-4f52-bb73-2cb26d88efa8.jpg"
         type="article"

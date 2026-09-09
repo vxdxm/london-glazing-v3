@@ -42,7 +42,7 @@ const EastLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing East London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in East London. Specialist installations for Victorian terraces and period properties in Hackney, Tower Hamlets, Walthamstow and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in East London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/east-london" />
         <meta name="keywords" content="secondary glazing East London, double glazing Hackney, window insulation Tower Hamlets, soundproof windows Walthamstow, heritage glazing Bow" />
       </Helmet>

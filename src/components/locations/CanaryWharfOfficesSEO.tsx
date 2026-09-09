@@ -7,7 +7,7 @@ export const CanaryWharfOfficesSEO = () => {
       <title>Noise Reduction Secondary Glazing for Canary Wharf Offices | Commercial Acoustic Solutions</title>
       <meta 
         name="description" 
-        content="Transform your Canary Wharf office with professional acoustic secondary glazing. Reduce noise by up to 50dB, improve productivity, and create quieter working environments. Commercial installations available."
+        content="Transform your Canary Wharf office with professional acoustic secondary glazing."
       />
       <meta 
         name="keywords" 

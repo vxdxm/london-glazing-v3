@@ -12,7 +12,7 @@ import { createPageSchema } from "@/utils/seo";
 const CondensationControl = () => {
   const pageMetadata = {
     title: "Condensation Control Secondary Glazing | Window Moisture Solutions",
-    description: "Expert condensation control solutions through secondary glazing. Prevent moisture buildup, mold growth and protect your windows with our specialized installations.",
+    description: "Expert condensation control solutions through secondary glazing.",
     canonicalPath: "/specialized/condensation-control",
     imageUrl: "/lovable-uploads/421bc849-0e6d-479e-a002-22fe336f654a.png",
     type: "article" as const,

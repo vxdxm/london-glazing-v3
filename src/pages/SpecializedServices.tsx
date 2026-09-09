@@ -11,7 +11,7 @@ import { createPageSchema } from "@/utils/seo";
 const SpecializedServices = () => {
   const pageMetadata = {
     title: "Specialized Secondary Glazing Services | Acoustic & Thermal Solutions",
-    description: "Expert specialized secondary glazing services including acoustic glazing, thermal insulation, and security solutions. Professional installation for specific requirements.",
+    description: "Expert specialized secondary glazing services including acoustic glazing, thermal insulation, and security solutions.",
     canonicalPath: "/specialized",
     imageUrl: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     type: "website" as const,

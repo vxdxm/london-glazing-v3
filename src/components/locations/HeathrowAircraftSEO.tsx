@@ -7,7 +7,7 @@ export const HeathrowAircraftSEO = () => {
       <title>Aircraft Noise Reduction Secondary Glazing Near Heathrow | Hounslow Acoustic Solutions</title>
       <meta 
         name="description" 
-        content="Specialized secondary glazing for aircraft noise reduction near Heathrow Airport. Reduce jet noise by up to 50dB in Hounslow, Feltham, and surrounding areas. Expert acoustic glazing installations."
+        content="Specialized secondary glazing for aircraft noise reduction near Heathrow Airport. Reduce jet noise by up to 50dB in Hounslow, Feltham, and surrounding areas."
       />
       <meta 
         name="keywords" 

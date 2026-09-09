@@ -6,7 +6,7 @@ import { createPageSchema } from "@/utils/seo";
 const HospitalitySEO = () => {
   const pageMetadata = {
     title: "Hospitality Secondary Glazing London | Hotels & Restaurant Solutions",
-    description: "Transform your London hospitality venue with premium secondary glazing. Up to 80% noise reduction, 50% energy savings. Trusted by boutique hotels and fine dining across Mayfair, Westminster, Bloomsbury.",
+    description: "Transform your London hospitality venue with premium secondary glazing. Up to 80% noise reduction, 50% energy savings.",
     canonicalPath: "/commercial/hospitality-sector",
     imageUrl: "https://cdn.marblism.com/ZJ5jnl5eN8z.webp",
     type: "website" as const,

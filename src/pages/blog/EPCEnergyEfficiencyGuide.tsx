@@ -111,7 +111,7 @@ const EPCEnergyEfficiencyGuide = () => {
     <>
       <EnhancedSEO
         title="Secondary Glazing Energy Efficiency: Cut Heating Bills 15-30% | EPC Guide London"
-        description="How secondary glazing cuts heating bills by 15-30% and boosts EPC ratings for London properties. Essential guide for homeowners and landlords facing MEES regulations."
+        description="How secondary glazing cuts heating bills by 15-30% and boosts EPC ratings for London properties."
         canonicalPath="/blog/epc-energy-efficiency-guide"
         type="article"
         keywords={[

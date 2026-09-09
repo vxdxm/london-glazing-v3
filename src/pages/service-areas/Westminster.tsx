@@ -78,7 +78,7 @@ const Westminster = () => {
         <title>Secondary Glazing Westminster | Heritage Window Specialists London</title>
         <meta 
           name="description" 
-          content="Expert secondary glazing for Westminster's listed buildings and conservation areas. Solutions for Georgian, Victorian and Edwardian properties. Free heritage surveys."
+          content="Expert secondary glazing for Westminster's listed buildings and conservation areas. Solutions for Georgian, Victorian and Edwardian properties."
         />
         <meta 
           name="keywords" 

@@ -81,7 +81,7 @@ const KensingtonChelsea = () => {
 
       <EnhancedSEO
         title="Secondary Glazing Kensington & Chelsea | Listed Buildings & Conservation Areas"
-        description="Expert secondary glazing for listed buildings and conservation areas in Kensington, Chelsea, Knightsbridge, South Kensington, and Notting Hill. Free heritage property surveys."
+        description="Expert secondary glazing for listed buildings and conservation areas in Kensington, Chelsea, Knightsbridge, South Kensington, and Notting Hill."
         canonicalPath="/service-areas/kensington-chelsea"
         keywords={[
           "secondary glazing Kensington",

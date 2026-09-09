@@ -129,7 +129,7 @@ const ListedBuildingSecondaryGlazingGuide = () => {
     <>
       <EnhancedSEO
         title="Secondary Glazing for Listed Buildings: The Complete Heritage Guide | London Specialist"
-        description="Conservation-approved secondary glazing for Grade I & II listed buildings in London. Fully reversible, no planning permission usually needed. Expert guide to heritage window solutions."
+        description="Conservation-approved secondary glazing for Grade I & II listed buildings in London. Fully reversible, no planning permission usually needed."
         canonicalPath="/blog/listed-building-secondary-glazing-guide"
         type="article"
         keywords={[

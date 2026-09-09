@@ -13,7 +13,7 @@ const CasementTraditionalOptions = () => {
     <div className="min-h-screen bg-background">
       <SEOHelmet
         title="Traditional Casement Window Secondary Glazing | Heritage Spec"
-        description="Heritage-grade secondary glazing for traditional casement windows. Hinged and lift-out units engineered for Grade I/II listed buildings — 35-45dB Rw, U-values to 1.6 W/m²K."
+        description="Heritage-grade secondary glazing for traditional casement windows."
         canonicalPath="/residential/casement-windows/traditional-options"
       />
       

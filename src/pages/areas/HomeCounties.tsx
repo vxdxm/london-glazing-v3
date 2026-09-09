@@ -45,7 +45,7 @@ const HomeCounties = () => {
       />
       <Helmet>
         <title>Secondary Glazing Home Counties | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services across the Home Counties. Specialist installations for country houses and period properties in Surrey, Kent, Essex, Hertfordshire and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services across the Home Counties." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/home-counties" />
         <meta name="keywords" content="secondary glazing Home Counties, double glazing Surrey, window insulation Kent, soundproof windows Essex, heritage glazing Hertfordshire" />
       </Helmet>

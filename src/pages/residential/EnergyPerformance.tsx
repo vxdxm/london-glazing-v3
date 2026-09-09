@@ -15,7 +15,7 @@ const EnergyPerformance = () => {
   // Define page metadata
   const pageMetadata = {
     title: "Energy Performance & Secondary Glazing | Improve Your Home's Efficiency",
-    description: "Boost your home's energy performance with secondary glazing. Calculate your potential savings from improved insulation and reduced heat loss - up to 60% more efficient.",
+    description: "Boost your home's energy performance with secondary glazing.",
     canonicalPath: "/residential/energy-performance",
     imageUrl: "/lovable-uploads/580ad3ed-9e6a-4a69-81ad-2a84b36a0150.jpg",
     type: "article" as const,

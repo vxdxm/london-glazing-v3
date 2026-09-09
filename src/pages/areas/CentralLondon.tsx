@@ -45,7 +45,7 @@ const CentralLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing Central London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in Central London. Specialist installations for listed buildings, conservation areas, and period properties in Westminster, Camden, Islington and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in Central London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/central-london" />
         <meta name="keywords" content="secondary glazing Central London, double glazing Westminster, window insulation Camden, soundproof windows Islington, heritage glazing Kensington" />
       </Helmet>

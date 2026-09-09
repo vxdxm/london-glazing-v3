@@ -18,7 +18,7 @@ import CasementCTA from "@/components/residential/casement/CasementCTA";
 const CasementWindows = () => {
   const pageMetadata = {
     title: "Casement Window Secondary Glazing London | 45-60% Energy Savings",
-    description: "Expert casement window secondary glazing for London properties. Reduce energy bills by 45-60%, achieve 70-80% noise reduction. Works with metal, timber & uPVC casements. Free assessment.",
+    description: "Expert casement window secondary glazing for London properties. Reduce energy bills by 45-60%, achieve 70-80% noise reduction.",
     canonicalPath: "/residential/casement-windows",
     imageUrl: "/lovable-uploads/3bfb7e32-d21b-47d7-91e3-f374ca8d25c0.png",
     keywords: [

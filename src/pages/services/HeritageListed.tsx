@@ -25,7 +25,7 @@ const HeritageListed = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Secondary Double Glazing for Listed Buildings | LBC-Compliant</title>
-        <meta name="description" content="Reversible, LBC-compliant secondary double glazing for listed buildings. Historic England-endorsed approach with 54 dB acoustic and 1.6 W/m²K thermal performance." />
+        <meta name="description" content="Reversible, LBC-compliant secondary double glazing for listed buildings." />
         <link rel="canonical" href={CANONICAL} />
         <meta property="og:title" content="Secondary Double Glazing for Listed Buildings" />
         <meta property="og:description" content="Reversible, LBC-compliant secondary double glazing endorsed by Historic England." />

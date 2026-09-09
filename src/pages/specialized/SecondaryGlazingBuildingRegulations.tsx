@@ -16,7 +16,7 @@ const SecondaryGlazingBuildingRegulations = () => {
   
   const pageMetadata = {
     title: "Secondary Glazing Building Regulations | Compliance Guide",
-    description: "Comprehensive guide to UK building regulations for secondary glazing installations. Learn about thermal performance requirements, ventilation standards, and fire safety compliance.",
+    description: "Comprehensive guide to UK building regulations for secondary glazing installations.",
     canonicalPath: "/specialized/secondary-glazing-building-regulations",
     imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/b435a0a1-65cb-4dd3-9596-37ce74c9378e.png",
     type: "article" as const,

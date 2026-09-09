@@ -21,7 +21,7 @@ const ModernSolutions = () => {
   // Define page metadata
   const pageMetadata = {
     title: "Modern Secondary Glazing Solutions for Heritage Properties",
-    description: "Discover how modern secondary glazing techniques can enhance historic properties with improved energy efficiency and noise reduction while preserving architectural integrity.",
+    description: "Discover how modern secondary glazing techniques can enhance historic properties with improved energy efficiency and noise reduction while preserving.",
     canonicalPath: "/residential/modern-solutions",
     imageUrl: "/lovable-uploads/c23f8df7-ca5f-4d5d-913a-5d6c11eae435.jpg",
     type: "article" as const,

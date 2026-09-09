@@ -90,7 +90,7 @@ const Gallery = () => {
     <div className="min-h-screen">
       <IntelligentSEO
         title="Secondary Glazing Gallery | London Installation Examples & Case Studies"
-        description="Browse our extensive gallery of secondary glazing installations across London. Real examples of noise reduction, thermal efficiency, and security enhancement solutions for residential and commercial properties."
+        description="Browse our extensive gallery of secondary glazing installations across London."
         keywords={[
           "secondary glazing gallery",
           "glazing installation examples",

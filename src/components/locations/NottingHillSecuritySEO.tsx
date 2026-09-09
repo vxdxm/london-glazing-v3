@@ -3,7 +3,7 @@ import { SEOMonster } from '@/components/seo/SEOMonster';
 
 export function NottingHillSecuritySEO() {
   const title = "Security Secondary Glazing Ground Floor Flats Notting Hill | Enhanced Protection";
-  const description = "Enhance security for your Notting Hill ground floor flat with specialist secondary glazing. Toughened glass, multi-point locking & elegant design. Free security assessment.";
+  const description = "Enhance security for your Notting Hill ground floor flat with specialist secondary glazing. Toughened glass, multi-point locking & elegant design.";
   
   const keywords = [
     "notting hill security glazing",

@@ -43,7 +43,7 @@ const WestLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing West London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in West London. Specialist installations for prestigious properties in Kensington, Chelsea, Chiswick, Richmond and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in West London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/west-london" />
         <meta name="keywords" content="secondary glazing West London, double glazing Kensington, window insulation Chelsea, soundproof windows Chiswick, heritage glazing Richmond" />
       </Helmet>

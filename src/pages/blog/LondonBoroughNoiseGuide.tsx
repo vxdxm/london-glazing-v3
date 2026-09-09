@@ -13,7 +13,7 @@ const LondonBoroughNoiseGuide = () => {
     <>
       <EnhancedSEO
         title="Secondary Glazing London: Borough-by-Borough Noise Reduction Guide 2026"
-        description="Discover how secondary glazing reduces noise by up to 80% across London boroughs. Expert guide covering Kensington, Islington, Hackney, Clapham, and Heathrow flight paths."
+        description="Discover how secondary glazing reduces noise by up to 80% across London boroughs."
         canonicalPath="/blog/secondary-glazing-london-borough-guide"
         type="article"
         keywords={[
@@ -36,7 +36,7 @@ const LondonBoroughNoiseGuide = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Secondary Glazing London: The Borough-by-Borough Guide to Soundproofing Your Home",
-            "description": "Discover how secondary glazing reduces noise by up to 80% across London boroughs. Expert guide covering Kensington, Islington, Hackney, Clapham, and Heathrow flight paths.",
+            "description": "Discover how secondary glazing reduces noise by up to 80% across London boroughs.",
             "datePublished": "2026-02-16",
             "dateModified": "2026-02-16",
             "author": {

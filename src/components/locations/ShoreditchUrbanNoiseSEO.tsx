@@ -7,7 +7,7 @@ export const ShoreditchUrbanNoiseSEO = () => {
       <title>Soundproofing Windows Urban Noise Shoreditch | Secondary Glazing London</title>
       <meta 
         name="description" 
-        content="Urban noise secondary glazing solutions for Shoreditch properties. Reduce emergency services, traffic, and nightlife noise by up to 40dB. Expert soundproofing for city living in East London."
+        content="Urban noise secondary glazing solutions for Shoreditch properties. Reduce emergency services, traffic, and nightlife noise by up to 40dB."
       />
       <meta 
         name="keywords" 

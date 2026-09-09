@@ -41,7 +41,7 @@ const SouthLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing South London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in South London. Specialist installations for period properties in Greenwich, Dulwich, Blackheath, Wandsworth and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in South London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/south-london" />
         <meta name="keywords" content="secondary glazing South London, double glazing Greenwich, window insulation Dulwich, soundproof windows Wandsworth, heritage glazing Blackheath" />
       </Helmet>
