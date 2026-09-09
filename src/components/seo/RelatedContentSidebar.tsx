@@ -21,12 +21,12 @@ const RelatedContentSidebar = ({
       <div className="border-b border-border bg-secondary/50 px-5 py-3">
         <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">{title}</h3>
       </div>
-      <ul className="divide-y divide-border">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-px bg-border">
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={link.href} className="bg-card">
             <Link
               to={link.href}
-              className="group flex items-center justify-between gap-3 px-5 py-3 transition-colors hover:bg-secondary/60"
+              className="group flex h-full items-center justify-between gap-3 px-4 py-3 transition-colors hover:bg-secondary/60"
             >
               <div className="min-w-0">
                 <span className="block text-sm font-medium text-foreground group-hover:text-primary transition-colors">
@@ -41,6 +41,7 @@ const RelatedContentSidebar = ({
           </li>
         ))}
       </ul>
+
     </aside>
   );
 
