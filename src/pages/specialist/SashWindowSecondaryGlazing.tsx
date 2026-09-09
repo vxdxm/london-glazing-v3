@@ -12,7 +12,7 @@ import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
 import CTASection from "@/components/seo/CTASection";
 import { InlineLink, QuickLinksGrid, residentialGlazingLinks, serviceAreaLinks } from "@/components/seo/InternalLinks";
-import sashTechnicalSketch from "@/assets/sash-secondary-glazing-technical-sketch.webp.asset.json";
+import sashTechnicalSketch from "@/assets/sash-secondary-glazing-technical-drawing.jpg.asset.json";
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
