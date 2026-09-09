@@ -13,6 +13,29 @@ import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
 import CTASection from "@/components/seo/CTASection";
 import { InlineLink, QuickLinksGrid, residentialGlazingLinks, serviceAreaLinks } from "@/components/seo/InternalLinks";
 import sashTechnicalSketch from "@/assets/sash-secondary-glazing-technical-drawing.jpg.asset.json";
+import gallery13 from "@/assets/gallery/secondary_glazing_13.webp.asset.json";
+import gallery16 from "@/assets/gallery/secondary_glazing_16.webp.asset.json";
+import gallery18 from "@/assets/gallery/secondary_glazing_18.webp.asset.json";
+import gallery19 from "@/assets/gallery/secondary_glazing_19.webp.asset.json";
+import gallery20 from "@/assets/gallery/secondary_glazing_20.webp.asset.json";
+import gallery23 from "@/assets/gallery/secondary_glazing_23.webp.asset.json";
+import gallery24 from "@/assets/gallery/secondary_glazing_24.webp.asset.json";
+import gallery26 from "@/assets/gallery/secondary_glazing_26.webp.asset.json";
+import gallery29 from "@/assets/gallery/secondary_glazing_29.webp.asset.json";
+import gallery30 from "@/assets/gallery/secondary_glazing_30.webp.asset.json";
+
+const galleryImages = [
+  { src: gallery13.url, alt: "Curved bay of Georgian sash windows with slimline secondary glazing in a London townhouse" },
+  { src: gallery24.url, alt: "Three timber sash windows fitted with vertical sliding secondary glazing in a bedroom" },
+  { src: gallery23.url, alt: "Tall Georgian sash windows with acoustic secondary glazing overlooking a London street" },
+  { src: gallery26.url, alt: "Period sash windows with discreet secondary glazing sightlines in a bright interior" },
+  { src: gallery19.url, alt: "Hotel bedroom sash windows with acoustic secondary glazing for street noise control" },
+  { src: gallery18.url, alt: "Bay window and balcony door with secondary glazing in a London apartment" },
+  { src: gallery20.url, alt: "Two sash windows with secondary glazing above column radiators in a stucco-fronted flat" },
+  { src: gallery16.url, alt: "Horizontal sliding secondary glazing units fitted to bedroom windows in Chelsea" },
+  { src: gallery29.url, alt: "Office meeting room with secondary glazing fitted to large multi-pane sash windows" },
+  { src: gallery30.url, alt: "Home study with sash windows and secondary glazing reducing high street noise" },
+];
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
@@ -545,6 +568,7 @@ const SashWindowSecondaryGlazing = () => {
             <ul className="flex flex-wrap gap-2">
               {[
                 { id: "why-vertical-sliding", label: "Why vertical sliding" },
+                { id: "gallery", label: "Gallery" },
                 { id: "technical-drawing", label: "Technical drawing" },
                 { id: "unit-types", label: "Unit types" },
                 { id: "glazing-options", label: "Glass options" },
@@ -567,6 +591,38 @@ const SashWindowSecondaryGlazing = () => {
         </div>
       </nav>
 
+      {/* Mini gallery */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 id="gallery" className="scroll-mt-28 text-3xl font-bold text-foreground mb-4">
+              Installed Sash Secondary Glazing: Project Gallery
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Slimline vertical sliding and horizontal sliding units installed to period sash
+              reveals across London residential, hotel and office projects. Sightlines are set to
+              align with existing meeting rails and glazing bars so the primary window remains the
+              dominant visual element.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryImages.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-lg border bg-background"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Technical drawing */}
