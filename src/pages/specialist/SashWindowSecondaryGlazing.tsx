@@ -614,6 +614,33 @@ const SashWindowSecondaryGlazing = () => {
                 </div>
               ))}
             </div>
+
+            <div className="mt-10 rounded-lg border bg-card p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-foreground mb-3">
+                Outer Frame Section Size
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                The outer sub-frame is a 43mm x 43mm section — 43mm in both height and width.
+                This square profile keeps the framing visually slim against the primary sash
+                while giving enough depth to pack, level and seal the unit into an out-of-square
+                reveal. Allow for the 43mm face dimension when checking that the secondary unit
+                will sit clear of existing architrave, shutter boxes and window furniture.
+              </p>
+              <dl className="grid gap-4 sm:grid-cols-3 not-prose">
+                <div className="rounded-md border bg-background p-4">
+                  <dt className="text-sm text-muted-foreground">Frame height</dt>
+                  <dd className="text-xl font-semibold text-foreground">43mm</dd>
+                </div>
+                <div className="rounded-md border bg-background p-4">
+                  <dt className="text-sm text-muted-foreground">Frame width</dt>
+                  <dd className="text-xl font-semibold text-foreground">43mm</dd>
+                </div>
+                <div className="rounded-md border bg-background p-4">
+                  <dt className="text-sm text-muted-foreground">Profile</dt>
+                  <dd className="text-xl font-semibold text-foreground">43 x 43mm square</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </section>
