@@ -567,6 +567,38 @@ const SashWindowSecondaryGlazing = () => {
         </div>
       </nav>
 
+      {/* Mini gallery */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 id="gallery" className="scroll-mt-28 text-3xl font-bold text-foreground mb-4">
+              Installed Sash Secondary Glazing: Project Gallery
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Slimline vertical sliding and horizontal sliding units installed to period sash
+              reveals across London residential, hotel and office projects. Sightlines are set to
+              align with existing meeting rails and glazing bars so the primary window remains the
+              dominant visual element.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {galleryImages.map((image) => (
+                <figure
+                  key={image.src}
+                  className="overflow-hidden rounded-lg border bg-background"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Technical drawing */}
