@@ -610,7 +610,7 @@ const EdwardianPropertySecondaryGlazing = () => {
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   Edwardian windows often incorporate stained glass, leaded lights, and 
                   decorative fanlights that require special consideration when installing 
-                  secondary glazing. Many are protected under <InlineLink href="/listed-buildings-secondary-glazing">listed building</InlineLink> or 
+                  secondary glazing. Many are protected under <InlineLink href="/listed-buildings-secondary-glazing">listed building</InlineLink> or{" "}
                   <InlineLink href="/conservation-areas-secondary-glazing">conservation area</InlineLink> regulations.
                 </p>
 
@@ -726,7 +726,7 @@ const EdwardianPropertySecondaryGlazing = () => {
                   We always use clear glass in the secondary glazing to ensure that the 
                   decorative elements remain the focal point. For enhanced protection, we can 
                   specify UV-filtering glass that prevents fading of coloured glass while 
-                  remaining optically clear. We offer various options including <InlineLink href="/residential/fixed-secondary-glazing">fixed panels</InlineLink>, 
+                  remaining optically clear. We offer various options including <InlineLink href="/residential/fixed-secondary-glazing">fixed panels</InlineLink>,{" "}
                   <InlineLink href="/residential/casement-windows">hinged casements</InlineLink>, and <InlineLink href="/residential/sash-windows">vertical sliding</InlineLink> systems.
                 </p>
 

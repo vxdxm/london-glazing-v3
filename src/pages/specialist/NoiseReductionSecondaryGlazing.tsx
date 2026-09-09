@@ -816,7 +816,7 @@ const NoiseReductionSecondaryGlazing = () => {
                   Heritage Properties and Noise
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Many period properties in noisy areas are in <InlineLink href="/conservation-areas-secondary-glazing">conservation areas</InlineLink> or are 
+                  Many period properties in noisy areas are in <InlineLink href="/conservation-areas-secondary-glazing">conservation areas</InlineLink> or are{" "}
                   <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink> where replacement windows are not permitted. 
                   Secondary glazing provides the only viable solution for noise reduction 
                   while preserving original <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink>, <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink>, 

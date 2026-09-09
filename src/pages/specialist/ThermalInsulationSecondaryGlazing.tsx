@@ -560,7 +560,7 @@ const ThermalInsulationSecondaryGlazing = () => {
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Reduce heat loss through your windows by up to 75% and significantly lower 
               your energy bills. Our thermal secondary glazing creates an insulating 
-              barrier that transforms the comfort and efficiency of your home, ideal for 
+              barrier that transforms the comfort and efficiency of your home, ideal for{" "}
               <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink>, <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink>, and <InlineLink href="/edwardian-property-secondary-glazing">Edwardian</InlineLink> properties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -622,8 +622,8 @@ const ThermalInsulationSecondaryGlazing = () => {
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   Unlike double glazing, which replaces your existing windows, secondary 
                   glazing works with them. This means you can achieve excellent thermal 
-                  performance while retaining original windows in <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink>, 
-                  <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink>, and <InlineLink href="/edwardian-property-secondary-glazing">Edwardian</InlineLink> properties, 
+                  performance while retaining original windows in <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink>,{" "}
+                  <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink>, and <InlineLink href="/edwardian-property-secondary-glazing">Edwardian</InlineLink> properties,{" "}
                   <InlineLink href="/conservation-areas-secondary-glazing">conservation areas</InlineLink>, and <InlineLink href="/listed-buildings-secondary-glazing">listed buildings</InlineLink>.
                 </p>
 
