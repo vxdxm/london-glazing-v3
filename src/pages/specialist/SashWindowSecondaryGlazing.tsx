@@ -724,6 +724,72 @@ const SashWindowSecondaryGlazing = () => {
                 </p>
 
                 <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Planning Permission, Councils and Leasehold Buildings
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Because secondary glazing is fitted entirely inside your property, it sits in a
+                  uniquely favourable position when it comes to approvals. In most cases you can
+                  proceed without any formal consent at all - but the rules differ depending on
+                  whether your home is listed, in a Conservation Area, or held on a lease.
+                </p>
+
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Do I Need Planning Permission?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  For the vast majority of houses and flats, <strong>no planning permission is
+                  required</strong>. Secondary glazing makes no change to the external appearance of
+                  the building, so it falls outside the scope of planning control - even where an
+                  Article 4 Direction has removed permitted development rights for replacement
+                  windows. This makes it the simplest upgrade route for period sash windows in
+                  tightly controlled streets.
+                </p>
+
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Listed Buildings and Conservation Areas</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  If your property is <InlineLink href="/listed-buildings-secondary-glazing">listed</InlineLink>,
+                  you will normally need <strong>Listed Building Consent (LBC)</strong> before any work
+                  affecting its character - although many councils now treat slim, reversible
+                  secondary glazing as a low-risk application that conservation officers routinely
+                  support. In a <InlineLink href="/conservation-areas-secondary-glazing">Conservation Area</InlineLink>,
+                  secondary glazing is usually permitted precisely because the council's concern is
+                  the external street scene, which remains untouched. Where a sash window
+                  replacement would almost certainly be refused, secondary glazing is the
+                  solution officers recommend. Our <InlineLink href="/compliance-hub">Compliance Hub</InlineLink> includes
+                  a borough-by-borough directory of London planning departments and a ready-to-send
+                  pre-application email template you can use to confirm the position with your
+                  local planning authority in writing before committing.
+                </p>
+
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Leasehold Flats and Mansion Blocks</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Leaseholders in London's mansion blocks and converted terraces face an additional
+                  layer of approval: the freeholder or managing agent. Most leases contain
+                  alteration clauses requiring <strong>licence to alter</strong> consent for works
+                  affecting windows - even internal ones. The good news is that secondary glazing
+                  is far easier to get approved than window replacement because it:
+                </p>
+                <ul className="space-y-3 mb-8 not-prose">
+                  <li className="flex items-start gap-3 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span><strong>Does not touch the external facade</strong> - the freeholder's primary concern in blocks with a uniform appearance covenant</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span><strong>Is fully reversible</strong> - units can be removed without trace, satisfying reinstatement clauses</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-muted-foreground">
+                    <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span><strong>Requires no structural work</strong> - no scaffold, no external access, minimal disruption to neighbours</span>
+                  </li>
+                </ul>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  We regularly supply drawings, method statements and product specifications
+                  directly to managing agents to support licence applications, and we can
+                  coordinate installation around building management requirements such as working
+                  hours and insurance certification. If your block is also listed or in a
+                  Conservation Area, we handle the combined consent process as a single package.
+                </p>
+
+                <h2 className="text-3xl font-bold text-foreground mb-6">
                   Installation Process
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
