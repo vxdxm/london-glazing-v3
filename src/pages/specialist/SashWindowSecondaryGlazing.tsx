@@ -541,7 +541,7 @@ const SashWindowSecondaryGlazing = () => {
             {/* Main Content */}
             <div className="lg:col-span-3">
               <div className="prose prose-lg max-w-none">
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="why-vertical-sliding" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Why Choose Vertical Sliding Secondary Glazing?
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -559,7 +559,7 @@ const SashWindowSecondaryGlazing = () => {
                   <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink> properties.
                 </p>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="glazing-options" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Secondary Glazing Options for Sash Windows
                 </h2>
                 
@@ -669,7 +669,7 @@ const SashWindowSecondaryGlazing = () => {
                   </Card>
                 </div>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="performance-benefits" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Performance Benefits
                 </h2>
                 
@@ -705,7 +705,7 @@ const SashWindowSecondaryGlazing = () => {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="sash-window-challenge" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   The Sash Window Challenge
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -723,7 +723,7 @@ const SashWindowSecondaryGlazing = () => {
                   addresses both draughts and <InlineLink href="/thermal-insulation-secondary-glazing">thermal performance</InlineLink>.
                 </p>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="planning-leasehold" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Planning Permission, Councils and Leasehold Buildings
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -789,7 +789,7 @@ const SashWindowSecondaryGlazing = () => {
                   Conservation Area, we handle the combined consent process as a single package.
                 </p>
 
-                <h2 className="text-3xl font-bold text-foreground mb-6">
+                <h2 id="installation-process" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Installation Process
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
