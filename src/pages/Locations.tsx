@@ -115,7 +115,7 @@ const Locations = () => {
         <title>Areas We Serve | Secondary Glazing London & Home Counties</title>
         <meta
           name="description"
-          content="Secondary glazing specialists serving London, Surrey, Kent, Buckinghamshire, Hertfordshire, Berkshire & Essex. Find your local area for expert glazing solutions."
+          content="Secondary glazing specialists serving London, Surrey, Kent, Buckinghamshire, Hertfordshire, Berkshire & Essex."
         />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/locations" />
       </Helmet>

@@ -16,7 +16,7 @@ const Combination = () => {
   // Define page metadata
   const pageMetadata = {
     title: "Combination Secondary Glazing Window Solutions",
-    description: "Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs.",
+    description: "Bespoke combination secondary glazing that blends different window styles.",
     canonicalPath: "/residential/combination",
     imageUrl: "/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png",
     type: "article" as const,

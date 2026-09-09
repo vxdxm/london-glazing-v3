@@ -1,3 +1,4 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -19,7 +20,7 @@ import { TraditionalCTA } from "@/components/residential/traditional/Traditional
 const TraditionalOptions = () => {
   const pageMetadata = {
     title: "Traditional Secondary Glazing for Heritage Properties | London Specialists",
-    description: "Traditional secondary glazing for London's period properties. Heritage-approved solutions with authentic operating styles, period materials, and conservation-friendly aesthetics. £400-£900 per window.",
+    description: "Traditional secondary glazing for London's period properties.",
     canonicalPath: "/residential/traditional-options",
     imageUrl: "/lovable-uploads/f491fe90-350d-4010-9359-769a93c85044.png",
     type: "article" as const,
@@ -30,54 +31,7 @@ const TraditionalOptions = () => {
 
   const pageSchema = createPageSchema(pageMetadata);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What makes secondary glazing 'traditional'?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Traditional refers to operating styles (hinged/slider), materials (timber/slim aluminum), aesthetics (slim profiles), and heritage approach (conservation-approved)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need planning permission for traditional secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most listed building installations require no permission as they're internal modifications. Conservation areas may require approval - traditional solutions increase likelihood."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does traditional secondary glazing cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Traditional options cost £400-£900 per window depending on material and operation. Side-hung hinged aluminum costs £400-£700, vertical slider aluminum £450-£750, and timber frames £500-£900."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can traditional systems match my period windows?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes - vertical sliders suit Georgian/Victorian sash windows, side-hung hinged match casements, with period-appropriate materials and colors."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What maintenance do traditional secondary glazing systems require?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Aluminum frames require minimal maintenance, timber frames need repainting every 5-7 years, hinged systems may need occasional adjustment."
-        }
-      }
-    ]
-  };
-
-  const breadcrumbSchema = {
+    const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -122,7 +76,6 @@ const TraditionalOptions = () => {
         <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />
         
         <script type="application/ld+json">{pageSchema}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       
@@ -141,9 +94,22 @@ const TraditionalOptions = () => {
         <TraditionalFAQs />
         <TraditionalCTA />
       </div>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );
 };
 
 export default TraditionalOptions;
+
+export const PAGE_FAQS = [
+  { question: "What makes secondary glazing 'traditional'?", answer: "Traditional refers to operating styles (hinged/slider), materials (timber/slim aluminum), aesthetics (slim profiles), and heritage approach (conservation-approved)." },
+  { question: "Do I need planning permission for traditional secondary glazing?", answer: "Most listed building installations require no permission as they're internal modifications. Conservation areas may require approval - traditional solutions increase likelihood." },
+  { question: "How much does traditional secondary glazing cost?", answer: "Traditional options cost £400-£900 per window depending on material and operation. Side-hung hinged aluminum costs £400-£700, vertical slider aluminum £450-£750, and timber frames £500-£900." },
+  { question: "Can traditional systems match my period windows?", answer: "Yes - vertical sliders suit Georgian/Victorian sash windows, side-hung hinged match casements, with period-appropriate materials and colors." },
+  { question: "What maintenance do traditional secondary glazing systems require?", answer: "Aluminum frames require minimal maintenance, timber frames need repainting every 5-7 years, hinged systems may need occasional adjustment." }
+];

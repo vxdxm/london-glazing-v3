@@ -4,7 +4,7 @@ export const ClaphamBusyRoadsSEO = () => {
   return (
     <Helmet>
       <title>Noise Reduction for Homes Near Busy Roads in Clapham | Traffic Noise Solutions</title>
-      <meta name="description" content="Specialist secondary glazing for Clapham homes affected by traffic noise. Reduce A3, Clapham High Street and bus route noise by up to 30dB. Transform noisy rooms into peaceful spaces." />
+      <meta name="description" content="Specialist secondary glazing for Clapham homes affected by traffic noise. Reduce A3, Clapham High Street and bus route noise by up to 30dB." />
       <meta name="keywords" content="Clapham traffic noise reduction, secondary glazing busy roads, A3 noise solutions, Clapham High Street noise, bus route noise reduction, acoustic glazing Clapham, traffic noise windows, soundproof windows Clapham" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/locations/clapham-busy-roads" />
       

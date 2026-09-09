@@ -13,7 +13,7 @@ const HospitalitySecondaryGlazingGuide = () => {
     <>
       <EnhancedSEO
         title="Hotel Secondary Glazing London | Stop Noise Complaints & Protect Your Reviews"
-        description="How London boutique hotels use acoustic secondary glazing to eliminate noise complaints, boost TripAdvisor scores, and increase occupancy by 18%. 10.8mm laminate glass, heritage-approved, installed room-by-room."
+        description="How London boutique hotels use acoustic secondary glazing to eliminate noise complaints, boost TripAdvisor scores, and increase occupancy by 18%."
         canonicalPath="/blog/hospitality-secondary-glazing-noise-reduction"
         type="article"
         keywords={[

@@ -139,13 +139,6 @@ export const TechnicalSEO: React.FC<TechnicalSEOProps> = ({
               "Sa 09:00-16:00"
             ],
             "priceRange": "££",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5",
-              "worstRating": "1"
-            }
           },
           "breadcrumb": {
             "@type": "BreadcrumbList",

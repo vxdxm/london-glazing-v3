@@ -9,7 +9,7 @@ const VictorianIslingtonSEO = () => {
       <title>Victorian Terrace Secondary Glazing Islington | Sash Window Specialists</title>
       <meta 
         name="description" 
-        content="Expert secondary glazing for Victorian terraces in Islington. Specialist sash window solutions, draught proofing & period-sympathetic designs. Free quotes available." 
+        content="Expert secondary glazing for Victorian terraces in Islington. Specialist sash window solutions, draught proofing & period-sympathetic designs." 
       />
       <meta 
         name="keywords" 

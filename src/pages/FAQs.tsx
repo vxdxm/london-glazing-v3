@@ -108,7 +108,7 @@ const FAQs = () => {
     <div className="min-h-screen bg-background">
       <EnhancedSEO
         title="Secondary Glazing FAQs | Expert Answers to Common Questions"
-        description="Get expert answers to frequently asked questions about secondary glazing. Learn about installation, costs, benefits, and maintenance from London's leading glazing specialists."
+        description="Get expert answers to frequently asked questions about secondary glazing."
         canonicalPath="/faqs"
         type="article"
         keywords={[
@@ -160,13 +160,6 @@ const FAQs = () => {
             "brand": {
               "@type": "Brand",
               "name": "Secondary Glazing Specialist"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5",
-              "worstRating": "1"
             },
             "offers": {
               "@type": "AggregateOffer",

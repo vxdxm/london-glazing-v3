@@ -147,7 +147,7 @@ const AcousticSecondaryGlazingGuide = () => {
     <>
       <EnhancedSEO
         title="Acoustic Secondary Glazing: The Ultimate Guide to Soundproofing London Period Homes"
-        description="Expert guide to acoustic secondary glazing for London period homes. Learn how 10.8mm Stadip Silence glass and 100mm air gaps deliver 70-80% noise reduction for listed buildings and conservation areas."
+        description="Expert guide to acoustic secondary glazing for London period homes."
         canonicalPath="/blog/acoustic-secondary-glazing-guide"
         type="article"
         keywords={[

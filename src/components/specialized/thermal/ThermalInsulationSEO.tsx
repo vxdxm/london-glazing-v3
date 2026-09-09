@@ -8,7 +8,7 @@ export const ThermalInsulationSEO = () => {
       <title>Thermal Insulation Secondary Glazing | Up to 60% Heat Loss Reduction</title>
       <meta 
         name="description" 
-        content="Expert thermal insulation solutions with secondary glazing. Reduce heat loss by up to 60%, lower energy bills, and improve comfort with our specialist installation." 
+        content="Expert thermal insulation solutions with secondary glazing." 
       />
       <meta
         name="keywords"
@@ -20,14 +20,14 @@ export const ThermalInsulationSEO = () => {
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/specialized/thermal-insulation" />
       <meta property="og:title" content="Thermal Insulation Secondary Glazing | Up to 60% Heat Loss Reduction" />
-      <meta property="og:description" content="Expert thermal insulation solutions with secondary glazing. Reduce heat loss by up to 60%, lower energy bills, and improve comfort with our specialist installation." />
+      <meta property="og:description" content="Expert thermal insulation solutions with secondary glazing." />
       <meta property="og:image" content="https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png" />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://secondaryglazingspecialist.com/specialized/thermal-insulation" />
       <meta property="twitter:title" content="Thermal Insulation Secondary Glazing | Up to 60% Heat Loss Reduction" />
-      <meta property="twitter:description" content="Expert thermal insulation solutions with secondary glazing. Reduce heat loss by up to 60%, lower energy bills, and improve comfort with our specialist installation." />
+      <meta property="twitter:description" content="Expert thermal insulation solutions with secondary glazing." />
       <meta property="twitter:image" content="https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png" />
       
       {/* Structured Data */}

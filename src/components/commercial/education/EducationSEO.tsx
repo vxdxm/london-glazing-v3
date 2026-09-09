@@ -5,7 +5,7 @@ import { createFAQSchema } from "@/utils/faq-schema";
 export const EducationSEO = () => {
   const pageMetadata = {
     title: "Educational Sector Secondary Glazing | School & University Windows London",
-    description: "BB93 compliant secondary glazing for schools, colleges, and universities. Improve student learning outcomes with 80% noise reduction, 50% energy savings. CIF funding eligible.",
+    description: "BB93 compliant secondary glazing for schools, colleges, and universities. Improve student learning outcomes with 80% noise reduction, 50% energy savings.",
     canonicalPath: "/commercial/educational-sector",
     imageUrl: "/lovable-uploads/90c68028-9503-4ba2-b65b-9cfce4cd13a0.jpg",
     type: "website" as const,

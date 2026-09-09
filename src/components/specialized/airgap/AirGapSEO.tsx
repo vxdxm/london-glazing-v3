@@ -16,7 +16,7 @@ export const AirGapSEO = () => {
       <title>Air Gap Secondary Glazing | Optimal Cavity Spacing Guide</title>
       <meta 
         name="description" 
-        content="Learn about optimal air gap distances in secondary glazing installations. Expert guide on 100mm and 150mm cavity spacing for maximum thermal and acoustic performance." 
+        content="Learn about optimal air gap distances in secondary glazing installations." 
       />
       <meta 
         name="keywords" 

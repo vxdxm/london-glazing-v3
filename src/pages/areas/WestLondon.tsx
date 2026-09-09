@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
-import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
+import {ServiceAreaSchema, AreaFAQ } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -43,7 +43,7 @@ const WestLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing West London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services in West London. Specialist installations for prestigious properties in Kensington, Chelsea, Chiswick, Richmond and surrounding areas." />
+        <meta name="description" content="Professional secondary glazing services in West London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/west-london" />
         <meta name="keywords" content="secondary glazing West London, double glazing Kensington, window insulation Chelsea, soundproof windows Chiswick, heritage glazing Richmond" />
       </Helmet>
@@ -226,6 +226,7 @@ const WestLondon = () => {
         </section>
       </main>
 
+      <AreaFAQ areaName="West London" />
       <Footer />
     </div>
   );

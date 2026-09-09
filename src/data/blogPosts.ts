@@ -39,7 +39,7 @@ export const blogPosts: BlogPostSummary[] = [
   {
     slug: "best-acoustic-glass-secondary-glazing-compared",
     title: "How to Choose the Best Acoustic Glass for Secondary Glazing (Compared)",
-    excerpt: "Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing. Learn which glass stops traffic noise, how air gaps affect performance, and what suits listed buildings.",
+    excerpt: "Compare 4mm, 6mm, 6.4mm laminated and acoustic glass for secondary glazing.",
     date: "2026-07-20",
     readTime: "12 min read",
     category: "Acoustic Glazing",
@@ -120,7 +120,7 @@ export const blogPosts: BlogPostSummary[] = [
   {
     slug: "secondary-glazing-london-borough-guide",
     title: "Secondary Glazing London: The Borough-by-Borough Guide to Soundproofing Your Home",
-    excerpt: "Discover how secondary glazing reduces noise by up to 80% across London boroughs. Expert guide covering Kensington, Islington, Hackney, Clapham, and Heathrow flight paths.",
+    excerpt: "Discover how secondary glazing reduces noise by up to 80% across London boroughs.",
     date: "2026-02-16",
     readTime: "22 min read",
     category: "London Guide",

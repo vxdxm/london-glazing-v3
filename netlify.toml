@@ -2,7 +2,7 @@
 # Deploy settings: connect this repo in Netlify UI and these values are used automatically
 
 [build]
-  command = "npm run build"
+  command = "npx playwright install --with-deps chromium && npm run build:prerender"
   publish = "dist"
 
 [build.environment]

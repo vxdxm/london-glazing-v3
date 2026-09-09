@@ -13,7 +13,7 @@ const EducationSecondaryGlazingGuide = () => {
     <>
       <EnhancedSEO
         title="Secondary Glazing for Schools & Universities | BB93 Compliance & Noise Reduction"
-        description="How secondary glazing helps UK schools meet BB93 acoustic standards, cut heating bills by 65%, and support neurodiverse learners. Zero-disruption installation during half-terms. Free site survey."
+        description="How secondary glazing helps UK schools meet BB93 acoustic standards, cut heating bills by 65%, and support neurodiverse learners."
         canonicalPath="/blog/education-secondary-glazing-schools"
         type="article"
         keywords={[

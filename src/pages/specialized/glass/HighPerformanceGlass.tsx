@@ -10,7 +10,7 @@ const HighPerformanceGlass = () => {
   const navigate = useNavigate();
   const pageMetadata = {
     title: "10.8mm High Performance Acoustic Glass | Rw 40dB | Stadip Silence",
-    description: "10.8mm acoustic laminated glass — Rw 40dB single-pane, up to Rw 52dB combined with secondary glazing. Specified for mainline rail, A-road, and high-end residential acoustic briefs.",
+    description: "10.8mm acoustic laminated glass — Rw 40dB single-pane, up to Rw 52dB combined with secondary glazing.",
     canonicalPath: "/specialized/glass/high-performance-glass",
     imageUrl: "/lovable-uploads/85544e29-d125-48ad-a85a-64e24b58c3c7.jpg",
     type: "product" as const,

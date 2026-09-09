@@ -5,7 +5,7 @@ import { createFAQSchema } from "@/utils/faq-schema";
 export const RetailSEO = () => {
   const pageMetadata = {
     title: "Retail Secondary Glazing Solutions | Shop & Store Windows London",
-    description: "Specialized secondary glazing for retail spaces and shops. Boost customer comfort, reduce energy costs by 50%, enhance security, and preserve heritage shopfronts across London.",
+    description: "Specialized secondary glazing for retail spaces and shops.",
     canonicalPath: "/commercial/retail-spaces",
     imageUrl: "/images/commercial/retail-heritage.webp",
     type: "website" as const,

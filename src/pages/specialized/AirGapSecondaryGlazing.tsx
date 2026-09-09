@@ -15,7 +15,7 @@ import { createPageSchema } from "@/utils/seo";
 const AirGapSecondaryGlazing = () => {
   const pageMetadata = {
     title: "Air Gap Secondary Glazing | Optimal Cavity Spacing Guide",
-    description: "Learn about optimal air gap distances in secondary glazing installations. Expert guide on 100mm and 150mm cavity spacing for maximum thermal and acoustic performance.",
+    description: "Learn about optimal air gap distances in secondary glazing installations.",
     canonicalPath: "/specialized/air-gap-secondary-glazing",
     imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/7891494f-5e77-40d3-b5fc-cabf6262f2fe.png",
     type: "article" as const,

@@ -24,7 +24,7 @@ const SoundGuideLayout = ({ children }: SoundGuideLayoutProps) => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Sound Transmission Guide | Secondary Glazing Noise Reduction</title>
-        <meta name="description" content="Comprehensive guide to sound transmission, decibel levels, and how secondary glazing reduces noise. Learn about acoustic ratings, STC values, and effective noise reduction solutions." />
+        <meta name="description" content="Comprehensive guide to sound transmission, decibel levels, and how secondary glazing reduces noise." />
         <meta name="keywords" content="sound transmission, secondary glazing, noise reduction, acoustic glass, decibel reduction, sound insulation, STC rating, sound proof windows" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/specialized/sound-transmission-guide" />
         <meta property="og:title" content="Sound Transmission Guide | Secondary Glazing Noise Reduction" />

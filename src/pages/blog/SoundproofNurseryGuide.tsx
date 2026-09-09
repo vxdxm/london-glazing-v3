@@ -11,7 +11,7 @@ const SoundproofNurseryGuide = () => {
     <>
       <EnhancedSEO
         title="The Silent Nursery: 54dB Noise Reduction for Your Baby's Sleep | London"
-        description="Discover why a 54dB noise reduction is the best gift for your new arrival. Expert guide to soundproofing nurseries in London period homes with secondary glazing."
+        description="Discover why a 54dB noise reduction is the best gift for your new arrival."
         canonicalPath="/blog/soundproof-nursery-54db-reduction"
         type="article"
         keywords={[

@@ -11,7 +11,7 @@ const CombinationSEO = () => {
       <title>Combination Secondary Glazing Window Solutions | Secondary Glazing Specialist</title>
       <meta 
         name="description" 
-        content="Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs." 
+        content="Bespoke combination secondary glazing that blends different window styles." 
       />
       <meta name="keywords" content="combination windows, mixed window styles, secondary glazing, sash windows, casement windows, bay windows, noise reduction, thermal insulation" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -19,7 +19,7 @@ const CombinationSEO = () => {
       
       {/* Open Graph / Facebook */}
       <meta property="og:title" content="Combination Secondary Glazing Window Solutions" />
-      <meta property="og:description" content="Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs." />
+      <meta property="og:description" content="Bespoke combination secondary glazing that blends different window styles." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://secondaryglazingspecialist.com/residential/combination" />
       <meta property="og:image" content="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png" />
@@ -28,7 +28,7 @@ const CombinationSEO = () => {
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://secondaryglazingspecialist.com/residential/combination" />
       <meta property="twitter:title" content="Combination Secondary Glazing Window Solutions" />
-      <meta property="twitter:description" content="Bespoke combination secondary glazing that blends different window styles. Perfect for complex configurations in period properties and mixed architectural designs." />
+      <meta property="twitter:description" content="Bespoke combination secondary glazing that blends different window styles." />
       <meta property="twitter:image" content="/lovable-uploads/37775d2f-c264-46a3-afb0-ef2414bbb9e1.png" />
       
       {/* Structured Data - Enhanced with proper breadcrumb markup */}

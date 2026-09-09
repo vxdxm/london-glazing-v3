@@ -56,26 +56,9 @@ export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
         "//*[contains(@class, 'faq-answer')]"
       ]
     },
-    "mainEntity": {
-      "@type": "FAQPage",
-      "mainEntity": conversationalQueries.map(query => ({
-        "@type": "Question",
-        "name": query.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": query.answer
-        },
-        "inLanguage": "en-GB",
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "homeowners and property managers",
-          "geographicArea": {
-            "@type": "Place",
-            "name": localContext.serviceArea.join(", ")
-          }
-        }
-      }))
-    },
+    // NOTE: no FAQPage node here — FAQ structured data must always be backed by
+    // a visible FAQ section, which pages render themselves via <ServiceFAQ />.
+
     "about": {
       "@type": "Service",
       "name": "Secondary Glazing Services",
@@ -99,23 +82,12 @@ export const VoiceSearchOptimizer: React.FC<VoiceSearchOptimizerProps> = ({
   });
 
   return (
-    <>
-      <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateVoiceSearchSchema())
-        }}
-      />
-      
-      {/* Hidden content optimized for voice search - each answer is unique */}
-      <div style={{ display: 'none' }} className="voice-search-content">
-        {conversationalQueries.map((query, index) => (
-          <div key={index} className="voice-optimized">
-            <h3>{query.question}</h3>
-            <p>{query.answer}</p>
-          </div>
-        ))}
-      </div>
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generateVoiceSearchSchema())
+      }}
+    />
   );
+
 };

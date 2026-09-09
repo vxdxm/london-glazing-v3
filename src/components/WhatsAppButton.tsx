@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6"
+      className="hidden md:block fixed bottom-6 right-6"
     >
       <FloatingButton
         icon={<MessageCircle className="w-8 h-8 mr-2" />}

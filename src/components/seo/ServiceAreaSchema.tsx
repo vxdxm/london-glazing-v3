@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 
 interface ServiceAreaSchemaProps {
   areaName: string;
@@ -42,13 +43,6 @@ export const ServiceAreaSchema: React.FC<ServiceAreaSchemaProps> = ({
       ...neighborhoods.slice(0, 5).map(n => ({ "@type": "Place" as const, "name": n }))
     ],
     "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-16:00"],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
   };
 
   const serviceSchema = {
@@ -73,56 +67,6 @@ export const ServiceAreaSchema: React.FC<ServiceAreaSchemaProps> = ({
     }
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": `Do you install secondary glazing in ${areaName}?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Yes, we provide professional secondary glazing installation throughout ${areaName} and surrounding areas. We specialise in listed buildings, conservation areas, and period properties. Call 020 7060 1572 for a free survey.`
-        }
-      },
-      {
-        "@type": "Question",
-        "name": `How much does secondary glazing cost in ${areaName}?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Secondary glazing in ${areaName} typically costs £350-450 per window for standard installations. Heritage properties and listed buildings range from £500-1,200 per window. We provide free surveys and detailed quotes.`
-        }
-      },
-      {
-        "@type": "Question",
-        "name": `Do you work in ${areaName} conservation areas?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `Yes, we specialise in conservation area properties across ${areaName}${conservationAreas.length > 0 ? `, including ${conservationAreas.slice(0, 3).join(", ")}` : ""}. Secondary glazing is an internal modification that typically doesn't require planning permission.`
-        }
-      }
-    ]
-  };
-
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "LocalBusiness",
-      "name": `Secondary Glazing Specialist - ${areaName}`
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": `${areaName} Customer`
-    },
-    "reviewBody": `Excellent secondary glazing installation for our period property in ${areaName}. Professional service, great results, and the team understood the conservation area requirements perfectly. Highly recommended.`
-  };
-
   return (
     <Helmet>
       {/* LocalBusiness Schema for Area */}
@@ -133,16 +77,6 @@ export const ServiceAreaSchema: React.FC<ServiceAreaSchemaProps> = ({
       {/* Service Schema */}
       <script type="application/ld+json">
         {JSON.stringify(serviceSchema)}
-      </script>
-
-      {/* FAQPage Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </script>
-
-      {/* Review Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify(reviewSchema)}
       </script>
 
       {/* Product Schema with Pricing */}
@@ -156,12 +90,6 @@ export const ServiceAreaSchema: React.FC<ServiceAreaSchemaProps> = ({
             "@type": "Brand",
             "name": "Secondary Glazing Specialist"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "127",
-            "bestRating": "5"
-          },
           "offers": {
             "@type": "AggregateOffer",
             "priceCurrency": "GBP",
@@ -174,5 +102,33 @@ export const ServiceAreaSchema: React.FC<ServiceAreaSchemaProps> = ({
     </Helmet>
   );
 };
+
+/**
+ * Q&A shown on every service-area page. Rendered visibly with <ServiceFAQ />,
+ * which also emits the matching FAQPage JSON-LD, so schema always mirrors
+ * what visitors can read.
+ */
+export const buildAreaFaqs = (areaName: string, conservationAreas: string[] = []) => [
+  {
+    question: `Do you install secondary glazing in ${areaName}?`,
+    answer: `Yes, we provide professional secondary glazing installation throughout ${areaName} and surrounding areas. We specialise in listed buildings, conservation areas, and period properties. Call 020 7060 1572 for a free survey.`
+  },
+  {
+    question: `How much does secondary glazing cost in ${areaName}?`,
+    answer: `Secondary glazing in ${areaName} typically costs £350-450 per window for standard installations. Heritage properties and listed buildings range from £500-1,200 per window. We provide free surveys and detailed quotes.`
+  },
+  {
+    question: `Do you work in ${areaName} conservation areas?`,
+    answer: `Yes, we specialise in conservation area properties across ${areaName}${conservationAreas.length > 0 ? `, including ${conservationAreas.slice(0, 3).join(", ")}` : ""}. Secondary glazing is an internal modification that typically doesn't require planning permission.`
+  }
+];
+
+export const AreaFAQ = ({ areaName, conservationAreas = [] }: { areaName: string; conservationAreas?: string[] }) => (
+  <section className="py-12">
+    <div className="container mx-auto px-4 max-w-3xl">
+      <ServiceFAQ items={buildAreaFaqs(areaName, conservationAreas)} heading={`Secondary glazing in ${areaName}: your questions answered`} />
+    </div>
+  </section>
+);
 
 export default ServiceAreaSchema;

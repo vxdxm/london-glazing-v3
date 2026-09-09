@@ -9,7 +9,7 @@ const GeorgianBelgraviaSEO = () => {
       <title>Georgian Property Secondary Glazing Belgravia | Period Window Specialists</title>
       <meta 
         name="description" 
-        content="Expert secondary glazing for Georgian properties in Belgravia. Unobtrusive solutions for noise reduction, heat retention & heritage preservation. Westminster approved." 
+        content="Expert secondary glazing for Georgian properties in Belgravia. Unobtrusive solutions for noise reduction, heat retention & heritage preservation." 
       />
       <meta 
         name="keywords" 

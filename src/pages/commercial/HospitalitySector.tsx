@@ -1,3 +1,5 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
+import { PAGE_FAQS } from "@/components/commercial/hospitality/HospitalitySEO";
 
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -50,6 +52,11 @@ const HospitalitySector = () => {
           <HospitalityCTA />
         </div>
       </main>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );

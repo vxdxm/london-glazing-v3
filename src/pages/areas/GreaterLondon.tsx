@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { MainNav } from '@/components/MainNav';
 import { Footer } from '@/components/Footer';
-import { ServiceAreaSchema } from '@/components/seo/ServiceAreaSchema';
+import {ServiceAreaSchema, AreaFAQ } from '@/components/seo/ServiceAreaSchema';
 import { MapPin, Phone, Clock, CheckCircle, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -43,7 +43,7 @@ const GreaterLondon = () => {
       />
       <Helmet>
         <title>Secondary Glazing Greater London | Expert Installation Services</title>
-        <meta name="description" content="Professional secondary glazing services across Greater London. Complete coverage of all 32 London boroughs with specialist installations for residential and commercial properties." />
+        <meta name="description" content="Professional secondary glazing services across Greater London." />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/areas/greater-london" />
         <meta name="keywords" content="secondary glazing Greater London, double glazing London boroughs, window insulation M25, soundproof windows outer London, heritage glazing suburbs" />
       </Helmet>
@@ -226,6 +226,7 @@ const GreaterLondon = () => {
         </section>
       </main>
 
+      <AreaFAQ areaName="Greater London" />
       <Footer />
     </div>
   );

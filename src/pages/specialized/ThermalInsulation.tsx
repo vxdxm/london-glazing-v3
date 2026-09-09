@@ -18,7 +18,7 @@ import { PerformanceComparisonChart } from "@/components/specialized/thermal/Per
 const ThermalInsulation = () => {
   const pageMetadata = {
     title: "Thermal Insulation Secondary Glazing | Up to 60% Heat Loss Reduction",
-    description: "Expert thermal insulation solutions with secondary glazing. Reduce heat loss by up to 60%, lower energy bills, and improve comfort with our specialist installation.",
+    description: "Expert thermal insulation solutions with secondary glazing.",
     canonicalPath: "/specialized/thermal-insulation",
     imageUrl: "https://secondaryglazingspecialist.com/lovable-uploads/6dc186a4-6846-4f8f-ba1a-8bcbdbdac94c.png",
     type: "article" as const,
@@ -62,6 +62,7 @@ const ThermalInsulation = () => {
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
         <SectionHeading 
+          as="h1"
           title="Thermal Insulation" 
           subtitle="Advanced solutions for maximum energy efficiency"
           className="mb-8"

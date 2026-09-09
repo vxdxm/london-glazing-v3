@@ -7,7 +7,7 @@ export const KingsCrossTrainNoiseSEO = () => {
       <title>Train Noise Secondary Glazing King's Cross | Railway Acoustic Solutions London</title>
       <meta 
         name="description" 
-        content="Secondary glazing solutions for train noise in King's Cross properties. Reduce railway noise by up to 45dB while addressing airborne sounds. Expert acoustic glazing for railway-adjacent flats."
+        content="Secondary glazing solutions for train noise in King's Cross properties. Reduce railway noise by up to 45dB while addressing airborne sounds."
       />
       <meta 
         name="keywords" 

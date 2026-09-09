@@ -95,7 +95,7 @@ const Benefits = () => {
         <title>Benefits of Secondary Glazing | Noise, Thermal, Security | London</title>
         <meta 
           name="description" 
-          content="Discover the benefits of secondary glazing: noise reduction up to 80%, thermal insulation, enhanced security, energy savings, and heritage preservation. Free quotes."
+          content="Discover the benefits of secondary glazing: noise reduction up to 80%, thermal insulation, enhanced security, energy savings, and heritage preservation."
         />
         <meta name="keywords" content="secondary glazing benefits, noise reduction windows, thermal insulation, energy saving glazing, heritage window solutions" />
         <link rel="canonical" href="https://secondaryglazingspecialist.com/benefits" />

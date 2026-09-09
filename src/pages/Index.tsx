@@ -1,3 +1,4 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 import React, { Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
 import { MainNav } from "@/components/MainNav";
@@ -137,12 +138,6 @@ const Index = () => {
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Secondary Glazing", "url": "https://secondaryglazingspecialist.com/commercial" } }
               ]
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5"
-            },
             "sameAs": [
               "https://www.instagram.com/secondaryglazinglondon/",
               "https://www.linkedin.com/in/secondary-glazing-specialist-7500653a2/",
@@ -151,54 +146,7 @@ const Index = () => {
             ]
           })}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is secondary glazing?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Secondary glazing is an internal window system installed behind existing windows to improve thermal insulation, reduce noise by up to 80%, and enhance security without altering the original window appearance. It's ideal for listed buildings and conservation areas."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much does secondary glazing cost in London?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Secondary glazing typically costs between £350-450 per window for standard installations. For listed buildings and conservation areas, bespoke solutions range from £500-1,200 per window depending on size, glass specification, and heritage requirements. We provide free surveys and quotes."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does secondary glazing reduce noise effectively?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, secondary glazing with 10.8mm Stadip Silence acoustic laminate glass can reduce external noise by up to 54 decibels, making it highly effective for homes near busy roads, railways, or flight paths in London."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I install secondary glazing in a listed building?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, secondary glazing is the preferred solution for Grade I, II*, and II listed buildings because it preserves original windows, is fully reversible, and doesn't alter the external appearance. We handle all planning permission liaison and Listed Building Consent applications."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is 10.8mm acoustic laminate glass?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "10.8mm Stadip Silence is a specialist acoustic laminate glass comprising two glass panes bonded with a PVB acoustic interlayer. Combined with a 100mm air gap, it delivers up to 54dB noise reduction—ideal for London properties near Heathrow flight paths, railway lines, and busy roads."
-                }
-              }
-            ]
-          })}
-        </script>
+        
       </Helmet>
       
       <AIOverviewOptimizer
@@ -297,6 +245,11 @@ const Index = () => {
         <Suspense fallback={<noscript><p>Loading gallery...</p></noscript>}>
           <BeforeAfterSlider />
         </Suspense>
+        <section className="py-12">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <ServiceFAQ items={PAGE_FAQS} />
+          </div>
+        </section>
         <Suspense fallback={<noscript><p>Loading contact form...</p></noscript>}>
           <ContactForm />
         </Suspense>
@@ -310,3 +263,11 @@ const Index = () => {
 };
 
 export default Index;
+
+export const PAGE_FAQS = [
+  { question: "What is secondary glazing?", answer: "Secondary glazing is an internal window system installed behind existing windows to improve thermal insulation, reduce noise by up to 80%, and enhance security without altering the original window appearance. It's ideal for listed buildings and conservation areas." },
+  { question: "How much does secondary glazing cost in London?", answer: "Secondary glazing typically costs between £350-450 per window for standard installations. For listed buildings and conservation areas, bespoke solutions range from £500-1,200 per window depending on size, glass specification, and heritage requirements. We provide free surveys and quotes." },
+  { question: "Does secondary glazing reduce noise effectively?", answer: "Yes, secondary glazing with 10.8mm Stadip Silence acoustic laminate glass can reduce external noise by up to 54 decibels, making it highly effective for homes near busy roads, railways, or flight paths in London." },
+  { question: "Can I install secondary glazing in a listed building?", answer: "Yes, secondary glazing is the preferred solution for Grade I, II*, and II listed buildings because it preserves original windows, is fully reversible, and doesn't alter the external appearance. We handle all planning permission liaison and Listed Building Consent applications." },
+  { question: "What is 10.8mm acoustic laminate glass?", answer: "10.8mm Stadip Silence is a specialist acoustic laminate glass comprising two glass panes bonded with a PVB acoustic interlayer. Combined with a 100mm air gap, it delivers up to 54dB noise reduction—ideal for London properties near Heathrow flight paths, railway lines, and busy roads." }
+];

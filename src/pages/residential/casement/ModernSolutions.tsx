@@ -13,7 +13,7 @@ const CasementModernSolutions = () => {
     <div className="min-h-screen bg-background">
       <SEOHelmet
         title="Modern Casement Window Secondary Glazing | uPVC & Aluminium"
-        description="Slim-line secondary glazing for modern casement windows. Engineered for uPVC and aluminium primaries — 40-54dB Rw, 1.4 W/m²K, magnetic seals & lift-out access."
+        description="Slim-line secondary glazing for modern casement windows."
         canonicalPath="/residential/casement-windows/modern-solutions"
       />
       

@@ -39,7 +39,7 @@ const ListedBuildingPlanningApprovedGuide = () => {
     <>
       <EnhancedSEO
         title="Listed Building Secondary Glazing: Planning-Approved Guide"
-        description="Complete guide to planning-approved secondary glazing for Grade I and Grade II listed buildings in London. Reversible, conservation-friendly, no planning permission usually required."
+        description="Complete guide to planning-approved secondary glazing for Grade I and Grade II listed buildings in London."
         canonicalPath={`/blog/${SLUG}`}
         type="article"
         keywords={[

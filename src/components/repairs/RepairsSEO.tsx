@@ -142,7 +142,7 @@ const RepairsSEO = () => {
       <title>Secondary Glazing Repairs London | Spiral Balance & Window Repairs from £85</title>
       <meta 
         name="description" 
-        content="Expert secondary glazing repairs in London from £85-£280. Spiral balance replacement, hinge repairs, lock services & glass replacement. All brands including Selectaglaze, Anglian, Storm. Same-day emergency service available." 
+        content="Expert secondary glazing repairs in London from £85-£280. Spiral balance replacement, hinge repairs, lock services & glass replacement." 
       />
       <meta name="keywords" content="secondary glazing repairs london, spiral balance replacement, window repairs, selectaglaze repairs, anglian repairs, storm window repairs, glazing maintenance, sliding window repairs, secondary glazing service" />
       <link rel="canonical" href="https://secondaryglazingspecialist.com/secondary-glazing-repairs" />

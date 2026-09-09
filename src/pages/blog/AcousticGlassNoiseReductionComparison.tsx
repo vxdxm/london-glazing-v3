@@ -43,7 +43,7 @@ const AcousticGlassNoiseReductionComparison = () => {
     <>
       <EnhancedSEO
         title="Acoustic Glass for Noise Reduction: Full Comparison Guide"
-        description="Compare 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence acoustic glass for secondary glazing. Rw values, third-octave data, air-gap effects and specifier recommendations."
+        description="Compare 4mm float, 6.4mm laminated, 6.8mm and 10.8mm Stadip Silence acoustic glass for secondary glazing."
         canonicalPath={`/blog/${SLUG}`}
         type="article"
         keywords={[

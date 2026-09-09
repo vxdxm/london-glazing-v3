@@ -41,7 +41,7 @@ const CommercialMEESComplianceGuide = () => {
     <>
       <EnhancedSEO
         title="MEES 2030 Compliance: Why Commercial Landlords Are Choosing Secondary Glazing"
-        description="How secondary glazing helps London commercial landlords meet MEES EPC C rating by 2030. Cost-effective compliance for listed buildings, offices, and heritage properties. Save 60-75% vs full replacement."
+        description="How secondary glazing helps London commercial landlords meet MEES EPC C rating by 2030."
         canonicalPath="/blog/commercial-mees-compliance-secondary-glazing"
         type="article"
         keywords={[

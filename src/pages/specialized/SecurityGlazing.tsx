@@ -11,7 +11,7 @@ import { createPageSchema } from "@/utils/seo";
 const SecurityGlazing = () => {
   const pageMetadata = {
     title: "Security Glazing Solutions | Protection for Home & Business",
-    description: "Advanced security glazing solutions that provide superior protection for your property. Combined with multi-point locking systems and reinforced frames for enhanced security.",
+    description: "Advanced security glazing solutions that provide superior protection for your property.",
     canonicalPath: "/specialized/security-glazing",
     imageUrl: "/lovable-uploads/ef528e3e-c607-4674-a887-b1635565f167.jpg",
     type: "article" as const,

@@ -11,7 +11,7 @@ const PhysicsOfSilenceGuide = () => {
     <>
       <EnhancedSEO
         title="The Physics of Silence: How Acoustic Glass Blocks Low-Frequency Noise"
-        description="Technical deep dive into how 10.8mm acoustic laminate glass blocks low-frequency bus and lorry rumble. Understand Mass Law, PVB interlayers, and the 100mm air gap."
+        description="Technical deep dive into how 10.8mm acoustic laminate glass blocks low-frequency bus and lorry rumble."
         canonicalPath="/blog/physics-of-silence-acoustic-glass"
         type="article"
         keywords={[

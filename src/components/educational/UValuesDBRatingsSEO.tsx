@@ -3,7 +3,7 @@ import { SEOMonster } from '@/components/seo/SEOMonster';
 
 export function UValuesDBRatingsSEO() {
   const title = "U-Values and dB Ratings for Secondary Glazing Explained | Performance Guide";
-  const description = "Understand U-values and dB ratings for secondary glazing in plain English. Learn what thermal and acoustic performance numbers mean for your comfort and energy bills.";
+  const description = "Understand U-values and dB ratings for secondary glazing in plain English.";
   
   const keywords = [
     "u values secondary glazing",

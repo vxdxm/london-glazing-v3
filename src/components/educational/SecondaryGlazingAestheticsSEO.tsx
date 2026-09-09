@@ -3,7 +3,7 @@ import { SEOMonster } from '@/components/seo/SEOMonster';
 
 export function SecondaryGlazingAestheticsSEO() {
   const title = "Secondary Glazing Aesthetics: Modern Designs for Discreet Integration | Visual Guide";
-  const description = "Discover modern secondary glazing aesthetics with slim profiles, custom finishes & heritage integration. See real examples of beautiful, discreet secondary glazing designs.";
+  const description = "Discover modern secondary glazing aesthetics with slim profiles, custom finishes & heritage integration.";
   
   const keywords = [
     "secondary glazing aesthetics",

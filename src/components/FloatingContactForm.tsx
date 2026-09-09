@@ -47,7 +47,7 @@ const FloatingContactForm = () => {
         <FloatingButton
           icon={<Mail className="w-8 h-8 mr-2 ml-8" />}
           text="Quick Contact"
-          className="bottom-[192px] bg-blue-600 hover:bg-blue-700 z-[60]"
+          className="hidden md:flex bottom-[192px] bg-blue-600 hover:bg-blue-700 z-[60]"
           aria-label="Quick contact form"
         />
       </PopoverTrigger>

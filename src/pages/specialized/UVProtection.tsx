@@ -15,7 +15,7 @@ const LazyFooter = lazy(() => import("@/components/Footer").then(module => ({ de
 const UVProtection = () => {
   const pageMetadata = {
     title: "UV Protection Secondary Glazing | Furniture & Art Protection",
-    description: "Protect your furnishings, artwork, and interiors from UV damage with specialized secondary glazing solutions. Learn about UV filtering technology and preservation benefits.",
+    description: "Protect your furnishings, artwork, and interiors from UV damage with specialized secondary glazing solutions.",
     canonicalPath: "/specialized/uv-protection",
     imageUrl: "/lovable-uploads/43d4f1cb-1c9a-460e-b2f5-37e4c742df34.jpg",
     type: "article" as const,

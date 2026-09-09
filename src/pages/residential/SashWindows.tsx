@@ -72,11 +72,6 @@ const SashWindows = () => {
       "highPrice": "900",
       "offerCount": "4"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127"
-    }
   };
 
   return (
@@ -85,7 +80,7 @@ const SashWindows = () => {
         <title>Sash Window Secondary Glazing London | 50-65% Energy Savings | Period Property Specialists</title>
         <meta 
           name="description" 
-          content="Transform your period property with sash window secondary glazing. Cut energy bills by 50-65%, reduce noise by 70-80%, preserve heritage windows. Ideal for listed buildings. From £400 per window." 
+          content="Transform your period property with sash window secondary glazing. Cut energy bills by 50-65%, reduce noise by 70-80%, preserve heritage windows." 
         />
         <meta 
           name="keywords" 

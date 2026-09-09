@@ -14,7 +14,7 @@ const KensingtonChelseaArea = () => {
     <>
       <EnhancedSEO
         title="Specialist Secondary Glazing for Kensington & Chelsea Heritage Homes"
-        description="Conservation-approved secondary glazing for Kensington & Chelsea listed buildings, stucco terraces, and Victorian sash windows. 80% noise reduction, 60% heat loss improvement. Free survey."
+        description="Conservation-approved secondary glazing for Kensington & Chelsea listed buildings, stucco terraces, and Victorian sash windows."
         canonicalPath="/areas/kensington-chelsea"
         type="website"
         keywords={[
@@ -38,7 +38,6 @@ const KensingtonChelseaArea = () => {
             description: "Professional secondary glazing installation for heritage homes in Kensington & Chelsea.",
             areaServed: { "@type": "City", name: "Royal Borough of Kensington and Chelsea" },
             address: { "@type": "PostalAddress", addressLocality: "London", addressRegion: "Kensington and Chelsea", addressCountry: "GB" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "87", bestRating: "5" },
           })}
         </script>
       </Helmet>

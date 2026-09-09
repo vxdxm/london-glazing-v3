@@ -31,7 +31,8 @@ export const SpecialistPageSchema: React.FC<SpecialistPageSchemaProps> = ({
         {JSON.stringify(createServiceSchema(serviceName, serviceDescription))}
       </script>
 
-      {/* Product Schema with AggregateRating */}
+      {/* Product Schema. No aggregateRating/Review here: rating markup must be
+          backed by reviews that are visible on the page (see <ServiceReviews />). */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -41,13 +42,6 @@ export const SpecialistPageSchema: React.FC<SpecialistPageSchemaProps> = ({
           "brand": {
             "@type": "Brand",
             "name": "Secondary Glazing Specialist"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "127",
-            "bestRating": "5",
-            "worstRating": "1"
           },
           "offers": {
             "@type": "AggregateOffer",
@@ -59,47 +53,12 @@ export const SpecialistPageSchema: React.FC<SpecialistPageSchemaProps> = ({
         })}
       </script>
 
-      {/* FAQPage Schema if FAQs provided */}
-      {faqs.length > 0 && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-      )}
+      {/* FAQPage schema intentionally omitted here: pages render their Q&A with
+          <ServiceFAQ />, which emits the matching visible content and JSON-LD. */}
 
-      {/* Review Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Review",
-          "itemReviewed": {
-            "@type": "Service",
-            "name": serviceName
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Verified Customer"
-          },
-          "reviewBody": `Excellent ${serviceName.toLowerCase()} service. Professional installation, great results, and friendly team. Highly recommended for anyone looking to improve their windows.`
-        })}
-      </script>
     </Helmet>
   );
 };
+
 
 export default SpecialistPageSchema;
