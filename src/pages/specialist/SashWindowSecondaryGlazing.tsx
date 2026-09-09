@@ -724,7 +724,7 @@ const SashWindowSecondaryGlazing = () => {
                   Our systems use precision spiral balances (the same mechanism used in 
                   quality replacement sash windows) to ensure smooth, effortless operation 
                   year after year. The sashes can be tilted inward for easy cleaning of 
-                  both the secondary glazing and your original windows - ideal for 
+                  both the secondary glazing and your original windows - ideal for{" "} 
                   <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink> properties.
                 </p>
 
