@@ -13,6 +13,29 @@ import RelatedContentSidebar from "@/components/seo/RelatedContentSidebar";
 import CTASection from "@/components/seo/CTASection";
 import { InlineLink, QuickLinksGrid, residentialGlazingLinks, serviceAreaLinks } from "@/components/seo/InternalLinks";
 import sashTechnicalSketch from "@/assets/sash-secondary-glazing-technical-drawing.jpg.asset.json";
+import gallery13 from "@/assets/gallery/secondary_glazing_13.webp.asset.json";
+import gallery16 from "@/assets/gallery/secondary_glazing_16.webp.asset.json";
+import gallery18 from "@/assets/gallery/secondary_glazing_18.webp.asset.json";
+import gallery19 from "@/assets/gallery/secondary_glazing_19.webp.asset.json";
+import gallery20 from "@/assets/gallery/secondary_glazing_20.webp.asset.json";
+import gallery23 from "@/assets/gallery/secondary_glazing_23.webp.asset.json";
+import gallery24 from "@/assets/gallery/secondary_glazing_24.webp.asset.json";
+import gallery26 from "@/assets/gallery/secondary_glazing_26.webp.asset.json";
+import gallery29 from "@/assets/gallery/secondary_glazing_29.webp.asset.json";
+import gallery30 from "@/assets/gallery/secondary_glazing_30.webp.asset.json";
+
+const galleryImages = [
+  { src: gallery13.url, alt: "Curved bay of Georgian sash windows with slimline secondary glazing in a London townhouse" },
+  { src: gallery24.url, alt: "Three timber sash windows fitted with vertical sliding secondary glazing in a bedroom" },
+  { src: gallery23.url, alt: "Tall Georgian sash windows with acoustic secondary glazing overlooking a London street" },
+  { src: gallery26.url, alt: "Period sash windows with discreet secondary glazing sightlines in a bright interior" },
+  { src: gallery19.url, alt: "Hotel bedroom sash windows with acoustic secondary glazing for street noise control" },
+  { src: gallery18.url, alt: "Bay window and balcony door with secondary glazing in a London apartment" },
+  { src: gallery20.url, alt: "Two sash windows with secondary glazing above column radiators in a stucco-fronted flat" },
+  { src: gallery16.url, alt: "Horizontal sliding secondary glazing units fitted to bedroom windows in Chelsea" },
+  { src: gallery29.url, alt: "Office meeting room with secondary glazing fitted to large multi-pane sash windows" },
+  { src: gallery30.url, alt: "Home study with sash windows and secondary glazing reducing high street noise" },
+];
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
