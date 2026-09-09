@@ -17,28 +17,33 @@ const RelatedContentSidebar = ({
   links 
 }: RelatedContentSidebarProps) => {
   return (
-    <aside className="bg-secondary/50 rounded-lg p-6">
-      <h3 className="text-lg font-semibold mb-4">{title}</h3>
-      <ul className="space-y-3">
+    <aside className="rounded-xl border border-border bg-card shadow-sm overflow-hidden">
+      <div className="border-b border-border bg-secondary/50 px-5 py-3">
+        <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">{title}</h3>
+      </div>
+      <ul className="divide-y divide-border">
         {links.map((link) => (
           <li key={link.href}>
             <Link
               to={link.href}
-              className="group flex items-start gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              className="group flex items-center justify-between gap-3 px-5 py-3 transition-colors hover:bg-secondary/60"
             >
-              <ArrowRight className="w-4 h-4 mt-1 text-primary group-hover:translate-x-1 transition-transform" />
-              <div>
-                <span className="font-medium text-foreground">{link.title}</span>
+              <div className="min-w-0">
+                <span className="block text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                  {link.title}
+                </span>
                 {link.description && (
-                  <p className="text-sm mt-0.5">{link.description}</p>
+                  <p className="mt-0.5 text-xs text-muted-foreground line-clamp-2">{link.description}</p>
                 )}
               </div>
+              <ArrowRight className="w-4 h-4 shrink-0 text-primary opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
             </Link>
           </li>
         ))}
       </ul>
     </aside>
   );
+
 };
 
 export default RelatedContentSidebar;
