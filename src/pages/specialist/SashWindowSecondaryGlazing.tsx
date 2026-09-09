@@ -964,7 +964,7 @@ const SashWindowSecondaryGlazing = () => {
                   The sliding mechanism requires gaps between the sashes and the frame, and 
                   over time these gaps can increase as the timber shrinks and the window 
                   settles. Additionally, original sash windows typically feature single 
-                  glazing, providing minimal insulation - a common issue in <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and 
+                  glazing, providing minimal insulation - a common issue in <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and{" "} 
                   <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink> properties.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-8">
