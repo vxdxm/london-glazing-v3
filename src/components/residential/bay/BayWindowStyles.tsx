@@ -10,7 +10,7 @@ const BayWindowStyles = () => {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <img loading="lazy" decoding="async" alt="Traditional bay window" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/32c833dd-aebd-4fa1-a6db-3c764bb33dd1.jpg" />
+              <img loading="lazy" decoding="async" alt="Traditional bay window fitted with vertical sliding secondary glazing" className="rounded-lg w-full h-[200px] object-cover mb-4" src="/lovable-uploads/32c833dd-aebd-4fa1-a6db-3c764bb33dd1.jpg" />
               <p className="text-gray-700">
                 Classic bay window configuration with multiple panels that follow the original window's 
                 angles. Perfect for Victorian and Edwardian properties, maintaining their period character 
