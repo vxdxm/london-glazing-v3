@@ -1,3 +1,5 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
+import { PAGE_FAQS } from "@/components/commercial/office/OfficeSEO";
 
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
@@ -43,6 +45,11 @@ const OfficeBuildings = () => {
           <OfficeCTA />
         </div>
       </main>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );

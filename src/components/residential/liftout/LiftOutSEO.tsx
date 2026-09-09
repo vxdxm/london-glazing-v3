@@ -1,54 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 const LiftOutSEO = () => {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How long does removal take for lift-out secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "5-10 minutes per window using simple lift/click release — tool-free and straightforward."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where do I store lift-out panels?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Loft storage is most common, though garage, under-bed, or basement work well. You'll need 2-3 square metres for a typical 12-window property."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is lift-out cheaper than hinged secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — you save £1,200-£2,400 on a 12-window property compared to hinged systems."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I install and remove lift-out panels myself?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. Training is provided at installation, and the process is designed to be homeowner-friendly."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does lift-out secondary glazing cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Lift-out secondary glazing costs £300-£500 per window, making it a mid-range option between fixed (£250-£550) and hinged (£400-£700) systems."
-        }
-      }
-    ]
-  };
-
-  const productSchema = {
+    const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Lift-Out Secondary Glazing",
@@ -65,11 +18,6 @@ const LiftOutSEO = () => {
       "offerCount": "3",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "89"
-    }
   };
 
   const breadcrumbSchema = {
@@ -123,9 +71,6 @@ const LiftOutSEO = () => {
       <meta name="twitter:title" content="Lift-Out Secondary Glazing | Seasonal Flexibility London" />
       <meta name="twitter:description" content="Removable secondary glazing: Install in winter, remove in summer. £300-£500 per window. Perfect for rentals and listed building trials." />
       <meta name="twitter:image" content="https://cdn.marblism.com/teuTWb0RCMD.webp" />
-      
-      {/* JSON-LD */}
-      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
     </Helmet>
@@ -133,3 +78,11 @@ const LiftOutSEO = () => {
 };
 
 export default LiftOutSEO;
+
+export const PAGE_FAQS = [
+  { question: "How long does removal take for lift-out secondary glazing?", answer: "5-10 minutes per window using simple lift/click release — tool-free and straightforward." },
+  { question: "Where do I store lift-out panels?", answer: "Loft storage is most common, though garage, under-bed, or basement work well. You'll need 2-3 square metres for a typical 12-window property." },
+  { question: "Is lift-out cheaper than hinged secondary glazing?", answer: "Yes — you save £1,200-£2,400 on a 12-window property compared to hinged systems." },
+  { question: "Can I install and remove lift-out panels myself?", answer: "Absolutely. Training is provided at installation, and the process is designed to be homeowner-friendly." },
+  { question: "How much does lift-out secondary glazing cost?", answer: "Lift-out secondary glazing costs £300-£500 per window, making it a mid-range option between fixed (£250-£550) and hinged (£400-£700) systems." }
+];

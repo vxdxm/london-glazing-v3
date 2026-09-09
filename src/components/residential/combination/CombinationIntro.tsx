@@ -6,7 +6,7 @@ const CombinationIntro = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
       <div>
-        <h1 className="text-4xl font-bold mb-4">Custom Combination Secondary Glazing Solutions</h1>
+        <h2 className="text-3xl font-bold mb-4">Custom Combination Secondary Glazing Solutions</h2>
         <p className="text-gray-700 mb-6">
           Our combination window solutions represent the pinnacle of architectural versatility,
           offering unparalleled flexibility in design and functionality. By expertly blending

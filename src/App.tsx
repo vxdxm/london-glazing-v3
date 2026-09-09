@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import MobileContactFAB from "@/components/MobileContactFAB";
 import GetQuoteButton from "@/components/GetQuoteButton";
 import FloatingContactForm from "@/components/FloatingContactForm";
 import { AutoBreadcrumbSchema } from "@/components/seo/AutoBreadcrumbSchema";
@@ -327,6 +328,7 @@ const App = () => (
         <GetQuoteButton />
         <FloatingContactForm />
         <WhatsAppButton />
+        <MobileContactFAB />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

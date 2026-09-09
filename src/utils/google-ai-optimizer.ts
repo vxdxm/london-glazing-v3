@@ -271,13 +271,6 @@ export const createAIOptimizedService = (
       "latitude": 51.5074,
       "longitude": -0.1278
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
   },
   "areaServed": [
     {

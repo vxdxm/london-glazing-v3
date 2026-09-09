@@ -8,6 +8,7 @@ export const AirGapHeader = () => {
     <>
       <BreadcrumbNav />
       <SectionHeading 
+        as="h1"
         title="Air Gap Secondary Glazing Guide"
         subtitle="Understanding optimal spacing for maximum performance"
         className="mb-8"

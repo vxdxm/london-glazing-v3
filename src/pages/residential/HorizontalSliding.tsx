@@ -1,3 +1,4 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 import React from "react";
 import { MainNav } from "@/components/MainNav";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -26,17 +27,7 @@ const HorizontalSliding = () => {
     keywords: ["horizontal sliding secondary glazing", "wide window glazing", "multi-track glazing", "modern secondary glazing", "panoramic window glazing", "patio door secondary glazing"]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "How much does horizontal sliding secondary glazing cost?", "acceptedAnswer": { "@type": "Answer", "text": "Costs range from £400-£2,500+ depending on width. Standard systems up to 2.5m cost £400-£900, multi-track systems £900-£2,500+." }},
-      { "@type": "Question", "name": "Can I open the full width of my window?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, panels slide completely apart to expose the entire primary window width for full access, cleaning, and maximum ventilation." }},
-      { "@type": "Question", "name": "How wide can horizontal sliding secondary glazing go?", "acceptedAnswer": { "@type": "Answer", "text": "Systems can span 5 metres or more with multi-track configurations." }}
-    ]
-  };
-
-  const breadcrumbSchema = {
+    const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -60,7 +51,6 @@ const HorizontalSliding = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageMetadata.title} />
         <meta name="twitter:description" content={pageMetadata.description} />
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       
@@ -85,9 +75,20 @@ const HorizontalSliding = () => {
         <HorizontalFAQ />
         <HorizontalCTA />
       </div>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );
 };
 
 export default HorizontalSliding;
+
+export const PAGE_FAQS = [
+  { question: "How much does horizontal sliding secondary glazing cost?", answer: "Costs range from £400-£2,500+ depending on width. Standard systems up to 2.5m cost £400-£900, multi-track systems £900-£2,500+." },
+  { question: "Can I open the full width of my window?", answer: "Yes, panels slide completely apart to expose the entire primary window width for full access, cleaning, and maximum ventilation." },
+  { question: "How wide can horizontal sliding secondary glazing go?", answer: "Systems can span 5 metres or more with multi-track configurations." }
+];

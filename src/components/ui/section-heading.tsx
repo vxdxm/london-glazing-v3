@@ -8,6 +8,8 @@ interface SectionHeadingProps {
   subtitle?: string;
   className?: string;
   align?: "left" | "center" | "right";
+  /** Render the title as the page H1 (use once per page). */
+  as?: "h1" | "h2";
 }
 
 export const SectionHeading = ({
@@ -16,6 +18,7 @@ export const SectionHeading = ({
   subtitle,
   className,
   align = "left",
+  as: Tag = "h2",
 }: SectionHeadingProps) => {
   const alignment = {
     left: "text-left",
@@ -25,7 +28,7 @@ export const SectionHeading = ({
 
   return (
     <div id={id} className={cn("mb-6", alignment[align], className)}>
-      <h2 className="text-3xl font-semibold mb-2">{title}</h2>
+      <Tag className="text-3xl font-semibold mb-2">{title}</Tag>
       {subtitle && <p className="text-gray-600">{subtitle}</p>}
     </div>
   );

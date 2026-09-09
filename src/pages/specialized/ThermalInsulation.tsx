@@ -62,6 +62,7 @@ const ThermalInsulation = () => {
       <div className="container mx-auto px-4 py-16">
         <BreadcrumbNav />
         <SectionHeading 
+          as="h1"
           title="Thermal Insulation" 
           subtitle="Advanced solutions for maximum energy efficiency"
           className="mb-8"

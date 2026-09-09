@@ -1,3 +1,4 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { CrittallHero } from "@/components/residential/crittall/CrittallHero";
@@ -25,38 +26,7 @@ const CrittallWindows = () => {
     keywords: ["crittall windows", "secondary glazing", "art deco windows", "heritage windows", "listed building", "W20 crittall", "W40 crittall", "noise reduction", "energy efficiency", "condensation", "London"]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Will secondary glazing hide my Crittall grid pattern?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely not! The grid pattern is 100% preserved. From the street, your Crittall looks exactly the same with zero change to exterior appearance."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does secondary glazing cost vs replacing my Crittall?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Secondary glazing costs £3,500-£7,000 for typical properties versus £12,000-£18,000 for new Crittall replacement. This saves £5,000-£11,000 (50-70% cheaper)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will it work for my listed Art Deco building?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, perfectly. Secondary glazing is reversible and doesn't alter your original Crittall windows, making it ideal for listed buildings."
-        }
-      }
-    ]
-  };
-
-  const breadcrumbSchema = {
+    const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -98,8 +68,6 @@ const CrittallWindows = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageMetadata.title} />
         <meta name="twitter:description" content={pageMetadata.description} />
-        
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       
@@ -120,9 +88,20 @@ const CrittallWindows = () => {
         <CrittallNewFAQ />
         <CrittallCTA />
       </main>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );
 };
 
 export default CrittallWindows;
+
+export const PAGE_FAQS = [
+  { question: "Will secondary glazing hide my Crittall grid pattern?", answer: "Absolutely not! The grid pattern is 100% preserved. From the street, your Crittall looks exactly the same with zero change to exterior appearance." },
+  { question: "How much does secondary glazing cost vs replacing my Crittall?", answer: "Secondary glazing costs £3,500-£7,000 for typical properties versus £12,000-£18,000 for new Crittall replacement. This saves £5,000-£11,000 (50-70% cheaper)." },
+  { question: "Will it work for my listed Art Deco building?", answer: "Yes, perfectly. Secondary glazing is reversible and doesn't alter your original Crittall windows, making it ideal for listed buildings." }
+];

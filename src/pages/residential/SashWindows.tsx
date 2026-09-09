@@ -72,11 +72,6 @@ const SashWindows = () => {
       "highPrice": "900",
       "offerCount": "4"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127"
-    }
   };
 
   return (

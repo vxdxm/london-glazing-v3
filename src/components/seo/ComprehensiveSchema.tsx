@@ -69,13 +69,6 @@ export const ComprehensiveSchema: React.FC<ComprehensiveSchemaProps> = ({
               "@type": "Brand",
               "name": "Secondary Glazing Specialist"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "GBP",

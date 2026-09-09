@@ -1,3 +1,5 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
+import { PAGE_FAQS } from "@/components/residential/liftout/LiftOutSEO";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/ui/breadcrumb-nav";
@@ -48,6 +50,11 @@ const LiftOut = () => {
         </article>
       </div>
       
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );

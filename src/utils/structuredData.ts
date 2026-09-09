@@ -156,11 +156,6 @@ export const createLocalBusinessSchema = (): LocalBusinessSchema => ({
     { "@type": "Place", name: "North London" },
     { "@type": "Place", name: "South London" }
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "127"
-  },
   sameAs: [
     "https://secondaryglazingspecialist.com"
   ]

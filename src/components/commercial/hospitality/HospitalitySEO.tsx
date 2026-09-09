@@ -17,44 +17,6 @@ const HospitalitySEO = () => {
 
   const pageSchema = createPageSchema(pageMetadata);
 
-  const faqSchema = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much noise reduction can we expect from hospitality secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Typical reduction of 70-80% for traffic and street noise, creating peaceful environments even in central London locations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will secondary glazing installation disrupt hotel guests?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our hospitality protocols ensure minimal disruption. Rooms are returned to service the same day, with installation typically during low occupancy periods."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is secondary glazing suitable for listed hotels and heritage buildings?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes – secondary glazing is often the only approved method for improving listed building performance while preserving original windows."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What energy savings are realistic for hotels with secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Properties typically save 30-50% on heating and cooling costs, with payback periods of 2-4 years."
-        }
-      }
-    ]
-  });
 
   return (
     <Helmet>
@@ -70,7 +32,6 @@ const HospitalitySEO = () => {
       <meta name="twitter:description" content={pageMetadata.description} />
       <link rel="canonical" href={`https://secondaryglazingspecialist.com${pageMetadata.canonicalPath}`} />
       <script type="application/ld+json">{pageSchema}</script>
-      <script type="application/ld+json">{faqSchema}</script>
       <script type="application/ld+json">
       {`
         {
@@ -107,3 +68,10 @@ const HospitalitySEO = () => {
 };
 
 export default HospitalitySEO;
+
+export const PAGE_FAQS = [
+  { question: "How much noise reduction can we expect from hospitality secondary glazing?", answer: "Typical reduction of 70-80% for traffic and street noise, creating peaceful environments even in central London locations." },
+  { question: "Will secondary glazing installation disrupt hotel guests?", answer: "Our hospitality protocols ensure minimal disruption. Rooms are returned to service the same day, with installation typically during low occupancy periods." },
+  { question: "Is secondary glazing suitable for listed hotels and heritage buildings?", answer: "Yes – secondary glazing is often the only approved method for improving listed building performance while preserving original windows." },
+  { question: "What energy savings are realistic for hotels with secondary glazing?", answer: "Properties typically save 30-50% on heating and cooling costs, with payback periods of 2-4 years." }
+];

@@ -5,7 +5,7 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 const IntroSection = () => {
   return (
     <section className="mb-12">
-      <h1 className="text-4xl font-bold mb-6">Modern Secondary Glazing Solutions for Historic Buildings</h1>
+      <h2 className="text-3xl font-bold mb-6">Modern Secondary Glazing Solutions for Historic Buildings</h2>
       
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2">

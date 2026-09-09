@@ -1,3 +1,4 @@
+import ServiceFAQ from "@/components/seo/ServiceFAQ";
 import { MainNav } from "@/components/MainNav";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
@@ -34,54 +35,7 @@ const CasementWindows = () => {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Can I still open my casement windows with secondary glazing installed?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! With hinged secondary glazing, you have completely independent operation of both your primary casements and secondary units. Lift-out panels remove entirely for full access."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need planning permission for casement window secondary glazing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No planning permission is required as secondary glazing is an internal modification that doesn't alter the exterior appearance of your property."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does casement window secondary glazing cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Expect £350-£800 per casement window depending on size and glass specification. This is 50-65% cheaper than quality casement replacement."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will it work with my 1930s Art Deco metal casements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Secondary glazing is perfect for Art Deco properties - it preserves the period character while solving the single-glazed, draughty problems common in these beautiful buildings."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you install secondary glazing on deteriorating metal casements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes - this is actually ideal. Secondary glazing protects deteriorating metal casements from further weather exposure while dramatically improving their performance."
-        }
-      }
-    ]
-  };
-
-  const productSchema = {
+    const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Casement Window Secondary Glazing",
@@ -98,11 +52,6 @@ const CasementWindows = () => {
       "offerCount": "4",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127"
-    }
   };
 
   const serviceSchema = {
@@ -171,9 +120,6 @@ const CasementWindows = () => {
         <meta name="twitter:title" content={pageMetadata.title} />
         <meta name="twitter:description" content={pageMetadata.description} />
         <meta name="twitter:image" content={`https://secondaryglazingspecialist.com${pageMetadata.imageUrl}`} />
-        
-        {/* JSON-LD structured data */}
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Helmet>
@@ -199,9 +145,22 @@ const CasementWindows = () => {
           <CasementCTA />
         </article>
       </div>
+      <section className="py-12">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <ServiceFAQ items={PAGE_FAQS} />
+        </div>
+      </section>
       <Footer />
     </div>
   );
 };
 
 export default CasementWindows;
+
+export const PAGE_FAQS = [
+  { question: "Can I still open my casement windows with secondary glazing installed?", answer: "Absolutely! With hinged secondary glazing, you have completely independent operation of both your primary casements and secondary units. Lift-out panels remove entirely for full access." },
+  { question: "Do I need planning permission for casement window secondary glazing?", answer: "No planning permission is required as secondary glazing is an internal modification that doesn't alter the exterior appearance of your property." },
+  { question: "How much does casement window secondary glazing cost?", answer: "Expect £350-£800 per casement window depending on size and glass specification. This is 50-65% cheaper than quality casement replacement." },
+  { question: "Will it work with my 1930s Art Deco metal casements?", answer: "Absolutely! Secondary glazing is perfect for Art Deco properties - it preserves the period character while solving the single-glazed, draughty problems common in these beautiful buildings." },
+  { question: "Can you install secondary glazing on deteriorating metal casements?", answer: "Yes - this is actually ideal. Secondary glazing protects deteriorating metal casements from further weather exposure while dramatically improving their performance." }
+];

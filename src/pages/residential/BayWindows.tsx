@@ -90,11 +90,6 @@ const BayWindows = () => {
       "highPrice": "3500",
       "offerCount": "3"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127"
-    }
   };
 
   const breadcrumbSchema = {

@@ -38,7 +38,6 @@ const KensingtonChelseaArea = () => {
             description: "Professional secondary glazing installation for heritage homes in Kensington & Chelsea.",
             areaServed: { "@type": "City", name: "Royal Borough of Kensington and Chelsea" },
             address: { "@type": "PostalAddress", addressLocality: "London", addressRegion: "Kensington and Chelsea", addressCountry: "GB" },
-            aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "87", bestRating: "5" },
           })}
         </script>
       </Helmet>

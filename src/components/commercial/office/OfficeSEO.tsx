@@ -106,58 +106,17 @@ const OfficeSEO = () => {
         }
       `}
       </script>
-      <script type="application/ld+json">
-      {`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Can installation be completed outside working hours?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we routinely work evenings, weekends, and holidays to avoid business disruption."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does installation take for a typical office?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Most office floors (20-30 windows) are completed in 2-3 working days."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What noise reduction can we expect?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Standard installations achieve 20-30dB reduction; acoustic laminated options reach 40-50dB."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Will secondary glazing improve our EPC rating?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Secondary glazing can improve ratings by 1-2 grades (e.g., D to B), significantly impacting property value."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is secondary glazing suitable for listed office buildings?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, secondary glazing is often the only viable upgrade option for heritage buildings, requiring no structural modifications."
-              }
-            }
-          ]
-        }
-      `}
-      </script>
+      
     </Helmet>
   );
 };
 
 export default OfficeSEO;
+
+export const PAGE_FAQS = [
+  { question: "Can installation be completed outside working hours?", answer: "Yes, we routinely work evenings, weekends, and holidays to avoid business disruption." },
+  { question: "How long does installation take for a typical office?", answer: "Most office floors (20-30 windows) are completed in 2-3 working days." },
+  { question: "What noise reduction can we expect?", answer: "Standard installations achieve 20-30dB reduction; acoustic laminated options reach 40-50dB." },
+  { question: "Will secondary glazing improve our EPC rating?", answer: "Secondary glazing can improve ratings by 1-2 grades (e.g., D to B), significantly impacting property value." },
+  { question: "Is secondary glazing suitable for listed office buildings?", answer: "Yes, secondary glazing is often the only viable upgrade option for heritage buildings, requiring no structural modifications." }
+];
