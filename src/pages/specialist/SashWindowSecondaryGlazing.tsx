@@ -671,8 +671,8 @@ const SashWindowSecondaryGlazing = () => {
                   <InlineLink href="/victorian-windows-secondary-glazing">Victorian</InlineLink> and <InlineLink href="/georgian-windows-secondary-glazing">Georgian</InlineLink> properties.
                 </p>
 
-                <h2 id="glazing-options" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
-                  Secondary Glazing Options for Sash Windows
+                <h2 id="unit-types" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
+                  Secondary Glazing Unit Types for Sash Windows
                 </h2>
                 
                 <div className="grid md:grid-cols-2 gap-6 mb-12 not-prose">
