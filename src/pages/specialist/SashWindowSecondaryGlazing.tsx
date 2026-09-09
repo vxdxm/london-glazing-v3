@@ -568,6 +568,56 @@ const SashWindowSecondaryGlazing = () => {
 
 
 
+      {/* Technical drawing */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 id="technical-drawing" className="scroll-mt-28 text-3xl font-bold text-foreground mb-4">
+              Vertical Sliding Unit: Technical Drawing
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              The exploded view below shows the component build-up of a two-panel vertical
+              sliding secondary glazing unit as installed to the internal reveal of an existing
+              timber sash window. Sub-frame depth, interlock position and sash weight all follow
+              from the glass specification chosen, so confirm the glazing type before finalising
+              sub-frame sizes.
+            </p>
+            <figure className="rounded-lg border bg-muted/30 p-4 md:p-8">
+              <img
+                src={sashTechnicalSketch.url}
+                alt="Technical drawing of a two-panel vertical sliding secondary glazing unit showing sub-frame, top sash, meeting rail interlock, bottom sash and sill sections"
+                loading="lazy"
+                decoding="async"
+                className="mx-auto w-full max-w-2xl h-auto"
+              />
+              <figcaption className="mt-4 text-sm text-muted-foreground text-center">
+                Indicative component drawing — dimensions are confirmed at survey against the
+                measured reveal.
+              </figcaption>
+            </figure>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 not-prose">
+              {[
+                { ref: "73", title: "Outer sub-frame", body: "Perimeter carrier frame fixed to the reveal, packed and sealed to take up out-of-square openings." },
+                { ref: "74", title: "Top sash / head section", body: "Upper sliding sash running in the head track, balanced for controlled operation." },
+                { ref: "22", title: "Meeting rail interlock", body: "Interlocking rail with brush and compression seals — the critical joint for acoustic performance." },
+                { ref: "65", title: "Bottom sash rail", body: "Lower sliding sash rail carrying the glazing bead and lift-handle hardware." },
+                { ref: "64", title: "Sill / cill section", body: "Sill member with drainage path, set forward of the primary window to maintain the air gap." },
+              ].map((item) => (
+                <div key={item.ref} className="rounded-lg border bg-card p-5">
+                  <div className="flex items-baseline gap-3">
+                    <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full bg-primary/10 px-2 text-sm font-semibold text-primary">
+                      {item.ref}
+                    </span>
+                    <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content with Sidebar */}
       <section className="py-16">
         <div className="container mx-auto px-4">
