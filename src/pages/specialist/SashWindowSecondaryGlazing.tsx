@@ -781,6 +781,62 @@ const SashWindowSecondaryGlazing = () => {
                   </Card>
                 </div>
 
+                <h2 id="glazing-options" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
+                  Glass Options for Sash Secondary Glazing
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  The unit type sets how the secondary glazing operates; the glass specification
+                  sets how it performs. Sash units are typically glazed with one of the following,
+                  selected against the dominant problem — traffic and rail noise, heat loss, or
+                  solar and UV gain.
+                </p>
+                <div className="overflow-x-auto mb-6 not-prose">
+                  <table className="w-full text-sm border-collapse">
+                    <thead>
+                      <tr className="bg-muted/50 text-left">
+                        <th className="border p-3 font-semibold">Glass specification</th>
+                        <th className="border p-3 font-semibold">Typical use</th>
+                        <th className="border p-3 font-semibold">Indicative performance</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-muted-foreground">
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">4mm float</td>
+                        <td className="border p-3">Baseline draught and thermal upgrade on quiet elevations</td>
+                        <td className="border p-3">Approx. 28-30dB Rw with a 100mm air gap</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">6.4mm laminated</td>
+                        <td className="border p-3">General urban noise, plus safety and security benefit</td>
+                        <td className="border p-3">Approx. 33-35dB Rw; Class 2B2 impact safety</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">10.8mm Stadip Silence acoustic laminate</td>
+                        <td className="border p-3">Main-road, flight path and rail noise</td>
+                        <td className="border p-3">Up to 54dB reduction with a 100mm air gap</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">Pilkington K low-emissivity</td>
+                        <td className="border p-3">Heat loss, cold reveals and condensation risk</td>
+                        <td className="border p-3">Up to 60% reduction in heat loss through the window</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">Solar control / UV filtering laminate</td>
+                        <td className="border p-3">South-facing rooms, artwork and heritage interiors</td>
+                        <td className="border p-3">Blocks the large majority of UV transmission</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-12">
+                  Heavier acoustic laminates increase sash weight, so balance and interlock
+                  hardware are specified to suit. Compare the two most-requested acoustic
+                  build-ups in our{" "}
+                  <InlineLink href="/blog/10-8mm-acoustic-laminate-vs-6-4mm-laminated-glass">
+                    10.8mm vs 6.4mm performance comparison
+                  </InlineLink>.
+                </p>
+
                 <h2 id="performance-benefits" className="scroll-mt-28 text-3xl font-bold text-foreground mb-6">
                   Performance Benefits
                 </h2>
