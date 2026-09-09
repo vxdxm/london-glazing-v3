@@ -23,6 +23,8 @@ import gallery24 from "@/assets/gallery/secondary_glazing_24.webp.asset.json";
 import gallery26 from "@/assets/gallery/secondary_glazing_26.webp.asset.json";
 import gallery29 from "@/assets/gallery/secondary_glazing_29.webp.asset.json";
 import gallery30 from "@/assets/gallery/secondary_glazing_30.webp.asset.json";
+import gallery39 from "@/assets/gallery/secondary_glazing_39.webp.asset.json";
+import gallery41 from "@/assets/gallery/secondary_glazing_41.webp.asset.json";
 
 const galleryImages = [
   { src: gallery13.url, alt: "Curved bay of Georgian sash windows with slimline secondary glazing in a London townhouse" },
@@ -35,7 +37,10 @@ const galleryImages = [
   { src: gallery16.url, alt: "Horizontal sliding secondary glazing units fitted to bedroom windows in Chelsea" },
   { src: gallery29.url, alt: "Office meeting room with secondary glazing fitted to large multi-pane sash windows" },
   { src: gallery30.url, alt: "Home study with sash windows and secondary glazing reducing high street noise" },
+  { src: gallery39.url, alt: "Run of tall sash windows with vertical sliding secondary glazing along a London office breakout corridor" },
+  { src: gallery41.url, alt: "Victorian bay window with stained glass top lights and vertical sliding secondary glazing" },
 ];
+
 
 const breadcrumbItems = [
   { label: "Services", href: "/residential" },
