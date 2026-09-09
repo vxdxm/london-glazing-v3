@@ -868,15 +868,41 @@ const SashWindowSecondaryGlazing = () => {
                         <td className="border p-3">Approx. 33-35dB Rw; Class 2B2 impact safety</td>
                       </tr>
                       <tr>
+                        <td className="border p-3 font-medium text-foreground">6.8mm acoustic laminate</td>
+                        <td className="border p-3">Busy residential streets and moderate traffic noise</td>
+                        <td className="border p-3">Approx. 36-38dB Rw; acoustic PVB interlayer</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">8.8mm acoustic laminate</td>
+                        <td className="border p-3">Main roads, bus routes and night-time noise in bedrooms</td>
+                        <td className="border p-3">Approx. 39-41dB Rw; stronger low-frequency Ctr performance</td>
+                      </tr>
+                      <tr>
                         <td className="border p-3 font-medium text-foreground">10.8mm Stadip Silence acoustic laminate</td>
                         <td className="border p-3">Main-road, flight path and rail noise</td>
                         <td className="border p-3">Up to 54dB reduction with a 100mm air gap</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">6.4mm laminated low-E</td>
+                        <td className="border p-3">Combined safety, moderate noise and heat-loss control</td>
+                        <td className="border p-3">Approx. 33-35dB Rw with a soft-coat low-E surface</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">6.8mm acoustic laminate low-E</td>
+                        <td className="border p-3">Cold, noisy elevations where both issues are significant</td>
+                        <td className="border p-3">Approx. 36-38dB Rw plus reduced radiant heat loss</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3 font-medium text-foreground">8.8mm acoustic laminate low-E</td>
+                        <td className="border p-3">Heritage rooms on main roads needing maximum dual performance</td>
+                        <td className="border p-3">Approx. 39-41dB Rw plus low-E thermal coating</td>
                       </tr>
                       <tr>
                         <td className="border p-3 font-medium text-foreground">Pilkington K low-emissivity</td>
                         <td className="border p-3">Heat loss, cold reveals and condensation risk</td>
                         <td className="border p-3">Up to 60% reduction in heat loss through the window</td>
                       </tr>
+
                       <tr>
                         <td className="border p-3 font-medium text-foreground">Solar control / UV filtering laminate</td>
                         <td className="border p-3">South-facing rooms, artwork and heritage interiors</td>
