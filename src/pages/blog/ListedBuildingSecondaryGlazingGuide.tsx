@@ -176,7 +176,7 @@ const ListedBuildingSecondaryGlazingGuide = () => {
           </Button>
         </a>
       </div>
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background border-t border-border p-3">
+      <div data-mobile-cta-bar className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-3">
         <a href="#heritage-consultation" className="block">
           <Button size="lg" className="w-full gap-2">
             <Phone className="h-4 w-4" />
