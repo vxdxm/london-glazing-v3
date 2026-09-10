@@ -1,41 +1,24 @@
+# https://secondaryglazingspecialist.com
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Crawl-delay: 0.5
 
-# Specific bot optimizations
+# Search engines
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: YandexBot
 Allow: /
-Crawl-delay: 1
 
-# Disallow admin, API, and dynamic content
-Disallow: /api/
-Disallow: /admin/
-Disallow: /*?*
-Disallow: /search?*
-Disallow: /*#*
-Disallow: /private/
-Disallow: /temp/
-Disallow: /*.json$
-Disallow: /*_=*
-
-# Block problematic crawlers
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-# Allow beneficial crawlers
+# Social preview crawlers
 User-agent: facebookexternalhit
 Allow: /
 
@@ -45,11 +28,20 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+# Block aggressive SEO crawlers
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
 # ============================================
 # AI crawlers and assistants (explicit allow)
 # ============================================
 
-# OpenAI
 User-agent: GPTBot
 Allow: /
 
@@ -59,7 +51,6 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic
 User-agent: ClaudeBot
 Allow: /
 
@@ -72,28 +63,24 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
-# Google Gemini / AI Overviews
 User-agent: Google-Extended
 Allow: /
 
 User-agent: GoogleOther
 Allow: /
 
-# Apple Intelligence
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Meta AI
 User-agent: Meta-ExternalAgent
 Allow: /
 
@@ -103,89 +90,51 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-# Amazon
 User-agent: Amazonbot
 Allow: /
 
-# Cohere
 User-agent: cohere-ai
 Allow: /
 
 User-agent: cohere-training-data-crawler
 Allow: /
 
-# Mistral
 User-agent: MistralAI-User
 Allow: /
 
-# You.com
 User-agent: YouBot
 Allow: /
 
-# DuckDuckGo Assist
 User-agent: DuckAssistBot
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-# Common Crawl (foundation dataset for many LLMs)
 User-agent: CCBot
 Allow: /
 
-# Diffbot
 User-agent: Diffbot
 Allow: /
 
-# ByteDance / Doubao
 User-agent: Bytespider
 Allow: /
 
-# xAI (Grok)
 User-agent: xAI-Bot
 Allow: /
 
-# Kagi
 User-agent: Kagibot
 Allow: /
 
-# Timpi
 User-agent: TimpiBot
 Allow: /
 
-# Phind
 User-agent: PhindBot
 Allow: /
 
-# Andi
 User-agent: AndiBot
 Allow: /
 
-# Allow all static assets and media
-Allow: /lovable-uploads/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-Allow: /*.ico$
-Allow: /*.woff$
-Allow: /*.woff2$
-Allow: /*.ttf$
-Allow: /*.eot$
-
-# Crawl optimization
-Crawl-delay: 0.5
-Request-rate: 10/60
-
-# Sitemap locations
+# Sitemaps
 Sitemap: https://secondaryglazingspecialist.com/sitemap.xml
 Sitemap: https://secondaryglazingspecialist.com/sitemap-images.xml
-Sitemap: https://secondaryglazingspecialist.com/sitemap-news.xml
-Sitemap: https://secondaryglazingspecialist.com/sitemap-video.xml
-
-# Host directive (preferred domain)
-Host: https://secondaryglazingspecialist.com
