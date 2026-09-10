@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Mail, MessageCircle, MessageSquarePlus, Plus, X } from "lucide-react";
 
 /**
@@ -9,12 +9,32 @@ import { Mail, MessageCircle, MessageSquarePlus, Plus, X } from "lucide-react";
  */
 const MobileContactFAB = () => {
   const [open, setOpen] = useState(false);
+  const [bottomOffset, setBottomOffset] = useState(16);
+  const location = useLocation();
+
+  // Sit above any page-level sticky mobile CTA bar so it never covers it.
+  useEffect(() => {
+    const measure = () => {
+      const bar = document.querySelector<HTMLElement>("[data-mobile-cta-bar]");
+      setBottomOffset(bar ? bar.offsetHeight + 16 : 16);
+    };
+    measure();
+    const id = window.setTimeout(measure, 300);
+    window.addEventListener("resize", measure);
+    return () => {
+      window.clearTimeout(id);
+      window.removeEventListener("resize", measure);
+    };
+  }, [location.pathname]);
 
   const actionClasses =
     "flex items-center gap-3 rounded-full pl-4 pr-5 py-3 text-sm font-medium shadow-lg text-primary-foreground";
 
   return (
-    <div className="md:hidden fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3">
+    <div
+      style={{ bottom: bottomOffset }}
+      className="md:hidden fixed right-4 z-50 flex flex-col items-end gap-3"
+    >
       {open && (
         <>
           <a
