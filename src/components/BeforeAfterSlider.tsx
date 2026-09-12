@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ArrowLeftRight, Droplets, Sun, Volume2, Waves } from "lucide-react";
-import galleryImage from "@/assets/gallery/secondary_glazing_41.webp.asset.json";
 import { Button } from "@/components/ui/button";
+
+const comparisonImage = "/images/blog/listed-buildings-interior.webp";
 
 export const BeforeAfterSlider = () => {
   const [position, setPosition] = useState(50);
@@ -21,8 +22,8 @@ export const BeforeAfterSlider = () => {
         >
           {/* Clear, upgraded room */}
           <img
-            src={galleryImage.url}
-            alt="Victorian bay window room with secondary glazing installed"
+            src={comparisonImage}
+            alt="Heritage London room with sash windows suitable for secondary glazing"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
             decoding="async"
@@ -36,7 +37,7 @@ export const BeforeAfterSlider = () => {
             aria-hidden="true"
           >
             <img
-              src={galleryImage.url}
+              src={comparisonImage}
               alt=""
               className="h-full w-full object-cover grayscale contrast-75 brightness-75"
               loading="lazy"
