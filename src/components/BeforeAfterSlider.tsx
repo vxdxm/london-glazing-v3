@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { ArrowLeftRight, Droplets, Sun, Volume2, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import beforeAsset from "@/assets/office-before-single-glazing.webp.asset.json";
+import afterAsset from "@/assets/office-after-secondary-glazing.webp.asset.json";
 
-const comparisonImage = "/images/blog/listed-buildings-interior.webp";
 
 export const BeforeAfterSlider = () => {
   const [position, setPosition] = useState(50);
@@ -14,38 +15,35 @@ export const BeforeAfterSlider = () => {
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">See the Difference</h2>
-          <p className="text-muted-foreground">Drag, tap or use your arrow keys to compare the same room before and after secondary glazing.</p>
+          <p className="text-muted-foreground">Drag, tap or use your arrow keys to compare the same meeting room before and after secondary glazing.</p>
         </div>
 
         <div
           className="group relative aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none"
         >
-          {/* Clear, upgraded room */}
+          {/* Upgraded room with secondary glazing */}
           <img
-            src={comparisonImage}
-            alt="Heritage London room with sash windows suitable for secondary glazing"
+            src={afterAsset.url}
+            alt="Quiet London meeting room after secondary glazing, staff working calmly beside tall windows"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-primary/5" />
 
-          {/* Simulated single-glazed condition, revealed on the left */}
+          {/* Original single-glazed condition, revealed on the left */}
           <div
             className="absolute inset-0 overflow-hidden border-r-2 border-primary-foreground shadow-lg"
             style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
-            aria-hidden="true"
           >
             <img
-              src={comparisonImage}
-              alt=""
-              className="h-full w-full object-cover grayscale contrast-75 brightness-75"
+              src={beforeAsset.url}
+              alt="Noisy single-glazed London meeting room before secondary glazing, with traffic noise disrupting a meeting"
+              className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-background/25 backdrop-blur-[1px]" />
-            <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-background/70 to-transparent" />
           </div>
+
 
           {/* Labels remain anchored and never enter the clipping collision zone */}
           <div className="absolute left-3 top-3 z-20 md:left-5 md:top-5">
