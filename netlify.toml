@@ -17,12 +17,9 @@
   status = 301
   force = true
 
-# Remove trailing slashes to prevent duplicate content (before SPA catch-all)
-[[redirects]]
-  from = "/*/"
-  to = "/:splat"
-  status = 301
-  force = true
+# Trailing-slash removal is intentionally omitted: the pattern /*/ also matches
+# the root path "/" and caused an infinite redirect loop on the homepage.
+# Duplicate-content risk is handled by per-page canonical tags instead.
 
 # Legacy URL redirects from old site / .htaccess
 [[redirects]]
