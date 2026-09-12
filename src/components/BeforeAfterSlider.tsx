@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { ArrowLeftRight, Droplets, Sun, Volume2, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import beforeAsset from "@/assets/office-before-single-glazing.webp.asset.json";
-import afterAsset from "@/assets/office-after-secondary-glazing.webp.asset.json";
+const beforeImage = "/images/office-before-single-glazing.webp";
+const afterImage = "/images/office-after-secondary-glazing.webp";
+
 
 
 export const BeforeAfterSlider = () => {
@@ -23,7 +24,7 @@ export const BeforeAfterSlider = () => {
         >
           {/* Upgraded room with secondary glazing */}
           <img
-            src={afterAsset.url}
+            src={afterImage}
             alt="Quiet London meeting room after secondary glazing, staff working calmly beside tall windows"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
@@ -36,7 +37,7 @@ export const BeforeAfterSlider = () => {
             style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
           >
             <img
-              src={beforeAsset.url}
+              src={beforeImage}
               alt="Noisy single-glazed London meeting room before secondary glazing, with traffic noise disrupting a meeting"
               className="h-full w-full object-cover"
               loading="lazy"
