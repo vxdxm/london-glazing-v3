@@ -54,9 +54,11 @@ for (const route of routes) {
     await page.goto(base + route, { waitUntil: "networkidle", timeout: 45000 });
     await page.waitForSelector("#root h1, #root main", { timeout: 15000 }).catch(() => {});
     const html = await page.content();
-    const outDir = route === "/" ? dist : path.join(dist, route);
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, "index.html"), html);
+    // Write flat files (dist/cost-guide.html) so Netlify serves the canonical
+    // non-trailing-slash URL with a 200 instead of 301-ing to /cost-guide/.
+    const outFile = route === "/" ? path.join(dist, "index.html") : path.join(dist, `${route}.html`);
+    fs.mkdirSync(path.dirname(outFile), { recursive: true });
+    fs.writeFileSync(outFile, html);
     ok++;
   } catch (err) {
     failures.push(`${route}: ${err.message}`);
