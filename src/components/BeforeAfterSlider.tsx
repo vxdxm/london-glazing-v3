@@ -14,13 +14,20 @@ export const BeforeAfterSlider = () => {
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-8">
+          <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">See the Difference</h2>
           <p className="text-muted-foreground">Drag, tap or use your arrow keys to compare the same meeting room before and after secondary glazing.</p>
+          <p id="ba-slider-instructions" className="sr-only">
+            Use the left and right arrow keys to move the comparison handle one step at a time.
+            Press Home to show only the before view, End to show only the after view.
+            Alternatively, activate the Before, Split view or After buttons below the image.
+          </p>
         </div>
 
         <div
-          className="group relative aspect-[4/3] md:aspect-[3/2] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none"
+          className="group relative aspect-[4/3] md:aspect-[3/2] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none focus-within:ring-4 focus-within:ring-primary/60 focus-within:ring-offset-2 focus-within:ring-offset-background"
+          role="img"
+          aria-label="Interactive comparison of a London meeting room before and after secondary glazing"
         >
           {/* Upgraded room with secondary glazing */}
           <img
@@ -49,7 +56,7 @@ export const BeforeAfterSlider = () => {
           {/* Labels remain anchored and never enter the clipping collision zone */}
           <div className="absolute left-3 top-3 z-20 md:left-5 md:top-5">
             <div className="flex items-center gap-2 rounded-md border border-border bg-background/90 px-3 py-2 shadow-md backdrop-blur-sm">
-              <Droplets className="h-4 w-4 text-destructive" />
+              <Droplets className="h-4 w-4 text-destructive" aria-hidden="true" />
               <div className="text-left">
                 <p className="text-xs font-bold text-foreground md:text-sm">Before</p>
                 <p className="hidden text-xs text-muted-foreground sm:block">Single glazed</p>
@@ -58,7 +65,7 @@ export const BeforeAfterSlider = () => {
           </div>
           <div className="absolute right-3 top-3 z-20 md:right-5 md:top-5">
             <div className="flex items-center gap-2 rounded-md border border-border bg-background/90 px-3 py-2 shadow-md backdrop-blur-sm">
-              <Sun className="h-4 w-4 text-primary" />
+              <Sun className="h-4 w-4 text-primary" aria-hidden="true" />
               <div className="text-left">
                 <p className="text-xs font-bold text-foreground md:text-sm">After</p>
                 <p className="hidden text-xs text-muted-foreground sm:block">Secondary glazed</p>
@@ -68,8 +75,8 @@ export const BeforeAfterSlider = () => {
 
           <div className="pointer-events-none absolute inset-y-0 z-20" style={{ left: `${position}%` }}>
             <div className="h-full w-0.5 bg-primary-foreground shadow-lg" />
-            <div className="absolute top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-primary-foreground bg-primary text-primary-foreground shadow-xl transition-transform group-hover:scale-110">
-              <ArrowLeftRight className="h-5 w-5" />
+            <div className="absolute top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-primary-foreground bg-primary text-primary-foreground shadow-xl transition-transform group-hover:scale-110 group-focus-within:scale-110 group-focus-within:ring-4 group-focus-within:ring-primary-foreground/70">
+              <ArrowLeftRight className="h-5 w-5" aria-hidden="true" />
             </div>
           </div>
 
@@ -79,35 +86,44 @@ export const BeforeAfterSlider = () => {
             max="100"
             value={position}
             onChange={(event) => setPosition(Number(event.target.value))}
-            aria-label="Compare the room before and after secondary glazing"
-            aria-valuetext={`${position}% of the before view shown`}
-            className="absolute inset-0 z-30 h-full w-full cursor-ew-resize opacity-0"
+            aria-label="Comparison slider: meeting room before and after secondary glazing"
+            aria-describedby="ba-slider-instructions"
+            aria-orientation="horizontal"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={position}
+            aria-valuetext={`${position}% before view, ${100 - position}% after view`}
+            className="absolute inset-0 z-30 h-full w-full cursor-ew-resize opacity-0 focus-visible:opacity-0"
           />
 
           <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 -translate-x-1/2 rounded-full border border-border bg-background/90 px-4 py-2 text-xs font-medium text-foreground shadow-md backdrop-blur-sm md:text-sm">
-            <span className="flex items-center gap-2"><ArrowLeftRight className="h-4 w-4 text-primary" /> Drag to compare</span>
+            <span className="flex items-center gap-2"><ArrowLeftRight className="h-4 w-4 text-primary" aria-hidden="true" /> Drag to compare</span>
           </div>
         </div>
 
-        <div className="mt-4 flex justify-center gap-2" aria-label="Comparison presets">
-          <Button variant={position === 100 ? "default" : "outline"} size="sm" onClick={() => setComparison(100)}>Before</Button>
-          <Button variant={position === 50 ? "default" : "outline"} size="sm" onClick={() => setComparison(50)}>Split view</Button>
-          <Button variant={position === 0 ? "default" : "outline"} size="sm" onClick={() => setComparison(0)}>After</Button>
+        <div className="mt-4 flex justify-center gap-2" role="group" aria-label="Comparison view presets">
+          <Button variant={position === 100 ? "default" : "outline"} size="sm" onClick={() => setComparison(100)} aria-pressed={position === 100}>Before</Button>
+          <Button variant={position === 50 ? "default" : "outline"} size="sm" onClick={() => setComparison(50)} aria-pressed={position === 50}>Split view</Button>
+          <Button variant={position === 0 ? "default" : "outline"} size="sm" onClick={() => setComparison(0)} aria-pressed={position === 0}>After</Button>
         </div>
+
+        <p className="mt-2 text-center text-xs text-muted-foreground" aria-hidden="true">
+          Keyboard: use ← → arrows, Home for before, End for after.
+        </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg border border-border bg-card p-4">
-            <Droplets className="mb-3 h-5 w-5 text-primary" />
+            <Droplets className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Condensation</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 99% reduction with correct ventilation.</p>
           </div>
           <div className="rounded-lg border border-border bg-card p-4">
-            <Volume2 className="mb-3 h-5 w-5 text-primary" />
+            <Volume2 className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Outside noise</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 80% quieter with acoustic glass.</p>
           </div>
           <div className="rounded-lg border border-border bg-card p-4">
-            <Waves className="mb-3 h-5 w-5 text-primary" />
+            <Waves className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Heat loss</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 60% lower through upgraded windows.</p>
           </div>
