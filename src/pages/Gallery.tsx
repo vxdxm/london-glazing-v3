@@ -150,6 +150,56 @@ const Gallery = () => {
       src: img20.url,
       alt: "Two white sash windows with horizontal sliding secondary glazing in a bright living space with oak flooring",
       description: "Sash windows with horizontal sliding secondary glazing in a modern living space"
+    },
+    {
+      src: img21.url,
+      alt: "Large white sliding secondary glazing doors with fixed side windows in a teal living room overlooking a roof terrace",
+      description: "Sliding secondary glazing doors with side panels in a modern living room"
+    },
+    {
+      src: img22.url,
+      alt: "Five-pane curved bay window with slim grey secondary glazing and tilt-in casements overlooking autumn trees",
+      description: "Curved bay window with slim grey secondary glazing in a contemporary room"
+    },
+    {
+      src: img23.url,
+      alt: "Pair of traditional white timber sash windows with secondary glazing, column radiators and Roman blinds in a grey room",
+      description: "Traditional sash windows fitted with secondary glazing and column radiators"
+    },
+    {
+      src: img24.url,
+      alt: "Three vertical sash windows with white secondary glazing in a minimalist bedroom with Roman blinds overlooking brick buildings",
+      description: "Vertical sash windows with secondary glazing in a minimalist bedroom"
+    },
+    {
+      src: img25.url,
+      alt: "Crittall-style multi-pane bay window with secondary glazing overlooking the London skyline including The Shard and The Gherkin",
+      description: "Crittall-style secondary glazing bay window with London skyline views"
+    },
+    {
+      src: img26.url,
+      alt: "Three white timber sash windows with secondary glazing in a bright minimalist room with mirrors overlooking red-brick buildings",
+      description: "White timber sash windows with secondary glazing in a bright minimalist room"
+    },
+    {
+      src: img27.url,
+      alt: "Three-part sash bay window with white frames and beige Roman blinds overlooking a red-brick apartment building",
+      description: "Sash bay window with secondary glazing and Roman blinds in a contemporary room"
+    },
+    {
+      src: img28.url,
+      alt: "Grand multi-pane white bay window with secondary glazing in a panelled room with chandelier overlooking a landscaped garden",
+      description: "Grand bay window with secondary glazing installation in a heritage panelled room"
+    },
+    {
+      src: img29.url,
+      alt: "Three vertical sliding sash windows with slim white secondary glazing in a modern office with a wooden table and brick streetscape view",
+      description: "Vertical sliding sash windows with secondary glazing in a modern office setting"
+    },
+    {
+      src: img30.url,
+      alt: "Two traditional multi-pane sash windows with white secondary glazing frames and blue roller blinds in a room with a chest of drawers",
+      description: "Multi-pane sash windows with secondary glazing and blue roller blinds"
     }
   ];
 
