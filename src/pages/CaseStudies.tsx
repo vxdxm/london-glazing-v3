@@ -154,7 +154,7 @@ const CaseStudies = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" variant="inverseOutline">
                 Contact Us
               </Button>
             </Link>

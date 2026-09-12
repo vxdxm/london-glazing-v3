@@ -72,7 +72,7 @@ const CommercialCTA = () => {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+          <Button asChild size="lg" variant="inverseOutline">
             <a href="tel:02034888903">
               <Phone className="w-4 h-4 mr-2" />
               Call: 020 3488 8903

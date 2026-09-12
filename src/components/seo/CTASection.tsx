@@ -45,13 +45,13 @@ const CTASection = ({
             </Button>
           </Link>
           <a href="tel:02070601572">
-            <Button variant="outline" size="lg" className="gap-2 bg-transparent border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground">
+            <Button variant="inverseOutline" size="lg" className="gap-2 hover:bg-primary-foreground/15 hover:text-primary-foreground">
               <Phone className="w-5 h-5" />
               Call 0207 060 1572
             </Button>
           </a>
           <Link to="/contact">
-            <Button variant="outline" size="lg" className="gap-2 bg-transparent border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground">
+            <Button variant="inverseOutline" size="lg" className="gap-2 hover:bg-primary-foreground/15 hover:text-primary-foreground">
               <MessageCircle className="w-5 h-5" />
               Contact Us
             </Button>
