@@ -46,6 +46,44 @@
   status = 301
   force = true
 
+# Client-side redirect routes served as real 301s so crawlers consolidate signals
+
+[[redirects]]
+  from = "/faq"
+  to = "/faqs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/compliance"
+  to = "/compliance-hub"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/quote"
+  to = "/quote-request"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services"
+  to = "/specialized"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/testimonials"
+  to = "/case-studies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/residential/energy-efficiency"
+  to = "/residential/energy-performance"
+  status = 301
+  force = true
+
 # SPA fallback — must be last
 [[redirects]]
   from = "/*"
