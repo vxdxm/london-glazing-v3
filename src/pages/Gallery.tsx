@@ -90,6 +90,56 @@ const Gallery = () => {
       src: "/lovable-uploads/78d4ec89-4da8-46df-b9cf-722eaa162852.png",
       alt: "Listed building approved secondary glazing solution maintaining heritage character",
       description: "Listed building window with approved secondary glazing solution"
+    },
+    {
+      src: img11.url,
+      alt: "Horizontal sliding secondary glazing units with white frames in a modern room overlooking city buildings",
+      description: "Horizontal sliding secondary glazing with five white-framed units in a contemporary room"
+    },
+    {
+      src: img12.url,
+      alt: "Three-part bay window with white casement secondary glazing looking onto tree-lined street",
+      description: "Bay window fitted with white-framed casement secondary glazing in a cozy living area"
+    },
+    {
+      src: img13.url,
+      alt: "Elegant curved bay window with multi-pane secondary glazing, grey curtains and city views",
+      description: "Curved bay window with traditional multi-pane secondary glazing in a sunlit minimalist room"
+    },
+    {
+      src: img14.url,
+      alt: "Three vertical sash windows with single-pane secondary glazing in an exposed-brick office",
+      description: "Sash windows with discreet secondary glazing in an industrial-style office setting"
+    },
+    {
+      src: img15.url,
+      alt: "Three-panel white-framed secondary glazing with roller blinds overlooking a city construction site",
+      description: "Three-panel secondary glazing with white roller blinds in a modern urban property"
+    },
+    {
+      src: img16.url,
+      alt: "Two tall white sash windows with secondary glazing and radiators in a warm bedroom with city rooftop views",
+      description: "Tall sash windows fitted with secondary glazing in a warm bedroom with Roman blinds"
+    },
+    {
+      src: img17.url,
+      alt: "Crittall-style multi-pane secondary glazing with glazed door looking onto a suburban street",
+      description: "Crittall-style secondary glazing with central window and glazed door in a bright room"
+    },
+    {
+      src: img18.url,
+      alt: "Secondary glazing fitted to a balcony door and adjacent multi-pane windows with silver curtains",
+      description: "Balcony door and multi-pane windows fitted with secondary glazing in an elegant room"
+    },
+    {
+      src: img19.url,
+      alt: "Two white multi-pane sash windows with discreet secondary glazing in a hotel bedroom with city skyline views",
+      description: "Hotel bedroom sash windows with discreet secondary glazing overlooking a city skyline"
+    },
+    {
+      src: img20.url,
+      alt: "Two white sash windows with horizontal sliding secondary glazing in a bright living space with oak flooring",
+      description: "Sash windows with horizontal sliding secondary glazing in a modern living space"
     }
   ];
 
