@@ -56,7 +56,7 @@ export const BeforeAfterSlider = () => {
           {/* Labels remain anchored and never enter the clipping collision zone */}
           <div className="absolute left-3 top-3 z-20 md:left-5 md:top-5">
             <div className="flex items-center gap-2 rounded-md border border-border bg-background/90 px-3 py-2 shadow-md backdrop-blur-sm">
-              <Droplets className="h-4 w-4 text-destructive" />
+              <Droplets className="h-4 w-4 text-destructive" aria-hidden="true" />
               <div className="text-left">
                 <p className="text-xs font-bold text-foreground md:text-sm">Before</p>
                 <p className="hidden text-xs text-muted-foreground sm:block">Single glazed</p>
@@ -65,7 +65,7 @@ export const BeforeAfterSlider = () => {
           </div>
           <div className="absolute right-3 top-3 z-20 md:right-5 md:top-5">
             <div className="flex items-center gap-2 rounded-md border border-border bg-background/90 px-3 py-2 shadow-md backdrop-blur-sm">
-              <Sun className="h-4 w-4 text-primary" />
+              <Sun className="h-4 w-4 text-primary" aria-hidden="true" />
               <div className="text-left">
                 <p className="text-xs font-bold text-foreground md:text-sm">After</p>
                 <p className="hidden text-xs text-muted-foreground sm:block">Secondary glazed</p>
@@ -113,17 +113,17 @@ export const BeforeAfterSlider = () => {
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg border border-border bg-card p-4">
-            <Droplets className="mb-3 h-5 w-5 text-primary" />
+            <Droplets className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Condensation</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 99% reduction with correct ventilation.</p>
           </div>
           <div className="rounded-lg border border-border bg-card p-4">
-            <Volume2 className="mb-3 h-5 w-5 text-primary" />
+            <Volume2 className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Outside noise</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 80% quieter with acoustic glass.</p>
           </div>
           <div className="rounded-lg border border-border bg-card p-4">
-            <Waves className="mb-3 h-5 w-5 text-primary" />
+            <Waves className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
             <p className="text-sm font-semibold text-foreground">Heat loss</p>
             <p className="mt-1 text-sm text-muted-foreground">Up to 60% lower through upgraded windows.</p>
           </div>
