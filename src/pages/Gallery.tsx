@@ -3,6 +3,16 @@ import { IntelligentSEO } from "@/components/seo/IntelligentSEO";
 import { Footer } from "@/components/Footer";
 import { OptimizedLazyImage } from "@/components/ui/optimized-lazy-image";
 import { RelatedContent } from "@/components/seo/RelatedContent";
+import img11 from "@/assets/gallery/secondary_glazing_11.webp.asset.json";
+import img12 from "@/assets/gallery/secondary_glazing_12.webp.asset.json";
+import img13 from "@/assets/gallery/secondary_glazing_13-2.webp.asset.json";
+import img14 from "@/assets/gallery/secondary_glazing_14.webp.asset.json";
+import img15 from "@/assets/gallery/secondary_glazing_15.webp.asset.json";
+import img16 from "@/assets/gallery/secondary_glazing_16-2.webp.asset.json";
+import img17 from "@/assets/gallery/secondary_glazing_17.webp.asset.json";
+import img18 from "@/assets/gallery/secondary_glazing_18-2.webp.asset.json";
+import img19 from "@/assets/gallery/secondary_glazing_19-2.webp.asset.json";
+import img20 from "@/assets/gallery/secondary_glazing_20-2.webp.asset.json";
 
 const Gallery = () => {
   const galleryItems = [
