@@ -250,7 +250,7 @@ const Benefits = () => {
               </Button>
             </Link>
             <Link to="/case-studies">
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" variant="inverseOutline">
                 View Case Studies
               </Button>
             </Link>

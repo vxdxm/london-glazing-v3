@@ -509,7 +509,7 @@ const Camden = () => {
                   <Button asChild size="lg" variant="secondary">
                     <Link to="/quote-request">Request Free Survey</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  <Button asChild size="lg" variant="inverseOutline">
                     <Link to="/contact">Contact Us</Link>
                   </Button>
                 </div>

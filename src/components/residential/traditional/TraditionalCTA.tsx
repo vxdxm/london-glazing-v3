@@ -25,7 +25,7 @@ export function TraditionalCTA() {
                   Get Free Heritage Assessment
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button asChild size="lg" variant="inverseOutline">
                 <a href="tel:+442034888227">
                   <Phone className="mr-2 h-5 w-5" />
                   Call 020 3488 8227

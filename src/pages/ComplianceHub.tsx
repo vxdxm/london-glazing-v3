@@ -744,7 +744,7 @@ Yours faithfully,
               <Button asChild variant="secondary" size="lg">
                 <Link to="/quote-request">Request a Specification Pack</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button asChild variant="inverseOutline" size="lg">
                 <Link to="/contact">Speak to a Technical Advisor</Link>
               </Button>
             </div>

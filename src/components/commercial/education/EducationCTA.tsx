@@ -29,8 +29,7 @@ export const EducationCTA = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              variant="inverseOutline"
               onClick={() => navigate("/contact")}
             >
               Contact Our Education Team
