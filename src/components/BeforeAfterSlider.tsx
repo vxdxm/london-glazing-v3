@@ -20,7 +20,7 @@ export const BeforeAfterSlider = () => {
         </div>
 
         <div
-          className="group relative aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none"
+          className="group relative aspect-[4/3] md:aspect-[3/2] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none"
         >
           {/* Upgraded room with secondary glazing */}
           <img
