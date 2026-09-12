@@ -13,6 +13,16 @@ import img17 from "@/assets/gallery/secondary_glazing_17.webp.asset.json";
 import img18 from "@/assets/gallery/secondary_glazing_18-2.webp.asset.json";
 import img19 from "@/assets/gallery/secondary_glazing_19-2.webp.asset.json";
 import img20 from "@/assets/gallery/secondary_glazing_20-2.webp.asset.json";
+import img21 from "@/assets/gallery/secondary_glazing_21.webp.asset.json";
+import img22 from "@/assets/gallery/secondary_glazing_22.webp.asset.json";
+import img23 from "@/assets/gallery/secondary_glazing_23-2.webp.asset.json";
+import img24 from "@/assets/gallery/secondary_glazing_24-2.webp.asset.json";
+import img25 from "@/assets/gallery/secondary_glazing_25.webp.asset.json";
+import img26 from "@/assets/gallery/secondary_glazing_26-2.webp.asset.json";
+import img27 from "@/assets/gallery/secondary_glazing_27.webp.asset.json";
+import img28 from "@/assets/gallery/secondary_glazing_28.webp.asset.json";
+import img29 from "@/assets/gallery/secondary_glazing_29-2.webp.asset.json";
+import img30 from "@/assets/gallery/secondary_glazing_30-2.webp.asset.json";
 
 const Gallery = () => {
   const galleryItems = [
