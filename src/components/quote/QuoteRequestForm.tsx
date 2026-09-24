@@ -72,20 +72,7 @@ Glass Type: ${glassType}
         throw new Error("Failed to submit quote request");
       }
     } catch (error) {
-      console.log("Quote form submission error:", error);
-      // Always show success in sandbox environment
-      toast.success("Quote request submitted successfully! We'll be in touch soon. (Demo mode)");
-      
-      // Reset form
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPhone("");
-      setWindowType("");
-      setWindowCount(1);
-      setDimensions([{ width: "", height: "" }]);
-      setGlassType("");
-      form.reset();
+      toast.error("Sorry, your request could not be sent. Please try again or call 0207 060 1572.");
     } finally {
       setIsSubmitting(false);
     }
