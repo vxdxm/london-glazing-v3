@@ -73,7 +73,7 @@ const HeritageConsultationForm = () => {
     setSubmitting(true);
     try {
       const form = e.currentTarget;
-      const res = await fetch("https://formspree.io/f/mpwzlvvvz", {
+      const res = await fetch("https://formspree.io/f/mpwlvvvz", {
         method: "POST",
         body: new FormData(form),
         headers: { Accept: "application/json" },
