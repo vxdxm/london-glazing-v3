@@ -24,7 +24,7 @@ export const CrittallHero = () => {
         </p>
         
         <Button asChild size="lg">
-          <Link to="/quote">Get Your Free Crittall Assessment</Link>
+          <Link to="/quote-request">Get Your Free Crittall Assessment</Link>
         </Button>
       </div>
     </div>

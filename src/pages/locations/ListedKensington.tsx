@@ -33,7 +33,7 @@ const ListedKensington = () => {
                 that enhance comfort without compromising the architectural integrity of your listed property.
               </p>
               <Button asChild>
-                <Link to="/quote">Get Heritage Quote</Link>
+                <Link to="/quote-request">Get Heritage Quote</Link>
               </Button>
             </div>
             <div className="relative h-[400px]">
@@ -232,7 +232,7 @@ const ListedKensington = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/quote">Heritage Assessment</Link>
+              <Link to="/quote-request">Heritage Assessment</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link to="/contact">Conservation Consultation</Link>

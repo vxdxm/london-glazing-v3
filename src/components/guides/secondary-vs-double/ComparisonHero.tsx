@@ -22,7 +22,7 @@ export function ComparisonHero() {
               delivers superior <Link to="/noise-reduction-secondary-glazing" className="text-primary hover:underline">noise reduction</Link>.
             </p>
             <Button asChild size="lg" className="bg-gradient-to-r from-primary to-primary-600 hover:from-primary-600 hover:to-primary text-white shadow-lg">
-              <Link to="/quote">Get Expert Recommendation</Link>
+              <Link to="/quote-request">Get Expert Recommendation</Link>
             </Button>
           </div>
           <div className="relative">
