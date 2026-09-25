@@ -10,7 +10,7 @@ export const FixedCTA = () => {
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Button asChild size="lg" variant="secondary">
-          <Link to="/quote">Get Free Quote</Link>
+          <Link to="/quote-request">Get Free Quote</Link>
         </Button>
         <Button asChild size="lg" variant="inverseOutline">
           <Link to="/contact">Contact Us</Link>

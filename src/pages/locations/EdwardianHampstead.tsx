@@ -33,7 +33,7 @@ const EdwardianHampstead = () => {
                 Hampstead property maintains its character while achieving modern comfort standards.
               </p>
               <Button asChild>
-                <Link to="/quote">Get Free Quote</Link>
+                <Link to="/quote-request">Get Free Quote</Link>
               </Button>
             </div>
             <div className="relative h-[400px]">
@@ -216,7 +216,7 @@ const EdwardianHampstead = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/quote">Free Quote</Link>
+              <Link to="/quote-request">Free Quote</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link to="/contact">Heritage Consultation</Link>

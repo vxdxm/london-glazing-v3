@@ -41,7 +41,7 @@ const GeorgianBelgravia = () => {
                 <Link to="/commercial/office-buildings" className="text-primary hover:underline">commercial offices</Link> in Belgravia, we offer tailored solutions.
               </p>
               <Button asChild>
-                <Link to="/quote">Get Georgian Quote</Link>
+                <Link to="/quote-request">Get Georgian Quote</Link>
               </Button>
             </div>
             <div className="relative h-[400px]">
@@ -231,7 +231,7 @@ const GeorgianBelgravia = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/quote">Georgian Specialist Quote</Link>
+              <Link to="/quote-request">Georgian Specialist Quote</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link to="/contact">Heritage Assessment</Link>

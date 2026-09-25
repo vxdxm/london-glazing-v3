@@ -33,7 +33,7 @@ const VictorianIslington = () => {
                 and provide sympathetic installations that complement your home's historical significance.
               </p>
               <Button asChild>
-                <Link to="/quote">Get Free Quote</Link>
+                <Link to="/quote-request">Get Free Quote</Link>
               </Button>
             </div>
             <div className="relative h-[400px]">
@@ -166,7 +166,7 @@ const VictorianIslington = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link to="/quote">Free Quote</Link>
+              <Link to="/quote-request">Free Quote</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link to="/contact">Expert Consultation</Link>
