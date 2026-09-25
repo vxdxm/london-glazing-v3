@@ -12,7 +12,7 @@ export const ServiceCards = () => {
         imageAlt="Air gap spacing diagram for secondary glazing"
         title="Air Gap Secondary Glazing"
         description="Learn about optimal air gap distances in secondary glazing installations. Our expert guide covers how 100mm and 150mm cavity spacing affects thermal and acoustic performance."
-        linkPath="/air-gap-secondary-glazing"
+        linkPath="/specialized/air-gap-secondary-glazing"
         linkText="Explore Air Gap Secondary Glazing"
         icon={<Maximize2 className="h-5 w-5 text-blue-600" />}
       />

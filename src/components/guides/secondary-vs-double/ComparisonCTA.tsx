@@ -14,7 +14,7 @@ export function ComparisonCTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild size="lg" className="bg-gradient-to-r from-primary to-primary-600 hover:from-primary-600 hover:to-primary text-white shadow-lg">
-            <Link to="/quote">Get Free Consultation</Link>
+            <Link to="/quote-request">Get Free Consultation</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">
             <Link to="/listed-buildings-secondary-glazing">Learn About Listed Buildings</Link>

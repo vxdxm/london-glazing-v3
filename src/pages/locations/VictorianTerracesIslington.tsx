@@ -170,7 +170,7 @@ export default function VictorianTerracesIslington() {
             </p>
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
               <a href="/contact" className="btn btn-primary">Get Free Survey</a>
-              <a href="/quote" className="btn btn-outline">Request Quote</a>
+              <a href="/quote-request" className="btn btn-outline">Request Quote</a>
             </div>
           </div>
         </div>

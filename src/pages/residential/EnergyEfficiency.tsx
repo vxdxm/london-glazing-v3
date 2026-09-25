@@ -12,7 +12,7 @@ const EnergyEfficiency = () => {
       <EnhancedSEO
         title="Energy Efficient Casement Window Secondary Glazing | U-value 1.6"
         description="Cut window heat loss by up to 65%. Engineered secondary glazing for casement windows — U-values to 1.6 W/m²K, Low-E coatings, argon fill, BR Part L and EPC compliance."
-        canonicalPath="/residential/energy-efficiency"
+        canonicalPath="/residential/energy-performance"
         type="service"
         serviceName="Energy Efficient Secondary Glazing for Casement Windows"
         keywords={["energy efficient secondary glazing", "casement window U-value", "Low-E secondary glazing London", "Part L compliant secondary glazing", "EPC band B retrofit"]}
