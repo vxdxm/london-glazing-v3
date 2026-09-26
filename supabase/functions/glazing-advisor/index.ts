@@ -46,11 +46,13 @@ Deno.serve(async (req) => {
       `Description: ${description}`,
     ].join("\n");
 
+    let streamErr: unknown;
     const result = streamText({
       model: provider.responses("openai/gpt-6-astra"),
       system: SYSTEM,
       prompt,
       abortSignal: req.signal,
+      onError: ({ error }) => { streamErr = error; },
       providerOptions: {
         openai: {
           forceReasoning: true,
@@ -61,7 +63,8 @@ Deno.serve(async (req) => {
         },
       },
     });
-    const text = await result.text;
+    let text = "";
+    try { text = await result.text; } catch (err) { throw streamErr ?? err; }
     if (!text.trim()) return json({ error: "No recommendation could be generated. Please call 0207 060 1572." }, 502);
     return json({ recommendation: text });
   } catch (e) {
@@ -69,6 +72,6 @@ Deno.serve(async (req) => {
     console.error("advisor error", e);
     if (status === 429) return json({ error: "The advisor is busy right now. Please try again in a minute." }, 429);
     if (status === 402) return json({ error: "The advisor is temporarily unavailable. Please call 0207 060 1572." }, 402);
-    return json({ error: "Something went wrong. Please try again or call 0207 060 1572.", debug: String((e as Error)?.message ?? e) }, status && status >= 400 ? status : 500);
+    return json({ error: "Something went wrong. Please try again or call 0207 060 1572.", debug: String((e as Error)?.message ?? e) + " " + JSON.stringify((e as any)?.responseBody ?? (e as any)?.cause?.message ?? "") }, status && status >= 400 ? status : 500);
   }
 });
