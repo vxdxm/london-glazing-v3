@@ -69,6 +69,7 @@ export function MainNav() {
             </div>
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
+          <MobileNavItem to="/glazing-advisor">Glazing Advisor</MobileNavItem>
           <MobileNavItem to="/locations">Areas We Serve</MobileNavItem>
           <MobileNavItem to="/blog">Blog</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
@@ -156,6 +157,11 @@ export function MainNav() {
           <NavigationMenuItem>
             <Link to="/gallery" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Gallery
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link to="/glazing-advisor" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
+              Advisor
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
