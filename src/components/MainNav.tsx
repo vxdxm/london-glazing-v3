@@ -160,6 +160,11 @@ export function MainNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link to="/glazing-advisor" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
+              Advisor
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <Link to="/blog" className="text-sm font-medium hover:text-accent-foreground transition-colors p-3">
               Blog
             </Link>
