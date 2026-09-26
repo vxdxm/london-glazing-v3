@@ -69,6 +69,7 @@ export function MainNav() {
             </div>
           ))}
           <MobileNavItem to="/gallery">Gallery</MobileNavItem>
+          <MobileNavItem to="/glazing-advisor">Glazing Advisor</MobileNavItem>
           <MobileNavItem to="/locations">Areas We Serve</MobileNavItem>
           <MobileNavItem to="/blog">Blog</MobileNavItem>
           <MobileNavItem to="/faqs">FAQs</MobileNavItem>
