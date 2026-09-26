@@ -69,6 +69,6 @@ Deno.serve(async (req) => {
     console.error("advisor error", e);
     if (status === 429) return json({ error: "The advisor is busy right now. Please try again in a minute." }, 429);
     if (status === 402) return json({ error: "The advisor is temporarily unavailable. Please call 0207 060 1572." }, 402);
-    return json({ error: "Something went wrong. Please try again or call 0207 060 1572." }, status && status >= 400 ? status : 500);
+    return json({ error: "Something went wrong. Please try again or call 0207 060 1572.", debug: String((e as Error)?.message ?? e) }, status && status >= 400 ? status : 500);
   }
 });
