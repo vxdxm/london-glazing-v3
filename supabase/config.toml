@@ -1,1 +1,4 @@
 project_id = "qrpyylriwaqvpjfzmeyz"
+
+[functions.glazing-advisor]
+verify_jwt = false
