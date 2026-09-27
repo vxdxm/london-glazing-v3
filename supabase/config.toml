@@ -2,3 +2,6 @@ project_id = "qrpyylriwaqvpjfzmeyz"
 
 [functions.glazing-advisor]
 verify_jwt = false
+
+[functions.quote-checklist]
+verify_jwt = false
