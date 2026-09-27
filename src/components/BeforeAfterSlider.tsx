@@ -26,8 +26,6 @@ export const BeforeAfterSlider = () => {
 
         <div
           className="group relative aspect-[4/3] md:aspect-[3/2] overflow-hidden rounded-lg border border-border bg-card shadow-xl select-none focus-within:ring-4 focus-within:ring-primary/60 focus-within:ring-offset-2 focus-within:ring-offset-background"
-          role="img"
-          aria-label="Interactive comparison of a London meeting room before and after secondary glazing"
         >
           {/* Upgraded room with secondary glazing */}
           <img
