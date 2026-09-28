@@ -29,6 +29,7 @@ const EducationalSector = lazy(() => import("./pages/commercial/EducationalSecto
 const RetailSpaces = lazy(() => import("./pages/commercial/RetailSpaces"));
 const QuoteRequest = lazy(() => import("./pages/QuoteRequest"));
 const GlazingAdvisor = lazy(() => import("./pages/GlazingAdvisor"));
+const QuotePreparationChecklist = lazy(() => import("./pages/QuotePreparationChecklist"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const FAQs = lazy(() => import("./pages/FAQs"));
 const NotFound = lazy(() => import("./pages/404"));
@@ -169,6 +170,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Index />} />
         <Route path="/quote-request" element={<QuoteRequest />} />
         <Route path="/glazing-advisor" element={<GlazingAdvisor />} />
+        <Route path="/quote-checklist" element={<QuotePreparationChecklist />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/faq" element={<Navigate to="/faqs" replace />} />
