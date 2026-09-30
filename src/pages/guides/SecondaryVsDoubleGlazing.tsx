@@ -22,9 +22,9 @@ export default function SecondaryVsDoubleGlazing() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://secondarydoubleglazing.co.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://secondarydoubleglazing.co.uk/guides" },
-      { "@type": "ListItem", "position": 3, "name": "Secondary Glazing vs Double Glazing", "item": "https://secondarydoubleglazing.co.uk/guides/secondary-vs-double-glazing" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://secondaryglazingspecialist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://secondaryglazingspecialist.com/guides" },
+      { "@type": "ListItem", "position": 3, "name": "Secondary Glazing vs Double Glazing", "item": "https://secondaryglazingspecialist.com/guides/secondary-vs-double-glazing" }
     ]
   };
 
@@ -34,7 +34,7 @@ export default function SecondaryVsDoubleGlazing() {
         <title>Secondary Glazing vs Double Glazing for Listed Buildings | Complete Guide</title>
         <meta name="description" content="Compare secondary glazing vs double glazing for listed buildings." />
         <meta name="keywords" content="secondary glazing vs double glazing, listed building windows, conservation area glazing, heritage windows, noise reduction glazing" />
-        <link rel="canonical" href="https://secondarydoubleglazing.co.uk/guides/secondary-vs-double-glazing" />
+        <link rel="canonical" href="https://secondaryglazingspecialist.com/guides/secondary-vs-double-glazing" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       
