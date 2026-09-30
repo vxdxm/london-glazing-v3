@@ -113,7 +113,14 @@ export default function GlazingAdvisor() {
           <Button type="submit" disabled={loading || !description.trim()} className="w-full">
             {loading ? "Preparing your recommendation…" : "Get my recommendation"}
           </Button>
-          {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
+          {error && (
+            <div role="alert" className="flex flex-col gap-3 rounded-md border border-destructive/40 bg-destructive/10 p-4">
+              <p className="text-sm text-destructive">{error}</p>
+              <Button type="submit" variant="outline" disabled={loading} className="self-start">
+                {loading ? "Trying again…" : "Try again — your details are still here"}
+              </Button>
+            </div>
+          )}
         </form>
 
         {result && (
