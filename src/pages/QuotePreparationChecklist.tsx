@@ -69,11 +69,17 @@ export default function QuotePreparationChecklist() {
   const [sent, setSent] = useState(false);
 
   const sections = useMemo(() => parseChecklist(checklist), [checklist]);
+  // Key each item by section + room group so identical lines (e.g. "Width…")
+  // in different rooms tick independently.
   const allItems = useMemo(
-    () => sections.flatMap((s) => [...s.items, ...s.groups.flatMap((g) => g.items)]),
+    () =>
+      sections.flatMap((s) => [
+        ...s.items.map((i) => `${s.heading}|${i}`),
+        ...s.groups.flatMap((g) => g.items.map((i) => `${s.heading}|${g.title}|${i}`)),
+      ]),
     [sections],
   );
-  const completed = allItems.filter((i) => done[i]).length;
+  const completed = allItems.filter((k) => done[k]).length;
 
   const updateRoom = (id: number, patch: Partial<Room>) =>
     setRooms((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)));
