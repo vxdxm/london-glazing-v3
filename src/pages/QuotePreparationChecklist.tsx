@@ -161,16 +161,16 @@ export default function QuotePreparationChecklist() {
     }
   };
 
-  const Checkbox = ({ item }: { item: string }) => (
+  const Checkbox = ({ item, id }: { item: string; id: string }) => (
     <li className="flex items-start gap-3">
       <input
         type="checkbox"
-        id={`chk-${item.slice(0, 40)}`}
-        checked={!!done[item]}
-        onChange={() => setDone((p) => ({ ...p, [item]: !p[item] }))}
+        id={`chk-${id}`}
+        checked={!!done[id]}
+        onChange={() => setDone((p) => ({ ...p, [id]: !p[id] }))}
         className="mt-1 h-4 w-4 shrink-0 accent-primary"
       />
-      <label htmlFor={`chk-${item.slice(0, 40)}`} className={`text-sm ${done[item] ? "line-through text-muted-foreground" : ""}`}>
+      <label htmlFor={`chk-${id}`} className={`text-sm ${done[id] ? "line-through text-muted-foreground" : ""}`}>
         {item}
       </label>
     </li>
