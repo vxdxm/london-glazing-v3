@@ -69,11 +69,17 @@ export default function QuotePreparationChecklist() {
   const [sent, setSent] = useState(false);
 
   const sections = useMemo(() => parseChecklist(checklist), [checklist]);
+  // Key each item by section + room group so identical lines (e.g. "Width…")
+  // in different rooms tick independently.
   const allItems = useMemo(
-    () => sections.flatMap((s) => [...s.items, ...s.groups.flatMap((g) => g.items)]),
+    () =>
+      sections.flatMap((s) => [
+        ...s.items.map((i) => `${s.heading}|${i}`),
+        ...s.groups.flatMap((g) => g.items.map((i) => `${s.heading}|${g.title}|${i}`)),
+      ]),
     [sections],
   );
-  const completed = allItems.filter((i) => done[i]).length;
+  const completed = allItems.filter((k) => done[k]).length;
 
   const updateRoom = (id: number, patch: Partial<Room>) =>
     setRooms((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)));
@@ -155,16 +161,16 @@ export default function QuotePreparationChecklist() {
     }
   };
 
-  const Checkbox = ({ item }: { item: string }) => (
+  const Checkbox = ({ item, id }: { item: string; id: string }) => (
     <li className="flex items-start gap-3">
       <input
         type="checkbox"
-        id={`chk-${item.slice(0, 40)}`}
-        checked={!!done[item]}
-        onChange={() => setDone((p) => ({ ...p, [item]: !p[item] }))}
+        id={`chk-${id}`}
+        checked={!!done[id]}
+        onChange={() => setDone((p) => ({ ...p, [id]: !p[id] }))}
         className="mt-1 h-4 w-4 shrink-0 accent-primary"
       />
-      <label htmlFor={`chk-${item.slice(0, 40)}`} className={`text-sm ${done[item] ? "line-through text-muted-foreground" : ""}`}>
+      <label htmlFor={`chk-${id}`} className={`text-sm ${done[id] ? "line-through text-muted-foreground" : ""}`}>
         {item}
       </label>
     </li>
@@ -287,11 +293,11 @@ export default function QuotePreparationChecklist() {
                 {sections.map((s) => (
                   <div key={s.heading}>
                     <h2 className="text-xl font-semibold mb-3">{s.heading}</h2>
-                    {s.items.length > 0 && <ul className="space-y-2 mb-4">{s.items.map((i) => <Checkbox key={i} item={i} />)}</ul>}
+                    {s.items.length > 0 && <ul className="space-y-2 mb-4">{s.items.map((i) => <Checkbox key={`${s.heading}|${i}`} item={i} id={`${s.heading}|${i}`} />)}</ul>}
                     {s.groups.map((g) => (
                       <div key={g.title} className="mb-4">
                         <h3 className="text-base font-medium mb-2">{g.title}</h3>
-                        <ul className="space-y-2">{g.items.map((i) => <Checkbox key={i} item={i} />)}</ul>
+                        <ul className="space-y-2">{g.items.map((i) => <Checkbox key={`${s.heading}|${g.title}|${i}`} item={i} id={`${s.heading}|${g.title}|${i}`} />)}</ul>
                       </div>
                     ))}
                   </div>
